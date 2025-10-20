@@ -1,72 +1,153 @@
-<div class="text-center mt-5">
-    <h1 class="display-4">@Localizer["Hello World!"]</h1>
-    <p>@Localizer["This is a project, to visualize musics..."]</p>
-</div>
-
-<div class="container py-4">
+<div class="container-fluid py-4">
 
     <div class="row g-4 justify-content-center">
 
-        <div class="col-md-6 text-center">
-            <div class="circle-widget">
-                <h2>半音阶 (Chromatic)</h2>
-                <div class="circle-container">
-                    <div id="chromatic-outer-circle" class="outer-circle"></div>
-                    <div id="chromatic-inner-circle" class="inner-circle">
-                        <div class="current-key-display">
-                            <span class="key-name">C</span>
-                            <span class="key-mode">Major</span>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Welcome!"]</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">@Localizer["What is this?"]</h6>
+                    <p>@Localizer["This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place."]</p>
+
+                    <h6 class="card-subtitle mt-4 mb-2 text-muted">@Localizer["How to Use It"]</h6>
+                    <ol class="mb-0 small">
+                        <li>@Localizer["Use the 'Rotate' buttons under either circle to select a new key."]</li>
+                        <li>@Localizer["The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key."]</li>
+                        <li>@Localizer["The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a 'fifth') adds or removes one sharp/flat from the key signature."]</li>
+                        <li>@Localizer["The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key."]</li>
+                        <li>@Localizer["The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs."]</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">@Localizer["Chromatic Scale"]</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="circle-container mx-auto my-2">
+                                <div id="chromatic-outer-circle" class="outer-circle"></div>
+                                <div id="chromatic-inner-circle" class="inner-circle">
+                                    <div class="current-key-display">
+                                        <span class="key-name">C</span>
+                                        <span class="key-mode">Major</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="controls mt-3">
+                                <button id="chromatic-rotate-left" class="btn btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-rotate-ccw lucide-sm me-1 align-middle">
+                                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                        <path d="M3 3v5h5"></path>
+                                    </svg>
+                                    @Localizer["Rotate Left"]
+                                </button>
+                                <button id="chromatic-rotate-right" class="btn btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-rotate-cw lucide-sm me-1 align-middle">
+                                        <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                        <path d="M21 3v5h-5"></path>
+                                    </svg>
+                                    @Localizer["Rotate Right"]
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="controls mt-3">
-                    <button id="chromatic-rotate-left" class="btn btn-primary">⟲ 向左转</button>
-                    <button id="chromatic-rotate-right" class="btn btn-primary">向右转 ⟳</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 text-center">
-            <div class="circle-widget">
-                <h2>五度圈 (Fifths)</h2>
-                <div class="circle-container">
-                    <div id="fifths-outer-circle" class="outer-circle"></div>
-                    <div id="fifths-inner-circle" class="inner-circle">
-                        <div class="current-key-display">
-                            <span class="key-name">C</span>
-                            <span class="key-mode">Major</span>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">@Localizer["Circle of Fifths"]</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="circle-container mx-auto my-2">
+                                <div id="fifths-outer-circle" class="outer-circle"></div>
+                                <div id="fifths-inner-circle" class="inner-circle">
+                                    <div class="current-key-display">
+                                        <span class="key-name">C</span>
+                                        <span class="key-mode">Major</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="controls mt-3">
+                                <button id="fifths-rotate-left" class="btn btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-rotate-ccw lucide-sm me-1 align-middle">
+                                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                        <path d="M3 3v5h5"></path>
+                                    </svg>
+                                    @Localizer["Rotate Left"]
+                                </button>
+                                <button id="fifths-rotate-right" class="btn btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="lucide lucide-rotate-cw lucide-sm me-1 align-middle">
+                                        <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                                        <path d="M21 3v5h-5"></path>
+                                    </svg>
+                                    @Localizer["Rotate Right"]
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="controls mt-3">
-                    <button id="fifths-rotate-left" class="btn btn-primary">⟲ 向左转</button>
-                    <button id="fifths-rotate-right" class="btn btn-primary">向右转 ⟳</button>
+            </div>
+
+            <div class="row g-4 mt-0 mt-lg-4">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">@Localizer["Interactive Piano"]</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="piano-container table-responsive">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-    </div>
-    <div class="row g-4 mt-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">@Localizer["Key Signature"]</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="key-signature-container"
+                                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="col-12 col-lg-10">
-            <div class="piano-container table-responsive">
             </div>
-        </div>
 
-        <div class="col-12">
-            <div id="key-signature-container"
-                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-            </div>
         </div>
     </div>
 </div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section scripts {
     <script src="scripts/major.js"></script>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section styles {
-    <link rel="stylesheet" href="~/styles/site.css" />
+    <link rel="stylesheet" href="~/styles/site.css"/>
 }
