@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentStep = 0;
     let chromaticVisualAngle = 0; // 【新增】追踪半音阶圈的视觉角度
     let fifthsVisualAngle = 0;    // 【新增】追踪五度圈的视觉角度
-
+    let localizedTonic = "Tonic"; // <--【!! 新增此行 !!】 (默认值)
     // --- DOM 元素获取 ---
     const chromaticOuterCircle = document.getElementById(
         "chromatic-outer-circle"
@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pianoContainer = document.querySelector(".piano-container");
     const keySigContainer = document.getElementById("key-signature-container");
     const keySelectorDropdown = document.getElementById("key-selector-dropdown"); // <--【!! 新增此行 !!】
+    const jianpuDisplayContainer = document.getElementById("jianpu-display-container"); // <--【!! 新增此行 !!】
     let pianoKeys = []; // 【修改】先声明，待钢琴创建后再填充
 
     // =====================================================================
@@ -190,6 +191,22 @@ document.addEventListener("DOMContentLoaded", () => {
             li.appendChild(noteNameSpan);
             li.appendChild(scaleDegreeSpan);
 
+            // 为每个键创建（隐藏的）主音指示器
+            const tonicIndicator = document.createElement("div");
+            tonicIndicator.className = "tonic-indicator";
+
+            const tonicText = document.createElement("span");
+            tonicText.className = "tonic-text";
+            tonicText.textContent = localizedTonic; // <-- 使用我们加载的字符串
+
+            const tonicTriangle = document.createElement("span");
+            tonicTriangle.className = "tonic-triangle";
+            tonicTriangle.textContent = "▼"; // 倒三角
+
+            tonicIndicator.appendChild(tonicText);
+            tonicIndicator.appendChild(tonicTriangle);
+            li.appendChild(tonicIndicator);
+
             // 黑键需要插入到前一个白键中
             if (isBlack) {
                 piano.lastChild.appendChild(li);
@@ -241,6 +258,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function updatePianoHighlight() {
         pianoKeys.forEach((key) => {
             key.classList.remove("highlight");
+
+            const tonicEl = key.querySelector(".tonic-indicator");
+            if (tonicEl) tonicEl.classList.remove("show");
+
             const scaleDegreeEl = key.querySelector(".scale-degree");
             if (scaleDegreeEl) scaleDegreeEl.textContent = "";
         });
@@ -261,6 +282,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 keyElement.classList.add("highlight");
                 const scaleDegreeEl = keyElement.querySelector(".scale-degree");
                 if (scaleDegreeEl) scaleDegreeEl.textContent = i + 1;
+                if (i === 0) {
+                    const tonicEl = keyElement.querySelector(".tonic-indicator");
+                    if (tonicEl) tonicEl.classList.add("show");
+                }
             } else {
                 // 如果在第二个八度找不到（例如C大调的B），就尝试在第一个八度找
                 const keyElementFirstOctave = document.querySelector(
@@ -271,6 +296,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     const scaleDegreeEl =
                         keyElementFirstOctave.querySelector(".scale-degree");
                     if (scaleDegreeEl) scaleDegreeEl.textContent = i + 1;
+                    if (i === 0) {
+                        const tonicEl = keyElementFirstOctave.querySelector(".tonic-indicator");
+                        if (tonicEl) tonicEl.classList.add("show");
+                    }
                 }
             }
         });
@@ -334,13 +363,6 @@ document.addEventListener("DOMContentLoaded", () => {
             staffWrapper.appendChild(positionerEl);
         }
     }
-
-// script.js
-
-// script.js
-
-// script.js
-
     function updateKeySignatureDisplay() {
         keySigContainer.innerHTML = "";
         const signatures = KEY_SIGNATURE_DATA[currentStep];
@@ -385,6 +407,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function updateJianpuDisplay() {
+        // 1. 清空旧内容
+        jianpuDisplayContainer.innerHTML = "";
+
+        // 2. 从我们已有的数据中获取调名
+        const names = KEY_SIGNATURE_NAMES[currentStep];
+        if (!names) return;
+
+        // 3. 循环所有可能的调名 (例如 "C♯ Major" 和 "D♭ Major")
+        Object.values(names).forEach(fullName => {
+            // 4. 从 "C♯ Major" 中提取 "C♯"
+            const keyName = fullName.split(' ')[0];
+            const jianpuText = `1 = ${keyName}`;
+
+            // 5. 创建 <p> 元素并显示
+            const p = document.createElement("p");
+            // 使用 Bootstrap 样式让它看起来更醒目
+            p.className = "h4 fw-bold mb-1";
+            p.textContent = jianpuText;
+            jianpuDisplayContainer.appendChild(p);
+        });
+    }
     // =====================================================================
     // =================== 3. 主更新与事件处理 ===========================
     // =====================================================================
@@ -403,7 +447,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         updatePianoHighlight();
         updateKeySignatureDisplay();
-
+        updateJianpuDisplay();
         keySelectorDropdown.value = currentStep;
     }
 
@@ -458,6 +502,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // =================== 4. 初始化 =======================================
     // =====================================================================
     function initialize() {
+        const localeData = document.getElementById("localization-data");
+        if (localeData && localeData.dataset.tonic) {
+            localizedTonic = localeData.dataset.tonic;
+        }
         // --- 【调用】先创建钢琴, 再执行其他 ---
         createPiano();
 

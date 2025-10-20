@@ -97,15 +97,48 @@
     font-size: 1.1em;
     color: #7f8c8d;
 }
+
+.tonic-indicator {
+    display: none; /* 默认隐藏 */
+    position: absolute;
+    top: -42px; /* 位于琴键上方 42px 处 */
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+    z-index: 20; /* 必须高于黑键 (z-index: 10) */
+    pointer-events: none; /* 避免遮挡鼠标点击 */
+}
+
+.tonic-indicator.show {
+    display: flex;
+}
+
+.tonic-text {
+    background-color: #2c3e50; /* 深色背景 */
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap; /* 确保 "主音" 不会换行 */
+}
+
+.tonic-triangle {
+    color: #2c3e50; /* 匹配背景色 */
+    font-size: 1.2em;
+    line-height: 0.8; /* 缩小行高让三角紧贴 */
+    margin-top: -1px; /* 轻微上移，与文本框连接 */
+}
+
 .piano {
     display: flex;
     padding: 0;
-    margin: 0 auto;
+    margin: 42px auto 0;
     list-style: none;
     height: 240px;
     width: fit-content;
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 

@@ -20,6 +20,20 @@
                         <li>@Localizer["The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs."]</li>
                     </ol>
                 </div>
+                <hr class="my-0">
+                <div class="card-body">
+                    <h6 class="card-subtitle mt-4 mb-2 text-muted">@Localizer["Quick Select Key"]</h6>
+                    <label for="key-selector-dropdown" class="visually-hidden">@Localizer["Select a Major Key"]</label>
+
+                    <select class="form-select" id="key-selector-dropdown">
+                    </select>
+
+                    <h6 class="card-subtitle mt-4 mb-2 text-muted">@Localizer["Jianpu Key"]</h6>
+
+                    <div id="jianpu-display-container" class="text-center">
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -140,12 +154,16 @@
     </div>
 </div>
 
+<div id="localization-data" data-tonic="@Localizer["Tonic"]" style="display: none;"></div>
+
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section scripts {
     <script src="~/scripts/major.js"></script>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css"/>
 }
