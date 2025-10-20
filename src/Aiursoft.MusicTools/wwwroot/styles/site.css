@@ -7,7 +7,7 @@
     position: relative;
     width: clamp(280px, 85vw, 360px); /* 响应式宽度：最小280px, 最大360px */
     aspect-ratio: 1 / 1; /* 保持宽高比为1:1，自动计算高度 */
-    margin: 10px;
+    margin: 10px auto; /* ...改成这行 (垂直10px, 水平auto) */
 }
 
 .outer-circle, .inner-circle {
@@ -105,13 +105,17 @@
     font-size: 1.1em;
     color: #7f8c8d;
 }
-
+/* 在 .piano 规则中 */
 .piano {
     display: flex;
-    padding: 0;
-    margin: 0;
+    /* padding: 0; */ /* padding: 0; 在这里不是必须的 */
     list-style: none;
-    height: 240px; /* 减小高度 */
+
+    /* --- 修改这里 --- */
+    /* margin: 0; */ /* 把这行... */
+    margin: 0 auto; /* ...改成这行 (垂直0, 水平auto) */
+
+    height: 240px;
     width: fit-content;
     border-radius: 5px;
     overflow: hidden;
