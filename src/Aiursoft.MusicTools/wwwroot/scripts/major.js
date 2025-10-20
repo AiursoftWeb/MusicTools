@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let chromaticVisualAngle = 0; // 【新增】追踪半音阶圈的视觉角度
     let fifthsVisualAngle = 0;    // 【新增】追踪五度圈的视觉角度
     let localizedTonic = "Tonic"; // <--【!! 新增此行 !!】 (默认值)
+    let audioPlayer;
     // --- DOM 元素获取 ---
     const chromaticOuterCircle = document.getElementById(
         "chromatic-outer-circle"
@@ -132,6 +133,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const keySigContainer = document.getElementById("key-signature-container");
     const keySelectorDropdown = document.getElementById("key-selector-dropdown"); // <--【!! 新增此行 !!】
     const jianpuDisplayContainer = document.getElementById("jianpu-display-container"); // <--【!! 新增此行 !!】
+    const playStopButton = document.getElementById('play-stop-btn');
+    const songSelector = document.getElementById('song-selector-dropdown');
+    const loopCheckbox = document.getElementById('loop-song-checkbox');
     let pianoKeys = []; // 【修改】先声明，待钢琴创建后再填充
 
     // =====================================================================
@@ -449,6 +453,10 @@ document.addEventListener("DOMContentLoaded", () => {
         updateKeySignatureDisplay();
         updateJianpuDisplay();
         keySelectorDropdown.value = currentStep;
+
+        if (audioPlayer) {
+            audioPlayer.setKey(currentStep);
+        }
     }
 
     // --- 事件处理 (无需改动) ---
@@ -508,6 +516,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         // --- 【调用】先创建钢琴, 再执行其他 ---
         createPiano();
+
+        audioPlayer = new AudioPlayer({
+            playStopButton: playStopButton,
+            songSelector: songSelector,
+            loopCheckbox: loopCheckbox
+        });
 
         keyDisplayNames.forEach((keyName, index) => {
             const option = document.createElement("option");
