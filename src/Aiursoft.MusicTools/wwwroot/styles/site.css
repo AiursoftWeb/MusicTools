@@ -1,0 +1,243 @@
+/* ================================== */
+/* 组件样式 (移动端尺寸)        */
+/* ================================== */
+
+/* --- 音阶圈 (缩小) --- */
+.circle-container {
+    position: relative;
+    width: clamp(280px, 85vw, 360px); /* 响应式宽度：最小280px, 最大360px */
+    aspect-ratio: 1 / 1; /* 保持宽高比为1:1，自动计算高度 */
+    margin: 10px;
+}
+
+.outer-circle, .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outer-circle {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.note-label {
+    width: 42px;
+    height: 42px;
+    /* ... 其余样式不变 ... */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.note[data-is-black-key="true"] .note-label {
+    background-color: #333;
+    color: #fff;
+    border-color: #000;
+}
+
+.inner-circle {
+    width: 60%;
+    height: 60%;
+    background-color: #e9eef2;
+    border: 1px solid #ccc;
+    transition: transform 0.5s cubic-bezier(0.68, -0.15, 0.27, 1.15);
+}
+
+.degree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px;
+    font-size: 1.1em;
+    /* ... 其余样式不变 ... */
+    background-color: #ff9800;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.current-key-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.key-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    display: block;
+    color: #2c3e50;
+}
+
+.key-mode {
+    font-size: 1.1em;
+    color: #7f8c8d;
+}
+
+.piano {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 240px; /* 减小高度 */
+    width: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.piano .white {
+    width: 45px; /* 减小白键宽度 */
+    /* ... 其余样式不变 ... */
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #b3b3b3;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.piano .black {
+    width: 28px; /* 减小黑键宽度 */
+    height: 60%;
+    /* ... 其余样式不变 ... */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    background-color: #2c3e50;
+    border: 2px solid #2c3e50;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.piano .white.highlight {
+    background-color: #6ba5d7;
+    border-color: #5a8fbb;
+}
+
+.piano .black.highlight {
+    background-color: rgb(75, 189, 84);
+    border-color: #5a8fbb;
+}
+
+.note-name {
+    font-size: 1em; /* ... */
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #a0a0a0;
+    pointer-events: none;
+}
+
+.black .note-name {
+    color: #d0d0d0;
+    font-size: 0.9em;
+}
+
+.scale-degree {
+    font-size: 1.3em; /* ... */
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    pointer-events: none;
+    display: none;
+}
+
+.black .scale-degree {
+    top: 50%;
+    color: #ffffff;
+}
+
+.piano .highlight .scale-degree {
+    display: block;
+}
+
+
+/* --- 五线谱 (缩小) --- */
+@font-face {
+    font-family: 'Bravura';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(/fonts/bravura-latin-400-normal.woff2) format('woff2'), url(/fonts/bravura-latin-400-normal.woff) format('woff');
+}
+
+.staff-wrapper {
+    position: relative;
+    width: clamp(280px, 90vw, 400px); /* 响应式宽度 */
+    height: 4em;
+    font-size: 20px; /* 关键：减小字体基准来缩小整个组件 */
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.staff-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+}
+
+.clef, .accidental {
+    font-family: 'Bravura', serif !important;
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-1.7em); /* 保留视觉校准 */
+}
+
+
+/* ======================================================= */
+/* ====== 五线谱重叠问题修正 (V4 Layout) ====== */
+/* ======================================================= */
+
+/* --- 为新的 "谱组" 容器 (.key-signature-pair) 添加样式 --- */
+.key-signature-pair {
+    display: flex;
+    flex-direction: column; /* 默认垂直排列高低音谱号 */
+    align-items: center;
+    gap: 0; /* 高低音谱号之间不需要额外间距 */
+}
