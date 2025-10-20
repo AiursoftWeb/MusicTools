@@ -4,7 +4,7 @@
 [![Pipeline stat](https://gitlab.aiursoft.cn/aiursoft/musicTools/badges/master/pipeline.svg)](https://gitlab.aiursoft.cn/aiursoft/musicTools/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.cn/aiursoft/musicTools/badges/master/coverage.svg)](https://gitlab.aiursoft.cn/aiursoft/musicTools/-/pipelines)
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/musicTools.svg)](https://gitlab.aiursoft.cn/aiursoft/musicTools/-/commits/master?ref_type=heads)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FmusicTools.aiursoft.cn)](https://musicTools.aiursoft.cn)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FmusicTools.aiursoft.com)](https://musicTools.aiursoft.com)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/musictools.svg)](https://hub.docker.com/r/aiursoft/musictools)
 
 MusicTools is a project built with ASP.NET Core that provides various music-related tools and features.
@@ -15,7 +15,7 @@ Default user name is `admin@default.com` and default password is `admin123`.
 
 ## Try
 
-Try a running MusicTools [here](https://musicTools.aiursoft.cn).
+Try a running MusicTools [here](https://musictools.aiursoft.com).
 
 ## Run in Ubuntu
 
