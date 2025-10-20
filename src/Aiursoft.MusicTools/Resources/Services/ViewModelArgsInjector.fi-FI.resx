@@ -129,5 +129,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Luvaton</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>Musiikkityökalut</value>
+  </data>
 
 </root>

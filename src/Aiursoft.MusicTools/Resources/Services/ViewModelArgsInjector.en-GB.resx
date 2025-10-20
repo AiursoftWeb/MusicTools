@@ -132,5 +132,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Unauthorised</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>Music Tools</value>
+  </data>
 
 </root>

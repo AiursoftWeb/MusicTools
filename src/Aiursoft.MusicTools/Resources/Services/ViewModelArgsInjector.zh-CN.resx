@@ -132,5 +132,8 @@
   <data name="Error" xml:space="preserve">
     <value>错误</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>音乐工具</value>
+  </data>
 
 </root>

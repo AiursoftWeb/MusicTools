@@ -129,5 +129,8 @@
   <data name="Error" xml:space="preserve">
     <value>Помилка</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>Музичні інструменти</value>
+  </data>
 
 </root>

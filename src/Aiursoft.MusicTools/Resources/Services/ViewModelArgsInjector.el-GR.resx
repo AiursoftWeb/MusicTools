@@ -129,5 +129,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Μη Εξουσιοδοτημένος</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>Εργαλεία Μουσικής</value>
+  </data>
 
 </root>

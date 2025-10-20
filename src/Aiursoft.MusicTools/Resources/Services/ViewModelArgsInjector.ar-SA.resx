@@ -129,5 +129,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>غير مصرح</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>أدوات الموسيقى</value>
+  </data>
 
 </root>

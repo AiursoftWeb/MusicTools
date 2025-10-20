@@ -132,5 +132,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>ไม่ได้รับอนุญาต</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>เครื่องมือด้านดนตรี</value>
+  </data>
 
 </root>

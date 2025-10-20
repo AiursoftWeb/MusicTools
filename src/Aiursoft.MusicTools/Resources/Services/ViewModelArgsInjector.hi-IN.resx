@@ -129,5 +129,8 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>अनधिकृत</value>
   </data>
+  <data name="Music Tools" xml:space="preserve">
+    <value>संगीत उपकरण</value>
+  </data>
 
 </root>
