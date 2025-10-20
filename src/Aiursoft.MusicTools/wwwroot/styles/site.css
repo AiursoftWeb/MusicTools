@@ -1,12 +1,7 @@
-/* ================================== */
-/* 组件样式 (移动端尺寸)        */
-/* ================================== */
-
-/* --- 音阶圈 (缩小) --- */
 .circle-container {
     position: relative;
-    width: clamp(280px, 85vw, 360px); /* 响应式宽度：最小280px, 最大360px */
-    aspect-ratio: 1 / 1; /* 保持宽高比为1:1，自动计算高度 */
+    width: clamp(280px, 85vw, 360px);
+    aspect-ratio: 1 / 1;
 }
 
 .outer-circle, .inner-circle {
@@ -42,7 +37,6 @@
 .note-label {
     width: 42px;
     height: 42px;
-    /* ... 其余样式不变 ... */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -74,7 +68,6 @@
     height: 32px;
     margin: -16px;
     font-size: 1.1em;
-    /* ... 其余样式不变 ... */
     background-color: #ff9800;
     color: white;
     border-radius: 50%;
@@ -104,11 +97,10 @@
     font-size: 1.1em;
     color: #7f8c8d;
 }
-/* 在 .piano 规则中 */
 .piano {
     display: flex;
     padding: 0;
-    margin: 0 auto; /* <-- 修改这里 (垂直为0, 水平auto) */
+    margin: 0 auto;
     list-style: none;
     height: 240px;
     width: fit-content;
@@ -118,8 +110,7 @@
 }
 
 .piano .white {
-    width: 45px; /* 减小白键宽度 */
-    /* ... 其余样式不变 ... */
+    width: 45px;
     position: relative;
     height: 100%;
     background-color: #fff;
@@ -130,9 +121,8 @@
 }
 
 .piano .black {
-    width: 28px; /* 减小黑键宽度 */
+    width: 28px;
     height: 60%;
-    /* ... 其余样式不变 ... */
     position: absolute;
     top: 0;
     left: 100%;
@@ -225,18 +215,12 @@
     line-height: 1;
     display: flex;
     align-items: center;
-    transform: translateY(-1.7em); /* 保留视觉校准 */
+    transform: translateY(-1.7em);
 }
 
-
-/* ======================================================= */
-/* ====== 五线谱重叠问题修正 (V4 Layout) ====== */
-/* ======================================================= */
-
-/* --- 为新的 "谱组" 容器 (.key-signature-pair) 添加样式 --- */
 .key-signature-pair {
     display: flex;
-    flex-direction: column; /* 默认垂直排列高低音谱号 */
+    flex-direction: column;
     align-items: center;
-    gap: 0; /* 高低音谱号之间不需要额外间距 */
+    gap: 0;
 }
