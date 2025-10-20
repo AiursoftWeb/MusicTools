@@ -114,5 +114,74 @@
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Tämä on malliprojekti, josta aloitamme matkan...</value>
   </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Mikä tämä on?</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Käyttöohje</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Tervetuloa!</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Kromaattinen asteikko näyttää kaikki 12 nuottia. Sisemmät numerot (1-7) korostavat valitun sävellajin duuriasteikon nuotteja.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Interaktiivinen piano korostaa automaattisesti kaikki valitun sävellajin nuotit (sekä niiden asteet asteikolla).</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Käytä kummankin ympyrän alla olevia &apos;Kierrä&apos;-painikkeita valitaksesi uuden sävellajin.</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Pikanäppäin</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Tämä työkalu auttaa sinua visualisoimaan musiikinteoriaa. Se yhdistää kromaattisen asteikon, kvinttiympyrän, pianon koskettimon ja standardin nuottikirjoituksen yhdessä paikassa.</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Kappale</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Valitse duurisävellaji</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Jianpu-avain</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Kvinttiympyrä järjestää sävelet täydellisten kvinttien perusteella. Ympyrän kiertäminen osoittaa, miten sävelet liittyvät toisiinsa. Jokainen napsautus (yksi &apos;kvintti&apos;) lisää tai poistaa yhden ylennys-/alennusmerkin sävellajista.</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Toista</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Toistonauhdutus</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Kappalesoitin</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Korotusmerkkien näyttö esittää oikeat ylennys- ja alennusmerkit valitulle sävellajalle sekä diskantti- että bassoviivastolla.</value>
+  </data>
+  <data name="Chromatic Scale" xml:space="preserve">
+    <value>Kromaattinen asteikko</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Kierrä vasemmalle</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Kierrä oikealle</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Kvinttiympyrä</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Vuorovaikutteinen piano</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Perusaste</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Sävellaji</value>
+  </data>
 
 </root>
