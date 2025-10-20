@@ -69,6 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
         3: { flat: { type: 'flats', count: 3 } }, // Eb
         8: { flat: { type: 'flats', count: 4 } }, // Ab
     };
+
+    const KEY_SIGNATURE_NAMES = {
+        0: { sharp: 'C Major' },
+        7: { sharp: 'G Major' },
+        2: { sharp: 'D Major' },
+        9: { sharp: 'A Major' },
+        4: { sharp: 'E Major' },
+        11: { sharp: 'B Major', flat: 'C♭ Major' }, // 同音异名
+        6: { sharp: 'F♯ Major', flat: 'G♭ Major' }, // 同音异名
+        1: { sharp: 'C♯ Major', flat: 'D♭ Major' }, // 同音异名
+        5: { flat: 'F Major' },
+        10: { flat: 'B♭ Major' },
+        3: { flat: 'E♭ Major' },
+        8: { flat: 'A♭ Major' }
+    };
+
     const ACCIDENTAL_POSITIONS = {
         treble: {
             // F#, C#, G#, D#, A#, E#, B#
@@ -320,19 +336,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // script.js
 
+// script.js
+
+// script.js
+
     function updateKeySignatureDisplay() {
         keySigContainer.innerHTML = "";
         const signatures = KEY_SIGNATURE_DATA[currentStep];
-        if (!signatures) return;
+        const names = KEY_SIGNATURE_NAMES[currentStep];
 
-        // 对每一个调号记法 (例如 sharp 和 flat) 进行循环
-        Object.values(signatures).forEach((sig) => {
+        if (!signatures || !names) return;
+
+        Object.entries(signatures).forEach(([keyType, sig]) => {
             if (sig) {
                 // 1. 为每一对高低音谱号创建一个包裹容器
                 const pairContainer = document.createElement("div");
                 pairContainer.className = "key-signature-pair";
 
-                // 2. 创建高音和低音谱号，并添加到 "谱组" 容器中
+                // 2. 查找对应的调名
+                const keyName = names[keyType]; // 例如 "C♯ Major" 或 "D♭ Major"
+
+                if (keyName) {
+                    // 3. 创建并附加调名标签
+                    const label = document.createElement("div");
+                    // 【修改】使用 mb-2 (margin-bottom) 来在标签 *下方* 添加间距
+                    label.className = "key-signature-label text-center text-muted fw-bold mb-2";
+                    label.textContent = keyName;
+
+                    // 【修改】将标签 *首先* 附加到容器中
+                    pairContainer.appendChild(label);
+                }
+                // =====================================================================
+
+
+                // 4. 创建高音和低音谱号 (现在在标签之后附加)
                 const trebleStaff = createStaff("treble");
                 addKeySignature(trebleStaff, "treble", sig.type, sig.count);
                 pairContainer.appendChild(trebleStaff);
@@ -341,7 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 addKeySignature(bassStaff, "bass", sig.type, sig.count);
                 pairContainer.appendChild(bassStaff);
 
-                // 3. 将完整的 "谱组" 容器添加到主容器中
+                // 5. 将完整的 "谱组" 容器添加到主容器中
                 keySigContainer.appendChild(pairContainer);
             }
         });
