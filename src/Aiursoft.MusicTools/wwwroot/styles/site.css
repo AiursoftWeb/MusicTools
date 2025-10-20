@@ -97,17 +97,21 @@
     font-size: 1.1em;
     color: #7f8c8d;
 }
+/* ================================== */
+/* 钢琴键盘 (移动设备优先)         */
+/* ================================== */
 
+/* --- 主音指示器 (Tonic Indicator) --- */
 .tonic-indicator {
-    display: none; /* 默认隐藏 */
+    display: none;
     position: absolute;
-    top: -42px; /* 位于琴键上方 42px 处 */
+    top: -42px; /* 保持在琴键上方 42px (由 .piano 的 margin-top 腾出空间) */
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
     align-items: center;
-    z-index: 20; /* 必须高于黑键 (z-index: 10) */
-    pointer-events: none; /* 避免遮挡鼠标点击 */
+    z-index: 20;
+    pointer-events: none;
 }
 
 .tonic-indicator.show {
@@ -115,35 +119,37 @@
 }
 
 .tonic-text {
-    background-color: #2c3e50; /* 深色背景 */
+    background-color: #2c3e50;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.8em; /* 0.8em 在小屏幕上已经很合适了 */
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 4px;
-    white-space: nowrap; /* 确保 "主音" 不会换行 */
+    white-space: nowrap;
 }
 
 .tonic-triangle {
-    color: #2c3e50; /* 匹配背景色 */
+    color: #2c3e50;
     font-size: 1.2em;
-    line-height: 0.8; /* 缩小行高让三角紧贴 */
-    margin-top: -1px; /* 轻微上移，与文本框连接 */
+    line-height: 0.8;
+    margin-top: -1px;
 }
 
+/* --- 钢琴 (Mobile Base Styles) --- */
 .piano {
     display: flex;
+    flex-wrap: nowrap; /* 关键：强制单行 */
     padding: 0;
-    margin: 42px auto 0;
+    margin: 42px auto 0; /* 保持 42px 顶部空间给指示器 */
     list-style: none;
-    height: 240px;
+    height: 180px; /* 移动端高度减小 */
     width: fit-content;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .piano .white {
-    width: 45px;
+    width: 35px; /* 移动端宽度减小 */
     position: relative;
     height: 100%;
     background-color: #fff;
@@ -154,7 +160,7 @@
 }
 
 .piano .black {
-    width: 28px;
+    width: 22px; /* 移动端宽度减小 */
     height: 60%;
     position: absolute;
     top: 0;
@@ -179,10 +185,11 @@
     border-color: #5a8fbb;
 }
 
+/* --- 琴键文字 (Mobile Base Styles) --- */
 .note-name {
-    font-size: 1em; /* ... */
+    font-size: 0.8em; /* 移动端字体减小 */
     position: absolute;
-    bottom: 10px;
+    bottom: 8px; /* 调整位置 */
     width: 100%;
     text-align: center;
     color: #a0a0a0;
@@ -191,11 +198,11 @@
 
 .black .note-name {
     color: #d0d0d0;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .scale-degree {
-    font-size: 1.3em; /* ... */
+    font-size: 1em; /* 移动端字体减小 */
     position: absolute;
     top: 65%;
     width: 100%;
@@ -215,6 +222,46 @@
     display: block;
 }
 
+/* --- 黑键指示器 (不变) --- */
+.black .tonic-text {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    border: 1px solid #ccc;
+}
+
+.black .tonic-triangle {
+    color: #f8f9fa;
+}
+
+/* ================================== */
+/* 桌面端 (平板及以上) 样式覆盖    */
+/* ================================== */
+@media (min-width: 768px) {
+    .piano {
+        height: 240px; /* 恢复桌面端高度 */
+    }
+
+    .piano .white {
+        width: 45px; /* 恢复桌面端白键宽度 */
+    }
+
+    .piano .black {
+        width: 28px; /* 恢复桌面端黑键宽度 */
+    }
+
+    .note-name {
+        font-size: 1em; /* 恢复桌面端字体 */
+        bottom: 10px;
+    }
+
+    .black .note-name {
+        font-size: 0.9em;
+    }
+
+    .scale-degree {
+        font-size: 1.3em; /* 恢复桌面端字体 */
+    }
+}
 
 /* --- 五线谱 (缩小) --- */
 @font-face {
