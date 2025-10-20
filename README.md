@@ -5,9 +5,9 @@
 [![Test Coverage](https://gitlab.aiursoft.cn/aiursoft/musicTools/badges/master/coverage.svg)](https://gitlab.aiursoft.cn/aiursoft/musicTools/-/pipelines)
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/musicTools.svg)](https://gitlab.aiursoft.cn/aiursoft/musicTools/-/commits/master?ref_type=heads)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2FmusicTools.aiursoft.cn)](https://musicTools.aiursoft.cn)
-[![Docker](https://img.shields.io/docker/pulls/aiursoft/musicTools.svg)](https://hub.docker.com/r/aiursoft/musicTools)
+[![Docker](https://img.shields.io/docker/pulls/aiursoft/musictools.svg)](https://hub.docker.com/r/aiursoft/musictools)
 
-MusicTools is a sample project.
+MusicTools is a project built with ASP.NET Core that provides various music-related tools and features.
 
 ![screenshot](./screenshot.png)
 
@@ -56,8 +56,8 @@ First, install Docker [here](https://docs.docker.com/get-docker/).
 Then run the following commands in a Linux shell:
 
 ```bash
-image=aiursoft/musicTools
-appName=musicTools
+image=aiursoft/musictools
+appName=musictools
 sudo docker pull $image
 sudo docker run -d --name $appName --restart unless-stopped -p 5000:5000 -v /var/www/$appName:/data $image
 ```
@@ -68,7 +68,7 @@ The docker image has the following context:
 
 | Properties  | Value                           |
 |-------------|---------------------------------|
-| Image       | aiursoft/musicTools               |
+| Image       | aiursoft/musictools               |
 | Ports       | 5000                            |
 | Binary path | /app                            |
 | Data path   | /data                           |
