@@ -43,15 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
         'C',        // 0
         'C♯ / D♭', // 1
         'D',        // 2
-        'D♯ / E♭', // 3
+        'E♭',       // 3  (移除了 D♯，因为程序只支持 E♭)
         'E',        // 4
         'F',        // 5
         'F♯ / G♭', // 6
         'G',        // 7
-        'G♯ / A♭', // 8
+        'A♭',       // 8  (移除了 G♯，因为程序只支持 A♭)
         'A',        // 9
-        'A♯ / B♭', // 10
-        'B / C♭'   // 11 <-- 【修正点】将 'B' 修正为 'B / C♭'
+        'B♭',       // 10 (移除了 A♯，因为程序只支持 B♭)
+        'B / C♭'   // 11 (保持不变，因为 B 和 C♭ 两种记法都支持)
     ];
 
     // --- 【移植】五线谱调号数据 ---
@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fifthsRightBtn = document.getElementById("fifths-rotate-right");
     const pianoContainer = document.querySelector(".piano-container");
     const keySigContainer = document.getElementById("key-signature-container");
+    const keySelectorDropdown = document.getElementById("key-selector-dropdown"); // <--【!! 新增此行 !!】
     let pianoKeys = []; // 【修改】先声明，待钢琴创建后再填充
 
     // =====================================================================
@@ -402,6 +403,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         updatePianoHighlight();
         updateKeySignatureDisplay();
+
+        keySelectorDropdown.value = currentStep;
     }
 
     // --- 事件处理 (无需改动) ---
@@ -438,12 +441,32 @@ document.addEventListener("DOMContentLoaded", () => {
         update();
     });
 
+    keySelectorDropdown.addEventListener("change", () => {
+        const newStep = parseInt(keySelectorDropdown.value, 10);
+
+        if (newStep === currentStep) return;
+
+        currentStep = newStep;
+
+        chromaticVisualAngle = currentStep * 30;
+        fifthsVisualAngle = circleOfFifthsOrder.indexOf(currentStep) * 30;
+
+        update(); // 调用主更新函数
+    });
+
     // =====================================================================
     // =================== 4. 初始化 =======================================
     // =====================================================================
     function initialize() {
         // --- 【调用】先创建钢琴, 再执行其他 ---
         createPiano();
+
+        keyDisplayNames.forEach((keyName, index) => {
+            const option = document.createElement("option");
+            option.value = index; // 值为 0, 1, 2...
+            option.textContent = keyName; // 文本为 'C', 'C♯ / D♭'...
+            keySelectorDropdown.appendChild(option);
+        });
 
         createOuterNotes(chromaticOuterCircle, [...Array(12).keys()]);
         createOuterNotes(fifthsOuterCircle, circleOfFifthsOrder);
