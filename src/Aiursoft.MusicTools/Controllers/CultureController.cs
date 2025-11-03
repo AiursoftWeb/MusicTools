@@ -24,6 +24,6 @@ public class CultureController : ControllerBase
             return LocalRedirect(returnUrl);
         }
 
-        return RedirectToAction("Major", "Home");
+        return RedirectToAction("Index", "Home");
     }
 }
