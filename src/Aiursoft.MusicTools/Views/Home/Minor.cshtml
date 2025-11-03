@@ -152,6 +152,15 @@
                         <div class="card-body">
                             <div class="piano-container table-responsive">
                             </div>
+                            <div>
+                                <h1>Interval: </h1>
+                                <span class="fs-3">Select: </span>
+                                <span class="fs-3" id="interval-1"></span>
+                                -
+                                <span class="fs-3" id="interval-2"></span>
+
+                                <span class="fs-3 ml-4" id="interval-result"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +184,23 @@
     </div>
 </div>
 
-<div id="localization-data" data-tonic="@Localizer["Tonic"]" style="display: none;"></div>
+<div id="localization-data" data-tonic="@Localizer["Tonic"]" 
+data-perfectUnison="@Localizer["PerfectUnison"]"
+data-minorSecond="@Localizer["MinorSecond"]"
+data-majorSecond="@Localizer["MajorSecond"]"
+data-minorThird="@Localizer["MinorThird"]"
+data-majorThird="@Localizer["MajorThird"]"
+data-perfectFourth="@Localizer["PerfectFourth"]"
+data-augmentedFourth="@Localizer["AugmentedFourth"]"
+data-perfectFifth="@Localizer["PerfectFifth"]"
+data-minorSixth="@Localizer["MinorSixth"]"
+data-majorSixth="@Localizer["MajorSixth"]"
+data-minorSeventh="@Localizer["MinorSeventh"]"
+data-majorSeventh="@Localizer["MajorSeventh"]"
+data-perfectOctave="@Localizer["PerfectOctave"]"
+data-unableToRecognizeNoteName="@Localizer["UnableToRecognizeNoteName"]"
+data-pleaseIputWithTheLowerNoteFirst="@Localizer["PleaseIputWithTheLowerNoteFirst"]"
+style="display: none;"></div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
