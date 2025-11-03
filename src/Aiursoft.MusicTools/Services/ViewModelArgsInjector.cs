@@ -66,6 +66,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Error"];
         _ = localizer["Major Calculator"];
         _ = localizer["Minor Calculator"];
+        _ = localizer["Interval Calculator"];
     }
 
     public void Inject(

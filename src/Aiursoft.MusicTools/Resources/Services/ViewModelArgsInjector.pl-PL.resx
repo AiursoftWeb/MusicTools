@@ -138,5 +138,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>Kalkulator Główny</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Kalkulator Interwałów</value>
+  </data>
 
 </root>

@@ -141,5 +141,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>Máy Tính Âm Giai Trưởng</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Máy Tính Khoảng Cách</value>
+  </data>
 
 </root>

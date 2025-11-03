@@ -141,5 +141,8 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>小調計算器</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>音程計算器</value>
+  </data>
 
 </root>

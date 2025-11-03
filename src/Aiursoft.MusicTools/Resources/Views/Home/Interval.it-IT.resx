@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Major Third" xml:space="preserve">
+    <value>Terza maggiore</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Quarta giusta</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Seconda minore</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Seconda maggiore</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Quarta Aumentata</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Terza minore</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Calcolatore di Intervalli</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Unisono Perfetto</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Quinta giusta</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Sesta minore</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Settima Minore</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Sesta maggiore</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Settima maggiore</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Inserisci prima la nota più grave.</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Ottava perfetta</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Impossibile riconoscere il nome della nota</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Come Usare</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>La prima nota che selezioni sarà la fondamentale.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Risultato</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Clicca due tasti qualsiasi sul pianoforte sottostante.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>L&apos;intervallo tra le due note verrà calcolato e visualizzato.</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Pianoforte Interattivo</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Fai di nuovo clic su un tasto selezionato per deselezionarlo.</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Nona Maggiore</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Nona Minore</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Decima minore</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Undicesima perfetta</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>Undicesima aumentata</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Decima maggiore</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Tredicesima minore</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Dodicesima perfetta</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Tredicesima maggiore</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Quattordicesima minore</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Quattordicesima maggiore</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Quindicesima perfetta</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Diciassettesima minore</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Diciassettesima maggiore</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Sedicesima Maggiore</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Diciottesima perfetta</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Ventesima minore</value>
+  </data>
+  <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Diciottesima aumentata</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Sedicesima minore</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Diciannovesima perfetta</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Ventesima Seconda Perfetta</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Ventesima Prima Maggiore</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Ventesima maggiore</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Ventesima Prima Minore</value>
+  </data>
+
+</root>

@@ -138,5 +138,8 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>माइनर कैलकुलेटर</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>अंतराल कैलकुलेटर</value>
+  </data>
 
 </root>

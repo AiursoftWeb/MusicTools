@@ -141,5 +141,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>主要計算機</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>音程計算機</value>
+  </data>
 
 </root>

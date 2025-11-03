@@ -141,5 +141,8 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Kleinrechner</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervall-Rechner</value>
+  </data>
 
 </root>

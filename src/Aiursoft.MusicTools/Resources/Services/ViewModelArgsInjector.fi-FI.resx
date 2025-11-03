@@ -138,5 +138,8 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Mollilaskin</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervallilaskin</value>
+  </data>
 
 </root>

@@ -141,5 +141,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>เครื่องคำนวณเมเจอร์</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณช่วงเสียง</value>
+  </data>
 
 </root>

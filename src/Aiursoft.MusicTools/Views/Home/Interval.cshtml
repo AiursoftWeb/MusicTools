@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = @Localizer["Interval Calculator"];
+}
+
+<div id="localization-data"
+     data-perfect-unison="@Localizer["Perfect Unison"]"
+     data-minor-second="@Localizer["Minor Second"]"
+     data-major-second="@Localizer["Major Second"]"
+     data-minor-third="@Localizer["Minor Third"]"
+     data-major-third="@Localizer["Major Third"]"
+     data-perfect-fourth="@Localizer["Perfect Fourth"]"
+     data-augmented-fourth="@Localizer["Augmented Fourth"]"
+     data-perfect-fifth="@Localizer["Perfect Fifth"]"
+     data-minor-sixth="@Localizer["Minor Sixth"]"
+     data-major-sixth="@Localizer["Major Sixth"]"
+     data-minor-seventh="@Localizer["Minor Seventh"]"
+     data-major-seventh="@Localizer["Major Seventh"]"
+     data-perfect-octave="@Localizer["Perfect Octave"]"
+
+     data-minor-ninth="@Localizer["Minor Ninth"]"
+     data-major-ninth="@Localizer["Major Ninth"]"
+     data-minor-tenth="@Localizer["Minor Tenth"]"
+     data-major-tenth="@Localizer["Major Tenth"]"
+     data-perfect-eleventh="@Localizer["Perfect Eleventh"]"
+     data-augmented-eleventh="@Localizer["Augmented Eleventh"]"
+     data-perfect-twelfth="@Localizer["Perfect Twelfth"]"
+     data-minor-thirteenth="@Localizer["Minor Thirteenth"]"
+     data-major-thirteenth="@Localizer["Major Thirteenth"]"
+     data-minor-fourteenth="@Localizer["Minor Fourteenth"]"
+     data-major-fourteenth="@Localizer["Major Fourteenth"]"
+
+     data-perfect-fifteenth="@Localizer["Perfect Fifteenth"]"
+     data-minor-sixteenth="@Localizer["Minor Sixteenth"]"
+     data-major-sixteenth="@Localizer["Major Sixteenth"]"
+     data-minor-seventeenth="@Localizer["Minor Seventeenth"]"
+     data-major-seventeenth="@Localizer["Major Seventeenth"]"
+     data-perfect-eighteenth="@Localizer["Perfect Eighteenth"]"
+     data-augmented-eighteenth="@Localizer["Augmented Eighteenth"]"
+     data-perfect-nineteenth="@Localizer["Perfect Nineteenth"]"
+     data-minor-twentieth="@Localizer["Minor Twentieth"]"
+     data-major-twentieth="@Localizer["Major Twentieth"]"
+     data-minor-twenty-first="@Localizer["Minor Twenty-First"]"
+     data-major-twenty-first="@Localizer["Major Twenty-First"]"
+     data-perfect-twenty-second="@Localizer["Perfect Twenty-Second"]"
+
+     data-unable-to-recognize-note-name="@Localizer["Unable to recognize note name"]"
+     data-please-iput-with-the-lower-note-first="@Localizer["Please input with the lower note first"]"
+     style="display: none;">
+</div>
+
+
+<div class="container-fluid py-4">
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Interval Calculator"]</h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">@Localizer["How to Use"]</h6>
+                    <ol class="mb-0 small">
+                        <li>@Localizer["Click any two keys on the piano below."]</li>
+                        <li>@Localizer["The first note you select will be the root."]</li>
+                        <li>@Localizer["The interval between the two notes will be calculated and displayed."]</li>
+                        <li>@Localizer["Click a selected key again to deselect it."]</li>
+                    </ol>
+                </div>
+                <hr class="my-0">
+                <div class="card-body text-center">
+                    <h6 class="card-subtitle mt-2 mb-2 text-muted">@Localizer["Result"]</h6>
+
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <span class="h4 fw-bold" id="interval-1">--</span>
+                        <span class="text-muted">@Localizer["to"]</span>
+                        <span class="h4 fw-bold" id="interval-2">--</span>
+                    </div>
+
+                    <div class="h3 fw-bold text-primary mt-3" id="interval-result" style="min-height: 2.5rem;">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Interactive Piano"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="piano-container table-responsive">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css"/>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/scripts/interval.js"></script>
+}

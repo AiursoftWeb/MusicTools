@@ -32,9 +32,22 @@ public class HomeController : Controller
         CascadedLinksIcon = "home",
         CascadedLinksOrder = 1,
         LinkText = "Minor Calculator",
-        LinkOrder = 1)]
+        LinkOrder = 2)]
     public IActionResult Minor()
     {
         return this.StackView(new MinorViewModel());
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Interval Calculator",
+        LinkOrder = 3)]
+    public IActionResult Interval()
+    {
+        return this.StackView(new IntervalViewModel());
     }
 }

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Minor Third" xml:space="preserve">
+    <value>小三度</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>小二度</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>大三度</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>增四度</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>大二度</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>完全四度</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>完全一度</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>音程計算機</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>完全五度</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>小六度</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>大六度</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>完全八度</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>大七度</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>小七度</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>無法辨識音符名稱</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>請先輸入較低的音符</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>使用方式</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>點擊下方鋼琴上的任意兩個琴鍵。</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>您選擇的第一個音符將作為根音。</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>互動式鋼琴</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>再次點選已選取的按鍵即可取消選取。</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>兩個音符之間的音程將會被計算並顯示。</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>小九度</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>增十一度</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>小十度</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>完全十二度</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>小十三度</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>大九度</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>大十度</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>完全十一度</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>小十四度</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>大十四度</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>完全十五度</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>大十三度</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>小十七度</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>大十六度</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>大十七度</value>
+  </data>
+  <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>增十八度</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>小二十度</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>完全十八度</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>小十六度</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>完全十九度</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>大廿一度</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>小廿一度</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>大二十度</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>完全二十二度</value>
+  </data>
+
+</root>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Minor Second" xml:space="preserve">
+    <value>Liten sekund</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Liten ters</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Ren prim</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Förstärkt kvart</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Stor ters</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Stor sekund</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervallräknare</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Rena kvarten</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Lilla sext</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Liten septima</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Stor sext</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Ren kvint</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Stor septima</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Perfekt oktav</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Vänligen ange den lägre tonen först.</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Kunde inte känna igen notnamn</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Resultat</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Hur man använder</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>till</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Klicka på valfria två tangenter på pianot nedan.</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Den första tonen du väljer blir grundtonen.</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Klicka på en markerad tangent igen för att avmarkera den.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Intervallet mellan de två tonerna kommer att beräknas och visas.</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interaktivt piano</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Stor decima</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Stor nona</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Liten decima</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Liten nona</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Perfekt duodecim</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Perfekt undecima</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Liten trettondel</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>Förstärkt undecima</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Perfekt kvintdecima</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Liten kvartdecima</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Stor trettondel</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Stor kvartdecima</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Stor sextondel</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Stor septimdecima</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Perfekt nittondel</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Perfekt oktav + undecima</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Lilla septimdecima</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Lilla sextondel</value>
+  </data>
+  <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Förstorad artonde</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Lilla tjugondel</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Stor tjugoförsta</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Stora tjugondelar</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Lilla tjugoförsta</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Perfekt tjugoandra</value>
+  </data>
+
+</root>

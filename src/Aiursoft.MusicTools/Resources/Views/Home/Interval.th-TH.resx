@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Major Third" xml:space="preserve">
+    <value>เมเจอร์เธิร์ด</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>เพอร์เฟกต์ฟอร์ท</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>เมเจอร์เซคอนด์</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>ยูนิสันสมบูรณ์</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณช่วงเสียง</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>เสียงที่ 4 เพิ่ม</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>ไมเนอร์เธิร์ด</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>เสียงไมเนอร์เซคอนด์</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>ช่วง 6th ไมเนอร์</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>ไมเนอร์เซเวนธ์</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>เมเจอร์ซิกส์</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>เมเจอร์เซเวนธ์</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>ไม่สามารถจดจำชื่อโน้ตได้</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>กรุณากรอกโน้ตตัวต่ำก่อน</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>อ็อกเทฟบริสุทธิ์</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>เพอร์เฟกต์ฟิฟธ์</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>วิธีการใช้งาน</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>โน้ตตัวแรกที่คุณเลือกจะเป็นรูท</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>คลิกปุ่มใดก็สองปุ่มบนเปียโนด้านล่าง</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>คลิกปุ่มที่เลือกไว้อีกครั้งเพื่อยกเลิกการเลือก</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>ช่วงห่างระหว่างโน้ตทั้งสองจะถูกคำนวณและแสดงผล</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>ถึง</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>ผลลัพธ์</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>เปียโนเชิงโต้ตอบ</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>สิบไมเนอร์</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>เมเจอร์ไนน์ท</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>เมเจอร์เทนธ์</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>เพอร์เฟกต์อิลิฟธ์</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>เพอร์เฟกต์ทเวลฟท์</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>ไมเนอร์เธอร์ที้นธ์</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>ออเกเมนเทด อีเลฟเวนธ์</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>เมเจอร์เทอร์ทีนธ์</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>ไมเนอร์นินธ์</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>เมเจอร์ฟอร์ทีนธ์</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>ไมเนอร์ฟอร์ทีนธ์</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>เพอร์เฟกต์ฟิฟทีนธ์</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>เพอร์เฟกต์นิเนททีนธ์</value>
+  </data>
+  <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>ช่วงสิบแปดเพิ่ม</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>ไมเนอร์ทเวนตีเอท</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>เพอร์เฟกต์ออคเทฟที่สิบแปด</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>เมเจอร์เซเวนทีนธ์</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>ไมเนอร์ซิกส์ทีนธ์</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>ไมเนอร์เซเวนทีนธ์</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>เมเจอร์ซิกส์ทีนธ์</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>ไมเนอร์ ทเวนตี้เฟิร์สท</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>เมเจอร์ทเวนตี้เฟิร์สท์</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>เมเจอร์ทเวนตีเอ็ท</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>เพอร์เฟกต์ทเวนตี้เซคอนด์</value>
+  </data>
+
+</root>

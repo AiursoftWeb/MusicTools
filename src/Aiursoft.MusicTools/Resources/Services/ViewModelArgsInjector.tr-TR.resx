@@ -138,5 +138,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>Ana Hesap Makinesi</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Aralık Hesaplayıcı</value>
+  </data>
 
 </root>

@@ -141,5 +141,8 @@
   <data name="Major Calculator" xml:space="preserve">
     <value>Calculadora de Acordes Mayores</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Calculadora de Intervalos</value>
+  </data>
 
 </root>

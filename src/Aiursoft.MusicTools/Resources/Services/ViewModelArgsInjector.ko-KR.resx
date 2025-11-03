@@ -141,5 +141,8 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>단조 계산기</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>인터벌 계산기</value>
+  </data>
 
 </root>
