@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
     const interval1El = document.getElementById('interval-1');
     const interval2El = document.getElementById('interval-2');
     const intervalResultEl = document.getElementById('interval-result');
+    const resetBtn = document.getElementById('reset-interval-btn'); // <-- !! 添加这一行
 
     // (B) 从 HTML data-* 属性中获取所有本地化字符串
     const localeData = document.getElementById("localization-data");
@@ -203,6 +204,22 @@ window.addEventListener("load", () => {
     function setupIntervalCalculator(container) {
         let firstNote = '', secondNote = '';
 
+        function resetSelection() {
+            firstNote = '';
+            secondNote = '';
+
+            // 清空 UI
+            intervalResultEl.innerText = '';
+            interval1El.innerText = '--';
+            interval2El.innerText = '--';
+
+            // 移除所有高亮
+            container.querySelectorAll('[data-note]').forEach(t => {
+                t.classList.remove(HIGH_LIGHT);
+            });
+        }
+
+        // 绑定重置按钮事件
         container.addEventListener('click', (ev) => {
             const targetKey = ev.target.closest('[data-note]');
             if (!targetKey) return;
@@ -251,6 +268,8 @@ window.addEventListener("load", () => {
                 interval2El.innerText = secondNote || '--';
             }
         });
+
+        resetBtn.addEventListener('click', resetSelection);
     }
     // =====================================================================
     // =================== 3. 精简版 createPiano ========================

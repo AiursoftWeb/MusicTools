@@ -162,5 +162,8 @@
   <data name="Minor Twenty-First" xml:space="preserve">
     <value>Ελάσσονα Εικοστή Πρώτη</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Επαναφορά Επιλογής</value>
+  </data>
 
 </root>

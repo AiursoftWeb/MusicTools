@@ -162,5 +162,8 @@
   <data name="Perfect Twenty-Second" xml:space="preserve">
     <value>Oktaf Kedua Sempurna</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Atur Ulang Pilihan</value>
+  </data>
 
 </root>

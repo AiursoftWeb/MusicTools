@@ -162,5 +162,8 @@
   <data name="Perfect Twenty-Second" xml:space="preserve">
     <value>परफेक्ट ट्वेंटी-सेकंड</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>चयन रीसेट करें</value>
+  </data>
 
 </root>
