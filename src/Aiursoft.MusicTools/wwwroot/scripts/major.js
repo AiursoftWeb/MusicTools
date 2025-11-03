@@ -583,6 +583,8 @@ function calculatePianoInterval(pianoContainer) {
         if (firstNote && secondNote) {
             const interval = calculateInterval(firstNote, secondNote)
             document.getElementById('interval-result').innerText = interval;
+        } else {
+            document.getElementById('interval-result').innerText = '';
         }
     });
 }
