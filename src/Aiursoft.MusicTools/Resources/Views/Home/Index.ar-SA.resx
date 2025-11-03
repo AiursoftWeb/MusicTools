@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>مرحباً بك</value>
+      <data name="Explore Major" xml:space="preserve">
+    <value>استكشف السلم الكبير</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>هذا مشروع قالب</value>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>لماذا صُمِّمت الموسيقى بهذه الطريقة؟</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>مرحبًا أيها العالم!</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>استكشف المقامات الصغيرة</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>دمج OpenID Connect</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&quot;اِشْهَد&quot; لُغَةَ المُوسِيقَى</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>لماذا تستخدم قالب Aiursoft؟</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>معاينة واجهة الأداة</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>دعم قواعد بيانات متعددة</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>الموسيقى ليست سحرًا؛ إنها مزيج رائع من الرياضيات والفيزياء والأنماط. أداتنا تكشف هذه الأنماط:</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>التحكم في الوصول القائم على الأدوار (RBAC)</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>سحر دائرة الخامسات</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>دمج سلس مع أي موفر OpenID Connect، مع مزامنة تلقائية للأدوار.</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>سواءً كنت طالبًا مبتدئًا، أو هاويًا فضوليًا، أو منتجًا محترفًا، ستوفر هذه الأداة بيئة تجريبية بديهية لاستكشاف السلالم، والتآلف، وتراكيب المقامات.</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>أساس حديث، غني بالميزات، وقابل للتوسعة بدرجة كبيرة لتطبيق الويب القادم الخاص بك.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>تفكيك نظام الاثنتي عشرة نغمة</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>قم بالتبديل بسهولة بين مزودي الخدمة مثل SQLite وMySQL وSQL Server وقاعدة البيانات في الذاكرة لأغراض الاختبار.</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>ربط كل شيء</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>شريط التنقل الديناميكي</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>مرحبًا بك في أداة نظرية الموسيقى التفاعلية. نحن نساعدك في ربط المفاهيم المجردة لنظرية الموسيقى — السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو — مما يتيح لك &quot;رؤية&quot; كيفية عمل الموسيقى حقًا.</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>الترجمات المدعومة بالذكاء الاصطناعي</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>المفاتيح الموسيقية ليست منعزلة. إن &quot;دائرة الخامسات&quot; هي بوصلة الموسيقى، فهي تكشف ترتيب جميع سلالم المفاتيح (C -&gt; G -&gt; D...) وعلاقاتها التوافقية. إنها المخطط الأساسي للتأليف، والتوزيع، والارتجال.</value>
   </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>نظام مدمج للتحكم في الوصول القائم على الأدوار (RBAC) لإدارة دقيقة للصلاحيات.</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>لماذا يُقسم الأوكتاف إلى 12 مفتاحًا؟ تُبنى الموسيقى الحديثة على نظام &apos;التقسيم المتساوي ذي الاثنتي عشرة نغمة&apos;، وهو حل رياضي بارع يسمح لجميع المفاتيح بأن تبدو &apos;مقبولة&apos;. تجعل دائرة النغمات اللونية الخاصة بنا هذا النظام النغمي المجرد بديهيًا بصريًا.</value>
   </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>توثيق شامل</value>
-  </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>يتم تعديل شريط التنقل تلقائيًا بناءً على أدوار المستخدمين وأذوناتهم.</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>يشمل وثائق شاملة وأمثلة عملية لمساعدتك على البدء بسرعة.</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>ترجمة آلية مدعومة بالذكاء الاصطناعي إلى 28 لغة للوصول إلى جمهور عالمي.</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>إدارة المستخدمين المدمجة</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>حل متكامل لمصادقة المستخدم وإدارة الملف الشخصي جاهز للاستخدام مباشرة.</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>إدارة الملفات المتكاملة</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>حقن التبعيات التلقائي</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>يتميز بنظام مدمج لإدارة الملفات مع ضغط تلقائي للصور الشخصية.</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>يتم تسجيل جميع التبعيات تلقائيًا وهي متاحة دائمًا عبر حقن المُنشئ.</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>تصميم متجاوب</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>تصميم متجاوب بالكامل يبدو رائعًا على كل من أجهزة الكمبيوتر المكتبية والهواتف المحمولة.</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>الوضع الداكن التلقائي</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>معبأ في حاويات للنشر</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>وضع الظلام الذكي الذي يتكيف تلقائيًا مع إعدادات نظام المستخدم.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>يأتي مع دعم كامل لـ Docker لنشر مبسط وموثوق ومتناسق.</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>بدء مشروع جديد</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>اقرأ المستند</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>هذا مشروع قالب، حيث نبدأ رحلة المستكشف...</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>ما هذا؟</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>مرحباً!</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>كيفية استخدامه</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>سيقوم البيانو التفاعلي بتسليط الضوء تلقائياً على جميع النوتات (ودرجات السلم الموسيقي الخاصة بها) للمفتاح المحدد.</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>استخدم أزرار &apos;تدوير&apos; الموجودة تحت أي من الدائرتين لاختيار مفتاح موسيقي جديد.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>تساعدك هذه الأداة على تصور نظرية الموسيقى. فهي تربط السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو، والتدوين الموسيقي القياسي في مكان واحد.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>يظهر السلم الكروماتي جميع النوتات الإثني عشر. تُبرز الأرقام الداخلية (1-7) نوتات السلم الكبير للمفتاح المحدد.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>اختر المفتاح بسرعة</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>اختر مفتاحًا رئيسيًا</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>ينظم دائرة الخامسات المفاتيح بناءً على الخامسات الكاملة. تدوير هذه الدائرة يوضح كيفية ارتباط المفاتيح. كل نقرة (تمثل &apos;خامسة&apos;) تضيف أو تزيل علامة رفع/خفض واحدة من سلّم المفتاح الموسيقي.</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>يعرض رمز المفتاح العلامات الموسيقية الحادة أو المسطحة الصحيحة للمفتاح على كل من المدرجين الصولفي والفا.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>أغنية</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>مشغل الأغاني</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>مفتاح الجيانبو</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>تشغيل متكرر</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>تشغيل</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>تدوير لليسار</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>السلم الكروماتي</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>تدوير لليمين</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>بيانو تفاعلي</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>دائرة الخامسات</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>النغمة الأساسية</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>مفتاح الموسيقى</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>قد تكون النظرية جافة، لكن مشاهدة التطبيق العملي ممتعة. القيمة الأساسية لهذه الأداة هي &apos;المزامنة الفورية&apos;. عند اختيار مفتاح موسيقي جديد، يتم تحديث الدورة الكروماتية، ودورة الخامسات، ومفاتيح البيانو، ورموز المدرج الموسيقي على الفور. ستفهم على الفور سبب احتواء مقام G الكبير على علامة رفع واحدة فقط!</value>
   </data>
 
 </root>

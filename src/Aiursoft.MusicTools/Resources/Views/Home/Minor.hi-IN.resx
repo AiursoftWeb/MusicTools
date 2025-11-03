@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="What is this?" xml:space="preserve">
+    <value>यह क्या है?</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>स्वागत है!</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>इसका उपयोग कैसे करें</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>किसी भी वृत्त के नीचे स्थित &apos;Rotate&apos; बटनों का उपयोग करके एक नया कुंजी (key) चुनें।</value>
+  </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>एक माइनर कुंजी चुनें</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>शीघ्र कुंजी चयन</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>इंटरएक्टिव पियानो स्वचालित रूप से चुनी गई कुंजी के लिए सभी स्वरों (और उनकी स्केल डिग्री) को हाइलाइट कर देगा।</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>क्रोमैटिक स्केल सभी 12 स्वरों को दर्शाता है। आंतरिक संख्याएँ (1-7) चुने गए कुंजी के लिए माइनर स्केल के स्वरों को उजागर करती हैं।</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>यह टूल आपको संगीत सिद्धांत को दृश्य रूप में देखने में मदद करता है। यह क्रोमैटिक स्केल, सर्कल ऑफ फिफ्थ्स, पियानो कीबोर्ड, और मानक संगीत नोटेशन को एक ही स्थान पर जोड़ता है।</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>जियानपू कुंजी</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>कुंजी हस्ताक्षर प्रदर्शन, चाबी के लिए सही शार्प्स या फ्लैट्स को ट्रेबल और बास क्लेफ दोनों पर दिखाता है।</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>पंचम चक्र (Circle of Fifths), सही पंचम (perfect fifths) के आधार पर सुरों (keys) को व्यवस्थित करता है। इस चक्र को घुमाने से यह प्रदर्शित होता है कि सुर कैसे संबंधित हैं। प्रत्येक क्लिक (एक &apos;पंचम&apos;) की साइनैचर (key signature) से एक शार्प/फ्लैट (sharp/flat) जोड़ता या हटाता है।</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>गाना</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>गाना प्लेयर</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>चलाएं</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>लूप प्लेबैक</value>
+  </data>
+  <data name="Chromatic Scale" xml:space="preserve">
+    <value>क्रोमैटिक स्केल</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>पंचम का चक्र</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>दाईं ओर घुमाएँ</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>सुर</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>बायीं ओर घुमाएँ</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>सुर-चिह्न</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>इंटरएक्टिव पियानो</value>
+  </data>
+
+</root>

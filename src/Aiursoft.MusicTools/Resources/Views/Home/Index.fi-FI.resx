@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>Tervetuloa</value>
+      <data name="Explore Major" xml:space="preserve">
+    <value>Tutustu duuriin</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>Tämä on malliprojekti</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Tutustu molliasteikkoon</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>Hei maailma!</value>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Miksi musiikki on suunniteltu tällä tavalla?</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>RBAC-valtuutus</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Näe&apos; musiikin kieltä</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>OpenID Connect -integraatio</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Työkalun käyttöliittymän esikatselu</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>Usean tietokannan tuki</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Musiikki ei ole taikuutta; se on matematiikan, fysiikan ja kaavojen loistava yhdistelmä. Työkalumme paljastaa nämä kaavat:</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>Miksi käyttää Aiursoft Templatea?</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Kvinttien ympyrän taika</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>Nykyaikainen, ominaisuuksiltaan monipuolinen ja erittäin laajennettava perusta seuraavaa verkkosovellustasi varten.</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Yhdistämällä kaiken</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Vaihda helposti tietokantapalveluntarjoajien, kuten SQLite, MySQL, SQL Server ja testaukseen tarkoitetun muistissa olevan tietokannan, välillä.</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Olit sitten aloitteleva opiskelija, utelias harrastaja tai kokeneempi tuottaja, tämä työkalu tarjoaa intuitiivisen hiekkalaatikon sävellajien, harmonian ja asteikkojen rakenteiden tutkimiseen.</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Saatumattomasti integroi minkä tahansa OpenID Connect -palveluntarjoajan kanssa, automaattisen roolisynkronoinnin avulla.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>12-säveljärjestelmän purkaminen</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>Dynaaminen navigointipalkki</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Tervetuloa interaktiiviseen musiikinteorian työkaluun. Autamme sinua yhdistämään musiikinteorian abstraktit käsitteet — kromaattisen asteikon, kvinttiympyrän ja pianon koskettimiston — mahdollistaen sinulle musiikin toiminnan todella &apos;näkemisen&apos;.</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>Tehokäännökset tekoälyllä</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Sävyt eivät ole eristyneitä. &apos;Circle of Fifths&apos; on musiikin kompassi, joka paljastaa kaikkien sävellajien järjestyksen (C -&gt; G -&gt; D...) ja niiden harmoniset suhteet. Se on keskeinen pohjapiirros säveltämiselle, sovitukselle ja improvisoinnille.</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>Navigointipalkki sopeutuu automaattisesti käyttäjän roolien ja käyttöoikeuksien perusteella.</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Miksi oktaavi on jaettu 12 säveleeseen? Moderni musiikki perustuu &apos;12-säveliseen tasavireiseen sävelkorkeusjärjestelmään&apos;, nerokkaaseen matemaattiseen kompromissiin, jonka ansiosta kaikki sävellajit kuulostavat &apos;hyväksyttäviltä&apos;. Kromaattinen ympyrämme tekee tästä abstraktista sävelkorkeusjärjestelmästä visuaalisesti intuitiivisen.</value>
   </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>Kattava dokumentaatio</value>
-  </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>Sisäänrakennettu roolipohjainen käyttöoikeusjärjestelmä (RBAC) hienojakoista käyttöoikeudenhallintaa varten.</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>Automaattinen, tekoälyavusteinen käännös 28 kielelle maailmanlaajuista saavutettavuutta varten.</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>Sisäänrakennettu käyttäjienhallinta</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Sisältää laajan dokumentaation ja käytännön esimerkit, joiden avulla pääset nopeasti alkuun.</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>Valmis ratkaisu käyttäjätunnistukseen ja profiilin hallintaan heti käyttöönoton yhteydessä.</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>Integroitu tiedostonhallinta</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>Automaattinen riippuvuuden injektointi</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Sisältää sisäänrakennetun tiedostonhallintajärjestelmän automaattisella avatar-pakkauksella.</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>Responsiivinen suunnittelu</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>Automaattinen tumma tila</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>Kaikki riippuvuudet rekisteröidään automaattisesti ja ne ovat aina saatavilla konstruktorin kautta tapahtuvan injektoinnin välityksellä.</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>Täysin responsiivinen ulkoasu, joka näyttää erinomaiselta sekä työpöytä- että mobiililaitteilla.</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Dockeröity käyttöönottoa varten</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>Älykäs tumma tila, joka mukautuu automaattisesti käyttäjän järjestelmäasetuksiin.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Tukee täysin Docker-ympäristöä, mikä helpottaa, tehostaa ja luotettavistaa käyttöönottoa.</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>Lue dokumentti</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Aloita uusi projekti</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>Tämä on malliprojekti, josta aloitamme matkan...</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Mikä tämä on?</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Käyttöohje</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>Tervetuloa!</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Kromaattinen asteikko näyttää kaikki 12 nuottia. Sisemmät numerot (1-7) korostavat valitun sävellajin duuriasteikon nuotteja.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Interaktiivinen piano korostaa automaattisesti kaikki valitun sävellajin nuotit (sekä niiden asteet asteikolla).</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Käytä kummankin ympyrän alla olevia &apos;Kierrä&apos;-painikkeita valitaksesi uuden sävellajin.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Pikanäppäin</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Tämä työkalu auttaa sinua visualisoimaan musiikinteoriaa. Se yhdistää kromaattisen asteikon, kvinttiympyrän, pianon koskettimon ja standardin nuottikirjoituksen yhdessä paikassa.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Kappale</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Valitse duurisävellaji</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Jianpu-avain</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Kvinttiympyrä järjestää sävelet täydellisten kvinttien perusteella. Ympyrän kiertäminen osoittaa, miten sävelet liittyvät toisiinsa. Jokainen napsautus (yksi &apos;kvintti&apos;) lisää tai poistaa yhden ylennys-/alennusmerkin sävellajista.</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Toista</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Toistonauhdutus</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Kappalesoitin</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Korotusmerkkien näyttö esittää oikeat ylennys- ja alennusmerkit valitulle sävellajalle sekä diskantti- että bassoviivastolla.</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Kromaattinen asteikko</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Kierrä vasemmalle</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Kierrä oikealle</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Kvinttiympyrä</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Vuorovaikutteinen piano</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Perusaste</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Sävellaji</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Teoria voi olla kuivaa, mutta sen seuraaminen käytännössä on hauskaa. Tämän työkalun ydinarvo on &apos;reaaliaikainen synkronointi&apos;. Kun valitset uuden sävellajin, kromaattinen ympyrä, kvinttiympyrä, pianon koskettimet ja nuottikirjoitus päivittyvät välittömästi. Ymmärrät heti, miksi G-duurissa on vain yksi ylennysmerkki!</value>
   </data>
 
 </root>

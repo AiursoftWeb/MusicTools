@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>Chào mừng</value>
+      <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Xem trước Giao diện Công cụ</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>Đây là một dự án mẫu</value>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Khám Phá Trưởng</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>Tích hợp OpenID Connect</value>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Tại sao âm nhạc lại được thiết kế theo cách này?</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>Xin chào thế giới!</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Thấy&apos; Ngôn Ngữ Của Âm Nhạc</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>Hỗ trợ Đa Cơ sở Dữ liệu</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Khám Phá Âm Giai Thứ</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>Tại sao nên sử dụng Mẫu Aiursoft?</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Âm nhạc không phải là phép thuật; nó là sự kết hợp tuyệt vời giữa toán học, vật lý và các mẫu hình. Công cụ của chúng tôi tiết lộ những mẫu hình này:</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>Một nền tảng hiện đại, giàu tính năng và có khả năng mở rộng cao cho ứng dụng web tiếp theo của bạn.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Giải Mã Hệ Thống 12 Âm</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Tích hợp liền mạch với bất kỳ nhà cung cấp OpenID Connect nào, đồng thời tự động đồng bộ hóa vai trò.</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Kết Nối Mọi Thứ</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Dễ dàng chuyển đổi giữa các nhà cung cấp như SQLite, MySQL, SQL Server và cơ sở dữ liệu trong bộ nhớ để kiểm thử.</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Sự Kỳ Diệu Của Vòng Tròn Quãng 5</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>Ủy quyền RBAC</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Dù bạn là học sinh mới bắt đầu, người đam mê tò mò hay nhà sản xuất dày dạn kinh nghiệm, công cụ này sẽ cung cấp một môi trường thử nghiệm trực quan để khám phá các giọng (key), hòa âm và cấu trúc âm giai.</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>Thanh Điều Hướng Động</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Chào mừng bạn đến với công cụ lý thuyết âm nhạc tương tác. Chúng tôi giúp bạn kết nối các khái niệm trừu tượng của lý thuyết âm nhạc—Chromatic Scale, Circle of Fifths và bàn phím piano—cho phép bạn thực sự &apos;nhìn thấy&apos; cách âm nhạc vận hành.</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>Thanh điều hướng tự động điều chỉnh dựa trên vai trò và quyền của người dùng.</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Các âm giai không tồn tại biệt lập. &apos;Circle of Fifths&apos; chính là la bàn của âm nhạc, tiết lộ trật tự của tất cả các dấu hóa (C -&gt; G -&gt; D...) và mối quan hệ hòa âm giữa chúng. Nó là bản thiết kế cốt lõi cho việc sáng tác, hòa âm phối khí và ngẫu hứng.</value>
   </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>Tài liệu Toàn diện</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Tại sao một quãng tám lại được chia thành 12 phím? Âm nhạc hiện đại được xây dựng dựa trên &apos;Hệ thống 12 nốt bằng nhau&apos; (12-Tone Equal Temperament), một sự thỏa hiệp toán học xuất sắc cho phép tất cả các tông nhạc nghe &apos;chấp nhận được&apos;. Vòng Tròn Chromatic của chúng tôi giúp hệ thống cao độ trừu tượng này trở nên trực quan về mặt hình ảnh.</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>Dịch Thuật Hỗ Trợ Bởi AI</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>Tự động dịch thuật bằng AI sang 28 ngôn ngữ để tiếp cận toàn cầu.</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Bao gồm tài liệu phong phú và các ví dụ thực tế để giúp bạn bắt đầu nhanh chóng.</value>
-  </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>Hệ thống Kiểm soát Truy cập Dựa trên Vai trò (RBAC) được tích hợp sẵn để quản lý quyền chi tiết.</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>Quản lý Người dùng Tích hợp sẵn</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>Tiêm phụ thuộc Tự động</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>Quản lý Tập tin Tích hợp</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>Một giải pháp hoàn chỉnh cho xác thực người dùng và quản lý hồ sơ ngay lập tức, không cần cấu hình thêm.</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>Tất cả các dependency đều được tự động đăng ký và luôn sẵn sàng thông qua constructor injection.</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Tích hợp hệ thống quản lý tập tin với tính năng nén ảnh đại diện tự động.</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>Thiết kế đáp ứng</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>Chế độ Tối Tự động</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>Bố cục hoàn toàn thích ứng, hiển thị đẹp mắt trên cả thiết bị máy tính để bàn và thiết bị di động.</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Đã được Docker hóa để Triển khai</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>Chế độ tối thông minh tự động điều chỉnh theo cài đặt hệ thống của người dùng.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Đi kèm với hỗ trợ Docker đầy đủ để triển khai đơn giản, nhất quán và đáng tin cậy.</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>Đọc tài liệu</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Bắt đầu một dự án mới</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>Đây là một dự án mẫu, nơi chúng ta bắt đầu hành trình khám phá...</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>Chào mừng!</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Cách Sử Dụng</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Đây là gì?</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Sử dụng các nút &apos;Xoay&apos; bên dưới một trong hai vòng tròn để chọn một âm giai mới.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Chọn Nhanh Âm Giai</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Đàn Piano Tương tác sẽ tự động làm nổi bật tất cả các nốt nhạc (và bậc âm giai của chúng) cho tông đã chọn.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Thang âm Chromatic hiển thị tất cả 12 nốt nhạc. Các số bên trong (1-7) làm nổi bật các nốt của thang âm trưởng cho tông đã chọn.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Công cụ này giúp bạn hình dung lý thuyết âm nhạc. Nó kết nối Thang Chromatic, Vòng tròn Quãng Năm, bàn phím piano và ký hiệu âm nhạc tiêu chuẩn tại một nơi duy nhất.</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Chọn một giọng trưởng</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Vòng tròn Quãng 5 sắp xếp các giọng dựa trên quãng 5 đúng. Việc xoay vòng tròn này minh họa cách các giọng có liên hệ với nhau. Mỗi lần nhấp (một &apos;quãng 5&apos;) sẽ thêm hoặc bớt một dấu thăng/giáng khỏi hóa biểu.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Bài hát</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Màn hình hiển thị Hóa biểu thể hiện chính xác các dấu thăng hoặc dấu giáng của âm giai trên cả hai khóa Sol và khóa Fa.</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Giản Phổ</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Phát lại theo vòng lặp</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Trình Phát Nhạc</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Xoay Trái</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Âm giai Chromatic</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Phát</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Đàn Piano Tương Tác</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Xoay Phải</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Vòng Tròn Quãng 5</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Âm chủ</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Hóa biểu</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Lý thuyết có thể khô khan, nhưng quan sát nó trong thực tế lại rất thú vị. Giá trị cốt lõi của công cụ này là &apos;đồng bộ hóa thời gian thực.&apos; Khi bạn chọn một âm giai mới, Vòng Tròn Chromatic, Vòng Tròn Quãng Năm, các phím đàn piano và ký hiệu khuông nhạc sẽ cập nhật ngay lập tức. Bạn sẽ ngay lập tức hiểu tại sao Sol Trưởng (G Major) chỉ có một dấu thăng!</value>
   </data>
 
 </root>

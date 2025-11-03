@@ -132,5 +132,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>أدوات الموسيقى</value>
   </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>حاسبة المقام الرئيسي</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>آلة حاسبة للسلم الموسيقي الصغير</value>
+  </data>
 
 </root>

@@ -112,10 +112,17 @@ class ScaleVisualizerEngine {
             return index !== -1 ? index : -99;
         });
 
+        this.getKeySignatureIndex = config.getKeySignatureIndex || ((tonic) => tonic);
+
         // 4. 初始化内部状态
-        this.currentStep = 0;
-        this.chromaticVisualAngle = 0;
-        this.fifthsVisualAngle = 0;
+        // [重构] 从配置中读取默认步骤 (如果未提供，则默认为 0)
+                this.currentStep = config.defaultStep !== undefined ? config.defaultStep : 0;
+
+        // [重构] !! 关键：同时初始化旋转角度 !!
+        // 否则，状态将是 'A'，但视觉效果仍停留在 'C'
+        this.chromaticVisualAngle = this.currentStep * 30;
+        this.fifthsVisualAngle = circleOfFifthsOrder.indexOf(this.currentStep) * 30;
+
         this.audioPlayer = null;
         this.pianoKeys = [];
     }
@@ -305,7 +312,8 @@ class ScaleVisualizerEngine {
     updateKeySignatureDisplay() {
         // [重构] 使用 this.keySigContainer
         this.keySigContainer.innerHTML = "";
-        const signatures = KEY_SIGNATURE_DATA[this.currentStep];
+        const signatureIndex = this.getKeySignatureIndex(this.currentStep);
+        const signatures = KEY_SIGNATURE_DATA[signatureIndex];
 
         // [重构 - 核心] 使用 this.config.keySignatureNames
         const names = this.config.keySignatureNames[this.currentStep];

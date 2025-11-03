@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>Добро пожаловать</value>
+      <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Почему музыка устроена именно так?</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>Это шаблонный проект</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Исследовать минор</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>Здравствуй, мир!</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Предварительный просмотр интерфейса инструмента</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>Авторизация RBAC</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>«Увидеть» язык музыки</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>Поддержка нескольких баз данных</value>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Исследовать мажор</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>Интеграция OpenID Connect</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Музыка — это не магия; это блестящее сочетание математики, физики и закономерностей. Наш инструмент раскрывает эти закономерности:</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>Современная, многофункциональная и легко расширяемая основа для вашего следующего веб-приложения.</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Магия квинтового круга</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Беспрепятственно интегрируйтесь с любым провайдером OpenID Connect с автоматической синхронизацией ролей.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Деконструкция 12-тоновой системы</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>Почему стоит использовать шаблон Aiursoft?</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Независимо от того, являетесь ли вы начинающим учеником, любознательным энтузиастом или опытным продюсером, этот инструмент предоставит интуитивно понятную песочницу для изучения тональностей, гармонии и структур гамм.</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Легко переключайтесь между поставщиками, такими как SQLite, MySQL, SQL Server, и используйте базу данных в памяти для тестирования.</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Связываем всё воедино</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>Динамическая панель навигации</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Добро пожаловать в интерактивный инструмент изучения теории музыки. Мы помогаем вам связать абстрактные концепции теории музыки — хроматическую гамму, квинтовый круг и клавиатуру фортепиано — позволяя вам по-настоящему «увидеть», как устроена музыка.</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>Панель навигации автоматически настраивается в зависимости от ролей и разрешений пользователя.</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Тональности не изолированы. «Квинтовый круг» — это компас в музыке, раскрывающий порядок всех тональностей (C -&gt; G -&gt; D...) и их гармонические взаимосвязи. Это основная схема для композиции, аранжировки и импровизации.</value>
   </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>Встроенная система управления доступом на основе ролей (RBAC) для детализированного управления разрешениями.</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Почему октава разделена на 12 клавиш? Современная музыка построена на &apos;12-тоновом равномерном строе&apos; — блестящем математическом компромиссе, который позволяет всем тональностям звучать &apos;приемлемо&apos;. Наш Хроматический круг делает эту абстрактную систему высот наглядной и интуитивно понятной.</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>Переводы на основе ИИ</value>
-  </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>Полная документация</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>Автоматический перевод с использованием искусственного интеллекта на 28 языков для глобального охвата.</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Включает обширную документацию и практические примеры для быстрого начала работы.</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>Автоматическое внедрение зависимостей</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>Интегрированное управление файлами</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>Все зависимости автоматически регистрируются и всегда доступны через внедрение в конструктор.</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Оснащена встроенной системой управления файлами с автоматическим сжатием аватаров.</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>Полное решение для аутентификации пользователей и управления профилями, готовое к использованию сразу после установки.</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>Встроенное управление пользователями</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>Адаптивный дизайн</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Подготовлено для развертывания в Docker</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>Автоматический тёмный режим</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>Умный тёмный режим, который автоматически подстраивается под системные настройки пользователя.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Предоставляет полную поддержку Docker для упрощённых, согласованных и надёжных развёртываний.</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>Адаптивный макет, который отлично выглядит как на настольных компьютерах, так и на мобильных устройствах.</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>Прочитать документацию</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Начать новый проект</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>Это шаблонный проект, с которого мы начинаем путешествие...</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>Добро пожаловать!</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Как пользоваться</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Что это?</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Используйте кнопки «Rotate» под любым из кругов, чтобы выбрать новую тональность.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Интерактивное пианино автоматически подсветит все ноты (и их ступени) для выбранной тональности.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Быстрый выбор тональности</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Хроматическая гамма показывает все 12 нот. Внутренние числа (1-7) выделяют ноты мажорной гаммы для выбранной тональности.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Этот инструмент помогает визуализировать теорию музыки. Он объединяет хроматическую гамму, квинтовый круг, клавиатуру фортепиано и стандартную музыкальную нотацию в одном месте.</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Выберите мажорную тональность</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Тональность Цзяньпу</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Квинтовый круг упорядочивает тональности на основе чистых квинт. Вращение этого круга показывает, как тональности связаны между собой. Каждый щелчок (на «квинту») добавляет или убирает один диез/бемоль в ключевых знаках.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Проигрыватель песен</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>На дисплее ключевых знаков отображаются правильные диезы и бемоли для выбранной тональности как в скрипичном, так и в басовом ключах.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Песня</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Циклическое воспроизведение</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Воспроизвести</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Хроматическая гамма</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Интерактивное пианино</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Повернуть влево</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Повернуть вправо</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Квинтовый круг</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Тоника</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Ключевые знаки</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Теория может быть скучной, но наблюдать её в действии — увлекательно. Основная ценность этого инструмента — «синхронизация в реальном времени». Когда вы выбираете новую тональность, хроматический круг, квинтовый круг, клавиши пианино и нотный стан мгновенно обновляются. Вы сразу поймёте, почему в соль мажоре всего один диез!</value>
   </data>
 
 </root>

@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>Bienvenido</value>
+      <data name="Explore Minor" xml:space="preserve">
+    <value>Explorar Modo Menor</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>Este es un proyecto de plantilla</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&quot;Ver&quot; el Lenguaje de la Música</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>Autorización RBAC</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Vista previa de la interfaz de la herramienta</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>¡Hola Mundo!</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>La música no es magia; es una combinación brillante de matemáticas, física y patrones. Nuestra herramienta revela estos patrones:</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>Compatibilidad con Múltiples Bases de Datos</value>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Explorar Mayor</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>¿Por qué usar la Plantilla de Aiursoft?</value>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>¿Por qué está diseñada así la música?</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>Una base moderna, rica en funciones y altamente extensible para tu próxima aplicación web.</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Tanto si eres un estudiante principiante, un entusiasta curioso o un productor experimentado, esta herramienta te proporcionará un entorno intuitivo para explorar tonalidades, armonía y estructuras de escalas.</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Integración sin problemas con cualquier proveedor de OpenID Connect, con sincronización automática de roles.</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Bienvenido/a a la herramienta interactiva de teoría musical. Te ayudamos a conectar los conceptos abstractos de la teoría musical—la Escala Cromática, el Círculo de Quintas y el teclado del piano—permitiéndote &quot;ver&quot; verdaderamente cómo funciona la música.</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Cambia fácilmente entre proveedores como SQLite, MySQL, SQL Server y una base de datos en memoria para pruebas.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Deconstruyendo el Sistema de 12 Tonos</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>Integración de OpenID Connect</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>La Magia del Círculo de Quintas</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>Barra de Navegación Dinámica</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Conectando Todo</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>Traducciones con IA</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>¿Por qué una octava se divide en 12 notas? La música moderna se basa en el &apos;Temperamento Igual de 12 Tonos&apos;, un brillante compromiso matemático que permite que todas las tonalidades suenen &apos;aceptables&apos;. Nuestro Círculo Cromático hace que este sistema abstracto de alturas sea visualmente intuitivo.</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>La barra de navegación se ajusta automáticamente en función de los roles y permisos del usuario.</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Las tonalidades no están aisladas. El &apos;Círculo de Quintas&apos; es la brújula de la música, que revela el orden de todas las armaduras de clave (Do -&gt; Sol -&gt; Re...) y sus relaciones armónicas. Es el plano fundamental para la composición, los arreglos y la improvisación.</value>
   </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>Traducción automática impulsada por IA a 28 idiomas para alcance global.</value>
-  </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>Documentación Exhaustiva</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>Gestión de Usuarios Integrada</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Incluye documentación extensa y ejemplos prácticos para que puedas empezar rápidamente.</value>
-  </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>Un sistema integrado de Control de Acceso Basado en Roles (RBAC) para una gestión de permisos de grano fino.</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>Inyección de Dependencias Automática</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>Una solución completa para la autenticación de usuarios y la gestión de perfiles lista para usar desde el primer momento.</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>Diseño Responsive</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>Todas las dependencias se registran automáticamente y están siempre disponibles mediante inyección de constructor.</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Incluye un sistema de gestión de archivos integrado con compresión automática de avatares.</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>Modo Oscuro Automático</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>Gestión Integrada de Archivos</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>Un diseño completamente adaptable que luce genial tanto en dispositivos de escritorio como móviles.</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Dockerizado para despliegue</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>Modo oscuro inteligente que se adapta automáticamente a la configuración del sistema del usuario.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Incluye soporte completo para Docker con el fin de simplificar, estandarizar y garantizar despliegues confiables.</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>Leer la documentación</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Iniciar un nuevo proyecto</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>Este es un proyecto plantilla, donde comenzamos el viaje...</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Cómo usarlo</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>¡Bienvenido!</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>¿Qué es esto?</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Utiliza los botones &apos;Rotar&apos; debajo de cualquiera de los círculos para seleccionar una nueva tonalidad.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>La Escala Cromática muestra las 12 notas. Los números internos (1-7) resaltan las notas de la escala mayor para la tonalidad seleccionada.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>El Piano Interactivo resaltará automáticamente todas las notas (y sus grados de la escala) para la tonalidad seleccionada.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Selección Rápida de Tonalidad</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Esta herramienta te ayuda a visualizar la teoría musical. Conecta la Escala Cromática, el Círculo de Quintas, el teclado del piano y la notación musical estándar, todo en un solo lugar.</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Seleccionar una Tonalidad Mayor</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>El Círculo de Quintas organiza las tonalidades en base a quintas justas. Al rotar este círculo se demuestra cómo se relacionan las tonalidades. Cada clic (una &apos;quinta&apos;) añade o elimina un sostenido/bemol de la armadura de clave.</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Tonalidad en Jianpu</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Canción</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Reproductor de Canciones</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>La visualización de la Armadura de clave muestra los sostenidos o bemoles correctos para la tonalidad en ambas claves, la de sol y la de fa.</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Reproducción en bucle</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Reproducir</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Rotar a la derecha</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Escala Cromática</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Rotar a la izquierda</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Círculo de Quintas</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Piano Interactivo</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Tónica</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Armadura</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>La teoría puede ser árida, pero verla en acción es divertido. El valor principal de esta herramienta es la &apos;sincronización en tiempo real&apos;. Cuando seleccionas una nueva tonalidad, el Círculo Cromático, el Círculo de Quintas, las teclas del piano y la notación musical se actualizan al instante. ¡Entenderás inmediatamente por qué Sol Mayor tiene solo un sostenido!</value>
   </data>
 
 </root>

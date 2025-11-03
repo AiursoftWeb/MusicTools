@@ -36,8 +36,10 @@ window.addEventListener("load", () => {
         scaleIntervals: majorScaleIntervals,
         keySignatureNames: KEY_SIGNATURE_NAMES,
         jianpuPrefix: "1 = ", // 大调简谱前缀
-        localizedTonicText: localizedTonic
+        localizedTonicText: localizedTonic,
         // 注意: fifthsDegreePositions 已被移除，引擎将根据 scaleIntervals 自动计算
+        getKeySignatureIndex: (tonic) => tonic,
+        defaultStep: 0 // 默认从 'C' (索引0) 开始
     };
 
     // 3. 统一获取所有引擎需要的 DOM 元素

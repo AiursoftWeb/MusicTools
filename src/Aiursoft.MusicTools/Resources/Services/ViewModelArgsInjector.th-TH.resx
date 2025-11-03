@@ -135,5 +135,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>เครื่องมือด้านดนตรี</value>
   </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณคีย์ไมเนอร์</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณเมเจอร์</value>
+  </data>
 
 </root>

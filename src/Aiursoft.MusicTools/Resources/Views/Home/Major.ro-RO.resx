@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="What is this?" xml:space="preserve">
+    <value>Ce este aceasta?</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Bine ați venit!</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Pianul interactiv va evidenția automat toate notele (și gradele lor de scară) pentru tonalitatea selectată.</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Cum se folosește</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Folosește butoanele „Rotate” de sub oricare dintre cercuri pentru a selecta o nouă tonalitate.</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Scala Cromatică afișează toate cele 12 note. Numerele interioare (1-7) evidențiază notele scării majore pentru tonalitatea selectată.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Acest instrument vă ajută să vizualizați teoria muzicală. Leagă Scala Cromatică, Cercul cvintelor, claviaturia pianului și notația muzicală standard într-un singur loc.</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Selectare Rapidă a Tonului</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Cercul cvintelor organizează tonalitățile pe baza cvintelor perfecte. Rotirea acestui cerc demonstrează cum sunt relaționate tonalitățile. Fiecare clic (o &apos;cvintă&apos;) adaugă sau elimină un diez/bemol din armura tonală.</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Cheia Jianpu</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Player Muzical</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Selectați o tonalitate majoră</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Cântec</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Afișajul Armăturii indică diezurile sau bemolele corecte pentru tonalitatea aleasă, atât pe cheia sol cât și pe cheia fa.</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Redă</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Rotește la stânga</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Redare în buclă</value>
+  </data>
+  <data name="Chromatic Scale" xml:space="preserve">
+    <value>Scala Cromatică</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Pian Interactiv</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Cercul cvintelor</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotește la dreapta</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Armură</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonică</value>
+  </data>
+
+</root>

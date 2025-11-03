@@ -132,5 +132,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Музичні інструменти</value>
   </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Мінорний калькулятор</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Основний калькулятор</value>
+  </data>
 
 </root>

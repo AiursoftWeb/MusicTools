@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="How to Use It" xml:space="preserve">
+    <value>Cara Menggunakannya</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Selamat Datang!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Apa ini?</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Gunakan tombol &apos;Rotate&apos; di bawah salah satu lingkaran untuk memilih kunci baru.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Piano Interaktif akan secara otomatis menyorot semua nada (dan derajat skala mereka) untuk kunci yang dipilih.</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Pilih Kunci Cepat</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Alat ini membantu Anda memvisualisasikan teori musik. Alat ini menghubungkan Skala Kromatik, Lingkaran Kuint, keyboard piano, dan notasi musik standar dalam satu tempat.</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Pilih Tangga Nada Mayor</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Skala Kromatik menampilkan semua 12 nada. Angka di dalam (1-7) menyoroti nada-nada dari tangga nada mayor untuk kunci yang dipilih.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Lingkaran Quint mengorganisir kunci berdasarkan kuint sempurna. Memutar lingkaran ini menunjukkan bagaimana kunci-kunci saling berhubungan. Setiap klik (satu &apos;kuint&apos;) menambah atau mengurangi satu kres/mol dari tanda kunci.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Tampilan Tanda Kunci menunjukkan kres atau mol yang benar untuk kunci tersebut pada kedua paranada treble dan bass.</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Pemutar Lagu</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Lagu</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Kunci Jianpu</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Putar Berulang</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Putar</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Putar ke Kiri</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Piano Interaktif</value>
+  </data>
+  <data name="Chromatic Scale" xml:space="preserve">
+    <value>Skala Kromatik</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Lingkaran Kuint</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Putar ke Kanan</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonik</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Tanda Kunci</value>
+  </data>
+
+</root>
