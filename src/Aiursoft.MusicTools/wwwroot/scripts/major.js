@@ -222,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
         pianoContainer.appendChild(piano);
         // 钢琴创建完毕后，再获取所有的琴键
         pianoKeys = document.querySelectorAll(".piano .white, .piano .black");
+        calculatePianoInterval(pianoContainer);
     }
 
     function createOuterNotes(parentCircle, orderArray) {
@@ -541,3 +542,124 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initialize();
 });
+
+
+// calculate piano interval
+function calculatePianoInterval(pianoContainer) {
+    const HIGH_LIGHT = 'select-highlight';
+    let firstNote='', secondNote='';
+    
+    pianoContainer.addEventListener('click', (ev) => {
+        const note = ev.target.dataset['note'];
+        if (!firstNote) {
+            firstNote = note;
+        } else if (!secondNote) {
+            secondNote = note;
+        } else if (firstNote === note) {
+            firstNote = '';
+        } else if (secondNote === note) {
+            secondNote = '';
+        } else {
+            secondNote = note;
+        }
+
+        pianoContainer.querySelectorAll('[data-note]')
+        for (const t of pianoContainer.querySelectorAll('[data-note]')) { 
+            t.classList.remove(HIGH_LIGHT)
+        }
+
+        console.log(`first: ${firstNote}, second: ${secondNote}`)
+
+        if (firstNote) {
+            pianoContainer.querySelector(`[data-note="${firstNote}"]`).classList.add(HIGH_LIGHT)
+        }
+        if (secondNote) {
+            pianoContainer.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT)
+        }
+        
+        document.getElementById('interval-1').innerText = firstNote;
+        document.getElementById('interval-2').innerText = secondNote;
+        
+        if (firstNote && secondNote) {
+            const interval = calculateInterval(firstNote, secondNote)
+            document.getElementById('interval-result').innerText = interval;
+        }
+    });
+}
+
+function calculateInterval(note1, note2) {
+    const BASE_NOTES = {
+        "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
+        "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
+    };
+
+    const INTERVAL_MAP = {
+        0: { "name": "纯一度", "degree": 1 },
+        1: { "name": "小二度", "degree": 2 },
+        2: { "name": "大二度", "degree": 2 },
+        3: { "name": "小三度", "degree": 3 },
+        4: { "name": "大三度", "degree": 3 },
+        5: { "name": "纯四度", "degree": 4 },
+        6: { "name": "增四度/减五度", "degree": 4.5 }, // 特殊情况：三全音
+        7: { "name": "纯五度", "degree": 5 },
+        8: { "name": "小六度", "degree": 6 },
+        9: { "name": "大六度", "degree": 6 },
+        10: { "name": "小七度", "degree": 7 },
+        11: { "name": "大七度", "degree": 7 },
+        12: { "name": "纯八度", "degree": 8 }
+    };
+    
+    function getAbsoluteSemitoneValue(note) {
+        let octave = 1; 
+        let noteName = note;
+
+        const match = note.match(/(\d+)$/);
+        if (match) {
+            octave = parseInt(match[1], 10);
+            noteName = note.slice(0, -match[1].length);
+        }
+        
+        const baseValue = BASE_NOTES[noteName];
+        if (baseValue === undefined) {
+            throw new Error(`无法识别音符名称: ${noteName}`);
+        }
+
+        return baseValue + (octave - 1) * 12;
+    }
+
+    try {
+        const val1 = getAbsoluteSemitoneValue(note1);
+        const val2 = getAbsoluteSemitoneValue(note2);
+
+        let semitones = val2 - val1;
+        
+        if (semitones < 0) {
+             return `${note1} 的音高低于 ${note2}，请以低音在前的方式输入。`;
+        }
+        
+        if (semitones > 12) {
+            const octaves = Math.floor(semitones / 12);
+            const remainingSemitones = semitones % 12;
+
+            if (remainingSemitones === 0) {
+                 return `纯八度 x ${octaves}`;
+            }
+            
+            const baseInterval = INTERVAL_MAP[remainingSemitones];
+            
+            return `复合音程: ${octaves} 个八度 加 ${baseInterval.name}`;
+        }
+        
+        if (INTERVAL_MAP[semitones]) {
+            return INTERVAL_MAP[semitones].name;
+        }
+
+        if (semitones === 6) {
+            return INTERVAL_MAP[6].name;
+        }
+
+
+    } catch (e) {
+        return `计算错误: ${e.message}`;
+    }
+}
