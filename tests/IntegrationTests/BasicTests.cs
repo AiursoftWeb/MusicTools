@@ -5,6 +5,8 @@ using Aiursoft.DbTools;
 using Aiursoft.MusicTools.Entities;
 using static Aiursoft.WebTools.Extends;
 
+[assembly:DoNotParallelize]
+
 namespace Aiursoft.MusicTools.Tests.IntegrationTests;
 
 [TestClass]
