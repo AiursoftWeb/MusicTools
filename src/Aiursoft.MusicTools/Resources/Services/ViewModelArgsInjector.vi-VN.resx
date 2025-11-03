@@ -135,5 +135,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Công cụ Âm nhạc</value>
   </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Máy Tính Âm Giai Thứ</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Máy Tính Âm Giai Trưởng</value>
+  </data>
 
 </root>

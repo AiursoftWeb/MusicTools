@@ -135,5 +135,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Musik-Tools</value>
   </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Hauptrechner</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Kleinrechner</value>
+  </data>
 
 </root>

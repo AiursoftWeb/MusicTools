@@ -4,6 +4,53 @@
 
 // 1. 乐曲库 (不变)
 const SONG_LIBRARY = {
+    'major_scale': {
+        name: 'Major Scale (C)',
+        baseKey: 0, // C Major
+        data: [
+            // Ascending: C D E F G A B C
+            { note: 60, time: 0.0, duration: 0.4 },
+            { note: 62, time: 0.5, duration: 0.4 },
+            { note: 64, time: 1.0, duration: 0.4 },
+            { note: 65, time: 1.5, duration: 0.4 },
+            { note: 67, time: 2.0, duration: 0.4 },
+            { note: 69, time: 2.5, duration: 0.4 },
+            { note: 71, time: 3.0, duration: 0.4 },
+            { note: 72, time: 3.5, duration: 0.9 }, // 顶部 C 稍长
+            // Descending: B A G F E D C
+            { note: 71, time: 4.5, duration: 0.4 },
+            { note: 69, time: 5.0, duration: 0.4 },
+            { note: 67, time: 5.5, duration: 0.4 },
+            { note: 65, time: 6.0, duration: 0.4 },
+            { note: 64, time: 6.5, duration: 0.4 },
+            { note: 62, time: 7.0, duration: 0.4 },
+            { note: 60, time: 7.5, duration: 0.9 }  // 底部 C 稍长
+        ]
+    },
+// --- 【新】自然小调音阶 (已修改为 A 小调) ---
+    'natural_minor_scale': {
+        name: 'Natural Minor Scale (A)',
+        baseKey: 0, // A Minor is relative to C Major (0 sharps/flats)
+        data: [
+            // Ascending: A(3) B C D E F G A(4)
+            { note: 57, time: 0.0, duration: 0.4 }, // A
+            { note: 59, time: 0.5, duration: 0.4 }, // B
+            { note: 60, time: 1.0, duration: 0.4 }, // C
+            { note: 62, time: 1.5, duration: 0.4 }, // D
+            { note: 64, time: 2.0, duration: 0.4 }, // E
+            { note: 65, time: 2.5, duration: 0.4 }, // F
+            { note: 67, time: 3.0, duration: 0.4 }, // G
+            { note: 69, time: 3.5, duration: 0.9 }, // 顶部 A 稍长
+            // Descending: G F E D C B A
+            { note: 67, time: 4.5, duration: 0.4 }, // G
+            { note: 65, time: 5.0, duration: 0.4 }, // F
+            { note: 64, time: 5.5, duration: 0.4 }, // E
+            { note: 62, time: 6.0, duration: 0.4 }, // D
+            { note: 60, time: 6.5, duration: 0.4 }, // C
+            { note: 59, time: 7.0, duration: 0.4 }, // B
+            { note: 57, time: 7.5, duration: 0.9 }  // 底部 A 稍长
+        ]
+    },
     'twinkle': {
         name: 'Twinkle Twinkle',
         baseKey: 0, // C Major

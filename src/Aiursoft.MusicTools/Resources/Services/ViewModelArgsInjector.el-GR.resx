@@ -132,5 +132,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Εργαλεία Μουσικής</value>
   </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Μεγάλος Υπολογιστής</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Μικρός Υπολογιστής</value>
+  </data>
 
 </root>

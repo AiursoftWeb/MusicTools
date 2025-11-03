@@ -132,5 +132,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Ferramentas Musicais</value>
   </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Calculadora de Acordes Menores</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Calculadora de Acordes Maiores</value>
+  </data>
 
 </root>

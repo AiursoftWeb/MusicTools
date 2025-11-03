@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>Καλώς ήρθατε</value>
+      <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Γιατί η μουσική είναι σχεδιασμένη έτσι;</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>Αυτό είναι ένα πρότυπο έργο</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>«Δες» τη Γλώσσα της Μουσικής</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>Εξουσιοδότηση RBAC</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>Ενσωμάτωση OpenID Connect</value>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Εξερευνήστε τη Ματζόρε</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>Γεια σου Κόσμε!</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Εξερευνήστε την Ελάσσονα</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>Γιατί να χρησιμοποιήσετε το Πρότυπο Aiursoft;</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Η μουσική δεν είναι μαγεία· είναι μια ευφυής συνδυασμός μαθηματικών, φυσικής και μοτίβων. Το εργαλείο μας αποκαλύπτει αυτά τα μοτίβα:</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>Υποστήριξη Πολλαπλών Βάσεων Δεδομένων</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Αποδόμηση του Συστήματος των 12 Φθόγγων</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Εύκολη εναλλαγή μεταξύ παρόχων όπως SQLite, MySQL, SQL Server και μιας βάσης δεδομένων στη μνήμη για δοκιμές.</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Η Μαγεία του Κύκλου των Πέμπτων</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>Μια σύγχρονη, πλούσια σε λειτουργίες και εξαιρετικά επεκτάσιμη βάση για την επόμενη εφαρμογή σας web.</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Σύνδεση Όλων</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Απολαύστε απρόσκοπτη ενσωμάτωση με οποιονδήποτε πάροχο OpenID Connect, με αυτόματο συγχρονισμό ρόλων.</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Είτε είσαι αρχάριος φοιτητής, ένας περίεργος ενθουσιώδης, ή ένας έμπειρος παραγωγός, αυτό το εργαλείο θα προσφέρει μια διαισθητική αμμοδοχείο για την εξερεύνηση των κλειδιών, της αρμονίας και των δομών των κλιμάκων.</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>Δυναμική Γραμμή Πλοήγησης</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Καλωσορίσατε στο διαδραστικό εργαλείο μουσικής θεωρίας. Σας βοηθάμε να συνδέσετε τις αφηρημένες έννοιες της μουσικής θεωρίας—τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων και το πληκτρολόγιο πιάνου—επιτρέποντάς σας να «δείτε» πραγματικά πώς λειτουργεί η μουσική.</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>Μεταφράσεις με Τεχνητή Νοημοσύνη</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Οι τόνoι δεν είναι απομονωμένοι. Ο «Κύκλος των Πέμπτων» είναι η πυξίδα της μουσικής, αποκαλύπτοντας τη σειρά όλων των τoνικών επιγραφών (C -&gt; G -&gt; D...) και τις αρμονικές τους σχέσεις. Είναι ο βασικός σχεδιασμός για τη σύνθεση, τη διασκευή και την αυτοσχεδιαστική μουσική.</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>Η γραμμή πλοήγησης προσαρμόζεται αυτόματα με βάση τους ρόλους και τα δικαιώματα των χρηστών.</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Γιατί μια οκτάβα χωρίζεται σε 12 νότες; Η μοντέρνα μουσική χτίζεται πάνω στην &apos;Ισοδύναμη Συντονιστική Κλίμακα 12 Νοτών&apos;, μια ευφυής μαθηματική συμβιβασμός που επιτρέπει σε όλες τις κλίμακες να ακούγονται &apos;αποδεκτές&apos;. Ο Χρωματικός μας Κύκλος κάνει αυτό το αφηρημένο σύστημα ύψους οπτικά διαισθητικό.</value>
   </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>Αυτόματη, τεχνητή νοημοσύνη μετάφραση σε 28 γλώσσες για παγκόσμια εμβέλεια.</value>
-  </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>Πληρέστερη Τεκμηρίωση</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>Ενσωματωμένη Διαχείριση Χρηστών</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Περιλαμβάνει εκτενή τεκμηρίωση και πρακτικά παραδείγματα για να ξεκινήσετε γρήγορα.</value>
-  </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>Ένα ενσωματωμένο σύστημα Ελέγχου Πρόσβασης Βάσει Ρόλων (RBAC) για λεπτομερή διαχείριση δικαιωμάτων.</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>Αυτόματη Ενσωμάτωση Εξαρτήσεων</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>Ενσωματωμένη Διαχείριση Αρχείων</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>Μια ολοκληρωμένη λύση για την πιστοποίηση χρηστών και τη διαχείριση προφίλ, έτοιμη προς χρήση.</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>Όλες οι εξαρτήσεις εγγράφονται αυτόματα και είναι πάντα διαθέσιμες μέσω της εισαγωγής από κατασκευαστή.</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>Αποκρισιμό Σχεδιασμό</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Διαθέτει ενσωματωμένο σύστημα διαχείρισης αρχείων με αυτόματη συμπίεση avatar.</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>Αυτόματη Λειτουργία Σκούρου Θέματος</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>Μια πλήρως ανταποκρινόμενη διάταξη που φαίνεται εξαιρετική τόσο σε επιτραπέζιους υπολογιστές όσο και σε κινητές συσκευές.</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Σε Docker για Ανάπτυξη</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>Έξυπνη λειτουργία σκούρου θέματος που προσαρμόζεται αυτόματα στις ρυθμίσεις συστήματος του χρήστη.</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Διαθέτει πλήρη υποστήριξη Docker για απλοποιημένες, συνεπείς και αξιόπιστες αναπτύξεις.</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>Διαβάστε το έγγραφο</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Ξεκινήστε ένα νέο έργο</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>Αυτό είναι ένα πρότυπο έργο, από όπου ξεκινάμε το ταξίδι...</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Πώς να το χρησιμοποιήσετε</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Τι είναι αυτό;</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>Καλώς ήρθατε!</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Το Διαδραστικό Πιάνο θα επισημάνει αυτόματα όλες τις νότες (και τους βαθμούς της κλίμακας) για την επιλεγμένη κλίμακα.</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Χρησιμοποιήστε τα κουμπιά &apos;Rotate&apos; κάτω από οποιονδήποτε κύκλο για να επιλέξετε μια νέα τονικότητα.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Η Χρωματική Κλίμακα εμφανίζει και τις 12 νότες. Οι εσωτερικοί αριθμοί (1-7) επισημαίνουν τις νότες της ματζόρε κλίμακας για την επιλεγμένη τονικότητα.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Γρήγορη Επιλογή Τονικότητας</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Αυτό το εργαλείο σας βοηθά να απεικονίσετε τη μουσική θεωρία. Συνδέει τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων, το πληκτρολόγιο πιάνου και τον τυπικό μουσικό συμβολισμό, όλα σε ένα μέρος.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Αναπαραγωγέας Μουσικής</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Επιλέξτε Μείζονα Τονικότητα</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Ο Κύκλος των Πέμπτων οργανώνει τις τονικότητες βάσει των τέλειων πέμπτων. Η περιστροφή αυτού του κύκλου δείχνει πώς οι τονικότητες σχετίζονται μεταξύ τους. Κάθε κλικ (μια «πέμπτη») προσθέτει ή αφαιρεί ένα δίεση/ύφεση από την οπήσειρα.</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Κλείδι Τζιάνπου</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Τραγούδι</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Αναπαραγωγή</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Η οθόνη του Κλειδιού Υπογραφής εμφανίζει τα σωστά δίεση ή ύφεση για το κλειδί και στα δύο πεντάγραμμα, το πεντάγραμμα του σοπράνο και το πεντάγραμμα του μπάσου.</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Επανάληψη Αναπαραγωγής</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Χρωματική Κλίμακα</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Περιστροφή Αριστερά</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Κύκλος των Πέμπτων</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Τονισμός</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Τονική</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Περιστροφή Δεξιά</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Διαδραστικό Πιάνο</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Η θεωρία μπορεί να είναι ξηρή, αλλά το να την παρακολουθείς σε πράξη είναι διασκεδαστικό. Η βασική αξία αυτού του εργαλείου είναι ο &apos;συγχρονισμός σε πραγματικό χρόνο&apos;. Όταν επιλέγετε μια νέα τονικότητα, ο Χρωματικός Κύκλος, ο Κύκλος των Πέμπτων, τα πλήκτρα του πιάνου και ο μουσικός συμβολισμός ενημερώνονται αμέσως. Θα καταλάβετε αμέσως γιαquoi η Σολ Ματζόρε έχει μόνο ένα δίεση!</value>
   </data>
 
 </root>

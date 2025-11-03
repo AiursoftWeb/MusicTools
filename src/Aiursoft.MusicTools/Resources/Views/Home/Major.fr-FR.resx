@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="How to Use It" xml:space="preserve">
+    <value>Comment l&apos;utiliser</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Bienvenue !</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Le piano interactif mettra automatiquement en évidence toutes les notes (et leurs degrés de gamme) pour la tonalité sélectionnée.</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Qu&apos;est-ce que c&apos;est ?</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Utilisez les boutons « Rotate » sous l&apos;un ou l&apos;autre des cercles pour sélectionner une nouvelle tonalité.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Cet outil vous aide à visualiser la théorie musicale. Il relie l&apos;échelle chromatique, le cycle des quintes, le clavier de piano et la notation musicale standard en un seul endroit.</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Sélection rapide de la tonalité</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>L&apos;échelle chromatique montre les 12 notes. Les chiffres intérieurs (1-7) mettent en évidence les notes de la gamme majeure pour la tonalité sélectionnée.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Le Cercle des Quintes organise les tonalités sur la base des quintes justes. La rotation de ce cercle montre comment les tonalités sont reliées. Chaque clic (une &apos;quinte&apos;) ajoute ou retire un dièse/bémol de l&apos;armure.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>L&apos;affichage de l&apos;armure montre les dièses ou les bémols corrects pour la tonalité, à la fois sur les clés de sol et de fa.</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Sélectionner une tonalité majeure</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Lecteur de musique</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Chanson</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Clé Jianpu</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Lecture en boucle</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Jouer</value>
+  </data>
+  <data name="Chromatic Scale" xml:space="preserve">
+    <value>Gamme chromatique</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Armure</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Piano Interactif</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotation horaire</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Rotation vers la gauche</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Cercle des Quintes</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonique</value>
+  </data>
+
+</root>

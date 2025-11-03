@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>ようこそ</value>
+      <data name="Explore Major" xml:space="preserve">
+    <value>長調を探る</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>これはテンプレートプロジェクトです</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>ツールインターフェースのプレビュー</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>こんにちは、世界！</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>短調を探る</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>複数データベースサポート</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>音楽の言葉を「見る」</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>RBAC認可</value>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>音楽はなぜこのように設計されているのでしょうか？</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>OpenID Connect 連携</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>音楽は魔法ではありません。それは数学、物理学、パターンの見事な組み合わせなのです。私たちのツールはこれらのパターンを明らかにします：</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>Aiursoftテンプレートを使用する理由</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>12音階システムの解体</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>あらゆるOpenID Connectプロバイダーとシームレスに統合し、自動的なロール同期を実現します。</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>五度圏の魔法</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>モダンで機能豊富、かつ高度に拡張可能な基盤を、あなたの次のWebアプリケーションに提供します。</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>すべてをつなぐ</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>SQLite、MySQL、SQL Server、およびテスト用のインメモリデータベースなどのプロバイダーを簡単に切り替えられます。</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>対話型音楽理論ツールへようこそ。このツールでは、音楽理論の抽象的な概念—半音階（Chromatic Scale）、五度圏（Circle of Fifths）、ピアノキーボード—を結びつけ、音楽の仕組みを本当の意味で「視覚的」に理解できるよう支援します。</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>AIによる翻訳</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>初心者の学生、好奇心旺盛な愛好家、ベテランのプロデューサーを問わず、このツールはキー、ハーモニー、スケール構造を探求するための直感的なサンドボックスを提供します。</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>動的ナビゲーションバー</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>調は孤立した存在ではありません。『五度圏』は音楽の羅針盤であり、すべての調号（C → G → D...）の順序とそれらの和声的関係を明らかにします。それは作曲、編曲、即興演奏のための核心となる設計図です。</value>
   </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>きめ細かい権限管理のための組み込みのロールベースアクセス制御（RBAC）システム。</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>なぜ1オクターブは12鍵に分割されているのでしょうか？現代音楽は「12平均律」という、すべての調が「許容できる」響きを持つようにした数学的な妥協の産物の上に成り立っています。私たちの「クロマティック・サークル」は、この抽象的な音高システムを視覚的に直感的に理解できるようにします。</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>ナビゲーションバーは、ユーザーの役割と権限に基づいて自動的に調整されます。</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>AIによる自動翻訳で28言語に対応し、グローバルな展開を実現します。</value>
-  </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>包括的なドキュメント</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>豊富なドキュメントと実用的な例を含んでいるため、すぐに使い始めることができます。</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>組み込みユーザー管理</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>ユーザー認証とプロファイル管理のための完全なソリューションが、すぐに利用できます。</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>統合ファイル管理</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>レスポンシブデザイン</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>自動アバター圧縮機能を備えた組み込みファイル管理システムを特徴としています。</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>自動依存性注入</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>すべての依存関係は自動的に登録され、コンストラクタインジェクションを通じて常に利用可能です。</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>自動ダークモード</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>デスクトップとモバイルの両方のデバイスで美しく表示される、完全なレスポンシブレイアウト。</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Docker化によるデプロイ</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>ユーザーのシステム設定に自動的に適応するスマートダークモード。</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>完全なDockerサポートにより、簡素化された一貫性のある信頼性の高いデプロイが可能です。</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>新規プロジェクトを開始</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>ドキュメントを読む</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>これはテンプレートプロジェクトであり、ここからボイジャーの旅が始まります...</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>使い方</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>これは何ですか？</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>ようこそ！</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>インタラクティブピアノは、選択されたキーのすべての音符（およびそれらのスケール度数）を自動的にハイライト表示します。</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>いずれかの円の下にある「回転」ボタンを使用して、新しいキーを選択してください。</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>半音階は12のすべての音を示しています。内側の数字（1-7）は、選択されたキーのメジャースケールの音を強調表示しています。</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>キーを素早く選択</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>このツールは、音楽理論を視覚的に理解するのに役立ちます。Chromatic Scale（半音階）、Circle of Fifths（五度圏）、ピアノキーボード、そして標準的な楽譜表記を一箇所で結びつけています。</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>五度圏は完全五度に基づいて調を整理します。この円を回転させることで、各調の関係性が示されます。各クリック（「五度」）ごとに、調号のシャープまたはフラットが1つ追加または削除されます。</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>調号表示には、選択されたキーの正しいシャープまたはフラットがト音記号とヘ音記号の両方で表示されます。</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>長調を選択</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>曲</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>曲プレーヤー</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>数字譜キー</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>半音階</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>五度圏</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>調号</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>再生</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>左回転</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>右回転</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>ループ再生</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>インタラクティブピアノ</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>主音</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>理論は退屈になりがちですが、実際に動きを見ると楽しいものです。このツールの核となる価値は「リアルタイム同期」にあります。新しいキーを選択すると、クロマティックサークル、五度圏、ピアノキー、五線譜が即座に更新されます。なぜト長調（G Major）にシャープが1つしかないのか、すぐに理解できるでしょう！</value>
   </data>
 
 </root>

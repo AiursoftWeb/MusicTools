@@ -132,5 +132,11 @@
   <data name="Music Tools" xml:space="preserve">
     <value>Müzik Araçları</value>
   </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Küçük Hesap Makinesi</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Ana Hesap Makinesi</value>
+  </data>
 
 </root>

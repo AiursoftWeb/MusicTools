@@ -18,170 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome" xml:space="preserve">
-    <value>欢迎</value>
+      <data name="Why is music designed this way?" xml:space="preserve">
+    <value>音乐为何如此设计？</value>
   </data>
-  <data name="This is a template project" xml:space="preserve">
-    <value>这是一个模板项目</value>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>探索小调</value>
   </data>
-  <data name="Multiple Database Support" xml:space="preserve">
-    <value>多数据库支持</value>
+  <data name="Explore Major" xml:space="preserve">
+    <value>探索大调</value>
   </data>
-  <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>可轻松在 SQLite、MySQL、SQL Server 等数据库提供程序以及用于测试的内存数据库之间切换。</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>工具界面预览</value>
   </data>
-  <data name="OpenID Connect Integration" xml:space="preserve">
-    <value>OpenID Connect 集成</value>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>“看见”音乐的语言</value>
   </data>
-  <data name="Hello World!" xml:space="preserve">
-    <value>你好，世界！</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>音乐并非魔法，而是数学、物理与规律的绝妙结合。我们的工具正是为了揭示这些规律：</value>
   </data>
-  <data name="Why use the Aiursoft Template?" xml:space="preserve">
-    <value>为何选择 Aiursoft 模板？</value>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>无论您是初学入门的学生、充满好奇的爱好者，还是经验丰富的制作人，这款工具都将为您提供一个直观的沙盒环境，用于探索调性、和声与音阶结构。</value>
   </data>
-  <data name="RBAC Authorization" xml:space="preserve">
-    <value>基于角色的访问控制 (RBAC) 授权</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>解构十二音体系</value>
   </data>
-  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>无缝集成任何 OpenID Connect 提供商，并支持自动角色同步。</value>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>欢迎使用这款交互式乐理工具。我们帮助您将乐理中的抽象概念——半音阶、五度圈与钢琴键盘——联系起来，让您真正“看见”音乐的运作原理。</value>
   </data>
-  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
-    <value>一个现代化、功能丰富且高度可扩展的基础框架，为您的下一个Web应用程序提供强大支持。</value>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>五度圈的神奇魔力</value>
   </data>
-  <data name="Dynamic Navigation Bar" xml:space="preserve">
-    <value>动态导航栏</value>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>融会贯通</value>
   </data>
-  <data name="AI-Powered Translations" xml:space="preserve">
-    <value>AI 驱动翻译</value>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>调性并非孤立存在。&quot;五度圈&quot;（Circle of Fifths）是音乐世界的罗盘，它揭示了所有调号（C -&gt; G -&gt; D...）的排列顺序及其和声关系，是作曲、编曲与即兴创作的核心蓝图。</value>
   </data>
-  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>导航栏会根据用户角色和权限自动调整显示内容。</value>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>为什么一个八度被分成12个键？现代音乐建立在“十二平均律”之上，这是一种精妙的数学折衷方案，使得所有调性听起来都“可接受”。我们的半音阶圆盘让这个抽象的音高系统变得直观可见。</value>
   </data>
-  <data name="Comprehensive Documentation" xml:space="preserve">
-    <value>全面文档支持</value>
-  </data>
-  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
-    <value>内置基于角色的访问控制（RBAC）系统，用于细粒度权限管理。</value>
-  </data>
-  <data name="Automatic, AI-driven translation into 28 languages for global reach." xml:space="preserve">
-    <value>支持28种语言的自动AI驱动翻译，助力实现全球覆盖。</value>
-  </data>
-  <data name="Built-in User Management" xml:space="preserve">
-    <value>内置用户管理</value>
-  </data>
-  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>包含详尽的文档和实用示例，助您快速上手。</value>
-  </data>
-  <data name="Automatic Dependency Injection" xml:space="preserve">
-    <value>自动依赖注入</value>
-  </data>
-  <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>开箱即用的完整用户认证与个人资料管理解决方案。</value>
-  </data>
-  <data name="Integrated File Management" xml:space="preserve">
-    <value>集成文件管理</value>
-  </data>
-  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>所有依赖项均自动注册，并始终可通过构造函数注入方式使用。</value>
-  </data>
-  <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>内置文件管理系统，支持自动头像压缩。</value>
-  </data>
-  <data name="Responsive Design" xml:space="preserve">
-    <value>响应式设计</value>
-  </data>
-  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>完全响应式布局，在桌面和移动设备上均呈现出色视觉效果。</value>
-  </data>
-  <data name="Automatic Dark Mode" xml:space="preserve">
-    <value>自动深色模式</value>
-  </data>
-  <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>提供完整的 Docker 支持，实现简化、一致且可靠的部署。</value>
-  </data>
-  <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>支持 Docker 部署</value>
-  </data>
-  <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
-    <value>智能深色模式，可自动适应用户的系统设置。</value>
-  </data>
-  <data name="Read the document" xml:space="preserve">
-    <value>阅读文档</value>
-  </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>开始新项目</value>
-  </data>
-  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>这是一个模板项目，我们将从这里开启探索之旅...</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>欢迎！</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>这是什么？</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>使用方法</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>交互式钢琴将自动高亮显示所选调性的所有音符（及其音级）。</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>半音阶展示全部12个音符。内圈数字（1-7）高亮显示所选调式的大调音阶音符。</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>使用任意一个圆环下方的“Rotate”（旋转）按钮来选择新的调。</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>选择一个大调</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>本工具可帮助您直观理解乐理知识，它将半音阶、五度圈、钢琴键盘及标准音乐记谱法整合于一处。</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>五度圈以纯五度音程为基础组织调性。旋转此圈可展示各调性之间的关系。每次点击（一个“五度”）会在调号中增加或减少一个升号/降号。</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>快速选择调性</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>调号显示区域会同时在高音谱号和低音谱号上展示当前调性正确的升号或降号。</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>简谱调号</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>歌曲播放器</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>歌曲</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>播放</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>半音阶</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>循环播放</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>向左旋转</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>五度圈</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>向右旋转</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>交互式钢琴</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>主音</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>调号</value>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>乐理可能枯燥，但亲眼见证理论付诸实践却充满乐趣。本工具的核心价值在于&quot;实时同步&quot;。当您选择一个新的调时，半音圈、五度圈、钢琴键与五线谱会即刻更新。您将瞬间明白为何G大调仅有一个升号！</value>
   </data>
 
 </root>

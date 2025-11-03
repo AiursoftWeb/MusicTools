@@ -1,135 +1,71 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+
     // =====================================================================
-    // =================== 1. 数据定义 (整合新旧代码) =====================
+    // =================== 1. 大调专属数据定义 ==========================
     // =====================================================================
 
-    const notes = [
-        "C",
-        "C♯/D♭",
-        "D",
-        "D♯/E♭",
-        "E",
-        "F",
-        "F♯/G♭",
-        "G",
-        "G♯/A♭",
-        "A",
-        "A♯/B♭",
-        "B",
-    ];
-    const circleOfFifthsOrder = [0, 7, 2, 9, 4, 11, 6, 1, 8, 3, 10, 5]; // C, G, D...
+    // 大调音阶间隔 (W-W-H-W-W-W-H)
     const majorScaleIntervals = [0, 2, 4, 5, 7, 9, 11];
 
-    // --- 【移植】用于钢琴键 data-note 匹配的音名数组 ---
-    const notesSharp = [
-        "C",
-        "C#",
-        "D",
-        "D#",
-        "E",
-        "F",
-        "F#",
-        "G",
-        "G#",
-        "A",
-        "A#",
-        "B",
-    ];
-
-    // 因为五线谱和钢琴都需要显示调名，所以定义一个专用的显示名称数组
-    // 钢琴一共只有 15 个大调。
-    // Cb, Gb, Db, Ab, Eb, Bb, F, C, G, D, A, E, B, F#, C#
-    const keyDisplayNames = [
-        'C',        // 0
-        'C♯ / D♭', // 1
-        'D',        // 2
-        'E♭',       // 3  (移除了 D♯，因为程序只支持 E♭)
-        'E',        // 4
-        'F',        // 5
-        'F♯ / G♭', // 6
-        'G',        // 7
-        'A♭',       // 8  (移除了 G♯，因为程序只支持 A♭)
-        'A',        // 9
-        'B♭',       // 10 (移除了 A♯，因为程序只支持 B♭)
-        'B / C♭'   // 11 (保持不变，因为 B 和 C♭ 两种记法都支持)
-    ];
-
-    // --- 【移植】五线谱调号数据 ---
-    const KEY_SIGNATURE_DATA = {
-        0: { sharp: { type: 'sharps', count: 0 } }, // C
-        7: { sharp: { type: 'sharps', count: 1 } }, // G
-        2: { sharp: { type: 'sharps', count: 2 } }, // D
-        9: { sharp: { type: 'sharps', count: 3 } }, // A
-        4: { sharp: { type: 'sharps', count: 4 } }, // E
-        11: { sharp: { type: 'sharps', count: 5 }, flat: { type: 'flats', count: 7 } }, // B/Cb，这是同音异名
-        6: { sharp: { type: 'sharps', count: 6 }, flat: { type: 'flats', count: 6 } }, // F#/Gb，这是同音异名
-        1: { sharp: { type: 'sharps', count: 7 }, flat: { type: 'flats', count: 5 } }, // C#/Db，这是同音异名
-        5: { flat: { type: 'flats', count: 1 } }, // F
-        10: { flat: { type: 'flats', count: 2 } }, // Bb
-        3: { flat: { type: 'flats', count: 3 } }, // Eb
-        8: { flat: { type: 'flats', count: 4 } }, // Ab
-    };
-
+    // 大调调名 (用于五线谱显示)
     const KEY_SIGNATURE_NAMES = {
         0: { sharp: 'C Major' },
         7: { sharp: 'G Major' },
         2: { sharp: 'D Major' },
         9: { sharp: 'A Major' },
         4: { sharp: 'E Major' },
-        11: { sharp: 'B Major', flat: 'C♭ Major' }, // 同音异名
-        6: { sharp: 'F♯ Major', flat: 'G♭ Major' }, // 同音异名
-        1: { sharp: 'C♯ Major', flat: 'D♭ Major' }, // 同音异名
+        11: { sharp: 'B Major', flat: 'C♭ Major' },
+        6: { sharp: 'F♯ Major', flat: 'G♭ Major' },
+        1: { sharp: 'C♯ Major', flat: 'D♭ Major' },
         5: { flat: 'F Major' },
         10: { flat: 'B♭ Major' },
         3: { flat: 'E♭ Major' },
         8: { flat: 'A♭ Major' }
     };
 
-    const ACCIDENTAL_POSITIONS = {
-        treble: {
-            // F#, C#, G#, D#, A#, E#, B#
-            sharps: [0, 1.5, -0.5, 1, 2.5, 0.5, 2],
-            // Bb, Eb, Ab, Db, Gb, Cb, Fb
-            flats: [2, 0.5, 2.5, 1, 3, 1.5, 3.5],
-        },
-        bass: {
-            // F#, C#, G#, D#, A#, E#, B#
-            sharps: [1, 2.5, 0.5, 2, 3.5, 1.5, 3],
-            // Bb, Eb, Ab, Db, Gb, Cb, Fb
-            flats: [3, 1.5, 3.5, 2, 4, 2.5, 4.5],
-        },
+    // =====================================================================
+    // =================== 2. 构建配置与启动引擎 ========================
+    // =====================================================================
+
+    // 1. 获取本地化文本
+    const localeData = document.getElementById("localization-data");
+    const localizedTonic = (localeData && localeData.dataset.tonic) ? localeData.dataset.tonic : "Tonic";
+    
+    // 2. 构建配置对象 (只传递专属数据)
+    const majorConfig = {
+        scaleIntervals: majorScaleIntervals,
+        keySignatureNames: KEY_SIGNATURE_NAMES,
+        jianpuPrefix: "1 = ", // 大调简谱前缀
+        localizedTonicText: localizedTonic,
+        // 注意: fifthsDegreePositions 已被移除，引擎将根据 scaleIntervals 自动计算
+        getKeySignatureIndex: (tonic) => tonic,
+        defaultStep: 0 // 默认从 'C' (索引0) 开始
     };
 
-    const fifthsMajorScaleDegreePositions = [
-        circleOfFifthsOrder.indexOf(0),
-        circleOfFifthsOrder.indexOf(2),
-        circleOfFifthsOrder.indexOf(4),
-        circleOfFifthsOrder.indexOf(5),
-        circleOfFifthsOrder.indexOf(7),
-        circleOfFifthsOrder.indexOf(9),
-        circleOfFifthsOrder.indexOf(11),
-    ];
+    // 3. 统一获取所有引擎需要的 DOM 元素
+    const domElements = {
+        chromaticOuterCircle: document.getElementById("chromatic-outer-circle"),
+        chromaticInnerCircle: document.getElementById("chromatic-inner-circle"),
+        fifthsOuterCircle: document.getElementById("fifths-outer-circle"),
+        fifthsInnerCircle: document.getElementById("fifths-inner-circle"),
+        chromaticLeftBtn: document.getElementById("chromatic-rotate-left"),
+        chromaticRightBtn: document.getElementById("chromatic-rotate-right"),
+        fifthsLeftBtn: document.getElementById("fifths-rotate-left"),
+        fifthsRightBtn: document.getElementById("fifths-rotate-right"),
+        pianoContainer: document.querySelector(".piano-container"),
+        keySigContainer: document.getElementById("key-signature-container"),
+        keySelectorDropdown: document.getElementById("key-selector-dropdown"),
+        jianpuDisplayContainer: document.getElementById("jianpu-display-container"),
+        playStopButton: document.getElementById('play-stop-btn'),
+        songSelector: document.getElementById('song-selector-dropdown'),
+        loopCheckbox: document.getElementById('loop-song-checkbox')
+    };
 
     // --- 全局状态 ---
     let currentStep = 0;
     let chromaticVisualAngle = 0; // 【新增】追踪半音阶圈的视觉角度
     let fifthsVisualAngle = 0;    // 【新增】追踪五度圈的视觉角度
-    let localizedTonic = "Tonic"; // <--【!! 新增此行 !!】 (默认值)
-    let localizedPerfectUnison = "PerfectUnison";
-    let localizedMinorSecond = "MinorSecond";
-    let localizedMajorSecond = "MajorSecond";
-    let localizedMinorThird = "MinorThird";
-    let localizedMajorThird = "MajorThird";
-    let localizedPerfectFourth = "PerfectFourth";
-    let localizedAugmentedFourth = "AugmentedFourth";
-    let localizedPerfectFifth = "PerfectFifth";
-    let localizedMinorSixth = "MinorSixth";
-    let localizedMajorSixth = "MajorSixth";
-    let localizedMinorSeventh = "MinorSeventh";
-    let localizedMajorSeventh = "MajorSeventh";
-    let localizedPerfectOctave = "PerfectOctave";
-    let localizedUnableToRecognizeNoteName = "UnableToRecognizeNoteName";
-    let localizedPleaseIputWithTheLowerNoteFirst = "PleaseIputWithTheLowerNoteFirst";
+    
 
     let audioPlayer;
     // --- DOM 元素获取 ---
@@ -238,7 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
         pianoContainer.appendChild(piano);
         // 钢琴创建完毕后，再获取所有的琴键
         pianoKeys = document.querySelectorAll(".piano .white, .piano .black");
-        calculatePianoInterval(pianoContainer);
     }
 
     function createOuterNotes(parentCircle, orderArray) {
@@ -523,130 +458,6 @@ document.addEventListener("DOMContentLoaded", () => {
         update(); // 调用主更新函数
     });
 
-
-    // calculate piano interval
-    function calculatePianoInterval(pianoContainer) {
-        const HIGH_LIGHT = 'select-highlight';
-        let firstNote = '', secondNote = '';
-
-        pianoContainer.addEventListener('click', (ev) => {
-            const note = ev.target.dataset['note'];
-            if (!firstNote) {
-                firstNote = note;
-            } else if (!secondNote) {
-                secondNote = note;
-            } else if (firstNote === note) {
-                firstNote = '';
-            } else if (secondNote === note) {
-                secondNote = '';
-            } else {
-                secondNote = note;
-            }
-
-            pianoContainer.querySelectorAll('[data-note]')
-            for (const t of pianoContainer.querySelectorAll('[data-note]')) {
-                t.classList.remove(HIGH_LIGHT)
-            }
-
-            console.log(`first: ${firstNote}, second: ${secondNote}`)
-
-            if (firstNote) {
-                pianoContainer.querySelector(`[data-note="${firstNote}"]`).classList.add(HIGH_LIGHT)
-            }
-            if (secondNote) {
-                pianoContainer.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT)
-            }
-
-            document.getElementById('interval-1').innerText = firstNote;
-            document.getElementById('interval-2').innerText = secondNote;
-
-            if (firstNote && secondNote) {
-                const interval = calculateInterval(firstNote, secondNote)
-                document.getElementById('interval-result').innerText = interval;
-            } else {
-                document.getElementById('interval-result').innerText = '';
-            }
-        });
-    }
-
-    function calculateInterval(note1, note2) {
-        const BASE_NOTES = {
-            "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
-            "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
-        };
-
-        const INTERVAL_MAP = {
-            0: { "name": localizedPerfectUnison, "degree": 1 },
-            1: { "name": localizedMinorSecond, "degree": 2 },
-            2: { "name": localizedMajorSecond, "degree": 2 },
-            3: { "name": localizedMinorThird, "degree": 3 },
-            4: { "name": localizedMajorThird, "degree": 3 },
-            5: { "name": localizedPerfectFourth, "degree": 4 },
-            6: { "name": localizedAugmentedFourth, "degree": 4.5 }, // 特殊情况：三全音
-            7: { "name": localizedPerfectFifth, "degree": 5 },
-            8: { "name": localizedMinorSixth, "degree": 6 },
-            9: { "name": localizedMajorSixth, "degree": 6 },
-            10: { "name": localizedMinorSeventh, "degree": 7 },
-            11: { "name": localizedMajorSeventh, "degree": 7 },
-            12: { "name": localizedPerfectOctave, "degree": 8 }
-        };
-
-        function getAbsoluteSemitoneValue(note) {
-            let octave = 1;
-            let noteName = note;
-
-            const match = note.match(/(\d+)$/);
-            if (match) {
-                octave = parseInt(match[1], 10);
-                noteName = note.slice(0, -match[1].length);
-            }
-
-            const baseValue = BASE_NOTES[noteName];
-            if (baseValue === undefined) {
-                throw new Error(`${localizedUnableToRecognizeNoteName}: ${noteName}`);
-            }
-
-            return baseValue + (octave - 1) * 12;
-        }
-
-        try {
-            const val1 = getAbsoluteSemitoneValue(note1);
-            const val2 = getAbsoluteSemitoneValue(note2);
-
-            let semitones = val2 - val1;
-
-            if (semitones < 0) {
-                return `${note1} > ${note2}, ${localizedPleaseIputWithTheLowerNoteFirst}`;
-            }
-
-            if (semitones > 12) {
-                const octaves = Math.floor(semitones / 12);
-                const remainingSemitones = semitones % 12;
-
-                if (remainingSemitones === 0) {
-                    return `${localizedPerfectOctave} x ${octaves}`;
-                }
-
-                const baseInterval = INTERVAL_MAP[remainingSemitones];
-
-                return `${octaves} ${localizedPerfectOctave} + ${baseInterval.name}`;
-            }
-
-            if (INTERVAL_MAP[semitones]) {
-                return INTERVAL_MAP[semitones].name;
-            }
-
-            if (semitones === 6) {
-                return INTERVAL_MAP[6].name;
-            }
-
-
-        } catch (e) {
-            return `Wrong: ${e.message}`;
-        }
-    }
-
-
     // =====================================================================
     // =================== 4. 初始化 =======================================
     // =====================================================================
@@ -681,5 +492,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     initialize();
+    // 4. 启动引擎
+    // (确保 ScaleVisualizerEngine.js 已在 HTML <script> 标签中被此文件 *之前* 加载)
+    if (typeof ScaleVisualizerEngine !== 'undefined') {
+        const visualizer = new ScaleVisualizerEngine(majorConfig, domElements);
+        visualizer.initialize();
+    } else {
+        console.error("ScaleVisualizerEngine.js 未加载。请确保它在 major.js 之前被引入。");
+    }
 });
 
