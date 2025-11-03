@@ -90,13 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
             // F#, C#, G#, D#, A#, E#, B#
             sharps: [0, 1.5, -0.5, 1, 2.5, 0.5, 2],
             // Bb, Eb, Ab, Db, Gb, Cb, Fb
-            flats:  [2, 0.5, 2.5, 1, 3, 1.5, 3.5],
+            flats: [2, 0.5, 2.5, 1, 3, 1.5, 3.5],
         },
         bass: {
             // F#, C#, G#, D#, A#, E#, B#
             sharps: [1, 2.5, 0.5, 2, 3.5, 1.5, 3],
             // Bb, Eb, Ab, Db, Gb, Cb, Fb
-            flats:  [3, 1.5, 3.5, 2, 4, 2.5, 4.5],
+            flats: [3, 1.5, 3.5, 2, 4, 2.5, 4.5],
         },
     };
 
@@ -115,6 +115,22 @@ document.addEventListener("DOMContentLoaded", () => {
     let chromaticVisualAngle = 0; // 【新增】追踪半音阶圈的视觉角度
     let fifthsVisualAngle = 0;    // 【新增】追踪五度圈的视觉角度
     let localizedTonic = "Tonic"; // <--【!! 新增此行 !!】 (默认值)
+    let localizedPerfectUnison = "PerfectUnison";
+    let localizedMinorSecond = "MinorSecond";
+    let localizedMajorSecond = "MajorSecond";
+    let localizedMinorThird = "MinorThird";
+    let localizedMajorThird = "MajorThird";
+    let localizedPerfectFourth = "PerfectFourth";
+    let localizedAugmentedFourth = "AugmentedFourth";
+    let localizedPerfectFifth = "PerfectFifth";
+    let localizedMinorSixth = "MinorSixth";
+    let localizedMajorSixth = "MajorSixth";
+    let localizedMinorSeventh = "MinorSeventh";
+    let localizedMajorSeventh = "MajorSeventh";
+    let localizedPerfectOctave = "PerfectOctave";
+    let localizedUnableToRecognizeNoteName = "UnableToRecognizeNoteName";
+    let localizedPleaseIputWithTheLowerNoteFirst = "PleaseIputWithTheLowerNoteFirst";
+
     let audioPlayer;
     // --- DOM 元素获取 ---
     const chromaticOuterCircle = document.getElementById(
@@ -311,8 +327,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- 【移植】五线谱绘制相关函数 ---
-// script.js
-// 修改后的 createStaff 函数
+    // script.js
+    // 修改后的 createStaff 函数
     function createStaff(clefType) {
         const wrapper = document.createElement("div");
         wrapper.className = "staff-wrapper";
@@ -343,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return wrapper;
     }
 
-// 修改后的 addKeySignature 函数
+    // 修改后的 addKeySignature 函数
     function addKeySignature(staffWrapper, clefType, accidentalType, count) {
         if (count === 0) return;
         const positions = ACCIDENTAL_POSITIONS[clefType][accidentalType];
@@ -461,7 +477,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- 事件处理 (无需改动) ---
-// --- 【修改】重写事件处理，以控制动画方向并保持同步 ---
+    // --- 【修改】重写事件处理，以控制动画方向并保持同步 ---
     chromaticRightBtn.addEventListener("click", () => {
         currentStep = (currentStep + 1) % 12;
         chromaticVisualAngle += 30; // 累加角度
@@ -507,6 +523,130 @@ document.addEventListener("DOMContentLoaded", () => {
         update(); // 调用主更新函数
     });
 
+
+    // calculate piano interval
+    function calculatePianoInterval(pianoContainer) {
+        const HIGH_LIGHT = 'select-highlight';
+        let firstNote = '', secondNote = '';
+
+        pianoContainer.addEventListener('click', (ev) => {
+            const note = ev.target.dataset['note'];
+            if (!firstNote) {
+                firstNote = note;
+            } else if (!secondNote) {
+                secondNote = note;
+            } else if (firstNote === note) {
+                firstNote = '';
+            } else if (secondNote === note) {
+                secondNote = '';
+            } else {
+                secondNote = note;
+            }
+
+            pianoContainer.querySelectorAll('[data-note]')
+            for (const t of pianoContainer.querySelectorAll('[data-note]')) {
+                t.classList.remove(HIGH_LIGHT)
+            }
+
+            console.log(`first: ${firstNote}, second: ${secondNote}`)
+
+            if (firstNote) {
+                pianoContainer.querySelector(`[data-note="${firstNote}"]`).classList.add(HIGH_LIGHT)
+            }
+            if (secondNote) {
+                pianoContainer.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT)
+            }
+
+            document.getElementById('interval-1').innerText = firstNote;
+            document.getElementById('interval-2').innerText = secondNote;
+
+            if (firstNote && secondNote) {
+                const interval = calculateInterval(firstNote, secondNote)
+                document.getElementById('interval-result').innerText = interval;
+            } else {
+                document.getElementById('interval-result').innerText = '';
+            }
+        });
+    }
+
+    function calculateInterval(note1, note2) {
+        const BASE_NOTES = {
+            "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
+            "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
+        };
+
+        const INTERVAL_MAP = {
+            0: { "name": localizedPerfectUnison, "degree": 1 },
+            1: { "name": localizedMinorSecond, "degree": 2 },
+            2: { "name": localizedMajorSecond, "degree": 2 },
+            3: { "name": localizedMinorThird, "degree": 3 },
+            4: { "name": localizedMajorThird, "degree": 3 },
+            5: { "name": localizedPerfectFourth, "degree": 4 },
+            6: { "name": localizedAugmentedFourth, "degree": 4.5 }, // 特殊情况：三全音
+            7: { "name": localizedPerfectFifth, "degree": 5 },
+            8: { "name": localizedMinorSixth, "degree": 6 },
+            9: { "name": localizedMajorSixth, "degree": 6 },
+            10: { "name": localizedMinorSeventh, "degree": 7 },
+            11: { "name": localizedMajorSeventh, "degree": 7 },
+            12: { "name": localizedPerfectOctave, "degree": 8 }
+        };
+
+        function getAbsoluteSemitoneValue(note) {
+            let octave = 1;
+            let noteName = note;
+
+            const match = note.match(/(\d+)$/);
+            if (match) {
+                octave = parseInt(match[1], 10);
+                noteName = note.slice(0, -match[1].length);
+            }
+
+            const baseValue = BASE_NOTES[noteName];
+            if (baseValue === undefined) {
+                throw new Error(`${localizedUnableToRecognizeNoteName}: ${noteName}`);
+            }
+
+            return baseValue + (octave - 1) * 12;
+        }
+
+        try {
+            const val1 = getAbsoluteSemitoneValue(note1);
+            const val2 = getAbsoluteSemitoneValue(note2);
+
+            let semitones = val2 - val1;
+
+            if (semitones < 0) {
+                return `${note1} > ${note2}, ${localizedPleaseIputWithTheLowerNoteFirst}`;
+            }
+
+            if (semitones > 12) {
+                const octaves = Math.floor(semitones / 12);
+                const remainingSemitones = semitones % 12;
+
+                if (remainingSemitones === 0) {
+                    return `${localizedPerfectOctave} x ${octaves}`;
+                }
+
+                const baseInterval = INTERVAL_MAP[remainingSemitones];
+
+                return `${octaves} ${localizedPerfectOctave} + ${baseInterval.name}`;
+            }
+
+            if (INTERVAL_MAP[semitones]) {
+                return INTERVAL_MAP[semitones].name;
+            }
+
+            if (semitones === 6) {
+                return INTERVAL_MAP[6].name;
+            }
+
+
+        } catch (e) {
+            return `Wrong: ${e.message}`;
+        }
+    }
+
+
     // =====================================================================
     // =================== 4. 初始化 =======================================
     // =====================================================================
@@ -543,125 +683,3 @@ document.addEventListener("DOMContentLoaded", () => {
     initialize();
 });
 
-
-// calculate piano interval
-function calculatePianoInterval(pianoContainer) {
-    const HIGH_LIGHT = 'select-highlight';
-    let firstNote='', secondNote='';
-    
-    pianoContainer.addEventListener('click', (ev) => {
-        const note = ev.target.dataset['note'];
-        if (!firstNote) {
-            firstNote = note;
-        } else if (!secondNote) {
-            secondNote = note;
-        } else if (firstNote === note) {
-            firstNote = '';
-        } else if (secondNote === note) {
-            secondNote = '';
-        } else {
-            secondNote = note;
-        }
-
-        pianoContainer.querySelectorAll('[data-note]')
-        for (const t of pianoContainer.querySelectorAll('[data-note]')) { 
-            t.classList.remove(HIGH_LIGHT)
-        }
-
-        console.log(`first: ${firstNote}, second: ${secondNote}`)
-
-        if (firstNote) {
-            pianoContainer.querySelector(`[data-note="${firstNote}"]`).classList.add(HIGH_LIGHT)
-        }
-        if (secondNote) {
-            pianoContainer.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT)
-        }
-        
-        document.getElementById('interval-1').innerText = firstNote;
-        document.getElementById('interval-2').innerText = secondNote;
-        
-        if (firstNote && secondNote) {
-            const interval = calculateInterval(firstNote, secondNote)
-            document.getElementById('interval-result').innerText = interval;
-        } else {
-            document.getElementById('interval-result').innerText = '';
-        }
-    });
-}
-
-function calculateInterval(note1, note2) {
-    const BASE_NOTES = {
-        "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
-        "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
-    };
-
-    const INTERVAL_MAP = {
-        0: { "name": "纯一度", "degree": 1 },
-        1: { "name": "小二度", "degree": 2 },
-        2: { "name": "大二度", "degree": 2 },
-        3: { "name": "小三度", "degree": 3 },
-        4: { "name": "大三度", "degree": 3 },
-        5: { "name": "纯四度", "degree": 4 },
-        6: { "name": "增四度/减五度", "degree": 4.5 }, // 特殊情况：三全音
-        7: { "name": "纯五度", "degree": 5 },
-        8: { "name": "小六度", "degree": 6 },
-        9: { "name": "大六度", "degree": 6 },
-        10: { "name": "小七度", "degree": 7 },
-        11: { "name": "大七度", "degree": 7 },
-        12: { "name": "纯八度", "degree": 8 }
-    };
-    
-    function getAbsoluteSemitoneValue(note) {
-        let octave = 1; 
-        let noteName = note;
-
-        const match = note.match(/(\d+)$/);
-        if (match) {
-            octave = parseInt(match[1], 10);
-            noteName = note.slice(0, -match[1].length);
-        }
-        
-        const baseValue = BASE_NOTES[noteName];
-        if (baseValue === undefined) {
-            throw new Error(`无法识别音符名称: ${noteName}`);
-        }
-
-        return baseValue + (octave - 1) * 12;
-    }
-
-    try {
-        const val1 = getAbsoluteSemitoneValue(note1);
-        const val2 = getAbsoluteSemitoneValue(note2);
-
-        let semitones = val2 - val1;
-        
-        if (semitones < 0) {
-             return `${note1} 的音高低于 ${note2}，请以低音在前的方式输入。`;
-        }
-        
-        if (semitones > 12) {
-            const octaves = Math.floor(semitones / 12);
-            const remainingSemitones = semitones % 12;
-
-            if (remainingSemitones === 0) {
-                 return `纯八度 x ${octaves}`;
-            }
-            
-            const baseInterval = INTERVAL_MAP[remainingSemitones];
-            
-            return `复合音程: ${octaves} 个八度 加 ${baseInterval.name}`;
-        }
-        
-        if (INTERVAL_MAP[semitones]) {
-            return INTERVAL_MAP[semitones].name;
-        }
-
-        if (semitones === 6) {
-            return INTERVAL_MAP[6].name;
-        }
-
-
-    } catch (e) {
-        return `计算错误: ${e.message}`;
-    }
-}
