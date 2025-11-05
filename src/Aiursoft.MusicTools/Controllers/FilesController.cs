@@ -2,6 +2,7 @@ using Aiursoft.CSTools.Attributes;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.MusicTools.Services;
 using Aiursoft.MusicTools.Services.FileStorage;
+using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Aiursoft.MusicTools.Controllers;
@@ -9,6 +10,7 @@ namespace Aiursoft.MusicTools.Controllers;
 /// <summary>
 /// This controller is used to handle file operations like upload and download.
 /// </summary>
+[LimitPerMin]
 public class FilesController(
     ImageProcessingService imageCompressor,
     ILogger<FilesController> logger,

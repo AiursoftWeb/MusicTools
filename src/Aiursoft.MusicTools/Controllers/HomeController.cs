@@ -1,10 +1,12 @@
 using Aiursoft.MusicTools.Models.HomeViewModels;
 using Aiursoft.MusicTools.Services;
 using Aiursoft.UiStack.Navigation;
+using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Aiursoft.MusicTools.Controllers;
 
+[LimitPerMin]
 public class HomeController : Controller
 {
     public IActionResult Index()
