@@ -162,5 +162,8 @@
   <data name="Perfect Twenty-Second" xml:space="preserve">
     <value>Vigésima Segunda Perfeita</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Repor Seleção</value>
+  </data>
 
 </root>

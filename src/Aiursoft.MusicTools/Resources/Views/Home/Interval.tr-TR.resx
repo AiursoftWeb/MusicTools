@@ -162,5 +162,8 @@
   <data name="Major Twenty-First" xml:space="preserve">
     <value>Büyük Yirmi Birinci</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Seçimi Sıfırla</value>
+  </data>
 
 </root>

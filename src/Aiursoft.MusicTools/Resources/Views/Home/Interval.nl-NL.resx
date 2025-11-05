@@ -162,5 +162,8 @@
   <data name="Major Twentieth" xml:space="preserve">
     <value>Grote Twintigste</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Selectie opnieuw instellen</value>
+  </data>
 
 </root>

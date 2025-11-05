@@ -162,5 +162,8 @@
   <data name="Perfect Twenty-Second" xml:space="preserve">
     <value>纯二十二度</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>重置选择</value>
+  </data>
 
 </root>

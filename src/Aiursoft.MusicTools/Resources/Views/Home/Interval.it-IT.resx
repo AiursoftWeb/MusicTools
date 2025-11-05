@@ -162,5 +162,8 @@
   <data name="Minor Twenty-First" xml:space="preserve">
     <value>Ventesima Prima Minore</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Reimposta selezione</value>
+  </data>
 
 </root>

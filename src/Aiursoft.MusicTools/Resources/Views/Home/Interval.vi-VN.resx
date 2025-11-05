@@ -162,5 +162,8 @@
   <data name="Minor Twenty-First" xml:space="preserve">
     <value>Quãng Hai Mốt Thứ</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Thiết lập lại lựa chọn</value>
+  </data>
 
 </root>

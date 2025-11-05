@@ -162,5 +162,8 @@
   <data name="Perfect Twenty-Second" xml:space="preserve">
     <value>완전 22도</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>선택 초기화</value>
+  </data>
 
 </root>

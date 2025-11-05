@@ -162,5 +162,8 @@
   <data name="Major Twenty-First" xml:space="preserve">
     <value>Major Twenty-First</value>
   </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Reset Selection</value>
+  </data>
 
 </root>
