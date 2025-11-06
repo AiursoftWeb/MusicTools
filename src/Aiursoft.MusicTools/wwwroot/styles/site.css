@@ -289,6 +289,14 @@
     background-color: #000;
 }
 
+.note-line {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+}
 .clef, .accidental {
     font-family: 'Bravura', serif !important;
     position: absolute;

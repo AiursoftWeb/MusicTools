@@ -1,0 +1,153 @@
+@{
+    ViewData["Title"] = @Localizer["Interval Exam"];
+}
+
+<div id="localization-data" data-perfect-unison="@Localizer["Perfect Unison"]"
+    data-minor-second="@Localizer["Minor Second"]" data-major-second="@Localizer["Major Second"]"
+    
+    style="display: none;">
+</div>
+
+<div class="container-fluid py-4">
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-4">
+            <h1>右边音符的大三的是：</h1>
+        </div>
+        <div class="col-lg-7">
+
+            <div id="question-staff-container"
+                class="d-flex flex-column flex-md-row align-items-center gap-3 flex-wrap">
+
+            </div>
+        </div>
+        <button onclick="changeNote()">change</button>
+
+    </div>
+
+    <div class="row g-4 justify-content-center mb-4">
+        <h1>Select Answer</h1>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-4">
+
+            <div id="staff-answer-container"
+                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
+                <div class="key-signature-pair">
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 2.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 0.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+
+            <div id="staff-answer-container"
+                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
+                <div class="key-signature-pair">
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 2.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 0.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+
+            <div id="staff-answer-container"
+                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
+                <div class="key-signature-pair">
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 2.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                    <div class="staff-wrapper">
+                        <div class="staff-line" style="top: 0em;"></div>
+                        <div class="staff-line" style="top: 1em;"></div>
+                        <div class="staff-line" style="top: 2em;"></div>
+                        <div class="staff-line" style="top: 3em;"></div>
+                        <div class="staff-line" style="top: 4em;"></div><span class="clef"
+                            style="top: 0.7em; left: 5px;"><span style="font-size: 4em;"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/scripts/interval-exam.js"></script>
+    <script>
+        const arr = [
+            'C_2',
+            'D_2',
+            'E_2',
+            'F_2',
+            'G_2',
+            'A_2',
+            'B_2',
+            'C_1',
+            'D_1',
+            'E_1',
+            'F_1',
+            'G_1',
+            'A_1',
+            'B_1',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'A',
+            'B',
+            'C2',
+            'D2',
+            'E2',
+            'F2',
+            'G2',
+            'A2',
+            'B2',
+        ];
+        let i = 0;
+        function changeNote() {
+            staff.setPitch(arr[i++]);
+        }
+
+    </script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" />
+}
