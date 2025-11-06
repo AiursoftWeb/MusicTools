@@ -317,3 +317,14 @@
     background-color: #ffc446 !important;
     border-color: #5a8fbb;
 }
+
+.exam-answer {
+    padding: 4rem 0 0 0;
+    border: 1px solid transparent !important; 
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.exam-answer:hover {
+    border-color: var(--bs-primary) !important;
+}
