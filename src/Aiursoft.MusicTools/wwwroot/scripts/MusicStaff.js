@@ -205,7 +205,7 @@ class MusicStaff {
         const hasKeySignature = (this.#currentKeySignature && this.#currentKeySignature.count > 0);
 
         // (我保留了你设置的 220px，虽然这个值看起来很大)
-        const KEY_SIGNATURE_SPACE_SHIFT = 220;
+        const KEY_SIGNATURE_SPACE_SHIFT = 160;
 
         let noteLeftPx = 320;
         let ledgerLeftPx = 310;
