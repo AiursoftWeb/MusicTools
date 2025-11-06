@@ -6,22 +6,21 @@
      data-correct="@Localizer["Correct!"]"
      data-wrong="@Localizer["Wrong."]"
      data-question-template="@Localizer["What is the (0) of the note above?"]"
-
-     data-p1="@Localizer["Perfect Unison"]"
-     data-m2="@Localizer["Minor Second"]"
-     data-M2="@Localizer["Major Second"]"
-     data-m3="@Localizer["Minor Third"]"
-     data-M3="@Localizer["Major Third"]"
-     data-p4="@Localizer["Perfect Fourth"]"
-     data-a4="@Localizer["Augmented Fourth"]"
-     data-d5="@Localizer["Diminished Fifth"]"
-     data-p5="@Localizer["Perfect Fifth"]"
-     data-a5="@Localizer["Augmented Fifth"]"
-     data-m6="@Localizer["Minor Sixth"]"
-     data-M6="@Localizer["Major Sixth"]"
-     data-m7="@Localizer["Minor Seventh"]"
-     data-M7="@Localizer["Major Seventh"]"
-     data-p8="@Localizer["Perfect Octave"]"
+     data-int-p1="@Localizer["Perfect Unison"]"
+     data-int-m2="@Localizer["Minor Second"]"
+     data-int-maj2="@Localizer["Major Second"]"
+     data-int-m3="@Localizer["Minor Third"]"
+     data-int-maj3="@Localizer["Major Third"]"
+     data-int-p4="@Localizer["Perfect Fourth"]"
+     data-int-a4="@Localizer["Augmented Fourth"]"
+     data-int-d5="@Localizer["Diminished Fifth"]"
+     data-int-p5="@Localizer["Perfect Fifth"]"
+     data-int-a5="@Localizer["Augmented Fifth"]"
+     data-int-m6="@Localizer["Minor Sixth"]"
+     data-int-maj6="@Localizer["Major Sixth"]"
+     data-int-m7="@Localizer["Minor Seventh"]"
+     data-int-maj7="@Localizer["Major Seventh"]"
+     data-int-p8="@Localizer["Perfect Octave"]"
      style="display: none;">
 </div>
 
@@ -76,27 +75,26 @@
             // --- A. 获取本地化字符串 ---
             const localizationData = document.getElementById('localization-data').dataset;
 
-            // 构建一个 JS 对象以便于传递
             const localizedStrings = {
                 correct: localizationData.correct,
                 wrong: localizationData.wrong,
                 questionTemplate: localizationData.questionTemplate,
                 intervals: {
-                    'p1': localizationData.p1,
-                    'm2': localizationData.m2,
-                    'M2': localizationData.m2, // 注意: data-M2 变为 dataset.m2
-                    'm3': localizationData.m3,
-                    'M3': localizationData.m3,
-                    'p4': localizationData.p4,
-                    'a4': localizationData.a4,
-                    'd5': localizationData.d5,
-                    'p5': localizationData.p5,
-                    'a5': localizationData.a5,
-                    'm6': localizationData.m6,
-                    'M6': localizationData.m6,
-                    'm7': localizationData.m7,
-                    'M7': localizationData.m7,
-                    'p8': localizationData.p8
+                    'p1': localizationData.intP1,
+                    'm2': localizationData.intM2,
+                    'maj2': localizationData.intMaj2, // <--- 修复 (M2 -> maj2)
+                    'm3': localizationData.intM3,
+                    'maj3': localizationData.intMaj3, // <--- 修复 (M3 -> maj3)
+                    'p4': localizationData.intP4,
+                    'a4': localizationData.intA4,
+                    'd5': localizationData.intD5,
+                    'p5': localizationData.intP5,
+                    'a5': localizationData.intA5,
+                    'm6': localizationData.intM6,
+                    'maj6': localizationData.intMaj6, // <--- 修复 (M6 -> maj6)
+                    'm7': localizationData.intM7,
+                    'maj7': localizationData.intMaj7, // <--- 修复 (M7 -> maj7)
+                    'p8': localizationData.intP8
                 }
             };
 
