@@ -30,21 +30,21 @@
 
             <div id="staff-answer1-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                
+
             </div>
         </div>
         <div class="col-lg-4">
 
             <div id="staff-answer2-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                
+
             </div>
         </div>
         <div class="col-lg-4">
 
             <div id="staff-answer3-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                
+
             </div>
         </div>
     </div>
@@ -53,22 +53,30 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
+    @* 我们现在引用新的、重构过的 JS 文件。
+      (您需要将上面的代码保存到这些文件中)
+    *@
     <script src="~/scripts/staff.js"></script>
     <script src="~/scripts/interval-exam.js"></script>
     <script>
+        // --- 使用新的、重构过的代码 ---
 
-        const questionStaff = new Staff('question-staff-container');
-        questionStaff.setPitch('C');
+        // 1. 创建 Staff 实例
+        // 我们可以指定谱号！这里我们都用高音谱表
+        const questionStaff = new Staff('question-staff-container', 'treble');
 
-        const answer1Staff = new Staff('staff-answer1-container');
-        const answer2Staff = new Staff('staff-answer2-container');
-        const answer3Staff = new Staff('staff-answer3-container');
+        const answer1Staff = new Staff('staff-answer1-container', 'treble');
+        const answer2Staff = new Staff('staff-answer2-container', 'treble');
+        const answer3Staff = new Staff('staff-answer3-container', 'treble');
 
+        // 2. 创建 ExamQuestion 实例
         const examQuestion = new ExamQuestion(
             questionStaff,
             [answer1Staff, answer2Staff, answer3Staff],
             document.getElementById('questionLabel')
         );
+
+        // 3. 开始考试！
         examQuestion.nextQuestion();
 
     </script>
