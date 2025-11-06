@@ -1,7 +1,5 @@
 /* =================================================================
- * == MusicStaff.js - 通用五线谱绘制控件
- * =================================================================
- * ... (注释不变) ...
+ * == MusicStaff.js
  * ================================================================= */
 
 class MusicStaff {
@@ -10,7 +8,7 @@ class MusicStaff {
     // =================== 1. 核心数据 ==================================
     // =================================================================
 
-    // ... (所有静态数据: CSS_VERTICAL_OFFSET_EM, ACCIDENTAL_POSITIONS, 等... 保持不变)
+    // ... (CSS_VERTICAL_OFFSET_EM, ORDER_OF_SHARPS, 等不变) ...
     static CSS_VERTICAL_OFFSET_EM = 1.7;
     static ORDER_OF_SHARPS = ['F', 'C', 'G', 'D', 'A', 'E', 'B'];
     static ORDER_OF_FLATS = ['B', 'E', 'A', 'D', 'G', 'C', 'F'];
@@ -29,14 +27,19 @@ class MusicStaff {
         bass: { 'C': 6, 'D': 5.5, 'E': 5, 'F': 4.5, 'G': 4, 'A': 3.5, 'B': 3 }
     };
     static CLEF_GLYPHS = {
-        treble: { glyph: '\uE050', top: '2.7em', size: '4em' }, // G-clef
-        bass: { glyph: '\uE062', top: '0.7em', size: '4em' }  // F-clef
+        treble: { glyph: '\uE050', top: '2.7em', size: '4em' },
+        bass: { glyph: '\uE062', top: '0.7em', size: '4em' }
     };
+
+    // [!! 修改 !!]
     static ACCIDENTAL_GLYPHS = {
         '#': '\uE262', // Sharp
         'b': '\uE260', // Flat
+        '𝄪': '\uE263', // Double Sharp (Bravura)
+        '𝄫': '\uE264', // Double Flat (Bravura)
         '': ''         // Natural
     };
+
     static NOTE_GLYPHS = {
         STEM_UP: '\uE1D5',
         STEM_DOWN: '\uE1D6'
@@ -47,6 +50,7 @@ class MusicStaff {
     // =================== 2. 构造与 DOM ===============================
     // =================================================================
 
+    // ... (constructor, #createStaffDOM, #createGlyph 不变) ...
     #container;
     #staffWrapper;
     #keySignatureGroup;
@@ -55,7 +59,6 @@ class MusicStaff {
     #currentKeySignature;
 
     constructor(containerId, options = {}) {
-        // ... (构造函数不变) ...
         this.#clefType = options.clef || 'treble';
         this.#container = document.getElementById(containerId);
 
@@ -70,7 +73,6 @@ class MusicStaff {
     }
 
     #createStaffDOM() {
-        // ... (此函数不变) ...
         const wrapper = document.createElement("div");
         wrapper.className = "staff-wrapper position-relative";
         this.#staffWrapper = wrapper;
@@ -100,7 +102,6 @@ class MusicStaff {
     }
 
     #createGlyph(className, text, fontSize) {
-        // ... (此函数不变) ...
         const positioner = document.createElement("span");
         positioner.className = className;
         const glyph = document.createElement("span");
@@ -114,27 +115,24 @@ class MusicStaff {
     // =================== 3. 公共 API =================================
     // =================================================================
 
+    // ... (clearAll, clearKeySignature, clearNote, setKeySignature 不变) ...
     clearAll() {
-        // ... (此函数不变) ...
         this.clearKeySignature();
         this.clearNote();
     }
 
     clearKeySignature() {
-        // ... (此函数不变) ...
         this.#keySignatureGroup.innerHTML = '';
         this.#currentKeySignature = null;
     }
 
     clearNote() {
-        // ... (此函数不变) ...
         this.#noteGroup.innerHTML = '';
     }
 
     setKeySignature(sig) {
-        // ... (此函数不变) ...
         this.clearKeySignature();
-        this.#currentKeySignature = sig; // <-- [关键] 调号在这里被设置
+        this.#currentKeySignature = sig;
 
         if (!sig || sig.count === 0) return;
         const { type, count } = sig;
@@ -155,40 +153,41 @@ class MusicStaff {
     }
 
     /**
-     * [!! 最终修复 !!] 绘制单个音符
+     * [!! 修改 !!] 绘制单个音符
+     * (现在可以解析 C𝄪5 这样的音高)
      */
     showNote(pitch) {
         this.clearNote();
         if (!pitch) return;
 
-        // 1. 解析音高 (不变)
-        const letter = pitch.charAt(0).toUpperCase();
-        const accidental = pitch.length > 2 && (pitch.charAt(1) === '#' || pitch.charAt(1) === 'b')
-            ? pitch.charAt(1)
-            : '';
-        const octave = parseInt(pitch.slice(accidental.length + 1), 10);
+        // 1. [!! 修复 !!] 解析音高
+        const letter = pitch.charAt(0).toUpperCase(); // 'C'
+        const octave = pitch.slice(-1); // '5'
+        const accidental = pitch.slice(1, -1); // '𝄪' (或 '#', 'b', '')
+        const octaveNum = parseInt(octave, 10);
 
-        // 2. 计算位置 (不变)
+        // 2. 计算位置
         const basePosition = MusicStaff.STAFF_POSITIONS[this.#clefType][letter];
         const referenceOctave = this.#clefType === 'treble' ? 4 : 2;
-        const octaveDifference = octave - referenceOctave;
+        const octaveDifference = octaveNum - referenceOctave;
         const position = basePosition - (octaveDifference * 3.5);
         const finalTop = position + MusicStaff.CSS_VERTICAL_OFFSET_EM;
 
-        // 3. 检查是否需要绘制 *单个音符的* 升降号 (不变)
+        // 3. 检查是否需要绘制升降号 (逻辑不变, 但 'accidental' 变量已更新)
         let isAccidentalDrawn = false;
         const accidentalGlyph = MusicStaff.ACCIDENTAL_GLYPHS[accidental];
 
         if (accidentalGlyph) {
             let isRedundant = false;
+            // ... (检查调号的逻辑不变) ...
             if (this.#currentKeySignature && this.#currentKeySignature.count > 0) {
                 const sig = this.#currentKeySignature;
-                if (accidental === '#' && sig.type === 'sharps') {
+                if ((accidental === '#' || accidental === '𝄪') && sig.type === 'sharps') {
                     const sharpedNotes = MusicStaff.ORDER_OF_SHARPS.slice(0, sig.count);
                     if (sharpedNotes.includes(letter)) {
-                        isRedundant = true;
+                        isRedundant = true; // (注意: 调号不会有重升)
                     }
-                } else if (accidental === 'b' && sig.type === 'flats') {
+                } else if ((accidental === 'b' || accidental === '𝄫') && sig.type === 'flats') {
                     const flattedNotes = MusicStaff.ORDER_OF_FLATS.slice(0, sig.count);
                     if (flattedNotes.includes(letter)) {
                         isRedundant = true;
@@ -200,26 +199,21 @@ class MusicStaff {
             }
         }
 
-        // 4. [!! 逻辑修复 !!]
-        // 检查 *调号 (Key Signature)* 是否存在
+        // 4. [!! 修复 !!] 动态 Left 位置 (逻辑不变)
         const hasKeySignature = (this.#currentKeySignature && this.#currentKeySignature.count > 0);
-
-        // (我保留了你设置的 220px，虽然这个值看起来很大)
-        const KEY_SIGNATURE_SPACE_SHIFT = 160;
+        const KEY_SIGNATURE_SPACE_SHIFT = 160; // (你的 160px)
 
         let noteLeftPx = 320;
         let ledgerLeftPx = 310;
-        let accidentalLeftPx = 300; // 单个升降号的基础位置
+        let accidentalLeftPx = 300;
 
-        if (!hasKeySignature) { // <-- [!! 修复 !!]
-            // 如果没有调号 (C Major / a minor / 音程考试页)
-            // 将所有东西向左移动
+        if (!hasKeySignature) {
             noteLeftPx -= KEY_SIGNATURE_SPACE_SHIFT;
             ledgerLeftPx -= KEY_SIGNATURE_SPACE_SHIFT;
-            accidentalLeftPx -= KEY_SIGNATURE_SPACE_SHIFT; // <-- [!! 修复 !!]
+            accidentalLeftPx -= KEY_SIGNATURE_SPACE_SHIFT;
         }
 
-        // 5. [修改] 绘制谱加线 (传入动态的 left 位置)
+        // 5. [修改] 绘制谱加线 (逻辑不变)
         if (position >= 5) {
             for (let i = 5; i <= position; i++) {
                 this.#drawLedgerLine(i, ledgerLeftPx);
@@ -231,19 +225,19 @@ class MusicStaff {
             }
         }
 
-        // 6. [修改] 绘制升降号 (传入动态的 left 位置)
+        // 6. [修改] 绘制升降号 (逻辑不变)
         if (isAccidentalDrawn) {
             const accidentalEl = this.#createGlyph(
                 'music-staff-accidental',
                 accidentalGlyph,
-                '2.5em'
+                '2.5em' // (重升符号可能需要调整字体大小)
             );
             accidentalEl.style.top = `${finalTop}em`;
-            accidentalEl.style.left = `${accidentalLeftPx}px`; // <-- [!! 修复 !!]
+            accidentalEl.style.left = `${accidentalLeftPx}px`;
             this.#noteGroup.appendChild(accidentalEl);
         }
 
-        // 7. [修改] 绘制音符 (传入动态的 left 位置)
+        // 7. [修改] 绘制音符 (逻辑不变)
         const stemUp = (position > 2.0);
         const noteGlyph = stemUp ? MusicStaff.NOTE_GLYPHS.STEM_UP : MusicStaff.NOTE_GLYPHS.STEM_DOWN;
         const noteEl = this.#createGlyph(
@@ -252,7 +246,7 @@ class MusicStaff {
             '3.5em'
         );
         noteEl.style.top = `${finalTop}em`;
-        noteEl.style.left = `${noteLeftPx}px`; // <-- (这已经正确)
+        noteEl.style.left = `${noteLeftPx}px`;
         this.#noteGroup.appendChild(noteEl);
     }
 
@@ -262,8 +256,7 @@ class MusicStaff {
 
     /**
      * [修改] 绘制单根加线
-     * @param {number} theoreticalPosition - 线的理论位置 (e.g., 5em for C4)
-     * @param {number} leftPx - [新] 线的水平位置 (e.g., 310 or 90)
+     * (函数不变)
      */
     #drawLedgerLine(theoreticalPosition, leftPx) {
         const finalTop = theoreticalPosition;
@@ -271,7 +264,7 @@ class MusicStaff {
         const line = document.createElement("div");
         line.className = "music-staff-ledger-line";
         line.style.top = `${finalTop}em`;
-        line.style.left = `${leftPx}px`; // <-- 使用动态位置
+        line.style.left = `${leftPx}px`;
 
         this.#noteGroup.appendChild(line);
     }

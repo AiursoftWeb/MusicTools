@@ -1,15 +1,15 @@
 /* =================================================================
  * == interval-exam.js
- * - [!! 终极修复 !!] 更改了 INTERVAL_DEFINITIONS 的键以匹配 HTML
+ * - [!! 语法修复 !!] 移除了 calculateInterval 中重复的 'accidentalValue' 声明
  * ================================================================= */
 
-// --- 1. 核心音乐数据 (不变) ---
+// --- 1. 核心音乐数据 (已修改) ---
 
 const NOTE_TO_SEMITONE = {
-    'C': 0, 'C#': 1, 'D': 2, 'D#': 3, 'E': 4, 'F': 5, 'F#': 6, 'G': 7, 'G#': 8, 'A': 9, 'A#': 10, 'B': 11,
-    'Db': 1, 'Eb': 3, 'Gb': 6, 'Ab': 8, 'Bb': 10,
-    'Cb': 11, 'Fb': 4, 'E#': 5
+    'C': 0, 'D': 2, 'E': 4, 'F': 5, 'G': 7, 'A': 9, 'B': 11,
 };
+const ACCIDENTAL_TO_VALUE = { '': 0, '#': 1, 'b': -1, '𝄪': 2, '𝄫': -2 };
+const VALUE_TO_ACCIDENTAL = { '0': '', '1': '#', '2': '𝄪', '-1': 'b', '-2': '𝄫' };
 const SEMITONE_TO_NOTE = [
     { sharp: 'C', flat: 'C' },     // 0
     { sharp: 'C#', flat: 'Db' },   // 1
@@ -27,24 +27,21 @@ const SEMITONE_TO_NOTE = [
 const NOTE_LETTER_TO_DEGREE = { 'C': 0, 'D': 1, 'E': 2, 'F': 3, 'G': 4, 'A': 5, 'B': 6 };
 const DEGREE_TO_NOTE_LETTER = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
 
-
-// [!! 终极修复 !!]
-// 键 (Key) 必须与 HTML data- 属性 (和 <script> 块) 匹配
 const INTERVAL_DEFINITIONS = {
     'p1': { semis: 0,  degree: 1 },
     'm2': { semis: 1,  degree: 2 },
-    'maj2': { semis: 2,  degree: 2 }, // <--- 修复 (M2 -> maj2)
+    'maj2': { semis: 2,  degree: 2 },
     'm3': { semis: 3,  degree: 3 },
-    'maj3': { semis: 4,  degree: 3 }, // <--- 修复 (M3 -> maj3)
+    'maj3': { semis: 4,  degree: 3 },
     'p4': { semis: 5,  degree: 4 },
     'a4': { semis: 6,  degree: 4 },
     'd5': { semis: 6,  degree: 5 },
     'p5': { semis: 7,  degree: 5 },
     'm6': { semis: 8,  degree: 6 },
     'a5': { semis: 8,  degree: 5 },
-    'maj6': { semis: 9,  degree: 6 }, // <--- 修复 (M6 -> maj6)
+    'maj6': { semis: 9,  degree: 6 },
     'm7': { semis: 10, degree: 7 },
-    'maj7': { semis: 11, degree: 7 }, // <--- 修复 (M7 -> maj7)
+    'maj7': { semis: 11, degree: 7 },
     'p8': { semis: 12, degree: 8 }
 };
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
@@ -57,6 +54,7 @@ const EXAM_PITCHES = [
 // --- 2. 核心考试逻辑 (已重构) ---
 
 class ExamQuestion {
+    // ... (constructor, #handleAnswerClick 不变) ...
     #questionStaff;
     #answerStaffs;
     #answerElements;
@@ -89,55 +87,77 @@ class ExamQuestion {
         }
     }
 
+
+    /**
+     * [!! 核心修复 !!]
+     * 移除了重复的 'accidentalValue' 声明
+     */
     calculateInterval(basePitch, interval) {
-        // ... (此函数 100% 不变)
+        // 1. 解析基础音高
         const baseLetter = basePitch.charAt(0);
-        const baseAccidental = basePitch.length > 2 ? basePitch.charAt(1) : '';
-        const baseOctave = parseInt(basePitch.slice(baseAccidental.length + 1), 10);
-        const basePitchName = baseLetter + baseAccidental;
-        const baseSemitone = NOTE_TO_SEMITONE[basePitchName];
-        if (baseSemitone === undefined) {
-            console.error(`无法解析 basePitchName: ${basePitchName} (来自 ${basePitch})`);
+        const baseAccidental = (basePitch.length > 2 && (basePitch.charAt(1) === '#' || basePitch.charAt(1) === 'b'))
+            ? basePitch.charAt(1)
+            : '';
+        const baseOctave = parseInt(basePitch.slice(baseLetter.length + baseAccidental.length), 10);
+
+        // 2. 获取基础音的 "自然" 半音值
+        const baseNaturalSemitone = NOTE_TO_SEMITONE[baseLetter];
+        const baseAccidentalValue = ACCIDENTAL_TO_VALUE[baseAccidental];
+
+        if (baseNaturalSemitone === undefined) {
+            console.error(`无法解析 baseLetter: ${baseLetter} (来自 ${basePitch})`);
             return "C4";
         }
-        const targetSemitone_raw = baseSemitone + interval.semis;
-        const targetSemitone = targetSemitone_raw % 12;
+
+        // 3. 计算目标音名 (Degree)
         const baseDegree = NOTE_LETTER_TO_DEGREE[baseLetter];
         const targetDegree = (baseDegree + interval.degree - 1) % 7;
         const targetLetter = DEGREE_TO_NOTE_LETTER[targetDegree];
+
+        // 4. 计算目标八度
         const targetOctave = baseOctave + Math.floor((baseDegree + interval.degree - 1) / 7);
-        const possibleNotes = SEMITONE_TO_NOTE[targetSemitone];
-        let finalPitchName;
-        if (possibleNotes.sharp.startsWith(targetLetter)) {
-            finalPitchName = possibleNotes.sharp;
-        } else if (possibleNotes.flat.startsWith(targetLetter)) {
-            finalPitchName = possibleNotes.flat;
-        } else {
-            finalPitchName = possibleNotes.sharp;
+
+        // 5. [!! 核心 !!] 计算目标调号 (Accidental)
+
+        // 5a. 目标的 "自然" 半音值 (0-11)
+        const targetNaturalSemitone = NOTE_TO_SEMITONE[targetLetter];
+
+        // 5b. "自然" 音程的半音数 (F -> C)
+        let naturalDistance = targetNaturalSemitone - baseNaturalSemitone;
+        if (naturalDistance < 0) {
+            naturalDistance += 12; // (e.g., F(5) -> C(0) = -5 -> 7)
         }
-        return finalPitchName + targetOctave;
+
+        // [!! 移除的 Bug 在这里 !!]
+        // 我之前在这里留下了一个错误的、重复的 'const accidentalValue' 声明
+
+        // 5c. 计算 "调号偏移"
+        // 偏移 = (要求的半音) - (自然的半音) + (基础音的偏移)
+        // e.g., (增五度: 8) - (纯五度: 7) + (F# 的: +1)
+        const accidentalValue = interval.semis - naturalDistance + baseAccidentalValue; // 8 - 7 + 1 = 2
+
+        // 5d. 查找调号
+        const accidentalSymbol = VALUE_TO_ACCIDENTAL[accidentalValue]; // 2 -> '𝄪'
+
+        if (accidentalSymbol === undefined) {
+            console.error(`无法计算调号: ${targetLetter} (Value: ${accidentalValue})`);
+            return targetLetter + targetOctave;
+        }
+
+        return targetLetter + accidentalSymbol + targetOctave; // 'C' + '𝄪' + 5
     }
 
     nextQuestion() {
-        // 1. (不变)
+        // ... (此函数不变) ...
         const basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
-
-        // 2. (不变) 使用了新的 (maj2) 键
         const intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
         const interval = INTERVAL_DEFINITIONS[intervalKey];
         const localizedIntervalName = this.#localizedStrings.intervals[intervalKey];
-
-        // 3. (不变)
         this.#correctAnswerPitch = this.calculateInterval(basePitch, interval);
-
-        // 4. (不变)
         const wrongAnswers = this.generateWrongAnswers(basePitch, interval, this.#correctAnswerPitch);
-
-        // 5. (不变)
         const allAnswers = [this.#correctAnswerPitch, ...wrongAnswers];
         this.shuffleArray(allAnswers);
 
-        // --- 调试日志 (不变) ---
         console.clear();
         console.group("--- 🎵 考试题目调试信息 🎵 ---");
         console.log(`题目 (Question): ${basePitch} 的 ${localizedIntervalName} 是？`);
@@ -149,19 +169,17 @@ class ExamQuestion {
         console.log(`   ➡️ 答案 3 (ID: ${this.#answerElements[2].id}) 设为: ${allAnswers[2]} ${allAnswers[2] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
         console.groupEnd();
 
-        // 6. (不变)
         for (let i = 0; i < this.#answerStaffs.length; i++) {
             this.#answerStaffs[i].showNote(allAnswers[i]);
             this.#answerElements[i].dataset.pitch = allAnswers[i];
         }
 
         this.#questionStaff.showNote(basePitch);
-
-        // [!! 修复 !!] 修复了你的拼写错误 (0) -> {0}
         this.#questionLabel.innerText = this.#localizedStrings.questionTemplate.replace('(0)', localizedIntervalName);
     }
 
     generateWrongAnswers(basePitch, interval, correctAnswer) {
+        // ... (此函数不变) ...
         const wrongAnswers = new Set();
         try {
             const currentIntervalKey = Object.keys(INTERVAL_DEFINITIONS).find(key => INTERVAL_DEFINITIONS[key] === interval);
@@ -172,22 +190,40 @@ class ExamQuestion {
                 wrongAnswers.add(wrongAnswer1);
             }
         } catch (e) { console.error("Error generating wrong answer 1:", e); }
+
         try {
-            const correctSemitoneRaw = NOTE_TO_SEMITONE[correctAnswer.slice(0, -1)];
-            if(correctSemitoneRaw === undefined) throw new Error(`Cannot find semitone for ${correctAnswer.slice(0, -1)}`);
-            const correctSemitone = correctSemitoneRaw % 12;
-            const possibleNotes = SEMITONE_TO_NOTE[correctSemitone];
-            const octave = correctAnswer.slice(-1);
+            // 错误答案 2: 异名同音 (e.g., C𝄪5 -> D5)
+            const correctLetter = correctAnswer.charAt(0);
+            const correctOctave = correctAnswer.slice(-1);
+            const correctAccidental = correctAnswer.slice(1, -1);
+
+            const correctAccidentalValue = ACCIDENTAL_TO_VALUE[correctAccidental];
+            const correctNaturalSemitone = NOTE_TO_SEMITONE[correctLetter];
+
+            const correctSemitoneIndex = (correctNaturalSemitone + correctAccidentalValue + 12) % 12; // +12 确保是正数
+
+            const possibleNotes = SEMITONE_TO_NOTE[correctSemitoneIndex];
+
             let enharmonicAnswer = null;
-            if (correctAnswer.includes('#') && possibleNotes.flat !== possibleNotes.sharp) {
-                enharmonicAnswer = possibleNotes.flat + octave;
-            } else if (correctAnswer.includes('b') && possibleNotes.sharp !== possibleNotes.flat) {
-                enharmonicAnswer = possibleNotes.sharp + octave;
+            if (correctAnswer.includes('𝄪') || correctAnswer.includes('#')) {
+                if (possibleNotes.flat !== possibleNotes.sharp) {
+                    enharmonicAnswer = possibleNotes.flat + correctOctave;
+                } else {
+                    enharmonicAnswer = possibleNotes.sharp + correctOctave;
+                }
+            } else if (correctAnswer.includes('𝄫') || correctAnswer.includes('b')) {
+                if (possibleNotes.sharp !== possibleNotes.flat) {
+                    enharmonicAnswer = possibleNotes.sharp + correctOctave;
+                } else {
+                    enharmonicAnswer = possibleNotes.flat + correctOctave;
+                }
             }
+
             if (enharmonicAnswer && enharmonicAnswer !== correctAnswer) {
                 wrongAnswers.add(enharmonicAnswer);
             }
         } catch (e) { console.error("Error generating wrong answer 2:", e); }
+
         while (wrongAnswers.size < 2) {
             const randomPitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
             if (randomPitch !== correctAnswer) {
@@ -198,6 +234,7 @@ class ExamQuestion {
     }
 
     shuffleArray(array) {
+        // ... (此函数不变) ...
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
