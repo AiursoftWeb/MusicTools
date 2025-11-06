@@ -360,7 +360,7 @@
     line-height: 1;
     display: flex;
     align-items: center;
-    transform: translateY(-1.7em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
+    transform: translateY(-2.9em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
 }
 
 /* 3. 调号 (用于 ScaleVisualizerEngine)
@@ -421,4 +421,23 @@
     position: absolute;
     /* ... (来自 site.css) transform: translateY(-1.7em); */
     z-index: 20; /* 确保在加线 (10) 之上 */
+}
+
+/*
+ Exam
+ */
+
+.exam-answer {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.exam-answer:hover {
+    background-color: #f8f9fa;
+    border-color: #0d6efd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
