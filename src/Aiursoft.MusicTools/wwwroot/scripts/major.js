@@ -4,45 +4,71 @@ window.addEventListener("load", () => {
     // =================== 1. 大调专属数据定义 ==========================
     // =====================================================================
 
-    // 大调音阶间隔 (W-W-H-W-W-W-H)
     const majorScaleIntervals = [0, 2, 4, 5, 7, 9, 11];
 
-    // 大调调名 (用于五线谱显示)
-    const KEY_SIGNATURE_NAMES = {
-        0: { sharp: 'C Major' },
-        7: { sharp: 'G Major' },
-        2: { sharp: 'D Major' },
-        9: { sharp: 'A Major' },
-        4: { sharp: 'E Major' },
-        11: { sharp: 'B Major', flat: 'C♭ Major' },
-        6: { sharp: 'F♯ Major', flat: 'G♭ Major' },
-        1: { sharp: 'C♯ Major', flat: 'D♭ Major' },
-        5: { flat: 'F Major' },
-        10: { flat: 'B♭ Major' },
-        3: { flat: 'E♭ Major' },
-        8: { flat: 'A♭ Major' }
+    // [新设计]
+    // 这是一个完整的数据结构。键(Key)是主音索引 (tonic)。
+    // 它直接告诉引擎该画什么调号，而不需要计算。
+    const MAJOR_KEY_DEFINITIONS = {
+        0: {
+            sharp: { name: 'C Major', signature: { type: 'sharps', count: 0 } }
+        },
+        1: {
+            sharp: { name: 'C♯ Major', signature: { type: 'sharps', count: 7 } },
+            flat:  { name: 'D♭ Major', signature: { type: 'flats',  count: 5 } }
+        },
+        2: {
+            sharp: { name: 'D Major', signature: { type: 'sharps', count: 2 } }
+        },
+        3: {
+            flat:  { name: 'E♭ Major', signature: { type: 'flats',  count: 3 } }
+        },
+        4: {
+            sharp: { name: 'E Major', signature: { type: 'sharps', count: 4 } }
+        },
+        5: {
+            flat:  { name: 'F Major', signature: { type: 'flats',  count: 1 } }
+        },
+        6: {
+            sharp: { name: 'F♯ Major', signature: { type: 'sharps', count: 6 } },
+            flat:  { name: 'G♭ Major', signature: { type: 'flats',  count: 6 } }
+        },
+        7: {
+            sharp: { name: 'G Major', signature: { type: 'sharps', count: 1 } }
+        },
+        8: {
+            flat:  { name: 'A♭ Major', signature: { type: 'flats',  count: 4 } }
+        },
+        9: {
+            sharp: { name: 'A Major', signature: { type: 'sharps', count: 3 } }
+        },
+        10: {
+            flat:  { name: 'B♭ Major', signature: { type: 'flats',  count: 2 } }
+        },
+        11: {
+            sharp: { name: 'B Major', signature: { type: 'sharps', count: 5 } },
+            flat:  { name: 'C♭ Major', signature: { type: 'flats',  count: 7 } }
+        }
     };
 
     // =====================================================================
     // =================== 2. 构建配置与启动引擎 ========================
     // =====================================================================
 
-    // 1. 获取本地化文本
     const localeData = document.getElementById("localization-data");
     const localizedTonic = (localeData && localeData.dataset.tonic) ? localeData.dataset.tonic : "Tonic";
 
-    // 2. 构建配置对象 (只传递专属数据)
+    // [新设计] 配置对象现在传递 keyDefinitions
     const majorConfig = {
         scaleIntervals: majorScaleIntervals,
-        keySignatureNames: KEY_SIGNATURE_NAMES,
-        jianpuPrefix: "1 = ", // 大调简谱前缀
+        keyDefinitions: MAJOR_KEY_DEFINITIONS, // <--- [修改]
+        jianpuPrefix: "1 = ",
         localizedTonicText: localizedTonic,
-        // 注意: fifthsDegreePositions 已被移除，引擎将根据 scaleIntervals 自动计算
-        getKeySignatureIndex: (tonic) => tonic,
-        defaultStep: 0 // 默认从 'C' (索引0) 开始
+        // getKeySignatureIndex: (tonic) => tonic,  // <--- [删除]
+        defaultStep: 0
     };
 
-    // 3. 统一获取所有引擎需要的 DOM 元素
+    // 3. 统一获取所有引擎需要的 DOM 元素 (不变)
     const domElements = {
         chromaticOuterCircle: document.getElementById("chromatic-outer-circle"),
         chromaticInnerCircle: document.getElementById("chromatic-inner-circle"),
@@ -53,7 +79,18 @@ window.addEventListener("load", () => {
         fifthsLeftBtn: document.getElementById("fifths-rotate-left"),
         fifthsRightBtn: document.getElementById("fifths-rotate-right"),
         pianoContainer: document.querySelector(".piano-container"),
-        keySigContainer: document.getElementById("key-signature-container"),
+        treblePair: document.getElementById("treble-pair"),
+        bassPair: document.getElementById("bass-pair"),
+        trebleStaffContainer: document.getElementById("treble-staff-container"),
+        bassStaffContainer: document.getElementById("bass-staff-container"),
+        trebleKeyNameLabel: document.getElementById("treble-key-name-label"),
+        bassKeyNameLabel: document.getElementById("bass-key-name-label"),
+        enhTreblePair: document.getElementById("enh-treble-pair"),
+        enhBassPair: document.getElementById("enh-bass-pair"),
+        enhTrebleStaffContainer: document.getElementById("enh-treble-staff-container"),
+        enhBassStaffContainer: document.getElementById("enh-bass-staff-container"),
+        enhTrebleKeyNameLabel: document.getElementById("enh-treble-key-name-label"),
+        enhBassKeyNameLabel: document.getElementById("enh-bass-key-name-label"),
         keySelectorDropdown: document.getElementById("key-selector-dropdown"),
         jianpuDisplayContainer: document.getElementById("jianpu-display-container"),
         playStopButton: document.getElementById('play-stop-btn'),
@@ -61,8 +98,7 @@ window.addEventListener("load", () => {
         loopCheckbox: document.getElementById('loop-song-checkbox')
     };
 
-    // 4. 启动引擎
-    // (确保 ScaleVisualizerEngine.js 已在 HTML <script> 标签中被此文件 *之前* 加载)
+    // 4. 启动引擎 (不变)
     if (typeof ScaleVisualizerEngine !== 'undefined') {
         const visualizer = new ScaleVisualizerEngine(majorConfig, domElements);
         visualizer.initialize();

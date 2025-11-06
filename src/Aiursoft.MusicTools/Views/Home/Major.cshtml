@@ -164,6 +164,27 @@
                         <div class="card-body">
                             <div id="key-signature-container"
                                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
+
+                                <div id="treble-pair" class="key-signature-pair">
+                                    <div id="treble-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="treble-staff-container"></div>
+                                </div>
+
+                                <div id="bass-pair" class="key-signature-pair">
+                                    <div id="bass-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="bass-staff-container"></div>
+                                </div>
+
+                                <div id="enh-treble-pair" class="key-signature-pair" style="display: none;">
+                                    <div id="enh-treble-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="enh-treble-staff-container"></div>
+                                </div>
+
+                                <div id="enh-bass-pair" class="key-signature-pair" style="display: none;">
+                                    <div id="enh-bass-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="enh-bass-staff-container"></div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -180,6 +201,7 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/scripts/AudioPlayer.js"></script>
+    <script src="~/scripts/MusicStaff.js"></script>
     <script src="~/scripts/ScaleVisualizerEngine.js"></script>
     <script src="~/scripts/major.js"></script>
 }

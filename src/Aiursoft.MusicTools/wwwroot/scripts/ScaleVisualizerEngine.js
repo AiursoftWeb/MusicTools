@@ -1,7 +1,24 @@
 // =====================================================================
 // =================== 1. 通用数据定义 ================================
 // =====================================================================
-// (从 major.js 迁移而来)
+
+// [新添加] 映射每个主音索引 (0-11) 到高音谱表和低音谱表的具体音高
+// 我们定义了 sharp (#) 和 flat (b) 两种拼写，以匹配调号
+const TONIC_PITCH_MAP = [
+    { sharp: { t: "C4", b: "C3" },   flat: { t: "C4", b: "C3" } },   // 0: C
+    { sharp: { t: "C#4", b: "C#3" }, flat: { t: "Db4", b: "Db3" } }, // 1: C#/Db
+    { sharp: { t: "D4", b: "D3" },   flat: { t: "D4", b: "D3" } },   // 2: D
+    { sharp: { t: "D#4", b: "D#3" }, flat: { t: "Eb4", b: "Eb3" } }, // 3: D#/Eb
+    { sharp: { t: "E4", b: "E3" },   flat: { t: "E4", b: "E3" } },   // 4: E
+    { sharp: { t: "F4", b: "F3" },   flat: { t: "F4", b: "F3" } },   // 5: F
+    { sharp: { t: "F#4", b: "F#3" }, flat: { t: "Gb4", b: "Gb3" } }, // 6: F#/Gb
+    { sharp: { t: "G4", b: "G3" },   flat: { t: "G4", b: "G3" } },   // 7: G
+    { sharp: { t: "G#4", b: "G#3" }, flat: { t: "Ab4", b: "Ab3" } }, // 8: G#/Ab
+    { sharp: { t: "A4", b: "A3" },   flat: { t: "A4", b: "A3" } },   // 9: A
+    { sharp: { t: "A#4", b: "A#3" }, flat: { t: "Bb4", b: "Bb3" } }, // 10: A#/Bb
+    { sharp: { t: "B4", b: "B3" },   flat: { t: "Cb4", b: "Cb3" } }  // 11: B/Cb
+];
+
 const notes = [
     "C",
     "C♯/D♭",
@@ -91,40 +108,52 @@ class ScaleVisualizerEngine {
         this.fifthsLeftBtn = domElements.fifthsLeftBtn;
         this.fifthsRightBtn = domElements.fifthsRightBtn;
         this.pianoContainer = domElements.pianoContainer;
-        this.keySigContainer = domElements.keySigContainer;
+
+        this.treblePair = domElements.treblePair;
+        this.bassPair = domElements.bassPair;
+        this.trebleStaffContainer = domElements.trebleStaffContainer;
+        this.bassStaffContainer = domElements.bassStaffContainer;
+        this.trebleKeyNameLabel = domElements.trebleKeyNameLabel;
+        this.bassKeyNameLabel = domElements.bassKeyNameLabel;
+
+        this.enhTreblePair = domElements.enhTreblePair;
+        this.enhBassPair = domElements.enhBassPair;
+        this.enhTrebleStaffContainer = domElements.enhTrebleStaffContainer;
+        this.enhBassStaffContainer = domElements.enhBassStaffContainer;
+        this.enhTrebleKeyNameLabel = domElements.enhTrebleKeyNameLabel;
+        this.enhBassKeyNameLabel = domElements.enhBassKeyNameLabel;
+
         this.keySelectorDropdown = domElements.keySelectorDropdown;
         this.jianpuDisplayContainer = domElements.jianpuDisplayContainer;
         this.playStopButton = domElements.playStopButton;
         this.songSelector = domElements.songSelector;
         this.loopCheckbox = domElements.loopCheckbox;
 
-        // 3. 从配置中提取本地化文本
+        // 3. (不变)
         this.localizedTonic = config.localizedTonicText || "Tonic";
-
-        // 3.5 从配置中获取音阶间隔并派生五度圈位置
-        this.scaleIntervals = config.scaleIntervals || [0, 2, 4, 5, 7, 9, 11]; // (默认值以防万一)
-
-        // 自动派生五度圈音级位置
+        this.scaleIntervals = config.scaleIntervals || [0, 2, 4, 5, 7, 9, 11];
         this.fifthsDegreePositions = this.scaleIntervals.map(interval => {
-            // circleOfFifthsOrder 是在文件顶部定义的全局常量
             const index = circleOfFifthsOrder.indexOf(interval);
-            // 如果找不到(例如在非自然音阶中)，返回-1，使其不显示
             return index !== -1 ? index : -99;
         });
+        this.keyDefinitions = config.keyDefinitions; // <--- [修改]
 
-        this.getKeySignatureIndex = config.getKeySignatureIndex || ((tonic) => tonic);
-
-        // 4. 初始化内部状态
-        // [重构] 从配置中读取默认步骤 (如果未提供，则默认为 0)
-                this.currentStep = config.defaultStep !== undefined ? config.defaultStep : 0;
-
-        // [重构] !! 关键：同时初始化旋转角度 !!
-        // 否则，状态将是 'A'，但视觉效果仍停留在 'C'
+        // 4. (不变)
+        this.currentStep = config.defaultStep !== undefined ? config.defaultStep : 0;
         this.chromaticVisualAngle = this.currentStep * 30;
         this.fifthsVisualAngle = circleOfFifthsOrder.indexOf(this.currentStep) * 30;
-
         this.audioPlayer = null;
         this.pianoKeys = [];
+
+        // 5. [修改] 初始化所有 4 个 MusicStaff 控件
+        if (typeof MusicStaff !== 'undefined') {
+            this.trebleStaff = new MusicStaff(this.trebleStaffContainer.id, { clef: 'treble' });
+            this.bassStaff = new MusicStaff(this.bassStaffContainer.id, { clef: 'bass' });
+            this.enhTrebleStaff = new MusicStaff(this.enhTrebleStaffContainer.id, { clef: 'treble' });
+            this.enhBassStaff = new MusicStaff(this.enhBassStaffContainer.id, { clef: 'bass' });
+        } else {
+            console.error("MusicStaff.js 未加载。");
+        }
     }
 
     // =====================================================================
@@ -310,54 +339,105 @@ class ScaleVisualizerEngine {
     }
 
     updateKeySignatureDisplay() {
-        // [重构] 使用 this.keySigContainer
-        this.keySigContainer.innerHTML = "";
-        const signatureIndex = this.getKeySignatureIndex(this.currentStep);
-        const signatures = KEY_SIGNATURE_DATA[signatureIndex];
+        if (!this.trebleStaff) return; // 检查控件是否加载
 
-        // [重构 - 核心] 使用 this.config.keySignatureNames
-        const names = this.config.keySignatureNames[this.currentStep];
+        // 1. [新逻辑] 直接从配置中获取定义
+        const tonic = this.currentStep;
+        const definitions = this.keyDefinitions[tonic];
 
-        if (!signatures || !names) return;
+        if (!definitions) {
+            // 清空所有
+            this.treblePair.style.display = 'none';
+            this.bassPair.style.display = 'none';
+            this.enhTreblePair.style.display = 'none';
+            this.enhBassPair.style.display = 'none';
+            this.trebleStaff.clearAll();
+            this.bassStaff.clearAll();
+            this.enhTrebleStaff.clearAll();
+            this.enhBassStaff.clearAll();
+            return;
+        }
 
-        Object.entries(signatures).forEach(([keyType, sig]) => {
-            if (sig) {
-                const pairContainer = document.createElement("div");
-                pairContainer.className = "key-signature-pair";
-                const keyName = names[keyType];
-                if (keyName) {
-                    const label = document.createElement("div");
-                    label.className = "key-signature-label text-center text-muted fw-bold mb-2";
-                    label.textContent = keyName;
-                    pairContainer.appendChild(label);
-                }
-                const trebleStaff = this.createStaff("treble");
-                this.addKeySignature(trebleStaff, "treble", sig.type, sig.count);
-                pairContainer.appendChild(trebleStaff);
+        const tonicPitches = TONIC_PITCH_MAP[tonic];
 
-                const bassStaff = this.createStaff("bass");
-                this.addKeySignature(bassStaff, "bass", sig.type, sig.count);
-                pairContainer.appendChild(bassStaff);
+        // 2. 检查 'sharp' 定义是否存在
+        if (definitions.sharp) {
+            const def = definitions.sharp;
+            const pitch = tonicPitches.sharp;
 
-                this.keySigContainer.appendChild(pairContainer);
+            this.treblePair.style.display = 'block';
+            this.bassPair.style.display = 'block';
+
+            this.trebleKeyNameLabel.textContent = def.name;
+            this.bassKeyNameLabel.textContent = def.name;
+
+            this.trebleStaff.setKeySignature(def.signature);
+            this.bassStaff.setKeySignature(def.signature);
+
+            this.trebleStaff.showNote(pitch.t);
+            this.bassStaff.showNote(pitch.b);
+        } else {
+            // 如果没有 'sharp' 定义 (例如 F Major), 隐藏主谱表
+            this.treblePair.style.display = 'none';
+            this.bassPair.style.display = 'none';
+            this.trebleStaff.clearAll();
+            this.bassStaff.clearAll();
+        }
+
+        // 3. 检查 'flat' (同音异调) 定义是否存在
+        if (definitions.flat) {
+            const def = definitions.flat;
+            const pitch = tonicPitches.flat;
+
+            // 决定是显示在主谱表还是同音异调谱表
+            const isEnharmonic = (definitions.sharp); // 如果 sharp 也存在, 才是同音异调
+
+            const targetTrebleStaff = isEnharmonic ? this.enhTrebleStaff : this.trebleStaff;
+            const targetBassStaff = isEnharmonic ? this.enhBassStaff : this.bassStaff;
+            const targetTrebleLabel = isEnharmonic ? this.enhTrebleKeyNameLabel : this.trebleKeyNameLabel;
+            const targetBassLabel = isEnharmonic ? this.enhBassKeyNameLabel : this.bassKeyNameLabel;
+            const targetTreblePair = isEnharmonic ? this.enhTreblePair : this.treblePair;
+            const targetBassPair = isEnharmonic ? this.enhBassPair : this.bassPair;
+
+            targetTreblePair.style.display = 'block';
+            targetBassPair.style.display = 'block';
+
+            targetTrebleLabel.textContent = def.name;
+            targetBassLabel.textContent = def.name;
+
+            targetTrebleStaff.setKeySignature(def.signature);
+            targetBassStaff.setKeySignature(def.signature);
+
+            targetTrebleStaff.showNote(pitch.t);
+            targetBassStaff.showNote(pitch.b);
+
+            if (!isEnharmonic) {
+                // 如果这不是同音异调 (例如 F Major), 确保隐藏同音异调谱表
+                this.enhTreblePair.style.display = 'none';
+                this.enhBassPair.style.display = 'none';
+                this.enhTrebleStaff.clearAll();
+                this.enhBassStaff.clearAll();
             }
-        });
+
+        } else {
+            // 如果没有 'flat' 定义 (例如 C Major), 隐藏同音异调谱表
+            this.enhTreblePair.style.display = 'none';
+            this.enhBassPair.style.display = 'none';
+            this.enhTrebleStaff.clearAll();
+            this.enhBassStaff.clearAll();
+        }
     }
 
     updateJianpuDisplay() {
-        // [重构] 使用 this.jianpuDisplayContainer
         this.jianpuDisplayContainer.innerHTML = "";
 
-        // [重构 - 核心] 使用 this.config.keySignatureNames
-        const names = this.config.keySignatureNames[this.currentStep];
-        if (!names) return;
+        const definitions = this.keyDefinitions[this.currentStep]; // <--- [修改]
+        if (!definitions) return;
 
-        Object.values(names).forEach(fullName => {
-            const keyName = fullName.split(' ')[0];
-
-            // [重构 - 核心] 使用 this.config.jianpuPrefix
+        // [修改] 循环遍历 definitions 里的 sharp 和 flat
+        Object.values(definitions).forEach(def => {
+            const keyName = def.name.split(' ')[0];
             const jianpuText = `${this.config.jianpuPrefix}${keyName}`;
-
             const p = document.createElement("p");
             p.className = "h4 fw-bold mb-1";
             p.textContent = jianpuText;
@@ -436,45 +516,78 @@ class ScaleVisualizerEngine {
     // =================== 5. 初始化 =======================================
     // =====================================================================
 
-    initialize() {
-        // [重构] 不再从此
+// =====================================================================
+    // =================== 5. 初始化 =======================================
+    // =====================================================================
 
-        // [重构] 使用 this. 调用
+    initialize() {
+        // 1. [不变] 绘制钢琴
         this.createPiano();
 
-        // [重构] 使用 this. 引用
+        // 2. [不变] 初始化音频播放器
         this.audioPlayer = new AudioPlayer({
             playStopButton: this.playStopButton,
             songSelector: this.songSelector,
             loopCheckbox: this.loopCheckbox
         });
 
-        // [重构] 使用 this.keySelectorDropdown
-        keyDisplayNames.forEach((keyName, index) => {
+        // 3. [!! 核心修复 !!] 重构下拉框填充逻辑
+        this.keySelectorDropdown.innerHTML = ''; // 清空
+
+        const allKeyOptions = [];
+
+        // 遍历由 major.js 或 minor.js 传入的 keyDefinitions
+        for (const tonicKey in this.keyDefinitions) {
+            const tonic = parseInt(tonicKey, 10);
+            const definitions = this.keyDefinitions[tonic];
+
+            if (definitions.sharp) {
+                allKeyOptions.push({
+                    name: definitions.sharp.name,
+                    value: tonic,
+                    // 升号调 (0 到 7)
+                    sort: definitions.sharp.signature.count
+                });
+            }
+            if (definitions.flat) {
+                // 降号调 (-1 到 -7)
+                // 确保我们不重复添加 C Major (0)
+                if (!definitions.sharp || definitions.flat.name !== definitions.sharp.name) {
+                    allKeyOptions.push({
+                        name: definitions.flat.name,
+                        value: tonic,
+                        sort: -definitions.flat.signature.count
+                    });
+                }
+            }
+        }
+
+        // 4. [新] 按调号顺序 (五度圈顺序) 排序
+        // 结果: ...F(-1), C(0), G(1), D(2)...
+        allKeyOptions.sort((a, b) => a.sort - b.sort);
+
+        // 5. [新] 填充排序后的选项
+        allKeyOptions.forEach(key => {
             const option = document.createElement("option");
-            option.value = index;
-            option.textContent = keyName;
+            option.value = key.value;
+            option.textContent = key.name;
             this.keySelectorDropdown.appendChild(option);
         });
 
-        // [重构] 使用 this. 调用
+        // 6. [不变] 绘制五度圈
         this.createOuterNotes(this.chromaticOuterCircle, [...Array(12).keys()]);
         this.createOuterNotes(this.fifthsOuterCircle, circleOfFifthsOrder);
-
-        // [重构 - 核心] 使用 this.config 传参
-        // this.createInnerDegrees(this.chromaticInnerCircle, this.config.scaleIntervals);
-        // this.createInnerDegrees(this.fifthsInnerCircle, this.config.fifthsDegreePositions);
-        // [重构 - 核心] 使用派生出的类属性传参
         this.createInnerDegrees(this.chromaticInnerCircle, this.scaleIntervals);
         this.createInnerDegrees(this.fifthsInnerCircle, this.fifthsDegreePositions);
 
-        // [重构] 绑定事件处理器
+        // 7. [不变] 绑定事件处理器
         this.chromaticRightBtn.addEventListener("click", this.onChromaticRight.bind(this));
         this.chromaticLeftBtn.addEventListener("click", this.onChromaticLeft.bind(this));
         this.fifthsRightBtn.addEventListener("click", this.onFifthsRight.bind(this));
         this.fifthsLeftBtn.addEventListener("click", this.onFifthsLeft.bind(this));
         this.keySelectorDropdown.addEventListener("change", this.onKeySelectChange.bind(this));
 
-        this.update(); // 首次加载时更新所有视图
+        // 8. [不变] 首次加载
+        this.update();
     }
 }

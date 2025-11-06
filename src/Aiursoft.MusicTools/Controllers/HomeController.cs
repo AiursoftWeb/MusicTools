@@ -52,4 +52,17 @@ public class HomeController : Controller
     {
         return this.StackView(new IntervalViewModel());
     }
+
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Interval Exam",
+        LinkOrder = 4)]
+    public IActionResult IntervalExam()
+    {
+        return this.StackView(new IntervalExamViewModel());
+    }
 }

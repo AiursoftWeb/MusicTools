@@ -17,3 +17,11 @@ public class IntervalViewModel : UiStackLayoutViewModel
         PageTitle = "Interval Calculator";
     }
 }
+
+public class IntervalExamViewModel : UiStackLayoutViewModel
+{
+    public IntervalExamViewModel()
+    {
+        PageTitle = "Interval Exam";
+    }
+}

@@ -289,6 +289,14 @@
     background-color: #000;
 }
 
+.note-line {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+}
 .clef, .accidental {
     font-family: 'Bravura', serif !important;
     position: absolute;
@@ -308,4 +316,109 @@
 .select-highlight {
     background-color: #ffc446 !important;
     border-color: #5a8fbb;
+}
+
+.exam-answer {
+    padding: 4rem 0 0 0;
+    border: 1px solid transparent !important;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.exam-answer:hover {
+    border-color: var(--bs-primary) !important;
+}
+
+/* ================================== */
+/* 音乐五线谱控件 (MusicStaff.js) 样式 */
+/* ================================== */
+
+/* 1. 单个音符 (用于 interval-exam)
+ * 我们使用新类 .music-staff-note 以避免与五度圈 .note 冲突
+ */
+.music-staff-note {
+    /* 1. 字体 */
+    font-family: 'Bravura', serif !important;
+
+    /* 2. 布局 (从 .accidental 复制而来) */
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-3.4em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
+}
+
+/* 2. 单个音符的升降号 (用于 interval-exam)
+ * 我们使用新类 .music-staff-accidental
+ */
+.music-staff-accidental {
+    /* 1. 字体 */
+    font-family: 'Bravura', serif !important;
+
+    /* 2. 布局 (从 .accidental 复制而来) */
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-1.7em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
+}
+
+/* 3. 调号 (用于 ScaleVisualizerEngine)
+ * 这条现有的规则保持不变，.clef 和 .accidental
+ * 被 MusicStaff.js (setKeySignature) 和 site.css (钢琴/五度圈) 共享
+ */
+.clef, .accidental {
+    font-family: 'Bravura', serif !important;
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-1.7em);
+}
+
+/* =================================================================
+ * == MusicStaff.js 控件样式
+ * ================================================================= */
+
+/* ... 你现有的 .staff-wrapper, .staff-line, .clef 等样式 ... */
+
+/* [新添加] 用于 C4 或 A5 等音符的加线 */
+.music-staff-ledger-line {
+    position: absolute;
+
+    /* * 音符的 left 是 320px，字体大小是 3.5em。
+     * 符头的宽度大约是 1em。
+     * 310px 的 left 和 2em 的 width 应该能让它
+     * 在音符下方/上方居中。
+     */
+    left: 310px;
+    width: 2.2em;
+
+    /* * 关键：加线的 top 是由 JS (style.top) 设置的。
+     * 我们需要将它 Y 轴居中，因为它的 top 是线的中心。
+     * 假设线高 2px。
+     */
+    height: 2px;
+    margin-top: -1px; /* 垂直居中 */
+
+    background-color: black;
+
+    /* * 确保它显示在谱号/调号的后面，
+     * 但在音符的前面 (如果需要)。
+     * Note: .music-staff-note 默认 z-index 是 20。
+     */
+    z-index: 10;
+}
+
+/* [修改] 确保音符和升降号在加线 *之上* */
+.music-staff-note {
+    position: absolute;
+    /* ... (来自 site.css) transform: translateY(-1.7em); */
+    z-index: 20; /* 确保在加线 (10) 之上 */
+}
+
+.music-staff-accidental {
+    position: absolute;
+    /* ... (来自 site.css) transform: translateY(-1.7em); */
+    z-index: 20; /* 确保在加线 (10) 之上 */
 }
