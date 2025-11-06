@@ -279,6 +279,9 @@
     font-size: 20px; /* 关键：减小字体基准来缩小整个组件 */
     color: #000;
     margin-bottom: 80px;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .staff-line {
