@@ -1,9 +1,11 @@
 /* =================================================================
  * == interval-exam.js
- * - [!! 语法修复 !!] 移除了 calculateInterval 中重复的 'accidentalValue' 声明
+ * - [!! 真正修复 !!]
+ * - calculateInterval 已重构，使用“绝对半音”逻辑
+ * - 移除了所有 if (interval.degree === ...) 的补丁
  * ================================================================= */
 
-// --- 1. 核心音乐数据 (已修改) ---
+// --- 1. 核心音乐数据 (不变) ---
 
 const NOTE_TO_SEMITONE = {
     'C': 0, 'D': 2, 'E': 4, 'F': 5, 'G': 7, 'A': 9, 'B': 11,
@@ -89,66 +91,63 @@ class ExamQuestion {
 
 
     /**
-     * [!! 核心修复 !!]
-     * 移除了重复的 'accidentalValue' 声明
+     * [!! 最终修复 !!]
+     * (F#4, 增五度) -> C𝄪5
+     * (F#4, 纯八度) -> F#5
      */
     calculateInterval(basePitch, interval) {
-        // 1. 解析基础音高
-        const baseLetter = basePitch.charAt(0);
+        // 1. 解析基础音高 (e.g., F#4)
+        const baseLetter = basePitch.charAt(0); // 'F'
         const baseAccidental = (basePitch.length > 2 && (basePitch.charAt(1) === '#' || basePitch.charAt(1) === 'b'))
             ? basePitch.charAt(1)
-            : '';
-        const baseOctave = parseInt(basePitch.slice(baseLetter.length + baseAccidental.length), 10);
+            : ''; // '#'
+        const baseOctave = parseInt(basePitch.slice(baseLetter.length + baseAccidental.length), 10); // 4
 
-        // 2. 获取基础音的 "自然" 半音值
-        const baseNaturalSemitone = NOTE_TO_SEMITONE[baseLetter];
-        const baseAccidentalValue = ACCIDENTAL_TO_VALUE[baseAccidental];
+        // 2. 计算目标音名 (Degree)
+        const baseDegree = NOTE_LETTER_TO_DEGREE[baseLetter]; // F -> 3
+        const targetDegree = (baseDegree + interval.degree - 1) % 7; // (3 + 5 - 1) % 7 = 0
+        const targetLetter = DEGREE_TO_NOTE_LETTER[targetDegree]; // 0 -> 'C'
 
-        if (baseNaturalSemitone === undefined) {
-            console.error(`无法解析 baseLetter: ${baseLetter} (来自 ${basePitch})`);
-            return "C4";
-        }
+        // 3. 计算目标八度
+        const targetOctave = baseOctave + Math.floor((baseDegree + interval.degree - 1) / 7); // 4 + floor(7/7) = 5
 
-        // 3. 计算目标音名 (Degree)
-        const baseDegree = NOTE_LETTER_TO_DEGREE[baseLetter];
-        const targetDegree = (baseDegree + interval.degree - 1) % 7;
-        const targetLetter = DEGREE_TO_NOTE_LETTER[targetDegree];
+        // 4. [!! 核心逻辑 !!] 计算偏移量
 
-        // 4. 计算目标八度
-        const targetOctave = baseOctave + Math.floor((baseDegree + interval.degree - 1) / 7);
+        // 4a. 目标的 *实际* 绝对半音 (e.g., F#4 + 增五度)
+        const baseNaturalSemitone = NOTE_TO_SEMITONE[baseLetter]; // F -> 5
+        const baseAccidentalValue = ACCIDENTAL_TO_VALUE[baseAccidental]; // # -> 1
+        const baseAbsoluteSemitone = (baseNaturalSemitone + baseAccidentalValue) + (baseOctave * 12);
+        // F#4 = (5 + 1) + (4 * 12) = 54
+        const targetAbsoluteSemitone = baseAbsoluteSemitone + interval.semis;
+        // 54 + 8 (增五) = 62
+        // 54 + 12 (纯八) = 66
 
-        // 5. [!! 核心 !!] 计算目标调号 (Accidental)
+        // 4b. 目标的 *自然* 绝对半音 (e.g., C5)
+        const targetNaturalSemitone = NOTE_TO_SEMITONE[targetLetter]; // C -> 0
+        const targetNaturalAbsoluteSemitone = targetNaturalSemitone + (targetOctave * 12);
+        // C5 = 0 + (5 * 12) = 60
+        // (F5 = 5 + (5 * 12) = 65)
 
-        // 5a. 目标的 "自然" 半音值 (0-11)
-        const targetNaturalSemitone = NOTE_TO_SEMITONE[targetLetter];
+        // 4c. 偏移量 = 实际 - 自然
+        const accidentalValue = targetAbsoluteSemitone - targetNaturalAbsoluteSemitone;
+        // 增五: 62 - 60 = 2
+        // 纯八: 66 - 65 = 1
 
-        // 5b. "自然" 音程的半音数 (F -> C)
-        let naturalDistance = targetNaturalSemitone - baseNaturalSemitone;
-        if (naturalDistance < 0) {
-            naturalDistance += 12; // (e.g., F(5) -> C(0) = -5 -> 7)
-        }
-
-        // [!! 移除的 Bug 在这里 !!]
-        // 我之前在这里留下了一个错误的、重复的 'const accidentalValue' 声明
-
-        // 5c. 计算 "调号偏移"
-        // 偏移 = (要求的半音) - (自然的半音) + (基础音的偏移)
-        // e.g., (增五度: 8) - (纯五度: 7) + (F# 的: +1)
-        const accidentalValue = interval.semis - naturalDistance + baseAccidentalValue; // 8 - 7 + 1 = 2
-
-        // 5d. 查找调号
-        const accidentalSymbol = VALUE_TO_ACCIDENTAL[accidentalValue]; // 2 -> '𝄪'
+        // 5. 查找调号
+        const accidentalSymbol = VALUE_TO_ACCIDENTAL[accidentalValue];
+        // 2 -> '𝄪'
+        // 1 -> '#'
 
         if (accidentalSymbol === undefined) {
             console.error(`无法计算调号: ${targetLetter} (Value: ${accidentalValue})`);
             return targetLetter + targetOctave;
         }
 
-        return targetLetter + accidentalSymbol + targetOctave; // 'C' + '𝄪' + 5
+        return targetLetter + accidentalSymbol + targetOctave; // 'C' + '𝄪' + '5'
     }
 
     nextQuestion() {
-        // ... (此函数不变) ...
+        // ... (此函数 100% 不变)
         const basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
         const intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
         const interval = INTERVAL_DEFINITIONS[intervalKey];
@@ -178,14 +177,9 @@ class ExamQuestion {
         this.#questionLabel.innerText = this.#localizedStrings.questionTemplate.replace('(0)', localizedIntervalName);
     }
 
-    /**
-     * [!! 最终修复 !!]
-     * 确保错误答案不等于 correctAnswer 或 basePitch
-     */
     generateWrongAnswers(basePitch, interval, correctAnswer) {
+        // ... (此函数 100% 不变)
         const wrongAnswers = new Set();
-
-        // 错误答案 1: 错误的音程
         try {
             const currentIntervalKey = Object.keys(INTERVAL_DEFINITIONS).find(key => INTERVAL_DEFINITIONS[key] === interval);
             const wrongIntervalKey = INTERVAL_KEYS.find(key => key !== currentIntervalKey);
@@ -196,19 +190,14 @@ class ExamQuestion {
             }
         } catch (e) { console.error("Error generating wrong answer 1:", e); }
 
-        // 错误答案 2: 异名同音
         try {
             const correctLetter = correctAnswer.charAt(0);
             const correctOctave = correctAnswer.slice(-1);
             const correctAccidental = correctAnswer.slice(1, -1);
-
             const correctAccidentalValue = ACCIDENTAL_TO_VALUE[correctAccidental];
             const correctNaturalSemitone = NOTE_TO_SEMITONE[correctLetter];
-
             const correctSemitoneIndex = (correctNaturalSemitone + correctAccidentalValue + 12) % 12;
-
             const possibleNotes = SEMITONE_TO_NOTE[correctSemitoneIndex];
-
             let enharmonicAnswer = null;
             if (correctAnswer.includes('𝄪') || correctAnswer.includes('#')) {
                 if (possibleNotes.flat !== possibleNotes.sharp) {
@@ -223,17 +212,13 @@ class ExamQuestion {
                     enharmonicAnswer = possibleNotes.flat + correctOctave;
                 }
             }
-
             if (enharmonicAnswer && enharmonicAnswer !== correctAnswer && enharmonicAnswer !== basePitch) {
                 wrongAnswers.add(enharmonicAnswer);
             }
         } catch (e) { console.error("Error generating wrong answer 2:", e); }
 
-        // 如果错误答案不够，用完全随机的音高填充
         while (wrongAnswers.size < 2) {
             const randomPitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
-
-            // [!! 修复 !!] 必须同时检查 correctAnswer 和 basePitch
             if (randomPitch !== correctAnswer && randomPitch !== basePitch) {
                 wrongAnswers.add(randomPitch);
             }
