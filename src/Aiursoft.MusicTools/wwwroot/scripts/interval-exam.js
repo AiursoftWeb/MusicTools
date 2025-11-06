@@ -48,8 +48,11 @@ class ExamQuestion {
         answerStaffs.forEach(staff => {
             staff.onclick((pitch) => {
                 if (pitch === this.#answerPitch) {
+                    alert('Correct!');
                     console.log('Correct!');
+                    this.nextQuestion();    
                 } else {
+                    alert('Wrong!');
                     console.log('Wrong!');
                 }
             });
@@ -104,7 +107,7 @@ function getRandomPitchesAndExactInterval(pitches) {
 
     let randomIndex2;
     do {
-        randomIndex2 = Math.floor(Math.random() * pitches.length);
+        randomIndex2 = Math.floor(Math.random() * 8);
     } while (randomIndex1 === randomIndex2);
     const pitch2 = pitches[randomIndex2];
     
