@@ -155,6 +155,18 @@ class ExamQuestion {
         const allAnswers = [this.#correctAnswerPitch, ...wrongAnswers];
         this.shuffleArray(allAnswers);
 
+        // --- 调试日志 (不变) ---
+        console.clear();
+        console.group("--- 🎵 考试题目调试信息 🎵 ---");
+        console.log(`题目 (Question): ${basePitch} 的 ${localizedIntervalName} 是？`);
+        console.log(`✅ 计算出的正确答案 (Correct): ${this.#correctAnswerPitch}`);
+        console.log(`❌ 生成的错误答案 (Wrong): ${wrongAnswers.join(', ')}`);
+        console.log("--- 答案分配 (Assignment) ---");
+        console.log(`   ➡️ 答案 1 (ID: ${this.#answerElements[0].id}) 设为: ${allAnswers[0]} ${allAnswers[0] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+        console.log(`   ➡️ 答案 2 (ID: ${this.#answerElements[1].id}) 设为: ${allAnswers[1]} ${allAnswers[1] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+        console.log(`   ➡️ 答案 3 (ID: ${this.#answerElements[2].id}) 设为: ${allAnswers[2]} ${allAnswers[2] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+        console.groupEnd();
+
         // 6. 更新视图 (DOM)
         for (let i = 0; i < this.#answerStaffs.length; i++) {
             this.#answerStaffs[i].showNote(allAnswers[i]);

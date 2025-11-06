@@ -44,11 +44,14 @@
 
                     <div class="form-check form-switch mt-3">
                         <input class="form-check-input" type="checkbox" id="loop-song-checkbox" checked>
-                        <label class="form-check-label small" for="loop-song-checkbox">@Localizer["Loop Playback"]</label>
+                        <label class="form-check-label small"
+                               for="loop-song-checkbox">@Localizer["Loop Playback"]</label>
                     </div>
 
                     <button id="play-stop-btn" class="btn btn-success w-100 mt-3" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play lucide-sm me-1 align-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="lucide lucide-play lucide-sm me-1 align-middle">
                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                         </svg>
                         @Localizer["Play"]
@@ -166,22 +169,26 @@
                                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
 
                                 <div id="treble-pair" class="key-signature-pair">
-                                    <div id="treble-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="treble-key-name-label"
+                                         class="key-signature-label text-center text-muted fw-bold mb-2"></div>
                                     <div id="treble-staff-container"></div>
                                 </div>
 
                                 <div id="bass-pair" class="key-signature-pair">
-                                    <div id="bass-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="bass-key-name-label"
+                                         class="key-signature-label text-center text-muted fw-bold mb-2"></div>
                                     <div id="bass-staff-container"></div>
                                 </div>
 
                                 <div id="enh-treble-pair" class="key-signature-pair" style="display: none;">
-                                    <div id="enh-treble-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="enh-treble-key-name-label"
+                                         class="key-signature-label text-center text-muted fw-bold mb-2"></div>
                                     <div id="enh-treble-staff-container"></div>
                                 </div>
 
                                 <div id="enh-bass-pair" class="key-signature-pair" style="display: none;">
-                                    <div id="enh-bass-key-name-label" class="key-signature-label text-center text-muted fw-bold mb-2"></div>
+                                    <div id="enh-bass-key-name-label"
+                                         class="key-signature-label text-center text-muted fw-bold mb-2"></div>
                                     <div id="enh-bass-staff-container"></div>
                                 </div>
 
@@ -199,14 +206,16 @@
 <div id="localization-data" data-tonic="@Localizer["Tonic"]" style="display: none;"></div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section scripts {
-    <script src="~/scripts/AudioPlayer.js"></script>
-    <script src="~/scripts/MusicStaff.js"></script>
-    <script src="~/scripts/ScaleVisualizerEngine.js"></script>
-    <script src="~/scripts/major.js"></script>
+    <script src="~/scripts/AudioPlayer.js" asp-append-version="true"></script>
+    <script src="~/scripts/MusicStaff.js" asp-append-version="true"></script>
+    <script src="~/scripts/ScaleVisualizerEngine.js" asp-append-version="true"></script>
+    <script src="~/scripts/major.js" asp-append-version="true"></script>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section styles {
-    <link rel="stylesheet" href="~/styles/site.css"/>
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"/>
 }

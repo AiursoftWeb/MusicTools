@@ -33,8 +33,8 @@
         <div class="col-lg-7">
 
             <div id="question-staff-container"
-                class="d-flex flex-column flex-md-row align-items-center gap-3 flex-wrap">
-                </div>
+                 class="d-flex flex-column flex-md-row align-items-center gap-3 flex-wrap">
+            </div>
         </div>
     </div>
 
@@ -45,28 +45,29 @@
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4">
             <div id="staff-answer1-container"
-                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                </div>
+                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
+            </div>
         </div>
         <div class="col-lg-4">
             <div id="staff-answer2-container"
-                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                </div>
+                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
+            </div>
         </div>
         <div class="col-lg-4">
             <div id="staff-answer3-container"
-                class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-                </div>
+                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
+            </div>
         </div>
     </div>
 </div>
 
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section scripts {
     @* 1. 引用我们的控件和逻辑 *@
-    <script src="~/scripts/MusicStaff.js"></script>
-    <script src="~/scripts/interval-exam.js"></script>
+    <script src="~/scripts/MusicStaff.js" asp-append-version="true"></script>
+    <script src="~/scripts/interval-exam.js" asp-append-version="true"></script>
 
     @* 2. [!! 修改 !!] 启动逻辑 (读取本地化) *@
     <script>
@@ -109,12 +110,12 @@
             const answerElements = [answer1El, answer2El, answer3El];
 
             // --- C. 创建 MusicStaff 实例 ---
-            const questionStaff = new MusicStaff(questionStaffEl.id, { clef: 'treble' });
+            const questionStaff = new MusicStaff(questionStaffEl.id, {clef: 'treble'});
 
             const answerStaffs = [
-                new MusicStaff(answer1El.id, { clef: 'treble' }),
-                new MusicStaff(answer2El.id, { clef: 'treble' }),
-                new MusicStaff(answer3El.id, { clef: 'treble' })
+                new MusicStaff(answer1El.id, {clef: 'treble'}),
+                new MusicStaff(answer2El.id, {clef: 'treble'}),
+                new MusicStaff(answer3El.id, {clef: 'treble'})
             ];
 
             // --- D. 创建 ExamQuestion 实例 ---
@@ -134,8 +135,9 @@
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
+
 @section styles {
-    <link rel="stylesheet" href="~/styles/site.css" />
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"></link>
 
     <style>
         .exam-answer {
@@ -145,11 +147,12 @@
             cursor: pointer;
             transition: all 0.2s ease-in-out;
         }
+
         .exam-answer:hover {
             background-color: #f8f9fa;
             border-color: #0d6efd;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
     </style>
 }
