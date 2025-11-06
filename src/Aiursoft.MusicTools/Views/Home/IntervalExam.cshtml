@@ -53,32 +53,45 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    @* 我们现在引用新的、重构过的 JS 文件。
-      (您需要将上面的代码保存到这些文件中)
-    *@
-    <script src="~/scripts/staff.js"></script>
+    @* 1. 引用我们新的、解耦的控件 *@
+    <script src="~/scripts/MusicStaff.js"></script>
     <script src="~/scripts/interval-exam.js"></script>
     <script>
-        // --- 使用新的、重构过的代码 ---
+        // --- 2. 启动逻辑 ---
+        window.addEventListener('load', () => {
 
-        // 1. 创建 Staff 实例
-        // 我们可以指定谱号！这里我们都用高音谱表
-        const questionStaff = new Staff('question-staff-container', 'treble');
+            // --- A. 获取所有 DOM 元素 ---
+            const questionStaffEl = document.getElementById('question-staff-container');
+            const answer1El = document.getElementById('staff-answer1-container');
+            const answer2El = document.getElementById('staff-answer2-container');
+            const answer3El = document.getElementById('staff-answer3-container');
+            const questionLabel = document.getElementById('questionLabel');
 
-        const answer1Staff = new Staff('staff-answer1-container', 'treble');
-        const answer2Staff = new Staff('staff-answer2-container', 'treble');
-        const answer3Staff = new Staff('staff-answer3-container', 'treble');
+            // 将可点击的容器放入数组
+            const answerElements = [answer1El, answer2El, answer3El];
 
-        // 2. 创建 ExamQuestion 实例
-        const examQuestion = new ExamQuestion(
-            questionStaff,
-            [answer1Staff, answer2Staff, answer3Staff],
-            document.getElementById('questionLabel')
-        );
+            // --- B. 创建 MusicStaff 实例 ---
+            // [注意] 确保你引用的是 'MusicStaff.js' (而不是 staff.js)
+            const questionStaff = new MusicStaff(questionStaffEl.id, { clef: 'treble' });
 
-        // 3. 开始考试！
-        examQuestion.nextQuestion();
+            const answerStaffs = [
+                new MusicStaff(answer1El.id, { clef: 'treble' }),
+                new MusicStaff(answer2El.id, { clef: 'treble' }),
+                new MusicStaff(answer3El.id, { clef: 'treble' })
+            ];
 
+            // --- C. 创建 ExamQuestion 实例 ---
+            // [修改] 传入 staff 实例 *和* 可点击的 HTML 元素
+            const examQuestion = new ExamQuestion(
+                questionStaff,
+                answerStaffs,
+                answerElements,
+                questionLabel
+            );
+
+            // --- D. 开始考试! ---
+            examQuestion.nextQuestion();
+        });
     </script>
 }
 
