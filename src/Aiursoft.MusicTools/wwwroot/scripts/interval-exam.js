@@ -178,21 +178,26 @@ class ExamQuestion {
         this.#questionLabel.innerText = this.#localizedStrings.questionTemplate.replace('(0)', localizedIntervalName);
     }
 
+    /**
+     * [!! 最终修复 !!]
+     * 确保错误答案不等于 correctAnswer 或 basePitch
+     */
     generateWrongAnswers(basePitch, interval, correctAnswer) {
-        // ... (此函数不变) ...
         const wrongAnswers = new Set();
+
+        // 错误答案 1: 错误的音程
         try {
             const currentIntervalKey = Object.keys(INTERVAL_DEFINITIONS).find(key => INTERVAL_DEFINITIONS[key] === interval);
             const wrongIntervalKey = INTERVAL_KEYS.find(key => key !== currentIntervalKey);
             const wrongInterval = INTERVAL_DEFINITIONS[wrongIntervalKey];
             const wrongAnswer1 = this.calculateInterval(basePitch, wrongInterval);
-            if (wrongAnswer1 !== correctAnswer) {
+            if (wrongAnswer1 !== correctAnswer && wrongAnswer1 !== basePitch) {
                 wrongAnswers.add(wrongAnswer1);
             }
         } catch (e) { console.error("Error generating wrong answer 1:", e); }
 
+        // 错误答案 2: 异名同音
         try {
-            // 错误答案 2: 异名同音 (e.g., C𝄪5 -> D5)
             const correctLetter = correctAnswer.charAt(0);
             const correctOctave = correctAnswer.slice(-1);
             const correctAccidental = correctAnswer.slice(1, -1);
@@ -200,7 +205,7 @@ class ExamQuestion {
             const correctAccidentalValue = ACCIDENTAL_TO_VALUE[correctAccidental];
             const correctNaturalSemitone = NOTE_TO_SEMITONE[correctLetter];
 
-            const correctSemitoneIndex = (correctNaturalSemitone + correctAccidentalValue + 12) % 12; // +12 确保是正数
+            const correctSemitoneIndex = (correctNaturalSemitone + correctAccidentalValue + 12) % 12;
 
             const possibleNotes = SEMITONE_TO_NOTE[correctSemitoneIndex];
 
@@ -219,14 +224,17 @@ class ExamQuestion {
                 }
             }
 
-            if (enharmonicAnswer && enharmonicAnswer !== correctAnswer) {
+            if (enharmonicAnswer && enharmonicAnswer !== correctAnswer && enharmonicAnswer !== basePitch) {
                 wrongAnswers.add(enharmonicAnswer);
             }
         } catch (e) { console.error("Error generating wrong answer 2:", e); }
 
+        // 如果错误答案不够，用完全随机的音高填充
         while (wrongAnswers.size < 2) {
             const randomPitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
-            if (randomPitch !== correctAnswer) {
+
+            // [!! 修复 !!] 必须同时检查 correctAnswer 和 basePitch
+            if (randomPitch !== correctAnswer && randomPitch !== basePitch) {
                 wrongAnswers.add(randomPitch);
             }
         }
