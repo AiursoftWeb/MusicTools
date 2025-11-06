@@ -50,7 +50,7 @@ class ExamQuestion {
                 if (pitch === this.#answerPitch) {
                     alert('Correct!');
                     console.log('Correct!');
-                    this.nextQuestion();    
+                    this.nextQuestion();
                 } else {
                     alert('Wrong!');
                     console.log('Wrong!');
@@ -62,7 +62,7 @@ class ExamQuestion {
     nextQuestion() {
         const question = getRandomPitchesAndExactInterval(ALL_PITCHES);
         this.#answerPitch = question.pitch2;
-
+        console.log('New Question:', question);
         this.questionStaff.setPitch(question.pitch1);
 
         const randomIndex1 = Math.floor(Math.random() * this.#answerStaffs.length);
@@ -105,12 +105,15 @@ function getRandomPitchesAndExactInterval(pitches) {
     const randomIndex1 = Math.floor(Math.random() * pitches.length);
     const pitch1 = pitches[randomIndex1];
 
+    const top = Math.min(randomIndex1 + 8, pitches.length - 1);
+    const bottom = Math.max(randomIndex1 - 8, 0);
+
     let randomIndex2;
     do {
-        randomIndex2 = Math.floor(Math.random() * 8);
-    } while (randomIndex1 === randomIndex2);
+        randomIndex2 = Math.floor(Math.random() * pitches.length);
+    } while (randomIndex1 === randomIndex2 || randomIndex2 < bottom || randomIndex2 > top);
     const pitch2 = pitches[randomIndex2];
-    
+
     // --- 计算核心参数 ---
     const semi1 = PITCH_TO_SEMI.get(pitch1);
     const semi2 = PITCH_TO_SEMI.get(pitch2);
@@ -129,12 +132,12 @@ function getRandomPitchesAndExactInterval(pitches) {
 
     // 3. 确定方向
     const direction = semi2 > semi1 ? '向上 (Ascending)' : '向下 (Descending)';
-    
+
     // --- 4. 计算音程类型（大/小/纯/增/减） ---
 
     // 调整到 1-8 度的标准度数
     const baseDegree = ((intervalDegree - 1) % 7) + 1;
-    
+
     let intervalType = '';
     let intervalName = '';
 
@@ -164,16 +167,16 @@ function getRandomPitchesAndExactInterval(pitches) {
             intervalType = '减 (Diminished)';
         }
     }
-    
+
     // 5. 组合最终音程名称
-    
+
     // 中文度数名称（考虑复合音程：九度、十度等）
     const chineseDegrees = [
-        '一度', '二度', '三度', '四度', '五度', '六度', '七度', '八度', 
-        '九度', '十度', '十一度', '十二度', '十三度', '十四度', '十五度', 
+        '一度', '二度', '三度', '四度', '五度', '六度', '七度', '八度',
+        '九度', '十度', '十一度', '十二度', '十三度', '十四度', '十五度',
         // 更多度数...
     ];
-    
+
     // 确保 degreeDistance + 1 不超过数组长度
     const degreeIndex = Math.min(intervalDegree, chineseDegrees.length);
     intervalName = chineseDegrees[degreeIndex - 1]; // 索引从 0 开始
