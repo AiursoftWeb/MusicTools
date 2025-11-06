@@ -141,5 +141,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>Intervallommeregner</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>Intervaltest</value>
+  </data>
 
 </root>

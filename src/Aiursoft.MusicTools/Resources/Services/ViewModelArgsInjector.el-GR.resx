@@ -141,5 +141,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>Υπολογιστής Διαστημάτων</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>Δοκιμή διαστήματος</value>
+  </data>
 
 </root>

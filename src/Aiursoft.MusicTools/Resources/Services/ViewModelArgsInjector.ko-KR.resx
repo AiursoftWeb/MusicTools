@@ -144,5 +144,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>인터벌 계산기</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>음정 테스트</value>
+  </data>
 
 </root>

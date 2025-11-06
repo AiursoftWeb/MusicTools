@@ -2,9 +2,27 @@
     ViewData["Title"] = @Localizer["Interval Exam"];
 }
 
-<div id="localization-data" data-perfect-unison="@Localizer["Perfect Unison"]"
-    data-minor-second="@Localizer["Minor Second"]" data-major-second="@Localizer["Major Second"]"
-    style="display: none;">
+<div id="localization-data"
+     data-correct="@Localizer["Correct!"]"
+     data-wrong="@Localizer["Wrong."]"
+     data-question-template="@Localizer["What is the (0) of the note above?"]"
+
+     data-p1="@Localizer["Perfect Unison"]"
+     data-m2="@Localizer["Minor Second"]"
+     data-M2="@Localizer["Major Second"]"
+     data-m3="@Localizer["Minor Third"]"
+     data-M3="@Localizer["Major Third"]"
+     data-p4="@Localizer["Perfect Fourth"]"
+     data-a4="@Localizer["Augmented Fourth"]"
+     data-d5="@Localizer["Diminished Fifth"]"
+     data-p5="@Localizer["Perfect Fifth"]"
+     data-a5="@Localizer["Augmented Fifth"]"
+     data-m6="@Localizer["Minor Sixth"]"
+     data-M6="@Localizer["Major Sixth"]"
+     data-m7="@Localizer["Minor Seventh"]"
+     data-M7="@Localizer["Major Seventh"]"
+     data-p8="@Localizer["Perfect Octave"]"
+     style="display: none;">
 </div>
 
 <div class="container-fluid py-4">
@@ -16,36 +34,29 @@
 
             <div id="question-staff-container"
                 class="d-flex flex-column flex-md-row align-items-center gap-3 flex-wrap">
-
-            </div>
+                </div>
         </div>
     </div>
 
     <div class="row g-4 justify-content-center mb-4">
-        <h1>Select Answer</h1>
+        <h1>@Localizer["Select Answer"]</h1>
     </div>
 
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4">
-
             <div id="staff-answer1-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-
-            </div>
+                </div>
         </div>
         <div class="col-lg-4">
-
             <div id="staff-answer2-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-
-            </div>
+                </div>
         </div>
         <div class="col-lg-4">
-
             <div id="staff-answer3-container"
                 class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
-
-            </div>
+                </div>
         </div>
     </div>
 </div>
@@ -53,25 +64,51 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    @* 1. 引用我们新的、解耦的控件 *@
+    @* 1. 引用我们的控件和逻辑 *@
     <script src="~/scripts/MusicStaff.js"></script>
     <script src="~/scripts/interval-exam.js"></script>
+
+    @* 2. [!! 修改 !!] 启动逻辑 (读取本地化) *@
     <script>
-        // --- 2. 启动逻辑 ---
         window.addEventListener('load', () => {
 
-            // --- A. 获取所有 DOM 元素 ---
+            // --- A. 获取本地化字符串 ---
+            const localizationData = document.getElementById('localization-data').dataset;
+
+            // 构建一个 JS 对象以便于传递
+            const localizedStrings = {
+                correct: localizationData.correct,
+                wrong: localizationData.wrong,
+                questionTemplate: localizationData.questionTemplate,
+                intervals: {
+                    'p1': localizationData.p1,
+                    'm2': localizationData.m2,
+                    'M2': localizationData.m2, // 注意: data-M2 变为 dataset.m2
+                    'm3': localizationData.m3,
+                    'M3': localizationData.m3,
+                    'p4': localizationData.p4,
+                    'a4': localizationData.a4,
+                    'd5': localizationData.d5,
+                    'p5': localizationData.p5,
+                    'a5': localizationData.a5,
+                    'm6': localizationData.m6,
+                    'M6': localizationData.m6,
+                    'm7': localizationData.m7,
+                    'M7': localizationData.m7,
+                    'p8': localizationData.p8
+                }
+            };
+
+            // --- B. 获取所有 DOM 元素 ---
             const questionStaffEl = document.getElementById('question-staff-container');
             const answer1El = document.getElementById('staff-answer1-container');
             const answer2El = document.getElementById('staff-answer2-container');
             const answer3El = document.getElementById('staff-answer3-container');
             const questionLabel = document.getElementById('questionLabel');
 
-            // 将可点击的容器放入数组
             const answerElements = [answer1El, answer2El, answer3El];
 
-            // --- B. 创建 MusicStaff 实例 ---
-            // [注意] 确保你引用的是 'MusicStaff.js' (而不是 staff.js)
+            // --- C. 创建 MusicStaff 实例 ---
             const questionStaff = new MusicStaff(questionStaffEl.id, { clef: 'treble' });
 
             const answerStaffs = [
@@ -80,16 +117,17 @@
                 new MusicStaff(answer3El.id, { clef: 'treble' })
             ];
 
-            // --- C. 创建 ExamQuestion 实例 ---
-            // [修改] 传入 staff 实例 *和* 可点击的 HTML 元素
+            // --- D. 创建 ExamQuestion 实例 ---
+            // [修改] 注入 localizedStrings
             const examQuestion = new ExamQuestion(
                 questionStaff,
                 answerStaffs,
                 answerElements,
-                questionLabel
+                questionLabel,
+                localizedStrings // <--- [新]
             );
 
-            // --- D. 开始考试! ---
+            // --- E. 开始考试! ---
             examQuestion.nextQuestion();
         });
     </script>
@@ -98,4 +136,20 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css" />
+
+    <style>
+        .exam-answer {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        .exam-answer:hover {
+            background-color: #f8f9fa;
+            border-color: #0d6efd;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+    </style>
 }

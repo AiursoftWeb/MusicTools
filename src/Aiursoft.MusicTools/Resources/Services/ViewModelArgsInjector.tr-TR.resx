@@ -141,5 +141,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>Aralık Hesaplayıcı</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>Aralık Testi</value>
+  </data>
 
 </root>

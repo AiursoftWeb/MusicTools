@@ -59,7 +59,7 @@ public class HomeController : Controller
         CascadedLinksGroupName = "Home",
         CascadedLinksIcon = "home",
         CascadedLinksOrder = 1,
-        LinkText = "Interval Exam",
+        LinkText = "Interval test",
         LinkOrder = 4)]
     public IActionResult IntervalExam()
     {

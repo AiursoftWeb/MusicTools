@@ -141,5 +141,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>حاسبة الفواصل الزمنية</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>اختبار الفترة</value>
+  </data>
 
 </root>

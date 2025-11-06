@@ -144,5 +144,8 @@
   <data name="Interval Calculator" xml:space="preserve">
     <value>เครื่องคำนวณช่วงเสียง</value>
   </data>
+  <data name="Interval test" xml:space="preserve">
+    <value>การทดสอบช่วงเสียง</value>
+  </data>
 
 </root>
