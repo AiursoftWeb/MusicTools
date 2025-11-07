@@ -32,6 +32,7 @@ window.addEventListener("load", () => {
 
     // (C) 获取本地化字符串
     const localizedStrings = {
+        // ... (所有字符串... )
         perfectUnison: localeData.dataset.perfectUnison,
         minorSecond: localeData.dataset.minorSecond,
         majorSecond: localeData.dataset.majorSecond,
@@ -79,8 +80,8 @@ window.addEventListener("load", () => {
     // =====================================================================
 
     const HIGH_LIGHT = 'select-highlight';
+    const MILU_SEARCH_LIMIT = 200; // [新] 密率搜索上限 (你提到的 160 就够了)
 
-    // [!! 新增 !!] 计算音分误差 (不变)
     function calculateErrorInCents(tetRatio, rationalRatio) {
         if (!tetRatio || !rationalRatio) return 0;
         const cents = 1200 * Math.log2(tetRatio / rationalRatio);
@@ -88,8 +89,8 @@ window.addEventListener("load", () => {
         return cents;
     }
 
-    // [!! 新增 !!] 查找最佳有理数 (不变)
-    function findBestRational(ratio, maxInt = 16) {
+    // [!! 修改 !!] 移除了 'maxInt' 的硬编码默认值
+    function findBestRational(ratio, maxInt) {
         console.log(`[Debug Approx] Finding best rational for ${ratio} with maxInt ${maxInt}`);
         let best = { n: 1, d: 1, error: Math.abs(ratio - 1) };
 
@@ -118,17 +119,16 @@ window.addEventListener("load", () => {
 
     /**
      * [!! 核心重构 !!]
-     * 核心算法。
+     * 核心算法。现在自动计算 'yuelu' 和 'milu'
      */
     function calculateInterval(note1, note2) {
 
         // --- 1. 定义音高和音程数据 ---
+        // ... (BASE_NOTES 和 INTERVAL_MAP 不变) ...
         const BASE_NOTES = {
             "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
             "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
         };
-
-        // [!! 修复 !!] 提供了 0-36 的完整 MAP
         const INTERVAL_MAP = {
             0: { name: localizedStrings.perfectUnison, type: 'sharp' },
             1: { name: localizedStrings.minorSecond, type: 'flat' },
@@ -151,7 +151,7 @@ window.addEventListener("load", () => {
             18: { name: localizedStrings.augmentedEleventh, type: 'sharp' },
             19: { name: localizedStrings.perfectTwelfth, type: 'sharp' },
             20: { name: localizedStrings.minorThirteenth, type: 'flat' },
-            21: { name: localizedStrings.majorThirteenth, type: 'sharp' }, // <-- C1 到 A2 (21) 在这里
+            21: { name: localizedStrings.majorThirteenth, type: 'sharp' },
             22: { name: localizedStrings.minorFourteenth, type: 'flat' },
             23: { name: localizedStrings.majorFourteenth, type: 'sharp' },
             24: { name: localizedStrings.perfectFifteenth, type: 'sharp' },
@@ -191,7 +191,6 @@ window.addEventListener("load", () => {
             const parsedNote1 = parseNote(note1);
             const parsedNote2 = parseNote(note2);
 
-            // [!! 修复 !!] 恢复了你原来的逻辑：无脑认为靠左（音高低）的音是根音。
             let rootParsed, targetParsed;
             if (parsedNote1.absoluteValue <= parsedNote2.absoluteValue) {
                 rootParsed = parsedNote1;
@@ -203,32 +202,46 @@ window.addEventListener("load", () => {
 
             console.log(`[Debug Calc] Root: ${rootParsed.noteName}${rootParsed.octave} (Abs: ${rootParsed.absoluteValue}), Target: ${targetParsed.noteName}${targetParsed.octave} (Abs: ${targetParsed.absoluteValue})`);
 
-            // --- 4. 12-TET 和 有理数逼近 (新) ---
+            // --- 4. 12-TET 和 有理数逼近 ---
             const semitones = targetParsed.absoluteValue - rootParsed.absoluteValue;
             const tetRatio = Math.pow(2, semitones / 12);
-            const bestApprox = findBestRational(tetRatio, 16);
-            const errorCents = calculateErrorInCents(tetRatio, (bestApprox.n / bestApprox.d));
+
+            // [!! 新逻辑 !!] 计算 "约率"
+            const yuelu = findBestRational(tetRatio, 10); // 10 以内
+            const yueluErrorCents = calculateErrorInCents(tetRatio, (yuelu.n / yuelu.d));
+
+            // [!! 新逻辑 !!] 循环查找 "密率"
+            let milu = yuelu;
+            for (let maxInt = 11; maxInt <= MILU_SEARCH_LIMIT; maxInt++) {
+                const currentApprox = findBestRational(tetRatio, maxInt);
+                // 如果找到了一个 *不同* (且更精确) 的比值
+                if (currentApprox.n !== yuelu.n || currentApprox.d !== yuelu.d) {
+                    milu = currentApprox;
+                    console.log(`[Debug Milu] Found Milü at maxInt=${maxInt} -> ${milu.n}:${milu.d}`);
+                    break; // 找到了，停止搜索
+                }
+            }
+            const miluErrorCents = calculateErrorInCents(tetRatio, (milu.n / milu.d));
+
 
             console.log(`[Debug Calc] Semitones: ${semitones}, 12-TET Ratio: ${tetRatio}`);
 
-            // --- 5. 乐理拼写 ---
+            // --- 5. 乐理拼写 (不变) ---
             const intervalInfo = INTERVAL_MAP[semitones];
-
-            // [!! 修复 !!] 修复了 Razor 语法 Bug
             if (!intervalInfo) {
-                const errName = `Interval too large (${semitones} semitones)`; // 使用简单的 JS 字符串
+                const errName = `Interval too large (${semitones} semitones)`;
                 console.warn(`[Debug Calc] ${errName}`);
                 return {
                     note1: rootParsed.noteName + rootParsed.octave,
                     note2: targetParsed.noteName + targetParsed.octave,
                     intervalName: errName,
-                    tetRatio,
-                    bestApprox,
-                    errorCents
+                    yuelu: yuelu, // 即使没有名字，也返回比值
+                    yueluErrorCents: yueluErrorCents,
+                    milu: milu,
+                    miluErrorCents: miluErrorCents
                 };
             }
 
-            // 智能拼写 (不变)
             const targetBaseValue = targetParsed.baseValue;
             let targetSpellingName;
             if (intervalInfo.type === 'flat') {
@@ -239,14 +252,15 @@ window.addEventListener("load", () => {
             const rootDisplay = rootParsed.noteName + rootParsed.octave;
             const targetDisplay = targetSpellingName + targetParsed.octave;
 
-            // --- 6. 返回完整对象 ---
+            // --- 6. [!! 修改 !!] 返回新的比值对象 ---
             return {
                 note1: rootDisplay,
                 note2: targetDisplay,
                 intervalName: intervalInfo.name,
-                tetRatio: tetRatio,
-                bestApprox: bestApprox, // { n: 3, d: 2 }
-                errorCents: errorCents // 1.955
+                yuelu: yuelu, // { n: 4, d: 3, error: ... }
+                yueluErrorCents: yueluErrorCents,
+                milu: milu, // { n: 159, d: 119, error: ... }
+                miluErrorCents: miluErrorCents
             };
 
         } catch (e) {
@@ -256,22 +270,77 @@ window.addEventListener("load", () => {
     }
 
     /**
-     * [!! 修复 !!]
-     * 事件处理器 (恢复了 'lower-note-is-root' 逻辑)
+     * [!! 重构 !!]
+     * 事件处理器，显示 Yuelu 和 Milu
      */
     function setupIntervalCalculator(container) {
         let firstNote = '', secondNote = '';
         console.log("[Init] Setting up Interval Calculator...");
 
+        // [!! 修改 !!] 移除 input 相关的逻辑，重构 updateDisplay
+        function updateDisplay() {
+            if (firstNote && secondNote) {
+
+                console.log(`[Debug UI] Calculating interval for ${firstNote} and ${secondNote}`);
+                // [!! 修改 !!] 不再需要传入 'precision'
+                const result = calculateInterval(firstNote, secondNote);
+
+                intervalResultEl.innerText = result.intervalName;
+                interval1El.innerText = result.note1;
+                interval2El.innerText = result.note2;
+
+                // [!! 新的显示逻辑 !!]
+                if (result.yuelu) {
+                    const cents = result.yueluErrorCents.toFixed(2);
+                    const ratioText = `${result.yuelu.d} : ${result.yuelu.n}`; // 约率: d:n
+
+                    // (1) 显示 "约率" (Yuelü)
+                    if (Math.abs(cents) < 0.01) {
+                        intervalRatioEl.innerHTML = `约率: <strong style="font-size: 1.2em; vertical-align: -0.05em;">=</strong> ${ratioText} (Perfect)`;
+                    } else if (cents > 0) {
+                        intervalRatioEl.innerHTML = `约率: ≈ ${ratioText} (+${cents} cents)`;
+                    } else {
+                        intervalRatioEl.innerHTML = `约率: ≈ ${ratioText} (${cents} cents)`;
+                    }
+
+                    // (2) 显示 "密率" (Milü)
+                    if (result.milu.n !== result.yuelu.n || result.milu.d !== result.yuelu.d) {
+                        // 只有当密率和约率不同时才显示
+                        const miluCents = result.miluErrorCents.toFixed(2);
+                        const miluRatioText = `${result.milu.d} : ${result.milu.n}`;
+
+                        if (Math.abs(miluCents) < 0.01) {
+                            intervalErrorEl.innerText = `密率: = ${miluRatioText} (Perfect)`;
+                        } else if (miluCents > 0) {
+                            intervalErrorEl.innerText = `密率: ≈ ${miluRatioText} (+${miluCents} cents)`;
+                        } else {
+                            intervalErrorEl.innerText = `密率: ≈ ${miluRatioText} (${miluCents} cents)`;
+                        }
+                    } else {
+                        // 约率已经是最好的了
+                        intervalErrorEl.innerText = '';
+                    }
+
+                } else {
+                    intervalRatioEl.innerText = '';
+                    intervalErrorEl.innerText = '';
+                }
+
+            } else {
+                // 清空 UI
+                intervalResultEl.innerText = '';
+                interval1El.innerText = firstNote || '--';
+                interval2El.innerText = secondNote || '--';
+                intervalRatioEl.innerText = '';
+                intervalErrorEl.innerText = '';
+            }
+        }
+
         function resetSelection() {
             console.log("[Action] Reset selection.");
             firstNote = '';
             secondNote = '';
-            intervalResultEl.innerText = '';
-            interval1El.innerText = '--';
-            interval2El.innerText = '--';
-            intervalRatioEl.innerText = '';
-            intervalErrorEl.innerText = '';
+            updateDisplay(); // 调用 update 来清空
             container.querySelectorAll('[data-note]').forEach(t => {
                 t.classList.remove(HIGH_LIGHT);
             });
@@ -281,7 +350,6 @@ window.addEventListener("load", () => {
         container.addEventListener('click', (ev) => {
             const targetKey = ev.target.closest('[data-note]');
             if (!targetKey) return;
-
             const note = targetKey.dataset['note'];
             console.log(`[Action] Clicked note: ${note}`);
 
@@ -311,55 +379,16 @@ window.addEventListener("load", () => {
                 container.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT);
             }
 
-            // --- [!! 核心修改 !!] 更新 UI ---
-            if (firstNote && secondNote) {
-                // 1. 计算所有结果
-                // [!! 修复 !!] calculateInterval 自动处理哪个是根音
-                console.log(`[Debug UI] Calculating interval for ${firstNote} and ${secondNote}`);
-                const result = calculateInterval(firstNote, secondNote);
-
-                // 2. 将所有结果更新到 UI
-                intervalResultEl.innerText = result.intervalName;
-                interval1El.innerText = result.note1; // note1 始终是较低的那个
-                interval2El.innerText = result.note2; // note2 始终是较高的那个
-
-// [新代码]
-                if (result.bestApprox) {
-                    const cents = result.errorCents.toFixed(2);
-                    const ratioText = `${result.bestApprox.d} : ${result.bestApprox.n}`;
-
-                    // [!! 修改 !!] 检查是否 "Perfect"
-                    if (cents > 0.01) {
-                        // 偏高
-                        intervalRatioEl.innerHTML = `≈ ${ratioText}`; // 改为 .innerHTML
-                        intervalErrorEl.innerText = `(Deviation: +${cents} cents)`;
-                    } else if (cents < -0.01) {
-                        // 偏低
-                        intervalRatioEl.innerHTML = `≈ ${ratioText}`; // 改为 .innerHTML
-                        intervalErrorEl.innerText = `(Deviation: ${cents} cents)`;
-                    } else {
-                        // 完美
-                        // [!! 修复 !!] 使用加粗的等号，并移除 '≈'
-                        intervalRatioEl.innerHTML = `<strong style="font-size: 1.2em; vertical-align: -0.05em;">=</strong> ${ratioText}`;
-                        intervalErrorEl.innerText = `(Perfect)`;
-                    }
-                } else {
-                    intervalRatioEl.innerText = '';
-                    intervalErrorEl.innerText = '';
-                }
-
-            } else {
-                // 清空 UI (不变)
-                intervalResultEl.innerText = '';
-                interval1El.innerText = firstNote || '--';
-                interval2El.innerText = secondNote || '--';
-                intervalRatioEl.innerText = '';
-                intervalErrorEl.innerText = '';
-            }
+            // [!! 修改 !!]
+            // 总是调用 updateDisplay 来计算和显示
+            updateDisplay();
         });
 
         // 重置按钮 (不变)
         resetBtn.addEventListener('click', resetSelection);
+
+        // [!! 移除 !!]
+        // 移除了 'ratioPrecisionInput' 的事件监听器
     }
 
     // =====================================================================
