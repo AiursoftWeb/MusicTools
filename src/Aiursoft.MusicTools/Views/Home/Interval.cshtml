@@ -2,7 +2,7 @@
     ViewData["Title"] = @Localizer["Interval Calculator"];
 }
 
-<div id="localization-data"
+<div id="calc-localization-data"
      data-perfect-unison="@Localizer["Perfect Unison"]"
      data-minor-second="@Localizer["Minor Second"]"
      data-major-second="@Localizer["Major Second"]"
@@ -77,6 +77,11 @@
                     </div>
 
                     <div class="h3 fw-bold text-primary mt-3" id="interval-result" style="min-height: 2.5rem;">
+                    </div>
+
+                    <div class="h5" id="interval-ratio" style="min-height: 2rem;">
+                    </div>
+                    <div class="small text-muted" id="interval-error">
                     </div>
                 </div>
             </div>
