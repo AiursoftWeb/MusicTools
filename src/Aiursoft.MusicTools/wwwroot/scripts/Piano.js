@@ -19,6 +19,7 @@ class Piano {
     #audioContext;
     #keyMap; // (e.g., "C4" -> HTMLElement)
     #onClickCallback;
+    #activeKeys; // [!! 新增 !!] 用于跟踪电脑键盘按键状态
 
     // --- 2. 静态数据 ---
 
@@ -68,6 +69,9 @@ class Piano {
         // 3. 初始化查找表
         this.#keyMap = new Map();
         this.#onClickCallback = () => {}; // 默认为空函数
+
+        // [!! 新增 !!]
+        this.#activeKeys = new Set(); // 用于防止按键连发
 
         // 4. 构建钢琴
         this.#createPianoHTML();
@@ -289,6 +293,86 @@ class Piano {
             const scaleDegreeEl = keyEl.querySelector(".scale-degree");
             if (scaleDegreeEl) {
                 scaleDegreeEl.textContent = "";
+            }
+        });
+    }
+
+    /**
+     * [!! 新增 API !!]
+     * 将电脑键盘按键绑定到钢琴键
+     * @param {object} keyMapping - e.g., { 'A': 'C4', 'S': 'D4' }
+     */
+    bindToComputerKeyboard(keyMapping) {
+        if (!this.#options.isClickable || !this.#audioContext) {
+            console.warn("Piano.js: 必须在 'isClickable: true' 模式下才能绑定键盘。");
+            return;
+        }
+
+        // 反向映射，用于快速查找 (e.g., 'C4' -> 'A')
+        const noteToKeyMap = new Map();
+        for (const [key, note] of Object.entries(keyMapping)) {
+            noteToKeyMap.set(note, key);
+        }
+
+        // 1. 按下琴键
+        document.addEventListener('keydown', (event) => {
+            // 如果正在输入文字（比如在输入框里），则禁用
+            if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+                return;
+            }
+
+            const key = event.key.toUpperCase(); // 'a' -> 'A'
+
+            // 检查是否是“连发”事件 (按住不放)
+            if (this.#activeKeys.has(key) || event.repeat) {
+                return;
+            }
+
+            const noteName = keyMapping[key]; // 'A' -> 'C4'
+            if (!noteName) {
+                return; // 按下的键不在我们的映射里
+            }
+
+            const keyEl = this.#keyMap.get(noteName);
+            if (!keyEl) {
+                console.warn(`Piano.js: 键盘映射了不存在的音符 ${noteName}`);
+                return;
+            }
+
+            console.log(`[Keyboard] KeyDown: ${key} -> ${noteName}`);
+
+            // A. 标记为“已按下”
+            this.#activeKeys.add(key);
+
+            // B. 触发 CSS :active 状态 (我们手动添加一个 .active 类)
+            keyEl.classList.add('active'); // (你需要 CSS 来定义 .active)
+
+            // C. 播放声音
+            if (this.#audioContext.state === 'suspended') {
+                this.#audioContext.resume();
+            }
+            const midi = parseInt(keyEl.dataset.midi, 10);
+            this.#playNote(midi);
+
+            // D. (可选) 触发回调
+            this.#onClickCallback(noteName);
+        });
+
+        // 2. 抬起琴键
+        document.addEventListener('keyup', (event) => {
+            const key = event.key.toUpperCase();
+
+            if (this.#activeKeys.has(key)) {
+                this.#activeKeys.delete(key);
+
+                const noteName = keyMapping[key];
+                if (!noteName) return;
+
+                const keyEl = this.#keyMap.get(noteName);
+                if (keyEl) {
+                    // 移除 CSS .active 状态
+                    keyEl.classList.remove('active');
+                }
             }
         });
     }

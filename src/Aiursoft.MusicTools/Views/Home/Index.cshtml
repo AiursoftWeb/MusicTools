@@ -65,12 +65,44 @@
 
             if (typeof Piano !== 'undefined') {
                 // 初始化我们的新钢琴控件！
-                new Piano(pianoEl, {
+                const piano = new Piano(pianoEl, {
                     octaves: 4,         // 3 个八度 (足够“宽”)
-                    startOctave: 4,     // 从 C3 开始 (一个很好的中间范围)
+                    startOctave: 3,     // 从 C3 开始 (一个很好的中间范围)
                     isClickable: true,  // [!! 关键 !!] 允许点击和发声
                     showNoteNames: true,
                     showTonicIndicator: false // 主页上不需要这个
+                });
+
+                piano.bindToComputerKeyboard({
+// --- QWERTY (低音区) ---
+                    'W': 'A2',
+                    'E': 'B2',
+                    'R': 'C3',
+                    'T': 'D3',
+                    'Y': 'E3',
+                    'U': 'F3',
+                    'I': 'G3',
+                    'O': 'A3',
+                    'P': 'B3',
+                    // --- ASDF (中音区) ---
+                    'A': 'C4',
+                    'S': 'D4',
+                    'D': 'E4',
+                    'F': 'F4',
+                    'G': 'G4',
+                    'H': 'A4',
+                    'J': 'B4',
+                    'K': 'C5',
+                    'L': 'D5',
+                    ';': 'E5', // (分号键)
+                    // --- ZXCV (高音区) ---
+                    'Z': 'F5',
+                    'X': 'G5',
+                    'C': 'A5',
+                    'V': 'B5',
+                    'B': 'C6',
+                    'N': 'D6',
+                    'M': 'E6'
                 });
             } else {
                 console.error("Piano.js 未加载。");
