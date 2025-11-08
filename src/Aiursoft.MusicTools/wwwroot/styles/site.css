@@ -156,7 +156,7 @@
     border: 1px solid #b3b3b3;
     box-sizing: border-box;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: transform 0.05s ease-out, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .piano .black {
@@ -172,17 +172,38 @@
     box-sizing: border-box;
     z-index: 10;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: transform 0.05s ease-out, background-color 0.2s ease, border-color 0.2s ease;
+}
+/* --- 1. [!! 修复 !!] --- */
+/* * 白键“按下”规则：
+ * 只有在它自己被按下 (:active)，
+ * 并且 (NOT) 它的子元素中没有黑键是 :active 状态时，才应用此样式。
+ */
+.piano .white:active:not(:has(.black:active)) {
+    background-color: #e9ecef;
 }
 
-.piano .white.highlight {
-    background-color: #6ba5d7;
-    border-color: #5a8fbb;
+/* --- 2. (不变) --- */
+/* 黑键的 "按下" 规则保持不变 */
+.piano .black:active {
+    background-color: #495057;
 }
 
-.piano .black.highlight {
-    background-color: rgb(75, 189, 84);
-    border-color: #5a8fbb;
+/* --- 3. (可选，但推荐) --- */
+/* * 同样，防止高亮的白键在黑键被按下时也改变颜色
+ */
+.piano .white.highlight:active:not(:has(.black:active)) {
+    background-color: #5a8fbb; /* 或者一个比 #6ba5d7 稍暗的颜色 */
+}
+
+.piano .white.select-highlight:active:not(:has(.black:active)) {
+    background-color: #ffc446; /* 或者一个比 #ffc446 稍暗的颜色 */
+}
+
+/* (黑键高亮的 :active 规则不需要变，因为它们没有子元素) */
+.piano .black.highlight:active,
+.piano .black.select-highlight:active {
+    background-color: #495057; /* 保持一致的“按下”颜色 */
 }
 
 /* --- 琴键文字 (Mobile Base Styles) --- */

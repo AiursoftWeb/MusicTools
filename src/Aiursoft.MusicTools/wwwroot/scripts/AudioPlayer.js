@@ -433,7 +433,7 @@ class AudioPlayer {
         const freq = 440 * Math.pow(2, (midiNote - 69) / 12);
         const oscillator = this.audioContext.createOscillator();
         // Like piano
-        oscillator.type = 'sawtooth'; // 可尝试 'sine', 'square', 'sawtooth', 'triangle'
+        oscillator.type = 'triangle'; // 可尝试 'sine', 'square', 'sawtooth', 'triangle'
         oscillator.frequency.setValueAtTime(freq, startTime);
         oscillator.detune.setValueAtTime(detuneInCents, startTime);
 

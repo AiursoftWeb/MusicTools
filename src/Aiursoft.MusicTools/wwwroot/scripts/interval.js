@@ -19,9 +19,8 @@ window.addEventListener("load", () => {
     const intervalErrorEl = document.getElementById('interval-error');
 
     // (B) [!! 修复 !!] 确保你使用的是唯一的 ID，例如 "calc-localization-data"
-    let localeData = document.getElementById("calc-localization-data"); // <-- 假设你已修复了 HTML 中的 ID
+    let localeData = document.getElementById("calc-localization-data");
     if (!localeData) {
-        // 如果 HTML 没改，尝试回退到旧 ID
         localeData = document.getElementById("localization-data");
         console.warn("[Init] Warning: Found fallback 'localization-data'. Please update HTML to 'calc-localization-data' to avoid ID conflicts.");
         if(!localeData) {
@@ -75,25 +74,40 @@ window.addEventListener("load", () => {
     };
     console.log("[Init] Localization strings loaded.");
 
+    // [!! 新增 !!]
+    // 实例化我们的新 Piano.js 控件
+    let piano;
+    if (typeof Piano !== 'undefined') {
+        piano = new Piano(pianoContainer, {
+            octaves: 3,           // 音程计算器需要 3 个八度
+            startOctave: 4,       // 从 C1 开始 (匹配你旧的 createSimplePiano)
+            isClickable: true,    // [!! 关键 !!] 开启点击和声音
+            showNoteNames: true,  // 显示 C, D, E
+            showTonicIndicator: false // 不需要主音
+        });
+    } else {
+        console.error("Piano.js 未加载。");
+        return;
+    }
+
+
     // =====================================================================
     // =================== 2. 核心功能逻辑 ===============================
     // =====================================================================
 
     const HIGH_LIGHT = 'select-highlight';
-    const MILU_SEARCH_LIMIT = 200; // [新] 密率搜索上限 (你提到的 160 就够了)
+    const MILU_SEARCH_LIMIT = 400;
 
+    // (calculateErrorInCents, findBestRational, calculateInterval 100% 不变)
     function calculateErrorInCents(tetRatio, rationalRatio) {
         if (!tetRatio || !rationalRatio) return 0;
         const cents = 1200 * Math.log2(tetRatio / rationalRatio);
         console.log(`[Debug Cents] 12TET: ${tetRatio}, Rational: ${rationalRatio}, Cents: ${cents}`);
         return cents;
     }
-
-    // [!! 修改 !!] 移除了 'maxInt' 的硬编码默认值
     function findBestRational(ratio, maxInt) {
         console.log(`[Debug Approx] Finding best rational for ${ratio} with maxInt ${maxInt}`);
         let best = { n: 1, d: 1, error: Math.abs(ratio - 1) };
-
         for (let d = 1; d <= maxInt; d++) {
             const candidates = [Math.floor(ratio * d), Math.ceil(ratio * d)];
             for (const n of candidates) {
@@ -115,16 +129,7 @@ window.addEventListener("load", () => {
         }
         return best;
     }
-
-
-    /**
-     * [!! 核心重构 !!]
-     * 核心算法。现在自动计算 'yuelu' 和 'milu'
-     */
     function calculateInterval(note1, note2) {
-
-        // --- 1. 定义音高和音程数据 ---
-        // ... (BASE_NOTES 和 INTERVAL_MAP 不变) ...
         const BASE_NOTES = {
             "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
             "F#": 6, "G": 7, "G#": 8, "A": 9, "A#": 10, "B": 11
@@ -168,8 +173,6 @@ window.addEventListener("load", () => {
             35: { name: localizedStrings.majorTwentyFirst, type: 'sharp' },
             36: { name: localizedStrings.perfectTwentySecond, type: 'sharp' }
         };
-
-        // --- 2. 辅助函数: 解析音符 (不变) ---
         function parseNote(note) {
             let octave = 1;
             let noteName = note;
@@ -185,12 +188,9 @@ window.addEventListener("load", () => {
             const absoluteValue = baseValue + octave * 12;
             return { noteName, octave, baseValue, absoluteValue };
         }
-
-        // --- 3. 主计算逻辑 ---
         try {
             const parsedNote1 = parseNote(note1);
             const parsedNote2 = parseNote(note2);
-
             let rootParsed, targetParsed;
             if (parsedNote1.absoluteValue <= parsedNote2.absoluteValue) {
                 rootParsed = parsedNote1;
@@ -199,34 +199,22 @@ window.addEventListener("load", () => {
                 rootParsed = parsedNote2;
                 targetParsed = parsedNote1;
             }
-
             console.log(`[Debug Calc] Root: ${rootParsed.noteName}${rootParsed.octave} (Abs: ${rootParsed.absoluteValue}), Target: ${targetParsed.noteName}${targetParsed.octave} (Abs: ${targetParsed.absoluteValue})`);
-
-            // --- 4. 12-TET 和 有理数逼近 ---
             const semitones = targetParsed.absoluteValue - rootParsed.absoluteValue;
             const tetRatio = Math.pow(2, semitones / 12);
-
-            // [!! 新逻辑 !!] 计算 "约率"
-            const yuelu = findBestRational(tetRatio, 10); // 10 以内
+            const yuelu = findBestRational(tetRatio, 10);
             const yueluErrorCents = calculateErrorInCents(tetRatio, (yuelu.n / yuelu.d));
-
-            // [!! 新逻辑 !!] 循环查找 "密率"
             let milu = yuelu;
             for (let maxInt = 11; maxInt <= MILU_SEARCH_LIMIT; maxInt++) {
                 const currentApprox = findBestRational(tetRatio, maxInt);
-                // 如果找到了一个 *不同* (且更精确) 的比值
                 if (currentApprox.n !== yuelu.n || currentApprox.d !== yuelu.d) {
                     milu = currentApprox;
                     console.log(`[Debug Milu] Found Milü at maxInt=${maxInt} -> ${milu.n}:${milu.d}`);
-                    break; // 找到了，停止搜索
+                    break;
                 }
             }
             const miluErrorCents = calculateErrorInCents(tetRatio, (milu.n / milu.d));
-
-
             console.log(`[Debug Calc] Semitones: ${semitones}, 12-TET Ratio: ${tetRatio}`);
-
-            // --- 5. 乐理拼写 (不变) ---
             const intervalInfo = INTERVAL_MAP[semitones];
             if (!intervalInfo) {
                 const errName = `Interval too large (${semitones} semitones)`;
@@ -235,13 +223,12 @@ window.addEventListener("load", () => {
                     note1: rootParsed.noteName + rootParsed.octave,
                     note2: targetParsed.noteName + targetParsed.octave,
                     intervalName: errName,
-                    yuelu: yuelu, // 即使没有名字，也返回比值
+                    yuelu: yuelu,
                     yueluErrorCents: yueluErrorCents,
                     milu: milu,
                     miluErrorCents: miluErrorCents
                 };
             }
-
             const targetBaseValue = targetParsed.baseValue;
             let targetSpellingName;
             if (intervalInfo.type === 'flat') {
@@ -251,18 +238,15 @@ window.addEventListener("load", () => {
             }
             const rootDisplay = rootParsed.noteName + rootParsed.octave;
             const targetDisplay = targetSpellingName + targetParsed.octave;
-
-            // --- 6. [!! 修改 !!] 返回新的比值对象 ---
             return {
                 note1: rootDisplay,
                 note2: targetDisplay,
                 intervalName: intervalInfo.name,
-                yuelu: yuelu, // { n: 4, d: 3, error: ... }
+                yuelu: yuelu,
                 yueluErrorCents: yueluErrorCents,
-                milu: milu, // { n: 159, d: 119, error: ... }
+                milu: milu,
                 miluErrorCents: miluErrorCents
             };
-
         } catch (e) {
             console.error(`[Debug Calc] Error: ${e.message}`);
             return { note1: note1, note2: note2, intervalName: `Error: ${e.message}` };
@@ -271,30 +255,25 @@ window.addEventListener("load", () => {
 
     /**
      * [!! 重构 !!]
-     * 事件处理器，显示 Yuelu 和 Milu
+     * 事件处理器现在使用 Piano.js API
      */
-    function setupIntervalCalculator(container) {
+    function setupIntervalCalculator() {
         let firstNote = '', secondNote = '';
         console.log("[Init] Setting up Interval Calculator...");
 
-        // [!! 修改 !!] 移除 input 相关的逻辑，重构 updateDisplay
+        // (updateDisplay 辅助函数不变)
         function updateDisplay() {
             if (firstNote && secondNote) {
-
                 console.log(`[Debug UI] Calculating interval for ${firstNote} and ${secondNote}`);
-                // [!! 修改 !!] 不再需要传入 'precision'
                 const result = calculateInterval(firstNote, secondNote);
 
                 intervalResultEl.innerText = result.intervalName;
                 interval1El.innerText = result.note1;
                 interval2El.innerText = result.note2;
 
-                // [!! 新的显示逻辑 !!]
                 if (result.yuelu) {
                     const cents = result.yueluErrorCents.toFixed(2);
-                    const ratioText = `${result.yuelu.d} : ${result.yuelu.n}`; // 约率: d:n
-
-                    // (1) 显示 "约率" (Yuelü)
+                    const ratioText = `${result.yuelu.d} : ${result.yuelu.n}`;
                     if (Math.abs(cents) < 0.01) {
                         intervalRatioEl.innerHTML = `约率: <strong style="font-size: 1.2em; vertical-align: -0.05em;">=</strong> ${ratioText} (Perfect)`;
                     } else if (cents > 0) {
@@ -302,13 +281,9 @@ window.addEventListener("load", () => {
                     } else {
                         intervalRatioEl.innerHTML = `约率: ≈ ${ratioText} (${cents} cents)`;
                     }
-
-                    // (2) 显示 "密率" (Milü)
                     if (result.milu.n !== result.yuelu.n || result.milu.d !== result.yuelu.d) {
-                        // 只有当密率和约率不同时才显示
                         const miluCents = result.miluErrorCents.toFixed(2);
                         const miluRatioText = `${result.milu.d} : ${result.milu.n}`;
-
                         if (Math.abs(miluCents) < 0.01) {
                             intervalErrorEl.innerText = `密率: = ${miluRatioText} (Perfect)`;
                         } else if (miluCents > 0) {
@@ -317,17 +292,13 @@ window.addEventListener("load", () => {
                             intervalErrorEl.innerText = `密率: ≈ ${miluRatioText} (${miluCents} cents)`;
                         }
                     } else {
-                        // 约率已经是最好的了
                         intervalErrorEl.innerText = '';
                     }
-
                 } else {
                     intervalRatioEl.innerText = '';
                     intervalErrorEl.innerText = '';
                 }
-
             } else {
-                // 清空 UI
                 intervalResultEl.innerText = '';
                 interval1El.innerText = firstNote || '--';
                 interval2El.innerText = secondNote || '--';
@@ -336,24 +307,23 @@ window.addEventListener("load", () => {
             }
         }
 
+        // (resetSelection 辅助函数被重构)
         function resetSelection() {
             console.log("[Action] Reset selection.");
             firstNote = '';
             secondNote = '';
             updateDisplay(); // 调用 update 来清空
-            container.querySelectorAll('[data-note]').forEach(t => {
-                t.classList.remove(HIGH_LIGHT);
-            });
+            piano.clearAllHighlights(); // [!! API !!]
         }
 
-        // 钢琴点击事件
-        container.addEventListener('click', (ev) => {
-            const targetKey = ev.target.closest('[data-note]');
-            if (!targetKey) return;
-            const note = targetKey.dataset['note'];
+        // [!! 重构 !!]
+        // 移除了旧的 'container.addEventListener'
+        // 换用了新的 'piano.onClick' API
+        piano.onClick((note) => {
             console.log(`[Action] Clicked note: ${note}`);
+            // (点击发声由 Piano.js 自动处理)
 
-            // (点击逻辑不变)
+            // (你的状态管理逻辑不变)
             if (!firstNote) {
                 firstNote = note;
             } else if (!secondNote) {
@@ -368,70 +338,39 @@ window.addEventListener("load", () => {
                 secondNote = note;
             }
 
-            // 高亮 (不变)
-            container.querySelectorAll('[data-note]').forEach(t => {
-                t.classList.remove(HIGH_LIGHT);
-            });
+            // [!! API !!] 重构高亮
+            piano.clearAllHighlights();
             if (firstNote) {
-                container.querySelector(`[data-note="${firstNote}"]`).classList.add(HIGH_LIGHT);
+                piano.highlightKeys([firstNote], HIGH_LIGHT);
             }
             if (secondNote) {
-                container.querySelector(`[data-note="${secondNote}"]`).classList.add(HIGH_LIGHT);
+                piano.highlightKeys([secondNote], HIGH_LIGHT);
             }
 
-            // [!! 修改 !!]
-            // 总是调用 updateDisplay 来计算和显示
+            // [!! API !!] 更新显示
             updateDisplay();
         });
 
         // 重置按钮 (不变)
         resetBtn.addEventListener('click', resetSelection);
-
-        // [!! 移除 !!]
-        // 移除了 'ratioPrecisionInput' 的事件监听器
     }
 
     // =====================================================================
-    // =================== 3. 精简版 createPiano ========================
+    // =================== 3. [!! 移除 !!] ================================
     // =====================================================================
-    // (不变)
 
-    function createSimplePiano(container) {
-        // ... (createSimplePiano 函数 100% 不变) ...
-        const piano = document.createElement("ul");
-        piano.className = "piano";
-        const notesWithOctave = [
-            "C1", "C#1", "D1", "D#1", "E1", "F1", "F#1", "G1", "G#1", "A1", "A#1", "B1",
-            "C2", "C#2", "D2", "D#2", "E2", "F2", "F#2", "G2", "G#2", "A2", "A#2", "B2",
-            "C3", "C#3", "D3", "D#3", "E3", "F3", "F#3", "G3", "G#3", "A3", "A#3", "B3",
-            "C4"
-        ];
-        notesWithOctave.forEach((note) => {
-            const li = document.createElement("li");
-            const isBlack = note.includes("#");
-            li.dataset.note = note;
-            li.className = isBlack ? "black" : "white";
-            const noteNameSpan = document.createElement("span");
-            noteNameSpan.className = "note-name";
-            if (!isBlack) {
-                noteNameSpan.textContent = note.slice(0, -1);
-            }
-            li.appendChild(noteNameSpan);
-            if (isBlack) {
-                piano.lastChild.appendChild(li);
-            } else {
-                piano.appendChild(li);
-            }
-        });
-        container.appendChild(piano);
-    }
+    // createSimplePiano() 函数已删除
 
     // =====================================================================
     // =================== 4. 启动! =====================================
     // =====================================================================
 
-    createSimplePiano(pianoContainer);
-    setupIntervalCalculator(pianoContainer);
+    // [!! 移除 !!]
+    // createSimplePiano(pianoContainer);
+
+    // [!! 修改 !!]
+    // 只需要调用 setupIntervalCalculator 即可，piano 已经在顶部创建
+    setupIntervalCalculator();
     console.log("[Init] Interval Calculator is ready.");
 
 });

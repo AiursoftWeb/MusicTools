@@ -1,3 +1,7 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -23,28 +27,10 @@
             <div class="d-grid gap-3 d-md-flex justify-content-md-start mt-4">
                 <a asp-controller="Home" asp-action="Major"
                    class="btn btn-primary btn-lg px-4 me-md-2 d-flex align-items-center justify-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="lucide lucide-sun lucide-sm me-2">
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <path d="M12 2v2"></path>
-                        <path d="M12 20v2"></path>
-                        <path d="m4.93 4.93 1.41 1.41"></path>
-                        <path d="m17.66 17.66 1.41 1.41"></path>
-                        <path d="M2 12h2"></path>
-                        <path d="M20 12h2"></path>
-                        <path d="m6.34 17.66-1.41 1.41"></path>
-                        <path d="m19.07 4.93-1.41 1.41"></path>
-                    </svg>
                     @Localizer["Explore Major"]
                 </a>
                 <a asp-controller="Home" asp-action="Minor"
                    class="btn btn-outline-secondary btn-lg px-4 d-flex align-items-center justify-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="lucide lucide-moon lucide-sm me-2">
-                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                    </svg>
                     @Localizer["Explore Minor"]
                 </a>
             </div>
@@ -52,66 +38,48 @@
     </div>
 </div>
 
-<hr class="feature-divider">
 
-<div class="container px-4 py-5" id="features">
-    <h2 class="pb-2 border-bottom">@Localizer["Why is music designed this way?"]</h2>
-    <p class="lead fs-5 mb-4">
-        @Localizer["Music isn't magic; it's a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:"]
-    </p>
-
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
-        <div class="feature col">
-            <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 p-3 rounded-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid"
-                     width="40" height="40">
-                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                    <rect width="7" height="7" x="3" y="3"></rect>
-                    <rect width="7" height="7" x="14" y="3"></rect>
-                    <rect width="7" height="7" x="14" y="14"></rect>
-                    <rect width="7" height="7" x="3" y="14"></rect>
-                </svg>
+<div class="container-fluid px-4 py-5" id="interactive-piano-section">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div id="homepage-piano-container" class="piano-container table-responsive">
             </div>
-            <h3 class="fs-2 text-body-emphasis">@Localizer["Deconstructing the 12-Tone System"]</h3>
-            <p>
-                @Localizer["Why is an octave divided into 12 keys? Modern music is built on '12-Tone Equal Temperament,' a brilliant mathematical compromise that allows all keys to sound 'acceptable.' Our Chromatic Circle makes this abstract pitch system visually intuitive."]
-            </p>
-        </div>
-
-        <div class="feature col">
-            <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 p-3 rounded-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"
-                     width="40" height="40">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">@Localizer["The Magic of the Circle of Fifths"]</h3>
-            <p>
-                @Localizer["Keys are not isolated. The 'Circle of Fifths' is music's compass, revealing the order of all key signatures (C -> G -> D...) and their harmonic relationships. It's the core blueprint for composition, arrangement, and improvisation."]
-            </p>
-        </div>
-
-        <div class="feature col">
-            <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 p-3 rounded-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-2"
-                     width="40" height="40">
-                    <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
-                    <path d="M15 7h2a5 5 0 0 1 0 10h-2"></path>
-                    <line x1="8" x2="16" y1="12" y2="12"></line>
-                </svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">@Localizer["Connecting Everything"]</h3>
-            <p>
-                @Localizer["Theory can be dry, but watching it in action is fun. The core value of this tool is 'real-time synchronization.' When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You'll immediately understand why G Major has only one sharp!"]
-            </p>
         </div>
     </div>
 </div>
+<hr class="feature-divider">
+
+
+<div class="container px-4 py-5" id="features">
+    <h2 class="pb-2 border-bottom">@Localizer["Why is music designed this way?"]</h2>
+    </div>
+
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/scripts/Piano.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+
+            const pianoEl = document.getElementById('homepage-piano-container');
+
+            if (typeof Piano !== 'undefined') {
+                // 初始化我们的新钢琴控件！
+                new Piano(pianoEl, {
+                    octaves: 4,         // 3 个八度 (足够“宽”)
+                    startOctave: 4,     // 从 C3 开始 (一个很好的中间范围)
+                    isClickable: true,  // [!! 关键 !!] 允许点击和发声
+                    showNoteNames: true,
+                    showTonicIndicator: false // 主页上不需要这个
+                });
+            } else {
+                console.error("Piano.js 未加载。");
+            }
+        });
+    </script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"/>
+}
