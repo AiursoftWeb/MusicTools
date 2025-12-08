@@ -143,11 +143,11 @@
                 
                 let newSubdivision = parseInt(subdivisionSelect.value);
 
-                // Logic for Compound Meters (6/8, 9/8, 12/8)
+                // Logic for Compound Meters (3/8, 6/8, 9/8, 12/8)
                 // In compound meter, the beat is a dotted quarter note.
-                // 6/8 -> 2 beats, 9/8 -> 3 beats, 12/8 -> 4 beats.
+                // 3/8 -> 1 beat, 6/8 -> 2 beats, 9/8 -> 3 beats, 12/8 -> 4 beats.
                 // The natural subdivision is 3 (Eighth notes).
-                if (den === 8 && (num === 6 || num === 9 || num === 12)) {
+                if (den === 8 && (num === 3 || num === 6 || num === 9 || num === 12)) {
                     beatsPerMeasure = num / 3;
                     
                     // Auto-switch to Triplet (3 clicks) which represents the 8th notes in compound meter
