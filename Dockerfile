@@ -3,7 +3,7 @@ ARG PROJ_NAME="Aiursoft.MusicTools"
 
 # ============================
 # Prepare NPM Environment
-FROM hub.aiursoft.cn/node:22-alpine AS npm-env
+FROM hub.aiursoft.com/node:22-alpine AS npm-env
 ARG CSPROJ_PATH
 WORKDIR /src
 COPY . .
@@ -14,7 +14,7 @@ RUN npm run build --prefix "${CSPROJ_PATH}wwwroot"
 
 # ============================
 # Prepare Building Environment
-FROM hub.aiursoft.cn/aiursoft/internalimages/dotnet AS build-env
+FROM hub.aiursoft.com/aiursoft/internalimages/dotnet AS build-env
 ARG CSPROJ_PATH
 ARG PROJ_NAME
 WORKDIR /src
@@ -26,7 +26,7 @@ RUN cp -r ${CSPROJ_PATH}/wwwroot/* /app/wwwroot
 
 # ============================
 # Prepare Runtime Environment
-FROM hub.aiursoft.cn/aiursoft/internalimages/dotnet
+FROM hub.aiursoft.com/aiursoft/internalimages/dotnet
 ARG PROJ_NAME
 WORKDIR /app
 COPY --from=build-env /app .
