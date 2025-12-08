@@ -1,6 +1,5 @@
-/* =====================================================================
- * AudioPlayer.js (V3.2 - 单个播放/停止按钮)
- * ===================================================================== */
+import * as Tone from 'tone';
+import { Piano as TonePiano } from '@tonejs/piano';
 
 // 1. 乐曲库 (不变)
 const SONG_LIBRARY = {
@@ -237,7 +236,17 @@ class AudioPlayer {
     constructor(elements) {
         this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         this.activeOscillators = new Set();
-        this.activeMarkers = new Set(); // <--【!! 新增此行 !!】
+        this.activeMarkers = new Set();
+        this.tonePianoInstance = null;
+
+        // Initialize high-quality Tone Piano
+        this.tonePianoInstance = new TonePiano({
+            velocities: 5
+        });
+        this.tonePianoInstance.toDestination();
+        this.tonePianoInstance.load().catch(err => {
+            console.error("[AudioPlayer] Failed to load piano samples:", err);
+        });
 
         // DOM 元素
         this.playStopButton = elements.playStopButton;
@@ -359,6 +368,9 @@ class AudioPlayer {
         if (this.audioContext.state === 'suspended') {
             this.audioContext.resume();
         }
+        if (Tone.context.state === 'suspended') {
+            Tone.start();
+        }
 
         this.isPlaying = true;
         this._setPlayButtonState(true); // 更新按钮外观
@@ -430,6 +442,17 @@ class AudioPlayer {
      * 播放单个音符 (与 V2.1 相同)
      */
     _playNote(midiNote, startTime, duration, detuneInCents) {
+        // 1. Try high-quality piano first
+        if (this.tonePianoInstance && this.tonePianoInstance.loaded) {
+            const finalMidi = midiNote + Math.round(detuneInCents / 100);
+            const noteName = Tone.Frequency(finalMidi, "midi").toNote();
+            const delay = startTime - Tone.now();
+            this.tonePianoInstance.keyDown({ note: noteName, time: `+${delay}` });
+            this.tonePianoInstance.keyUp({ note: noteName, time: `+${delay + duration}` });
+            return;
+        }
+
+        // 2. Fallback
         const freq = 440 * Math.pow(2, (midiNote - 69) / 12);
         const oscillator = this.audioContext.createOscillator();
         // Like piano
@@ -474,3 +497,5 @@ class AudioPlayer {
         };
     }
 }
+
+export default AudioPlayer;

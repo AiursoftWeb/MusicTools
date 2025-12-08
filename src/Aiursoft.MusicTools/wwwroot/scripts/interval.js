@@ -1,9 +1,11 @@
+import Piano from './Piano.js';
+
 // 钢琴键盘的 "data-note" 使用的是升号 (#)
 const SHARP_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 // 乐理上 "小" 和 "减" 音程倾向于使用降号 (b)
 const FLAT_NAMES = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 
-window.addEventListener("load", () => {
+window.addEventListener('DOMContentLoaded', () => {
     // =====================================================================
     // =================== 1. DOM 和本地化 ==============================
     // =====================================================================
@@ -81,21 +83,16 @@ window.addEventListener("load", () => {
     };
     console.log("[Init] Localization strings loaded.");
 
-    // [!! 新增 !!]
-    // 实例化我们的新 Piano.js 控件
-    let piano;
-    if (typeof Piano !== 'undefined') {
-        piano = new Piano(pianoContainer, {
-            octaves: 3,           // 音程计算器需要 3 个八度
-            startOctave: 4,       // 从 C1 开始 (匹配你旧的 createSimplePiano)
-            isClickable: true,    // [!! 关键 !!] 开启点击和声音
-            showNoteNames: true,  // 显示 C, D, E
-            showTonicIndicator: false // 不需要主音
-        });
-    } else {
-        console.error("Piano.js 未加载。");
-        return;
-    }
+    // Initialize Piano
+    const piano = new Piano(pianoContainer, {
+        octaves: 3,
+        startOctave: 4,
+        isClickable: true,
+        showNoteNames: true,
+        showTonicIndicator: false
+    });
+
+    setupIntervalCalculator();
 
 
     // =====================================================================
@@ -409,7 +406,6 @@ window.addEventListener("load", () => {
 
     // [!! 修改 !!]
     // 只需要调用 setupIntervalCalculator 即可，piano 已经在顶部创建
-    setupIntervalCalculator();
     console.log("[Init] Interval Calculator is ready.");
 
 });

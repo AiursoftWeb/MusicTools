@@ -1,8 +1,5 @@
-/* =================================================================
- * == Piano.js - 可复用的钢琴控件 (V3.0 - 修复了触摸/点击/滚动冲突)
- * =================================================================
- * ... (注释不变) ...
- * ================================================================= */
+import * as Tone from 'tone';
+import { Piano as TonePiano } from '@tonejs/piano';
 
 class Piano {
 
@@ -13,6 +10,7 @@ class Piano {
     #keyMap; // (e.g., "C4" -> HTMLElement)
     #onClickCallback;
     #activeKeys;
+    #tonePianoInstance; // Instance of @tonejs/piano
 
     // --- 2. 静态数据 ---
     static NOTE_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
@@ -42,6 +40,18 @@ class Piano {
         };
         if (this.#options.isClickable) {
             this.#audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+            // Initialize high-quality Tone.js Piano
+            console.log("[Piano.js] Initializing @tonejs/piano...");
+            this.#tonePianoInstance = new TonePiano({
+                velocities: 5
+            });
+            this.#tonePianoInstance.toDestination();
+            this.#tonePianoInstance.load().then(() => {
+                console.log("[Piano.js] High-quality piano samples loaded!");
+            }).catch(err => {
+                console.error("[Piano.js] Failed to load piano samples:", err);
+            });
         }
         this.#keyMap = new Map();
         this.#onClickCallback = () => {};
@@ -129,6 +139,10 @@ class Piano {
                 if (this.#audioContext.state === 'suspended') {
                     this.#audioContext.resume();
                 }
+                // Ensure Tone.js context is started
+                if (Tone.context.state === 'suspended') {
+                    Tone.start();
+                }
                 this.#playNote(midi);
             };
 
@@ -193,6 +207,15 @@ class Piano {
      * (此函数 100% 不变)
      */
     #playNote(midiNote, duration = 0.5) {
+        // 1. Try to use High-Quality Piano
+        if (this.#tonePianoInstance && this.#tonePianoInstance.loaded) {
+            const noteName = Tone.Frequency(midiNote, "midi").toNote();
+            this.#tonePianoInstance.keyDown({ note: noteName });
+            this.#tonePianoInstance.keyUp({ note: noteName, time: Tone.now() + duration });
+            return;
+        }
+
+        // 2. Fallback to Oscillator
         const now = this.#audioContext.currentTime;
         const freq = 440 * Math.pow(2, (midiNote - 69) / 12);
         const oscillator = this.#audioContext.createOscillator();
@@ -309,3 +332,5 @@ class Piano {
         });
     }
 }
+
+export default Piano;

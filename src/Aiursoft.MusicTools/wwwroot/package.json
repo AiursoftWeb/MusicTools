@@ -6,6 +6,20 @@
   "license": "MIT",
   "dependencies": {
     "@aiursoft/uistack": "^1.0.8",
-    "dropify": "^0.2.2"
-  }
+    "@tonejs/piano": "^0.2.1",
+    "dropify": "^0.2.2",
+    "events": "^3.3.0",
+    "tone": "^14.7.77",
+    "webmidi": "^3.1.14"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "^7.2.7"
+  },
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
 }

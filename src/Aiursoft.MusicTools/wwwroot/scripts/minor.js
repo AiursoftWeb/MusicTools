@@ -1,3 +1,5 @@
+import ScaleVisualizerEngine from './ScaleVisualizerEngine.js';
+
 window.addEventListener("load", () => {
 
     // =====================================================================
@@ -100,11 +102,7 @@ window.addEventListener("load", () => {
         loopCheckbox: document.getElementById('loop-song-checkbox')
     };
 
-    // 4. 启动引擎 (不变)
-    if (typeof ScaleVisualizerEngine !== 'undefined') {
-        const visualizer = new ScaleVisualizerEngine(minorConfig, domElements);
-        visualizer.initialize();
-    } else {
-        console.error("ScaleVisualizerEngine.js 未加载。");
-    }
+    // 4. 启动引擎
+    const visualizer = new ScaleVisualizerEngine(minorConfig, domElements);
+    visualizer.initialize();
 });

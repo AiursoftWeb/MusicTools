@@ -1,3 +1,6 @@
+import Piano from './Piano.js';
+import AudioPlayer from './AudioPlayer.js';
+
 // =====================================================================
 // =================== 1. 通用数据定义 ================================
 // (这一部分保持不变)
@@ -358,22 +361,17 @@ class ScaleVisualizerEngine {
 
     initialize() {
 
-        // 1. [!! 修改 !!]
-        // 移除了 this.createPiano()，替换为 new Piano()
-        if (typeof Piano !== 'undefined') {
-            this.#piano = new Piano(this.pianoContainer, {
-                octaves: 2,         // 2 个八度 (C4..C6)
-                startOctave: 4,     // 从 C4 开始
-                isClickable: true, // 五度圈的钢琴只是显示，不能点
-                showNoteNames: true,
-                showTonicIndicator: true,
-                localizedTonicText: this.localizedTonic
-            });
-        } else {
-            console.error("Piano.js 未加载。");
-        }
+        // 1. Initialize Piano
+        this.#piano = new Piano(this.pianoContainer, {
+            octaves: 2,
+            startOctave: 4,
+            isClickable: true,
+            showNoteNames: true,
+            showTonicIndicator: true,
+            localizedTonicText: this.localizedTonic
+        });
 
-        // 2. [不变] 初始化音频播放器
+        // 2. Initialize AudioPlayer
         this.audioPlayer = new AudioPlayer({
             playStopButton: this.playStopButton,
             songSelector: this.songSelector,
@@ -428,3 +426,5 @@ class ScaleVisualizerEngine {
         this.update();
     }
 }
+
+export default ScaleVisualizerEngine;
