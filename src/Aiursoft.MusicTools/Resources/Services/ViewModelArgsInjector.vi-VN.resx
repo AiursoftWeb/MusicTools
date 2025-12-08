@@ -147,5 +147,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>Kiểm tra quãng</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Máy đánh nhịp</value>
+  </data>
 
 </root>

@@ -147,5 +147,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>Interval test</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Metronome</value>
+  </data>
 
 </root>

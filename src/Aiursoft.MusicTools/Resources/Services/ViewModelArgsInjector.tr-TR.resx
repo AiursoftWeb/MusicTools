@@ -144,5 +144,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>Aralık Testi</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Metronom</value>
+  </data>
 
 </root>

@@ -147,5 +147,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>음정 테스트</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>메트로놈</value>
+  </data>
 
 </root>

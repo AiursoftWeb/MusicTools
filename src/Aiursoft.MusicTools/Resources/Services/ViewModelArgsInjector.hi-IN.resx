@@ -144,5 +144,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>अंतराल परीक्षण</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>मेट्रोनोम</value>
+  </data>
 
 </root>

@@ -68,6 +68,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Minor Calculator"];
         _ = localizer["Interval Calculator"];
         _ = localizer["Interval test"];
+        _ = localizer["Metronome"];
     }
 
     public void Inject(

@@ -1,27 +1,29 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 @model Aiursoft.MusicTools.Models.HomeViewModels.MetronomeViewModel
 
-<div class="container">
+<div class="container mt-5">
     <div class="card shadow-sm" style="max-width: 800px; margin: 0 auto;">
         <div class="card-body text-center p-5">
-            <h1 class="mb-4">@Model.PageTitle</h1>
+            <h1 class="mb-4">@Localizer[Model.PageTitle]</h1>
             
             <div class="mb-4">
                 <div id="bpm-display" class="display-1 fw-bold text-primary">90</div>
-                <div class="text-muted fs-4">BPM</div>
+                <div class="text-muted fs-4">@Localizer["BPM"]</div>
             </div>
 
             <div class="mb-5 px-md-5">
                 <input type="range" class="form-range" id="bpm-slider" min="0" max="100" step="0.1" value="50" style="height: 2rem;">
                 <div class="d-flex justify-content-between text-muted small mt-2">
-                    <span>Slow (1)</span>
-                    <span>Normal (90)</span>
-                    <span>Fast (320)</span>
+                    <span>@Localizer["Slow (1)"]</span>
+                    <span>@Localizer["Normal (90)"]</span>
+                    <span>@Localizer["Fast (320)"]</span>
                 </div>
             </div>
 
             <div class="row justify-content-center mb-5">
                 <div class="col-md-5 mb-3">
-                    <label for="time-signature" class="form-label fw-bold">Time Signature</label>
+                    <label for="time-signature" class="form-label fw-bold">@Localizer["Time Signature"]</label>
                     <select id="time-signature" class="form-select form-select-lg text-center">
                         <option value="1/4">1/4</option>
                         <option value="2/4">2/4</option>
@@ -38,18 +40,21 @@
                     </select>
                 </div>
                 <div class="col-md-5 mb-3">
-                    <label for="subdivision" class="form-label fw-bold">Subdivision</label>
+                    <label for="subdivision" class="form-label fw-bold">@Localizer["Subdivision"]</label>
                     <select id="subdivision" class="form-select form-select-lg text-center">
-                        <option value="1" selected>Quarter Note (♩)</option>
-                        <option value="2">Eighth Note (♫)</option>
-                        <option value="3">Triplet (3)</option>
-                        <option value="4">Sixteenth Note (♬)</option>
+                        <option value="1" selected>@Localizer["Quarter Note (♩)"]</option>
+                        <option value="2">@Localizer["Eighth Note (♫)"]</option>
+                        <option value="3">@Localizer["Triplet (3)"]</option>
+                        <option value="4">@Localizer["Sixteenth Note (♬)"]</option>
                     </select>
                 </div>
             </div>
 
-            <button id="start-stop-btn" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all">
-                <span id="btn-icon">▶</span> <span id="btn-text">Start</span>
+            <button id="start-stop-btn" 
+                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all"
+                    data-text-start="@Localizer["Start"]"
+                    data-text-stop="@Localizer["Stop"]">
+                <span id="btn-icon">▶</span> <span id="btn-text">@Localizer["Start"]</span>
             </button>
             
             <div class="mt-5 d-flex justify-content-center gap-3" id="visual-beats" style="min-height: 20px;">
@@ -58,303 +63,13 @@
         </div>
     </div>
 </div>
+@* ReSharper disable once Razor.SectionNotResolved *@
 
-<style>
-    .beat-container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 8px;
-        height: 60px;
-    }
-    
-    .beat-bar {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 4px;
-        width: 24px;
-    }
-    
-    .beat-block {
-        width: 100%;
-        height: 12px;
-        background-color: #e9ecef;
-        border-radius: 2px;
-        transition: background-color 0.05s;
-    }
-    
-    /* Active States */
-    .beat-bar.active .beat-block.filled {
-        background-color: #0d6efd;
-        box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
-    }
-    
-    .beat-bar.sub-active .beat-block.filled {
-        background-color: #6c757d;
-    }
-
-    /* Inactive but filled blocks (showing structure) */
-    .beat-block.filled {
-        background-color: #dee2e6;
-    }
-    
-    /* Empty blocks (invisible/placeholder) */
-    .beat-block.empty {
-        background-color: transparent;
-    }
-    
-    #bpm-slider {
-        cursor: pointer;
-    }
-</style>
+@section Styles {
+    <link rel="stylesheet" href="~/styles/metronome.css" />
+}
+@* ReSharper disable once Razor.SectionNotResolved *@
 
 @section Scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const bpmSlider = document.getElementById('bpm-slider');
-            const bpmDisplay = document.getElementById('bpm-display');
-            const timeSignatureSelect = document.getElementById('time-signature');
-            const subdivisionSelect = document.getElementById('subdivision');
-            const startStopBtn = document.getElementById('start-stop-btn');
-            const btnText = document.getElementById('btn-text');
-            const btnIcon = document.getElementById('btn-icon');
-            const visualBeatsContainer = document.getElementById('visual-beats');
-
-            let isPlaying = false;
-            let audioContext = null;
-            let nextNoteTime = 0.0;
-            let currentBeat = 0;
-            let currentSubBeat = 0;
-            let timerID = null;
-            
-            // Configuration
-            let bpm = 90;
-            let beatsPerMeasure = 4;
-            let noteValue = 4;
-            let subdivision = 1;
-            let accentPattern = []; // Array of intensities: 3=Strong, 2=Medium, 1=Weak
-
-            // BPM Calculation Logic
-            function calculateBpm(sliderVal) {
-                const t = (sliderVal - 50) / 50;
-                let calculatedBpm;
-                if (t < 0) {
-                    calculatedBpm = 90 + 89 * Math.pow(t, 3);
-                } else {
-                    calculatedBpm = 90 + 230 * Math.pow(t, 3);
-                }
-                return Math.round(calculatedBpm);
-            }
-            
-            bpmSlider.addEventListener('input', (e) => {
-                bpm = calculateBpm(e.target.value);
-                bpmDisplay.textContent = bpm;
-            });
-
-            function updateConfig(e) {
-                const source = e ? e.target.id : 'init';
-                const tsValue = timeSignatureSelect.value;
-                const ts = tsValue.split('/');
-                const num = parseInt(ts[0]);
-                const den = parseInt(ts[1]);
-                
-                let newSubdivision = parseInt(subdivisionSelect.value);
-
-                // Reset logic
-                beatsPerMeasure = num;
-                
-                // Define Accent Patterns
-                // 3 = Strong, 2 = Medium, 1 = Weak
-                if (den === 8) {
-                    // X/8 Signatures
-                    if (num === 3 || num === 6 || num === 9 || num === 12) {
-                        // Compound Meters (3/8, 6/8, 9/8, 12/8)
-                        // Beat unit is Dotted Quarter
-                        beatsPerMeasure = num / 3;
-                        
-                        if (num === 3) accentPattern = [3];
-                        if (num === 6) accentPattern = [3, 2];
-                        if (num === 9) accentPattern = [3, 2, 2];
-                        if (num === 12) accentPattern = [3, 2, 2, 2];
-                        
-                        // Auto-switch to Triplet (3 clicks)
-                        if (source === 'time-signature' || source === 'init') {
-                            subdivisionSelect.value = "3";
-                            newSubdivision = 3;
-                        }
-                    } else {
-                        // Complex/Simple Meters (5/8, 7/8)
-                        // Beat unit is Eighth Note
-                        if (num === 5) accentPattern = [3, 1, 2, 1, 1]; // 2+3
-                        else if (num === 7) accentPattern = [3, 1, 1, 2, 1, 2, 1]; // 3+2+2
-                        else {
-                            // Fallback for other x/8
-                            accentPattern = new Array(num).fill(1);
-                            accentPattern[0] = 3;
-                        }
-                        
-                        if (source === 'time-signature') {
-                            subdivisionSelect.value = "1";
-                            newSubdivision = 1;
-                        }
-                    }
-                } else {
-                    // X/4 Signatures
-                    if (num === 4) accentPattern = [3, 1, 2, 1];
-                    else if (num === 3) accentPattern = [3, 1, 1];
-                    else if (num === 2) accentPattern = [3, 1];
-                    else if (num === 1) accentPattern = [3];
-                    else if (num === 5) accentPattern = [3, 1, 2, 1, 1]; // 2+3
-                    else if (num === 6) accentPattern = [3, 1, 2, 1, 2, 1]; // 2+2+2
-                    else {
-                        accentPattern = new Array(num).fill(1);
-                        accentPattern[0] = 3;
-                    }
-                    
-                    if (source === 'time-signature') {
-                        subdivisionSelect.value = "1";
-                        newSubdivision = 1;
-                    }
-                }
-
-                noteValue = den;
-                subdivision = newSubdivision;
-                
-                updateVisuals();
-            }
-
-            timeSignatureSelect.addEventListener('change', updateConfig);
-            subdivisionSelect.addEventListener('change', updateConfig);
-
-            function updateVisuals() {
-                visualBeatsContainer.innerHTML = '';
-                visualBeatsContainer.className = 'beat-container'; // Reset class
-                
-                for (let i = 0; i < beatsPerMeasure; i++) {
-                    const intensity = accentPattern[i] || 1;
-                    
-                    const bar = document.createElement('div');
-                    bar.className = 'beat-bar';
-                    bar.id = `beat-${i}`;
-                    
-                    // Create 3 blocks
-                    for (let b = 0; b < 3; b++) {
-                        const block = document.createElement('div');
-                        block.className = 'beat-block';
-                        // b=0 is bottom, b=2 is top (due to column-reverse)
-                        // Intensity 3: fill 0, 1, 2
-                        // Intensity 2: fill 0, 1
-                        // Intensity 1: fill 0
-                        if (b < intensity) {
-                            block.classList.add('filled');
-                        } else {
-                            block.classList.add('empty');
-                        }
-                        bar.appendChild(block);
-                    }
-                    
-                    visualBeatsContainer.appendChild(bar);
-                }
-            }
-
-            // Audio Logic
-            function nextNote() {
-                nextNoteTime += (60.0 / bpm) / subdivision;
-                
-                currentSubBeat++;
-                if (currentSubBeat >= subdivision) {
-                    currentSubBeat = 0;
-                    currentBeat++;
-                    if (currentBeat >= beatsPerMeasure) {
-                        currentBeat = 0;
-                    }
-                }
-            }
-
-            function scheduleNote(beatNumber, subBeatNumber, time) {
-                const osc = audioContext.createOscillator();
-                const envelope = audioContext.createGain();
-
-                // Determine Frequency based on Intensity
-                // If subBeat is 0, use the beat's intensity.
-                // If subBeat > 0, use Weak (1).
-                let intensity = 1;
-                if (subBeatNumber === 0) {
-                    intensity = accentPattern[beatNumber] || 1;
-                }
-                
-                let frequency = 600; // Weak (1)
-                if (intensity === 3) frequency = 1200; // Strong
-                else if (intensity === 2) frequency = 800; // Medium
-
-                osc.frequency.value = frequency;
-                osc.connect(envelope);
-                envelope.connect(audioContext.destination);
-
-                envelope.gain.value = 1;
-                envelope.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
-
-                osc.start(time);
-                osc.stop(time + 0.05);
-                
-                // Visual scheduling
-                const drawTime = (time - audioContext.currentTime) * 1000;
-                setTimeout(() => {
-                    drawBeat(beatNumber, subBeatNumber);
-                }, Math.max(0, drawTime));
-            }
-            
-            function drawBeat(beat, subBeat) {
-                // Reset all
-                document.querySelectorAll('.beat-bar').forEach(d => {
-                    d.classList.remove('active');
-                    d.classList.remove('sub-active');
-                });
-                
-                const bar = document.getElementById(`beat-${beat}`);
-                if (bar) {
-                    if (subBeat === 0) {
-                        bar.classList.add('active');
-                    } else {
-                        bar.classList.add('sub-active');
-                    }
-                }
-            }
-
-            function scheduler() {
-                while (nextNoteTime < audioContext.currentTime + 0.1) {
-                    scheduleNote(currentBeat, currentSubBeat, nextNoteTime);
-                    nextNote();
-                }
-                timerID = window.setTimeout(scheduler, 25.0);
-            }
-
-            startStopBtn.addEventListener('click', () => {
-                if (isPlaying) {
-                    isPlaying = false;
-                    window.clearTimeout(timerID);
-                    btnText.textContent = "Start";
-                    btnIcon.textContent = "▶";
-                    startStopBtn.classList.remove('btn-danger');
-                    startStopBtn.classList.add('btn-primary');
-                } else {
-                    if (!audioContext) {
-                        audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                    }
-                    isPlaying = true;
-                    currentBeat = 0;
-                    currentSubBeat = 0;
-                    nextNoteTime = audioContext.currentTime + 0.1;
-                    scheduler();
-                    btnText.textContent = "Stop";
-                    btnIcon.textContent = "⏸";
-                    startStopBtn.classList.remove('btn-primary');
-                    startStopBtn.classList.add('btn-danger');
-                }
-            });
-
-            // Initialize
-            updateConfig();
-        });
-    </script>
+    <script src="~/scripts/metronome.js"></script>
 }

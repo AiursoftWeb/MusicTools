@@ -147,5 +147,8 @@
   <data name="Interval test" xml:space="preserve">
     <value>音程測試</value>
   </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>節拍器</value>
+  </data>
 
 </root>
