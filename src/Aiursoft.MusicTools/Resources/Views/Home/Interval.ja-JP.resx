@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>選択をリセット</value>
   </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>不協和音</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>完全協和音程</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>鋭い不協和音</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>不完全協和音程</value>
+  </data>
 
 </root>

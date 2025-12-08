@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Επαναφορά Επιλογής</value>
   </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Τέλεια Συμφωνία</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Δυσαρμονία</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Ατελής Συμφωνία</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Απότομη Παραφωνία</value>
+  </data>
 
 </root>

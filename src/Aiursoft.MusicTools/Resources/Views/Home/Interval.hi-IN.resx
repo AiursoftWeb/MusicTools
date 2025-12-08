@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>चयन रीसेट करें</value>
   </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>तीव्र कर्कशता</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>अपूर्ण संवाद</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>अनुतान</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>परफेक्ट कॉन्सोनेंस</value>
+  </data>
 
 </root>

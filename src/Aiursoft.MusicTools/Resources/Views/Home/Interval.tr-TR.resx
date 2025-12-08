@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Seçimi Sıfırla</value>
   </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Uyumsuzluk</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Mükemmel Konsonans</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Eksik Konsonans</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Keskin Disonans</value>
+  </data>
 
 </root>

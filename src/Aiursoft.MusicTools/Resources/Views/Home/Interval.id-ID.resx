@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Atur Ulang Pilihan</value>
   </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Disonansi Tajam</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Konsonansi Sempurna</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Konsonansi Tidak Sempurna</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Disonansi</value>
+  </data>
 
 </root>

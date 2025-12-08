@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>รีเซ็ตการเลือก</value>
   </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>เสียงประสานสมบูรณ์</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>เสียงประสานไม่สมบูรณ์</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>เสียงไม่ประสานที่คมชัด</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>ความไม่กลมกลืน</value>
+  </data>
 
 </root>

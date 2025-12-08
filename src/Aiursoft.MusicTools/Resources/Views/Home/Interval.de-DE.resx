@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Auswahl zurücksetzen</value>
   </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Schrille Dissonanz</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Perfekte Konsonanz</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Unvollkommene Konsonanz</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonanz</value>
+  </data>
 
 </root>

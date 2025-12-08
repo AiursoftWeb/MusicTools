@@ -1,11 +1,10 @@
-@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 @model Aiursoft.MusicTools.Models.HomeViewModels.MetronomeViewModel
 
 <div class="container mt-5">
     <div class="card shadow-sm" style="max-width: 800px; margin: 0 auto;">
         <div class="card-body text-center p-5">
-            <h1 class="mb-4">@Localizer[Model.PageTitle]</h1>
+            <h1 class="mb-4">@Localizer[Model.PageTitle ?? string.Empty]</h1>
             
             <div class="mb-4">
                 <div id="bpm-display" class="display-1 fw-bold text-primary">90</div>

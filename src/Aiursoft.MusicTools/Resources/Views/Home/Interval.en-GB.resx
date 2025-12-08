@@ -165,5 +165,16 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Reset Selection</value>
   </data>
-
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Perfect Consonance</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Imperfect Consonance</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonance</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Sharp Dissonance</value>
+  </data>
 </root>

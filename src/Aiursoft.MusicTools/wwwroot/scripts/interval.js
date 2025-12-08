@@ -14,6 +14,7 @@ window.addEventListener("load", () => {
     const interval1El = document.getElementById('interval-1');
     const interval2El = document.getElementById('interval-2');
     const intervalResultEl = document.getElementById('interval-result');
+    const intervalConsonanceEl = document.getElementById('interval-consonance');
     const resetBtn = document.getElementById('reset-interval-btn');
     const intervalRatioEl = document.getElementById('interval-ratio');
     const intervalErrorEl = document.getElementById('interval-error');
@@ -70,7 +71,13 @@ window.addEventListener("load", () => {
         majorTwentyFirst: localeData.dataset.majorTwentyFirst,
         perfectTwentySecond: localeData.dataset.perfectTwentySecond,
         unableToRecognizeNoteName: localeData.dataset.unableToRecognizeNoteName,
-        pleaseIputWithTheLowerNoteFirst: localeData.dataset.pleaseIputWithTheLowerNoteFirst
+        pleaseIputWithTheLowerNoteFirst: localeData.dataset.pleaseIputWithTheLowerNoteFirst,
+        
+        // Consonance levels
+        consonancePerfect: localeData.dataset.consonancePerfect,
+        consonanceImperfect: localeData.dataset.consonanceImperfect,
+        consonanceDissonance: localeData.dataset.consonanceDissonance,
+        consonanceSharpDissonance: localeData.dataset.consonanceSharpDissonance
     };
     console.log("[Init] Localization strings loaded.");
 
@@ -129,6 +136,31 @@ window.addEventListener("load", () => {
         }
         return best;
     }
+    
+    function getConsonanceLevel(semitones) {
+        const mod = semitones % 12;
+        switch (mod) {
+            case 0: // P1, P8
+            case 5: // P4
+            case 7: // P5
+                return localizedStrings.consonancePerfect;
+            case 3: // m3
+            case 4: // M3
+            case 8: // m6
+            case 9: // M6
+                return localizedStrings.consonanceImperfect;
+            case 2: // M2
+            case 10: // m7
+                return localizedStrings.consonanceDissonance;
+            case 1: // m2
+            case 6: // Tritone
+            case 11: // M7
+                return localizedStrings.consonanceSharpDissonance;
+            default:
+                return "";
+        }
+    }
+
     function calculateInterval(note1, note2) {
         const BASE_NOTES = {
             "C": 0, "C#": 1, "D": 2, "D#": 3, "E": 4, "F": 5,
@@ -223,6 +255,7 @@ window.addEventListener("load", () => {
                     note1: rootParsed.noteName + rootParsed.octave,
                     note2: targetParsed.noteName + targetParsed.octave,
                     intervalName: errName,
+                    consonance: "",
                     yuelu: yuelu,
                     yueluErrorCents: yueluErrorCents,
                     milu: milu,
@@ -238,10 +271,14 @@ window.addEventListener("load", () => {
             }
             const rootDisplay = rootParsed.noteName + rootParsed.octave;
             const targetDisplay = targetSpellingName + targetParsed.octave;
+            
+            const consonance = getConsonanceLevel(semitones);
+
             return {
                 note1: rootDisplay,
                 note2: targetDisplay,
                 intervalName: intervalInfo.name,
+                consonance: consonance,
                 yuelu: yuelu,
                 yueluErrorCents: yueluErrorCents,
                 milu: milu,
@@ -249,7 +286,7 @@ window.addEventListener("load", () => {
             };
         } catch (e) {
             console.error(`[Debug Calc] Error: ${e.message}`);
-            return { note1: note1, note2: note2, intervalName: `Error: ${e.message}` };
+            return { note1: note1, note2: note2, intervalName: `Error: ${e.message}`, consonance: "" };
         }
     }
 
@@ -268,6 +305,7 @@ window.addEventListener("load", () => {
                 const result = calculateInterval(firstNote, secondNote);
 
                 intervalResultEl.innerText = result.intervalName;
+                intervalConsonanceEl.innerText = result.consonance;
                 interval1El.innerText = result.note1;
                 interval2El.innerText = result.note2;
 
@@ -300,6 +338,7 @@ window.addEventListener("load", () => {
                 }
             } else {
                 intervalResultEl.innerText = '';
+                intervalConsonanceEl.innerText = '';
                 interval1El.innerText = firstNote || '--';
                 interval2El.innerText = secondNote || '--';
                 intervalRatioEl.innerText = '';

@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>إعادة تعيين التحديد</value>
   </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>تنافر حاد</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>تنافر</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>الانسجام التام</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>التوافق الناقص</value>
+  </data>
 
 </root>

@@ -165,5 +165,17 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>선택 초기화</value>
   </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>불협화음</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>날카로운 불협화음</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>불완전 협화음</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>완전 협화음</value>
+  </data>
 
 </root>
