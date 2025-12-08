@@ -134,11 +134,40 @@
                 bpmDisplay.textContent = bpm;
             });
 
-            function updateConfig() {
-                const ts = timeSignatureSelect.value.split('/');
-                beatsPerMeasure = parseInt(ts[0]);
-                noteValue = parseInt(ts[1]);
-                subdivision = parseInt(subdivisionSelect.value);
+            function updateConfig(e) {
+                const source = e ? e.target.id : 'init';
+                const tsValue = timeSignatureSelect.value;
+                const ts = tsValue.split('/');
+                const num = parseInt(ts[0]);
+                const den = parseInt(ts[1]);
+                
+                let newSubdivision = parseInt(subdivisionSelect.value);
+
+                // Logic for Compound Meters (6/8, 9/8, 12/8)
+                // In compound meter, the beat is a dotted quarter note.
+                // 6/8 -> 2 beats, 9/8 -> 3 beats, 12/8 -> 4 beats.
+                // The natural subdivision is 3 (Eighth notes).
+                if (den === 8 && (num === 6 || num === 9 || num === 12)) {
+                    beatsPerMeasure = num / 3;
+                    
+                    // Auto-switch to Triplet (3 clicks) which represents the 8th notes in compound meter
+                    if (source === 'time-signature' || source === 'init') {
+                        subdivisionSelect.value = "3";
+                        newSubdivision = 3;
+                    }
+                } else {
+                    // Simple Meter
+                    beatsPerMeasure = num;
+                    
+                    // Reset to Quarter (1 click) for simple meters if changing time signature
+                    if (source === 'time-signature') {
+                        subdivisionSelect.value = "1";
+                        newSubdivision = 1;
+                    }
+                }
+
+                noteValue = den;
+                subdivision = newSubdivision;
                 
                 updateVisuals();
             }
