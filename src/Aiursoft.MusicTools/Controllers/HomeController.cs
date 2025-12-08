@@ -65,4 +65,17 @@ public class HomeController : Controller
     {
         return this.StackView(new IntervalExamViewModel());
     }
+
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Metronome",
+        LinkOrder = 5)]
+    public IActionResult Metronome()
+    {
+        return this.StackView(new MetronomeViewModel());
+    }
 }
