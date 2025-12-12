@@ -78,4 +78,16 @@ public class HomeController : Controller
     {
         return this.StackView(new MetronomeViewModel());
     }
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Melody Memory Test",
+        LinkOrder = 6)]
+    public IActionResult MelodyMemory()
+    {
+        return this.StackView(new MelodyMemoryViewModel());
+    }
 }

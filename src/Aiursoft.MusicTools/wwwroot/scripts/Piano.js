@@ -296,6 +296,35 @@ class Piano {
     }
 
     // ... (bindToComputerKeyboard 100% 不变) ...
+    // ... (bindToComputerKeyboard 100% 不变) ...
+    playNote(noteName, duration = 0.5, visual = true) {
+        const keyEl = this.#keyMap.get(noteName);
+        if (!keyEl) {
+            console.warn(`Piano.js: playNote called with invalid noteName: ${noteName}`);
+            return;
+        }
+
+        // Play sound
+        if (this.#audioContext && this.#audioContext.state === 'suspended') {
+            this.#audioContext.resume();
+        }
+        // Ensure Tone.js context is started
+        if (typeof Tone !== 'undefined' && Tone.context && Tone.context.state === 'suspended') {
+            Tone.start();
+        }
+
+        const midi = parseInt(keyEl.dataset.midi, 10);
+        this.#playNote(midi, duration);
+
+        // Visualize
+        if (visual) {
+            keyEl.classList.add('active');
+            setTimeout(() => {
+                keyEl.classList.remove('active');
+            }, duration * 1000);
+        }
+    }
+
     bindToComputerKeyboard(keyMapping) {
         if (!this.#options.isClickable || !this.#audioContext) {
             console.warn("Piano.js: 必须在 'isClickable: true' 模式下才能绑定键盘。");

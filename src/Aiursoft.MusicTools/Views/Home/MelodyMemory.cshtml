@@ -1,0 +1,199 @@
+<div class="container-fluid py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card position-relative overflow-hidden" style="min-height: 600px;">
+                
+                <!-- Timer Bar (Absolute Top) -->
+                <div class="timer-container" id="timer-container">
+                    <div class="timer-bar" id="timer-bar"></div>
+                </div>
+
+                <div class="card-header bg-transparent border-0 d-flex flex-column align-items-center pt-4">
+                    <!-- Status Indicators -->
+                    <div class="last-stand-indicator text-danger fw-bold text-uppercase mb-2" style="opacity: 0; transition: opacity 0.3s;">⚠ Last Stand ⚠</div>
+                    
+                    <div class="d-flex gap-2 mb-3" id="lives-container" style="font-size: 1.5rem; height: 30px;">
+                        <!-- Hearts injected here -->
+                    </div>
+                    
+                    <div class="d-flex gap-2 flex-wrap justify-content-center" id="progress-container" style="height: 12px;">
+                        <!-- Dots injected here -->
+                    </div>
+                </div>
+
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    
+                    <div class="piano-wrapper w-100 d-flex justify-content-center">
+                        <div id="piano-container" style="max-width: 800px; width: 100%;"></div>
+                    </div>
+
+                    <div id="ingame-rank" class="mt-4 fw-bold d-flex align-items-center gap-2" style="font-size: 1.5rem; min-height: 1.5em; text-shadow: 0 1px 2px rgba(0,0,0,0.1);"></div>
+                </div>
+
+                <!-- Overlays -->
+                <!-- Start Overlay -->
+                <div id="start-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark bg-opacity-75 text-white z-3">
+                    <div class="display-1 mb-3">⚡</div>
+                    <h1 class="mb-3">Melody Memory</h1>
+                    <p class="lead mb-4 text-center px-4">Remember the melody and repeat it on the piano.</p>
+                    
+                    <div class="row text-start mb-4">
+                        <div class="col-8">
+                            <label class="form-label fw-bold">Music Style</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
+                                <label class="form-check-label" for="style-c-major">C Major (Easiest)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
+                                <label class="form-check-label" for="style-tonal">Random Key (Tonal)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
+                                <label class="form-check-label" for="style-atonal">Atonal (Chromatic)</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label fw-bold">Preview</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
+                                <label class="form-check-label" for="preview-scale">Scale</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
+                                <label class="form-check-label" for="preview-root">Root</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-warning btn-lg px-5 fw-bold" onclick="window.startMelodyGame()">Start Game</button>
+                </div>
+
+                <!-- Game Over Overlay -->
+                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark bg-opacity-95 text-white z-3 hidden" style="pointer-events: none; opacity: 0; transition: opacity 0.3s;">
+                    <div class="display-1 mb-3">📊</div>
+                    <h1 class="mb-2">Game Over</h1>
+                    <div class="h3 mb-2">Score</div>
+                    <div class="display-4 fw-bold mb-3" id="final-score">Level 1</div>
+                    <div id="rank-display" class="d-flex flex-column align-items-center gap-2 mb-4"></div>
+                    <button class="btn btn-warning btn-lg px-5 fw-bold" onclick="window.startMelodyGame()">Try Again</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+    <style>
+        .timer-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            z-index: 10;
+            visibility: hidden;
+        }
+        .timer-container.active { visibility: visible; }
+        .timer-bar {
+            height: 100%;
+            background-color: #ffc107; /* Bootstrap warning color */
+            width: 100%;
+            transform-origin: left;
+        }
+        @@keyframes timer-countdown {
+            0% { width: 100%; opacity: 1; }
+            100% { width: 0%; opacity: 1; }
+        }
+
+        .heart {
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 2rem;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* Active Heart (Alive) */
+        .heart.active { 
+            color: #ff4c4c; 
+            filter: drop-shadow(0 0 5px rgba(255, 76, 76, 0.6));
+            transform: scale(1.1);
+        }
+        /* Heart Lost (Damage) */
+        .heart.lost { 
+            color: rgba(0, 0, 0, 0.2); 
+            transform: scale(0.8);
+            animation: heartLost 0.4s ease-in;
+        }
+        /* Heart Gained (Heal) */
+        .heart.gain { 
+            animation: heartGain 0.6s ease-out; 
+            color: #4cff4c; 
+            filter: drop-shadow(0 0 10px rgba(76, 255, 76, 0.8));
+        }
+        
+        @@keyframes heartGain {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.8); }
+            100% { transform: scale(1.1); }
+        }
+        @@keyframes heartLost {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0) scale(0.8); }
+        }
+
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+        .progress-dot.active {
+            transform: scale(1.5);
+            background-color: #0dcaf0; /* Bootstrap info */
+            box-shadow: 0 0 6px rgba(13, 202, 240, 0.5);
+        }
+        .progress-dot.filled {
+            background-color: #0d6efd; /* Bootstrap primary */
+        }
+
+        #piano-container.unclickable {
+            pointer-events: none;
+            opacity: 0.8;
+            filter: grayscale(0.2);
+        }
+
+        .overlay.hidden {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+        .overlay:not(.hidden) {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+        
+        /* Critical state pulse on the card border or shadow? */
+        .card.critical {
+            box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+            animation: critical-border 2s infinite;
+        }
+        @@keyframes critical-border {
+            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.5); }
+            50% { box-shadow: 0 0 20px 5px rgba(220, 53, 69, 0.8); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.5); }
+        }
+        .card.critical .last-stand-indicator {
+            opacity: 1 !important;
+        }
+    </style>
+}

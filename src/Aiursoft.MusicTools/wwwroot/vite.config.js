@@ -30,6 +30,7 @@ export default defineConfig({
         scaleVisualizer: resolve(__dirname, 'scripts/ScaleVisualizerEngine.js'),
         musicStaff: resolve(__dirname, 'scripts/MusicStaff.js'),
         metronome: resolve(__dirname, 'scripts/metronome.js'),
+        melodyMemory: resolve(__dirname, 'scripts/melody-memory.js'),
       },
       output: {
         format: 'es',
