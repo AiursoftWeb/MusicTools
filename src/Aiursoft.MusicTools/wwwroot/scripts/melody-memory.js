@@ -102,7 +102,7 @@ window.startMelodyGame = function() {
 };
 
 window.playDebugMelody = async function() {
-    console.log("%c🎶 Debug: Generating and Playing 4 Bars...", "color: #0dcaf0; font-weight: bold; font-size: 1.2em;");
+    console.log("%c🎶 Debug: Generating and Playing 16-Bar Song...", "color: #0dcaf0; font-weight: bold; font-size: 1.2em;");
     
     // 1. Determine Scale
     let notesToPlay = validNotesForLevel;
@@ -113,12 +113,13 @@ window.playDebugMelody = async function() {
         console.log(`🔑 Current Scale: ${notesToPlay.join(", ")}`);
     }
 
-    // 2. Generate new block using a temporary generator to preserve game state
-    //    We use a NEW instance to be safe and clean.
+    // 2. Generate new block using a temporary generator
     const debugGen = new MelodyGenerator();
     
-    // Force generate a block
-    debugGen.generateNextBlock();
+    // --- 关键修改点在这里 ---
+    // 调用新的生成全曲方法，而不是旧的 generateNextBlock
+    debugGen.generateFullSong(); 
+    // ---------------------
     
     // 3. Play it
     const buffer = debugGen.noteBuffer;
@@ -130,7 +131,6 @@ window.playDebugMelody = async function() {
         const item = buffer[i];
         
         // Map Index -> Note Name
-        // Ensure index fits in our scale array
         const safeIndex = Math.min(item.noteIndex, notesToPlay.length - 1);
         const noteName = notesToPlay[safeIndex];
 
@@ -151,8 +151,6 @@ window.playDebugMelody = async function() {
     
     console.log("%c✅ Debug: Playback Finished.", "color: #198754; font-weight: bold;");
 };
-
-// --- Game Logic ---
 
 // --- Game Logic ---
 
