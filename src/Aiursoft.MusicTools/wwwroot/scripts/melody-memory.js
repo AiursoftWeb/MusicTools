@@ -1,4 +1,5 @@
 import Piano from './Piano.js';
+import { MelodyGenerator } from './MelodyGenerator.js';
 
 // --- Game State ---
 const livesContainer = document.getElementById('lives-container');
@@ -29,6 +30,9 @@ let gameDifficulty = 'normal';
 
 const OCTAVE_START = 4;
 const OCTAVE_COUNT = 2; // 2 Octaves requested
+let melodyGenerator = new MelodyGenerator();
+let songBuffer = [];
+
 // Define Notes and Scales
 const ALL_NOTES_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 const SCALE_Intervals = {
@@ -157,6 +161,7 @@ async function startGame() {
     }
 
     sequence = [];
+    songBuffer = []; // Reset buffer
     level = 1;
     
     lastRankText = '';
@@ -227,8 +232,23 @@ async function nextLevel() {
 
     // Let's move Key Selection to startGame, but here we ensure `validNotesForLevel` is used.
     
-    const randomNote = validNotesForLevel[Math.floor(Math.random() * validNotesForLevel.length)];
-    sequence.push(randomNote);
+    // Generate Note Logic
+    // Use expert MelodyGenerator to get next note/rhythm
+    const nextMelodyItem = melodyGenerator.getNextNote(); // { noteIndex: 0-7, duration, isBarStart }
+    
+    // Map index 0-7 to actual Note Name string (from validNotesForLevel)
+    // We assume validNotesForLevel is at least 8 notes (Diatonic Octave)
+    // If Ational/Chromatic, this map might need care, but for now we clamp/map to available notes.
+    const noteIndex = Math.min(nextMelodyItem.noteIndex, validNotesForLevel.length - 1);
+    const noteName = validNotesForLevel[noteIndex];
+    
+    const sequenceItem = {
+        note: noteName,
+        duration: nextMelodyItem.duration,
+        isBarStart: nextMelodyItem.isBarStart
+    };
+    
+    sequence.push(sequenceItem);
 
     await new Promise(r => setTimeout(r, 600));
 
@@ -236,14 +256,19 @@ async function nextLevel() {
     for (let i = 0; i < sequence.length; i++) {
         updateDot(i, 'active');
         
-        const note = sequence[i];
+        const item = sequence[i];
+        const note = item.note; 
+        const duration = item.duration || 1.0;
+
         const useVisual = (gameDifficulty !== 'music');
         
         if (piano) piano.playNote(note, 0.4, useVisual);
         
-        await new Promise(r => setTimeout(r, 100)); // overlap slightly
+        // Base Beat for 120 BPM = 500ms
+        const baseBeat = 500;
+        await new Promise(r => setTimeout(r, baseBeat * duration));
+        
         updateDot(i, 'inactive');
-        await new Promise(r => setTimeout(r, 400));
     }
 
     isPlayerTurn = true;
@@ -265,7 +290,8 @@ function handleInput(noteName) {
     
     stopTimer();
 
-    const correctNote = sequence[playerStep];
+    const correctItem = sequence[playerStep];
+    const correctNote = correctItem.note;
     
     if (noteName === correctNote) {
         updateDot(playerStep, 'filled');
