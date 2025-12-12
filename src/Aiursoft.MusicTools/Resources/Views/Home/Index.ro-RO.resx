@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teoria poate fi aridă, dar este distractiv să o vezi în acțiune. Valoarea de bază a acestui instrument este &apos;sincronizarea în timp real&apos;. Când selectezi o nouă tonalitate, Cercul Cromatic, Cercul cvintelor, clapele de pian și notația pe portativ se actualizează instantaneu. Vei înțelege imediat de ce Sol Major are un singur diez!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Redă o melodie aleatorie</value>
+  </data>
 
 </root>

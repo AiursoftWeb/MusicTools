@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori kan være tør, men at se den i aktion er sjovt. Kernen i dette værktøj er &apos;realtidssynkronisering.&apos; Når du vælger en ny toneart, opdateres den kromatiske cirkel, kvintcirklen, klaverets tangenter og nodalskriften øjeblikkeligt. Du vil med det samme forstå, hvorfor G-dur kun har ét kryds!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Afspil tilfældig melodi</value>
+  </data>
 
 </root>

@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>乐理可能枯燥，但亲眼见证理论付诸实践却充满乐趣。本工具的核心价值在于&quot;实时同步&quot;。当您选择一个新的调时，半音圈、五度圈、钢琴键与五线谱会即刻更新。您将瞬间明白为何G大调仅有一个升号！</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>播放随机旋律</value>
+  </data>
 
 </root>

@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>قد تكون النظرية جافة، لكن مشاهدة التطبيق العملي ممتعة. القيمة الأساسية لهذه الأداة هي &apos;المزامنة الفورية&apos;. عند اختيار مفتاح موسيقي جديد، يتم تحديث الدورة الكروماتية، ودورة الخامسات، ومفاتيح البيانو، ورموز المدرج الموسيقي على الفور. ستفهم على الفور سبب احتواء مقام G الكبير على علامة رفع واحدة فقط!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>تشغيل لحن عشوائي</value>
+  </data>
 
 </root>

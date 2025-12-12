@@ -694,8 +694,8 @@ function gameOver() {
     const titleElement = gameOverOverlay.querySelector('h1'); // Wait, h2 in new HTML? `h2.display-4`
     // The querySelector might fail if we changed h1 to h2? 
     // In new HTML it is <h2>. 
-    const titleHeader = gameOverOverlay.querySelector('h2');
-    if (titleHeader) titleHeader.textContent = gameDifficulty === 'music' ? 'Game Over' : 'Game Over'; 
+    // const titleHeader = gameOverOverlay.querySelector('h2');
+    // if (titleHeader) titleHeader.textContent = gameDifficulty === 'music' ? 'Game Over' : 'Game Over';  
     // Just keep standard "Game Over" to avoid complexity or re-fetch localized string if needed.
     // Localizer["Game Over"] is already there.
 

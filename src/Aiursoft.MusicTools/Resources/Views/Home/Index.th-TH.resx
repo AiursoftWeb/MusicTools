@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>ทฤษฎีอาจจะฟังดูน่าเบื่อ แต่การได้เห็นมันทำงานจริงนั้นสนุกมาก ค่าหลักของเครื่องมือนี้คือ &apos;การซิงค์แบบเรียลไทม์&apos; เมื่อคุณเลือกคีย์ใหม่ วงโครมาติก วงแห่งฟิฟธ์ คีย์เปียโน และโน้ตบรรทัดห้าเส้นจะอัปเดตทันที คุณจะเข้าใจในทันทีว่าทำไมคีย์ G Major ถึงมีชาร์ปแค่ตัวเดียว!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>เล่นทำนองสุ่ม</value>
+  </data>
 
 </root>

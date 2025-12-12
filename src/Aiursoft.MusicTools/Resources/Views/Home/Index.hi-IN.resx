@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>सिद्धांत नीरस हो सकता है, लेकिन इसे क्रियान्वित होते देखना मजेदार है। इस टूल का मुख्य मूल्य &apos;रीयल-टाइम सिंक्रनाइज़ेशन&apos; है। जब आप एक नई कुंजी चुनते हैं, तो क्रोमैटिक सर्कल, सर्कल ऑफ फिफ्थ्स, पियानो कीज़ और स्टाफ नोटेशन तुरंत अपडेट हो जाते हैं। आप तुरंत समझ जाएंगे कि जी मेजर में केवल एक ही शार्प क्यों होता है!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>यादृच्छिक धुन बजाएं</value>
+  </data>
 
 </root>

@@ -135,5 +135,14 @@
   <data name="Grandmaster" xml:space="preserve">
     <value>Suurmestari</value>
   </data>
+  <data name="Level" xml:space="preserve">
+    <value>Taso</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Lasku</value>
+  </data>
+  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
+    <value>Vaikeustason jakauma</value>
+  </data>
 
 </root>

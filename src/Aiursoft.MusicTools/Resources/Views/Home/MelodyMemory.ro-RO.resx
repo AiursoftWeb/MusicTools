@@ -135,5 +135,14 @@
   <data name="Grandmaster" xml:space="preserve">
     <value>Maestru</value>
   </data>
+  <data name="Level" xml:space="preserve">
+    <value>Nivel</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Calcul</value>
+  </data>
+  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
+    <value>DETALIEREA DIFICULTĂȚII</value>
+  </data>
 
 </root>

@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teoria voi olla kuivaa, mutta sen seuraaminen käytännössä on hauskaa. Tämän työkalun ydinarvo on &apos;reaaliaikainen synkronointi&apos;. Kun valitset uuden sävellajin, kromaattinen ympyrä, kvinttiympyrä, pianon koskettimet ja nuottikirjoitus päivittyvät välittömästi. Ymmärrät heti, miksi G-duurissa on vain yksi ylennysmerkki!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Soita satunnainen melodia</value>
+  </data>
 
 </root>

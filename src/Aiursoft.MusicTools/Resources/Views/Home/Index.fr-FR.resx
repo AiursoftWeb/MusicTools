@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>La théorie peut être aride, mais la voir en action est passionnant. La valeur fondamentale de cet outil est la &apos;synchronisation en temps réel.&apos; Lorsque vous sélectionnez une nouvelle tonalité, le Cercle Chromatique, le Cercle des Quintes, le clavier de piano et la portée musicale se mettent à jour instantanément. Vous comprendrez immédiatement pourquoi le Sol Majeur n&apos;a qu&apos;un seul dièse !</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Jouer une mélodie aléatoire</value>
+  </data>
 
 </root>

@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori bisa terasa membosankan, tetapi menyaksikannya dalam aksi itu menyenangkan. Nilai inti dari alat ini adalah &apos;sinkronisasi waktu-nyata.&apos; Saat Anda memilih kunci baru, Lingkaran Kromatik, Lingkaran Quint, tuts piano, dan notasi balok akan langsung diperbarui. Anda akan langsung memahami mengapa G Mayor hanya memiliki satu kres!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Mainkan Melodi Acak</value>
+  </data>
 
 </root>

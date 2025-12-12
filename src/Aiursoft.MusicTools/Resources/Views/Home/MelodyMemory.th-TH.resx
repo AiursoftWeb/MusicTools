@@ -135,5 +135,14 @@
   <data name="Bronze" xml:space="preserve">
     <value>ทองแดง</value>
   </data>
+  <data name="Level" xml:space="preserve">
+    <value>ระดับ</value>
+  </data>
+  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
+    <value>รายละเอียดระดับความยาก</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>คำนวณ</value>
+  </data>
 
 </root>

@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Music theory can be dry, but watching it in action is brilliant. The core value of this tool is &apos;real-time synchronisation.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Play Random Melody</value>
+  </data>
 
 </root>

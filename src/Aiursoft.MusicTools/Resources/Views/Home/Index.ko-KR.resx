@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>이론은 지루할 수 있지만, 실제로 작동하는 모습을 보는 것은 재미있습니다. 이 도구의 핵심 가치는 &apos;실시간 동기화&apos;입니다. 새로운 키를 선택하면, 크로매틱 서클, 5도권, 피아노 건반, 그리고 오선보가 즉시 업데이트됩니다. 왜 G Major에 샤프가 하나만 있는지 바로 이해하게 될 것입니다!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>랜덤 멜로디 재생</value>
+  </data>
 
 </root>

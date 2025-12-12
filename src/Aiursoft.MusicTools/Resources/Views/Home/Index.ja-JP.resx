@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>理論は退屈になりがちですが、実際に動きを見ると楽しいものです。このツールの核となる価値は「リアルタイム同期」にあります。新しいキーを選択すると、クロマティックサークル、五度圏、ピアノキー、五線譜が即座に更新されます。なぜト長調（G Major）にシャープが1つしかないのか、すぐに理解できるでしょう！</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>ランダムなメロディを再生</value>
+  </data>
 
 </root>

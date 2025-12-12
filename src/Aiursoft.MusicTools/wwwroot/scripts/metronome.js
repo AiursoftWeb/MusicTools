@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         osc.connect(envelope);
         envelope.connect(audioContext.destination);
 
-        envelope.gain.value = 0.5;
+        envelope.gain.setValueAtTime(1.0, time);
         envelope.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
 
         osc.start(time);

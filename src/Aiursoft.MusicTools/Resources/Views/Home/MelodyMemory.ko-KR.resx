@@ -135,5 +135,14 @@
   <data name="Grandmaster" xml:space="preserve">
     <value>그랜드마스터</value>
   </data>
+  <data name="Calc" xml:space="preserve">
+    <value>계산</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>레벨</value>
+  </data>
+  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
+    <value>난이도 분석</value>
+  </data>
 
 </root>

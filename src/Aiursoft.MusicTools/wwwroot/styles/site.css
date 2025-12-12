@@ -203,7 +203,7 @@
 .piano .black.active {
     background-color: #ffc107;
     /* Amber for black keys */
-    transform: translateY(2px);
+    transform: translateX(-50%) translateY(2px);
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 

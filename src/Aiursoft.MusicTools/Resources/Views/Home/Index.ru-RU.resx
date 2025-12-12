@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Теория может быть скучной, но наблюдать её в действии — увлекательно. Основная ценность этого инструмента — «синхронизация в реальном времени». Когда вы выбираете новую тональность, хроматический круг, квинтовый круг, клавиши пианино и нотный стан мгновенно обновляются. Вы сразу поймёте, почему в соль мажоре всего один диез!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Воспроизвести случайную мелодию</value>
+  </data>
 
 </root>

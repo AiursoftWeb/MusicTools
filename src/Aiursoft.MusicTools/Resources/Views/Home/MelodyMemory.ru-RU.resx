@@ -135,5 +135,14 @@
   <data name="Intermediate" xml:space="preserve">
     <value>Средний уровень</value>
   </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Расчёт</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Уровень</value>
+  </data>
+  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
+    <value>РАЗБОР СЛОЖНОСТИ</value>
+  </data>
 
 </root>

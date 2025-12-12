@@ -21,8 +21,12 @@ export class MelodyGenerator {
         let previousMidi = -1;
 
         rawNotes.forEach(rawName => {
-            // Normalize to sharps/enharmonic preference to match Game's hardcoded sharp-only array
-            const noteName = Note.enharmonic(rawName);
+            // Normalize to sharps ONLY to match Game's hardcoded sharp-only array
+            // e.g. Gb -> F#, Db -> C#
+            const tempMidi = Note.midi(`${rawName}1`); // Use dummy octave
+            const chroma = tempMidi % 12;
+            const SHARP_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+            const noteName = SHARP_NAMES[chroma];
             // Tentatively try current octave
             let testMidi = Note.midi(`${noteName}${currentOctave}`);
             

@@ -121,48 +121,47 @@
 
                 <!-- Game Over Overlay -->
                 <!-- Use theme-aware classes instead of hardcoded dark ones -->
-                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3">
-                    <div class="display-1 text-danger mb-3">💀</div>
-                    <h2 class="display-4 fw-bold mb-2">@Localizer["Game Over"]</h2>
+                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3 p-3">
+                    <div class="display-3 text-danger mb-2">💀</div>
+                    <h2 class="fs-1 fw-bold mb-3">@Localizer["Game Over"]</h2>
                     
-                    <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 350px;">
+                    <div class="card bg-body-tertiary border-0 p-3 mb-3 text-center shadow-lg" style="min-width: 320px; max-width: 90%;">
                         
                         <!-- Primary Score Display -->
-                        <div class="mb-4">
-                            <div class="text-secondary text-uppercase small fw-bold tracking-wider mb-1">@Localizer["Total Score"]</div>
-                            <div class="display-2 fw-bold text-primary" id="final-total-score">0</div>
+                        <div class="mb-3">
+                            <div class="text-secondary text-uppercase small fw-bold tracking-wider mb-0">@Localizer["Total Score"]</div>
+                            <div class="display-4 fw-bold text-primary" id="final-total-score" style="line-height: 1.2;">0</div>
                         </div>
 
                         <!-- Level & Rank -->
-                        <div class="d-flex justify-content-center gap-4 mb-4 border-bottom border-secondary border-opacity-10 pb-4">
+                        <div class="d-flex justify-content-center gap-3 mb-3 border-bottom border-secondary border-opacity-10 pb-3">
                             <div class="text-center">
-                                <span class="d-block text-secondary small">@Localizer["Level Reached"]</span>
-                                <span class="fs-3 fw-bold" id="final-level">1</span>
+                                <span class="d-block text-secondary small text-uppercase">@Localizer["Level"]</span>
+                                <span class="fs-4 fw-bold" id="final-level">1</span>
                             </div>
                             <div class="vr bg-secondary opacity-25"></div>
                             <div class="text-center">
-                                <span class="d-block text-secondary small">@Localizer["Rank"]</span>
-                                <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center">
-                                    <div class="rank-text text-secondary">@Localizer["Novice"]</div>
+                                <span class="d-block text-secondary small text-uppercase">@Localizer["Rank"]</span>
+                                <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center" style="height: 32px;">
+                                    <div class="rank-text text-secondary small">@Localizer["Novice"]</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Difficulty Breakdown -->
-                        <div class="text-start bg-body bg-opacity-50 p-3 rounded">
-                            <h5 class="text-center fw-bold text-secondary mb-3 small text-uppercase">@Localizer["Difficulty Breakdown"]</h5>
+                        <div class="text-start bg-body bg-opacity-50 p-2 rounded small">
+                            <h6 class="text-center fw-bold text-secondary mb-2" style="font-size: 0.75rem; letter-spacing: 1px;">@Localizer["DIFFICULTY BREAKDOWN"]</h6>
                             
                             <!-- Detailed Rows (Injected via JS) -->
-                            <div id="difficulty-details" class="small d-flex flex-column gap-2 mb-2">
-                                <!-- Example: -->
-                                <!-- <div class="d-flex justify-content-between"><span>Atonal Mode</span><span class="text-warning">+9</span></div> -->
+                            <div id="difficulty-details" class="d-flex flex-column gap-1 mb-2" style="font-size: 0.85rem;">
+                                <!-- Content injected by JS -->
                             </div>
 
-                            <hr class="border-secondary border-opacity-25 my-2">
+                            <hr class="border-secondary border-opacity-25 my-1">
 
                             <!-- Formula -->
-                            <div class="d-flex justify-content-between align-items-center fw-bold">
-                                <span class="text-secondary">@Localizer["Calculation"]</span>
+                            <div class="d-flex justify-content-between align-items-center fw-bold mt-1" style="font-size: 0.85rem;">
+                                <span class="text-secondary">@Localizer["Calc"]</span>
                                 <span class="font-monospace text-primary text-end" id="score-calculation">
                                     0 @Localizer["Notes"] × 0 @Localizer["Diff"]
                                 </span>
@@ -170,7 +169,7 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-outline-primary btn-lg px-5 rounded-pill" onclick="window.location.reload()">
+                    <button class="btn btn-outline-primary btn-lg px-5 rounded-pill shadow-sm" onclick="window.location.reload()">
                         <i class="bi bi-arrow-counterclockwise me-2"></i>@Localizer["Try Again"]
                     </button>
                     

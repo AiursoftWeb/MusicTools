@@ -60,5 +60,8 @@
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Η θεωρία μπορεί να είναι ξηρή, αλλά το να την παρακολουθείς σε πράξη είναι διασκεδαστικό. Η βασική αξία αυτού του εργαλείου είναι ο &apos;συγχρονισμός σε πραγματικό χρόνο&apos;. Όταν επιλέγετε μια νέα τονικότητα, ο Χρωματικός Κύκλος, ο Κύκλος των Πέμπτων, τα πλήκτρα του πιάνου και ο μουσικός συμβολισμός ενημερώνονται αμέσως. Θα καταλάβετε αμέσως γιαquoi η Σολ Ματζόρε έχει μόνο ένα δίεση!</value>
   </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Παίξε Τυχαία Μελωδία</value>
+  </data>
 
 </root>
