@@ -88,6 +88,7 @@ class Piano {
             li.dataset.note = noteName;
             li.dataset.midi = midiNote;
             li.className = isBlack ? "black" : "white";
+            li.style.zIndex = noteCount - i;
             if (this.#options.showNoteNames && !isBlack) {
                 const noteNameSpan = document.createElement("span");
                 noteNameSpan.className = "note-name";

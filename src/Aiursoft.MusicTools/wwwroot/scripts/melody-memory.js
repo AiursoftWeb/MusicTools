@@ -13,7 +13,7 @@ const ingameRankDisplay = document.getElementById('ingame-rank');
 const timerContainer = document.getElementById('timer-container');
 const timerBar = document.getElementById('timer-bar');
 const pianoContainer = document.getElementById('piano-container');
-const gameContainer = document.querySelector('.card');
+const gameContainer = document.getElementById('game-board');
 
 let piano = null;
 let sequence = [];
