@@ -117,8 +117,8 @@ window.playDebugMelody = async function() {
     const debugGen = new MelodyGenerator();
     
     // --- 关键修改点在这里 ---
-    // 调用新的生成全曲方法，而不是旧的 generateNextBlock
-    debugGen.generateFullSong(); 
+    // 调用新的生成全曲方法
+    debugGen.generateSong(); 
     // ---------------------
     
     // 3. Play it
