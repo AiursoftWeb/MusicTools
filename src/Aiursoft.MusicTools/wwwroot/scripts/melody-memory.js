@@ -287,17 +287,34 @@ function handleMistake(wrongNote) {
     perfectStreak = 0;
     
     playErrorSound();
+    updateLivesUI(true); // true means lost life
 
-    updateLivesUI();
+    // Visual Effect for Error
+    if (gameContainer) {
+        gameContainer.classList.remove('wrong-input-animation');
+        void gameContainer.offsetWidth; // Trigger reflow
+        gameContainer.classList.add('wrong-input-animation');
+        
+        // Remove class after animation
+        setTimeout(() => {
+            if(gameContainer) gameContainer.classList.remove('wrong-input-animation');
+        }, 500);
+    }
 
-    if (lives < 0) {
+    if (lives <= 0) {
         isPlayerTurn = false;
         hideTimer();
         setTimeout(gameOver, 800);
     } else {
-         setTimeout(() => {
-             if (isPlayerTurn) startTurnTimer();
-         }, 500);
+        // Stop input briefly during animation
+        isPlayerTurn = false;
+        hideTimer();
+
+        // Resume game after delay
+        setTimeout(() => {
+            isPlayerTurn = true;
+            startTurnTimer();
+        }, 500);
     }
 }
 

@@ -32,51 +32,91 @@
 
                 <!-- Overlays -->
                 <!-- Start Overlay -->
-                <div id="start-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark bg-opacity-75 text-white z-3">
-                    <div class="display-1 mb-3">⚡</div>
-                    <h1 class="mb-3">Melody Memory</h1>
-                    <p class="lead mb-4 text-center px-4">Remember the melody and repeat it on the piano.</p>
+                <div id="start-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 z-3">
                     
-                    <div class="row text-start mb-4">
-                        <div class="col-8">
-                            <label class="form-label fw-bold">Music Style</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
-                                <label class="form-check-label" for="style-c-major">C Major (Easiest)</label>
+                    <div class="text-center mb-4">
+                        <div class="display-1 text-warning mb-2">⚡</div>
+                        <h1 class="fw-bold mb-2">Melody Memory</h1>
+                        <p class="text-secondary">Remember the melody and repeat it on the piano.</p>
+                    </div>
+
+                    <div class="card bg-body-tertiary border-0 p-4 mb-4" style="max-width: 500px; width: 90%;">
+                        <div class="row g-4">
+                            <!-- Music Style Column -->
+                            <div class="col-md-7 border-end border-secondary border-opacity-25">
+                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">Music Style</label>
+                                
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
+                                        <label class="form-check-label" for="style-c-major">
+                                            <span class="d-block fw-bold">C Major</span>
+                                            <span class="small text-secondary">White keys only (Easiest)</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
+                                        <label class="form-check-label" for="style-tonal">
+                                            <span class="d-block fw-bold">Random Key</span>
+                                            <span class="small text-secondary">Transposed Major scale</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
+                                        <label class="form-check-label" for="style-atonal">
+                                            <span class="d-block fw-bold">Atonal</span>
+                                            <span class="small text-secondary">Full Chromatic scale (Hard)</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
-                                <label class="form-check-label" for="style-tonal">Random Key (Tonal)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
-                                <label class="form-check-label" for="style-atonal">Atonal (Chromatic)</label>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <label class="form-label fw-bold">Preview</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
-                                <label class="form-check-label" for="preview-scale">Scale</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
-                                <label class="form-check-label" for="preview-root">Root</label>
+                            
+                            <!-- Preview Column -->
+                            <div class="col-md-5">
+                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">Preview</label>
+                                
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
+                                        <label class="form-check-label" for="preview-scale">
+                                            <span class="d-block fw-bold">Scale</span>
+                                            <span class="small text-secondary">Listen to range</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
+                                        <label class="form-check-label" for="preview-root">
+                                            <span class="d-block fw-bold">Root Note</span>
+                                            <span class="small text-secondary">Check tonic only</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <button class="btn btn-warning btn-lg px-5 fw-bold" onclick="window.startMelodyGame()">Start Game</button>
+                    <button class="btn btn-warning btn-lg px-5 fw-bold rounded-pill shadow-lg" onclick="window.startMelodyGame()">
+                        <i class="bi bi-play-fill me-2"></i>Start Game
+                    </button>
                 </div>
 
                 <!-- Game Over Overlay -->
-                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark bg-opacity-95 text-white z-3 hidden" style="pointer-events: none; opacity: 0; transition: opacity 0.3s;">
-                    <div class="display-1 mb-3">📊</div>
-                    <h1 class="mb-2">Game Over</h1>
-                    <div class="h3 mb-2">Score</div>
-                    <div class="display-4 fw-bold mb-3" id="final-score">Level 1</div>
-                    <div id="rank-display" class="d-flex flex-column align-items-center gap-2 mb-4"></div>
-                    <button class="btn btn-warning btn-lg px-5 fw-bold" onclick="window.startMelodyGame()">Try Again</button>
+                <!-- Use theme-aware classes instead of hardcoded dark ones -->
+                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3">
+                    <div class="display-1 text-danger mb-3">💀</div>
+                    <h2 class="display-4 fw-bold mb-2">Game Over</h2>
+                    
+                    <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 300px;">
+                        <p class="fs-4 mb-2">Level Reached: <span class="fw-bold text-primary" id="final-level">1</span></p>
+                        <p class="text-secondary mb-0" id="final-rank">Novice</p>
+                    </div>
+
+                    <button class="btn btn-outline-primary btn-lg px-5 rounded-pill" onclick="window.location.reload()">
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>Try Again
+                    </button>
                 </div>
 
             </div>
@@ -162,6 +202,17 @@
             transform: scale(1.5);
             background-color: #0dcaf0; /* Bootstrap info */
             box-shadow: 0 0 6px rgba(13, 202, 240, 0.5);
+        }
+        /* Wrong Input Animation */
+        .wrong-input-animation {
+            animation: shakeRed 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+
+        @@keyframes shakeRed {
+            0%, 100% { transform: translateX(0); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+            15% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.4) inset; background-color: rgba(220, 53, 69, 0.1); }
         }
         .progress-dot.filled {
             background-color: #0d6efd; /* Bootstrap primary */
