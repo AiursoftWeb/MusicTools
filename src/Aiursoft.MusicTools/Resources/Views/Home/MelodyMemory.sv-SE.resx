@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="C Major" xml:space="preserve">
+    <value>C-dur</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodiminne</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Musikstil</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Transponerad dur-skala</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Slumpmässig tonart</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Endast vita tangenter (Lättast)</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Sista striden ⚠</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Kom ihåg melodin och upprepa den på pianot.</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Full kromatisk skala (Svårt)</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Grundton</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Förhandsgranska</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Lyssna på omfånget</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Skala</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Kontrollera endast grundtonen</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonal</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Starta spelet</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Nybörjare</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Spelet är slut</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Nivå uppnådd:</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+
+</root>

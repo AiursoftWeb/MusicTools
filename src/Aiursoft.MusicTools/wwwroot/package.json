@@ -11,7 +11,6 @@
     "events": "^3.3.0",
     "tonal": "^6.4.2",
     "tone": "^14.7.77",
-    "total-serialism": "^2.10.2",
     "webmidi": "^3.1.14"
   },
   "main": "index.js",

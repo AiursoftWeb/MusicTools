@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="C Major" xml:space="preserve">
+    <value>ハ長調</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>音楽スタイル</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>メロディーメモリー</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>移調された長音階</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>ランダムキー</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>白鍵のみ（最も簡単）</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ ラストスタンド ⚠</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>メロディを覚えて、ピアノで繰り返してください。</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>全半音階（難しい）</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>無調</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>音域を聴く</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>スケール</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>主音のみを確認</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>ルート音</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>ゲームオーバー</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>到達レベル:</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>初心者</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>ゲーム開始</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>もう一度試す</value>
+  </data>
+
+</root>

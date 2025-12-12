@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="C Major" xml:space="preserve">
+    <value>Dó Maior</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Estilo Musical</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Apenas teclas brancas (Mais fácil)</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Tom Aleatório</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Última Resistência ⚠</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Memória Melódica</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Lembre-se da melodia e repita-a no piano.</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Escala Maior Transposta</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Escala</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonal</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Ouvir a extensão</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Prévia</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Iniciar Jogo</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Verificar apenas a tônica</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Fim de Jogo</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Escala Cromática Completa (Difícil)</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Nota Tônica</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Iniciante</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Nível Alcançado:</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Tentar Novamente</value>
+  </data>
+
+</root>

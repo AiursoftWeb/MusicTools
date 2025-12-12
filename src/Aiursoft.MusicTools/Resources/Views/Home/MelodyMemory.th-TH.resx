@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Music Style" xml:space="preserve">
+    <value>รูปแบบดนตรี</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>ซี เมเจอร์</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>คีย์สุ่ม</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ ครั้งสุดท้าย ⚠</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>บันไดเสียงเมเจอร์ที่เปลี่ยนคีย์</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>ความจำทำนองเพลง</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>เฉพาะปุ่มขาว (ง่ายที่สุด)</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>จำทำนองเพลงแล้วเล่นซ้ำบนเปียโน</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>ไม่มีเสียงหลัก</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>สเกล</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>ฟังช่วงเสียง</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>ตัวอย่าง</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>สเกลโครมาติกเต็มรูปแบบ (ยาก)</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>โน้ตหลัก</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>ตรวจสอบโทนิคเท่านั้น</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>มือใหม่</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>เริ่มเกม</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>เกมโอเวอร์</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>ลองอีกครั้ง</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>ระดับที่ถึง:</value>
+  </data>
+
+</root>

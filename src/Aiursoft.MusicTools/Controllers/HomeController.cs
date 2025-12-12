@@ -15,7 +15,7 @@ public class HomeController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Home",
         CascadedLinksIcon = "home",
@@ -28,7 +28,7 @@ public class HomeController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Home",
         CascadedLinksIcon = "home",
@@ -41,7 +41,7 @@ public class HomeController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Home",
         CascadedLinksIcon = "home",
@@ -54,11 +54,11 @@ public class HomeController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
-        CascadedLinksGroupName = "Home",
-        CascadedLinksIcon = "home",
-        CascadedLinksOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
         LinkText = "Interval test",
         LinkOrder = 4)]
     public IActionResult IntervalExam()
@@ -67,7 +67,7 @@ public class HomeController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Home",
         CascadedLinksIcon = "home",
@@ -79,11 +79,11 @@ public class HomeController : Controller
         return this.StackView(new MetronomeViewModel());
     }
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Tools",
         NavGroupOrder = 1,
-        CascadedLinksGroupName = "Home",
-        CascadedLinksIcon = "home",
-        CascadedLinksOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
         LinkText = "Melody Memory Test",
         LinkOrder = 6)]
     public IActionResult MelodyMemory()

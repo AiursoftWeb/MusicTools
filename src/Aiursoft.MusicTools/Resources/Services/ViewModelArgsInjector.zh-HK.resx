@@ -150,5 +150,11 @@
   <data name="Metronome" xml:space="preserve">
     <value>節拍器</value>
   </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>旋律記憶測試</value>
+  </data>
+  <data name="Tests" xml:space="preserve">
+    <value>測試</value>
+  </data>
 
 </root>

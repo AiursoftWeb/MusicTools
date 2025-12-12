@@ -147,5 +147,11 @@
   <data name="Metronome" xml:space="preserve">
     <value>Метроном</value>
   </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Тест на пам&apos;ять мелодій</value>
+  </data>
+  <data name="Tests" xml:space="preserve">
+    <value>Тести</value>
+  </data>
 
 </root>

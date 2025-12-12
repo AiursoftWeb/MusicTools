@@ -150,5 +150,11 @@
   <data name="Metronome" xml:space="preserve">
     <value>メトロノーム</value>
   </data>
+  <data name="Tests" xml:space="preserve">
+    <value>テスト</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>メロディーメモリーテスト</value>
+  </data>
 
 </root>

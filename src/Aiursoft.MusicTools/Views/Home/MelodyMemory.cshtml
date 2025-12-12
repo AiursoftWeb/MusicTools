@@ -10,7 +10,7 @@
 
                 <div class="card-header bg-transparent border-0 d-flex flex-column align-items-center pt-4">
                     <!-- Status Indicators -->
-                    <div class="last-stand-indicator text-danger fw-bold text-uppercase mb-2" style="opacity: 0; transition: opacity 0.3s;">⚠ Last Stand ⚠</div>
+                    <div class="last-stand-indicator text-danger fw-bold text-uppercase mb-2" style="opacity: 0; transition: opacity 0.3s;">@Localizer["⚠ Last Stand ⚠"]</div>
                     
                     <div class="d-flex gap-2 mb-3" id="lives-container" style="font-size: 1.5rem; height: 30px;">
                         <!-- Hearts injected here -->
@@ -36,38 +36,38 @@
                     
                     <div class="text-center mb-4">
                         <div class="display-1 text-warning mb-2">⚡</div>
-                        <h1 class="fw-bold mb-2">Melody Memory</h1>
-                        <p class="text-secondary">Remember the melody and repeat it on the piano.</p>
+                        <h1 class="fw-bold mb-2">@Localizer["Melody Memory"]</h1>
+                        <p class="text-secondary">@Localizer["Remember the melody and repeat it on the piano."]</p>
                     </div>
 
                     <div class="card bg-body-tertiary border-0 p-4 mb-4" style="max-width: 500px; width: 90%;">
                         <div class="row g-4">
                             <!-- Music Style Column -->
                             <div class="col-md-7 border-end border-secondary border-opacity-25">
-                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">Music Style</label>
+                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Music Style"]</label>
                                 
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
                                         <label class="form-check-label" for="style-c-major">
-                                            <span class="d-block fw-bold">C Major</span>
-                                            <span class="small text-secondary">White keys only (Easiest)</span>
+                                            <span class="d-block fw-bold">@Localizer["C Major"]</span>
+                                            <span class="small text-secondary">@Localizer["White keys only (Easiest)"]</span>
                                         </label>
                                     </div>
                                     
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
                                         <label class="form-check-label" for="style-tonal">
-                                            <span class="d-block fw-bold">Random Key</span>
-                                            <span class="small text-secondary">Transposed Major scale</span>
+                                            <span class="d-block fw-bold">@Localizer["Random Key"]</span>
+                                            <span class="small text-secondary">@Localizer["Transposed Major scale"]</span>
                                         </label>
                                     </div>
                                     
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
                                         <label class="form-check-label" for="style-atonal">
-                                            <span class="d-block fw-bold">Atonal</span>
-                                            <span class="small text-secondary">Full Chromatic scale (Hard)</span>
+                                            <span class="d-block fw-bold">@Localizer["Atonal"]</span>
+                                            <span class="small text-secondary">@Localizer["Full Chromatic scale (Hard)"]</span>
                                         </label>
                                     </div>
                                 </div>
@@ -75,22 +75,22 @@
                             
                             <!-- Preview Column -->
                             <div class="col-md-5">
-                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">Preview</label>
+                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Preview"]</label>
                                 
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
                                         <label class="form-check-label" for="preview-scale">
-                                            <span class="d-block fw-bold">Scale</span>
-                                            <span class="small text-secondary">Listen to range</span>
+                                            <span class="d-block fw-bold">@Localizer["Scale"]</span>
+                                            <span class="small text-secondary">@Localizer["Listen to range"]</span>
                                         </label>
                                     </div>
                                     
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
                                         <label class="form-check-label" for="preview-root">
-                                            <span class="d-block fw-bold">Root Note</span>
-                                            <span class="small text-secondary">Check tonic only</span>
+                                            <span class="d-block fw-bold">@Localizer["Root Note"]</span>
+                                            <span class="small text-secondary">@Localizer["Check tonic only"]</span>
                                         </label>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                     </div>
 
                     <button class="btn btn-warning btn-lg px-5 fw-bold rounded-pill shadow-lg" onclick="window.startMelodyGame()">
-                        <i class="bi bi-play-fill me-2"></i>Start Game
+                        <i class="bi bi-play-fill me-2"></i>@Localizer["Start Game"]
                     </button>
                 </div>
 
@@ -107,15 +107,15 @@
                 <!-- Use theme-aware classes instead of hardcoded dark ones -->
                 <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3">
                     <div class="display-1 text-danger mb-3">💀</div>
-                    <h2 class="display-4 fw-bold mb-2">Game Over</h2>
+                    <h2 class="display-4 fw-bold mb-2">@Localizer["Game Over"]</h2>
                     
                     <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 300px;">
-                        <p class="fs-4 mb-2">Level Reached: <span class="fw-bold text-primary" id="final-level">1</span></p>
-                        <p class="text-secondary mb-0" id="final-rank">Novice</p>
+                        <p class="fs-4 mb-2">@Localizer["Level Reached: "]<span class="fw-bold text-primary" id="final-level">1</span></p>
+                        <p class="text-secondary mb-0" id="final-rank">@Localizer["Novice"]</p>
                     </div>
 
                     <button class="btn btn-outline-primary btn-lg px-5 rounded-pill" onclick="window.location.reload()">
-                        <i class="bi bi-arrow-counterclockwise me-2"></i>Try Again
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>@Localizer["Try Again"]
                     </button>
                 </div>
 

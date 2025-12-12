@@ -147,5 +147,11 @@
   <data name="Metronome" xml:space="preserve">
     <value>Metronom</value>
   </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Tes Memori Melodi</value>
+  </data>
+  <data name="Tests" xml:space="preserve">
+    <value>Tes</value>
+  </data>
 
 </root>
