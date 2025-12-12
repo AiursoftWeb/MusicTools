@@ -144,5 +144,29 @@
   <data name="Calc" xml:space="preserve">
     <value>คำนวณ</value>
   </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>เพิ่ม 4 จังหวะต่อระดับ</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>เพิ่มขึ้น</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 โน้ต</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>เพิ่ม 8 จังหวะต่อระดับ</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 ห้อง</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 ห้อง</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>เพิ่มหนึ่งโน้ตต่อระดับ</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>ระดับความยากปัจจุบัน</value>
+  </data>
 
 </root>

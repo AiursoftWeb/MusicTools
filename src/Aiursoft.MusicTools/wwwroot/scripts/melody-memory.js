@@ -15,6 +15,19 @@ const timerBar = document.getElementById('timer-bar');
 const pianoContainer = document.getElementById('piano-container');
 const gameContainer = document.getElementById('game-board');
 
+const DIFFICULTY_VALUES = {
+    'c-major': 1,
+    'tonal': 5,
+    'atonal': 15,
+    'scale': 0,
+    'root': 2,
+    'standard': 3,
+    'skip': 4,
+    'prog-note': 0,
+    'prog-bar': 7,
+    'prog-double': 20
+};
+
 let piano = null;
 let sequence = [];
 let playerStep = 0;
@@ -28,7 +41,7 @@ let perfectStreak = 0;
 let isCurrentLevelPerfect = true;
 
 let timerId = null;
-let gameDifficulty = 'normal';
+let gameDifficulty = 'music';
 
 const OCTAVE_START = 4;
 const OCTAVE_COUNT = 3; // 3 Octaves requested (Expanded Keyboard)
@@ -82,7 +95,7 @@ let currentKeyRoot = "C";
 // --- Initialization ---
 
 window.addEventListener('load', () => {
-    // Initialize Piano
+    // Initialize Piano and UI
     if (pianoContainer) {
         piano = new Piano(pianoContainer, {
             octaves: OCTAVE_COUNT,
@@ -90,13 +103,42 @@ window.addEventListener('load', () => {
             isClickable: true,
             showNoteNames: false
         });
-
-        // Bind piano click
         piano.onClick((noteName) => handleInput(noteName));
     }
 
     updateLivesUI();
+
+    // Bind Difficulty Update
+    const diffInputs = document.querySelectorAll('input[name="musicStyle"], input[name="gamePreview"], input[name="gameProgression"]');
+    if (diffInputs.length > 0) {
+        diffInputs.forEach(input => {
+            input.addEventListener('change', updateCurrentDifficultyDisplay);
+        });
+        // Initial Update
+        updateCurrentDifficultyDisplay();
+    } else {
+        console.warn("MelodyMemory: No difficulty inputs found to bind.");
+    }
 });
+
+// Helper to calculate score dynamically from DOM
+function getCalculatedDifficultyScore() {
+    const styleVal = document.querySelector('input[name="musicStyle"]:checked')?.value || 'c-major';
+    const previewVal = document.querySelector('input[name="gamePreview"]:checked')?.value || 'scale';
+    const progVal = document.querySelector('input[name="gameProgression"]:checked')?.value || 'prog-note';
+    
+    const score = (DIFFICULTY_VALUES[styleVal] || 0) + 
+                  (DIFFICULTY_VALUES[previewVal] || 0) + 
+                  (DIFFICULTY_VALUES[progVal] || 0);
+    return score;
+}
+
+function updateCurrentDifficultyDisplay() {
+    const el = document.getElementById('start-overlay-difficulty');
+    if (el) {
+        el.innerText = getCalculatedDifficultyScore();
+    }
+}
 
 // --- Public Control Functions (attached to window for buttons) ---
 window.startMelodyGame = function() {
@@ -161,9 +203,10 @@ async function startGame() {
     // Read Options
     const styleRad = document.querySelector('input[name="musicStyle"]:checked');
     const previewRad = document.querySelector('input[name="gamePreview"]:checked');
+    const progressionRad = document.querySelector('input[name="gameProgression"]:checked');
     
     // Capture Difficulty Config
-    captureGameConfig(styleRad, previewRad);
+    captureGameConfig(styleRad, previewRad, progressionRad);
     
     // Default to C Major if nothing checked
     const style = styleRad ? styleRad.value : 'c-major';
@@ -295,19 +338,32 @@ async function nextLevel() {
     // Let's move Key Selection to startGame, but here we ensure `validNotesForLevel` is used.
     
     // Generate Note Logic
-    // Use expert MelodyGenerator to get next note/rhythm
-    const nextMelodyItem = melodyGenerator.getNextNote(); 
-    
-    // New Generator returns specific note name (e.g. "C4")
-    const noteName = nextMelodyItem.name;
-    
-    const sequenceItem = {
-        note: noteName,
-        duration: nextMelodyItem.duration,
-        isBarStart: nextMelodyItem.isBarStart
-    };
-    
-    sequence.push(sequenceItem);
+    const mode = gameConfig.progressionMode || 'prog-note';
+    let addedDuration = 0;
+    const targetDuration = (mode === 'prog-double') ? 8 : (mode === 'prog-bar' ? 4 : 0);
+
+    if (mode === 'prog-note') {
+         const nextMelodyItem = melodyGenerator.getNextNote(); 
+         const sequenceItem = {
+            note: nextMelodyItem.name,
+            duration: nextMelodyItem.duration,
+            isBarStart: nextMelodyItem.isBarStart
+        };
+        sequence.push(sequenceItem);
+    } else {
+        // Bar or Double
+        while (addedDuration < targetDuration) {
+            const nextMelodyItem = melodyGenerator.getNextNote();
+            
+            const sequenceItem = {
+                note: nextMelodyItem.name,
+                duration: nextMelodyItem.duration,
+                isBarStart: nextMelodyItem.isBarStart
+            };
+            sequence.push(sequenceItem);
+            addedDuration += nextMelodyItem.duration;
+        }
+    }
 
     await new Promise(r => setTimeout(r, 600));
 
@@ -559,30 +615,20 @@ function handleTimeout() {
 
 // --- Game Over & Rank ---
 
-const DIFFICULTY_VALUES = {
-    'c-major': 1,
-    'tonal': 5,
-    'atonal': 9,
-    'scale': 1,
-    'root': 2,
-    'standard': 2,
-    'skip': 3
-};
-
 let gameConfig = {
     difficultyScore: 0,
     items: []
 };
 
 // Update startGame to capture config
-function captureGameConfig(styleRad, previewRad) {
+function captureGameConfig(styleRad, previewRad, progressionRad) {
     gameConfig.items = [];
     let totalDiff = 0;
 
     // 1. Music Style
     if (styleRad) {
         const val = styleRad.value;
-        const score = DIFFICULTY_VALUES[val] || 1;
+        const score = DIFFICULTY_VALUES[val] || 0; // Default 0 if missing
         const labelText = document.querySelector(`label[for="${styleRad.id}"] span.fw-bold`)?.innerText || val;
         
         gameConfig.items.push({ name: labelText, score: score });
@@ -592,15 +638,33 @@ function captureGameConfig(styleRad, previewRad) {
     // 2. Preview Option
     if (previewRad) {
         const val = previewRad.value;
-        const score = DIFFICULTY_VALUES[val] || 1;
+        const score = DIFFICULTY_VALUES[val] || 0;
         const labelText = document.querySelector(`label[for="${previewRad.id}"] span.fw-bold`)?.innerText || val;
+        
+        gameConfig.items.push({ name: labelText, score: score });
+        // NOTE: If score is 0, we still might want to visually show it or not. 
+        // User asked for "Difficulty 0" for Scale.
+        totalDiff += score;
+    }
+
+    // 3. Progression Option
+    if (progressionRad) {
+        const val = progressionRad.value;
+        const score = DIFFICULTY_VALUES[val] || 0;
+        const labelText = document.querySelector(`label[for="${progressionRad.id}"] span.fw-bold`)?.innerText || val;
         
         gameConfig.items.push({ name: labelText, score: score });
         totalDiff += score;
     }
 
-    gameConfig.difficultyScore = totalDiff;
+    // Determine Logic Mode
+    gameConfig.progressionMode = progressionRad ? progressionRad.value : 'prog-note';
+
+    // Use the robust calculation for the actual score
+    gameConfig.difficultyScore = getCalculatedDifficultyScore();
 }
+
+
 
 function getLocalizedText(key, defaultText) {
     const el = document.querySelector(`#loc-data span[data-key="${key}"]`);
@@ -640,8 +704,8 @@ function gameOver() {
     if (gameContainer) gameContainer.classList.remove('critical');
     
     // --- Calculate Scores ---
-    const difficultyScore = gameConfig.difficultyScore || 2; // default min
-    const totalScore = Math.max(0, (level - 1)) * difficultyScore; // Level 1 start means 0 solved? Usually level matches successful notes.
+const difficultyScore = gameConfig.difficultyScore;
+    const totalScore = Math.max(0, (level - 1)) * difficultyScore;
     // Logic: If I am at Level 5, does it mean I solved 4 patterns or the sequence length is 5?
     // In this game, Level 1 = 1 note. Only after completing it, we go to Level 2.
     // So if I die at Level 5, I successfully completed Level 4 (4 notes).

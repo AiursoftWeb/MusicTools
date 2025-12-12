@@ -39,10 +39,10 @@
                         <p class="text-secondary">@Localizer["Remember the melody and repeat it on the piano."]</p>
                     </div>
 
-                    <div class="card bg-body-tertiary border-0 p-4 mb-4" style="max-width: 500px; width: 90%;">
+                    <div class="card bg-body-tertiary border-0 p-4 mb-4" style="max-width: 800px; width: 95%;">
                         <div class="row g-4">
                             <!-- Music Style Column -->
-                            <div class="col-md-7 border-end border-secondary border-opacity-25">
+                            <div class="col-md-4 border-end border-secondary border-opacity-25">
                                 <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Music Style"]</label>
                                 
                                 <div class="d-flex flex-column gap-2">
@@ -73,7 +73,7 @@
                             </div>
                             
                             <!-- Preview Column -->
-                            <div class="col-md-5">
+                            <div class="col-md-4 border-end border-secondary border-opacity-25">
                                 <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Preview"]</label>
                                 
                                 <div class="d-flex flex-column gap-2">
@@ -110,7 +110,43 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Progression Column -->
+                            <div class="col-md-4">
+                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Increment"]</label>
+                                
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gameProgression" id="prog-note" value="prog-note" checked>
+                                        <label class="form-check-label" for="prog-note">
+                                            <span class="d-block fw-bold">@Localizer["1 Note"]</span>
+                                            <span class="small text-secondary">@Localizer["Add one note per level"]</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gameProgression" id="prog-bar" value="prog-bar">
+                                        <label class="form-check-label" for="prog-bar">
+                                            <span class="d-block fw-bold">@Localizer["1 Bar"]</span>
+                                            <span class="small text-secondary">@Localizer["Add 4 beats per level"]</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gameProgression" id="prog-double" value="prog-double">
+                                        <label class="form-check-label" for="prog-double">
+                                            <span class="d-block fw-bold">@Localizer["2 Bars"]</span>
+                                            <span class="small text-secondary">@Localizer["Add 8 beats per level"]</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <span class="text-secondary fw-bold text-uppercase small">@Localizer["Current Difficulty"]:</span>
+                        <span id="start-overlay-difficulty" class="fs-2 fw-bold text-info ms-2">--</span>
                     </div>
 
                     <button class="btn btn-warning btn-lg px-5 fw-bold rounded-pill shadow-lg" onclick="window.startMelodyGame()">

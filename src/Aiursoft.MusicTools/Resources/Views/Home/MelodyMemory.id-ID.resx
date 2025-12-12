@@ -144,5 +144,29 @@
   <data name="Level" xml:space="preserve">
     <value>Level</value>
   </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Bar</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Bar</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nada</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Tambahkan 4 ketukan per level</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Penambahan</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Tambahkan 8 ketukan per level</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Tambahkan satu not per level</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Tingkat Kesulitan Saat Ini</value>
+  </data>
 
 </root>

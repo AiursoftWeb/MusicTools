@@ -144,5 +144,29 @@
   <data name="Level" xml:space="preserve">
     <value>Seviye</value>
   </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Artış</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Her seviyede bir nota ekle</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Seviye başına 8 vuruş ekle</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Seviye başına 4 vuruş ekle</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Ölçü</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nota</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Ölçü</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Mevcut Zorluk</value>
+  </data>
 
 </root>

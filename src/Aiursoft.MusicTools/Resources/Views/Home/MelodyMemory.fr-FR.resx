@@ -144,5 +144,29 @@
   <data name="Level" xml:space="preserve">
     <value>Niveau</value>
   </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 mesure</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Note</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 mesures</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Incrément</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Ajouter 4 temps par niveau</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Ajouter une note par niveau</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Ajouter 8 temps par niveau</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Difficulté actuelle</value>
+  </data>
 
 </root>

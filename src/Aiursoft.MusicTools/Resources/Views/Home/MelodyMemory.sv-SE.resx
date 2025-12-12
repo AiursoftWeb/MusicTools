@@ -144,5 +144,29 @@
   <data name="Level" xml:space="preserve">
     <value>Nivå</value>
   </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 takt</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 ton</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Ökning</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Lägg till 8 taktslag per nivå</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Lägg till 4 taktslag per nivå</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 takter</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Lägg till en ton per nivå</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Nuvarande svårighetsgrad</value>
+  </data>
 
 </root>

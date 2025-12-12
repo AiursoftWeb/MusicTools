@@ -144,5 +144,29 @@
   <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
     <value>难度分析</value>
   </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1个音符</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2小节</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>每级增加4拍</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>每级增加8拍</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>递增</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>每级增加一个音符</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1小节</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>当前难度</value>
+  </data>
 
 </root>

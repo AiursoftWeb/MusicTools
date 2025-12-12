@@ -144,5 +144,29 @@
   <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
     <value>Vaikeustason jakauma</value>
   </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Lisäys</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Lisää yksi nuotti per taso</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 tahti</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 tahtia</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Lisää 8 iskua per taso</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Lisää 4 iskua per taso</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 nuotti</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Nykyinen vaikeustaso</value>
+  </data>
 
 </root>

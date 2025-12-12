@@ -144,5 +144,29 @@
   <data name="Calc" xml:space="preserve">
     <value>Oblicz</value>
   </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nuta</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Przyrost</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Dodaj jedną nutę na poziom</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Takty</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 takt</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Dodaj 4 uderzenia na poziom</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Dodaj 8 uderzeń na poziom</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Aktualny poziom trudności</value>
+  </data>
 
 </root>

@@ -144,5 +144,29 @@
   <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
     <value>DETALIEREA DIFICULTĂȚII</value>
   </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Măsuri</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Adaugă o notă pe nivel</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Adaugă 4 timpi pe nivel</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Măsură</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Notă</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Incrementare</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Adaugă 8 bătăi pe nivel</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Dificultate curentă</value>
+  </data>
 
 </root>

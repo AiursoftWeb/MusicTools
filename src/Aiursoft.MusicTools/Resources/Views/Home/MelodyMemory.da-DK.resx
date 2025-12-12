@@ -144,5 +144,29 @@
   <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
     <value>SVARIGHEDSGRAD OPSUMMERING</value>
   </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Forøgelse</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Tilføj en node pr. niveau</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Tak</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Takter</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 node</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Tilføj 4 taktslag pr. niveau</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Tilføj 8 taktslag pr. niveau</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Nuværende Sværhedsgrad</value>
+  </data>
 
 </root>

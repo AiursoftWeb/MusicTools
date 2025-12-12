@@ -144,5 +144,29 @@
   <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
     <value>ANÁLISE DA DIFICULDADE</value>
   </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Compassos</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Incremento</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Compasso</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Adicionar uma nota por nível</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Adicionar 4 batidas por nível</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Adicionar 8 batidas por nível</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nota</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Dificuldade Atual</value>
+  </data>
 
 </root>
