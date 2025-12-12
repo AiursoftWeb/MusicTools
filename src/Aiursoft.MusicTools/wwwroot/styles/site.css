@@ -4,7 +4,8 @@
     aspect-ratio: 1 / 1;
 }
 
-.outer-circle, .inner-circle {
+.outer-circle,
+.inner-circle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,6 +98,7 @@
     font-size: 1.1em;
     color: #7f8c8d;
 }
+
 /* ================================== */
 /* 钢琴键盘 (移动设备优先)         */
 /* ================================== */
@@ -105,7 +107,8 @@
 .tonic-indicator {
     display: none;
     position: absolute;
-    top: -42px; /* 保持在琴键上方 42px (由 .piano 的 margin-top 腾出空间) */
+    top: -42px;
+    /* 保持在琴键上方 42px (由 .piano 的 margin-top 腾出空间) */
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
@@ -121,7 +124,8 @@
 .tonic-text {
     background-color: #2c3e50;
     color: white;
-    font-size: 0.8em; /* 0.8em 在小屏幕上已经很合适了 */
+    font-size: 0.8em;
+    /* 0.8em 在小屏幕上已经很合适了 */
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 4px;
@@ -138,18 +142,22 @@
 /* --- 钢琴 (Mobile Base Styles) --- */
 .piano {
     display: flex;
-    flex-wrap: nowrap; /* 关键：强制单行 */
+    flex-wrap: nowrap;
+    /* 关键：强制单行 */
     padding: 0;
-    margin: 42px auto 0; /* 保持 42px 顶部空间给指示器 */
+    margin: 42px auto 0;
+    /* 保持 42px 顶部空间给指示器 */
     list-style: none;
-    height: 180px; /* 移动端高度减小 */
+    height: 180px;
+    /* 移动端高度减小 */
     width: fit-content;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .piano .white {
-    width: 35px; /* 移动端宽度减小 */
+    width: 35px;
+    /* 移动端宽度减小 */
     position: relative;
     height: 100%;
     background-color: #fff;
@@ -160,7 +168,8 @@
 }
 
 .piano .black {
-    width: 22px; /* 移动端宽度减小 */
+    width: 22px;
+    /* 移动端宽度减小 */
     height: 60%;
     position: absolute;
     top: 0;
@@ -174,43 +183,55 @@
     cursor: pointer;
     transition: transform 0.05s ease-out, background-color 0.2s ease, border-color 0.2s ease;
 }
+
 /* --- 1. [!! 修复 !!] --- */
 /* * 白键“按下”规则：
  * 只有在它自己被按下 (:active)，
  * 并且 (NOT) 它的子元素中没有黑键是 :active 状态时，才应用此样式。
  */
-.piano .white:active:not(:has(.black:active)) {
+.piano .white:active:not(:has(.black:active)),
+.piano .white.active:not(:has(.black:active)) {
     background-color: #e9ecef;
 }
 
 /* --- 2. (不变) --- */
 /* 黑键的 "按下" 规则保持不变 */
-.piano .black:active {
+.piano .black:active,
+.piano .black.active {
     background-color: #495057;
 }
 
 /* --- 3. (可选，但推荐) --- */
 /* * 同样，防止高亮的白键在黑键被按下时也改变颜色
  */
-.piano .white.highlight:active:not(:has(.black:active)) {
-    background-color: #5a8fbb; /* 或者一个比 #6ba5d7 稍暗的颜色 */
+.piano .white.highlight:active:not(:has(.black:active)),
+.piano .white.highlight.active:not(:has(.black:active)) {
+    background-color: #5a8fbb;
+    /* 或者一个比 #6ba5d7 稍暗的颜色 */
 }
 
-.piano .white.select-highlight:active:not(:has(.black:active)) {
-    background-color: #ffc446; /* 或者一个比 #ffc446 稍暗的颜色 */
+.piano .white.select-highlight:active:not(:has(.black:active)),
+.piano .white.select-highlight.active:not(:has(.black:active)) {
+    background-color: #ffc446;
+    /* 或者一个比 #ffc446 稍暗的颜色 */
 }
 
 /* (黑键高亮的 :active 规则不需要变，因为它们没有子元素) */
 .piano .black.highlight:active,
-.piano .black.select-highlight:active {
-    background-color: #495057; /* 保持一致的“按下”颜色 */
+.piano .black.select-highlight:active,
+.piano .black.highlight.active,
+.piano .black.select-highlight.active {
+    background-color: #495057;
+    /* 保持一致的“按下”颜色 */
 }
 
 /* --- 琴键文字 (Mobile Base Styles) --- */
 .note-name {
-    font-size: 0.8em; /* 移动端字体减小 */
+    font-size: 0.8em;
+    /* 移动端字体减小 */
     position: absolute;
-    bottom: 8px; /* 调整位置 */
+    bottom: 8px;
+    /* 调整位置 */
     width: 100%;
     text-align: center;
     color: #a0a0a0;
@@ -223,7 +244,8 @@
 }
 
 .scale-degree {
-    font-size: 1em; /* 移动端字体减小 */
+    font-size: 1em;
+    /* 移动端字体减小 */
     position: absolute;
     top: 65%;
     width: 100%;
@@ -259,19 +281,23 @@
 /* ================================== */
 @media (min-width: 768px) {
     .piano {
-        height: 240px; /* 恢复桌面端高度 */
+        height: 240px;
+        /* 恢复桌面端高度 */
     }
 
     .piano .white {
-        width: 45px; /* 恢复桌面端白键宽度 */
+        width: 45px;
+        /* 恢复桌面端白键宽度 */
     }
 
     .piano .black {
-        width: 28px; /* 恢复桌面端黑键宽度 */
+        width: 28px;
+        /* 恢复桌面端黑键宽度 */
     }
 
     .note-name {
-        font-size: 1em; /* 恢复桌面端字体 */
+        font-size: 1em;
+        /* 恢复桌面端字体 */
         bottom: 10px;
     }
 
@@ -280,7 +306,8 @@
     }
 
     .scale-degree {
-        font-size: 1.3em; /* 恢复桌面端字体 */
+        font-size: 1.3em;
+        /* 恢复桌面端字体 */
     }
 }
 
@@ -295,9 +322,11 @@
 
 .staff-wrapper {
     position: relative;
-    width: clamp(280px, 90vw, 400px); /* 响应式宽度 */
+    width: clamp(280px, 90vw, 400px);
+    /* 响应式宽度 */
     height: 4em;
-    font-size: 20px; /* 关键：减小字体基准来缩小整个组件 */
+    font-size: 20px;
+    /* 关键：减小字体基准来缩小整个组件 */
     color: #000;
     margin-bottom: 80px;
 
@@ -321,7 +350,9 @@
     height: 2px;
     background-color: #000;
 }
-.clef, .accidental {
+
+.clef,
+.accidental {
     font-family: 'Bravura', serif !important;
     position: absolute;
     line-height: 1;
@@ -369,7 +400,8 @@
     line-height: 1;
     display: flex;
     align-items: center;
-    transform: translateY(-3.4em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
+    transform: translateY(-3.4em);
+    /* <-- [关键] 匹配 .accidental 的魔法数字 */
 }
 
 /* 2. 单个音符的升降号 (用于 interval-exam)
@@ -384,14 +416,16 @@
     line-height: 1;
     display: flex;
     align-items: center;
-    transform: translateY(-2.9em); /* <-- [关键] 匹配 .accidental 的魔法数字 */
+    transform: translateY(-2.9em);
+    /* <-- [关键] 匹配 .accidental 的魔法数字 */
 }
 
 /* 3. 调号 (用于 ScaleVisualizerEngine)
  * 这条现有的规则保持不变，.clef 和 .accidental
  * 被 MusicStaff.js (setKeySignature) 和 site.css (钢琴/五度圈) 共享
  */
-.clef, .accidental {
+.clef,
+.accidental {
     font-family: 'Bravura', serif !important;
     position: absolute;
     line-height: 1;
@@ -423,7 +457,8 @@
      * 假设线高 2px。
      */
     height: 2px;
-    margin-top: -1px; /* 垂直居中 */
+    margin-top: -1px;
+    /* 垂直居中 */
 
     background-color: black;
 
@@ -438,13 +473,15 @@
 .music-staff-note {
     position: absolute;
     /* ... (来自 site.css) transform: translateY(-1.7em); */
-    z-index: 20; /* 确保在加线 (10) 之上 */
+    z-index: 20;
+    /* 确保在加线 (10) 之上 */
 }
 
 .music-staff-accidental {
     position: absolute;
     /* ... (来自 site.css) transform: translateY(-1.7em); */
-    z-index: 20; /* 确保在加线 (10) 之上 */
+    z-index: 20;
+    /* 确保在加线 (10) 之上 */
 }
 
 /*
@@ -463,5 +500,5 @@
     background-color: #f8f9fa;
     border-color: #0d6efd;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }

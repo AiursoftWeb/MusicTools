@@ -127,14 +127,14 @@ class Piano {
      * (V3.0 - 区分触摸和鼠标，解决所有冲突)
      */
     #addClickListeners() {
-        // 1. 检查设备类型
+        // 1. Check device type
         const isTouchDevice = ('ontouchstart' in window);
         console.log(`[Piano.js] Touch device detected: ${isTouchDevice}`);
 
         this.#keyMap.forEach((keyEl, noteName) => {
             const midi = parseInt(keyEl.dataset.midi, 10);
 
-            // 共享的发声函数
+            // Shared play sound function
             const playSound = () => {
                 if (this.#audioContext.state === 'suspended') {
                     this.#audioContext.resume();
@@ -147,56 +147,71 @@ class Piano {
             };
 
             if (isTouchDevice) {
-                // --- A. 触摸设备 (手机/平板) 逻辑 ---
+                // --- A. Touch Device (Mobile/Tablet) Logic ---
 
                 let isScrolling = false;
                 let startX = 0, startY = 0;
 
                 keyEl.addEventListener('touchstart', (event) => {
                     event.stopPropagation();
+                    keyEl.classList.add('active');
 
-                    // 1. 记录起始位置
+                    // 1. Record start position
                     isScrolling = false;
                     startX = event.touches[0].clientX;
                     startY = event.touches[0].clientY;
 
-                    // 2. [!! 手感 !!] 立即播放声音
+                    // 2. Play sound immediately
                     playSound();
 
-                }, { passive: true }); // [!! 滚动 !!] 设为 passive: true 来允许滚动
+                }, { passive: true });
 
                 keyEl.addEventListener('touchmove', (event) => {
-                    if (isScrolling) return; // 已经在滚动了，忽略
+                    if (isScrolling) return;
 
                     const deltaX = Math.abs(event.touches[0].clientX - startX);
                     const deltaY = Math.abs(event.touches[0].clientY - startY);
 
-                    // (10px 阈值) 如果移动了，就标记为“滚动”
+                    // (10px threshold) If moved significantly, mark as scrolling
                     if (deltaX > 10 || deltaY > 10) {
                         isScrolling = true;
+                        keyEl.classList.remove('active');
                     }
-                }, { passive: true }); // [!! 滚动 !!] 设为 passive: true 来允许滚动
+                }, { passive: true });
 
                 keyEl.addEventListener('touchend', (event) => {
                     event.stopPropagation();
+                    keyEl.classList.remove('active');
 
-                    // 只有在 *不是* 滚动时，才触发逻辑回调
+                    // Only trigger callback if not scrolling
                     if (!isScrolling) {
                         this.#onClickCallback(noteName);
                     }
                     isScrolling = false;
                 });
+                
+                keyEl.addEventListener('touchcancel', (event) => {
+                     keyEl.classList.remove('active');
+                     isScrolling = false;
+                });
 
             } else {
-                // --- B. 鼠标设备 (桌面) 逻辑 ---
+                // --- B. Mouse Device (Desktop) Logic ---
 
                 keyEl.addEventListener('mousedown', (event) => {
                     event.stopPropagation();
+                    keyEl.classList.add('active');
 
-                    // 桌面端很简单：按下时立即发声并触发回调
+                    // Play sound and trigger callback immediately on press
                     playSound();
                     this.#onClickCallback(noteName);
                 });
+
+                const cleanup = () => {
+                    keyEl.classList.remove('active');
+                };
+                keyEl.addEventListener('mouseup', cleanup);
+                keyEl.addEventListener('mouseleave', cleanup);
             }
         });
     }
