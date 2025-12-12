@@ -7,6 +7,7 @@
   "dependencies": {
     "@aiursoft/uistack": "^1.0.8",
     "@tonejs/piano": "^0.2.1",
+    "canvas-confetti": "^1.9.4",
     "dropify": "^0.2.2",
     "events": "^3.3.0",
     "tonal": "^6.4.2",

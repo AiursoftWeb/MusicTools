@@ -78,5 +78,17 @@
   <data name="Level Reached: " xml:space="preserve">
     <value>已達等級：</value>
   </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>立即開始</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>跳過預覽</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>聆聽 A4 (440Hz)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>標準音高 (A)</value>
+  </data>
 
 </root>

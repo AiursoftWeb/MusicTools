@@ -10,7 +10,9 @@ import { Scale, Note } from "tonal";
 export class MelodyGenerator {
     constructor(key = "C", scaleType = "major") {
         this.noteBuffer = [];
-        const rawNotes = Scale.get(`${key} ${scaleType}`).notes;
+        this.isAtonal = (scaleType === 'atonal');
+        const actualScaleType = this.isAtonal ? 'chromatic' : scaleType;
+        const rawNotes = Scale.get(`${key} ${actualScaleType}`).notes;
 
         // Pre-calculate correct octaves for the scale to ensure it ascends
         // e.g. G Major: G, A, B, C, D, E, F# -> G4, A4, B4, C5, D5, E5, F#5
@@ -18,7 +20,9 @@ export class MelodyGenerator {
         let currentOctave = 4;
         let previousMidi = -1;
 
-        rawNotes.forEach(noteName => {
+        rawNotes.forEach(rawName => {
+            // Normalize to sharps/enharmonic preference to match Game's hardcoded sharp-only array
+            const noteName = Note.enharmonic(rawName);
             // Tentatively try current octave
             let testMidi = Note.midi(`${noteName}${currentOctave}`);
             
@@ -39,7 +43,7 @@ export class MelodyGenerator {
 
         // 锁定舒适音域 C4 - G5 (extended dynamically based on scale)
         this.minRange = 0; 
-        this.maxRange = 14; // Approx 2 octaves
+        this.maxRange = this.isAtonal ? 24 : 14; // Approx 2 octaves
         
         // 钟声锚点：High C (7), Sol (4), High Sol (11)
         this.sparkleAnchors = [7, 4, 11]; 
@@ -51,6 +55,22 @@ export class MelodyGenerator {
     }
 
     generateSong() {
+        if (this.isAtonal) {
+             console.log("🎹 Generating Atonal Random Melody...");
+             // 16 bars * 4 beats = 64 beats (Pure Random, Uniform Rhythm)
+             for (let i = 0; i < 64; i++) {
+                 const randomPitch = Math.floor(Math.random() * (this.maxRange - this.minRange + 1)) + this.minRange;
+                 this.noteBuffer.push({
+                     scaleIndex: randomPitch,
+                     midi: this._toMidi(randomPitch),
+                     name: this._toName(randomPitch),
+                     duration: 1,
+                     isBarStart: (i % 4 === 0)
+                 });
+             }
+             return;
+        }
+
         console.log("🎹 Generating Structurally Sound Melody...");
 
         // ==========================================

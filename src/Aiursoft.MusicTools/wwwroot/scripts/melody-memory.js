@@ -1,12 +1,14 @@
 import Piano from './Piano.js';
+import confetti from 'canvas-confetti';
 import { MelodyGenerator } from './MelodyGenerator.js';
+
 
 // --- Game State ---
 const livesContainer = document.getElementById('lives-container');
 const progressContainer = document.getElementById('progress-container');
 const startOverlay = document.getElementById('start-overlay');
 const gameOverOverlay = document.getElementById('game-over-overlay');
-const finalScoreDisplay = document.getElementById('final-score');
+const finalScoreDisplay = document.getElementById('final-level');
 const ingameRankDisplay = document.getElementById('ingame-rank');
 const timerContainer = document.getElementById('timer-container');
 const timerBar = document.getElementById('timer-bar');
@@ -210,7 +212,7 @@ async function startGame() {
 
     // Initialize Melody Generator with current Key
     // Use "major" scale (not pentatonic) to satisfy "GABCDE#FG" request
-    melodyGenerator = new MelodyGenerator(currentKeyRoot, "major");
+    melodyGenerator = new MelodyGenerator(currentKeyRoot, style === 'atonal' ? 'atonal' : 'major');
 
     sequence = [];
     songBuffer = []; // Reset buffer
@@ -233,6 +235,8 @@ async function startGame() {
 }
 
 async function playPreview(type, notesToPlay) {
+    if (type === 'skip') return;
+
     piContainerClickable(false);
     
     let previewSequence = [];
@@ -240,6 +244,9 @@ async function playPreview(type, notesToPlay) {
     if (type === 'root') {
         // Play just the first note (Root)
         previewSequence = [notesToPlay[0]];
+    } else if (type === 'standard') {
+        // Play Standard A4
+        previewSequence = ["A4"];
     } else {
         // Play the full determined scale
         previewSequence = notesToPlay;
@@ -578,7 +585,7 @@ function updateInGameRank() {
 function gameOver() {
     hideTimer();
     if (gameContainer) gameContainer.classList.remove('critical');
-    if (finalScoreDisplay) finalScoreDisplay.textContent = `Level ${level}`;
+    if (finalScoreDisplay) finalScoreDisplay.textContent = level;
 
     const titleElement = gameOverOverlay.querySelector('h1');
     if (titleElement) titleElement.textContent = gameDifficulty === 'music' ? 'Game Over (Music Master)' : 'Game Over';
@@ -634,18 +641,16 @@ function playLifeUpSound() {
 }
 
 function fireConfetti() {
-    if (typeof confetti === 'function') {
-        var duration = 3 * 1000;
-        var animationEnd = Date.now() + duration;
-        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000 };
-        var randomInRange = function (min, max) { return Math.random() * (max - min) + min; };
+    var duration = 3 * 1000;
+    var animationEnd = Date.now() + duration;
+    var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 3000 };
+    var randomInRange = function (min, max) { return Math.random() * (max - min) + min; };
 
-        var interval = setInterval(function () {
-            var timeLeft = animationEnd - Date.now();
-            if (timeLeft <= 0) return clearInterval(interval);
-            var particleCount = 50 * (timeLeft / duration);
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-        }, 250);
-    }
+    var interval = setInterval(function () {
+        var timeLeft = animationEnd - Date.now();
+        if (timeLeft <= 0) return clearInterval(interval);
+        var particleCount = 50 * (timeLeft / duration);
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+    }, 250);
 }

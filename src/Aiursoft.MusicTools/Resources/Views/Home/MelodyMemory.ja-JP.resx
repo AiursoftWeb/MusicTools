@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>もう一度試す</value>
   </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>標準ピッチ (A)</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) を聴く</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>すぐに開始</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>プレビューをスキップ</value>
+  </data>
 
 </root>

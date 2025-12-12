@@ -78,5 +78,17 @@
   <data name="Game Over" xml:space="preserve">
     <value>खेल समाप्त</value>
   </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>तुरंत शुरू करें</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>पूर्वावलोकन छोड़ें</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>मानक पिच (A)</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) सुनें</value>
+  </data>
 
 </root>

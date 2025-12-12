@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>Thử Lại</value>
   </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Nghe nốt A4 (440Hz)</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Bắt đầu ngay lập tức</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Bỏ Qua Xem Trước</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Cao độ chuẩn (A)</value>
+  </data>
 
 </root>

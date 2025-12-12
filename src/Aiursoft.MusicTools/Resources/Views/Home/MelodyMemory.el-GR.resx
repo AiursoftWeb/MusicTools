@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>Δοκίμασε Ξανά</value>
   </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Τυπική Σύμφωνο (Λα)</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Ξεκινήστε αμέσως</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Παράβλεψη Προεπισκόπησης</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Ακούστε το Λα4 (440Hz)</value>
+  </data>
 
 </root>

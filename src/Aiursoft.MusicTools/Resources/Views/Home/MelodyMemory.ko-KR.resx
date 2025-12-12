@@ -78,5 +78,17 @@
   <data name="Level Reached: " xml:space="preserve">
     <value>달성한 레벨:</value>
   </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>표준 음높이 (A)</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>즉시 시작</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>미리보기 건너뛰기</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) 듣기</value>
+  </data>
 
 </root>

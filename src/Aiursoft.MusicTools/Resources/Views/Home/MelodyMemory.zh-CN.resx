@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>再试一次</value>
   </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>标准音（A）</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>聆听 A4 (440Hz)</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>放弃预览</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>立即开始</value>
+  </data>
 
 </root>

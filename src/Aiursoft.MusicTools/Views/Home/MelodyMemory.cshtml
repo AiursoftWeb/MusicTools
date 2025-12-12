@@ -93,6 +93,22 @@
                                             <span class="small text-secondary">@Localizer["Check tonic only"]</span>
                                         </label>
                                     </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gamePreview" id="preview-standard" value="standard">
+                                        <label class="form-check-label" for="preview-standard">
+                                            <span class="d-block fw-bold">@Localizer["Standard Pitch (A)"]</span>
+                                            <span class="small text-secondary">@Localizer["Listen to A4 (440Hz)"]</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gamePreview" id="preview-skip" value="skip">
+                                        <label class="form-check-label" for="preview-skip">
+                                            <span class="d-block fw-bold">@Localizer["Skip Preview"]</span>
+                                            <span class="small text-secondary">@Localizer["Start immediately"]</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +127,10 @@
                     
                     <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 300px;">
                         <p class="fs-4 mb-2">@Localizer["Level Reached: "]<span class="fw-bold text-primary" id="final-level">1</span></p>
-                        <p class="text-secondary mb-0" id="final-rank">@Localizer["Novice"]</p>
+                        <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center mt-3">
+                            <!-- Placeholder/Initial State -->
+                            <div class="rank-text text-secondary">@Localizer["Novice"]</div>
+                        </div>
                     </div>
 
                     <button class="btn btn-outline-primary btn-lg px-5 rounded-pill" onclick="window.location.reload()">
@@ -125,7 +144,7 @@
 </div>
 
 @section scripts {
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
     <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
 }
 
@@ -189,6 +208,21 @@
             50% { transform: translateX(5px); }
             75% { transform: translateX(-5px); }
             100% { transform: translateX(0) scale(0.8); }
+        }
+
+        .rank-emoji {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .rank-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        @@keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
         }
 
         .progress-dot {

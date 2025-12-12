@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>Intentar de nuevo</value>
   </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Comenzar inmediatamente</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Omitir Vista Previa</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Escucha el La4 (440 Hz)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Tono Estándar (A)</value>
+  </data>
 
 </root>

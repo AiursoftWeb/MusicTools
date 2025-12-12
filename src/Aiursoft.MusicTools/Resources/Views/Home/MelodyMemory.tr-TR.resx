@@ -78,5 +78,17 @@
   <data name="Level Reached: " xml:space="preserve">
     <value>Seviyeye Ulaşıldı:</value>
   </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Hemen Başla</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) dinleyin</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Önizlemeyi Atla</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standart Akort (A)</value>
+  </data>
 
 </root>

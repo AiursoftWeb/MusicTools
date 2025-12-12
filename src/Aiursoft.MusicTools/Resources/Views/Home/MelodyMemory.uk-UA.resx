@@ -78,5 +78,17 @@
   <data name="Level Reached: " xml:space="preserve">
     <value>Досягнутий рівень:</value>
   </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Стандартний камертон (Ля)</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Почати негайно</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Пропустити попередній перегляд</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Прослухайте ноту A4 (440 Гц)</value>
+  </data>
 
 </root>

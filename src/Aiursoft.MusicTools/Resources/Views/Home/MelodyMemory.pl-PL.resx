@@ -78,5 +78,17 @@
   <data name="Novice" xml:space="preserve">
     <value>Nowicjusz</value>
   </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Pomiń podgląd</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Rozpocznij natychmiast</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Posłuchaj A4 (440Hz)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standard Pitch (A)</value>
+  </data>
 
 </root>

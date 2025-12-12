@@ -78,5 +78,17 @@
   <data name="Try Again" xml:space="preserve">
     <value>Coba Lagi</value>
   </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Lewati Pratinjau</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Mulai segera</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Nada Standar (A)</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Dengarkan A4 (440Hz)</value>
+  </data>
 
 </root>

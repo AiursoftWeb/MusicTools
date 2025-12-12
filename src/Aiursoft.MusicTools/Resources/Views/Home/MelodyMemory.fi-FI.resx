@@ -78,5 +78,17 @@
   <data name="Start Game" xml:space="preserve">
     <value>Aloita peli</value>
   </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Kuuntele A4 (440 Hz)</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Ohita esikatselu</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standard Pitch (A)</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Aloita heti</value>
+  </data>
 
 </root>
