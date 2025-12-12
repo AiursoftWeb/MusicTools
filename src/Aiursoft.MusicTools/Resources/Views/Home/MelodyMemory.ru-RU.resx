@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Прослушайте ноту A4 (440 Гц)</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Ранг</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Сложность</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Общий счёт</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Расчёт</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Сложность</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Ноты</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Разбор сложности</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Достигнутый уровень</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Новичок</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Золото</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Гроссмейстер</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Серебро</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Алмаз</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Бронза</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Средний уровень</value>
+  </data>
 
 </root>

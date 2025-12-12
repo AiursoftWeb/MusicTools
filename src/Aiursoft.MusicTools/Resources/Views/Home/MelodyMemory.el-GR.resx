@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Ακούστε το Λα4 (440Hz)</value>
   </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Υπολογισμός</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Δυσκολία</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Συνολική Βαθμολογία</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Σημειώσεις</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Κατάταξη</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Δυσκολία</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Ανάλυση Δυσκολίας</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Επίπεδο που επιτεύχθηκε</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Ασημένιο</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Χάλκινο</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Χρυσός</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Μεσαίο</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Διαμάντι</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Νεοσύλλεκτος</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Μεγάλος Μάγιστρος</value>
+  </data>
 
 </root>

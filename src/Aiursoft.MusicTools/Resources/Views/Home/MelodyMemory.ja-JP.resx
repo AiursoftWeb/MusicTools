@@ -90,5 +90,50 @@
   <data name="Skip Preview" xml:space="preserve">
     <value>プレビューをスキップ</value>
   </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>到達レベル</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>難易度</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>総合スコア</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>難易度内訳</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>音符</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難易度</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>ランク</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>ルーキー</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>ブロンズ</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>中級</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>シルバー</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>ゴールド</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>ダイヤモンド</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>グランドマスター</value>
+  </data>
 
 </root>

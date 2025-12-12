@@ -90,5 +90,50 @@
   <data name="Start immediately" xml:space="preserve">
     <value>Start immediately</value>
   </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Calculation</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Total Score</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Difficulty Breakdown</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Level Reached</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermediate</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Novice</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Grandmaster</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
 
 </root>

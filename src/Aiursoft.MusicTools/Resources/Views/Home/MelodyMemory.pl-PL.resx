@@ -90,5 +90,50 @@
   <data name="Standard Pitch (A)" xml:space="preserve">
     <value>Standard Pitch (A)</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Ranga</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Trudność</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Łączny wynik</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Obliczenie</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Trudność</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nuty</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Osiągnięty poziom</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Rozkład Trudności</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diament</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Złoto</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Srebro</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Nowicjusz</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Brąz</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Średniozaawansowany</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Arcymistrz</value>
+  </data>
 
 </root>

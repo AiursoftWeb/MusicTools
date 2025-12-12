@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Lyssna på A4 (440 Hz)</value>
   </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Beräkning</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Totalpoäng</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Nivå uppnådd</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Noter</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Svårighetsfördelning</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Medel</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Guld</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Brons</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Stormästare</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Nybörjare</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
 
 </root>

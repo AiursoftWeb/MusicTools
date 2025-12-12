@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Dengarkan A4 (440Hz)</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Peringkat</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Total Skor</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Level yang Dicapai</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Perhitungan</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Kesulitan</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Tingkat Kesulitan</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Rincian Tingkat Kesulitan</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Menengah</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Perak</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Pemula</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Emas</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Perunggu</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Berlian</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Grandmaster</value>
+  </data>
 
 </root>

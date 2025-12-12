@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>A4 (440Hz) सुनें</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>रैंक</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>कुल स्कोर</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>गणना</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>कठिनाई</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>पहुँचा गया स्तर</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>कठिनाई</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>स्वर</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>नौसिखिया</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>चांदी</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>मध्यम</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>कांस्य</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>ग्रैंडमास्टर</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>सोना</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>कठिनाई विवरण</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>डायमंड</value>
+  </data>
 
 </root>

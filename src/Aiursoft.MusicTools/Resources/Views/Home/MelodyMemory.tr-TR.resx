@@ -90,5 +90,50 @@
   <data name="Standard Pitch (A)" xml:space="preserve">
     <value>Standart Akort (A)</value>
   </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Toplam Puan</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Hesaplama</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Ulaşılan Seviye</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Zorluk Dağılımı</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notlar</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rütbe</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Zorluk</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Zorluk</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronz</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Çaylak</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Gümüş</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Elmas</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Altın</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Usta</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Orta Seviye</value>
+  </data>
 
 </root>

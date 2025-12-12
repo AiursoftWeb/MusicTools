@@ -162,6 +162,9 @@ async function startGame() {
     const styleRad = document.querySelector('input[name="musicStyle"]:checked');
     const previewRad = document.querySelector('input[name="gamePreview"]:checked');
     
+    // Capture Difficulty Config
+    captureGameConfig(styleRad, previewRad);
+    
     // Default to C Major if nothing checked
     const style = styleRad ? styleRad.value : 'c-major';
     const preview = previewRad ? previewRad.value : 'scale';
@@ -554,14 +557,64 @@ function handleTimeout() {
 
 // --- Game Over & Rank ---
 
+// --- Game Over & Rank ---
+
+const DIFFICULTY_VALUES = {
+    'c-major': 1,
+    'tonal': 5,
+    'atonal': 9,
+    'scale': 1,
+    'root': 2,
+    'standard': 2,
+    'skip': 3
+};
+
+let gameConfig = {
+    difficultyScore: 0,
+    items: []
+};
+
+// Update startGame to capture config
+function captureGameConfig(styleRad, previewRad) {
+    gameConfig.items = [];
+    let totalDiff = 0;
+
+    // 1. Music Style
+    if (styleRad) {
+        const val = styleRad.value;
+        const score = DIFFICULTY_VALUES[val] || 1;
+        const labelText = document.querySelector(`label[for="${styleRad.id}"] span.fw-bold`)?.innerText || val;
+        
+        gameConfig.items.push({ name: labelText, score: score });
+        totalDiff += score;
+    }
+
+    // 2. Preview Option
+    if (previewRad) {
+        const val = previewRad.value;
+        const score = DIFFICULTY_VALUES[val] || 1;
+        const labelText = document.querySelector(`label[for="${previewRad.id}"] span.fw-bold`)?.innerText || val;
+        
+        gameConfig.items.push({ name: labelText, score: score });
+        totalDiff += score;
+    }
+
+    gameConfig.difficultyScore = totalDiff;
+}
+
+function getLocalizedText(key, defaultText) {
+    const el = document.querySelector(`#loc-data span[data-key="${key}"]`);
+    return el ? el.innerText : defaultText;
+}
+
 function getRankData(currentLevel) {
-    if (currentLevel >= 25) return { emoji: '👑', text: 'Grandmaster', color: '#ff4c4c' };
-    if (currentLevel >= 21) return { emoji: '💎', text: 'Diamond', color: '#b9f2ff' };
-    if (currentLevel >= 17) return { emoji: '🥇', text: 'Gold', color: '#ffd700' };
-    if (currentLevel >= 13) return { emoji: '🥈', text: 'Silver', color: '#c0c0c0' };
-    if (currentLevel >= 9) return { emoji: '🥉', text: 'Bronze', color: '#cd7f32' };
-    if (currentLevel >= 5) return { emoji: '🃏', text: 'Intermediate', color: '#a0a0a0' };
-    if (currentLevel >= 1) return { emoji: '🐥', text: 'Rookie', color: '#cd7f32' };
+    if (currentLevel >= 25) return { emoji: '👑', text: getLocalizedText('grandmaster', 'Grandmaster'), color: '#ff4c4c' };
+    if (currentLevel >= 21) return { emoji: '💎', text: getLocalizedText('diamond', 'Diamond'), color: '#b9f2ff' };
+    if (currentLevel >= 17) return { emoji: '🥇', text: getLocalizedText('gold', 'Gold'), color: '#ffd700' };
+    if (currentLevel >= 13) return { emoji: '🥈', text: getLocalizedText('silver', 'Silver'), color: '#c0c0c0' };
+    if (currentLevel >= 9) return { emoji: '🥉', text: getLocalizedText('bronze', 'Bronze'), color: '#cd7f32' };
+    if (currentLevel >= 5) return { emoji: '🃏', text: getLocalizedText('intermediate', 'Intermediate'), color: '#a0a0a0' };
+    if (currentLevel >= 1) return { emoji: '🐥', text: getLocalizedText('rookie', 'Rookie'), color: '#cd7f32' };
     return null;
 }
 
@@ -585,10 +638,66 @@ function updateInGameRank() {
 function gameOver() {
     hideTimer();
     if (gameContainer) gameContainer.classList.remove('critical');
-    if (finalScoreDisplay) finalScoreDisplay.textContent = level;
+    
+    // --- Calculate Scores ---
+    const difficultyScore = gameConfig.difficultyScore || 2; // default min
+    const totalScore = Math.max(0, (level - 1)) * difficultyScore; // Level 1 start means 0 solved? Usually level matches successful notes.
+    // Logic: If I am at Level 5, does it mean I solved 4 patterns or the sequence length is 5?
+    // In this game, Level 1 = 1 note. Only after completing it, we go to Level 2.
+    // So if I die at Level 5, I successfully completed Level 4 (4 notes).
+    // Or does Level just mean the sequence length? 
+    // Usually code says `level++` AFTER complete. So if I am at level 5, I completed 4.
+    // However, usually "Score" implies notes correctly played. 
+    // In this game `handleMistake` happens during playback or input.
+    // Let's assume Score = (Level - 1) * Difficulty. If Level 1 death => 0 score.
+    // Users usually prefer seeing "Level 5" implying they reached it. 
+    // But "30 notes" implies quantity.
+    // Let's use (level - 1) as "Notes Correctly Reproduced".
+    // Wait, `level` starts at 1. If I complete Lv 1, I go to Lv 2.
+    const finalNoteCount = Math.max(0, level - 1); 
+    const finalTotalScore = finalNoteCount * difficultyScore;
 
-    const titleElement = gameOverOverlay.querySelector('h1');
-    if (titleElement) titleElement.textContent = gameDifficulty === 'music' ? 'Game Over (Music Master)' : 'Game Over';
+    if (finalScoreDisplay) finalScoreDisplay.textContent = level; // "Level Reached" text remains Level
+    
+    const totalScoreEl = document.getElementById('final-total-score');
+    if (totalScoreEl) totalScoreEl.textContent = finalTotalScore;
+
+    // --- Fill Breakdown ---
+    const detailsContainer = document.getElementById('difficulty-details');
+    if (detailsContainer) {
+        detailsContainer.innerHTML = '';
+        gameConfig.items.forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'd-flex justify-content-between border-bottom border-light border-opacity-10 pb-1';
+            row.innerHTML = `<span>${item.name}</span><span class="text-warning fw-bold">+${item.score}</span>`;
+            detailsContainer.appendChild(row);
+        });
+        
+        // Add Total Difficulty Row
+        const totalRow = document.createElement('div');
+        totalRow.className = 'd-flex justify-content-between fw-bold mt-1';
+        totalRow.innerHTML = `<span>Difficulty Score</span><span class="text-info">${difficultyScore}</span>`;
+        // We can localized "Difficulty Score" if strictly needed, but let's try to grab it from hidden
+        const locDiff = document.querySelector('#loc-data [data-key="difficulty"]')?.innerText || "Difficulty";
+        totalRow.innerHTML = `<span>${locDiff}</span><span class="text-info">${difficultyScore}</span>`;
+        detailsContainer.appendChild(totalRow);
+    }
+
+    // --- Formula String ---
+    const calcEl = document.getElementById('score-calculation');
+    if (calcEl) {
+        const locNotes = document.querySelector('#loc-data [data-key="notes"]')?.innerText || "Notes";
+        const locDiffShort = document.querySelector('#loc-data [data-key="diff"]')?.innerText || "Diff";
+        calcEl.innerText = `${finalNoteCount} ${locNotes} × ${difficultyScore} ${locDiffShort}`;
+    }
+
+    const titleElement = gameOverOverlay.querySelector('h1'); // Wait, h2 in new HTML? `h2.display-4`
+    // The querySelector might fail if we changed h1 to h2? 
+    // In new HTML it is <h2>. 
+    const titleHeader = gameOverOverlay.querySelector('h2');
+    if (titleHeader) titleHeader.textContent = gameDifficulty === 'music' ? 'Game Over' : 'Game Over'; 
+    // Just keep standard "Game Over" to avoid complexity or re-fetch localized string if needed.
+    // Localizer["Game Over"] is already there.
 
     const rankDisplay = document.getElementById('rank-display');
     if (rankDisplay) {

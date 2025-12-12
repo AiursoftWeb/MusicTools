@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>ฟังเสียง A4 (440Hz)</value>
   </data>
+  <data name="Diff" xml:space="preserve">
+    <value>ความยาก</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>ความยาก</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>อันดับ</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>ระดับที่สำเร็จ</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>คะแนนรวม</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>โน้ต</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>การคำนวณ</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>รายละเอียดระดับความยาก</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>มือใหม่</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>ระดับกลาง</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>ทอง</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>เงิน</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>เพชร</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>ปรมาจารย์</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>ทองแดง</value>
+  </data>
 
 </root>

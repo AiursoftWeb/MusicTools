@@ -90,5 +90,50 @@
   <data name="Standard Pitch (A)" xml:space="preserve">
     <value>Cao độ chuẩn (A)</value>
   </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nốt nhạc</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Độ Khó</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Cấp độ đạt được</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Hạng</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Độ khó</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Tính toán</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Tổng Điểm</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Phân Tích Độ Khó</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Trung cấp</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Kim Cương</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Bạc</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Đồng</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Vàng</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Đại Kiện Tướng</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Mới vào nghề</value>
+  </data>
 
 </root>

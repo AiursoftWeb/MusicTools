@@ -90,5 +90,50 @@
   <data name="Start immediately" xml:space="preserve">
     <value>Începe imediat</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Scor Total</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Detalierea Dificultății</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Dificultate</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Diferență</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Începător</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronză</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermediar</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Argint</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Calcul</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Aur</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Nivel atins</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Maestru</value>
+  </data>
 
 </root>

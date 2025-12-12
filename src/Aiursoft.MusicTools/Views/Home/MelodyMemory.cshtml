@@ -125,17 +125,68 @@
                     <div class="display-1 text-danger mb-3">💀</div>
                     <h2 class="display-4 fw-bold mb-2">@Localizer["Game Over"]</h2>
                     
-                    <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 300px;">
-                        <p class="fs-4 mb-2">@Localizer["Level Reached: "]<span class="fw-bold text-primary" id="final-level">1</span></p>
-                        <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center mt-3">
-                            <!-- Placeholder/Initial State -->
-                            <div class="rank-text text-secondary">@Localizer["Novice"]</div>
+                    <div class="card bg-body-tertiary border-0 p-4 mb-4 text-center" style="min-width: 350px;">
+                        
+                        <!-- Primary Score Display -->
+                        <div class="mb-4">
+                            <div class="text-secondary text-uppercase small fw-bold tracking-wider mb-1">@Localizer["Total Score"]</div>
+                            <div class="display-2 fw-bold text-primary" id="final-total-score">0</div>
+                        </div>
+
+                        <!-- Level & Rank -->
+                        <div class="d-flex justify-content-center gap-4 mb-4 border-bottom border-secondary border-opacity-10 pb-4">
+                            <div class="text-center">
+                                <span class="d-block text-secondary small">@Localizer["Level Reached"]</span>
+                                <span class="fs-3 fw-bold" id="final-level">1</span>
+                            </div>
+                            <div class="vr bg-secondary opacity-25"></div>
+                            <div class="text-center">
+                                <span class="d-block text-secondary small">@Localizer["Rank"]</span>
+                                <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center">
+                                    <div class="rank-text text-secondary">@Localizer["Novice"]</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Difficulty Breakdown -->
+                        <div class="text-start bg-body bg-opacity-50 p-3 rounded">
+                            <h5 class="text-center fw-bold text-secondary mb-3 small text-uppercase">@Localizer["Difficulty Breakdown"]</h5>
+                            
+                            <!-- Detailed Rows (Injected via JS) -->
+                            <div id="difficulty-details" class="small d-flex flex-column gap-2 mb-2">
+                                <!-- Example: -->
+                                <!-- <div class="d-flex justify-content-between"><span>Atonal Mode</span><span class="text-warning">+9</span></div> -->
+                            </div>
+
+                            <hr class="border-secondary border-opacity-25 my-2">
+
+                            <!-- Formula -->
+                            <div class="d-flex justify-content-between align-items-center fw-bold">
+                                <span class="text-secondary">@Localizer["Calculation"]</span>
+                                <span class="font-monospace text-primary text-end" id="score-calculation">
+                                    0 @Localizer["Notes"] × 0 @Localizer["Diff"]
+                                </span>
+                            </div>
                         </div>
                     </div>
 
                     <button class="btn btn-outline-primary btn-lg px-5 rounded-pill" onclick="window.location.reload()">
                         <i class="bi bi-arrow-counterclockwise me-2"></i>@Localizer["Try Again"]
                     </button>
+                    
+                    <!-- Hidden Localization Fields for JS to consume -->
+                    <div id="loc-data" hidden>
+                        <span data-key="notes">@Localizer["Notes"]</span>
+                        <span data-key="diff">@Localizer["Diff"]</span>
+                        <span data-key="difficulty">@Localizer["Difficulty"]</span>
+                        <span data-key="rookie">@Localizer["Rookie"]</span>
+                        <span data-key="intermediate">@Localizer["Intermediate"]</span>
+                        <span data-key="bronze">@Localizer["Bronze"]</span>
+                        <span data-key="silver">@Localizer["Silver"]</span>
+                        <span data-key="gold">@Localizer["Gold"]</span>
+                        <span data-key="diamond">@Localizer["Diamond"]</span>
+                        <span data-key="grandmaster">@Localizer["Grandmaster"]</span>
+                    </div>
                 </div>
 
             </div>

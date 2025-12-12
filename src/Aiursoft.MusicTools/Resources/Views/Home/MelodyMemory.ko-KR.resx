@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>A4 (440Hz) 듣기</value>
   </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>난이도 분석</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>난이도</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>계산</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>난이도</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>음표</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>순위</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>총점</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>달성한 레벨</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>루키</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>브론즈</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>골드</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>중급</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>실버</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>다이아몬드</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>그랜드마스터</value>
+  </data>
 
 </root>

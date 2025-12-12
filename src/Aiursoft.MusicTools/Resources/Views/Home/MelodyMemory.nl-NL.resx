@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Luister naar A4 (440Hz)</value>
   </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Behaald niveau</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Moeilijkheidsopbouw</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Moeilijkheidsgraad</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Noten</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Berekening</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Totaalscore</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Moeilijkheidsgraad</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Brons</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Gemiddeld</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Zilver</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Goud</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Grootmeester</value>
+  </data>
 
 </root>

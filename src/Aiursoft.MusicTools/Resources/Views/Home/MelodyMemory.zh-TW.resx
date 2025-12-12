@@ -90,5 +90,50 @@
   <data name="Skip Preview" xml:space="preserve">
     <value>跳過預覽</value>
   </data>
+  <data name="Diff" xml:space="preserve">
+    <value>難度</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>排名</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>已達等級</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難度</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>總分</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>難度分析</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>音符</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>青銅</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>黃金</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>新手</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>中級</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>宗師</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>鑽石</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>銀牌</value>
+  </data>
 
 </root>

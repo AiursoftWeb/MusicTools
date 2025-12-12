@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>استمع إلى A4 (440 هرتز)</value>
   </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>تفصيل مستوى الصعوبة</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>الفرق</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>الرتبة</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>المستوى الذي تم الوصول إليه</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>النتيجة الإجمالية</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>مبتدئ</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>الصعوبة</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>برونز</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>الماس</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>ذهب</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>السيد الكبير</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>فضة</value>
+  </data>
 
 </root>

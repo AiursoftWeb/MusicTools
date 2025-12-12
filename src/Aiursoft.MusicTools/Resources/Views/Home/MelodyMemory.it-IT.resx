@@ -90,5 +90,50 @@
   <data name="Start immediately" xml:space="preserve">
     <value>Inizia subito</value>
   </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Calcolo</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Classifica</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Difficoltà</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficoltà</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Punteggio Totale</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Livello Raggiunto</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Riepilogo della Difficoltà</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronzo</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Principiante</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermedio</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Argento</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamante</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Gran Maestro</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Oro</value>
+  </data>
 
 </root>

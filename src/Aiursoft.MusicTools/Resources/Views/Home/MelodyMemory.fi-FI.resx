@@ -90,5 +90,50 @@
   <data name="Start immediately" xml:space="preserve">
     <value>Aloita heti</value>
   </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Laskenta</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Sijoitus</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Vaikeus</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Saavutettu taso</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Vaikeusaste</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Kokonaispisteet</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nuotit</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Vaikeustasojen jakauma</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Hopea</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Kulta</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Aloittelija</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Timantti</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Pronssi</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Keskitaso</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Suurmestari</value>
+  </data>
 
 </root>

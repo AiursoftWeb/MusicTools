@@ -90,5 +90,50 @@
   <data name="Listen to A4 (440Hz)" xml:space="preserve">
     <value>Écoutez le La4 (440 Hz)</value>
   </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulté</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Difficulté</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Niveau atteint</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Calcul</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Score total</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Détail de la difficulté</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Débutant</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Argent</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermédiaire</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Grand Maître</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
 
 </root>

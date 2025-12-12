@@ -90,5 +90,49 @@
   <data name="Start immediately" xml:space="preserve">
     <value>立即开始</value>
   </data>
-
+  <data name="Rookie" xml:space="preserve">
+    <value>菜鸟</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>进阶</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>青铜</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>白银</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>黄金</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>钻石</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>宗师</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>个音符</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>难度系数</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>难度</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>难度详情</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>得分计算</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>总分</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>达到等级</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>段位</value>
+  </data>
 </root>
