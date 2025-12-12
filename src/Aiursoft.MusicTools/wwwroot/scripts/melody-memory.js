@@ -130,9 +130,8 @@ window.playDebugMelody = async function() {
     for (let i = 0; i < buffer.length; i++) {
         const item = buffer[i];
         
-        // Map Index -> Note Name
-        const safeIndex = Math.min(item.noteIndex, notesToPlay.length - 1);
-        const noteName = notesToPlay[safeIndex];
+        // Use note name directly from Tonal generator
+        const noteName = item.name;
 
         // Is it the start of a bar?
         if (item.isNewBar) {
@@ -209,6 +208,10 @@ async function startGame() {
         console.log(`Game Style: ${style} (${rootNote} Major) - Notes: ${validNotesForLevel.join(', ')}`);
     }
 
+    // Initialize Melody Generator with current Key
+    // We enforce Pentatonic to ensure it sounds good, as per the new strategy.
+    melodyGenerator = new MelodyGenerator(currentKeyRoot, "major pentatonic");
+
     sequence = [];
     songBuffer = []; // Reset buffer
     level = 1;
@@ -283,13 +286,10 @@ async function nextLevel() {
     
     // Generate Note Logic
     // Use expert MelodyGenerator to get next note/rhythm
-    const nextMelodyItem = melodyGenerator.getNextNote(); // { noteIndex: 0-7, duration, isBarStart }
+    const nextMelodyItem = melodyGenerator.getNextNote(); 
     
-    // Map index 0-7 to actual Note Name string (from validNotesForLevel)
-    // We assume validNotesForLevel is at least 8 notes (Diatonic Octave)
-    // If Ational/Chromatic, this map might need care, but for now we clamp/map to available notes.
-    const noteIndex = Math.min(nextMelodyItem.noteIndex, validNotesForLevel.length - 1);
-    const noteName = validNotesForLevel[noteIndex];
+    // New Generator returns specific note name (e.g. "C4")
+    const noteName = nextMelodyItem.name;
     
     const sequenceItem = {
         note: noteName,
