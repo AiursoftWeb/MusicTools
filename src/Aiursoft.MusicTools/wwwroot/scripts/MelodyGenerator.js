@@ -1,22 +1,22 @@
-import { Algorithmic, Utility } from "total-serialism";
 import { Scale, Note } from "tonal";
 
-const Algo = Algorithmic;
-const Util = Utility;
-
 /**
- * MelodyGenerator.js (8-Step Grid & Big Leaps)
- * * 核心改革：
- * 1. 【物理降速】将计算网格从 16 改为 8。这意味着最小单位是八分音符 (0.5)。
- * 0.25 (十六分音符) 被彻底物理消除。
- * 2. 【解锁大跳】允许旋律跨越 3-4 个音级 (五度/八度跳跃)，不再只是爬楼梯。
+ * MelodyGenerator.js (Sparkle & Glory Edition)
+ * * 新增特性：
+ * 1. [Sparkle Effect] B段跑动引入"钟"式技巧：旋律音与固定锚点音交替，制造晶莹剔透的感觉。
+ * 2. [Glory Ending] 结尾不再总是下行，增加"昂扬上行"模式 (Do-Mi-Sol-HighDo)，像烟花升空。
+ * 3. [Structure] 保持完美的 AABA + 呼吸感。
  */
 export class MelodyGenerator {
-    constructor(key = "C", scaleType = "major pentatonic") {
+    constructor(key = "C", scaleType = "major") {
         this.noteBuffer = [];
         this.scaleNotes = Scale.get(`${key} ${scaleType}`).notes;
         this.minRange = 0; 
-        this.maxRange = 9; 
+        this.maxRange = 14; 
+        
+        // 定义“钟声”的锚点音索引 (相对于 scaleNotes)
+        // 7 = High C, 4 = Sol, 11 = High Sol
+        this.sparkleAnchors = [7, 4, 11]; 
     }
 
     getNextNote() {
@@ -25,191 +25,206 @@ export class MelodyGenerator {
     }
 
     generateSong() {
-        console.log("🧸 Generating Nursery Rhyme (8-Step Grid)...");
-
-        const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-        const randomChoose = (arr) => arr[Math.floor(Math.random() * arr.length)];
+        console.log("✨ Generating Melody with Sparkle Run & Glory Ending...");
 
         // ==========================================
-        // 1. 节奏骨架 (8-Step Grid)
+        // 1. 节奏库
         // ==========================================
-        // 以前是 16 格 (1格=0.25)。现在是 8 格 (1格=0.5)。
-        // 这意味着整个小节只有 8 个位置可以放音符。
+        const R = {
+            CLASSIC: [1.5, 0.5, 1, 1], 
+            SYNCO:   [1, 0.5, 1, 0.5, 1],
+            GALLOP:  [0.5, 0.5, 1, 0.5, 0.5, 1],
+            STEADY:  [1, 1, 2],
+            // 跑动：纯粹的八分音符，方便做"钟"式特效
+            RUN_BREATH: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1], 
+        };
+
+        // ==========================================
+        // 2. 生成乐句
+        // ==========================================
+
+        // --- Phrase A (起) ---
+        const motifHead = this._randomChoose([R.CLASSIC, R.SYNCO, R.GALLOP]);
+        const rhythmA = [...motifHead, ...motifHead, ...motifHead, ...R.STEADY];
+
+        const phraseA = this._generateSmartPath({
+            rhythm: rhythmA,
+            startPitch: 0, 
+            endPitch: Math.random() > 0.5 ? 4 : 1, 
+            contour: "ARCH",
+            useSparkle: false // A段不需要特效，朴实一点
+        });
+
+        // --- Phrase A' (承) ---
+        const phraseAPrime = JSON.parse(JSON.stringify(phraseA));
+        // 中间用下行解决 (比较稳)
+        this._applyEnding(phraseAPrime, 0, 2, "FALLING"); 
+
+        // --- Phrase B (转 - 高潮) ---
+        const rhythmB = [...R.RUN_BREATH, ...R.RUN_BREATH, ...R.RUN_BREATH, ...R.STEADY];
         
-        // A段: 极简。8格里敲 3-4 下。
-        // 结果通常是：二分音符 + 两个四分音符，非常稳。
-        const hitsA = randomInt(3, 4); 
-        let rhythmPatternA = Algo.euclid(hitsA, 8); // 注意这里是 8
-        rhythmPatternA = this._ensureStart(rhythmPatternA, 8); 
+        // ** 关键特性：是否触发钟声特效？ **
+        // 50% 概率触发类似《钟》或 Flower Dance 的效果
+        const triggerSparkle = Math.random() > 0.3; 
 
-        // B段: 稍微活跃。8格里敲 5-6 下。
-        // 结果通常是：连续的八分音符 (0.5)，但绝对不会有 0.25。
-        const hitsB = randomInt(5, 6);
-        let rhythmPatternB = Algo.euclid(hitsB, 8); // 注意这里是 8
-        rhythmPatternB = this._ensureStart(rhythmPatternB, 8);
-
-        const durationsA = this._euclidToDurations(rhythmPatternA, 8);
-        const durationsB = this._euclidToDurations(rhythmPatternB, 8);
-
-        // ==========================================
-        // 2. 旋律灵魂 (Big Jumps Allowed)
-        // ==========================================
-
-        // A 段
-        const melodyA = this._generateTargetedWalk({
-            steps: durationsA.length, 
-            start: 0, 
-            target: randomChoose([2, 3]), 
-            forceEnd: false
+        const phraseB = this._generateSmartPath({
+            rhythm: rhythmB, 
+            startPitch: 7, // High C
+            endPitch: 4,   // Sol
+            contour: "DOWN",
+            useSparkle: triggerSparkle // 开启特效！
         });
 
-        // A' 段 (回家)
-        const melodyAPrime = this._generateTargetedWalk({
-            steps: durationsA.length,
-            start: 0,
-            target: 0, 
-            forceEnd: true
-        });
-
-        // B 段 (高潮，大跳跃)
-        const melodyB = this._generateTargetedWalk({
-            steps: durationsB.length,
-            start: randomChoose([3, 4]), 
-            target: 3, 
-            min: 2,    
-            tendency: 0.1 
-        });
+        // --- Phrase A'' (合) ---
+        const phraseAFinal = JSON.parse(JSON.stringify(phraseA));
+        
+        // ** 关键特性：结尾是低沉还是高昂？ **
+        const endingType = Math.random() > 0.5 ? "RISING" : "FALLING";
+        this._applyEnding(phraseAFinal, 0, 4, endingType);
 
         // ==========================================
         // 3. 组装
         // ==========================================
-        
-        this._addToBuffer(melodyA, durationsA, true);       
-        this._addToBuffer(melodyAPrime, durationsA, true);  
-        this._addToBuffer(melodyB, durationsB, true);       
-        this._addToBuffer(melodyAPrime, durationsA, true);  
+        this._addToBuffer(phraseA, true);      
+        this._addToBuffer(phraseAPrime, true); 
+        this._addToBuffer(phraseB, true);      
+        this._addToBuffer(phraseAFinal, true); 
+    }
 
-        // 结尾长音
-        this.noteBuffer.push({
-            midi: Note.midi(`${this.scaleNotes[0]}4`),
-            name: `${this.scaleNotes[0]}4`,
-            duration: 4, 
-            isBarStart: true
+    // ==========================================
+    //       ✨ 智能路径 (含钟声特效) ✨
+    // ==========================================
+    _generateSmartPath({ rhythm, startPitch, endPitch, contour, useSparkle }) {
+        let notes = [];
+        const totalNotes = rhythm.length;
+
+        // 如果开启特效，随机选一个锚点音 (比如 High C)
+        // 所有的偶数音都会跳回这个锚点
+        const anchorPitch = this._randomChoose(this.sparkleAnchors); 
+
+        for (let i = 0; i < totalNotes; i++) {
+            const dur = rhythm[i];
+            let nextPitch;
+
+            // --- 特效逻辑：钟声 (Sparkle) ---
+            // 条件：开启特效 + 不是最后一个音 + 是偶数位 + 时值是短音(0.5)
+            // 效果：强制跳回 anchorPitch
+            if (useSparkle && i < totalNotes - 1 && i % 2 !== 0 && dur === 0.5) {
+                nextPitch = anchorPitch;
+            } 
+            else {
+                // --- 正常旋律逻辑 ---
+                if (i === 0) nextPitch = startPitch;
+                else if (i === totalNotes - 1) nextPitch = endPitch;
+                else {
+                    const progress = i / totalNotes;
+                    let base = startPitch + (endPitch - startPitch) * progress;
+                    
+                    if (contour === "ARCH") base += Math.sin(progress * Math.PI) * 3;
+                    if (contour === "DOWN") base += (Math.random() * 2 - 1);
+                    
+                    let drift = Math.floor(Math.random() * 5) - 2; 
+                    nextPitch = Math.round(base + drift);
+                }
+            }
+
+            // 物理限制
+            if (nextPitch < this.minRange) nextPitch = this.minRange + (this.minRange - nextPitch);
+            if (nextPitch > this.maxRange) nextPitch = this.maxRange - (nextPitch - this.maxRange);
+
+            // 防复读 (仅当没开启特效时检查，因为特效本身就是复读)
+            if (!useSparkle && i > 0 && nextPitch === notes[i-1].scaleIndex && dur < 1) {
+                if (nextPitch < this.maxRange) nextPitch += 1; else nextPitch -= 1;
+            }
+
+            // 防绊脚 (仅当没开启特效时检查，特效本身就是大跳)
+            if (!useSparkle && i > 0 && dur === 0.5 && notes[i-1].duration === 0.5) {
+                const prevPitch = notes[i-1].scaleIndex;
+                if (Math.abs(nextPitch - prevPitch) > 2) {
+                    nextPitch = prevPitch + (nextPitch > prevPitch ? 1 : -1);
+                }
+            }
+
+            notes.push({
+                scaleIndex: nextPitch,
+                midi: this._toMidi(nextPitch),
+                name: this._toName(nextPitch),
+                duration: dur
+            });
+        }
+        return notes;
+    }
+
+    /**
+     * 强制修改乐句结尾
+     * @param {String} type "FALLING" (54321) 或 "RISING" (1351)
+     */
+    _applyEnding(phrase, targetPitchIndex, finalDuration, type = "FALLING") {
+        const len = phrase.length;
+        if (len < 3) return;
+
+        // 最后一个音：目标音 (Do)
+        phrase[len-1].scaleIndex = targetPitchIndex;
+        phrase[len-1].midi = this._toMidi(targetPitchIndex);
+        phrase[len-1].name = this._toName(targetPitchIndex);
+        phrase[len-1].duration = finalDuration;
+
+        if (type === "RISING") {
+            // 昂扬结尾：Do -> Mi -> Sol -> High Do!
+            // 倒数第2个：Sol (4)
+            phrase[len-2].scaleIndex = 4;
+            phrase[len-2].midi = this._toMidi(4);
+            phrase[len-2].name = this._toName(4);
+            phrase[len-2].duration = 1;
+
+            // 倒数第3个：Mi (2)
+            phrase[len-3].scaleIndex = 2;
+            phrase[len-3].midi = this._toMidi(2);
+            phrase[len-3].name = this._toName(2);
+            phrase[len-3].duration = 1;
+            
+            // 如果最后一个音是 High Do (7)，我们手动改一下
+            // 因为 targetPitchIndex 传进来通常是 0 (Low Do)
+            // 这里我们强制升八度
+            phrase[len-1].scaleIndex = 7; // High C
+            phrase[len-1].midi = this._toMidi(7);
+            phrase[len-1].name = this._toName(7);
+
+        } else {
+            // 低沉/常规结尾：Mi -> Re -> Do
+            // 倒数第2个：Re (1)
+            phrase[len-2].scaleIndex = 1;
+            phrase[len-2].midi = this._toMidi(1);
+            phrase[len-2].name = this._toName(1);
+            phrase[len-2].duration = 1;
+
+            // 倒数第3个：Mi (2)
+            phrase[len-3].scaleIndex = 2;
+            phrase[len-3].midi = this._toMidi(2);
+            phrase[len-3].name = this._toName(2);
+            phrase[len-3].duration = 1;
+        }
+    }
+
+    _addToBuffer(notes, isBarStart) {
+        notes.forEach((n, i) => {
+            this.noteBuffer.push({ ...n, isBarStart: i === 0 && isBarStart });
         });
     }
 
-    // ==========================================
-    //       ✨ 胆子更大的磁力游走 ✨
-    // ==========================================
-    _generateTargetedWalk({ steps, start, target, min=0, tendency=0, forceEnd=false }) {
-        let indices = [];
-        let current = this._clamp(Number(start)); 
-
-        for (let i = 0; i < steps; i++) {
-            if (forceEnd && i === steps - 1) {
-                indices.push(target);
-                break;
-            }
-            indices.push(current);
-
-            const stepsLeft = steps - 1 - i;
-            if (stepsLeft <= 0) break;
-
-            // --- 关键修改：允许大跳 ---
-            // 0: 原地
-            // 1, -1: 二度 (级进)
-            // 2, -2: 三度 (小跳)
-            // 3, -3: 四/五度 (大跳 - Twinkle Twinkle 开头)
-            // 4, -4: 六/八度 (巨大跳)
-            let possibleSteps = [0, 1, -1, 1, -1, 2, -2, 2, -2, 3, -3, 4, -4]; 
-            let candidates = [];
-
-            for (let step of possibleSteps) {
-                let nextVal = current + step;
-                if (nextVal < Math.max(this.minRange, min) || nextVal > this.maxRange) continue;
-                
-                // 磁力逻辑 (接近目标)
-                const distBefore = Math.abs(target - current);
-                const distAfter = Math.abs(target - nextVal);
-                
-                // 如果只剩最后一步，且距离还远，必须用力跳过去
-                if (stepsLeft <= 1 && distBefore > 2) {
-                     // 必须缩短距离
-                     if (distAfter >= distBefore) continue;
-                }
-                // 如果只剩2步，稍微宽容一点
-                else if (stepsLeft <= 2 && distBefore > 1) {
-                     if (distAfter >= distBefore && Math.random() > 0.3) continue;
-                }
-                
-                candidates.push(nextVal);
-            }
-
-            if (candidates.length === 0) current += (current < target) ? 1 : -1;
-            else current = candidates[Math.floor(Math.random() * candidates.length)];
-        }
-        return indices;
+    _toMidi(index) {
+        let safeIndex = Math.max(0, index); 
+        const noteInfo = this._scaleIndexToNote(safeIndex);
+        return noteInfo.midi;
     }
 
-    // ==========================================
-    //            工具函数 (适配 8步网格)
-    // ==========================================
-
-    _euclidToDurations(pattern, totalSteps) {
-        let result = [];
-        let count = 0;
-        for (let i = 1; i < pattern.length; i++) {
-            count++;
-            if (pattern[i] === 1) {
-                result.push(count);
-                count = 0;
-            }
-        }
-        result.push(count + 1);
-        
-        // 修正总长度
-        const total = result.reduce((a,b)=>a+b, 0);
-        if (total !== totalSteps) result[result.length-1] += (totalSteps-total);
-        
-        return result;
-    }
-
-    _ensureStart(pattern, size) {
-        let p = [...pattern];
-        // 保护：防止空数组
-        if (!p.includes(1)) {
-            let empty = new Array(size).fill(0);
-            empty[0] = 1;
-            return empty;
-        }
-        while (p[0] === 0) p = Util.rotate(p, -1);
-        return p;
-    }
-
-    _addToBuffer(noteIndices, durations, isBarStart) {
-        const len = Math.min(noteIndices.length, durations.length);
-        for (let i = 0; i < len; i++) {
-            const idx = noteIndices[i];
-            
-            // --- 关键修改：乘数变化 ---
-            // 以前 1 step = 0.25 (16分音符)
-            // 现在 1 step = 0.5 (8分音符)
-            let dur = durations[i] * 0.5; 
-            
-            const noteData = this._scaleIndexToNote(idx);
-            if (!isNaN(noteData.midi)) {
-                this.noteBuffer.push({
-                    midi: noteData.midi,
-                    name: noteData.name,
-                    duration: dur,
-                    isBarStart: (i === 0) && isBarStart
-                });
-            }
-        }
+    _toName(index) {
+        let safeIndex = Math.max(0, index);
+        const noteInfo = this._scaleIndexToNote(safeIndex);
+        return noteInfo.name;
     }
 
     _scaleIndexToNote(index) {
-        if (isNaN(index)) return { name: "C4", midi: 60 };
         const scaleLen = this.scaleNotes.length;
         const normalizedIndex = ((index % scaleLen) + scaleLen) % scaleLen;
         const octaveShift = Math.floor(index / scaleLen);
@@ -217,6 +232,8 @@ export class MelodyGenerator {
         const octave = 4 + octaveShift;
         return { name: noteName + octave, midi: Note.midi(noteName + octave) };
     }
-
-    _clamp(val) { return Math.max(this.minRange, Math.min(this.maxRange, val)); }
+    
+    _randomChoose(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
 }
