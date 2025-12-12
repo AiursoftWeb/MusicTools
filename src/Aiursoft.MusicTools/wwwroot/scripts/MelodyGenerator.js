@@ -1,18 +1,19 @@
 import { Scale, Note } from "tonal";
 
 /**
- * MelodyGenerator.js (Time-Synced Sparkle Edition)
+ * MelodyGenerator.js (Final Perfected Version)
  * * 修复核心：
- * 1. [Fix Sparkle Sync] 抛弃 index 奇偶判断，改用 currentBeatTime (时间轴) 判断。
- * 确保钟声永远落在反拍 (x.5) 上，无论中间有没有长音干扰。
- * 2. [Polished Rhythm] 保持了丰富的节奏型和呼吸感。
+ * 1. [Rhythm Integrity] 节奏模版严格遵守 4/4 拍数学 (Sum = 4)。
+ * 2. [Separation of Concerns] _applyEnding 只修改音高，绝不篡改时值，彻底根治"缺拍/多拍"的怪异感。
+ * 3. [Sparkle Sync] 钟声特效基于绝对时间轴，完美卡在反拍。
  */
 export class MelodyGenerator {
     constructor(key = "C", scaleType = "major") {
         this.noteBuffer = [];
         this.scaleNotes = Scale.get(`${key} ${scaleType}`).notes;
+        // 锁定舒适音域 C4 - G5
         this.minRange = 0; 
-        this.maxRange = 14; 
+        this.maxRange = 11; 
         
         // 钟声锚点：High C (7), Sol (4), High Sol (11)
         this.sparkleAnchors = [7, 4, 11]; 
@@ -24,39 +25,56 @@ export class MelodyGenerator {
     }
 
     generateSong() {
-        console.log("💎 Generating Time-Synced Melody...");
+        console.log("🎹 Generating Structurally Sound Melody...");
 
+        // ==========================================
+        // 1. 严格的 4拍 节奏模版
+        // ==========================================
+        // 所有数组的和必须严格等于 4.0
         const R = {
-            CLASSIC: [1.5, 0.5, 1, 1], 
-            SYNCO:   [1, 0.5, 1, 0.5, 1],
-            GALLOP:  [0.5, 0.5, 1, 0.5, 0.5, 1],
-            STEADY:  [1, 1, 2],
-            // 跑动带呼吸：哒哒哒哒 哒哒 (空)
-            RUN_BREATH: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1], 
+            // A. 常用模版
+            CLASSIC: [1.5, 0.5, 1, 1],         // 4拍
+            SYNCO:   [1, 0.5, 1, 0.5, 1],      // 4拍
+            GALLOP:  [0.5, 0.5, 1, 0.5, 0.5, 1], // 4拍
+            
+            // B. 跑动模版
+            RUN:     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1], // 4拍
+
+            // C. 结尾模版 (Cadence)
+            // 关键修正：这里定义好节奏，后面只填音
+            // [1, 1, 2] -> 哒 哒 哐—— (正好4拍，适合唱 3-2-1)
+            END_STD: [1, 1, 2], 
         };
 
+        // ==========================================
+        // 2. 生成乐句 (Phrases)
+        // ==========================================
+
         // --- Phrase A (起) ---
+        // [变] + [变] + [变] + [稳]
         const motifHead = this._randomChoose([R.CLASSIC, R.SYNCO, R.GALLOP]);
-        const rhythmA = [...motifHead, ...motifHead, ...motifHead, ...R.STEADY];
+        const rhythmA = [...motifHead, ...motifHead, ...motifHead, ...R.END_STD];
 
         const phraseA = this._generateSmartPath({
             rhythm: rhythmA,
             startPitch: 0, 
-            endPitch: Math.random() > 0.5 ? 4 : 1, 
+            endPitch: Math.random() > 0.5 ? 4 : 1, // 停在 Sol 或 Re
             contour: "ARCH",
-            useSparkle: false 
+            useSparkle: false
         });
 
         // --- Phrase A' (承) ---
+        // 克隆 A，只改最后 3 个音的音高 (因为 END_STD 有 3 个音)
         const phraseAPrime = JSON.parse(JSON.stringify(phraseA));
-        this._applyEnding(phraseAPrime, 0, 2, "FALLING"); 
+        // 中间用下行解决 (3-2-1)
+        this._applyEnding(phraseAPrime, 0, "FALLING"); 
 
-        // --- Phrase B (转 - 高潮) ---
-        // 确保 B 段节奏适合发挥钟声特效 (多用 0.5)
-        const rhythmB = [...R.RUN_BREATH, ...R.RUN_BREATH, ...R.RUN_BREATH, ...R.STEADY];
+        // --- Phrase B (转) ---
+        // [跑] + [跑] + [跑] + [稳]
+        const rhythmB = [...R.RUN, ...R.RUN, ...R.RUN, ...R.END_STD];
         
         // 50% 概率开启钟声
-        const triggerSparkle = Math.random() > 0.0; // Debug: 设为 >0.0 方便你测试，实际建议 >0.3
+        const triggerSparkle = Math.random() > 0.5;
 
         const phraseB = this._generateSmartPath({
             rhythm: rhythmB, 
@@ -68,10 +86,14 @@ export class MelodyGenerator {
 
         // --- Phrase A'' (合) ---
         const phraseAFinal = JSON.parse(JSON.stringify(phraseA));
+        
+        // 50% 概率昂扬结尾 (1-3-5-High1) 或 低沉结尾 (3-2-1)
         const endingType = Math.random() > 0.5 ? "RISING" : "FALLING";
-        this._applyEnding(phraseAFinal, 0, 4, endingType);
+        this._applyEnding(phraseAFinal, 0, endingType);
 
-        // 组装
+        // ==========================================
+        // 3. 组装
+        // ==========================================
         this._addToBuffer(phraseA, true);      
         this._addToBuffer(phraseAPrime, true); 
         this._addToBuffer(phraseB, true);      
@@ -79,32 +101,29 @@ export class MelodyGenerator {
     }
 
     // ==========================================
-    //       ✨ 智能路径 (时间轴修复版) ✨
+    //       ✨ 智能路径生成 (核心逻辑) ✨
     // ==========================================
     _generateSmartPath({ rhythm, startPitch, endPitch, contour, useSparkle }) {
         let notes = [];
         const totalNotes = rhythm.length;
         
-        // **关键修复：引入时间轴追踪**
+        // 时间轴追踪器 (用于精准定位反拍)
         let currentBeatTime = 0; 
-
-        // 随机选一个高音锚点
         const anchorPitch = this._randomChoose(this.sparkleAnchors); 
 
         for (let i = 0; i < totalNotes; i++) {
             const dur = rhythm[i];
             let nextPitch;
             
-            // 判断当前是不是"反拍" (0.5, 1.5, 2.5...)
-            // 只有在反拍，且时值为短音时，才允许变成钟声
+            // 判断反拍 (x.5)
             const isOffBeat = (currentBeatTime % 1 === 0.5);
 
-            // --- 钟声逻辑 ---
+            // --- 1. 钟声特效 ---
             if (useSparkle && isOffBeat && dur === 0.5 && i < totalNotes - 1) {
                 nextPitch = anchorPitch;
             } 
             else {
-                // --- 正常旋律逻辑 ---
+                // --- 2. 正常旋律 ---
                 if (i === 0) nextPitch = startPitch;
                 else if (i === totalNotes - 1) nextPitch = endPitch;
                 else {
@@ -119,19 +138,19 @@ export class MelodyGenerator {
                 }
             }
 
+            // --- 3. 修正与清洗 ---
             // 物理限制
             if (nextPitch < this.minRange) nextPitch = this.minRange + (this.minRange - nextPitch);
             if (nextPitch > this.maxRange) nextPitch = this.maxRange - (nextPitch - this.maxRange);
 
-            // 防复读 (仅针对非钟声的音符)
-            // 如果上一个音不是钟声(或者即使是)，且当前算出来的音重复了，且是短音 -> 移位
-            // 注意：如果当前已经是 Sparkle (nextPitch === anchorPitch)，则允许重复(虽然 Sparkle 通常很高不太会和旋律重叠)
             const isSparkleNote = (nextPitch === anchorPitch && isOffBeat);
+            
+            // 防复读 (烫手山芋)
             if (!isSparkleNote && i > 0 && nextPitch === notes[i-1].scaleIndex && dur < 1) {
                 if (nextPitch < this.maxRange) nextPitch += 1; else nextPitch -= 1;
             }
 
-            // 防绊脚 (跑动时保持级进)
+            // 防绊脚 (跑动级进)
             if (!isSparkleNote && i > 0 && dur === 0.5 && notes[i-1].duration === 0.5) {
                 const prevPitch = notes[i-1].scaleIndex;
                 if (Math.abs(nextPitch - prevPitch) > 2) {
@@ -146,28 +165,55 @@ export class MelodyGenerator {
                 duration: dur
             });
 
-            // **关键：累加时间**
             currentBeatTime += dur;
         }
         return notes;
     }
 
-    _applyEnding(phrase, targetPitchIndex, finalDuration, type = "FALLING") {
+    /**
+     * 强制修改乐句最后几个音的"音高"，但不修改"时值"
+     * 依赖于 R.END_STD 是 [1, 1, 2] 这种 3 音结构的模版
+     */
+    _applyEnding(phrase, targetPitchIndex, type = "FALLING") {
         const len = phrase.length;
         if (len < 3) return;
 
-        phrase[len-1].scaleIndex = targetPitchIndex;
-        phrase[len-1].midi = this._toMidi(targetPitchIndex);
-        phrase[len-1].name = this._toName(targetPitchIndex);
-        phrase[len-1].duration = finalDuration;
+        // 注意：这里我们只改 pitch, 不改 duration！
+        // 因为 duration 已经在 R.END_STD 里定义完美了 (1+1+2=4)
 
         if (type === "RISING") {
-            phrase[len-2].scaleIndex = 4; phrase[len-2].midi = this._toMidi(4); phrase[len-2].name = this._toName(4); phrase[len-2].duration = 1;
-            phrase[len-3].scaleIndex = 2; phrase[len-3].midi = this._toMidi(2); phrase[len-3].name = this._toName(2); phrase[len-3].duration = 1;
-            phrase[len-1].scaleIndex = 7; phrase[len-1].midi = this._toMidi(7); phrase[len-1].name = this._toName(7);
+            // 昂扬: Do(1) -> Mi(1) -> Sol(2) ... 哎呀不对，要更有力一点
+            // 改为: Mi(1) -> Sol(1) -> High Do(2)
+            
+            // 倒数第3个
+            phrase[len-3].scaleIndex = 2; // Mi
+            phrase[len-3].midi = this._toMidi(2);
+            phrase[len-3].name = this._toName(2);
+            
+            // 倒数第2个
+            phrase[len-2].scaleIndex = 4; // Sol
+            phrase[len-2].midi = this._toMidi(4);
+            phrase[len-2].name = this._toName(4);
+
+            // 倒数第1个 (目标 High Do)
+            phrase[len-1].scaleIndex = 7; // High C
+            phrase[len-1].midi = this._toMidi(7);
+            phrase[len-1].name = this._toName(7);
+            
         } else {
-            phrase[len-2].scaleIndex = 1; phrase[len-2].midi = this._toMidi(1); phrase[len-2].name = this._toName(1); phrase[len-2].duration = 1;
-            phrase[len-3].scaleIndex = 2; phrase[len-3].midi = this._toMidi(2); phrase[len-3].name = this._toName(2); phrase[len-3].duration = 1;
+            // 低沉: Mi(1) -> Re(1) -> Do(2)
+            
+            phrase[len-3].scaleIndex = 2; // Mi
+            phrase[len-3].midi = this._toMidi(2);
+            phrase[len-3].name = this._toName(2);
+            
+            phrase[len-2].scaleIndex = 1; // Re
+            phrase[len-2].midi = this._toMidi(1);
+            phrase[len-2].name = this._toName(1);
+
+            phrase[len-1].scaleIndex = targetPitchIndex; // Do
+            phrase[len-1].midi = this._toMidi(targetPitchIndex);
+            phrase[len-1].name = this._toName(targetPitchIndex);
         }
     }
 
