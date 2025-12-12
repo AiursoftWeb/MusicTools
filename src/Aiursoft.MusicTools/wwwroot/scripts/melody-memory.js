@@ -29,7 +29,7 @@ let timerId = null;
 let gameDifficulty = 'normal';
 
 const OCTAVE_START = 4;
-const OCTAVE_COUNT = 2; // 2 Octaves requested
+const OCTAVE_COUNT = 3; // 3 Octaves requested (Expanded Keyboard)
 let melodyGenerator = new MelodyGenerator();
 let songBuffer = [];
 
@@ -169,14 +169,14 @@ async function startGame() {
         // Atonal: Use Chromatic Scale C4-C5 (1 Octave + 1 note)
         validNotesForLevel = [];
         const startIdx = ALL_NOTES_NAMES.indexOf("C");
-        for (let i = 0; i <= 12; i++) {
+        for (let i = 0; i <= 24; i++) { // Two Octaves Chromatic
             const noteAbsIndex = startIdx + i;
             const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
             const octaveShift = Math.floor(noteAbsIndex / 12);
             validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
         }
         currentKeyRoot = "C";
-        console.log("Game Style: Atonal (Chromatic C4-C5)");
+        console.log("Game Style: Atonal (Chromatic 2 Octaves)");
     } else {
         // Tonal
         let rootNote = "C";
@@ -191,12 +191,12 @@ async function startGame() {
         
         currentKeyRoot = rootNote;
         
-        // Generate EXACTLY 1 Octave of Valid Notes (e.g. G4 to G5)
+        // Generate EXACTLY 2 Octaves of Valid Notes
         validNotesForLevel = [];
         
         const rootIndex = ALL_NOTES_NAMES.indexOf(rootNote);
-        // Major Scale Intervals: 0, 2, 4, 5, 7, 9, 11, 12 (Octave)
-        const majorSteps = [0, 2, 4, 5, 7, 9, 11, 12];
+        // Major Scale Steps extended to 2 octaves
+        const majorSteps = [0, 2, 4, 5, 7, 9, 11, 12, 14, 16, 17, 19, 21, 23, 24];
         
         for (let step of majorSteps) {
             const noteAbsIndex = rootIndex + step;
@@ -209,8 +209,8 @@ async function startGame() {
     }
 
     // Initialize Melody Generator with current Key
-    // We enforce Pentatonic to ensure it sounds good, as per the new strategy.
-    melodyGenerator = new MelodyGenerator(currentKeyRoot, "major pentatonic");
+    // Use "major" scale (not pentatonic) to satisfy "GABCDE#FG" request
+    melodyGenerator = new MelodyGenerator(currentKeyRoot, "major");
 
     sequence = [];
     songBuffer = []; // Reset buffer

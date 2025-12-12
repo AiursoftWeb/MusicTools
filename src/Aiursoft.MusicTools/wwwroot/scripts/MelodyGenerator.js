@@ -10,10 +10,36 @@ import { Scale, Note } from "tonal";
 export class MelodyGenerator {
     constructor(key = "C", scaleType = "major") {
         this.noteBuffer = [];
-        this.scaleNotes = Scale.get(`${key} ${scaleType}`).notes;
-        // 锁定舒适音域 C4 - G5
+        const rawNotes = Scale.get(`${key} ${scaleType}`).notes;
+
+        // Pre-calculate correct octaves for the scale to ensure it ascends
+        // e.g. G Major: G, A, B, C, D, E, F# -> G4, A4, B4, C5, D5, E5, F#5
+        this.scaleObjects = [];
+        let currentOctave = 4;
+        let previousMidi = -1;
+
+        rawNotes.forEach(noteName => {
+            // Tentatively try current octave
+            let testMidi = Note.midi(`${noteName}${currentOctave}`);
+            
+            // If we wrapped around (e.g. B4 -> C4), bump octave
+            // Logic: if new note is lower than previous, it must be in next octave
+            // Exception: The first note is just reference
+            if (previousMidi !== -1 && testMidi < previousMidi) {
+                currentOctave++;
+                testMidi = Note.midi(`${noteName}${currentOctave}`);
+            }
+            
+            this.scaleObjects.push({
+                name: noteName,
+                baseOctave: currentOctave
+            });
+            previousMidi = testMidi;
+        });
+
+        // 锁定舒适音域 C4 - G5 (extended dynamically based on scale)
         this.minRange = 0; 
-        this.maxRange = 11; 
+        this.maxRange = 14; // Approx 2 octaves
         
         // 钟声锚点：High C (7), Sol (4), High Sol (11)
         this.sparkleAnchors = [7, 4, 11]; 
@@ -236,12 +262,15 @@ export class MelodyGenerator {
     }
 
     _scaleIndexToNote(index) {
-        const scaleLen = this.scaleNotes.length;
+        const scaleLen = this.scaleObjects.length;
         const normalizedIndex = ((index % scaleLen) + scaleLen) % scaleLen;
         const octaveShift = Math.floor(index / scaleLen);
-        const noteName = this.scaleNotes[normalizedIndex];
-        const octave = 4 + octaveShift;
-        return { name: noteName + octave, midi: Note.midi(noteName + octave) };
+        
+        const noteObj = this.scaleObjects[normalizedIndex];
+        const finalOctave = noteObj.baseOctave + octaveShift;
+        const fullNoteName = noteObj.name + finalOctave;
+        
+        return { name: fullNoteName, midi: Note.midi(fullNoteName) };
     }
     
     _randomChoose(arr) {
