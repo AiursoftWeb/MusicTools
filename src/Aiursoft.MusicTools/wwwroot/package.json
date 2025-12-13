@@ -16,7 +16,14 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "vite": "^7.2.7"
+    "@audio-samples/piano-mp3-pedals": "^1.0.5",
+    "@audio-samples/piano-mp3-velocity1": "^1.0.5",
+    "@audio-samples/piano-mp3-velocity12": "^1.0.5",
+    "@audio-samples/piano-mp3-velocity16": "^1.0.5",
+    "@audio-samples/piano-mp3-velocity4": "^1.0.5",
+    "@audio-samples/piano-mp3-velocity8": "^1.0.5",
+    "vite": "^7.2.7",
+    "vite-plugin-static-copy": "^3.1.4"
   },
   "scripts": {
     "build": "vite build",
