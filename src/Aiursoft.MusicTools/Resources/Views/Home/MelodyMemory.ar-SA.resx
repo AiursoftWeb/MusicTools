@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>الصعوبة الحالية</value>
   </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>وضع التدريب</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>تمكين التلميحات المرئية</value>
+  </data>
 
 </root>

@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>Поточна складність</value>
   </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Режим тренування</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Увімкнено візуальні підказки</value>
+  </data>
 
 </root>

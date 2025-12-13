@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>현재 난이도</value>
   </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>연습 모드</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>시각적 힌트 활성화됨</value>
+  </data>
 
 </root>

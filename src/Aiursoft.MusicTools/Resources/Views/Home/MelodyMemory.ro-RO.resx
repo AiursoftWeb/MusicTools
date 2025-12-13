@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>Dificultate curentă</value>
   </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Indicații vizuale activate</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Modul de Practică</value>
+  </data>
 
 </root>

@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>Nykyinen vaikeustaso</value>
   </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Visuaaliset vihjeet käytössä</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Harjoittelutila</value>
+  </data>
 
 </root>

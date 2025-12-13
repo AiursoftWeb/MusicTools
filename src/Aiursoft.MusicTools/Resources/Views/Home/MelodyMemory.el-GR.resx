@@ -168,5 +168,11 @@
   <data name="Current Difficulty" xml:space="preserve">
     <value>Τρέχουσα Δυσκολία</value>
   </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Ενεργοποιημένες οπτικές υποδείξεις</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Λειτουργία Εξάσκησης</value>
+  </data>
 
 </root>
