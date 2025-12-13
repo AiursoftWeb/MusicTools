@@ -143,6 +143,10 @@ function getCalculatedDifficultyScore() {
     const styleVal =
         document.querySelector('input[name="musicStyle"]:checked')?.value ||
         "c-major";
+
+    // If practice mode is selected, difficulty is always 0
+    if (styleVal === "practice") return 0;
+
     const previewVal =
         document.querySelector('input[name="gamePreview"]:checked')?.value ||
         "scale";
