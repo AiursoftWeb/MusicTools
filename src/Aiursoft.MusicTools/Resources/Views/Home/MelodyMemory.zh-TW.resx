@@ -210,5 +210,8 @@
   <data name="Critical Health" xml:space="preserve">
     <value>生命危急</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>無分數</value>
+  </data>
 
 </root>

@@ -210,5 +210,8 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 toner / nivå</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Inget poäng</value>
+  </data>
 
 </root>

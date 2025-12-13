@@ -210,5 +210,8 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 نوتات / مستوى</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>لا يوجد نقاط</value>
+  </data>
 
 </root>

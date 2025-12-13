@@ -210,5 +210,8 @@
   <data name="Critical Health" xml:space="preserve">
     <value>Critical Health</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>No Score</value>
+  </data>
 
 </root>

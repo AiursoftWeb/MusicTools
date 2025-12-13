@@ -210,5 +210,8 @@
   <data name="Critical Health" xml:space="preserve">
     <value>危機的体力</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>スコアなし</value>
+  </data>
 
 </root>

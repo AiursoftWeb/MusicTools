@@ -210,5 +210,8 @@
   <data name="Difficulty Rating" xml:space="preserve">
     <value>Tingkat Kesulitan</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Tidak Ada Skor</value>
+  </data>
 
 </root>

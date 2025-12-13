@@ -210,5 +210,8 @@
   <data name="Final Score" xml:space="preserve">
     <value>Końcowy Wynik</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Brak punktacji</value>
+  </data>
 
 </root>

@@ -210,5 +210,8 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 Note / Liv</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Nessun Punteggio</value>
+  </data>
 
 </root>

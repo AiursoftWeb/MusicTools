@@ -210,5 +210,8 @@
   <data name="Final Score" xml:space="preserve">
     <value>अंतिम स्कोर</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>कोई स्कोर नहीं</value>
+  </data>
 
 </root>

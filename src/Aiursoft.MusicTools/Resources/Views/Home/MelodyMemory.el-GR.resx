@@ -210,5 +210,8 @@
   <data name="Final Score" xml:space="preserve">
     <value>Τελική Βαθμολογία</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Χωρίς Βαθμολογία</value>
+  </data>
 
 </root>

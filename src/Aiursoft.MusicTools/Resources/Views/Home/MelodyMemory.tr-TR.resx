@@ -210,5 +210,8 @@
   <data name="Final Score" xml:space="preserve">
     <value>Son Puan</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Puan Yok</value>
+  </data>
 
 </root>

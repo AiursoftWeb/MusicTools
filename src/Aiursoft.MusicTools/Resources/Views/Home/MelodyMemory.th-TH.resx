@@ -210,5 +210,8 @@
   <data name="Difficulty Rating" xml:space="preserve">
     <value>ระดับความยาก</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>ไม่มีคะแนน</value>
+  </data>
 
 </root>

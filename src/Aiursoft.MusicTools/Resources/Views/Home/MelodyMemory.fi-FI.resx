@@ -210,5 +210,8 @@
   <data name="Hard" xml:space="preserve">
     <value>Vaikea</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Ei pisteytystä</value>
+  </data>
 
 </root>

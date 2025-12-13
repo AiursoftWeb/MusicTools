@@ -210,5 +210,8 @@
   <data name="Critical Health" xml:space="preserve">
     <value>Sức Khỏe Nguy Kịch</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Không tính điểm</value>
+  </data>
 
 </root>

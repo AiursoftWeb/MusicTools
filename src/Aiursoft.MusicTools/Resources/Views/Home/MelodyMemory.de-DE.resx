@@ -210,5 +210,8 @@
   <data name="Final Score" xml:space="preserve">
     <value>Endpunktzahl</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Keine Punktzahl</value>
+  </data>
 
 </root>

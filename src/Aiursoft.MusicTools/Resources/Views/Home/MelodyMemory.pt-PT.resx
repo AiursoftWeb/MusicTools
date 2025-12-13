@@ -210,5 +210,8 @@
   <data name="Difficulty Rating" xml:space="preserve">
     <value>Classificação de Dificuldade</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Sem Pontuação</value>
+  </data>
 
 </root>

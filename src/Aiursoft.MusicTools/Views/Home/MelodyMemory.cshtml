@@ -1,8 +1,3 @@
-@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer Localizer
-@{
-    ViewData["Title"] = Localizer["Melody Memory"];
-}
 
 <!-- Game Container -->
 <div class="container py-4">
@@ -14,7 +9,7 @@
                 <div class="card-body p-4 p-md-5 d-flex flex-column align-items-center justify-content-center text-center">
                     <!-- (Content Unchanged) -->
                     <div class="mb-5">
-                        <div class="display-1 text-warning mb-2">⚡</div>
+                        <div class="display-1 text-warning mb-2">🎹</div>
                         <h1 class="display-5 fw-bold mb-3">@Localizer["Melody Memory"]</h1>
                         <p class="text-secondary lead">@Localizer["Listen to the melody, memorize it, and replay it on the piano."]</p>
                     </div>
@@ -39,7 +34,7 @@
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-practice" value="practice">
-                                        <label class="form-check-label" for="style-practice">@Localizer["Practice"] <span class="badge bg-success opacity-50 ms-1">@Localizer["No Fail"]</span></label>
+                                        <label class="form-check-label" for="style-practice">@Localizer["Practice"] <span class="badge bg-success opacity-50 ms-1">@Localizer["No Score"]</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -201,77 +196,80 @@
     <span data-key="grandmaster">@Localizer["Grandmaster"]</span>
 </div>
 
+@* ReSharper disable once Razor.SectionNotResolved *@
+
 @section scripts {
-                                        <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
+                                                                            <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
 }
+@* ReSharper disable once Razor.SectionNotResolved *@
 
 @section styles {
-                                        <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
-                                        <style>
-                                            .hover-scale { transition: transform 0.2s; }
-                                            .hover-scale:hover { transform: scale(1.02); }
+                                                                            <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+                                                                            <style>
+                                                                                .hover-scale { transition: transform 0.2s; }
+                                                                                .hover-scale:hover { transform: scale(1.02); }
 
-                                            .heart { font-size: 1.5rem; color: #ddd; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
-                                            .heart.active { color: #dc3545; filter: drop-shadow(0 4px 6px rgba(220, 53, 69, 0.2)); }
-                                            .heart.lost { color: #ddd; transform: scale(0.6); opacity: 0.5; }
+                                                                                .heart { font-size: 1.5rem; color: #ddd; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+                                                                                .heart.active { color: #dc3545; filter: drop-shadow(0 4px 6px rgba(220, 53, 69, 0.2)); }
+                                                                                .heart.lost { color: #ddd; transform: scale(0.6); opacity: 0.5; }
 
-                                            .progress-dot { width: 10px; height: 10px; background-color: #e9ecef; border-radius: 50%; transition: all 0.2s; }
-                                            .progress-dot.filled { background-color: #0d6efd; transform: scale(1.2); }
-                                            .progress-dot.active { background-color: #0dcaf0; box-shadow: 0 0 0 2px rgba(13, 202, 240, 0.3); }
+                                                                                .progress-dot { width: 10px; height: 10px; background-color: #e9ecef; border-radius: 50%; transition: all 0.2s; }
+                                                                                .progress-dot.filled { background-color: #0d6efd; transform: scale(1.2); }
+                                                                                .progress-dot.active { background-color: #0dcaf0; box-shadow: 0 0 0 2px rgba(13, 202, 240, 0.3); }
 
-                                            #piano-container.unclickable { pointer-events: none; opacity: 0.6; filter: grayscale(.2); }
+                                                                                #piano-container.unclickable { pointer-events: none; opacity: 0.6; filter: grayscale(.2); }
 
-                                            /* Timer Animation Logic: Standard simple countdown 100% -> 0% */
-                        .timer-container { opacity: 0; }
-                        /* Removed .active transition, now controlled by animation */
+                                                                                /* Timer Animation Logic: Standard simple countdown 100% -> 0% */
+                                                            .timer-container { opacity: 0; }
+                                                            /* Removed .active transition, now controlled by animation */
 
-                        .timer-bar { width: 100%; transform-origin: left; }
+                                                            .timer-bar { width: 100%; transform-origin: left; }
 
-                        /*
-                           Logic:
-                           1. Container: Hidden (Opacity 0) until 30% time elapsed. Then fades in.
-                           2. Bar: Shrinks from 100% to 0% continuously.
-                        */
-                        @@keyframes timer-container-fade {
-                            0% { opacity: 0; }
-                            29% { opacity: 0; }
-                            33% { opacity: 1; }
-                            100% { opacity: 1; }
-                        }
+                                                            /*
+                                                               Logic:
+                                                               1. Container: Hidden (Opacity 0) until 30% time elapsed. Then fades in.
+                                                               2. Bar: Shrinks from 100% to 0% continuously.
+                                                            */
+                                                            @@keyframes timer-container-fade {
+                                                                0% { opacity: 0; }
+                                                                29% { opacity: 0; }
+                                                                33% { opacity: 1; }
+                                                                100% { opacity: 1; }
+                                                            }
 
-                        @@keyframes timer-bar-shrink {
-                            from { width: 100%; }
-                            to { width: 0%; }
-                        }
+                                                            @@keyframes timer-bar-shrink {
+                                                                from { width: 100%; }
+                                                                to { width: 0%; }
+                                                            }
 
-                                            /* Rank Pop */
-                                            .rank-emoji { font-size: 3rem; animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-                                            @@keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+                                                                                /* Rank Pop */
+                                                                                .rank-emoji { font-size: 3rem; animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+                                                                                @@keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
 
-                                            /* NEW: Damage Effect on Piano Container - Using INSET to avoid overflow clipping */
-                                        /* NEW: Damage Effect on PIANO (not container) */
-                                        /* Target immediate child .piano inside container */
-                                        #piano-container .piano.damage-effect {
-                                            animation: pulse-red-shadow 0.6s ease-out;
-                                        }
-                                        @@keyframes pulse-red-shadow {
-                                            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
-                                            20% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.8); }
-                                            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
-                                        }
+                                                                                /* NEW: Damage Effect on Piano Container - Using INSET to avoid overflow clipping */
+                                                                            /* NEW: Damage Effect on PIANO (not container) */
+                                                                            /* Target immediate child .piano inside container */
+                                                                            #piano-container .piano.damage-effect {
+                                                                                animation: pulse-red-shadow 0.6s ease-out;
+                                                                            }
+                                                                            @@keyframes pulse-red-shadow {
+                                                                                0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+                                                                                20% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.8); }
+                                                                                100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+                                                                            }
 
-                                        /* Critical State (Last Stand) - Apply to PIANO */
-                                        #game-board.critical .last-stand-indicator { opacity: 1 !important; }
-                                        #game-board.critical #piano-container .piano {
-                                            /* Constant low pulsing glow for critical state */
-                                            box-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
-                                            animation: critical-pulse 2s infinite;
-                                        }
-                                        @@keyframes critical-pulse {
-                                            0% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
-                                            50% { box-shadow: 0 0 25px 5px rgba(220, 53, 69, 0.8); }
-                                            100% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
-                                        }
+                                                                            /* Critical State (Last Stand) - Apply to PIANO */
+                                                                            #game-board.critical .last-stand-indicator { opacity: 1 !important; }
+                                                                            #game-board.critical #piano-container .piano {
+                                                                                /* Constant low pulsing glow for critical state */
+                                                                                box-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
+                                                                                animation: critical-pulse 2s infinite;
+                                                                            }
+                                                                            @@keyframes critical-pulse {
+                                                                                0% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
+                                                                                50% { box-shadow: 0 0 25px 5px rgba(220, 53, 69, 0.8); }
+                                                                                100% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
+                                                                            }
 
-                                        </style>
+                                                                            </style>
 }

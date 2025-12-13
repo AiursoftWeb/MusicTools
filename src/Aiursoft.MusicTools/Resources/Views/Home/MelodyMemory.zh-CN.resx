@@ -210,5 +210,8 @@
   <data name="+4 Notes / Lvl" xml:space="preserve">
     <value>每级 +4 个音符</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>不计分</value>
+  </data>
 
 </root>

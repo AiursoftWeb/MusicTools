@@ -210,5 +210,8 @@
   <data name="Critical Health" xml:space="preserve">
     <value>Критическое здоровье</value>
   </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Без очков</value>
+  </data>
 
 </root>
