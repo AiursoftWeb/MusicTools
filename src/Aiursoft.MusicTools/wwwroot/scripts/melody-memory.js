@@ -669,6 +669,9 @@ function captureGameConfig(styleRad, previewRad, progressionRad) {
     gameConfig.items = [];
     let totalDiff = 0;
 
+    // Check if Practice Mode is selected
+    const isPractice = styleRad && styleRad.value === "practice";
+
     // 1. Music Style
     if (styleRad) {
         const val = styleRad.value;
@@ -684,7 +687,11 @@ function captureGameConfig(styleRad, previewRad, progressionRad) {
     // 2. Preview Option
     if (previewRad) {
         const val = previewRad.value;
-        const score = DIFFICULTY_VALUES[val] || 0;
+        let score = DIFFICULTY_VALUES[val] || 0;
+
+        // If Practice Mode, force component score to 0 for display
+        if (isPractice) score = 0;
+
         const labelText =
             document.querySelector(`label[for="${previewRad.id}"] span.fw-bold`)
                 ?.innerText || val;
@@ -698,7 +705,11 @@ function captureGameConfig(styleRad, previewRad, progressionRad) {
     // 3. Progression Option
     if (progressionRad) {
         const val = progressionRad.value;
-        const score = DIFFICULTY_VALUES[val] || 0;
+        let score = DIFFICULTY_VALUES[val] || 0;
+
+        // If Practice Mode, force component score to 0 for display
+        if (isPractice) score = 0;
+
         const labelText =
             document.querySelector(
                 `label[for="${progressionRad.id}"] span.fw-bold`
