@@ -1,7 +1,7 @@
 <div class="container-fluid p-0" style="height: calc(100vh - 60px);">
     <!-- Game Container formatted for full usage -->
     <div id="game-board" class="position-relative overflow-hidden w-100 h-100 d-flex flex-column bg-body align-items-center">
-        
+
         <!-- Timer Bar (Absolute Top) -->
         <div class="timer-container" id="timer-container">
             <div class="timer-bar" id="timer-bar"></div>
@@ -10,20 +10,20 @@
         <div class="d-flex flex-column align-items-center pt-4 w-100 flex-grow-0">
             <!-- Status Indicators -->
             <div class="last-stand-indicator text-danger fw-bold text-uppercase mb-2" style="opacity: 0; transition: opacity 0.3s;">@Localizer["⚠ Last Stand ⚠"]</div>
-            
+
             <div class="d-flex gap-2 mb-3" id="lives-container" style="font-size: 1.5rem; height: 30px;">
                 <!-- Hearts injected here -->
             </div>
-            
+
             <div class="d-flex gap-2 flex-wrap justify-content-center" id="progress-container" style="height: 12px;">
                 <!-- Dots injected here -->
             </div>
         </div>
 
         <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 w-100">
-                    
+
                     <div class="piano-wrapper w-100 d-flex justify-content-center">
-                        <div id="piano-container" style="max-width: 800px; width: 100%;"></div>
+                        <div id="piano-container" class="table-responsive" style="max-width: 800px; width: 100%;"></div>
                     </div>
 
                     <div id="ingame-rank" class="mt-4 fw-bold d-flex align-items-center gap-2" style="font-size: 1.5rem; min-height: 1.5em; text-shadow: 0 1px 2px rgba(0,0,0,0.1);"></div>
@@ -32,7 +32,7 @@
                 <!-- Overlays -->
                 <!-- Start Overlay -->
                 <div id="start-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-start bg-body bg-opacity-95 z-3 overflow-y-auto py-4">
-                    
+
                     <div class="text-center mb-4">
                         <div class="display-1 text-warning mb-2">⚡</div>
                         <h1 class="fw-bold mb-2">@Localizer["Melody Memory"]</h1>
@@ -44,7 +44,7 @@
                             <!-- Music Style Column -->
                             <div class="col-md-4 border-end border-secondary border-opacity-25">
                                 <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Music Style"]</label>
-                                
+
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
@@ -53,7 +53,7 @@
                                             <span class="small text-secondary">@Localizer["White keys only (Easiest)"]</span>
                                         </label>
                                     </div>
-                                    
+
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
                                         <label class="form-check-label" for="style-tonal">
@@ -61,7 +61,7 @@
                                             <span class="small text-secondary">@Localizer["Transposed Major scale"]</span>
                                         </label>
                                     </div>
-                                    
+
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
                                         <label class="form-check-label" for="style-atonal">
@@ -71,11 +71,11 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Preview Column -->
                             <div class="col-md-4 border-end border-secondary border-opacity-25">
                                 <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Preview"]</label>
-                                
+
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
@@ -84,7 +84,7 @@
                                             <span class="small text-secondary">@Localizer["Listen to range"]</span>
                                         </label>
                                     </div>
-                                    
+
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
                                         <label class="form-check-label" for="preview-root">
@@ -114,7 +114,7 @@
                             <!-- Progression Column -->
                             <div class="col-md-4">
                                 <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Increment"]</label>
-                                
+
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gameProgression" id="prog-note" value="prog-note" checked>
@@ -123,7 +123,7 @@
                                             <span class="small text-secondary">@Localizer["Add one note per level"]</span>
                                         </label>
                                     </div>
-                                    
+
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gameProgression" id="prog-bar" value="prog-bar">
                                         <label class="form-check-label" for="prog-bar">
@@ -159,9 +159,9 @@
                 <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3 p-3 overflow-y-auto">
                     <div class="display-3 text-danger mb-2">💀</div>
                     <h2 class="fs-1 fw-bold mb-3">@Localizer["Game Over"]</h2>
-                    
+
                     <div class="card bg-body-tertiary border-0 p-3 mb-3 text-center shadow-lg" style="min-width: 320px; max-width: 90%;">
-                        
+
                         <!-- Primary Score Display -->
                         <div class="mb-3">
                             <div class="text-secondary text-uppercase small fw-bold tracking-wider mb-0">@Localizer["Total Score"]</div>
@@ -205,7 +205,7 @@
                     <button class="btn btn-outline-primary btn-lg px-5 rounded-pill shadow-sm" onclick="window.location.reload()">
                         <i class="bi bi-arrow-counterclockwise me-2"></i>@Localizer["Try Again"]
                     </button>
-                    
+
                     <!-- Hidden Localization Fields for JS to consume -->
                     <div id="loc-data" hidden>
                         <span data-key="notes">@Localizer["Notes"]</span>
@@ -260,24 +260,24 @@
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         /* Active Heart (Alive) */
-        .heart.active { 
-            color: #ff4c4c; 
+        .heart.active {
+            color: #ff4c4c;
             filter: drop-shadow(0 0 5px rgba(255, 76, 76, 0.6));
             transform: scale(1.1);
         }
         /* Heart Lost (Damage) */
-        .heart.lost { 
-            color: rgba(0, 0, 0, 0.2); 
+        .heart.lost {
+            color: rgba(0, 0, 0, 0.2);
             transform: scale(0.8);
             animation: heartLost 0.4s ease-in;
         }
         /* Heart Gained (Heal) */
-        .heart.gain { 
-            animation: heartGain 0.6s ease-out; 
-            color: #4cff4c; 
+        .heart.gain {
+            animation: heartGain 0.6s ease-out;
+            color: #4cff4c;
             filter: drop-shadow(0 0 10px rgba(76, 255, 76, 0.8));
         }
-        
+
         @@keyframes heartGain {
             0% { transform: scale(1); }
             50% { transform: scale(1.8); }
@@ -347,7 +347,7 @@
             opacity: 1 !important;
             pointer-events: auto !important;
         }
-        
+
         /* Critical state pulse on the card border or shadow? */
         #game-board.critical {
             box-shadow: inset 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
