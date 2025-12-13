@@ -141,9 +141,6 @@
   <data name="Calc" xml:space="preserve">
     <value>Calcul</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>DETALIEREA DIFICULTĂȚII</value>
-  </data>
   <data name="2 Bars" xml:space="preserve">
     <value>2 Măsuri</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Modul de Practică</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Exercițiu</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Notă / Nivel</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Fără previzualizare</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Greu</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Progresie</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Fără Eșec</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Grad de dificultate</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Note / Nivel</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Stare Critică</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Ascultă melodia, memorează-o și redă-o la pian.</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Note / Nivel</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Scor Final</value>
   </data>
 
 </root>

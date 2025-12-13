@@ -141,9 +141,6 @@
   <data name="Level" xml:space="preserve">
     <value>關卡</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>難度分析</value>
-  </data>
   <data name="1 Note" xml:space="preserve">
     <value>1個音符</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>練習模式</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>每級 +1 個音符</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>標準 (A4)</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>進度</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>困難</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>不會失敗</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>練習</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>聆聽旋律，記住佢，然後喺鋼琴上重新彈奏。</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>無預覽</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>難度評級</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 個音符 / 關</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 個音符 / 關</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>最終分數</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>危急生命值</value>
   </data>
 
 </root>

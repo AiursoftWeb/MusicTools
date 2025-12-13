@@ -141,9 +141,6 @@
   <data name="Level" xml:space="preserve">
     <value>Рівень</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>РОЗБИТТЯ СКЛАДНОСТІ</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 такт</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>Увімкнено візуальні підказки</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Тренування</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Без програшів</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Стандарт (A4)</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Важко</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Прогресія</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Без попереднього перегляду</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 нота / рівень</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Прослухайте мелодію, запам&apos;ятайте її та відтворіть на піаніно.</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 ноти / рівень</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Фінальний рахунок</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Рейтинг складності</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Критичний стан здоров&apos;я</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 нот / рівень</value>
   </data>
 
 </root>

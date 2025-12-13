@@ -138,9 +138,6 @@
   <data name="Calc" xml:space="preserve">
     <value>Beräkna</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>SVÅRIGHETSANALYS</value>
-  </data>
   <data name="Level" xml:space="preserve">
     <value>Nivå</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Övningsläge</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Lyssna på melodin, memorera den och spela upp den på pianot.</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Progression</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Svår</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Öva</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Inget misslyckande</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Ingen förhandsvisning</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 ton per nivå</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Slutpoäng</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kritisk hälsa</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 toner / nivå</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 toner / nivå</value>
   </data>
 
 </root>

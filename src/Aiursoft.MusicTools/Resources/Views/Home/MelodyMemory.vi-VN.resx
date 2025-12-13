@@ -141,9 +141,6 @@
   <data name="Calc" xml:space="preserve">
     <value>Tính toán</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>PHÂN TÍCH ĐỘ KHÓ</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 Ô nhịp</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>Đã bật gợi ý trực quan</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Khó</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Luyện tập</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Không Thất Bại</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Không Xem Trước</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Tiến Trình</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Lắng nghe giai điệu, ghi nhớ nó, và chơi lại trên đàn piano.</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Chuẩn (A4)</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Nốt / Cấp</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Nốt / Cấp</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Nốt / Cấp</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Điểm Cuối Cùng</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Đánh giá Độ khó</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Sức Khỏe Nguy Kịch</value>
   </data>
 
 </root>

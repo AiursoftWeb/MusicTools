@@ -135,9 +135,6 @@
   <data name="Gold" xml:space="preserve">
     <value>Oro</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>ANALISI DELLA DIFFICOLTÀ</value>
-  </data>
   <data name="Calc" xml:space="preserve">
     <value>Calcolo</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>Suggerimenti visivi attivati</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Allenamento</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Progressione</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Nessun Fallimento</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Difficile</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Nessuna Anteprima</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Nota / Liv</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Ascolta la melodia, memorizzala e riproducila sul pianoforte.</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Livello di Difficoltà</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Punteggio Finale</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Note / Liv</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Salute Critico</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Note / Liv</value>
   </data>
 
 </root>

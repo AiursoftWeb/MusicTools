@@ -141,9 +141,6 @@
   <data name="Level" xml:space="preserve">
     <value>关卡</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>难度分析</value>
-  </data>
   <data name="1 Note" xml:space="preserve">
     <value>1个音符</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>视觉提示已启用</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>困难</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>标准 (A4)</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>无失败</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>练习</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>无预览</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>聆听旋律，记住它，然后在钢琴上复现出来。</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>每级增加1个音符</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>每级 +8 个音符</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>难度评级</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>最终得分</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>生命危急</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>每级 +4 个音符</value>
   </data>
 
 </root>

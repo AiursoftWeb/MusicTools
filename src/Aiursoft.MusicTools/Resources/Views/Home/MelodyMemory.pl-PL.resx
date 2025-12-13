@@ -135,9 +135,6 @@
   <data name="Grandmaster" xml:space="preserve">
     <value>Arcymistrz</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>ROZKŁAD TRUDNOŚCI</value>
-  </data>
   <data name="Level" xml:space="preserve">
     <value>Poziom</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Tryb treningowy</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Bez podglądu</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Nuta / Poziom</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Trudny</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Postęp</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Trening</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Bez porażki</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Posłuchaj melodii, zapamiętaj ją i odtwórz na pianinie.</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 nut / poziom</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 nuty / poziom</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Krytyczne zdrowie</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Poziom trudności</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Końcowy Wynik</value>
   </data>
 
 </root>

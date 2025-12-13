@@ -141,9 +141,6 @@
   <data name="Level" xml:space="preserve">
     <value>레벨</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>난이도 분석</value>
-  </data>
   <data name="1 Note" xml:space="preserve">
     <value>1음</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>시각적 힌트 활성화됨</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>어려움</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>표준 (A4)</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>레벨당 +1 음표</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>연습</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>진행 방식</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>실패 없음</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>미리 듣기 없음</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>멜로리를 듣고, 기억한 다음 피아노로 다시 연주하세요.</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>난이도 등급</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 음표 / 레벨</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>최종 점수</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 음표 / 레벨</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>위험 체력</value>
   </data>
 
 </root>

@@ -141,9 +141,6 @@
   <data name="Calc" xml:space="preserve">
     <value>Υπολογισμός</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>ΑΝΑΛΥΣΗ ΔΥΣΚΟΛΙΑΣ</value>
-  </data>
   <data name="Increment" xml:space="preserve">
     <value>Αύξηση</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Λειτουργία Εξάσκησης</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Πρακτική</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Πρότυπο (A4)</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Νότα / Επίπεδο</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Χωρίς Αποτυχία</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Πρόοδος</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Δύσκολο</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Χωρίς Προεπισκόπηση</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Ακούστε τη μελωδία, απομνημονεύστε την και επαναπαίξτε την στο πιάνο.</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Νότες / Επίπεδο</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Βαθμός Δυσκολίας</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Κρίσιμη Υγεία</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Νότες / Επίπ.</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Τελική Βαθμολογία</value>
   </data>
 
 </root>

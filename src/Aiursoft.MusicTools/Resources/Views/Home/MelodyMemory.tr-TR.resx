@@ -135,9 +135,6 @@
   <data name="Intermediate" xml:space="preserve">
     <value>Orta Seviye</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>ZORLUK ANALİZİ</value>
-  </data>
   <data name="Calc" xml:space="preserve">
     <value>Hesapla</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Alıştırma Modu</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Zor</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>İlerleme</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Nota / Seviye</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standart (A4)</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Melodiyi dinleyin, ezberleyin ve piyanoda tekrar çalın.</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Önizleme Yok</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Alıştırma</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Başarısızlık Yok</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Zorluk Derecesi</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Nota / Seviye</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Nota / Seviye</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kritik Sağlık</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Son Puan</value>
   </data>
 
 </root>

@@ -328,8 +328,32 @@ async function startGame() {
     updateLivesUI();
     updateInGameRank();
 
-    if (startOverlay) startOverlay.classList.add("hidden");
-    if (gameOverOverlay) gameOverOverlay.classList.add("hidden");
+    // Switch UI Screens
+    // New Logic: We have 3 screens: Start, Game, GameOver.
+    // 1. Hide Start
+    if (startOverlay) {
+        startOverlay.classList.add("d-none"); // Bootstrap utility
+        startOverlay.classList.remove("d-flex"); // Remove flex if present
+    }
+
+    // 2. Hide Game Over (just in case)
+    if (gameOverOverlay) {
+        gameOverOverlay.classList.add("d-none");
+    }
+
+    // 3. Show Game Board
+    if (gameContainer) {
+        gameContainer.classList.remove("d-none");
+        gameContainer.classList.add("d-flex"); // Restore flex layout
+
+        // Trigger Piano Resize/Redraw since it was hidden
+        // Force a resize event or re-init might be needed if ToneJS/Canvas calculated 0 width
+        if (piano) {
+            // We might need to ensure the container has width now
+            // Fortunately Tone.js Piano often uses simple divs, but let's be safe.
+            // If Piano.js handles ResizeObserver, we are good.
+        }
+    }
 
     // PLAY PREVIEW
     await playPreview(preview, validNotesForLevel);
@@ -474,16 +498,19 @@ function handleMistake(wrongNote) {
     updateLivesUI(true); // true means lost life
 
     // Visual Effect for Error
-    if (gameContainer) {
-        gameContainer.classList.remove("wrong-input-animation");
-        void gameContainer.offsetWidth; // Trigger reflow
-        gameContainer.classList.add("wrong-input-animation");
+    if (pianoContainer) {
+        // Target the actual piano element for the shadow
+        const pianoEl = pianoContainer.querySelector(".piano");
+        if (pianoEl) {
+            pianoEl.classList.remove("damage-effect");
+            void pianoEl.offsetWidth; // Trigger reflow
+            pianoEl.classList.add("damage-effect");
 
-        // Remove class after animation
-        setTimeout(() => {
-            if (gameContainer)
-                gameContainer.classList.remove("wrong-input-animation");
-        }, 500);
+            // Remove class after animation
+            setTimeout(() => {
+                pianoEl.classList.remove("damage-effect");
+            }, 600);
+        }
     }
 
     if (lives <= 0) {
@@ -599,14 +626,17 @@ function startTurnTimer() {
     if (!timerContainer || !timerBar) return;
 
     const duration = getTimeLimit();
-    timerContainer.classList.add("active");
+    // opacity controlled by animation now, not class
+    // timerContainer.classList.add("active");
 
     timerBar.style.animation = "none";
     timerBar.style.width = "100%";
-    timerBar.style.opacity = "0";
+    timerContainer.style.animation = "none";
+
     void timerBar.offsetWidth; // force reflow
 
-    timerBar.style.animation = `timer-countdown ${duration}ms linear forwards`;
+    timerBar.style.animation = `timer-bar-shrink ${duration}ms linear forwards`;
+    timerContainer.style.animation = `timer-container-fade ${duration}ms linear forwards`;
 
     timerId = setTimeout(() => {
         handleTimeout();
@@ -624,6 +654,10 @@ function stopTimer() {
         timerBar.style.animation = "none";
         timerBar.style.width = currentWidth;
     }
+    if (timerContainer) {
+        timerContainer.style.animation = "none";
+        timerContainer.style.opacity = "0"; // reset to hidden
+    }
 }
 
 function hideTimer() {
@@ -638,17 +672,27 @@ function handleTimeout() {
     updateLivesUI();
     playErrorSound();
 
-    piContainerClickable(false);
-
     if (lives < 0) {
         hideTimer();
         setTimeout(gameOver, 500);
     } else {
+        // Trigger damage effect on timeout too
+        if (pianoContainer) {
+            const pianoEl = pianoContainer.querySelector(".piano");
+            if (pianoEl) {
+                pianoEl.classList.remove("damage-effect");
+                void pianoEl.offsetWidth;
+                pianoEl.classList.add("damage-effect");
+                setTimeout(() => {
+                    pianoEl.classList.remove("damage-effect");
+                }, 600);
+            }
+        }
+
         if (gameContainer) {
-            gameContainer.style.background = "#4a2b2b";
+            // gameContainer.style.background = "#4a2b2b"; // Removed as per request
             setTimeout(() => {
-                gameContainer.style.background = ""; // reset to CSS defined
-                piContainerClickable(true);
+                // gameContainer.style.background = "";
                 startTurnTimer();
             }, 500);
         }
@@ -883,7 +927,20 @@ function gameOver() {
         }
     }
 
-    if (gameOverOverlay) gameOverOverlay.classList.remove("hidden");
+    // Switch UI Screens for Game Over
+    // 1. Hide Game
+    if (gameContainer) {
+        gameContainer.classList.add("d-none");
+        gameContainer.classList.remove("d-flex");
+    }
+
+    // 2. Show Game Over
+    if (gameOverOverlay) {
+        gameOverOverlay.classList.remove("d-none");
+        // Since Game Over text is centered, we might not need d-flex if Card Body handles it.
+        // But let's check html. The outer div is .card. It does not have d-flex.
+        // Effectively just removing d-none brings it into flow as a block (card).
+    }
 }
 
 // --- Audio Effects ---

@@ -141,9 +141,6 @@
   <data name="Calc" xml:space="preserve">
     <value>Lasku</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>Vaikeustason jakauma</value>
-  </data>
   <data name="Increment" xml:space="preserve">
     <value>Lisäys</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Practice Mode" xml:space="preserve">
     <value>Harjoittelutila</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 nuotti / taso</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Ei esikatselua</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Vakio (A4)</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Harjoittelu</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Edistyminen</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Kuuntele melodia, muista se ja toista se pianolla.</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Ei epäonnistumista</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 nuottia / taso</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 nuottia / taso</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Vaikeustaso</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Loppupisteet</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kriittinen terveys</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Vaikea</value>
   </data>
 
 </root>

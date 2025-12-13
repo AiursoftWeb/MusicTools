@@ -1,374 +1,277 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Melody Memory"];
+}
 
-    <div id="game-board" style="height: calc(100vh - 40px);" class="position-relative overflow-hidden w-100 d-flex flex-column bg-body align-items-center">
+<!-- Game Container -->
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
 
-        <!-- Timer Bar (Absolute Top) -->
-        <div class="timer-container" id="timer-container">
-            <div class="timer-bar" id="timer-bar"></div>
-        </div>
-
-        <div class="d-flex flex-column align-items-center pt-4 w-100 flex-grow-0">
-            <!-- Status Indicators -->
-            <div class="last-stand-indicator text-danger fw-bold text-uppercase mb-2" style="opacity: 0; transition: opacity 0.3s;">@Localizer["⚠ Last Stand ⚠"]</div>
-
-            <div class="d-flex gap-2 mb-3" id="lives-container" style="font-size: 1.5rem; height: 30px;">
-                <!-- Hearts injected here -->
-            </div>
-
-            <div class="d-flex gap-2 flex-wrap justify-content-center" id="progress-container" style="height: 12px;">
-                <!-- Dots injected here -->
-            </div>
-        </div>
-
-        <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 w-100">
-
-                    <div class="piano-wrapper w-100 d-flex justify-content-center">
-                        <div id="piano-container" class="table-responsive" style="max-width: 800px; width: 100%;"></div>
-                    </div>
-
-                    <div id="ingame-rank" class="mt-4 fw-bold d-flex align-items-center gap-2" style="font-size: 1.5rem; min-height: 1.5em; text-shadow: 0 1px 2px rgba(0,0,0,0.1);"></div>
-                </div>
-
-                <!-- Overlays -->
-                <!-- Start Overlay -->
-                <div id="start-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-start bg-body bg-opacity-95 z-3 overflow-y-auto py-4">
-
-                    <div class="text-center mb-4">
+            <!-- SCREEN 1: START SCREEN -->
+            <div id="start-overlay" class="card shadow-lg border-0 mx-auto" style="max-width: 900px; min-height: 600px;">
+                <div class="card-body p-4 p-md-5 d-flex flex-column align-items-center justify-content-center text-center">
+                    <!-- (Content Unchanged) -->
+                    <div class="mb-5">
                         <div class="display-1 text-warning mb-2">⚡</div>
-                        <h1 class="fw-bold mb-2">@Localizer["Melody Memory"]</h1>
-                        <p class="text-secondary">@Localizer["Remember the melody and repeat it on the piano."]</p>
+                        <h1 class="display-5 fw-bold mb-3">@Localizer["Melody Memory"]</h1>
+                        <p class="text-secondary lead">@Localizer["Listen to the melody, memorize it, and replay it on the piano."]</p>
                     </div>
 
-                    <div class="card bg-body-tertiary border-0 p-4 mb-4" style="max-width: 800px; width: 95%;">
-                        <div class="row g-4">
-                            <!-- Music Style Column -->
-                            <div class="col-md-4 border-end border-secondary border-opacity-25">
-                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Music Style"]</label>
-
+                    <div class="w-100" style="max-width: 800px;">
+                        <div class="row g-4 mb-5 text-start">
+                             <!-- Options (Unchanged) -->
+                             <div class="col-md-4">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Music Style"]</label>
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-practice" value="practice">
-                                        <label class="form-check-label" for="style-practice">
-                                            <span class="d-block fw-bold">@Localizer["Practice Mode"]</span>
-                                            <span class="small text-secondary">@Localizer["Visual hints enabled"]</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
-                                        <label class="form-check-label" for="style-c-major">
-                                            <span class="d-block fw-bold">@Localizer["C Major"]</span>
-                                            <span class="small text-secondary">@Localizer["White keys only (Easiest)"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="style-c-major">@Localizer["C Major"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-tonal" value="tonal">
-                                        <label class="form-check-label" for="style-tonal">
-                                            <span class="d-block fw-bold">@Localizer["Random Key"]</span>
-                                            <span class="small text-secondary">@Localizer["Transposed Major scale"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="style-tonal">@Localizer["Random Key"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-atonal" value="atonal">
-                                        <label class="form-check-label" for="style-atonal">
-                                            <span class="d-block fw-bold">@Localizer["Atonal"]</span>
-                                            <span class="small text-secondary">@Localizer["Full Chromatic scale (Hard)"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="style-atonal">@Localizer["Atonal"] <span class="badge bg-secondary opacity-50 ms-1">@Localizer["Hard"]</span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-practice" value="practice">
+                                        <label class="form-check-label" for="style-practice">@Localizer["Practice"] <span class="badge bg-success opacity-50 ms-1">@Localizer["No Fail"]</span></label>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Preview Column -->
-                            <div class="col-md-4 border-end border-secondary border-opacity-25">
-                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Preview"]</label>
-
+                            <div class="col-md-4">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Preview"]</label>
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-scale" value="scale" checked>
-                                        <label class="form-check-label" for="preview-scale">
-                                            <span class="d-block fw-bold">@Localizer["Scale"]</span>
-                                            <span class="small text-secondary">@Localizer["Listen to range"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="preview-scale">@Localizer["Scale"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-root" value="root">
-                                        <label class="form-check-label" for="preview-root">
-                                            <span class="d-block fw-bold">@Localizer["Root Note"]</span>
-                                            <span class="small text-secondary">@Localizer["Check tonic only"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="preview-root">@Localizer["Root Note"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-standard" value="standard">
-                                        <label class="form-check-label" for="preview-standard">
-                                            <span class="d-block fw-bold">@Localizer["Standard Pitch (A)"]</span>
-                                            <span class="small text-secondary">@Localizer["Listen to A4 (440Hz)"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="preview-standard">@Localizer["Standard (A4)"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gamePreview" id="preview-skip" value="skip">
-                                        <label class="form-check-label" for="preview-skip">
-                                            <span class="d-block fw-bold">@Localizer["Skip Preview"]</span>
-                                            <span class="small text-secondary">@Localizer["Start immediately"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="preview-skip">@Localizer["No Preview"]</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Progression Column -->
                             <div class="col-md-4">
-                                <label class="form-label text-warning fw-bold text-uppercase small mb-3">@Localizer["Increment"]</label>
-
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Progression"]</label>
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gameProgression" id="prog-note" value="prog-note" checked>
-                                        <label class="form-check-label" for="prog-note">
-                                            <span class="d-block fw-bold">@Localizer["1 Note"]</span>
-                                            <span class="small text-secondary">@Localizer["Add one note per level"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="prog-note">@Localizer["+1 Note / Lvl"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gameProgression" id="prog-bar" value="prog-bar">
-                                        <label class="form-check-label" for="prog-bar">
-                                            <span class="d-block fw-bold">@Localizer["1 Bar"]</span>
-                                            <span class="small text-secondary">@Localizer["Add 4 beats per level"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="prog-bar">@Localizer["+4 Notes / Lvl"]</label>
                                     </div>
-
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gameProgression" id="prog-double" value="prog-double">
-                                        <label class="form-check-label" for="prog-double">
-                                            <span class="d-block fw-bold">@Localizer["2 Bars"]</span>
-                                            <span class="small text-secondary">@Localizer["Add 8 beats per level"]</span>
-                                        </label>
+                                        <label class="form-check-label" for="prog-double">@Localizer["+8 Notes / Lvl"]</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="mb-4 text-center">
-                        <span class="text-secondary fw-bold text-uppercase small">@Localizer["Current Difficulty"]:</span>
-                        <span id="start-overlay-difficulty" class="fs-2 fw-bold text-info ms-2">--</span>
-                    </div>
-
-                    <button class="btn btn-warning btn-lg px-5 fw-bold rounded-pill shadow-lg" onclick="window.startMelodyGame()">
-                        <i class="bi bi-play-fill me-2"></i>@Localizer["Start Game"]
-                    </button>
-                </div>
-
-                <!-- Game Over Overlay -->
-                <!-- Use theme-aware classes instead of hardcoded dark ones -->
-                <div id="game-over-overlay" class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-body bg-opacity-95 hidden z-3 p-3 overflow-y-auto">
-                    <div class="display-3 text-danger mb-2">💀</div>
-                    <h2 class="fs-1 fw-bold mb-3">@Localizer["Game Over"]</h2>
-
-                    <div class="card bg-body-tertiary border-0 p-3 mb-3 text-center shadow-lg" style="min-width: 320px; max-width: 90%;">
-
-                        <!-- Primary Score Display -->
-                        <div class="mb-3">
-                            <div class="text-secondary text-uppercase small fw-bold tracking-wider mb-0">@Localizer["Total Score"]</div>
-                            <div class="display-4 fw-bold text-primary" id="final-total-score" style="line-height: 1.2;">0</div>
+                        <div class="d-flex justify-content-between align-items-center bg-body-tertiary p-3 rounded mb-4">
+                            <span class="text-uppercase fw-bold text-secondary small">@Localizer["Difficulty Rating"]</span>
+                            <span id="start-overlay-difficulty" class="fs-4 fw-bold text-primary display-font">0</span>
                         </div>
 
-                        <!-- Level & Rank -->
-                        <div class="d-flex justify-content-center gap-3 mb-3 border-bottom border-secondary border-opacity-10 pb-3">
-                            <div class="text-center">
-                                <span class="d-block text-secondary small text-uppercase">@Localizer["Level"]</span>
-                                <span class="fs-4 fw-bold" id="final-level">1</span>
-                            </div>
-                            <div class="vr bg-secondary opacity-25"></div>
-                            <div class="text-center">
-                                <span class="d-block text-secondary small text-uppercase">@Localizer["Rank"]</span>
-                                <div id="rank-display" class="d-flex flex-column align-items-center justify-content-center">
-                                    <div class="rank-text text-secondary small">@Localizer["Novice"]</div>
+                        <button class="btn btn-warning btn-lg w-100 p-3 fs-4 fw-bold rounded-pill shadow-sm text-uppercase tracking-wider hover-scale" onclick="window.startMelodyGame()">
+                            @Localizer["Start Game"]
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCREEN 2: GAME AREA -->
+            <div id="game-board" class="d-none w-100">
+                <div class="d-flex flex-column align-items-center w-100">
+
+                     <!-- Top Info Bar: Timer & Status -->
+                     <!-- constrained width -->
+                     <div class="w-100 mb-4 px-0" style="max-width: 1000px;">
+
+                        <!-- Timer -->
+                        <div class="timer-container w-100 rounded bg-body-secondary mb-4 overflow-hidden" id="timer-container" style="height: 10px;">
+                            <div class="timer-bar h-100 bg-warning" id="timer-bar"></div>
+                        </div>
+
+                        <!-- Status Area -->
+                        <div class="row align-items-end text-center gx-0">
+                            <div class="col-md-4 text-md-start mb-3 mb-md-0">
+                                <!-- Critical Msg -->
+                                <div class="last-stand-indicator text-danger fw-bold text-uppercase small" style="opacity: 0; letter-spacing: 2px;">
+                                    @Localizer["Critical Health"]
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Difficulty Breakdown -->
-                        <div class="text-start bg-body bg-opacity-50 p-2 rounded small">
-                            <!-- Detailed Rows (Injected via JS) -->
-                            <div id="difficulty-details" class="d-flex flex-column gap-1 mb-2" style="font-size: 0.85rem;">
-                                <!-- Content injected by JS -->
+                                <div class="d-flex justify-content-center justify-content-md-start gap-2" id="lives-container" style="min-height: 32px;"></div>
                             </div>
 
-                            <hr class="border-secondary border-opacity-25 my-1">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <div id="ingame-rank" class="d-flex align-items-center justify-content-center gap-2" style="height: 40px; font-size: 1.5rem;"></div>
+                            </div>
 
-                            <!-- Formula -->
-                            <div class="d-flex justify-content-between align-items-center fw-bold mt-1" style="font-size: 0.85rem;">
-                                <span class="text-secondary">@Localizer["Calc"]</span>
-                                <span class="font-monospace text-primary text-end" id="score-calculation">
-                                    0 @Localizer["Notes"] × 0 @Localizer["Diff"]
-                                </span>
+                            <div class="col-md-4 text-md-end">
+                                <!-- Dots -->
+                                <div class="d-flex justify-content-center justify-content-md-end flex-wrap gap-2" id="progress-container" style="min-height: 12px;"></div>
                             </div>
                         </div>
                     </div>
 
-                    <button class="btn btn-outline-primary btn-lg px-5 rounded-pill shadow-sm" onclick="window.location.reload()">
-                        <i class="bi bi-arrow-counterclockwise me-2"></i>@Localizer["Try Again"]
-                    </button>
-
-                    <!-- Hidden Localization Fields for JS to consume -->
-                    <div id="loc-data" hidden>
-                        <span data-key="notes">@Localizer["Notes"]</span>
-                        <span data-key="diff">@Localizer["Diff"]</span>
-                        <span data-key="difficulty">@Localizer["Difficulty"]</span>
-                        <span data-key="rookie">@Localizer["Rookie"]</span>
-                        <span data-key="intermediate">@Localizer["Intermediate"]</span>
-                        <span data-key="bronze">@Localizer["Bronze"]</span>
-                        <span data-key="silver">@Localizer["Silver"]</span>
-                        <span data-key="gold">@Localizer["Gold"]</span>
-                        <span data-key="diamond">@Localizer["Diamond"]</span>
-                        <span data-key="grandmaster">@Localizer["Grandmaster"]</span>
+                    <!-- Piano Area -->
+                    <!-- Flex Item fix: min-width 0 to prevent flex blowout, w-100 to fill available space -->
+                    <div class="w-100 px-0" style="min-width: 0;">
+                         <div class="row justify-content-center">
+                            <div class="col-lg-12 position-relative text-center px-0">
+                                <!-- Exact wrapper struct from Index.cshtml -->
+                                <!-- table-responsive handles the scroll, container handles width -->
+                                <div id="piano-container" class="piano-container table-responsive"></div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+            </div>
 
+            <!-- SCREEN 3: GAME OVER -->
+            <div id="game-over-overlay" class="card shadow-lg border-0 d-none mx-auto" style="max-width: 800px; min-height: 600px;">
+                <div class="card-body p-5 d-flex flex-column align-items-center justify-content-center text-center">
+
+                    <div class="mb-4 text-danger display-1">💀</div>
+                    <h2 class="display-4 fw-bold mb-5">@Localizer["Game Over"]</h2>
+
+                    <div class="card bg-body-tertiary border-0 p-4 mb-5 shadow-sm w-100" style="max-width: 500px;">
+                        <div class="row text-center mb-4">
+                            <div class="col-6 border-end">
+                                <div class="text-uppercase text-secondary small fw-bold mb-1">@Localizer["Level Reached"]</div>
+                                <div class="display-6 fw-bold text-dark" id="final-level">0</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-uppercase text-secondary small fw-bold mb-1">@Localizer["Final Score"]</div>
+                                <div class="display-6 fw-bold text-primary" id="final-total-score">0</div>
+                            </div>
+                        </div>
+
+                        <div id="rank-display" class="mb-4"></div>
+
+                        <div class="bg-body p-3 rounded text-start text-monospace small text-muted">
+                            <div id="difficulty-details" class="d-flex flex-column gap-2"></div>
+                            <hr class="my-2 opacity-25">
+                            <div class="d-flex justify-content-between fw-bold text-dark">
+                                <span>@Localizer["Calculation"]</span>
+                                <span id="score-calculation"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow hover-scale" onclick="window.location.reload()">
+                        <i class="bi bi-arrow-clockwise me-2"></i> @Localizer["Try Again"]
+                    </button>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
 
+<!-- Localization Data (Unchanged) -->
+<div id="loc-data" hidden>
+    <span data-key="notes">@Localizer["Notes"]</span>
+    <span data-key="diff">@Localizer["Diff"]</span>
+    <span data-key="difficulty">@Localizer["Difficulty"]</span>
+    <span data-key="rookie">@Localizer["Rookie"]</span>
+    <span data-key="intermediate">@Localizer["Intermediate"]</span>
+    <span data-key="bronze">@Localizer["Bronze"]</span>
+    <span data-key="silver">@Localizer["Silver"]</span>
+    <span data-key="gold">@Localizer["Gold"]</span>
+    <span data-key="diamond">@Localizer["Diamond"]</span>
+    <span data-key="grandmaster">@Localizer["Grandmaster"]</span>
+</div>
 
 @section scripts {
-
-                        <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
+                                        <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
 }
 
 @section styles {
-                        <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
-                        <style>
-                            .timer-container {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 6px;
-                                z-index: 10;
-                                visibility: hidden;
-                            }
-                            .timer-container.active { visibility: visible; }
-                            .timer-bar {
-                                height: 100%;
-                                background-color: #ffc107; /* Bootstrap warning color */
-                                width: 100%;
-                                transform-origin: left;
-                            }
-                            @@keyframes timer-countdown {
-                                0% { width: 100%; opacity: 0; }
-                                30% { width: 70%; opacity: 0; }
-                                40% { width: 60%; opacity: 1; }
-                                100% { width: 0%; opacity: 1; }
-                            }
+                                        <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+                                        <style>
+                                            .hover-scale { transition: transform 0.2s; }
+                                            .hover-scale:hover { transform: scale(1.02); }
 
-                            .heart {
-                                color: rgba(255, 255, 255, 0.2);
-                                font-size: 2rem;
-                                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                            }
-                            /* Active Heart (Alive) */
-                            .heart.active {
-                                color: #ff4c4c;
-                                filter: drop-shadow(0 0 5px rgba(255, 76, 76, 0.6));
-                                transform: scale(1.1);
-                            }
-                            /* Heart Lost (Damage) */
-                            .heart.lost {
-                                color: rgba(0, 0, 0, 0.2);
-                                transform: scale(0.8);
-                                animation: heartLost 0.4s ease-in;
-                            }
-                            /* Heart Gained (Heal) */
-                            .heart.gain {
-                                animation: heartGain 0.6s ease-out;
-                                color: #4cff4c;
-                                filter: drop-shadow(0 0 10px rgba(76, 255, 76, 0.8));
-                            }
+                                            .heart { font-size: 1.5rem; color: #ddd; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+                                            .heart.active { color: #dc3545; filter: drop-shadow(0 4px 6px rgba(220, 53, 69, 0.2)); }
+                                            .heart.lost { color: #ddd; transform: scale(0.6); opacity: 0.5; }
 
-                            @@keyframes heartGain {
-                                0% { transform: scale(1); }
-                                50% { transform: scale(1.8); }
-                                100% { transform: scale(1.1); }
-                            }
-                            @@keyframes heartLost {
-                                0% { transform: translateX(0); }
-                                25% { transform: translateX(-5px); }
-                                50% { transform: translateX(5px); }
-                                75% { transform: translateX(-5px); }
-                                100% { transform: translateX(0) scale(0.8); }
-                            }
+                                            .progress-dot { width: 10px; height: 10px; background-color: #e9ecef; border-radius: 50%; transition: all 0.2s; }
+                                            .progress-dot.filled { background-color: #0d6efd; transform: scale(1.2); }
+                                            .progress-dot.active { background-color: #0dcaf0; box-shadow: 0 0 0 2px rgba(13, 202, 240, 0.3); }
 
-                            .rank-emoji {
-                                font-size: 4rem;
-                                margin-bottom: 0.5rem;
-                                animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                            }
-                            .rank-text {
-                                font-size: 1.5rem;
-                                font-weight: bold;
-                            }
-                            @@keyframes popIn {
-                                0% { transform: scale(0); opacity: 0; }
-                                80% { transform: scale(1.2); opacity: 1; }
-                                100% { transform: scale(1); }
-                            }
+                                            #piano-container.unclickable { pointer-events: none; opacity: 0.6; filter: grayscale(.2); }
 
-                            .progress-dot {
-                                width: 8px;
-                                height: 8px;
-                                background-color: rgba(0, 0, 0, 0.1);
-                                border-radius: 50%;
-                                transition: all 0.2s;
-                            }
-                            .progress-dot.active {
-                                transform: scale(1.5);
-                                background-color: #0dcaf0; /* Bootstrap info */
-                                box-shadow: 0 0 6px rgba(13, 202, 240, 0.5);
-                            }
-                            /* Wrong Input Animation */
-                            .wrong-input-animation {
-                                animation: shakeRed 0.5s cubic-bezier(.36,.07,.19,.97) both;
-                            }
+                                            /* Timer Animation Logic: Standard simple countdown 100% -> 0% */
+                        .timer-container { opacity: 0; }
+                        /* Removed .active transition, now controlled by animation */
 
-                            @@keyframes shakeRed {
-                                0%, 100% { transform: translateX(0); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
-                                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-                                20%, 40%, 60%, 80% { transform: translateX(5px); }
-                                15% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.4) inset; background-color: rgba(220, 53, 69, 0.1); }
-                            }
-                            .progress-dot.filled {
-                                background-color: #0d6efd; /* Bootstrap primary */
-                            }
+                        .timer-bar { width: 100%; transform-origin: left; }
 
-                            #piano-container.unclickable {
-                                pointer-events: none;
-                                opacity: 0.8;
-                                filter: grayscale(0.2);
-                            }
+                        /*
+                           Logic:
+                           1. Container: Hidden (Opacity 0) until 30% time elapsed. Then fades in.
+                           2. Bar: Shrinks from 100% to 0% continuously.
+                        */
+                        @@keyframes timer-container-fade {
+                            0% { opacity: 0; }
+                            29% { opacity: 0; }
+                            33% { opacity: 1; }
+                            100% { opacity: 1; }
+                        }
 
-                            .overlay.hidden {
-                                opacity: 0 !important;
-                                pointer-events: none !important;
-                            }
-                            .overlay:not(.hidden) {
-                                opacity: 1 !important;
-                                pointer-events: auto !important;
-                            }
+                        @@keyframes timer-bar-shrink {
+                            from { width: 100%; }
+                            to { width: 0%; }
+                        }
 
-                            /* Critical state pulse on the card border or shadow? */
-                            #game-board.critical {
-                                box-shadow: inset 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
-                                animation: critical-border 2s infinite;
-                            }
-                            @@keyframes critical-border {
-                                0% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
-                                50% { box-shadow: inset 0 0 20px 5px rgba(220, 53, 69, 0.8); }
-                                100% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
-                            }
-                            #game-board.critical .last-stand-indicator {
-                                opacity: 1 !important;
-                            }
-                        </style>
+                                            /* Rank Pop */
+                                            .rank-emoji { font-size: 3rem; animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+                                            @@keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+
+                                            /* NEW: Damage Effect on Piano Container - Using INSET to avoid overflow clipping */
+                                        /* NEW: Damage Effect on PIANO (not container) */
+                                        /* Target immediate child .piano inside container */
+                                        #piano-container .piano.damage-effect {
+                                            animation: pulse-red-shadow 0.6s ease-out;
+                                        }
+                                        @@keyframes pulse-red-shadow {
+                                            0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+                                            20% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.8); }
+                                            100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+                                        }
+
+                                        /* Critical State (Last Stand) - Apply to PIANO */
+                                        #game-board.critical .last-stand-indicator { opacity: 1 !important; }
+                                        #game-board.critical #piano-container .piano {
+                                            /* Constant low pulsing glow for critical state */
+                                            box-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
+                                            animation: critical-pulse 2s infinite;
+                                        }
+                                        @@keyframes critical-pulse {
+                                            0% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
+                                            50% { box-shadow: 0 0 25px 5px rgba(220, 53, 69, 0.8); }
+                                            100% { box-shadow: 0 0 15px rgba(220, 53, 69, 0.5); }
+                                        }
+
+                                        </style>
 }

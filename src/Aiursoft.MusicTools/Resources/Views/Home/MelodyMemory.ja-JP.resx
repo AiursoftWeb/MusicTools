@@ -138,9 +138,6 @@
   <data name="Calc" xml:space="preserve">
     <value>計算</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>難易度内訳</value>
-  </data>
   <data name="Level" xml:space="preserve">
     <value>レベル</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>視覚的なヒントが有効</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>レベルごとに+1音</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>練習</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>標準 (A4)</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>難しい</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>失敗なし</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>進行</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>プレビューなし</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>メロディを聴き、覚えて、ピアノで再現してください。</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 ノート / レベル</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>レベルごとに+4音</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>最終スコア</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>難易度レーティング</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>危機的体力</value>
   </data>
 
 </root>

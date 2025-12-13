@@ -141,9 +141,6 @@
   <data name="Level" xml:space="preserve">
     <value>المستوى</value>
   </data>
-  <data name="DIFFICULTY BREAKDOWN" xml:space="preserve">
-    <value>تفصيل مستوى الصعوبة</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>مقياس واحد</value>
   </data>
@@ -173,6 +170,45 @@
   </data>
   <data name="Visual hints enabled" xml:space="preserve">
     <value>تمكين التلميحات المرئية</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>قياسي (A4)</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>لا فشل</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>التقدم</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>صعب</value>
+  </data>
+  <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 نوتة / مستوى</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>تمرين</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>استمع إلى اللحن، احفظه، ثم أعِد عزفه على البيانو.</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>بدون معاينة</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>مستوى الصعوبة</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+٤ نوتات / مستوى</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>صحة حرجة</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>النتيجة النهائية</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 نوتات / مستوى</value>
   </data>
 
 </root>
