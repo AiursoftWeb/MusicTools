@@ -47,6 +47,14 @@
 
                                 <div class="d-flex flex-column gap-2">
                                     <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="musicStyle" id="style-practice" value="practice">
+                                        <label class="form-check-label" for="style-practice">
+                                            <span class="d-block fw-bold">@Localizer["Practice Mode"]</span>
+                                            <span class="small text-secondary">@Localizer["Visual hints enabled"]</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
                                         <input class="form-check-input" type="radio" name="musicStyle" id="style-c-major" value="c-major" checked>
                                         <label class="form-check-label" for="style-c-major">
                                             <span class="d-block fw-bold">@Localizer["C Major"]</span>
@@ -226,140 +234,140 @@
 
 @section scripts {
 
-    <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
+        <script type="module" src="~/dist/scripts/melodyMemory.js" asp-append-version="true"></script>
 }
 
 @section styles {
-    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
-    <style>
-        .timer-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 6px;
-            z-index: 10;
-            visibility: hidden;
-        }
-        .timer-container.active { visibility: visible; }
-        .timer-bar {
-            height: 100%;
-            background-color: #ffc107; /* Bootstrap warning color */
-            width: 100%;
-            transform-origin: left;
-        }
-        @@keyframes timer-countdown {
-            0% { width: 100%; opacity: 1; }
-            100% { width: 0%; opacity: 1; }
-        }
+        <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+        <style>
+            .timer-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 6px;
+                z-index: 10;
+                visibility: hidden;
+            }
+            .timer-container.active { visibility: visible; }
+            .timer-bar {
+                height: 100%;
+                background-color: #ffc107; /* Bootstrap warning color */
+                width: 100%;
+                transform-origin: left;
+            }
+            @@keyframes timer-countdown {
+                0% { width: 100%; opacity: 1; }
+                100% { width: 0%; opacity: 1; }
+            }
 
-        .heart {
-            color: rgba(255, 255, 255, 0.2);
-            font-size: 2rem;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        /* Active Heart (Alive) */
-        .heart.active {
-            color: #ff4c4c;
-            filter: drop-shadow(0 0 5px rgba(255, 76, 76, 0.6));
-            transform: scale(1.1);
-        }
-        /* Heart Lost (Damage) */
-        .heart.lost {
-            color: rgba(0, 0, 0, 0.2);
-            transform: scale(0.8);
-            animation: heartLost 0.4s ease-in;
-        }
-        /* Heart Gained (Heal) */
-        .heart.gain {
-            animation: heartGain 0.6s ease-out;
-            color: #4cff4c;
-            filter: drop-shadow(0 0 10px rgba(76, 255, 76, 0.8));
-        }
+            .heart {
+                color: rgba(255, 255, 255, 0.2);
+                font-size: 2rem;
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            /* Active Heart (Alive) */
+            .heart.active {
+                color: #ff4c4c;
+                filter: drop-shadow(0 0 5px rgba(255, 76, 76, 0.6));
+                transform: scale(1.1);
+            }
+            /* Heart Lost (Damage) */
+            .heart.lost {
+                color: rgba(0, 0, 0, 0.2);
+                transform: scale(0.8);
+                animation: heartLost 0.4s ease-in;
+            }
+            /* Heart Gained (Heal) */
+            .heart.gain {
+                animation: heartGain 0.6s ease-out;
+                color: #4cff4c;
+                filter: drop-shadow(0 0 10px rgba(76, 255, 76, 0.8));
+            }
 
-        @@keyframes heartGain {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.8); }
-            100% { transform: scale(1.1); }
-        }
-        @@keyframes heartLost {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            50% { transform: translateX(5px); }
-            75% { transform: translateX(-5px); }
-            100% { transform: translateX(0) scale(0.8); }
-        }
+            @@keyframes heartGain {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.8); }
+                100% { transform: scale(1.1); }
+            }
+            @@keyframes heartLost {
+                0% { transform: translateX(0); }
+                25% { transform: translateX(-5px); }
+                50% { transform: translateX(5px); }
+                75% { transform: translateX(-5px); }
+                100% { transform: translateX(0) scale(0.8); }
+            }
 
-        .rank-emoji {
-            font-size: 4rem;
-            margin-bottom: 0.5rem;
-            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .rank-text {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        @@keyframes popIn {
-            0% { transform: scale(0); opacity: 0; }
-            80% { transform: scale(1.2); opacity: 1; }
-            100% { transform: scale(1); }
-        }
+            .rank-emoji {
+                font-size: 4rem;
+                margin-bottom: 0.5rem;
+                animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            .rank-text {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            @@keyframes popIn {
+                0% { transform: scale(0); opacity: 0; }
+                80% { transform: scale(1.2); opacity: 1; }
+                100% { transform: scale(1); }
+            }
 
-        .progress-dot {
-            width: 8px;
-            height: 8px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            transition: all 0.2s;
-        }
-        .progress-dot.active {
-            transform: scale(1.5);
-            background-color: #0dcaf0; /* Bootstrap info */
-            box-shadow: 0 0 6px rgba(13, 202, 240, 0.5);
-        }
-        /* Wrong Input Animation */
-        .wrong-input-animation {
-            animation: shakeRed 0.5s cubic-bezier(.36,.07,.19,.97) both;
-        }
+            .progress-dot {
+                width: 8px;
+                height: 8px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                transition: all 0.2s;
+            }
+            .progress-dot.active {
+                transform: scale(1.5);
+                background-color: #0dcaf0; /* Bootstrap info */
+                box-shadow: 0 0 6px rgba(13, 202, 240, 0.5);
+            }
+            /* Wrong Input Animation */
+            .wrong-input-animation {
+                animation: shakeRed 0.5s cubic-bezier(.36,.07,.19,.97) both;
+            }
 
-        @@keyframes shakeRed {
-            0%, 100% { transform: translateX(0); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
-            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-            20%, 40%, 60%, 80% { transform: translateX(5px); }
-            15% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.4) inset; background-color: rgba(220, 53, 69, 0.1); }
-        }
-        .progress-dot.filled {
-            background-color: #0d6efd; /* Bootstrap primary */
-        }
+            @@keyframes shakeRed {
+                0%, 100% { transform: translateX(0); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                20%, 40%, 60%, 80% { transform: translateX(5px); }
+                15% { box-shadow: 0 0 30px 10px rgba(220, 53, 69, 0.4) inset; background-color: rgba(220, 53, 69, 0.1); }
+            }
+            .progress-dot.filled {
+                background-color: #0d6efd; /* Bootstrap primary */
+            }
 
-        #piano-container.unclickable {
-            pointer-events: none;
-            opacity: 0.8;
-            filter: grayscale(0.2);
-        }
+            #piano-container.unclickable {
+                pointer-events: none;
+                opacity: 0.8;
+                filter: grayscale(0.2);
+            }
 
-        .overlay.hidden {
-            opacity: 0 !important;
-            pointer-events: none !important;
-        }
-        .overlay:not(.hidden) {
-            opacity: 1 !important;
-            pointer-events: auto !important;
-        }
+            .overlay.hidden {
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+            .overlay:not(.hidden) {
+                opacity: 1 !important;
+                pointer-events: auto !important;
+            }
 
-        /* Critical state pulse on the card border or shadow? */
-        #game-board.critical {
-            box-shadow: inset 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
-            animation: critical-border 2s infinite;
-        }
-        @@keyframes critical-border {
-            0% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
-            50% { box-shadow: inset 0 0 20px 5px rgba(220, 53, 69, 0.8); }
-            100% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
-        }
-        #game-board.critical .last-stand-indicator {
-            opacity: 1 !important;
-        }
-    </style>
+            /* Critical state pulse on the card border or shadow? */
+            #game-board.critical {
+                box-shadow: inset 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+                animation: critical-border 2s infinite;
+            }
+            @@keyframes critical-border {
+                0% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
+                50% { box-shadow: inset 0 0 20px 5px rgba(220, 53, 69, 0.8); }
+                100% { box-shadow: inset 0 0 0 0 rgba(220, 53, 69, 0.5); }
+            }
+            #game-board.critical .last-stand-indicator {
+                opacity: 1 !important;
+            }
+        </style>
 }

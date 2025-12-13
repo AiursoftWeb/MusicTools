@@ -15,6 +15,7 @@ const pianoContainer = document.getElementById("piano-container");
 const gameContainer = document.getElementById("game-board");
 
 const DIFFICULTY_VALUES = {
+    practice: 0,
     "c-major": 1,
     tonal: 5,
     atonal: 15,
@@ -232,8 +233,6 @@ window.playDebugMelody = async function () {
 // --- Game Logic ---
 
 async function startGame() {
-    gameDifficulty = "music";
-
     // Read Options
     const styleRad = document.querySelector('input[name="musicStyle"]:checked');
     const previewRad = document.querySelector(
@@ -250,6 +249,10 @@ async function startGame() {
     const style = styleRad ? styleRad.value : "c-major";
     const preview = previewRad ? previewRad.value : "scale";
 
+    // Determine if we're in practice mode
+    // In practice mode, exam sounds should be visualized
+    gameDifficulty = style === "practice" ? "practice" : "music";
+
     // Set Up Key/Notes
     if (style === "atonal") {
         // Atonal: Use Chromatic Scale C4-C5 (1 Octave + 1 note)
@@ -265,7 +268,7 @@ async function startGame() {
         currentKeyRoot = "C";
         console.log("Game Style: Atonal (Chromatic 2 Octaves)");
     } else {
-        // Tonal
+        // Tonal or Practice (both use C Major scale)
         let rootNote = "C";
 
         if (style === "tonal") {
@@ -275,7 +278,7 @@ async function startGame() {
                     Math.floor(Math.random() * ALL_NOTES_NAMES.length)
                 ];
         } else {
-            // Forced C Major
+            // Forced C Major (for c-major and practice modes)
             rootNote = "C";
         }
 
@@ -409,7 +412,9 @@ async function nextLevel() {
         const note = item.note;
         const duration = item.duration || 1.0;
 
-        const useVisual = gameDifficulty !== "music";
+        // In practice mode, show visual hints during exam playback
+        // In all other modes, no visual hints during exam
+        const useVisual = gameDifficulty === "practice";
 
         if (piano) piano.playNote(note, 0.4, useVisual);
 
