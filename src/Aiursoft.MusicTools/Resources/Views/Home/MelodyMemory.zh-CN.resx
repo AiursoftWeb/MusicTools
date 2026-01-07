@@ -18,128 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Melody Memory" xml:space="preserve">
-    <value>旋律记忆</value>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>每级增加1个音符</value>
   </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>随机调</value>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>每级 +4 个音符</value>
   </data>
-  <data name="Music Style" xml:space="preserve">
-    <value>音乐风格</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>仅限白键（最简单）</value>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>每级 +8 个音符</value>
   </data>
   <data name="⚠ Last Stand ⚠" xml:space="preserve">
     <value>⚠ 背水一战 ⚠</value>
   </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>移调大调音阶</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>记住旋律并在钢琴上复现。</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>无调性</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>根音</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>聆听音域</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>音阶</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>预览</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>C大调</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>全音阶（困难）</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>仅检查主音</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>游戏结束</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>开始游戏</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>新手</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>达到等级：</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>再试一次</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>标准音（A）</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>聆听 A4 (440Hz)</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>放弃预览</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>立即开始</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>菜鸟</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>进阶</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>青铜</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>白银</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>黄金</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>钻石</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>宗师</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>个音符</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>难度系数</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>难度</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>难度详情</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>得分计算</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>总分</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>达到等级</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>段位</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>计算</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>关卡</value>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1小节</value>
   </data>
   <data name="1 Note" xml:space="preserve">
     <value>1个音符</value>
@@ -153,50 +45,44 @@
   <data name="Add 8 beats per level" xml:space="preserve">
     <value>每级增加8拍</value>
   </data>
-  <data name="Increment" xml:space="preserve">
-    <value>递增</value>
-  </data>
   <data name="Add one note per level" xml:space="preserve">
     <value>每级增加一个音符</value>
   </data>
-  <data name="1 Bar" xml:space="preserve">
-    <value>1小节</value>
+  <data name="Atonal" xml:space="preserve">
+    <value>无调性</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>青铜</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>C大调</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>得分计算</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>仅检查主音</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>生命危急</value>
   </data>
   <data name="Current Difficulty" xml:space="preserve">
     <value>当前难度</value>
   </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>练习模式</value>
+  <data name="Diamond" xml:space="preserve">
+    <value>钻石</value>
   </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>视觉提示已启用</value>
+  <data name="Diff" xml:space="preserve">
+    <value>难度系数</value>
   </data>
-  <data name="Progression" xml:space="preserve">
-    <value>进度</value>
+  <data name="Difficulty" xml:space="preserve">
+    <value>难度</value>
   </data>
-  <data name="Hard" xml:space="preserve">
-    <value>困难</value>
-  </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>标准 (A4)</value>
-  </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>无失败</value>
-  </data>
-  <data name="Practice" xml:space="preserve">
-    <value>练习</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>无预览</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>聆听旋律，记住它，然后在钢琴上复现出来。</value>
-  </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
-    <value>每级增加1个音符</value>
-  </data>
-  <data name="+8 Notes / Lvl" xml:space="preserve">
-    <value>每级 +8 个音符</value>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>难度详情</value>
   </data>
   <data name="Difficulty Rating" xml:space="preserve">
     <value>难度评级</value>
@@ -204,14 +90,128 @@
   <data name="Final Score" xml:space="preserve">
     <value>最终得分</value>
   </data>
-  <data name="Critical Health" xml:space="preserve">
-    <value>生命危急</value>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>全音阶（困难）</value>
   </data>
-  <data name="+4 Notes / Lvl" xml:space="preserve">
-    <value>每级 +4 个音符</value>
+  <data name="Game Over" xml:space="preserve">
+    <value>游戏结束</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>黄金</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>宗师</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>困难</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>递增</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>进阶</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>关卡</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>达到等级</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>达到等级：</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>聆听 A4 (440Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>聆听音域</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>聆听旋律，记住它，然后在钢琴上复现出来。</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>旋律记忆</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>音乐风格</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>无失败</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>无预览</value>
   </data>
   <data name="No Score" xml:space="preserve">
     <value>不计分</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>个音符</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>新手</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>练习</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>练习模式</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>随机调</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>段位</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>记住旋律并在钢琴上复现。</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>菜鸟</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>根音</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>音阶</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>白银</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>放弃预览</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>标准 (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>标准音（A）</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>开始游戏</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>立即开始</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>总分</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>移调大调音阶</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>再试一次</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>视觉提示已启用</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>仅限白键（最简单）</value>
   </data>
 
 </root>

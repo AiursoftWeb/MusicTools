@@ -18,56 +18,32 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome!" xml:space="preserve">
-    <value>Witaj!</value>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>Skala Chromatyczna</value>
   </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Co to jest?</value>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Krąg kwintowy</value>
   </data>
   <data name="How to Use It" xml:space="preserve">
     <value>Jak z niego korzystać</value>
   </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Użyj przycisków „Rotate” pod dowolnym okręgiem, aby wybrać nowy klucz.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Interaktywne Pianino automatycznie podświetli wszystkie nuty (oraz ich stopnie skali) dla wybranego klucza.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Skala chromatyczna pokazuje wszystkie 12 dźwięków. Wewnętrzne numery (1-7) podświetlają nuty skali majorowej dla wybranego klucza.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Szybki wybór tonacji</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>To narzędzie pomaga w wizualizacji teorii muzyki. Łączy skalę chromatyczną, koło kwintowe, klawiaturę fortepianu oraz standardowy zapis nutowy w jednym miejscu.</value>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interaktywne Pianino</value>
   </data>
   <data name="Jianpu Key" xml:space="preserve">
     <value>Tonacja Jianpu</value>
   </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Koło kwint organizuje tonacje w oparciu o kwinty czyste. Obrót tego koła pokazuje, jak tonacje są ze sobą powiązane. Każde kliknięcie (czyli &apos;kwinta&apos;) dodaje lub usuwa jeden krzyżyk/bemol z przyklucza.</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Wybierz tonację durową</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Wyświetlacz znaków przykluczowych pokazuje prawidłowe krzyżyki lub bemole dla danego klucza zarówno na kluczu wiolinowym, jak i basowym.</value>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Znak przykluczowy</value>
   </data>
   <data name="Loop Playback" xml:space="preserve">
     <value>Odtwarzanie w pętli</value>
   </data>
-  <data name="Song" xml:space="preserve">
-    <value>Utwór</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Odtwarzacz utworów</value>
-  </data>
   <data name="Play" xml:space="preserve">
     <value>Odtwórz</value>
   </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Skala Chromatyczna</value>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Szybki wybór tonacji</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Obróć w lewo</value>
@@ -75,17 +51,41 @@
   <data name="Rotate Right" xml:space="preserve">
     <value>Obróć w prawo</value>
   </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Wybierz tonację durową</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Utwór</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Odtwarzacz utworów</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Skala chromatyczna pokazuje wszystkie 12 dźwięków. Wewnętrzne numery (1-7) podświetlają nuty skali majorowej dla wybranego klucza.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Koło kwint organizuje tonacje w oparciu o kwinty czyste. Obrót tego koła pokazuje, jak tonacje są ze sobą powiązane. Każde kliknięcie (czyli &apos;kwinta&apos;) dodaje lub usuwa jeden krzyżyk/bemol z przyklucza.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Interaktywne Pianino automatycznie podświetli wszystkie nuty (oraz ich stopnie skali) dla wybranego klucza.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Wyświetlacz znaków przykluczowych pokazuje prawidłowe krzyżyki lub bemole dla danego klucza zarówno na kluczu wiolinowym, jak i basowym.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>To narzędzie pomaga w wizualizacji teorii muzyki. Łączy skalę chromatyczną, koło kwintowe, klawiaturę fortepianu oraz standardowy zapis nutowy w jednym miejscu.</value>
+  </data>
   <data name="Tonic" xml:space="preserve">
     <value>Tonika</value>
   </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Krąg kwintowy</value>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Użyj przycisków „Rotate” pod dowolnym okręgiem, aby wybrać nowy klucz.</value>
   </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Interaktywne Pianino</value>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Witaj!</value>
   </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Znak przykluczowy</value>
+  <data name="What is this?" xml:space="preserve">
+    <value>Co to jest?</value>
   </data>
 
 </root>

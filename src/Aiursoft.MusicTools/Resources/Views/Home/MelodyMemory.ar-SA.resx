@@ -18,143 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="⚠ Last Stand ⚠" xml:space="preserve">
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 نوتة / مستوى</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+٤ نوتات / مستوى</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 نوتات / مستوى</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
     <value>⚠ الموقف الأخير ⚠</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>تذكر اللحن وكرره على البيانو.</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>دو ماجور</value>
-  </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>مفتاح عشوائي</value>
-  </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>سلم موسيقي كبير منقول</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>المفاتيح البيضاء فقط (الأسهل)</value>
-  </data>
-  <data name="Music Style" xml:space="preserve">
-    <value>نمط الموسيقى</value>
-  </data>
-  <data name="Melody Memory" xml:space="preserve">
-    <value>ذاكرة اللحن</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>معاينة</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>استمع إلى النطاق</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>السلم الموسيقي</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>السلم الكروماتيكي الكامل (صعب)</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>لاحِني</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>التحقق من النغمة الأساسية فقط</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>ابدأ اللعبة</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>النغمة الأساسية</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>انتهت اللعبة</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>مبتدئ</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>المستوى الذي تم الوصول إليه:</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>حاول مرة أخرى</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>ابدأ فورًا</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>النغمة القياسية (A)</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>تخطي المعاينة</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>استمع إلى A4 (440 هرتز)</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>تفصيل مستوى الصعوبة</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>الفرق</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>الرتبة</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>الحساب</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>المستوى الذي تم الوصول إليه</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>الملاحظات</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>النتيجة الإجمالية</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>مبتدئ</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>الصعوبة</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>برونز</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>الماس</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>ذهب</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>متوسط</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>السيد الكبير</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>فضة</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>حساب</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>المستوى</value>
   </data>
   <data name="1 Bar" xml:space="preserve">
     <value>مقياس واحد</value>
-  </data>
-  <data name="Add 8 beats per level" xml:space="preserve">
-    <value>أضف 8 إيقاعات لكل مستوى</value>
-  </data>
-  <data name="Increment" xml:space="preserve">
-    <value>الزيادة</value>
-  </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>أضف نغمة واحدة لكل مستوى</value>
-  </data>
-  <data name="Add 4 beats per level" xml:space="preserve">
-    <value>أضف 4 إيقاعات لكل مستوى</value>
   </data>
   <data name="1 Note" xml:space="preserve">
     <value>نغمة واحدة</value>
@@ -162,56 +39,179 @@
   <data name="2 Bars" xml:space="preserve">
     <value>مقياسان</value>
   </data>
-  <data name="Current Difficulty" xml:space="preserve">
-    <value>الصعوبة الحالية</value>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>أضف 4 إيقاعات لكل مستوى</value>
   </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>وضع التدريب</value>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>أضف 8 إيقاعات لكل مستوى</value>
   </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>تمكين التلميحات المرئية</value>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>أضف نغمة واحدة لكل مستوى</value>
   </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>قياسي (A4)</value>
+  <data name="Atonal" xml:space="preserve">
+    <value>لاحِني</value>
   </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>لا فشل</value>
+  <data name="Bronze" xml:space="preserve">
+    <value>برونز</value>
   </data>
-  <data name="Progression" xml:space="preserve">
-    <value>التقدم</value>
+  <data name="C Major" xml:space="preserve">
+    <value>دو ماجور</value>
   </data>
-  <data name="Hard" xml:space="preserve">
-    <value>صعب</value>
+  <data name="Calc" xml:space="preserve">
+    <value>حساب</value>
   </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
-    <value>+1 نوتة / مستوى</value>
+  <data name="Calculation" xml:space="preserve">
+    <value>الحساب</value>
   </data>
-  <data name="Practice" xml:space="preserve">
-    <value>تمرين</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>استمع إلى اللحن، احفظه، ثم أعِد عزفه على البيانو.</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>بدون معاينة</value>
-  </data>
-  <data name="Difficulty Rating" xml:space="preserve">
-    <value>مستوى الصعوبة</value>
-  </data>
-  <data name="+4 Notes / Lvl" xml:space="preserve">
-    <value>+٤ نوتات / مستوى</value>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>التحقق من النغمة الأساسية فقط</value>
   </data>
   <data name="Critical Health" xml:space="preserve">
     <value>صحة حرجة</value>
   </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>الصعوبة الحالية</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>الماس</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>الفرق</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>الصعوبة</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>تفصيل مستوى الصعوبة</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>مستوى الصعوبة</value>
+  </data>
   <data name="Final Score" xml:space="preserve">
     <value>النتيجة النهائية</value>
   </data>
-  <data name="+8 Notes / Lvl" xml:space="preserve">
-    <value>+8 نوتات / مستوى</value>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>السلم الكروماتيكي الكامل (صعب)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>انتهت اللعبة</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>ذهب</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>السيد الكبير</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>صعب</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>الزيادة</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>المستوى</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>المستوى الذي تم الوصول إليه</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>المستوى الذي تم الوصول إليه:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>استمع إلى A4 (440 هرتز)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>استمع إلى النطاق</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>استمع إلى اللحن، احفظه، ثم أعِد عزفه على البيانو.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>ذاكرة اللحن</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>نمط الموسيقى</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>لا فشل</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>بدون معاينة</value>
   </data>
   <data name="No Score" xml:space="preserve">
     <value>لا يوجد نقاط</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>مبتدئ</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>تمرين</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>وضع التدريب</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>معاينة</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>التقدم</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>مفتاح عشوائي</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>الرتبة</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>تذكر اللحن وكرره على البيانو.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>مبتدئ</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>النغمة الأساسية</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>السلم الموسيقي</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>فضة</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>تخطي المعاينة</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>قياسي (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>النغمة القياسية (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>ابدأ اللعبة</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>ابدأ فورًا</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>النتيجة الإجمالية</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>سلم موسيقي كبير منقول</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>حاول مرة أخرى</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>تمكين التلميحات المرئية</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>المفاتيح البيضاء فقط (الأسهل)</value>
   </data>
 
 </root>

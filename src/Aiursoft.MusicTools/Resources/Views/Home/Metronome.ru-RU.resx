@@ -18,41 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Normal (90)" xml:space="preserve">
-    <value>Нормальный (90)</value>
-  </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>Медленно (1)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>Размер такта</value>
+      <data name="BPM" xml:space="preserve">
+    <value>уд/мин</value>
   </data>
   <data name="Eighth Note (♫)" xml:space="preserve">
     <value>Восьмая нота (♫)</value>
   </data>
-  <data name="BPM" xml:space="preserve">
-    <value>уд/мин</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Подразделение</value>
-  </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>Быстро (320)</value>
+  </data>
+  <data name="Normal (90)" xml:space="preserve">
+    <value>Нормальный (90)</value>
   </data>
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>Четвертная нота (♩)</value>
   </data>
-  <data name="Triplet (3)" xml:space="preserve">
-    <value>Триоль (3)</value>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>Шестнадцатая нота (♬)</value>
   </data>
-  <data name="Stop" xml:space="preserve">
-    <value>Стоп</value>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>Медленно (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Старт</value>
   </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>Шестнадцатая нота (♬)</value>
+  <data name="Stop" xml:space="preserve">
+    <value>Стоп</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Размер такта</value>
+  </data>
+  <data name="Triplet (3)" xml:space="preserve">
+    <value>Триоль (3)</value>
   </data>
 
 </root>

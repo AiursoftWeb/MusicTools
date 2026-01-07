@@ -18,41 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>Sekizlik Nota (♫)</value>
-  </data>
-  <data name="BPM" xml:space="preserve">
+      <data name="BPM" xml:space="preserve">
     <value>BPM</value>
   </data>
-  <data name="Quarter Note (♩)" xml:space="preserve">
-    <value>Dörtlük Nota (♩)</value>
-  </data>
-  <data name="Normal (90)" xml:space="preserve">
-    <value>Normal (90)</value>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>Sekizlik Nota (♫)</value>
   </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>Hızlı (320)</value>
   </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Alt Bölüm</value>
+  <data name="Normal (90)" xml:space="preserve">
+    <value>Normal (90)</value>
+  </data>
+  <data name="Quarter Note (♩)" xml:space="preserve">
+    <value>Dörtlük Nota (♩)</value>
+  </data>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>Onaltılık Nota (♬)</value>
   </data>
   <data name="Slow (1)" xml:space="preserve">
     <value>Yavaş (1)</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Durdur</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Alt Bölüm</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Ölçü İşareti</value>
   </data>
   <data name="Triplet (3)" xml:space="preserve">
     <value>Üçlem (3)</value>
-  </data>
-  <data name="Stop" xml:space="preserve">
-    <value>Durdur</value>
-  </data>
-  <data name="Start" xml:space="preserve">
-    <value>Başlat</value>
-  </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>Onaltılık Nota (♬)</value>
   </data>
 
 </root>

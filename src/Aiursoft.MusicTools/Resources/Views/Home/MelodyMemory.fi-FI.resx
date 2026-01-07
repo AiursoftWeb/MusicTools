@@ -18,185 +18,71 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>Muista melodia ja toista se pianolla.</value>
-  </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ Viimeinen Vastarinta ⚠</value>
-  </data>
-  <data name="Music Style" xml:space="preserve">
-    <value>Musiikkityyli</value>
-  </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>Satunnainen Sävellaji</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>C-duuri</value>
-  </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>Siirretty duuriasteikko</value>
-  </data>
-  <data name="Melody Memory" xml:space="preserve">
-    <value>Melodiamuisti</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>Atonaali</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>Esikatselu</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>Koko kromaattinen asteikko (Vaikea)</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>Skaala</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>Vain valkoiset näppäimet (Helpoin)</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>Tarkista vain toonika</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>Kuuntele ääniala</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Perussävel</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>Saavutettu taso:</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>Peli ohi</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>Aloittelija</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>Yritä uudelleen</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>Aloita peli</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>Kuuntele A4 (440 Hz)</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>Ohita esikatselu</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>Standard Pitch (A)</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>Aloita heti</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>Laskenta</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>Sijoitus</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>Vaikeus</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>Saavutettu taso</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>Vaikeusaste</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>Kokonaispisteet</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Nuotit</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>Vaikeustasojen jakauma</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>Hopea</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>Kulta</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>Aloittelija</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>Timantti</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>Pronssi</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>Keskitaso</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>Suurmestari</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>Taso</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>Lasku</value>
-  </data>
-  <data name="Increment" xml:space="preserve">
-    <value>Lisäys</value>
-  </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>Lisää yksi nuotti per taso</value>
-  </data>
-  <data name="1 Bar" xml:space="preserve">
-    <value>1 tahti</value>
-  </data>
-  <data name="2 Bars" xml:space="preserve">
-    <value>2 tahtia</value>
-  </data>
-  <data name="Add 8 beats per level" xml:space="preserve">
-    <value>Lisää 8 iskua per taso</value>
-  </data>
-  <data name="Add 4 beats per level" xml:space="preserve">
-    <value>Lisää 4 iskua per taso</value>
-  </data>
-  <data name="1 Note" xml:space="preserve">
-    <value>1 nuotti</value>
-  </data>
-  <data name="Current Difficulty" xml:space="preserve">
-    <value>Nykyinen vaikeustaso</value>
-  </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>Visuaaliset vihjeet käytössä</value>
-  </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>Harjoittelutila</value>
-  </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
+      <data name="+1 Note / Lvl" xml:space="preserve">
     <value>+1 nuotti / taso</value>
   </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>Ei esikatselua</value>
-  </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>Vakio (A4)</value>
-  </data>
-  <data name="Practice" xml:space="preserve">
-    <value>Harjoittelu</value>
-  </data>
-  <data name="Progression" xml:space="preserve">
-    <value>Edistyminen</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>Kuuntele melodia, muista se ja toista se pianolla.</value>
-  </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>Ei epäonnistumista</value>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 nuottia / taso</value>
   </data>
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 nuottia / taso</value>
   </data>
-  <data name="+4 Notes / Lvl" xml:space="preserve">
-    <value>+4 nuottia / taso</value>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Viimeinen Vastarinta ⚠</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 tahti</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 nuotti</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 tahtia</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Lisää 4 iskua per taso</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Lisää 8 iskua per taso</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Lisää yksi nuotti per taso</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonaali</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Pronssi</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>C-duuri</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Lasku</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Laskenta</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Tarkista vain toonika</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kriittinen terveys</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Nykyinen vaikeustaso</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Timantti</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Vaikeus</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Vaikeusaste</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Vaikeustasojen jakauma</value>
   </data>
   <data name="Difficulty Rating" xml:space="preserve">
     <value>Vaikeustaso</value>
@@ -204,14 +90,128 @@
   <data name="Final Score" xml:space="preserve">
     <value>Loppupisteet</value>
   </data>
-  <data name="Critical Health" xml:space="preserve">
-    <value>Kriittinen terveys</value>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Koko kromaattinen asteikko (Vaikea)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Peli ohi</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Kulta</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Suurmestari</value>
   </data>
   <data name="Hard" xml:space="preserve">
     <value>Vaikea</value>
   </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Lisäys</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Keskitaso</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Taso</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Saavutettu taso</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Saavutettu taso:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Kuuntele A4 (440 Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Kuuntele ääniala</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Kuuntele melodia, muista se ja toista se pianolla.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodiamuisti</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Musiikkityyli</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Ei epäonnistumista</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Ei esikatselua</value>
+  </data>
   <data name="No Score" xml:space="preserve">
     <value>Ei pisteytystä</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nuotit</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Aloittelija</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Harjoittelu</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Harjoittelutila</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Esikatselu</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Edistyminen</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Satunnainen Sävellaji</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Sijoitus</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Muista melodia ja toista se pianolla.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Aloittelija</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Perussävel</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Skaala</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Hopea</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Ohita esikatselu</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Vakio (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standard Pitch (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Aloita peli</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Aloita heti</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Kokonaispisteet</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Siirretty duuriasteikko</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Yritä uudelleen</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Visuaaliset vihjeet käytössä</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Vain valkoiset näppäimet (Helpoin)</value>
   </data>
 
 </root>

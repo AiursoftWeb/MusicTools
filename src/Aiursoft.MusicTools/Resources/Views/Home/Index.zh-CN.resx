@@ -18,50 +18,50 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Why is music designed this way?" xml:space="preserve">
-    <value>音乐为何如此设计？</value>
-  </data>
-  <data name="Explore Minor" xml:space="preserve">
-    <value>探索小调</value>
-  </data>
-  <data name="Explore Major" xml:space="preserve">
-    <value>探索大调</value>
-  </data>
-  <data name="Tool Interface Preview" xml:space="preserve">
-    <value>工具界面预览</value>
-  </data>
-  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>“看见”音乐的语言</value>
-  </data>
-  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
-    <value>音乐并非魔法，而是数学、物理与规律的绝妙结合。我们的工具正是为了揭示这些规律：</value>
-  </data>
-  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
-    <value>无论您是初学入门的学生、充满好奇的爱好者，还是经验丰富的制作人，这款工具都将为您提供一个直观的沙盒环境，用于探索调性、和声与音阶结构。</value>
-  </data>
-  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
-    <value>解构十二音体系</value>
-  </data>
-  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
-    <value>欢迎使用这款交互式乐理工具。我们帮助您将乐理中的抽象概念——半音阶、五度圈与钢琴键盘——联系起来，让您真正“看见”音乐的运作原理。</value>
-  </data>
-  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
-    <value>五度圈的神奇魔力</value>
   </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>融会贯通</value>
   </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>解构十二音体系</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>探索大调</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>探索小调</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>调性并非孤立存在。&quot;五度圈&quot;（Circle of Fifths）是音乐世界的罗盘，它揭示了所有调号（C -&gt; G -&gt; D...）的排列顺序及其和声关系，是作曲、编曲与即兴创作的核心蓝图。</value>
   </data>
-  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
-    <value>为什么一个八度被分成12个键？现代音乐建立在“十二平均律”之上，这是一种精妙的数学折衷方案，使得所有调性听起来都“可接受”。我们的半音阶圆盘让这个抽象的音高系统变得直观可见。</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>音乐并非魔法，而是数学、物理与规律的绝妙结合。我们的工具正是为了揭示这些规律：</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>播放随机旋律</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>五度圈的神奇魔力</value>
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>乐理可能枯燥，但亲眼见证理论付诸实践却充满乐趣。本工具的核心价值在于&quot;实时同步&quot;。当您选择一个新的调时，半音圈、五度圈、钢琴键与五线谱会即刻更新。您将瞬间明白为何G大调仅有一个升号！</value>
   </data>
-  <data name="Play Random Melody" xml:space="preserve">
-    <value>播放随机旋律</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>工具界面预览</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>欢迎使用这款交互式乐理工具。我们帮助您将乐理中的抽象概念——半音阶、五度圈与钢琴键盘——联系起来，让您真正“看见”音乐的运作原理。</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>无论您是初学入门的学生、充满好奇的爱好者，还是经验丰富的制作人，这款工具都将为您提供一个直观的沙盒环境，用于探索调性、和声与音阶结构。</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>为什么一个八度被分成12个键？现代音乐建立在“十二平均律”之上，这是一种精妙的数学折衷方案，使得所有调性听起来都“可接受”。我们的半音阶圆盘让这个抽象的音高系统变得直观可见。</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>音乐为何如此设计？</value>
   </data>
 
 </root>

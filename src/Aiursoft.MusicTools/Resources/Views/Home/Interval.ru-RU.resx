@@ -18,164 +18,164 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Major Third" xml:space="preserve">
-    <value>Большая терция</value>
-  </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Чистая кварта</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Чистая прима</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Малая терция</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>Большая секунда</value>
-  </data>
-  <data name="Augmented Fourth" xml:space="preserve">
-    <value>Увеличенная кварта</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Малая секунда</value>
-  </data>
-  <data name="Interval Calculator" xml:space="preserve">
-    <value>Калькулятор интервалов</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Чистая квинта</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Большая секста</value>
-  </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Малая септима</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Малая секста</value>
-  </data>
-  <data name="Perfect Octave" xml:space="preserve">
-    <value>Чистая октава</value>
-  </data>
-  <data name="Please input with the lower note first" xml:space="preserve">
-    <value>Пожалуйста, введите сначала нижнюю ноту</value>
-  </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>Большая септима</value>
-  </data>
-  <data name="Unable to recognize note name" xml:space="preserve">
-    <value>Не удалось распознать название ноты</value>
-  </data>
-  <data name="How to Use" xml:space="preserve">
-    <value>Как использовать</value>
-  </data>
-  <data name="Result" xml:space="preserve">
-    <value>Результат</value>
-  </data>
-  <data name="to" xml:space="preserve">
-    <value>до</value>
-  </data>
-  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
-    <value>Интервал между двумя нотами будет вычислен и отображён.</value>
-  </data>
-  <data name="The first note you select will be the root." xml:space="preserve">
-    <value>Первая выбранная вами нота будет считаться тоникой.</value>
-  </data>
-  <data name="Click any two keys on the piano below." xml:space="preserve">
-    <value>Нажмите любые две клавиши на пианино ниже.</value>
-  </data>
-  <data name="Click a selected key again to deselect it." xml:space="preserve">
-    <value>Щёлкните по выбранной клавише ещё раз, чтобы отменить её выбор.</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Интерактивное пианино</value>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Увеличенная восемнадцатая</value>
   </data>
   <data name="Augmented Eleventh" xml:space="preserve">
     <value>Увеличенная ундецима</value>
   </data>
-  <data name="Perfect Eleventh" xml:space="preserve">
-    <value>Чистая ундецима</value>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Увеличенная кварта</value>
   </data>
-  <data name="Major Ninth" xml:space="preserve">
-    <value>Большая нона</value>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Щёлкните по выбранной клавише ещё раз, чтобы отменить её выбор.</value>
   </data>
-  <data name="Minor Tenth" xml:space="preserve">
-    <value>Малая децима</value>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Нажмите любые две клавиши на пианино ниже.</value>
   </data>
-  <data name="Perfect Twelfth" xml:space="preserve">
-    <value>Чистая дуодецима</value>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Диссонанс</value>
   </data>
-  <data name="Minor Ninth" xml:space="preserve">
-    <value>Малая нона</value>
-  </data>
-  <data name="Minor Thirteenth" xml:space="preserve">
-    <value>Малая терцдецима</value>
-  </data>
-  <data name="Major Tenth" xml:space="preserve">
-    <value>Большая децима</value>
-  </data>
-  <data name="Major Thirteenth" xml:space="preserve">
-    <value>Большая терцдецима</value>
-  </data>
-  <data name="Minor Fourteenth" xml:space="preserve">
-    <value>Малая квартдецима</value>
-  </data>
-  <data name="Major Fourteenth" xml:space="preserve">
-    <value>Большая децима</value>
-  </data>
-  <data name="Perfect Fifteenth" xml:space="preserve">
-    <value>Квинтдецима</value>
-  </data>
-  <data name="Minor Seventeenth" xml:space="preserve">
-    <value>Малая семнадцатая</value>
-  </data>
-  <data name="Minor Twentieth" xml:space="preserve">
-    <value>Малая двадцатая</value>
-  </data>
-  <data name="Perfect Nineteenth" xml:space="preserve">
-    <value>Чистая девятнадцатая</value>
-  </data>
-  <data name="Major Seventeenth" xml:space="preserve">
-    <value>Большая семнадцатая</value>
-  </data>
-  <data name="Minor Sixteenth" xml:space="preserve">
-    <value>Малая шестнадцатая</value>
-  </data>
-  <data name="Augmented Eighteenth" xml:space="preserve">
-    <value>Увеличенная восемнадцатая</value>
-  </data>
-  <data name="Perfect Eighteenth" xml:space="preserve">
-    <value>Чистая восемнадцатая</value>
-  </data>
-  <data name="Major Sixteenth" xml:space="preserve">
-    <value>Большая шестнадцатая</value>
-  </data>
-  <data name="Minor Twenty-First" xml:space="preserve">
-    <value>Малая двадцать первая</value>
-  </data>
-  <data name="Major Twentieth" xml:space="preserve">
-    <value>Большая двадцатая</value>
-  </data>
-  <data name="Perfect Twenty-Second" xml:space="preserve">
-    <value>Чистая двадцать вторая</value>
-  </data>
-  <data name="Major Twenty-First" xml:space="preserve">
-    <value>Большая двадцать первая</value>
-  </data>
-  <data name="Reset Selection" xml:space="preserve">
-    <value>Сбросить выделение</value>
+  <data name="How to Use" xml:space="preserve">
+    <value>Как использовать</value>
   </data>
   <data name="Imperfect Consonance" xml:space="preserve">
     <value>Несовершенный консонанс</value>
   </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Интерактивное пианино</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Калькулятор интервалов</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Большая децима</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Большая нона</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Большая секунда</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Большая семнадцатая</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Большая септима</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Большая шестнадцатая</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Большая секста</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Большая децима</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Большая терция</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Большая терцдецима</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Большая двадцатая</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Большая двадцать первая</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Малая квартдецима</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Малая нона</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Малая секунда</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Малая семнадцатая</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Малая септима</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Малая шестнадцатая</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Малая секста</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Малая децима</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Малая терция</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Малая терцдецима</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Малая двадцатая</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Малая двадцать первая</value>
+  </data>
   <data name="Perfect Consonance" xml:space="preserve">
     <value>Совершенный консонанс</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Чистая восемнадцатая</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Чистая ундецима</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Квинтдецима</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Чистая квинта</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Чистая кварта</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Чистая девятнадцатая</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Чистая октава</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Чистая дуодецима</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Чистая двадцать вторая</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Чистая прима</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Пожалуйста, введите сначала нижнюю ноту</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Сбросить выделение</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Результат</value>
   </data>
   <data name="Sharp Dissonance" xml:space="preserve">
     <value>Резкий диссонанс</value>
   </data>
-  <data name="Dissonance" xml:space="preserve">
-    <value>Диссонанс</value>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Первая выбранная вами нота будет считаться тоникой.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Интервал между двумя нотами будет вычислен и отображён.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>до</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Не удалось распознать название ноты</value>
   </data>
 
 </root>

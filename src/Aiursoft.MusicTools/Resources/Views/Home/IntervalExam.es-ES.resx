@@ -18,20 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Wrong." xml:space="preserve">
-    <value>Incorrecto.</value>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>Quinta Aumentada</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Cuarta Aumentada</value>
   </data>
   <data name="Correct!" xml:space="preserve">
     <value>¡Correcto!</value>
   </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Unísono Perfecto</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Segunda menor</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Tercera menor</value>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>Quinta Disminuida</value>
   </data>
   <data name="Interval Exam" xml:space="preserve">
     <value>Examen de Intervalos</value>
@@ -39,47 +36,50 @@
   <data name="Major Second" xml:space="preserve">
     <value>Segunda Mayor</value>
   </data>
-  <data name="What is the {0} of the note above?" xml:space="preserve">
-    <value>¿Cuál es el {0} de la nota de arriba?</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Tercera Mayor</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Sexta menor</value>
-  </data>
-  <data name="Augmented Fifth" xml:space="preserve">
-    <value>Quinta Aumentada</value>
-  </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Cuarta Justa</value>
-  </data>
-  <data name="Diminished Fifth" xml:space="preserve">
-    <value>Quinta Disminuida</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Quinta Justa</value>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Séptima Mayor</value>
   </data>
   <data name="Major Sixth" xml:space="preserve">
     <value>Sexta Mayor</value>
   </data>
-  <data name="Augmented Fourth" xml:space="preserve">
-    <value>Cuarta Aumentada</value>
+  <data name="Major Third" xml:space="preserve">
+    <value>Tercera Mayor</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Segunda menor</value>
   </data>
   <data name="Minor Seventh" xml:space="preserve">
     <value>Séptima menor</value>
   </data>
-  <data name="Select Answer" xml:space="preserve">
-    <value>Seleccionar respuesta</value>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Sexta menor</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Tercera menor</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Quinta Justa</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Cuarta Justa</value>
   </data>
   <data name="Perfect Octave" xml:space="preserve">
     <value>Octava Justa</value>
   </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>Séptima Mayor</value>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Unísono Perfecto</value>
+  </data>
+  <data name="Select Answer" xml:space="preserve">
+    <value>Seleccionar respuesta</value>
   </data>
   <data name="What is the (0) of the note above?" xml:space="preserve">
     <value>¿Cuál es el (0) de la nota anterior?</value>
+  </data>
+  <data name="What is the {0} of the note above?" xml:space="preserve">
+    <value>¿Cuál es el {0} de la nota de arriba?</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Incorrecto.</value>
   </data>
 
 </root>

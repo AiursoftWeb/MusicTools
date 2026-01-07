@@ -18,23 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Fast (320)" xml:space="preserve">
-    <value>Rapide (320)</value>
-  </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>Lent (1)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>Signature rythmique</value>
+      <data name="BPM" xml:space="preserve">
+    <value>BPM</value>
   </data>
   <data name="Eighth Note (♫)" xml:space="preserve">
     <value>Double croche (♫)</value>
   </data>
-  <data name="BPM" xml:space="preserve">
-    <value>BPM</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Subdivision</value>
+  <data name="Fast (320)" xml:space="preserve">
+    <value>Rapide (320)</value>
   </data>
   <data name="Normal (90)" xml:space="preserve">
     <value>Normal (90)</value>
@@ -42,17 +33,26 @@
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>Noire (♩)</value>
   </data>
-  <data name="Stop" xml:space="preserve">
-    <value>Arrêter</value>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>Double-croche (♬)</value>
   </data>
-  <data name="Triplet (3)" xml:space="preserve">
-    <value>Triplet (3)</value>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>Lent (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Démarrer</value>
   </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>Double-croche (♬)</value>
+  <data name="Stop" xml:space="preserve">
+    <value>Arrêter</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Subdivision</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Signature rythmique</value>
+  </data>
+  <data name="Triplet (3)" xml:space="preserve">
+    <value>Triplet (3)</value>
   </data>
 
 </root>

@@ -18,68 +18,155 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Interval Calculator" xml:space="preserve">
-    <value>Intervallilaskin</value>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Korotettu okstandesimi</value>
   </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Pieni sekunti</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>Suuri sekunti</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Suuri terssi</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Pieni terssi</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Puhdas Prime</value>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>Ylin yhdestoista</value>
   </data>
   <data name="Augmented Fourth" xml:space="preserve">
     <value>Ylineljäs</value>
   </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Puhdas kvartti</value>
-  </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>Suuri septimi</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Suuri seksti</value>
-  </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Pieni septimi</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Puhdas kvintti</value>
-  </data>
-  <data name="Perfect Octave" xml:space="preserve">
-    <value>Täydellinen oktaavi</value>
-  </data>
-  <data name="Unable to recognize note name" xml:space="preserve">
-    <value>Nuottia ei tunnistettu</value>
-  </data>
-  <data name="Please input with the lower note first" xml:space="preserve">
-    <value>Syötä alempi nuotti ensin.</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Pieni seksti</value>
-  </data>
-  <data name="How to Use" xml:space="preserve">
-    <value>Käyttöohje</value>
-  </data>
-  <data name="Result" xml:space="preserve">
-    <value>Tulos</value>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Napsauta valittua näppäintä uudelleen poistaaksesi sen valinnan.</value>
   </data>
   <data name="Click any two keys on the piano below." xml:space="preserve">
     <value>Napsauta mitä tahansa kahta näppäintä alla olevalla pianolla.</value>
   </data>
-  <data name="The first note you select will be the root." xml:space="preserve">
-    <value>Ensimmäinen valitsemasi nuotti on perussävel.</value>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonanssi</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Käyttöohje</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Epätäydellinen konsonanssi</value>
   </data>
   <data name="Interactive Piano" xml:space="preserve">
     <value>Vuorovaikutteinen piano</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervallilaskin</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Suuri terssi</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Suuri noon</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Suuri sekunti</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Suuri septendesiimi</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Suuri septimi</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Suuri sekstandesimi</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Suuri seksti</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Suuri terssi</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Suuri terssi</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Suuri terssi</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Suuri kahdeskymmenes</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Suuri kahdeskymmenesensimmäinen</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Pieni kvarttoista</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Pieni noon</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Pieni sekunti</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Pieni septendesiimi</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Pieni septimi</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Pieni sekstandesimi</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Pieni seksti</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Pieni terssi</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Pieni terssi</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Pieni terssi</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Pieni kahdeskymmenes</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Pieni kahdeskymmenesensimmäinen</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Täydellinen konsonanssi</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Täydellinen kahdeksastoista</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Puhdas yhdestoista</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Puhdas kvinttoista</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Puhdas kvintti</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Puhdas kvartti</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Täydellinen yhdeksästoista</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Täydellinen oktaavi</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Puhdas duodesimi</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Täydellinen kahdeskymmenestoinen</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Puhdas Prime</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Syötä alempi nuotti ensin.</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Nollaa valinta</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Tulos</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Terävä dissonanssi</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Ensimmäinen valitsemasi nuotti on perussävel.</value>
   </data>
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Kahden nuotin välinen intervalli lasketaan ja näytetään.</value>
@@ -87,95 +174,8 @@
   <data name="to" xml:space="preserve">
     <value>-</value>
   </data>
-  <data name="Click a selected key again to deselect it." xml:space="preserve">
-    <value>Napsauta valittua näppäintä uudelleen poistaaksesi sen valinnan.</value>
-  </data>
-  <data name="Minor Ninth" xml:space="preserve">
-    <value>Pieni noon</value>
-  </data>
-  <data name="Major Tenth" xml:space="preserve">
-    <value>Suuri terssi</value>
-  </data>
-  <data name="Minor Tenth" xml:space="preserve">
-    <value>Pieni terssi</value>
-  </data>
-  <data name="Perfect Twelfth" xml:space="preserve">
-    <value>Puhdas duodesimi</value>
-  </data>
-  <data name="Augmented Eleventh" xml:space="preserve">
-    <value>Ylin yhdestoista</value>
-  </data>
-  <data name="Minor Thirteenth" xml:space="preserve">
-    <value>Pieni terssi</value>
-  </data>
-  <data name="Major Ninth" xml:space="preserve">
-    <value>Suuri noon</value>
-  </data>
-  <data name="Perfect Eleventh" xml:space="preserve">
-    <value>Puhdas yhdestoista</value>
-  </data>
-  <data name="Major Thirteenth" xml:space="preserve">
-    <value>Suuri terssi</value>
-  </data>
-  <data name="Major Fourteenth" xml:space="preserve">
-    <value>Suuri terssi</value>
-  </data>
-  <data name="Minor Fourteenth" xml:space="preserve">
-    <value>Pieni kvarttoista</value>
-  </data>
-  <data name="Perfect Fifteenth" xml:space="preserve">
-    <value>Puhdas kvinttoista</value>
-  </data>
-  <data name="Minor Twentieth" xml:space="preserve">
-    <value>Pieni kahdeskymmenes</value>
-  </data>
-  <data name="Minor Sixteenth" xml:space="preserve">
-    <value>Pieni sekstandesimi</value>
-  </data>
-  <data name="Major Sixteenth" xml:space="preserve">
-    <value>Suuri sekstandesimi</value>
-  </data>
-  <data name="Augmented Eighteenth" xml:space="preserve">
-    <value>Korotettu okstandesimi</value>
-  </data>
-  <data name="Perfect Eighteenth" xml:space="preserve">
-    <value>Täydellinen kahdeksastoista</value>
-  </data>
-  <data name="Major Seventeenth" xml:space="preserve">
-    <value>Suuri septendesiimi</value>
-  </data>
-  <data name="Minor Seventeenth" xml:space="preserve">
-    <value>Pieni septendesiimi</value>
-  </data>
-  <data name="Perfect Nineteenth" xml:space="preserve">
-    <value>Täydellinen yhdeksästoista</value>
-  </data>
-  <data name="Major Twentieth" xml:space="preserve">
-    <value>Suuri kahdeskymmenes</value>
-  </data>
-  <data name="Minor Twenty-First" xml:space="preserve">
-    <value>Pieni kahdeskymmenesensimmäinen</value>
-  </data>
-  <data name="Perfect Twenty-Second" xml:space="preserve">
-    <value>Täydellinen kahdeskymmenestoinen</value>
-  </data>
-  <data name="Major Twenty-First" xml:space="preserve">
-    <value>Suuri kahdeskymmenesensimmäinen</value>
-  </data>
-  <data name="Reset Selection" xml:space="preserve">
-    <value>Nollaa valinta</value>
-  </data>
-  <data name="Dissonance" xml:space="preserve">
-    <value>Dissonanssi</value>
-  </data>
-  <data name="Sharp Dissonance" xml:space="preserve">
-    <value>Terävä dissonanssi</value>
-  </data>
-  <data name="Imperfect Consonance" xml:space="preserve">
-    <value>Epätäydellinen konsonanssi</value>
-  </data>
-  <data name="Perfect Consonance" xml:space="preserve">
-    <value>Täydellinen konsonanssi</value>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Nuottia ei tunnistettu</value>
   </data>
 
 </root>
