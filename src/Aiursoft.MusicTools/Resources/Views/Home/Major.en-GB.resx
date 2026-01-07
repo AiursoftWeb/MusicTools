@@ -18,74 +18,74 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="How to Use It" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>Chromatic Scale</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Circle of Fifths</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
     <value>How to Use It</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interactive Piano</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Jianpu Key</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Key Signature</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Loop Playback</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Play</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Quick Key Selection</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Rotate Anti-clockwise</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotate Right</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Select a Major Key</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Song</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Song Player</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>The Chromatic Scale displays all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>The Circle of Fifths organises keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>This tool helps you visualise music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonic</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Use the &apos;Rotate&apos; buttons beneath either circle to select a new key.</value>
   </data>
   <data name="Welcome!" xml:space="preserve">
     <value>Welcome!</value>
   </data>
   <data name="What is this?" xml:space="preserve">
     <value>What is this?</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>This tool helps you visualise music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place.</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Use the &apos;Rotate&apos; buttons beneath either circle to select a new key.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Quick Key Selection</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Select a Major Key</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Jianpu Key</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>The Chromatic Scale displays all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Song</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>The Circle of Fifths organises keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature.</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Song Player</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>Chromatic Scale</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Loop Playback</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Rotate Right</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Play</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>Circle of Fifths</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Interactive Piano</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Key Signature</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Rotate Anti-clockwise</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Tonic</value>
   </data>
 
 </root>

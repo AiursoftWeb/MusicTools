@@ -18,74 +18,74 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome!" xml:space="preserve">
-    <value>Καλώς ήρθατε!</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Τι είναι αυτό;</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Πώς να το χρησιμοποιήσετε</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Χρησιμοποιήστε τα κουμπιά &apos;Rotate&apos; κάτω από οποιονδήποτε κύκλο για να επιλέξετε μια νέα κλίμακα.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Το Διαδραστικό Πιάνο θα επισημάνει αυτόματα όλες τις νότες (και τους βαθμούς της κλίμακας) για την επιλεγμένη κλίμακα.</value>
-  </data>
-  <data name="Select a Minor Key" xml:space="preserve">
-    <value>Επιλέξτε Μινόρε Τονικότητα</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Γρήγορη Επιλογή Τονικότητας</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
-    <value>Η Χρωματική Κλίμακα εμφανίζει και τις 12 νότες. Οι εσωτερικοί αριθμοί (1-7) επισημαίνουν τις νότες της μινόρεως κλίμακας για την επιλεγμένη τονικότητα.</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Κλείδι Jianpu</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Αναπαραγωγέας Μουσικής</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Αυτό το εργαλείο σας βοηθά να απεικονίσετε τη μουσική θεωρία. Συνδέει τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων, το πληκτρολόγιο πιάνου και τον τυπικό μουσικό συμβολισμό, όλα σε ένα μέρος.</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Η οθόνη του Κλειδιού Υπογραφής εμφανίζει τα σωστά δίεση ή ύφεση για το κλειδί και στα δύο πεντάγραμμα, του τενόρου και του μπάσου.</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Ο Κύκλος των Πέμπτων οργανώνει τις τονικότητες βάσει των τέλειων πέμπτων. Η περιστροφή αυτού του κύκλου δείχνει πώς οι τονικότητες σχετίζονται μεταξύ τους. Κάθε κλικ (μια «πέμπτη») προσθέτει ή αφαιρεί ένα δίεση/ύφεση από την οπλισμένη σκala.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Τραγούδι</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
     <value>Χρωματική Κλίμακα</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Περιστροφή Δεξιά</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Αναπαραγωγή</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Περιστροφή προς τα Αριστερά</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Επανάληψη Αναπαραγωγής</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Διαδραστικό Πιάνο</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Τονική</value>
   </data>
   <data name="Circle of Fifths" xml:space="preserve">
     <value>Κύκλος των Πέμπτων</value>
   </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Πώς να το χρησιμοποιήσετε</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Διαδραστικό Πιάνο</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Κλείδι Jianpu</value>
+  </data>
   <data name="Key Signature" xml:space="preserve">
     <value>Τονισμός</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Επανάληψη Αναπαραγωγής</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Αναπαραγωγή</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Γρήγορη Επιλογή Τονικότητας</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Περιστροφή προς τα Αριστερά</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Περιστροφή Δεξιά</value>
+  </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>Επιλέξτε Μινόρε Τονικότητα</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Τραγούδι</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Αναπαραγωγέας Μουσικής</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>Η Χρωματική Κλίμακα εμφανίζει και τις 12 νότες. Οι εσωτερικοί αριθμοί (1-7) επισημαίνουν τις νότες της μινόρεως κλίμακας για την επιλεγμένη τονικότητα.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Ο Κύκλος των Πέμπτων οργανώνει τις τονικότητες βάσει των τέλειων πέμπτων. Η περιστροφή αυτού του κύκλου δείχνει πώς οι τονικότητες σχετίζονται μεταξύ τους. Κάθε κλικ (μια «πέμπτη») προσθέτει ή αφαιρεί ένα δίεση/ύφεση από την οπλισμένη σκala.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Το Διαδραστικό Πιάνο θα επισημάνει αυτόματα όλες τις νότες (και τους βαθμούς της κλίμακας) για την επιλεγμένη κλίμακα.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Η οθόνη του Κλειδιού Υπογραφής εμφανίζει τα σωστά δίεση ή ύφεση για το κλειδί και στα δύο πεντάγραμμα, του τενόρου και του μπάσου.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Αυτό το εργαλείο σας βοηθά να απεικονίσετε τη μουσική θεωρία. Συνδέει τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων, το πληκτρολόγιο πιάνου και τον τυπικό μουσικό συμβολισμό, όλα σε ένα μέρος.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Τονική</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Χρησιμοποιήστε τα κουμπιά &apos;Rotate&apos; κάτω από οποιονδήποτε κύκλο για να επιλέξετε μια νέα κλίμακα.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Καλώς ήρθατε!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Τι είναι αυτό;</value>
   </data>
 
 </root>

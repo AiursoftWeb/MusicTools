@@ -18,143 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Music Style" xml:space="preserve">
-    <value>Muziekstijl</value>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Noot / Lvl</value>
   </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>Willekeurige Toonsoort</value>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Noten / Lvl</value>
   </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>Getransponeerde majeurtoonladder</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>C Majeur</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>Onthoud de melodie en speel deze na op de piano.</value>
-  </data>
-  <data name="Melody Memory" xml:space="preserve">
-    <value>Melodiegeheugen</value>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Noten / Lvl</value>
   </data>
   <data name="⚠ Last Stand ⚠" xml:space="preserve">
     <value>⚠ Laatste Strijd ⚠</value>
   </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>Alleen witte toetsen (Makkelijkst)</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>Voorbeeld</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>Toonladder</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>Atonaal</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Grondnoot</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>Controleer alleen de grondtoon</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>Start Spel</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>Volledige chromatische toonladder (Moeilijk)</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>Spel voorbij</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>Behaald niveau:</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>Beginner</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>Luister naar het bereik</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>Opnieuw proberen</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>Voorbeeld overslaan</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>Onmiddellijk starten</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>Standaard Toonhoogte (A)</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>Luister naar A4 (440Hz)</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>Rang</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>Behaald niveau</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>Moeilijkheidsopbouw</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>Moeilijkheidsgraad</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Noten</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>Berekening</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>Totaalscore</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>Moeilijkheidsgraad</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>Beginner</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>Brons</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>Gemiddeld</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>Zilver</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>Goud</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>Diamant</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>Grootmeester</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>Niveau</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>Bereken</value>
-  </data>
-  <data name="1 Note" xml:space="preserve">
-    <value>1 Noot</value>
-  </data>
-  <data name="Increment" xml:space="preserve">
-    <value>Verhogen</value>
-  </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>Voeg één noot per niveau toe.</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 maat</value>
   </data>
-  <data name="Add 8 beats per level" xml:space="preserve">
-    <value>Voeg 8 beats per niveau toe</value>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Noot</value>
   </data>
   <data name="2 Bars" xml:space="preserve">
     <value>2 Maten</value>
@@ -162,56 +42,176 @@
   <data name="Add 4 beats per level" xml:space="preserve">
     <value>Voeg 4 tellen per niveau toe</value>
   </data>
-  <data name="Current Difficulty" xml:space="preserve">
-    <value>Huidige moeilijkheidsgraad</value>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Voeg 8 beats per niveau toe</value>
   </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>Visuele hints ingeschakeld</value>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Voeg één noot per niveau toe.</value>
   </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>Oefenmodus</value>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonaal</value>
   </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>Geen Fout</value>
+  <data name="Bronze" xml:space="preserve">
+    <value>Brons</value>
   </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
-    <value>+1 Noot / Lvl</value>
+  <data name="C Major" xml:space="preserve">
+    <value>C Majeur</value>
   </data>
-  <data name="Hard" xml:space="preserve">
-    <value>Moeilijk</value>
+  <data name="Calc" xml:space="preserve">
+    <value>Bereken</value>
   </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>Standaard (A4)</value>
+  <data name="Calculation" xml:space="preserve">
+    <value>Berekening</value>
   </data>
-  <data name="Practice" xml:space="preserve">
-    <value>Oefenen</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>Geen Voorbeeld</value>
-  </data>
-  <data name="Progression" xml:space="preserve">
-    <value>Voortgang</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>Luister naar de melodie, onthoud hem en speel hem na op de piano.</value>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Controleer alleen de grondtoon</value>
   </data>
   <data name="Critical Health" xml:space="preserve">
     <value>Kritieke Gezondheid</value>
   </data>
-  <data name="Final Score" xml:space="preserve">
-    <value>Eindscore</value>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Huidige moeilijkheidsgraad</value>
   </data>
-  <data name="+4 Notes / Lvl" xml:space="preserve">
-    <value>+4 Noten / Lvl</value>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Moeilijkheidsgraad</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Moeilijkheidsgraad</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Moeilijkheidsopbouw</value>
   </data>
   <data name="Difficulty Rating" xml:space="preserve">
     <value>Moeilijkheidsgraad</value>
   </data>
-  <data name="+8 Notes / Lvl" xml:space="preserve">
-    <value>+8 Noten / Lvl</value>
+  <data name="Final Score" xml:space="preserve">
+    <value>Eindscore</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Volledige chromatische toonladder (Moeilijk)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Spel voorbij</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Goud</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Grootmeester</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Moeilijk</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Verhogen</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Gemiddeld</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Niveau</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Behaald niveau</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Behaald niveau:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Luister naar A4 (440Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Luister naar het bereik</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Luister naar de melodie, onthoud hem en speel hem na op de piano.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodiegeheugen</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Muziekstijl</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Geen Fout</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Geen Voorbeeld</value>
   </data>
   <data name="No Score" xml:space="preserve">
     <value>Geen Score</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Noten</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Oefenen</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Oefenmodus</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Voorbeeld</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Voortgang</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Willekeurige Toonsoort</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Onthoud de melodie en speel deze na op de piano.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Grondnoot</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Toonladder</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Zilver</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Voorbeeld overslaan</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standaard (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standaard Toonhoogte (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Start Spel</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Onmiddellijk starten</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Totaalscore</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Getransponeerde majeurtoonladder</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Opnieuw proberen</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Visuele hints ingeschakeld</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Alleen witte toetsen (Makkelijkst)</value>
   </data>
 
 </root>

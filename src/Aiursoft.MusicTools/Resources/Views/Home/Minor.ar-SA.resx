@@ -18,53 +18,32 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="What is this?" xml:space="preserve">
-    <value>ما هذا؟</value>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>السلم الكروماتي</value>
   </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>مرحباً!</value>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>دائرة الخامسات</value>
   </data>
   <data name="How to Use It" xml:space="preserve">
     <value>كيفية استخدامه</value>
   </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>استخدم أزرار &quot;تدوير&quot; الموجودة تحت أي من الدائرتين لاختيار مفتاح موسيقي جديد.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>سيقوم البيانو التفاعلي بتسليط الضوء تلقائياً على جميع النوتات (ودرجات السلم الموسيقي الخاصة بها) للمفتاح المحدد.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
-    <value>يظهر السلم الكروماتي جميع النوتات الإثني عشرة. تُميّز الأرقام الداخلية (7-1) نوتات السلم الصغير للمفتاح المحدد.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>تساعدك هذه الأداة على تصور نظرية الموسيقى. فهي تربط السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو، والتدوين الموسيقي القياسي في مكان واحد.</value>
-  </data>
-  <data name="Select a Minor Key" xml:space="preserve">
-    <value>اختر مفتاحًا صغيرًا</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>ينظم دائرة الخامسات المفاتيح بناءً على الخامسات الكاملة. تدوير هذه الدائرة يوضح كيفية ارتباط المفاتيح ببعضها. كل نقرة (تمثل &apos;خامسة&apos;) تضيف أو تزيل علامة رفع/خفض واحدة من سلّم المفتاح الموسيقي.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>اختيار المفتاح السريع</value>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>بيانو تفاعلي</value>
   </data>
   <data name="Jianpu Key" xml:space="preserve">
     <value>مفتاح جيانبو</value>
   </data>
-  <data name="Song" xml:space="preserve">
-    <value>الأغنية</value>
+  <data name="Key Signature" xml:space="preserve">
+    <value>مفتاح الموسيقى</value>
   </data>
   <data name="Loop Playback" xml:space="preserve">
     <value>تشغيل متكرر</value>
   </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>مشغل الأغاني</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>السلم الكروماتي</value>
-  </data>
   <data name="Play" xml:space="preserve">
     <value>تشغيل</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>اختيار المفتاح السريع</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>تدوير لليسار</value>
@@ -72,20 +51,41 @@
   <data name="Rotate Right" xml:space="preserve">
     <value>تدوير لليمين</value>
   </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>اختر مفتاحًا صغيرًا</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>الأغنية</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>مشغل الأغاني</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>يظهر السلم الكروماتي جميع النوتات الإثني عشرة. تُميّز الأرقام الداخلية (7-1) نوتات السلم الصغير للمفتاح المحدد.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>ينظم دائرة الخامسات المفاتيح بناءً على الخامسات الكاملة. تدوير هذه الدائرة يوضح كيفية ارتباط المفاتيح ببعضها. كل نقرة (تمثل &apos;خامسة&apos;) تضيف أو تزيل علامة رفع/خفض واحدة من سلّم المفتاح الموسيقي.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>سيقوم البيانو التفاعلي بتسليط الضوء تلقائياً على جميع النوتات (ودرجات السلم الموسيقي الخاصة بها) للمفتاح المحدد.</value>
+  </data>
   <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
     <value>يعرض عرض مفتاح الموسيقى العلامات الحادة أو المسطحة الصحيحة للمفتاح على كل من المدرجين الصول وفي.</value>
   </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>بيانو تفاعلي</value>
-  </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>دائرة الخامسات</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>مفتاح الموسيقى</value>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>تساعدك هذه الأداة على تصور نظرية الموسيقى. فهي تربط السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو، والتدوين الموسيقي القياسي في مكان واحد.</value>
   </data>
   <data name="Tonic" xml:space="preserve">
     <value>النغمة الأساسية</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>استخدم أزرار &quot;تدوير&quot; الموجودة تحت أي من الدائرتين لاختيار مفتاح موسيقي جديد.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>مرحباً!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>ما هذا؟</value>
   </data>
 
 </root>

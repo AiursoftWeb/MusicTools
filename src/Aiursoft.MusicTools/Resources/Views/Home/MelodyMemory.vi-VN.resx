@@ -18,181 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Music Style" xml:space="preserve">
-    <value>Phong cách Âm nhạc</value>
-  </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>Phím Ngẫu Nhiên</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>Đô Trưởng</value>
-  </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ Tử Chiến Cuối Cùng ⚠</value>
-  </data>
-  <data name="Melody Memory" xml:space="preserve">
-    <value>Trí Nhớ Giai Điệu</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>Hãy nhớ giai điệu và lặp lại nó trên đàn piano.</value>
-  </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>Âm giai Trưởng chuyển điệu</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>Chỉ phím trắng (Dễ nhất)</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>Phi điệu thức</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>Chỉ kiểm tra âm chủ</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>Nghe phạm vi</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>Bắt đầu trò chơi</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Nốt Gốc</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>Âm giai</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>Thang âm Chromatic đầy đủ (Khó)</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>Xem trước</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>Cấp độ đạt được:</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>Trò Chơi Kết Thúc</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>Người mới bắt đầu</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>Thử Lại</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>Nghe nốt A4 (440Hz)</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>Bắt đầu ngay lập tức</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>Bỏ Qua Xem Trước</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>Cao độ chuẩn (A)</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Nốt nhạc</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>Độ Khó</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>Cấp độ đạt được</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>Hạng</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>Độ khó</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>Tính toán</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>Tổng Điểm</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>Phân Tích Độ Khó</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>Trung cấp</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>Kim Cương</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>Bạc</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>Đồng</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>Vàng</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>Đại Kiện Tướng</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>Mới vào nghề</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>Cấp độ</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>Tính toán</value>
-  </data>
-  <data name="1 Bar" xml:space="preserve">
-    <value>1 Ô nhịp</value>
-  </data>
-  <data name="Increment" xml:space="preserve">
-    <value>Tăng dần</value>
-  </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>Thêm một nốt mỗi cấp độ</value>
-  </data>
-  <data name="1 Note" xml:space="preserve">
-    <value>1 Nốt</value>
-  </data>
-  <data name="2 Bars" xml:space="preserve">
-    <value>2 Ô nhịp</value>
-  </data>
-  <data name="Add 8 beats per level" xml:space="preserve">
-    <value>Thêm 8 nhịp mỗi cấp độ</value>
-  </data>
-  <data name="Add 4 beats per level" xml:space="preserve">
-    <value>Thêm 4 nhịp mỗi cấp độ</value>
-  </data>
-  <data name="Current Difficulty" xml:space="preserve">
-    <value>Độ Khó Hiện Tại</value>
-  </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>Chế độ Luyện tập</value>
-  </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>Đã bật gợi ý trực quan</value>
-  </data>
-  <data name="Hard" xml:space="preserve">
-    <value>Khó</value>
-  </data>
-  <data name="Practice" xml:space="preserve">
-    <value>Luyện tập</value>
-  </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>Không Thất Bại</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>Không Xem Trước</value>
-  </data>
-  <data name="Progression" xml:space="preserve">
-    <value>Tiến Trình</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>Lắng nghe giai điệu, ghi nhớ nó, và chơi lại trên đàn piano.</value>
-  </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>Chuẩn (A4)</value>
-  </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
+      <data name="+1 Note / Lvl" xml:space="preserve">
     <value>+1 Nốt / Cấp</value>
   </data>
   <data name="+4 Notes / Lvl" xml:space="preserve">
@@ -201,17 +27,191 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 Nốt / Cấp</value>
   </data>
-  <data name="Final Score" xml:space="preserve">
-    <value>Điểm Cuối Cùng</value>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Tử Chiến Cuối Cùng ⚠</value>
   </data>
-  <data name="Difficulty Rating" xml:space="preserve">
-    <value>Đánh giá Độ khó</value>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Ô nhịp</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nốt</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Ô nhịp</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Thêm 4 nhịp mỗi cấp độ</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Thêm 8 nhịp mỗi cấp độ</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Thêm một nốt mỗi cấp độ</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Phi điệu thức</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Đồng</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>Đô Trưởng</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Tính toán</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Tính toán</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Chỉ kiểm tra âm chủ</value>
   </data>
   <data name="Critical Health" xml:space="preserve">
     <value>Sức Khỏe Nguy Kịch</value>
   </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Độ Khó Hiện Tại</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Kim Cương</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Độ Khó</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Độ khó</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Phân Tích Độ Khó</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Đánh giá Độ khó</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Điểm Cuối Cùng</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Thang âm Chromatic đầy đủ (Khó)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Trò Chơi Kết Thúc</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Vàng</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Đại Kiện Tướng</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Khó</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Tăng dần</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Trung cấp</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Cấp độ</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Cấp độ đạt được</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Cấp độ đạt được:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Nghe nốt A4 (440Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Nghe phạm vi</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Lắng nghe giai điệu, ghi nhớ nó, và chơi lại trên đàn piano.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Trí Nhớ Giai Điệu</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Phong cách Âm nhạc</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Không Thất Bại</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Không Xem Trước</value>
+  </data>
   <data name="No Score" xml:space="preserve">
     <value>Không tính điểm</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nốt nhạc</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Người mới bắt đầu</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Luyện tập</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Chế độ Luyện tập</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Xem trước</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Tiến Trình</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Phím Ngẫu Nhiên</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Hạng</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Hãy nhớ giai điệu và lặp lại nó trên đàn piano.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Mới vào nghề</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Nốt Gốc</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Âm giai</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Bạc</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Bỏ Qua Xem Trước</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Chuẩn (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Cao độ chuẩn (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Bắt đầu trò chơi</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Bắt đầu ngay lập tức</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Tổng Điểm</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Âm giai Trưởng chuyển điệu</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Thử Lại</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Đã bật gợi ý trực quan</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Chỉ phím trắng (Dễ nhất)</value>
   </data>
 
 </root>

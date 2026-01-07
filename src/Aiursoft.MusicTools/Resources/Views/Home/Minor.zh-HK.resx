@@ -18,50 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="How to Use It" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>半音音階</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>五度循環</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
     <value>使用方法</value>
   </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>這是甚麼？</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>此工具能助你可視化音樂理論。它將半音階、五度圈、鋼琴鍵盤同標準樂譜全部連繫埋一齊。</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>使用任何一個圓形下方的「旋轉」按鈕來選擇新調性。</value>
-  </data>
-  <data name="Welcome!" xml:space="preserve">
-    <value>歡迎！</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>快速選擇調性</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>調號顯示會喺高音譜號同低音譜號上顯示正確嘅升號同降號。</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>五度圈根據完全五度來組織調性。轉動此圈可展示各調性之間的關係。每次點擊（一個「五度」）會為調號增加或減少一個升號/降號。</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
-    <value>半音階顯示所有12個音符。內圈數字（1-7）標示了所選調性的小調音階音符。</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>互動鋼琴會自動為所選嘅調性高亮顯示所有音符（同佢哋嘅音階級數）。</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>歌曲播放器</value>
-  </data>
-  <data name="Select a Minor Key" xml:space="preserve">
-    <value>選擇一個小調</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>歌曲</value>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>互動鋼琴</value>
   </data>
   <data name="Jianpu Key" xml:space="preserve">
     <value>簡譜調號</value>
   </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>向左旋轉</value>
+  <data name="Key Signature" xml:space="preserve">
+    <value>調號</value>
   </data>
   <data name="Loop Playback" xml:space="preserve">
     <value>循環播放</value>
@@ -69,23 +42,50 @@
   <data name="Play" xml:space="preserve">
     <value>播放</value>
   </data>
-  <data name="Circle of Fifths" xml:space="preserve">
-    <value>五度循環</value>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>快速選擇調性</value>
   </data>
-  <data name="Chromatic Scale" xml:space="preserve">
-    <value>半音音階</value>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>向左旋轉</value>
   </data>
   <data name="Rotate Right" xml:space="preserve">
     <value>向右旋轉</value>
   </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>互動鋼琴</value>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>選擇一個小調</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>歌曲</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>歌曲播放器</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>半音階顯示所有12個音符。內圈數字（1-7）標示了所選調性的小調音階音符。</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>五度圈根據完全五度來組織調性。轉動此圈可展示各調性之間的關係。每次點擊（一個「五度」）會為調號增加或減少一個升號/降號。</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>互動鋼琴會自動為所選嘅調性高亮顯示所有音符（同佢哋嘅音階級數）。</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>調號顯示會喺高音譜號同低音譜號上顯示正確嘅升號同降號。</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>此工具能助你可視化音樂理論。它將半音階、五度圈、鋼琴鍵盤同標準樂譜全部連繫埋一齊。</value>
   </data>
   <data name="Tonic" xml:space="preserve">
     <value>主音</value>
   </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>調號</value>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>使用任何一個圓形下方的「旋轉」按鈕來選擇新調性。</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>歡迎！</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>這是甚麼？</value>
   </data>
 
 </root>

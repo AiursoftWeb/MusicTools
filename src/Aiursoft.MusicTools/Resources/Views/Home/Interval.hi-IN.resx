@@ -18,164 +18,164 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Perfect Fourth" xml:space="preserve">
-    <value>शुद्ध चतुर्थ</value>
-  </data>
-  <data name="Augmented Fourth" xml:space="preserve">
-    <value>वर्धित चतुर्थ</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>लघु तृतीय</value>
-  </data>
-  <data name="Interval Calculator" xml:space="preserve">
-    <value>अंतराल कैलकुलेटर</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>शुद्ध एकतान</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>मेजर थर्ड</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>मेजर सेकंड</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>लघु सेकंड</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>शुद्ध पंचम</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>लघु षष्ठ</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>मेजर षष्ठ</value>
-  </data>
-  <data name="Perfect Octave" xml:space="preserve">
-    <value>शुद्ध अष्टक</value>
-  </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>मेजर सेवेंथ</value>
-  </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>लघु सप्तम</value>
-  </data>
-  <data name="Unable to recognize note name" xml:space="preserve">
-    <value>स्वर का नाम पहचानने में असमर्थ</value>
-  </data>
-  <data name="Please input with the lower note first" xml:space="preserve">
-    <value>कृपया पहले निचला स्वर दर्ज करें</value>
-  </data>
-  <data name="How to Use" xml:space="preserve">
-    <value>उपयोग कैसे करें</value>
-  </data>
-  <data name="Click any two keys on the piano below." xml:space="preserve">
-    <value>नीचे दिए गए पियानो पर कोई भी दो कुंजियाँ क्लिक करें।</value>
-  </data>
-  <data name="The first note you select will be the root." xml:space="preserve">
-    <value>आपके द्वारा चुनी गई पहली नोट रूट (मूल स्वर) होगी।</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>इंटरैक्टिव पियानो</value>
-  </data>
-  <data name="to" xml:space="preserve">
-    <value>से</value>
-  </data>
-  <data name="Result" xml:space="preserve">
-    <value>परिणाम</value>
-  </data>
-  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
-    <value>दोनों स्वरों के बीच का अंतराल परिकलित और प्रदर्शित किया जाएगा।</value>
-  </data>
-  <data name="Click a selected key again to deselect it." xml:space="preserve">
-    <value>किसी चयनित कुंजी को फिर से क्लिक करके उसका चयन रद्द करें।</value>
-  </data>
-  <data name="Perfect Eleventh" xml:space="preserve">
-    <value>शुद्ध एकादश</value>
-  </data>
-  <data name="Minor Ninth" xml:space="preserve">
-    <value>लघु नवम</value>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>वर्धित अठारहवाँ</value>
   </data>
   <data name="Augmented Eleventh" xml:space="preserve">
     <value>वर्धित एकादश</value>
   </data>
-  <data name="Major Tenth" xml:space="preserve">
-    <value>मेजर टेंथ</value>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>वर्धित चतुर्थ</value>
   </data>
-  <data name="Minor Tenth" xml:space="preserve">
-    <value>लघु दशम</value>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>किसी चयनित कुंजी को फिर से क्लिक करके उसका चयन रद्द करें।</value>
   </data>
-  <data name="Perfect Twelfth" xml:space="preserve">
-    <value>शुद्ध द्वादश</value>
-  </data>
-  <data name="Major Ninth" xml:space="preserve">
-    <value>मेजर नाइंथ</value>
-  </data>
-  <data name="Minor Thirteenth" xml:space="preserve">
-    <value>लघु त्रयोदश</value>
-  </data>
-  <data name="Perfect Fifteenth" xml:space="preserve">
-    <value>शुद्ध पंद्रहवाँ</value>
-  </data>
-  <data name="Major Thirteenth" xml:space="preserve">
-    <value>मेजर थर्टीन्थ</value>
-  </data>
-  <data name="Major Fourteenth" xml:space="preserve">
-    <value>मेजर चौदहवां</value>
-  </data>
-  <data name="Minor Fourteenth" xml:space="preserve">
-    <value>लघु चतुर्दशम</value>
-  </data>
-  <data name="Minor Sixteenth" xml:space="preserve">
-    <value>लघु सोलहवाँ</value>
-  </data>
-  <data name="Minor Twentieth" xml:space="preserve">
-    <value>लघु बीसवाँ</value>
-  </data>
-  <data name="Augmented Eighteenth" xml:space="preserve">
-    <value>वर्धित अठारहवाँ</value>
-  </data>
-  <data name="Major Seventeenth" xml:space="preserve">
-    <value>मेजर सेवेंटींथ</value>
-  </data>
-  <data name="Major Sixteenth" xml:space="preserve">
-    <value>मेजर सोलहवां</value>
-  </data>
-  <data name="Perfect Nineteenth" xml:space="preserve">
-    <value>शुद्ध उन्नीसवाँ</value>
-  </data>
-  <data name="Perfect Eighteenth" xml:space="preserve">
-    <value>परफेक्ट अठारहवाँ</value>
-  </data>
-  <data name="Minor Seventeenth" xml:space="preserve">
-    <value>लघु सत्रहवाँ</value>
-  </data>
-  <data name="Major Twentieth" xml:space="preserve">
-    <value>मेजर ट्वेंटिएथ</value>
-  </data>
-  <data name="Minor Twenty-First" xml:space="preserve">
-    <value>लघु इक्कीसवाँ</value>
-  </data>
-  <data name="Major Twenty-First" xml:space="preserve">
-    <value>मेजर ट्वेंटी-फर्स्ट</value>
-  </data>
-  <data name="Perfect Twenty-Second" xml:space="preserve">
-    <value>परफेक्ट ट्वेंटी-सेकंड</value>
-  </data>
-  <data name="Reset Selection" xml:space="preserve">
-    <value>चयन रीसेट करें</value>
-  </data>
-  <data name="Sharp Dissonance" xml:space="preserve">
-    <value>तीव्र कर्कशता</value>
-  </data>
-  <data name="Imperfect Consonance" xml:space="preserve">
-    <value>अपूर्ण संवाद</value>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>नीचे दिए गए पियानो पर कोई भी दो कुंजियाँ क्लिक करें।</value>
   </data>
   <data name="Dissonance" xml:space="preserve">
     <value>अनुतान</value>
   </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>उपयोग कैसे करें</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>अपूर्ण संवाद</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>इंटरैक्टिव पियानो</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>अंतराल कैलकुलेटर</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>मेजर चौदहवां</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>मेजर नाइंथ</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>मेजर सेकंड</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>मेजर सेवेंटींथ</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>मेजर सेवेंथ</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>मेजर सोलहवां</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>मेजर षष्ठ</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>मेजर टेंथ</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>मेजर थर्ड</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>मेजर थर्टीन्थ</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>मेजर ट्वेंटिएथ</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>मेजर ट्वेंटी-फर्स्ट</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>लघु चतुर्दशम</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>लघु नवम</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>लघु सेकंड</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>लघु सत्रहवाँ</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>लघु सप्तम</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>लघु सोलहवाँ</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>लघु षष्ठ</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>लघु दशम</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>लघु तृतीय</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>लघु त्रयोदश</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>लघु बीसवाँ</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>लघु इक्कीसवाँ</value>
+  </data>
   <data name="Perfect Consonance" xml:space="preserve">
     <value>परफेक्ट कॉन्सोनेंस</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>परफेक्ट अठारहवाँ</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>शुद्ध एकादश</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>शुद्ध पंद्रहवाँ</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>शुद्ध पंचम</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>शुद्ध चतुर्थ</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>शुद्ध उन्नीसवाँ</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>शुद्ध अष्टक</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>शुद्ध द्वादश</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>परफेक्ट ट्वेंटी-सेकंड</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>शुद्ध एकतान</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>कृपया पहले निचला स्वर दर्ज करें</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>चयन रीसेट करें</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>परिणाम</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>तीव्र कर्कशता</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>आपके द्वारा चुनी गई पहली नोट रूट (मूल स्वर) होगी।</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>दोनों स्वरों के बीच का अंतराल परिकलित और प्रदर्शित किया जाएगा।</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>से</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>स्वर का नाम पहचानने में असमर्थ</value>
   </data>
 
 </root>

@@ -21,11 +21,8 @@
       <data name="BPM" xml:space="preserve">
     <value>每分钟节拍数</value>
   </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>拍号</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>细分</value>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>八分音符 (♫)</value>
   </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>快速 (320)</value>
@@ -33,26 +30,29 @@
   <data name="Normal (90)" xml:space="preserve">
     <value>正常 (90)</value>
   </data>
-  <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>八分音符 (♫)</value>
-  </data>
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>四分音符 (♩)</value>
-  </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>慢 (1)</value>
-  </data>
-  <data name="Stop" xml:space="preserve">
-    <value>停止</value>
   </data>
   <data name="Sixteenth Note (♬)" xml:space="preserve">
     <value>十六分音符 (♬)</value>
   </data>
-  <data name="Triplet (3)" xml:space="preserve">
-    <value>三连音 (3)</value>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>慢 (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>开始</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>细分</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>拍号</value>
+  </data>
+  <data name="Triplet (3)" xml:space="preserve">
+    <value>三连音 (3)</value>
   </data>
 
 </root>

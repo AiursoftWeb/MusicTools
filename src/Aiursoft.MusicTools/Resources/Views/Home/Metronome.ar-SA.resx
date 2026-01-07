@@ -18,29 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Subdivision" xml:space="preserve">
-    <value>التقسيم</value>
-  </data>
-  <data name="Normal (90)" xml:space="preserve">
-    <value>عادي (90)</value>
-  </data>
-  <data name="BPM" xml:space="preserve">
+      <data name="BPM" xml:space="preserve">
     <value>نبضة في الدقيقة</value>
+  </data>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>نوتة ثمنية (♫)</value>
   </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>سريع (320)</value>
   </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>بطيء (1)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>ميزان الإيقاع</value>
+  <data name="Normal (90)" xml:space="preserve">
+    <value>عادي (90)</value>
   </data>
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>نوتة ربع (♩)</value>
   </data>
-  <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>نوتة ثمنية (♫)</value>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>النوتة السادسة عشرة (♬)</value>
+  </data>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>بطيء (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>ابدأ</value>
@@ -48,11 +45,14 @@
   <data name="Stop" xml:space="preserve">
     <value>توقف</value>
   </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>التقسيم</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>ميزان الإيقاع</value>
+  </data>
   <data name="Triplet (3)" xml:space="preserve">
     <value>ثلاثي (3)</value>
-  </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>النوتة السادسة عشرة (♬)</value>
   </data>
 
 </root>

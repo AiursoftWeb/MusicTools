@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Slow (1)" xml:space="preserve">
-    <value>ช้า (1)</value>
+      <data name="BPM" xml:space="preserve">
+    <value>BPM</value>
+  </data>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>โน้ตเขบ็ตหนึ่งชั้น (♫)</value>
+  </data>
+  <data name="Fast (320)" xml:space="preserve">
+    <value>เร็ว (320)</value>
   </data>
   <data name="Normal (90)" xml:space="preserve">
     <value>ปกติ (90)</value>
@@ -27,20 +33,11 @@
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>โน้ตตัวดำ (♩)</value>
   </data>
-  <data name="Fast (320)" xml:space="preserve">
-    <value>เร็ว (320)</value>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>โน้ตเขบ็ตหนึ่งชั้น (♬)</value>
   </data>
-  <data name="BPM" xml:space="preserve">
-    <value>BPM</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>การแบ่งจังหวะย่อย</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>อัตราจังหวะ</value>
-  </data>
-  <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>โน้ตเขบ็ตหนึ่งชั้น (♫)</value>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>ช้า (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>เริ่ม</value>
@@ -48,11 +45,14 @@
   <data name="Stop" xml:space="preserve">
     <value>หยุด</value>
   </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>การแบ่งจังหวะย่อย</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>อัตราจังหวะ</value>
+  </data>
   <data name="Triplet (3)" xml:space="preserve">
     <value>ทริเพิล (3)</value>
-  </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>โน้ตเขบ็ตหนึ่งชั้น (♬)</value>
   </data>
 
 </root>

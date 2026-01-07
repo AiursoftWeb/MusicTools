@@ -18,74 +18,74 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome!" xml:space="preserve">
-    <value>¡Bienvenido!</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Cómo usarlo</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>¿Qué es esto?</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>El Piano Interactivo resaltará automáticamente todas las notas (y sus grados de la escala) para la tonalidad seleccionada.</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Utiliza los botones &apos;Rotar&apos; debajo de cualquiera de los círculos para seleccionar una nueva tonalidad.</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Esta herramienta te ayuda a visualizar la teoría musical. Conecta la Escala Cromática, el Círculo de Quintas, el teclado del piano y la notación musical estándar, todo en un solo lugar.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>La Escala Cromática muestra las 12 notas. Los números internos (1-7) resaltan las notas de la escala mayor para la tonalidad seleccionada.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Selección Rápida de Tonalidad</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Seleccionar una Tonalidad Mayor</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>El Círculo de Quintas organiza las tonalidades en base a quintas justas. Al rotar este círculo se demuestra cómo se relacionan las tonalidades. Cada clic (una &apos;quinta&apos;) añade o elimina un sostenido/bemol de la armadura.</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>La visualización de la Armadura de Clave muestra los sostenidos o bemoles correctos para la tonalidad en ambas claves, la de sol y la de fa.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Reproductor de Canciones</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Tonalidad de Jianpu</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Canción</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Reproducción en bucle</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
     <value>Escala Cromática</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Reproducir</value>
   </data>
   <data name="Circle of Fifths" xml:space="preserve">
     <value>Círculo de Quintas</value>
   </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Rotar a la derecha</value>
-  </data>
-  <data name="Tonic" xml:space="preserve">
-    <value>Tónica</value>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Cómo usarlo</value>
   </data>
   <data name="Interactive Piano" xml:space="preserve">
     <value>Piano Interactivo</value>
   </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Girar a la izquierda</value>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Tonalidad de Jianpu</value>
   </data>
   <data name="Key Signature" xml:space="preserve">
     <value>Armadura de clave</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Reproducción en bucle</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Reproducir</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Selección Rápida de Tonalidad</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Girar a la izquierda</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotar a la derecha</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Seleccionar una Tonalidad Mayor</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Canción</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Reproductor de Canciones</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>La Escala Cromática muestra las 12 notas. Los números internos (1-7) resaltan las notas de la escala mayor para la tonalidad seleccionada.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>El Círculo de Quintas organiza las tonalidades en base a quintas justas. Al rotar este círculo se demuestra cómo se relacionan las tonalidades. Cada clic (una &apos;quinta&apos;) añade o elimina un sostenido/bemol de la armadura.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>El Piano Interactivo resaltará automáticamente todas las notas (y sus grados de la escala) para la tonalidad seleccionada.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>La visualización de la Armadura de Clave muestra los sostenidos o bemoles correctos para la tonalidad en ambas claves, la de sol y la de fa.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Esta herramienta te ayuda a visualizar la teoría musical. Conecta la Escala Cromática, el Círculo de Quintas, el teclado del piano y la notación musical estándar, todo en un solo lugar.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tónica</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Utiliza los botones &apos;Rotar&apos; debajo de cualquiera de los círculos para seleccionar una nueva tonalidad.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>¡Bienvenido!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>¿Qué es esto?</value>
   </data>
 
 </root>

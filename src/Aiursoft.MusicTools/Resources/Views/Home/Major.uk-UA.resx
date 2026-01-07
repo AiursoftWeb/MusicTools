@@ -18,74 +18,74 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome!" xml:space="preserve">
-    <value>Ласкаво просимо!</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Що це?</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Як користуватися</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Інтерактивне піаніно автоматично підсвітить усі ноти (та їх ступені у гамі) для обраної тональності.</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Використовуйте кнопки «Rotate» під будь-яким колом, щоб вибрати нову тональність.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
-    <value>Хроматична гама показує всі 12 нот. Внутрішні числа (1-7) виділяють ноти мажорної гами для обраної тональності.</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Швидкий вибір тональності</value>
-  </data>
-  <data name="Select a Major Key" xml:space="preserve">
-    <value>Оберіть мажорну тональність</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Цей інструмент допомагає візуалізувати теорію музики. Він поєднує хроматичну гаму, квінтове коло, клавіатуру піаніно та стандартну музичну нотацію в одному місці.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Програвач пісень</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Пісня</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Коло квінт упорядковує тональності на основі чистих квінт. Обертання цього кола демонструє, як тональності пов&apos;язані між собою. Кожен клік (одна &quot;квінта&quot;) додає або видаляє один дієз/бемоль із ключових знаків.</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Грати</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Тональність Цзяньпу</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Циклічне відтворення</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Відображення ключових знаків показує правильні дієзи або бемолі для тональності на обох нотоносцях — скрипковому та басовому.</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
     <value>Хроматична гама</value>
-  </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Повернути праворуч</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Ключовий знак</value>
-  </data>
-  <data name="Rotate Left" xml:space="preserve">
-    <value>Повернути ліворуч</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Інтерактивне піаніно</value>
   </data>
   <data name="Circle of Fifths" xml:space="preserve">
     <value>Коло квінт</value>
   </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Як користуватися</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Інтерактивне піаніно</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Тональність Цзяньпу</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Ключовий знак</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Циклічне відтворення</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Грати</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Швидкий вибір тональності</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Повернути ліворуч</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Повернути праворуч</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Оберіть мажорну тональність</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Пісня</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Програвач пісень</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Хроматична гама показує всі 12 нот. Внутрішні числа (1-7) виділяють ноти мажорної гами для обраної тональності.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Коло квінт упорядковує тональності на основі чистих квінт. Обертання цього кола демонструє, як тональності пов&apos;язані між собою. Кожен клік (одна &quot;квінта&quot;) додає або видаляє один дієз/бемоль із ключових знаків.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Інтерактивне піаніно автоматично підсвітить усі ноти (та їх ступені у гамі) для обраної тональності.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Відображення ключових знаків показує правильні дієзи або бемолі для тональності на обох нотоносцях — скрипковому та басовому.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Цей інструмент допомагає візуалізувати теорію музики. Він поєднує хроматичну гаму, квінтове коло, клавіатуру піаніно та стандартну музичну нотацію в одному місці.</value>
+  </data>
   <data name="Tonic" xml:space="preserve">
     <value>Тоніка</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Використовуйте кнопки «Rotate» під будь-яким колом, щоб вибрати нову тональність.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Ласкаво просимо!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Що це?</value>
   </data>
 
 </root>

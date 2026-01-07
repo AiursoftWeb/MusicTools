@@ -18,65 +18,65 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Correct!" xml:space="preserve">
-    <value>Правильно!</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Чиста прима</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Мала секунда</value>
-  </data>
-  <data name="Wrong." xml:space="preserve">
-    <value>Неправильно.</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Мала терція</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>Велика секунда</value>
-  </data>
-  <data name="Interval Exam" xml:space="preserve">
-    <value>Тестування інтервалів</value>
-  </data>
-  <data name="What is the (0) of the note above?" xml:space="preserve">
-    <value>Який (0) ноти вище?</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Велика терція</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Мала секста</value>
-  </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Чиста кварта</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Велика секста</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Чиста квінта</value>
-  </data>
-  <data name="Augmented Fifth" xml:space="preserve">
+      <data name="Augmented Fifth" xml:space="preserve">
     <value>Підвищена квінта</value>
   </data>
   <data name="Augmented Fourth" xml:space="preserve">
     <value>Підвищена кварта</value>
   </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Правильно!</value>
+  </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Зменшена квінта</value>
   </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Мала септима</value>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Тестування інтервалів</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Велика секунда</value>
   </data>
   <data name="Major Seventh" xml:space="preserve">
     <value>Велика септима</value>
   </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Велика секста</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Велика терція</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Мала секунда</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Мала септима</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Мала секста</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Мала терція</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Чиста квінта</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Чиста кварта</value>
+  </data>
   <data name="Perfect Octave" xml:space="preserve">
     <value>Чиста октава</value>
   </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Чиста прима</value>
+  </data>
   <data name="Select Answer" xml:space="preserve">
     <value>Оберіть відповідь</value>
+  </data>
+  <data name="What is the (0) of the note above?" xml:space="preserve">
+    <value>Який (0) ноти вище?</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Неправильно.</value>
   </data>
 
 </root>

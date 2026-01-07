@@ -18,41 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Normal (90)" xml:space="preserve">
-    <value>Bình thường (90)</value>
-  </data>
-  <data name="Fast (320)" xml:space="preserve">
-    <value>Nhanh (320)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>Nhịp</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Phân nhịp</value>
-  </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>Chậm (1)</value>
-  </data>
-  <data name="BPM" xml:space="preserve">
+      <data name="BPM" xml:space="preserve">
     <value>Nhịp/phút</value>
-  </data>
-  <data name="Quarter Note (♩)" xml:space="preserve">
-    <value>Nốt Đen (♩)</value>
   </data>
   <data name="Eighth Note (♫)" xml:space="preserve">
     <value>Nốt Móc Đơn (♫)</value>
   </data>
-  <data name="Stop" xml:space="preserve">
-    <value>Dừng</value>
+  <data name="Fast (320)" xml:space="preserve">
+    <value>Nhanh (320)</value>
+  </data>
+  <data name="Normal (90)" xml:space="preserve">
+    <value>Bình thường (90)</value>
+  </data>
+  <data name="Quarter Note (♩)" xml:space="preserve">
+    <value>Nốt Đen (♩)</value>
+  </data>
+  <data name="Sixteenth Note (♬)" xml:space="preserve">
+    <value>Nốt Mười Sáu (♬)</value>
+  </data>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>Chậm (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Bắt đầu</value>
   </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Dừng</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Phân nhịp</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Nhịp</value>
+  </data>
   <data name="Triplet (3)" xml:space="preserve">
     <value>Nốt ba liên (3)</value>
-  </data>
-  <data name="Sixteenth Note (♬)" xml:space="preserve">
-    <value>Nốt Mười Sáu (♬)</value>
   </data>
 
 </root>

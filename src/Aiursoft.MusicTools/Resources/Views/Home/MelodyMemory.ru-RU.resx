@@ -18,188 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Melody Memory" xml:space="preserve">
-    <value>Мелодическая память</value>
-  </data>
-  <data name="C Major" xml:space="preserve">
-    <value>До мажор</value>
-  </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ Последний рубеж ⚠</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>Только белые клавиши (Самый простой)</value>
-  </data>
-  <data name="Music Style" xml:space="preserve">
-    <value>Музыкальный стиль</value>
-  </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>Транспонированная мажорная гамма</value>
-  </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>Случайная тональность</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>Запомните мелодию и повторите её на пианино.</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>Гамма</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>Предпросмотр</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>Атональная</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>Полный хроматический звукоряд (Сложный)</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>Прослушать диапазон</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Основная нота</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>Проверить только тонику</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>Начать игру</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>Новичок</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>Достигнутый уровень:</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>Попробовать снова</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>Игра окончена</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>Начать немедленно</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>Стандартный строй (Ля)</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>Пропустить предпросмотр</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>Прослушайте ноту A4 (440 Гц)</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>Ранг</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>Сложность</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>Общий счёт</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>Расчёт</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>Сложность</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Ноты</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>Разбор сложности</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>Достигнутый уровень</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>Новичок</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>Золото</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>Гроссмейстер</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>Серебро</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>Алмаз</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>Бронза</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>Средний уровень</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>Расчёт</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>Уровень</value>
-  </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>Добавлять по одной ноте за уровень</value>
-  </data>
-  <data name="1 Bar" xml:space="preserve">
-    <value>1 такт</value>
-  </data>
-  <data name="1 Note" xml:space="preserve">
-    <value>1 нота</value>
-  </data>
-  <data name="Increment" xml:space="preserve">
-    <value>Увеличение</value>
-  </data>
-  <data name="2 Bars" xml:space="preserve">
-    <value>2 такта</value>
-  </data>
-  <data name="Add 8 beats per level" xml:space="preserve">
-    <value>Добавлять 8 долей на уровень</value>
-  </data>
-  <data name="Add 4 beats per level" xml:space="preserve">
-    <value>Добавлять 4 доли на уровень</value>
-  </data>
-  <data name="Current Difficulty" xml:space="preserve">
-    <value>Текущая сложность</value>
-  </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>Режим тренировки</value>
-  </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>Включены визуальные подсказки</value>
-  </data>
-  <data name="Hard" xml:space="preserve">
-    <value>Сложно</value>
-  </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>Стандарт (A4)</value>
-  </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>Без ошибок</value>
-  </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
+      <data name="+1 Note / Lvl" xml:space="preserve">
     <value>+1 нота / ур.</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>Без предпросмотра</value>
-  </data>
-  <data name="Practice" xml:space="preserve">
-    <value>Тренировка</value>
-  </data>
-  <data name="Progression" xml:space="preserve">
-    <value>Прогрессия</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>Послушайте мелодию, запомните её и воспроизведите на пианино.</value>
-  </data>
-  <data name="Difficulty Rating" xml:space="preserve">
-    <value>Уровень сложности</value>
-  </data>
-  <data name="Final Score" xml:space="preserve">
-    <value>Итоговый счёт</value>
   </data>
   <data name="+4 Notes / Lvl" xml:space="preserve">
     <value>+4 ноты / ур.</value>
@@ -207,11 +27,191 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 нот / ур.</value>
   </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Последний рубеж ⚠</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 такт</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 нота</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 такта</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Добавлять 4 доли на уровень</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Добавлять 8 долей на уровень</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Добавлять по одной ноте за уровень</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Атональная</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Бронза</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>До мажор</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Расчёт</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Расчёт</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Проверить только тонику</value>
+  </data>
   <data name="Critical Health" xml:space="preserve">
     <value>Критическое здоровье</value>
   </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Текущая сложность</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Алмаз</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Сложность</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Сложность</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Разбор сложности</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Уровень сложности</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Итоговый счёт</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Полный хроматический звукоряд (Сложный)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Игра окончена</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Золото</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Гроссмейстер</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Сложно</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Увеличение</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Средний уровень</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Уровень</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Достигнутый уровень</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Достигнутый уровень:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Прослушайте ноту A4 (440 Гц)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Прослушать диапазон</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Послушайте мелодию, запомните её и воспроизведите на пианино.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Мелодическая память</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Музыкальный стиль</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Без ошибок</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Без предпросмотра</value>
+  </data>
   <data name="No Score" xml:space="preserve">
     <value>Без очков</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Ноты</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Новичок</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Тренировка</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Режим тренировки</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Предпросмотр</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Прогрессия</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Случайная тональность</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Ранг</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Запомните мелодию и повторите её на пианино.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Новичок</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Основная нота</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Гамма</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Серебро</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Пропустить предпросмотр</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Стандарт (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Стандартный строй (Ля)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Начать игру</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Начать немедленно</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Общий счёт</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Транспонированная мажорная гамма</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Попробовать снова</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Включены визуальные подсказки</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Только белые клавиши (Самый простой)</value>
   </data>
 
 </root>
