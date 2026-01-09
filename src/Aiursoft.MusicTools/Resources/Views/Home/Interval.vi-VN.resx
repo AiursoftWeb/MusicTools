@@ -18,137 +18,65 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Minor Third" xml:space="preserve">
-    <value>Quãng 3 thứ</value>
-  </data>
-  <data name="Augmented Fourth" xml:space="preserve">
-    <value>Quãng 4 tăng</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Quãng 2 thứ</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>Quãng 2 trưởng</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Quãng 1 Đúng</value>
-  </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Quãng 4 Đúng</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Quãng 3 trưởng</value>
-  </data>
-  <data name="Interval Calculator" xml:space="preserve">
-    <value>Máy Tính Quãng Âm</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Quãng 5 Đúng</value>
-  </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>Quãng Bảy Trưởng</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Quãng 6 Trưởng</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Quãng 6 thứ</value>
-  </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Quãng 7 Thứ</value>
-  </data>
-  <data name="Perfect Octave" xml:space="preserve">
-    <value>Quãng Tám Đúng</value>
-  </data>
-  <data name="Unable to recognize note name" xml:space="preserve">
-    <value>Không thể nhận dạng tên nốt nhạc</value>
-  </data>
-  <data name="Please input with the lower note first" xml:space="preserve">
-    <value>Vui lòng nhập nốt thấp hơn trước.</value>
-  </data>
-  <data name="How to Use" xml:space="preserve">
-    <value>Cách Sử Dụng</value>
-  </data>
-  <data name="Click a selected key again to deselect it." xml:space="preserve">
-    <value>Nhấn lại một phím đã chọn để bỏ chọn nó.</value>
-  </data>
-  <data name="The first note you select will be the root." xml:space="preserve">
-    <value>Nốt đầu tiên bạn chọn sẽ là nốt gốc.</value>
-  </data>
-  <data name="Result" xml:space="preserve">
-    <value>Kết quả</value>
-  </data>
-  <data name="Click any two keys on the piano below." xml:space="preserve">
-    <value>Nhấn vào hai phím bất kỳ trên đàn piano bên dưới.</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Đàn Piano Tương Tác</value>
-  </data>
-  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
-    <value>Khoảng cách giữa hai nốt nhạc sẽ được tính toán và hiển thị.</value>
-  </data>
-  <data name="to" xml:space="preserve">
-    <value>đến</value>
-  </data>
-  <data name="Perfect Eleventh" xml:space="preserve">
-    <value>Quãng 11 Đúng</value>
-  </data>
-  <data name="Minor Ninth" xml:space="preserve">
-    <value>Quãng 9 Thứ</value>
-  </data>
-  <data name="Minor Thirteenth" xml:space="preserve">
-    <value>Quãng 13 Thứ</value>
-  </data>
-  <data name="Major Ninth" xml:space="preserve">
-    <value>Quãng 9 Trưởng</value>
-  </data>
-  <data name="Minor Tenth" xml:space="preserve">
-    <value>Quãng Mười Thứ</value>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Quãng Mười Tám Tăng</value>
   </data>
   <data name="Augmented Eleventh" xml:space="preserve">
     <value>Quãng 11 tăng</value>
   </data>
-  <data name="Major Tenth" xml:space="preserve">
-    <value>Quãng mười trưởng</value>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Quãng 4 tăng</value>
   </data>
-  <data name="Perfect Twelfth" xml:space="preserve">
-    <value>Quãng Mười Hai Đúng</value>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Nhấn lại một phím đã chọn để bỏ chọn nó.</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Nhấn vào hai phím bất kỳ trên đàn piano bên dưới.</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Nghịch âm</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Cách Sử Dụng</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Hòa âm không hoàn hảo</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Đàn Piano Tương Tác</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Máy Tính Quãng Âm</value>
   </data>
   <data name="Major Fourteenth" xml:space="preserve">
     <value>Trưởng mười bốn</value>
   </data>
-  <data name="Major Thirteenth" xml:space="preserve">
-    <value>Trường Thập Tam</value>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Quãng 9 Trưởng</value>
   </data>
-  <data name="Minor Fourteenth" xml:space="preserve">
-    <value>Quãng 14 Thứ</value>
+  <data name="Major Second" xml:space="preserve">
+    <value>Quãng 2 trưởng</value>
   </data>
-  <data name="Perfect Fifteenth" xml:space="preserve">
-    <value>Mười Lăm Đúng</value>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Trưởng Mười Bảy</value>
   </data>
-  <data name="Minor Sixteenth" xml:space="preserve">
-    <value>Quãng 16 Thứ</value>
-  </data>
-  <data name="Minor Twentieth" xml:space="preserve">
-    <value>Quãng 20 thứ</value>
-  </data>
-  <data name="Perfect Nineteenth" xml:space="preserve">
-    <value>Quãng Mười Chín Đúng</value>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Quãng Bảy Trưởng</value>
   </data>
   <data name="Major Sixteenth" xml:space="preserve">
     <value>Trường Thập Lục</value>
   </data>
-  <data name="Perfect Eighteenth" xml:space="preserve">
-    <value>Quãng Mười Tám Đúng</value>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Quãng 6 Trưởng</value>
   </data>
-  <data name="Minor Seventeenth" xml:space="preserve">
-    <value>Quãng 17 Thứ</value>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Quãng mười trưởng</value>
   </data>
-  <data name="Augmented Eighteenth" xml:space="preserve">
-    <value>Quãng Mười Tám Tăng</value>
+  <data name="Major Third" xml:space="preserve">
+    <value>Quãng 3 trưởng</value>
   </data>
-  <data name="Major Seventeenth" xml:space="preserve">
-    <value>Trưởng Mười Bảy</value>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Trường Thập Tam</value>
   </data>
   <data name="Major Twentieth" xml:space="preserve">
     <value>Trưởng Hai Mươi</value>
@@ -156,26 +84,98 @@
   <data name="Major Twenty-First" xml:space="preserve">
     <value>Trưởng Hai Mốt</value>
   </data>
-  <data name="Perfect Twenty-Second" xml:space="preserve">
-    <value>Quãng 22 Đúng</value>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Quãng 14 Thứ</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Quãng 9 Thứ</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Quãng 2 thứ</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Quãng 17 Thứ</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Quãng 7 Thứ</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Quãng 16 Thứ</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Quãng 6 thứ</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Quãng Mười Thứ</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Quãng 3 thứ</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Quãng 13 Thứ</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Quãng 20 thứ</value>
   </data>
   <data name="Minor Twenty-First" xml:space="preserve">
     <value>Quãng Hai Mốt Thứ</value>
   </data>
-  <data name="Reset Selection" xml:space="preserve">
-    <value>Thiết lập lại lựa chọn</value>
-  </data>
   <data name="Perfect Consonance" xml:space="preserve">
     <value>Hòa âm Hoàn hảo</value>
   </data>
-  <data name="Dissonance" xml:space="preserve">
-    <value>Nghịch âm</value>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Quãng Mười Tám Đúng</value>
   </data>
-  <data name="Imperfect Consonance" xml:space="preserve">
-    <value>Hòa âm không hoàn hảo</value>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Quãng 11 Đúng</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Mười Lăm Đúng</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Quãng 5 Đúng</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Quãng 4 Đúng</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Quãng Mười Chín Đúng</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Quãng Tám Đúng</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Quãng Mười Hai Đúng</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Quãng 22 Đúng</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Quãng 1 Đúng</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Vui lòng nhập nốt thấp hơn trước.</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Thiết lập lại lựa chọn</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Kết quả</value>
   </data>
   <data name="Sharp Dissonance" xml:space="preserve">
     <value>Nghịch âm sắc nét</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Nốt đầu tiên bạn chọn sẽ là nốt gốc.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Khoảng cách giữa hai nốt nhạc sẽ được tính toán và hiển thị.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>đến</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Không thể nhận dạng tên nốt nhạc</value>
   </data>
 
 </root>

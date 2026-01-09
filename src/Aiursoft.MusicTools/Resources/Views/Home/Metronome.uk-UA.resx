@@ -21,23 +21,14 @@
       <data name="BPM" xml:space="preserve">
     <value>BPM</value>
   </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Підрозділ</value>
-  </data>
-  <data name="Normal (90)" xml:space="preserve">
-    <value>Нормальний (90)</value>
-  </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>Повільно (1)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>Розмір такту</value>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>Восьма нота (♫)</value>
   </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>Швидко (320)</value>
   </data>
-  <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>Восьма нота (♫)</value>
+  <data name="Normal (90)" xml:space="preserve">
+    <value>Нормальний (90)</value>
   </data>
   <data name="Quarter Note (♩)" xml:space="preserve">
     <value>Четвертна нота (♩)</value>
@@ -45,14 +36,23 @@
   <data name="Sixteenth Note (♬)" xml:space="preserve">
     <value>Шістнадцята нота (♬)</value>
   </data>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>Повільно (1)</value>
+  </data>
   <data name="Start" xml:space="preserve">
     <value>Старт</value>
   </data>
-  <data name="Triplet (3)" xml:space="preserve">
-    <value>Тріоль (3)</value>
-  </data>
   <data name="Stop" xml:space="preserve">
     <value>Зупинити</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Підрозділ</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Розмір такту</value>
+  </data>
+  <data name="Triplet (3)" xml:space="preserve">
+    <value>Тріоль (3)</value>
   </data>
 
 </root>

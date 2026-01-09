@@ -18,137 +18,65 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Perfect Fourth" xml:space="preserve">
-    <value>Ren Kvart</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Lille Sekund</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Lille Terts</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Stor Terts</value>
-  </data>
-  <data name="Augmented Fourth" xml:space="preserve">
-    <value>Forstørret Kvart</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Perfekt prim</value>
-  </data>
-  <data name="Interval Calculator" xml:space="preserve">
-    <value>Intervallommeregner</value>
-  </data>
-  <data name="Major Second" xml:space="preserve">
-    <value>Stor Sekund</value>
-  </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Stor Sekst</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Ren Kvint</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Lille Sekst</value>
-  </data>
-  <data name="Major Seventh" xml:space="preserve">
-    <value>Stor Septim</value>
-  </data>
-  <data name="Perfect Octave" xml:space="preserve">
-    <value>Perfekt Oktav</value>
-  </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Lille Septim</value>
-  </data>
-  <data name="Unable to recognize note name" xml:space="preserve">
-    <value>Kan ikke genkende nodenavn</value>
-  </data>
-  <data name="Please input with the lower note first" xml:space="preserve">
-    <value>Indtast venligst den lavere tone først.</value>
-  </data>
-  <data name="How to Use" xml:space="preserve">
-    <value>Sådan bruges</value>
-  </data>
-  <data name="Result" xml:space="preserve">
-    <value>Resultat</value>
-  </data>
-  <data name="to" xml:space="preserve">
-    <value>til</value>
-  </data>
-  <data name="The first note you select will be the root." xml:space="preserve">
-    <value>Den første tone du vælger vil være grundtonen.</value>
-  </data>
-  <data name="Click any two keys on the piano below." xml:space="preserve">
-    <value>Klik på vilke som helst to tangenter på klaveret nedenfor.</value>
-  </data>
-  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
-    <value>Intervallet mellem de to noder vil blive beregnet og vist.</value>
-  </data>
-  <data name="Interactive Piano" xml:space="preserve">
-    <value>Interaktivt Klaver</value>
-  </data>
-  <data name="Click a selected key again to deselect it." xml:space="preserve">
-    <value>Klik på en valgt tangent igen for at fravælge den.</value>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Forstørret Oktondel</value>
   </data>
   <data name="Augmented Eleventh" xml:space="preserve">
     <value>Forstærket undecim</value>
   </data>
-  <data name="Minor Ninth" xml:space="preserve">
-    <value>Lille None</value>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Forstørret Kvart</value>
   </data>
-  <data name="Perfect Twelfth" xml:space="preserve">
-    <value>Perfekt Duodecim</value>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Klik på en valgt tangent igen for at fravælge den.</value>
   </data>
-  <data name="Major Ninth" xml:space="preserve">
-    <value>Stor None</value>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Klik på vilke som helst to tangenter på klaveret nedenfor.</value>
   </data>
-  <data name="Major Tenth" xml:space="preserve">
-    <value>Stor Decim</value>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonans</value>
   </data>
-  <data name="Minor Tenth" xml:space="preserve">
-    <value>Lille Decim</value>
+  <data name="How to Use" xml:space="preserve">
+    <value>Sådan bruges</value>
   </data>
-  <data name="Perfect Eleventh" xml:space="preserve">
-    <value>Perfekt Undecim</value>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Ufuldkommen konsonans</value>
   </data>
-  <data name="Minor Thirteenth" xml:space="preserve">
-    <value>Lille Tretten</value>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interaktivt Klaver</value>
   </data>
-  <data name="Major Thirteenth" xml:space="preserve">
-    <value>Stor Tretten</value>
-  </data>
-  <data name="Perfect Fifteenth" xml:space="preserve">
-    <value>Perfekt kvintdecim</value>
-  </data>
-  <data name="Minor Fourteenth" xml:space="preserve">
-    <value>Lille Kvartdecim</value>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervallommeregner</value>
   </data>
   <data name="Major Fourteenth" xml:space="preserve">
     <value>Stor Kvartdecime</value>
   </data>
-  <data name="Minor Sixteenth" xml:space="preserve">
-    <value>Lille Sekstende</value>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Stor None</value>
   </data>
-  <data name="Major Sixteenth" xml:space="preserve">
-    <value>Stor Sekstendedel</value>
-  </data>
-  <data name="Augmented Eighteenth" xml:space="preserve">
-    <value>Forstørret Oktondel</value>
-  </data>
-  <data name="Minor Twentieth" xml:space="preserve">
-    <value>Lille Tyvende</value>
+  <data name="Major Second" xml:space="preserve">
+    <value>Stor Sekund</value>
   </data>
   <data name="Major Seventeenth" xml:space="preserve">
     <value>Stor Septimdecim</value>
   </data>
-  <data name="Minor Seventeenth" xml:space="preserve">
-    <value>Lille Septimdecim</value>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Stor Septim</value>
   </data>
-  <data name="Perfect Nineteenth" xml:space="preserve">
-    <value>Perfekt nittende</value>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Stor Sekstendedel</value>
   </data>
-  <data name="Minor Twenty-First" xml:space="preserve">
-    <value>Lille Enogtyvende</value>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Stor Sekst</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Stor Decim</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Stor Terts</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Stor Tretten</value>
   </data>
   <data name="Major Twentieth" xml:space="preserve">
     <value>Stor Tyvendedel</value>
@@ -156,26 +84,98 @@
   <data name="Major Twenty-First" xml:space="preserve">
     <value>Stor Enogtyvende</value>
   </data>
-  <data name="Perfect Twenty-Second" xml:space="preserve">
-    <value>Perfekt toogtyvende</value>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Lille Kvartdecim</value>
   </data>
-  <data name="Perfect Eighteenth" xml:space="preserve">
-    <value>Perfekt oktav + kvart</value>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Lille None</value>
   </data>
-  <data name="Reset Selection" xml:space="preserve">
-    <value>Nulstil valg</value>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Lille Sekund</value>
   </data>
-  <data name="Dissonance" xml:space="preserve">
-    <value>Dissonans</value>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Lille Septimdecim</value>
   </data>
-  <data name="Sharp Dissonance" xml:space="preserve">
-    <value>Skarp Dissonans</value>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Lille Septim</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Lille Sekstende</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Lille Sekst</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Lille Decim</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Lille Terts</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Lille Tretten</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Lille Tyvende</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Lille Enogtyvende</value>
   </data>
   <data name="Perfect Consonance" xml:space="preserve">
     <value>Perfekt konsonans</value>
   </data>
-  <data name="Imperfect Consonance" xml:space="preserve">
-    <value>Ufuldkommen konsonans</value>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Perfekt oktav + kvart</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Perfekt Undecim</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Perfekt kvintdecim</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Ren Kvint</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Ren Kvart</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Perfekt nittende</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Perfekt Oktav</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Perfekt Duodecim</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Perfekt toogtyvende</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Perfekt prim</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Indtast venligst den lavere tone først.</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Nulstil valg</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Resultat</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Skarp Dissonans</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Den første tone du vælger vil være grundtonen.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Intervallet mellem de to noder vil blive beregnet og vist.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>til</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Kan ikke genkende nodenavn</value>
   </data>
 
 </root>

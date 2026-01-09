@@ -18,128 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="C Major" xml:space="preserve">
-    <value>C-Dur</value>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Note / Lvl</value>
   </data>
-  <data name="Melody Memory" xml:space="preserve">
-    <value>Melodie-Gedächtnis</value>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Noten / Lvl</value>
   </data>
-  <data name="Random Key" xml:space="preserve">
-    <value>Zufällige Tonart</value>
-  </data>
-  <data name="Music Style" xml:space="preserve">
-    <value>Musikstil</value>
-  </data>
-  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
-    <value>Merke dir die Melodie und spiele sie auf dem Klavier nach.</value>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Noten / Lvl</value>
   </data>
   <data name="⚠ Last Stand ⚠" xml:space="preserve">
     <value>⚠ Letzter Widerstand ⚠</value>
   </data>
-  <data name="Transposed Major scale" xml:space="preserve">
-    <value>Transponierte Dur-Tonleiter</value>
-  </data>
-  <data name="White keys only (Easiest)" xml:space="preserve">
-    <value>Nur weiße Tasten (Einfachste)</value>
-  </data>
-  <data name="Atonal" xml:space="preserve">
-    <value>Atonal</value>
-  </data>
-  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
-    <value>Vollständige chromatische Tonleiter (Schwierig)</value>
-  </data>
-  <data name="Preview" xml:space="preserve">
-    <value>Vorschau</value>
-  </data>
-  <data name="Check tonic only" xml:space="preserve">
-    <value>Nur den Grundton prüfen</value>
-  </data>
-  <data name="Start Game" xml:space="preserve">
-    <value>Spiel starten</value>
-  </data>
-  <data name="Scale" xml:space="preserve">
-    <value>Tonleiter</value>
-  </data>
-  <data name="Listen to range" xml:space="preserve">
-    <value>Hören Sie sich den Tonumfang an</value>
-  </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Grundton</value>
-  </data>
-  <data name="Try Again" xml:space="preserve">
-    <value>Erneut versuchen</value>
-  </data>
-  <data name="Novice" xml:space="preserve">
-    <value>Anfänger</value>
-  </data>
-  <data name="Level Reached: " xml:space="preserve">
-    <value>Erreichtes Level:</value>
-  </data>
-  <data name="Game Over" xml:space="preserve">
-    <value>Spiel vorbei</value>
-  </data>
-  <data name="Standard Pitch (A)" xml:space="preserve">
-    <value>Standardstimmung (A)</value>
-  </data>
-  <data name="Start immediately" xml:space="preserve">
-    <value>Sofort starten</value>
-  </data>
-  <data name="Skip Preview" xml:space="preserve">
-    <value>Vorschau überspringen</value>
-  </data>
-  <data name="Listen to A4 (440Hz)" xml:space="preserve">
-    <value>Hören Sie A4 (440 Hz)</value>
-  </data>
-  <data name="Calculation" xml:space="preserve">
-    <value>Berechnung</value>
-  </data>
-  <data name="Total Score" xml:space="preserve">
-    <value>Gesamtpunktzahl</value>
-  </data>
-  <data name="Diff" xml:space="preserve">
-    <value>Schwierigkeit</value>
-  </data>
-  <data name="Difficulty" xml:space="preserve">
-    <value>Schwierigkeit</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Noten</value>
-  </data>
-  <data name="Rank" xml:space="preserve">
-    <value>Rang</value>
-  </data>
-  <data name="Level Reached" xml:space="preserve">
-    <value>Erreichtes Level</value>
-  </data>
-  <data name="Difficulty Breakdown" xml:space="preserve">
-    <value>Schwierigkeitsaufschlüsselung</value>
-  </data>
-  <data name="Intermediate" xml:space="preserve">
-    <value>Fortgeschrittene</value>
-  </data>
-  <data name="Rookie" xml:space="preserve">
-    <value>Anfänger</value>
-  </data>
-  <data name="Silver" xml:space="preserve">
-    <value>Silber</value>
-  </data>
-  <data name="Gold" xml:space="preserve">
-    <value>Gold</value>
-  </data>
-  <data name="Diamond" xml:space="preserve">
-    <value>Diamant</value>
-  </data>
-  <data name="Bronze" xml:space="preserve">
-    <value>Bronze</value>
-  </data>
-  <data name="Grandmaster" xml:space="preserve">
-    <value>Großmeister</value>
-  </data>
-  <data name="Level" xml:space="preserve">
-    <value>Level</value>
-  </data>
-  <data name="Calc" xml:space="preserve">
-    <value>Berechnung</value>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Takt</value>
   </data>
   <data name="1 Note" xml:space="preserve">
     <value>1 Note</value>
@@ -147,62 +39,50 @@
   <data name="2 Bars" xml:space="preserve">
     <value>2 Takte</value>
   </data>
-  <data name="Add one note per level" xml:space="preserve">
-    <value>Eine Note pro Level hinzufügen</value>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>4 Taktschläge pro Level hinzufügen</value>
   </data>
   <data name="Add 8 beats per level" xml:space="preserve">
     <value>8 Taktschläge pro Level hinzufügen</value>
   </data>
-  <data name="1 Bar" xml:space="preserve">
-    <value>1 Takt</value>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Eine Note pro Level hinzufügen</value>
   </data>
-  <data name="Increment" xml:space="preserve">
-    <value>Steigerung</value>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonal</value>
   </data>
-  <data name="Add 4 beats per level" xml:space="preserve">
-    <value>4 Taktschläge pro Level hinzufügen</value>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>C-Dur</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Nur den Grundton prüfen</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kritische Gesundheit</value>
   </data>
   <data name="Current Difficulty" xml:space="preserve">
     <value>Aktuelle Schwierigkeit</value>
   </data>
-  <data name="Visual hints enabled" xml:space="preserve">
-    <value>Visuelle Hinweise aktiviert</value>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
   </data>
-  <data name="Practice Mode" xml:space="preserve">
-    <value>Übungsmodus</value>
+  <data name="Diff" xml:space="preserve">
+    <value>Schwierigkeit</value>
   </data>
-  <data name="Hard" xml:space="preserve">
-    <value>Schwer</value>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Schwierigkeit</value>
   </data>
-  <data name="Standard (A4)" xml:space="preserve">
-    <value>Standard (A4)</value>
-  </data>
-  <data name="Practice" xml:space="preserve">
-    <value>Üben</value>
-  </data>
-  <data name="+1 Note / Lvl" xml:space="preserve">
-    <value>+1 Note / Lvl</value>
-  </data>
-  <data name="No Fail" xml:space="preserve">
-    <value>Kein Scheitern</value>
-  </data>
-  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
-    <value>Höre dir die Melodie an, präge sie dir ein und spiele sie auf dem Klavier nach.</value>
-  </data>
-  <data name="No Preview" xml:space="preserve">
-    <value>Keine Vorschau</value>
-  </data>
-  <data name="Progression" xml:space="preserve">
-    <value>Fortschritt</value>
-  </data>
-  <data name="+8 Notes / Lvl" xml:space="preserve">
-    <value>+8 Noten / Lvl</value>
-  </data>
-  <data name="+4 Notes / Lvl" xml:space="preserve">
-    <value>+4 Noten / Lvl</value>
-  </data>
-  <data name="Critical Health" xml:space="preserve">
-    <value>Kritische Gesundheit</value>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Schwierigkeitsaufschlüsselung</value>
   </data>
   <data name="Difficulty Rating" xml:space="preserve">
     <value>Schwierigkeitsgrad</value>
@@ -210,8 +90,128 @@
   <data name="Final Score" xml:space="preserve">
     <value>Endpunktzahl</value>
   </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Vollständige chromatische Tonleiter (Schwierig)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Spiel vorbei</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Großmeister</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Schwer</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Steigerung</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Fortgeschrittene</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Erreichtes Level</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Erreichtes Level:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Hören Sie A4 (440 Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Hören Sie sich den Tonumfang an</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Höre dir die Melodie an, präge sie dir ein und spiele sie auf dem Klavier nach.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodie-Gedächtnis</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Musikstil</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Kein Scheitern</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Keine Vorschau</value>
+  </data>
   <data name="No Score" xml:space="preserve">
     <value>Keine Punktzahl</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Noten</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Anfänger</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Üben</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Übungsmodus</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vorschau</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Fortschritt</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Zufällige Tonart</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Merke dir die Melodie und spiele sie auf dem Klavier nach.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Anfänger</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Grundton</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Tonleiter</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silber</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Vorschau überspringen</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standardstimmung (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Spiel starten</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Sofort starten</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Gesamtpunktzahl</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Transponierte Dur-Tonleiter</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Erneut versuchen</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Visuelle Hinweise aktiviert</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Nur weiße Tasten (Einfachste)</value>
   </data>
 
 </root>

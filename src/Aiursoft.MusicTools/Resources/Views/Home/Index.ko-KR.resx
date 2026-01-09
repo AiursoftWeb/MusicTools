@@ -18,50 +18,50 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Explore Major" xml:space="preserve">
-    <value>장조 탐험하기</value>
-  </data>
-  <data name="Tool Interface Preview" xml:space="preserve">
-    <value>도구 인터페이스 미리보기</value>
-  </data>
-  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>음악의 언어를 &apos;시각화&apos;하다</value>
-  </data>
-  <data name="Explore Minor" xml:space="preserve">
-    <value>단조 탐색하기</value>
-  </data>
-  <data name="Why is music designed this way?" xml:space="preserve">
-    <value>음악은 왜 이런 방식으로 설계되었을까요?</value>
-  </data>
-  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
-    <value>음악은 마법이 아닙니다. 수학, 물리학, 그리고 패턴의 훌륭한 조합입니다. 우리의 도구는 이러한 패턴들을 드러냅니다:</value>
-  </data>
-  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
-    <value>초보 학생이든, 호기심 많은 애호가든, 경험 많은 프로듀서든, 이 도구는 키, 화음, 스케일 구조를 탐구하기 위한 직관적인 샌드박스를 제공할 것입니다.</value>
-  </data>
-  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
-    <value>12음계 체계 해부하기</value>
-  </data>
-  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
-    <value>5도권의 마법</value>
   </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>모든 것을 연결하기</value>
   </data>
-  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
-    <value>상호작용 가능한 음악 이론 도구에 오신 것을 환영합니다. 본 도구는 음악 이론의 추상적인 개념들—크로매틱 스케일(Chromatic Scale), 5도권(Circle of Fifths), 그리고 피아노 건반—을 연결하여 여러분이 음악이 어떻게 작동하는지 진정으로 &apos;시각적으로&apos; 이해하도록 도와줍니다.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>12음계 체계 해부하기</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>장조 탐험하기</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>단조 탐색하기</value>
   </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>조성은 고립되어 있지 않습니다. &apos;Circle of Fifths&apos;는 음악의 나침반으로, 모든 조표의 순서(C -&gt; G -&gt; D...)와 그 화성 관계를 보여줍니다. 이것은 작곡, 편곡, 즉흥 연주의 핵심 청사진입니다.</value>
   </data>
-  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
-    <value>왜 한 옥타브가 12개의 건으로 나뉠까요? 현대 음악은 모든 조가 &apos;수용 가능하게&apos; 들리도록 하는 천재적인 수학적 타협인 &apos;12평균율&apos; 위에 구축되었습니다. 우리의 크로매틱 서클은 이 추상적인 음고 체계를 시각적으로 직관적으로 만들어줍니다.</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>음악은 마법이 아닙니다. 수학, 물리학, 그리고 패턴의 훌륭한 조합입니다. 우리의 도구는 이러한 패턴들을 드러냅니다:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>랜덤 멜로디 재생</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>5도권의 마법</value>
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>이론은 지루할 수 있지만, 실제로 작동하는 모습을 보는 것은 재미있습니다. 이 도구의 핵심 가치는 &apos;실시간 동기화&apos;입니다. 새로운 키를 선택하면, 크로매틱 서클, 5도권, 피아노 건반, 그리고 오선보가 즉시 업데이트됩니다. 왜 G Major에 샤프가 하나만 있는지 바로 이해하게 될 것입니다!</value>
   </data>
-  <data name="Play Random Melody" xml:space="preserve">
-    <value>랜덤 멜로디 재생</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>도구 인터페이스 미리보기</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>상호작용 가능한 음악 이론 도구에 오신 것을 환영합니다. 본 도구는 음악 이론의 추상적인 개념들—크로매틱 스케일(Chromatic Scale), 5도권(Circle of Fifths), 그리고 피아노 건반—을 연결하여 여러분이 음악이 어떻게 작동하는지 진정으로 &apos;시각적으로&apos; 이해하도록 도와줍니다.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>초보 학생이든, 호기심 많은 애호가든, 경험 많은 프로듀서든, 이 도구는 키, 화음, 스케일 구조를 탐구하기 위한 직관적인 샌드박스를 제공할 것입니다.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>왜 한 옥타브가 12개의 건으로 나뉠까요? 현대 음악은 모든 조가 &apos;수용 가능하게&apos; 들리도록 하는 천재적인 수학적 타협인 &apos;12평균율&apos; 위에 구축되었습니다. 우리의 크로매틱 서클은 이 추상적인 음고 체계를 시각적으로 직관적으로 만들어줍니다.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>음악은 왜 이런 방식으로 설계되었을까요?</value>
   </data>
 
 </root>

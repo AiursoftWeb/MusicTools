@@ -21,38 +21,38 @@
       <data name="BPM" xml:space="preserve">
     <value>BPM</value>
   </data>
+  <data name="Eighth Note (♫)" xml:space="preserve">
+    <value>Ottendedelsnode (♫)</value>
+  </data>
   <data name="Fast (320)" xml:space="preserve">
     <value>Hurtig (320)</value>
-  </data>
-  <data name="Quarter Note (♩)" xml:space="preserve">
-    <value>Fjerdedelsnode (♩)</value>
   </data>
   <data name="Normal (90)" xml:space="preserve">
     <value>Normal (90)</value>
   </data>
-  <data name="Slow (1)" xml:space="preserve">
-    <value>Langsom (1)</value>
-  </data>
-  <data name="Time Signature" xml:space="preserve">
-    <value>Taktart</value>
-  </data>
-  <data name="Subdivision" xml:space="preserve">
-    <value>Underinddeling</value>
-  </data>
-  <data name="Eighth Note (♫)" xml:space="preserve">
-    <value>Ottendedelsnode (♫)</value>
-  </data>
-  <data name="Triplet (3)" xml:space="preserve">
-    <value>Triplet (3)</value>
+  <data name="Quarter Note (♩)" xml:space="preserve">
+    <value>Fjerdedelsnode (♩)</value>
   </data>
   <data name="Sixteenth Note (♬)" xml:space="preserve">
     <value>Sekstendedelsnode (♬)</value>
+  </data>
+  <data name="Slow (1)" xml:space="preserve">
+    <value>Langsom (1)</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>
   </data>
   <data name="Stop" xml:space="preserve">
     <value>Stop</value>
+  </data>
+  <data name="Subdivision" xml:space="preserve">
+    <value>Underinddeling</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Taktart</value>
+  </data>
+  <data name="Triplet (3)" xml:space="preserve">
+    <value>Triplet (3)</value>
   </data>
 
 </root>

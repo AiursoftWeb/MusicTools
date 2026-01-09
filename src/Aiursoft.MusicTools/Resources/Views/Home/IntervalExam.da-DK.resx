@@ -18,65 +18,65 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Major Second" xml:space="preserve">
-    <value>Stor Sekund</value>
-  </data>
-  <data name="Correct!" xml:space="preserve">
-    <value>Korrekt!</value>
-  </data>
-  <data name="Minor Third" xml:space="preserve">
-    <value>Lille Terts</value>
-  </data>
-  <data name="Minor Second" xml:space="preserve">
-    <value>Lille Sekund</value>
-  </data>
-  <data name="Perfect Unison" xml:space="preserve">
-    <value>Perfekt prim</value>
-  </data>
-  <data name="What is the (0) of the note above?" xml:space="preserve">
-    <value>Hvad er (0) for noden ovenfor?</value>
-  </data>
-  <data name="Interval Exam" xml:space="preserve">
-    <value>Intervalprøve</value>
-  </data>
-  <data name="Wrong." xml:space="preserve">
-    <value>Forkert.</value>
-  </data>
-  <data name="Major Third" xml:space="preserve">
-    <value>Stor Terts</value>
-  </data>
-  <data name="Minor Sixth" xml:space="preserve">
-    <value>Lille Sekst</value>
-  </data>
-  <data name="Perfect Fourth" xml:space="preserve">
-    <value>Ren Kvart</value>
-  </data>
-  <data name="Perfect Fifth" xml:space="preserve">
-    <value>Perfekt Kvint</value>
-  </data>
-  <data name="Diminished Fifth" xml:space="preserve">
-    <value>Formindset kvint</value>
-  </data>
-  <data name="Augmented Fifth" xml:space="preserve">
+      <data name="Augmented Fifth" xml:space="preserve">
     <value>Forstørret Kvint</value>
   </data>
   <data name="Augmented Fourth" xml:space="preserve">
     <value>Forstørret Kvart</value>
   </data>
-  <data name="Major Sixth" xml:space="preserve">
-    <value>Stor Sekst</value>
+  <data name="Correct!" xml:space="preserve">
+    <value>Korrekt!</value>
   </data>
-  <data name="Minor Seventh" xml:space="preserve">
-    <value>Lille Septim</value>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>Formindset kvint</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Intervalprøve</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Stor Sekund</value>
   </data>
   <data name="Major Seventh" xml:space="preserve">
     <value>Stor Septim</value>
   </data>
-  <data name="Select Answer" xml:space="preserve">
-    <value>Vælg svar</value>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Stor Sekst</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Stor Terts</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Lille Sekund</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Lille Septim</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Lille Sekst</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Lille Terts</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Perfekt Kvint</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Ren Kvart</value>
   </data>
   <data name="Perfect Octave" xml:space="preserve">
     <value>Perfekt Oktav</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Perfekt prim</value>
+  </data>
+  <data name="Select Answer" xml:space="preserve">
+    <value>Vælg svar</value>
+  </data>
+  <data name="What is the (0) of the note above?" xml:space="preserve">
+    <value>Hvad er (0) for noden ovenfor?</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Forkert.</value>
   </data>
 
 </root>

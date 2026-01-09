@@ -18,50 +18,50 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Explore Major" xml:space="preserve">
-    <value>Majör&apos;ü Keşfedin</value>
-  </data>
-  <data name="Tool Interface Preview" xml:space="preserve">
-    <value>Arayüz Önizlemesi</value>
-  </data>
-  <data name="Explore Minor" xml:space="preserve">
-    <value>Minör&apos;ü Keşfet</value>
-  </data>
-  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>Müziğin Dilini &apos;Görün&apos;</value>
-  </data>
-  <data name="Why is music designed this way?" xml:space="preserve">
-    <value>Müzik neden bu şekilde tasarlandı?</value>
-  </data>
-  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
-    <value>12 Ton Sistemini Çözümlemek</value>
-  </data>
-  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
-    <value>Müzik bir sihir değildir; matematik, fizik ve desenlerin parlak bir birleşimidir. Aracımız bu desenleri ortaya çıkarır:</value>
-  </data>
-  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
-    <value>Beşliler Çemberinin Büyüsü</value>
-  </data>
-  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
-    <value>İster yeni başlayan bir öğrenci, ister meraklı bir tutkunu veya deneyimli bir prodüktör olun, bu araç; anahtarları, armoniyi ve gam yapılarını keşfetmek için sezgisel bir sanal kum havuzu sunacaktır.</value>
   </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Her Şeyi Birbirine Bağlamak</value>
   </data>
-  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
-    <value>Etkileşimli müzik teorisi aracına hoş geldiniz. Müzik teorisinin soyut kavramlarını—Kromatik Dizi, Beşliler Çemberi ve piyano klavyesi—birbirine bağlamanıza yardımcı olarak, müziğin nasıl işlediğini gerçekten &apos;görmenizi&apos; sağlıyoruz.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>12 Ton Sistemini Çözümlemek</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Majör&apos;ü Keşfedin</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Minör&apos;ü Keşfet</value>
   </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonlar izole değildir. &apos;Beşliler Çemberi&apos;, müziğin pusulasıdır; tüm ton imzalarının (C -&gt; G -&gt; D...) sırasını ve armonik ilişkilerini ortaya koyar. Besteleme, düzenleme ve doğaçlama için temel şemadır.</value>
   </data>
-  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
-    <value>Bir oktav neden 12 sese bölünmüştür? Modern müzik, tüm tonların &apos;kabul edilebilir&apos; tınlamasını sağlayan dahiyane bir matematiksel uzlaşma olan &apos;12-Ton Eşit Temperaman&apos; üzerine inşa edilmiştir. Kromatik Dairemiz, bu soyut perde sistemini görsel olarak sezgisel hale getirir.</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Müzik bir sihir değildir; matematik, fizik ve desenlerin parlak bir birleşimidir. Aracımız bu desenleri ortaya çıkarır:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Rastgele Melodi Çal</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Beşliler Çemberinin Büyüsü</value>
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori kuru olabilir ama pratikte izlemek eğlencelidir. Bu aracın temel değeri &apos;gerçek zamanlı senkronizasyondur.&apos; Yeni bir anahtar seçtiğinizde, Kromatik Daire, Beşliler Çemberi, piyano tuşları ve nota yazımı anında güncellenir. Neden Sol Majör&apos;ün sadece bir diyeze sahip olduğunu anında anlayacaksınız!</value>
   </data>
-  <data name="Play Random Melody" xml:space="preserve">
-    <value>Rastgele Melodi Çal</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Arayüz Önizlemesi</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Etkileşimli müzik teorisi aracına hoş geldiniz. Müzik teorisinin soyut kavramlarını—Kromatik Dizi, Beşliler Çemberi ve piyano klavyesi—birbirine bağlamanıza yardımcı olarak, müziğin nasıl işlediğini gerçekten &apos;görmenizi&apos; sağlıyoruz.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>İster yeni başlayan bir öğrenci, ister meraklı bir tutkunu veya deneyimli bir prodüktör olun, bu araç; anahtarları, armoniyi ve gam yapılarını keşfetmek için sezgisel bir sanal kum havuzu sunacaktır.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Bir oktav neden 12 sese bölünmüştür? Modern müzik, tüm tonların &apos;kabul edilebilir&apos; tınlamasını sağlayan dahiyane bir matematiksel uzlaşma olan &apos;12-Ton Eşit Temperaman&apos; üzerine inşa edilmiştir. Kromatik Dairemiz, bu soyut perde sistemini görsel olarak sezgisel hale getirir.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Müzik neden bu şekilde tasarlandı?</value>
   </data>
 
 </root>

@@ -18,50 +18,50 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Explore Minor" xml:space="preserve">
-    <value>Moll erkunden</value>
-  </data>
-  <data name="Tool Interface Preview" xml:space="preserve">
-    <value>Vorschau der Werkzeugoberfläche</value>
-  </data>
-  <data name="Explore Major" xml:space="preserve">
-    <value>Dur-Tonarten erkunden</value>
-  </data>
-  <data name="Why is music designed this way?" xml:space="preserve">
-    <value>Warum ist Musik so aufgebaut?</value>
-  </data>
-  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>Die ‚Sprache‘ der Musik ‚sehen‘</value>
-  </data>
-  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
-    <value>Musik ist keine Zauberei; sie ist eine brillante Kombination aus Mathematik, Physik und Mustern. Unser Werkzeug enthüllt diese Muster:</value>
-  </data>
-  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
-    <value>Das 12-Ton-System dekonstruieren</value>
-  </data>
-  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
-    <value>Egal, ob du ein Anfänger, ein neugieriger Enthusiast oder ein erfahrener Produzent bist – dieses Tool bietet dir eine intuitive Spielwiese, um Tonarten, Harmonien und Skalenstrukturen zu erkunden.</value>
-  </data>
-  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
-    <value>Die Magie des Quintenzirkels</value>
   </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Alles verbinden</value>
   </data>
-  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
-    <value>Willkommen beim interaktiven Musiktheorie-Tool. Wir helfen Ihnen, die abstrakten Konzepte der Musiktheorie – die chromatische Tonleiter, den Quintenzirkel und die Klaviertastatur – zu verbinden, sodass Sie wirklich &apos;sehen&apos; können, wie Musik funktioniert.</value>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Das 12-Ton-System dekonstruieren</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Dur-Tonarten erkunden</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Moll erkunden</value>
   </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonarten sind nicht isoliert. Der &apos;Circle of Fifths&apos; ist der Kompass der Musik, der die Reihenfolge aller Tonarten (C -&gt; G -&gt; D...) und ihre harmonischen Beziehungen offenbart. Er ist der zentrale Bauplan für Komposition, Arrangement und Improvisation.</value>
   </data>
-  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
-    <value>Warum ist eine Oktave in 12 Töne unterteilt? Die moderne Musik basiert auf der &apos;12-Ton-Equal-Temperament-Stimmung&apos;, einem brillanten mathematischen Kompromiss, der dafür sorgt, dass alle Tonarten &apos;akzeptabel&apos; klingen. Unser chromatischer Kreis macht dieses abstrakte Tonsystem visuell intuitiv.</value>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Musik ist keine Zauberei; sie ist eine brillante Kombination aus Mathematik, Physik und Mustern. Unser Werkzeug enthüllt diese Muster:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Zufällige Melodie abspielen</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Die Magie des Quintenzirkels</value>
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Theorie kann trocken sein, aber sie in Aktion zu sehen, macht Spaß. Der Kernwert dieses Tools ist die &apos;Echtzeit-Synchronisation&apos;. Wenn Sie eine neue Tonart auswählen, aktualisieren sich der Chromatische Kreis, die Quintenzirkel, die Klaviertasten und die Notenschrift sofort. Sie werden sofort verstehen, warum G-Dur nur ein Kreuz hat!</value>
   </data>
-  <data name="Play Random Melody" xml:space="preserve">
-    <value>Zufällige Melodie abspielen</value>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Vorschau der Werkzeugoberfläche</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Willkommen beim interaktiven Musiktheorie-Tool. Wir helfen Ihnen, die abstrakten Konzepte der Musiktheorie – die chromatische Tonleiter, den Quintenzirkel und die Klaviertastatur – zu verbinden, sodass Sie wirklich &apos;sehen&apos; können, wie Musik funktioniert.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Egal, ob du ein Anfänger, ein neugieriger Enthusiast oder ein erfahrener Produzent bist – dieses Tool bietet dir eine intuitive Spielwiese, um Tonarten, Harmonien und Skalenstrukturen zu erkunden.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Warum ist eine Oktave in 12 Töne unterteilt? Die moderne Musik basiert auf der &apos;12-Ton-Equal-Temperament-Stimmung&apos;, einem brillanten mathematischen Kompromiss, der dafür sorgt, dass alle Tonarten &apos;akzeptabel&apos; klingen. Unser chromatischer Kreis macht dieses abstrakte Tonsystem visuell intuitiv.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Warum ist Musik so aufgebaut?</value>
   </data>
 
 </root>

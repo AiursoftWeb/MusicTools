@@ -18,74 +18,74 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Welcome!" xml:space="preserve">
-    <value>Välkommen!</value>
-  </data>
-  <data name="What is this?" xml:space="preserve">
-    <value>Vad är detta?</value>
-  </data>
-  <data name="How to Use It" xml:space="preserve">
-    <value>Så här använder du det</value>
-  </data>
-  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
-    <value>Använd &apos;Rotera&apos;-knapparna under någon av cirklarna för att välja en ny tonart.</value>
-  </data>
-  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
-    <value>Kromatiska skalan visar alla 12 toner. De inre siffrorna (1-7) markerar tonerna i mollskalan för den valda tonarten.</value>
-  </data>
-  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
-    <value>Den interaktiva pianot markerar automatiskt alla toner (och deras skalgrader) för den valda tonarten.</value>
-  </data>
-  <data name="Select a Minor Key" xml:space="preserve">
-    <value>Välj en molltonart</value>
-  </data>
-  <data name="Quick Select Key" xml:space="preserve">
-    <value>Snabbvalsnyckel</value>
-  </data>
-  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
-    <value>Det här verktyget hjälper dig att visualisera musikteori. Det kopplar ihop kromatiska skalan, kvintcirkeln, pianotangentbordet och vanlig notskrift på ett och samma ställe.</value>
-  </data>
-  <data name="Song Player" xml:space="preserve">
-    <value>Låtspelare</value>
-  </data>
-  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
-    <value>Kvintcirkeln organiserar tonarter baserat på perfekta kvinter. Genom att rotera denna cirkel visas hur tonarter är relaterade. Varje klick (en &apos;kvint&apos;) lägger till eller tar bort ett kors/ett b från tonartens förtecken.</value>
-  </data>
-  <data name="Song" xml:space="preserve">
-    <value>Låt</value>
-  </data>
-  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
-    <value>Visningen av klavsignatur visar de korrekta förteckningarna för dur- eller mollart på både g- och f-klaven.</value>
-  </data>
-  <data name="Jianpu Key" xml:space="preserve">
-    <value>Jianpukey</value>
-  </data>
-  <data name="Play" xml:space="preserve">
-    <value>Spela</value>
-  </data>
-  <data name="Loop Playback" xml:space="preserve">
-    <value>Loopa uppspelning</value>
-  </data>
-  <data name="Chromatic Scale" xml:space="preserve">
+      <data name="Chromatic Scale" xml:space="preserve">
     <value>Kromatisk skala</value>
   </data>
   <data name="Circle of Fifths" xml:space="preserve">
     <value>Kvintcirkeln</value>
   </data>
-  <data name="Rotate Right" xml:space="preserve">
-    <value>Rotera höger</value>
-  </data>
-  <data name="Key Signature" xml:space="preserve">
-    <value>Tonart</value>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Så här använder du det</value>
   </data>
   <data name="Interactive Piano" xml:space="preserve">
     <value>Interaktivt piano</value>
   </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Jianpukey</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Tonart</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Loopa uppspelning</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Spela</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Snabbvalsnyckel</value>
+  </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Rotera vänster</value>
   </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotera höger</value>
+  </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>Välj en molltonart</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Låt</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Låtspelare</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>Kromatiska skalan visar alla 12 toner. De inre siffrorna (1-7) markerar tonerna i mollskalan för den valda tonarten.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Kvintcirkeln organiserar tonarter baserat på perfekta kvinter. Genom att rotera denna cirkel visas hur tonarter är relaterade. Varje klick (en &apos;kvint&apos;) lägger till eller tar bort ett kors/ett b från tonartens förtecken.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Den interaktiva pianot markerar automatiskt alla toner (och deras skalgrader) för den valda tonarten.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Visningen av klavsignatur visar de korrekta förteckningarna för dur- eller mollart på både g- och f-klaven.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Det här verktyget hjälper dig att visualisera musikteori. Det kopplar ihop kromatiska skalan, kvintcirkeln, pianotangentbordet och vanlig notskrift på ett och samma ställe.</value>
+  </data>
   <data name="Tonic" xml:space="preserve">
     <value>Grundton</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Använd &apos;Rotera&apos;-knapparna under någon av cirklarna för att välja en ny tonart.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Välkommen!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Vad är detta?</value>
   </data>
 
 </root>
