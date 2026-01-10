@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Hapus Pengguna</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Deploy</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Direktori</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Daftar</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Sumber Daya</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Detail Peran</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Peran</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Sendiri Host Server Baru</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Pengaturan</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Tes</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Alat</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Tidak Diizinkan</value>

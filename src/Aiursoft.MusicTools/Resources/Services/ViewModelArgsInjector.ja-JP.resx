@@ -57,6 +57,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>ユーザーを削除</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>デプロイ</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>ディレクトリ</value>
   </data>
@@ -123,11 +126,17 @@
   <data name="Register" xml:space="preserve">
     <value>登録</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>リソース</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>ロール詳細</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>ロール</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>新しいサーバーをセルフホスト</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>設定</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>テスト</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>ツール</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>権限がありません</value>

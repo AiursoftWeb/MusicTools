@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Kullanıcıyı Sil</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Dağıt</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Dizin</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Kayıt Ol</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Kaynaklar</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Rol Detayları</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roller</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Yeni Bir Sunucuyu Kendi Üzerinde Barındır</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ayarlar</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Testler</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Araçlar</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Yetkisiz</value>
