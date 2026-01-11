@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Poista käyttäjä</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Käynnistä</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Hakemisto</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Rekisteröidy</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resurssit</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Roolin tiedot</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roolit</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Omistaja uusi palvelin</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Asetukset</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Testit</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Työkalut</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Luvaton</value>

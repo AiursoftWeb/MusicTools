@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Удалить пользователя</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Развернуть</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Каталог</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Зарегистрироваться</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ресурсы</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Детали роли</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Роли</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Самостоятельно развернуть новый сервер</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Настройки</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Тесты</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Инструменты</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Неавторизованный</value>

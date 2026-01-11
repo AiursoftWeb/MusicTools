@@ -71,6 +71,11 @@ public class ViewModelArgsInjector(
         _ = localizer["Metronome"];
         _ = localizer["Melody Memory Test"];
         _ = localizer["Tests"];
+    
+        _ = localizer["Deploy"];
+        _ = localizer["Resources"];
+        _ = localizer["Self Host a New Server"];
+        _ = localizer["Tools"];
     }
 
     public void Inject(

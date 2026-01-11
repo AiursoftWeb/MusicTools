@@ -57,6 +57,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Xóa Người Dùng</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Triển khai</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Thư mục</value>
   </data>
@@ -123,11 +126,17 @@
   <data name="Register" xml:space="preserve">
     <value>Đăng ký</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Tài nguyên</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Chi tiết Vai trò</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Vai trò</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Tự host một máy chủ mới</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Cài đặt</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Kiểm tra</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Công cụ</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Không được ủy quyền</value>

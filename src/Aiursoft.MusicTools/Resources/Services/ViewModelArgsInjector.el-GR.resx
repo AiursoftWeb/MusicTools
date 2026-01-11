@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Διαγραφή Χρήστη</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Δημοσίευση</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Κατάλογος</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Εγγραφή</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Πόροι</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Λεπτομέρειες Ρόλου</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Ρόλοι</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Αυτοδιαχείριση Νέου Διακομιστή</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ρυθμίσεις</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Δοκιμές</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Εργαλεία</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Μη Εξουσιοδοτημένος</value>

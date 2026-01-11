@@ -54,6 +54,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Șterge utilizator</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Implementare</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Director</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Register" xml:space="preserve">
     <value>Înregistrare</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resurse</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Detalii Rol</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roluri</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Găzduire auto pentru un server nou</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Setări</value>
@@ -143,6 +152,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Teste</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Instrumente</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Neautorizat</value>

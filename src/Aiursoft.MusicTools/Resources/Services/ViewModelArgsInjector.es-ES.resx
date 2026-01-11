@@ -57,6 +57,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>Eliminar usuario</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>Desplegar</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Directorio</value>
   </data>
@@ -123,11 +126,17 @@
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Recursos</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Detalles del Rol</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roles</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>Autohospedar un nuevo servidor</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Configuración</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>Pruebas</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Herramientas</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>No autorizado</value>

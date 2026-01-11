@@ -57,6 +57,9 @@
   <data name="Delete User" xml:space="preserve">
     <value>ลบผู้ใช้</value>
   </data>
+  <data name="Deploy" xml:space="preserve">
+    <value>เผยแพร่</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>ไดเรกทอรี</value>
   </data>
@@ -123,11 +126,17 @@
   <data name="Register" xml:space="preserve">
     <value>สมัครสมาชิก</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>ทรัพยากร</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>รายละเอียดบทบาท</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>บทบาท</value>
+  </data>
+  <data name="Self Host a New Server" xml:space="preserve">
+    <value>ตั้งค่าเซิร์ฟเวอร์ของตนเอง</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>การตั้งค่า</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Tests" xml:space="preserve">
     <value>แบบทดสอบ</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>เครื่องมือ</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>ไม่ได้รับอนุญาต</value>
