@@ -76,6 +76,10 @@ public class ViewModelArgsInjector(
         _ = localizer["Resources"];
         _ = localizer["Self Host a New Server"];
         _ = localizer["Tools"];
+    
+        _ = localizer["Background Jobs"];
+        _ = localizer["Global Settings"];
+        _ = localizer["Permissions"];
     }
 
     public void InjectSimple(

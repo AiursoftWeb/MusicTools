@@ -33,6 +33,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>ไม่ระบุชื่อ</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>งานพื้นหลัง</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>เปลี่ยนรูปโปรไฟล์</value>
   </data>
@@ -75,6 +78,9 @@
   <data name="Features" xml:space="preserve">
     <value>คุณสมบัติ</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>ตั้งค่าทั่วไป</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>หน้าแรก</value>
   </data>
@@ -113,6 +119,9 @@
   </data>
   <data name="Music Tools" xml:space="preserve">
     <value>เครื่องมือด้านดนตรี</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>สิทธิ์การใช้งาน</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>ส่วนตัว</value>

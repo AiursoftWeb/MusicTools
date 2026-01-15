@@ -30,6 +30,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>अनाम</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>बैकग्राउंड जॉब्स</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>अवतार बदलें</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Features" xml:space="preserve">
     <value>विशेषताएँ</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>सार्वविक विन्यास</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>होम</value>
   </data>
@@ -110,6 +116,9 @@
   </data>
   <data name="Music Tools" xml:space="preserve">
     <value>संगीत उपकरण</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>अनुमतियाँ</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>व्यक्तिगत</value>
