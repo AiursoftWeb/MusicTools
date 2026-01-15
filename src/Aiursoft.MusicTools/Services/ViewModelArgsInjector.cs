@@ -71,11 +71,23 @@ public class ViewModelArgsInjector(
         _ = localizer["Metronome"];
         _ = localizer["Melody Memory Test"];
         _ = localizer["Tests"];
-    
+
         _ = localizer["Deploy"];
         _ = localizer["Resources"];
         _ = localizer["Self Host a New Server"];
         _ = localizer["Tools"];
+    }
+
+    public void InjectSimple(
+        HttpContext context,
+        UiStackLayoutViewModel toInject)
+    {
+        toInject.PageTitle = localizer[toInject.PageTitle ?? "View"];
+        toInject.AppName = localizer["Template"];
+        toInject.Theme = UiTheme.Light;
+        toInject.SidebarTheme = UiSidebarTheme.Default;
+        toInject.Layout = UiLayout.Fluid;
+        toInject.ContentNoPadding = true;
     }
 
     public void Inject(
