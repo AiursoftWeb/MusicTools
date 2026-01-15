@@ -6,13 +6,13 @@ public class OidcSettings
 {
     /// <summary>
     /// Your OIDC provider's discovery endpoint address. This is the base URL for the OIDC server.
-    /// Example: "https://auth.aiursoft.cn" or "https://accounts.google.com"
+    /// Example: "https://auth.aiursoft.com" or "https://accounts.google.com"
     /// </summary>
     public required string Authority { get; init; } = "https://your-oidc-provider.com";
 
     /// <summary>
     /// Extracts the scheme and host from the Authority URL.
-    /// For example, if Authority is "https://auth.aiursoft.cn/something", this returns "https://auth.aiursoft.cn".
+    /// For example, if Authority is "https://auth.aiursoft.com/something", this returns "https://auth.aiursoft.com".
     /// If the Authority format is invalid, it returns the original full string.
     /// </summary>
     /// <returns>The base URL of the authority.</returns>
@@ -23,7 +23,7 @@ public class OidcSettings
         const string pattern = @"^https?:\/\/[^/]+";
         var match = Regex.Match(Authority, pattern);
 
-        // If a match is found, return the matched part (e.g., "https://auth.aiursoft.cn").
+        // If a match is found, return the matched part (e.g., "https://auth.aiursoft.com").
         // Otherwise, return the original Authority string as a fallback.
         return match.Success ? match.Value : Authority;
     }

@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Aiursoft.MusicTools.Authorization;
 using Aiursoft.MusicTools.Configuration;
 using Aiursoft.MusicTools.Entities;
@@ -9,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Aiursoft.MusicTools.Services.Authentication;
 
+[ExcludeFromCodeCoverage]
 public static class AuthenticationExtensions
 {
     public static IServiceCollection AddTemplateAuth(

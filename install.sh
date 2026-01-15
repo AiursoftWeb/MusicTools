@@ -1,7 +1,7 @@
-aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://gitlab.aiursoft.cn/aiursoft/aiurscript/-/raw/master/$1.sh | sudo bash -s $arg; }
+aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://gitlab.aiursoft.com/aiursoft/aiurscript/-/raw/master/$1.sh | sudo bash -s $arg; }
 
 app_name="musicTools"
-repo_path="https://gitlab.aiursoft.cn/aiursoft/musicTools"
+repo_path="https://gitlab.aiursoft.com/aiursoft/musicTools"
 proj_path="src/Aiursoft.MusicTools/Aiursoft.MusicTools.csproj"
 
 get_dll_name()

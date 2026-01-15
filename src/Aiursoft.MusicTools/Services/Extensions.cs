@@ -6,6 +6,25 @@ namespace Aiursoft.MusicTools.Services;
 
 public static class Extensions
 {
+    public static ViewResult SimpleView(this Controller controller, UiStackLayoutViewModel model)
+    {
+        var services = controller.HttpContext.RequestServices;
+        var injector = services.GetRequiredService<ViewModelArgsInjector>();
+        injector.InjectSimple(controller.HttpContext, model);
+        return controller.View(model);
+    }
+
+    public static ViewResult SimpleView(
+        this Controller controller,
+        UiStackLayoutViewModel model,
+        string viewName)
+    {
+        var services = controller.HttpContext.RequestServices;
+        var injector = services.GetRequiredService<ViewModelArgsInjector>();
+        injector.InjectSimple(controller.HttpContext, model);
+        return controller.View(viewName, model);
+    }
+
     public static ViewResult StackView(this Controller controller, UiStackLayoutViewModel model)
     {
         var services = controller.HttpContext.RequestServices;
