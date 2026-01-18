@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Aiursoft Template" xml:space="preserve">
+      <data name="Aiursoft Music Tools" xml:space="preserve">
+    <value>Aiursoft Music Tools</value>
+  </data>
+  <data name="Aiursoft Template" xml:space="preserve">
     <value>Aiursoft Template</value>
   </data>
   <data name="Community" xml:space="preserve">

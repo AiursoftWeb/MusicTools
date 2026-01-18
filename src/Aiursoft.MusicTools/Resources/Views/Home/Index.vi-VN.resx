@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Hãy nhìn&apos; ngôn ngữ của âm nhạc</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Kết Nối Mọi Thứ</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Phân tích hệ thống 12 nốt nhạc</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Khám phá Cấp độ lớn</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Khám phá Nhịp Minor</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Các nốt nhạc không tồn tại một cách biệt lập. &apos;Vòng tròn năm bậc&apos; là la bàn của âm nhạc, tiết lộ thứ tự của tất cả các hợp âm chính (C -&gt; G -&gt; D...) và các mối quan hệ hài hòa giữa chúng. Đây là bản thiết kế cốt lõi cho việc sáng tác, phối khí và biểu diễn ngẫu hứng.</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Âm nhạc không phải là phép màu; đó là sự kết hợp tuyệt vời giữa toán học, vật lý và các mẫu hình. Công cụ của chúng tôi tiết lộ những mẫu hình này:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Phát giai điệu ngẫu nhiên</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Điều kỳ diệu của Vòng năm thứ năm</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Lý thuyết có thể khô khan, nhưng việc quan sát nó hoạt động thực tế lại rất thú vị. Giá trị cốt lõi của công cụ này là &apos;đồng bộ hóa theo thời gian thực.&apos; Khi bạn chọn một nút mới, Vòng tròn Chromatic, Vòng tròn Quint, các phím đàn piano và ký hiệu trên vạch nhạc sẽ được cập nhật ngay lập tức. Bạn sẽ hiểu ngay tại sao G trưởng chỉ có một dấu thăng!</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Xem trước giao diện công cụ</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Chào mừng bạn đến với công cụ lý thuyết âm nhạc tương tác. Chúng tôi giúp bạn kết nối các khái niệm trừu tượng của lý thuyết âm nhạc—Thang âm chromatic, Vòng năm thứ, và bàn phím piano—giúp bạn thực sự &apos;nhìn thấy&apos; cách âm nhạc hoạt động.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Dù bạn là một sinh viên mới bắt đầu, một người đam mê tò mò, hay một nhà sản xuất có kinh nghiệm, công cụ này sẽ cung cấp một môi trường trực quan để khám phá các nốt nhạc, hòa âm và cấu trúc thang âm.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Tại sao một quãng tám lại được chia thành 12 phím? Âm nhạc hiện đại được xây dựng trên &apos;12-Tone Equal Temperament&apos;, một thỏa hiệp toán học xuất sắc cho phép tất cả các phím đều nghe &apos;hợp lý&apos;. Vòng tròn Chromatic của chúng tôi giúp hệ thống tần số trừu tượng này trở nên trực quan về mặt thị giác.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Tại sao âm nhạc lại được thiết kế theo cách này?</value>
+  </data>
+
+</root>
