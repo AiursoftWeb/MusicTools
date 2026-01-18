@@ -54,15 +54,12 @@ public class UsersControllerTests : TestBase
         AssertRedirect(editResponse, "/Users/Details/", exact: false);
 
         // 6. ManageRoles (POST)
-        var manageRolesResponse = await PostForm(
-            $"/Users/ManageRoles/{userId}", 
-            new Dictionary<string, string>
-            {
-                { "id", userId },
-                { "AllRoles[0].RoleName", "Administrators" },
-                { "AllRoles[0].IsSelected", "true" }
-            },
-            tokenUrl: $"/Users/Edit/{userId}"); // Get CSRF token from Edit page
+        var manageRolesResponse = await PostForm($"/Users/ManageRoles/{userId}", new Dictionary<string, string>
+        {
+            { "id", userId },
+            { "AllRoles[0].RoleName", "Administrators" },
+            { "AllRoles[0].IsSelected", "true" }
+        });
         AssertRedirect(manageRolesResponse, "/Users/Details/", exact: false);
 
         // 7. Delete (GET)
