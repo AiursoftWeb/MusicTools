@@ -97,6 +97,7 @@ public class GlobalSettingsService(TemplateDbContext dbContext, IConfiguration c
 
         await dbContext.SaveChangesAsync();
     }
+
     public async Task SeedSettingsAsync()
     {
         foreach (var definition in SettingsMap.Definitions)
@@ -117,3 +118,4 @@ public class GlobalSettingsService(TemplateDbContext dbContext, IConfiguration c
         await dbContext.SaveChangesAsync();
     }
 }
+

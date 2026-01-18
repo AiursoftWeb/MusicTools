@@ -9,3 +9,4 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Music Theory Visualizer";
     }
 }
+

@@ -5,4 +5,6 @@ using Microsoft.EntityFrameworkCore;
 namespace Aiursoft.MusicTools.MySql;
 
 [ExcludeFromCodeCoverage]
+
 public class MySqlContext(DbContextOptions<MySqlContext> options) : TemplateDbContext(options);
+

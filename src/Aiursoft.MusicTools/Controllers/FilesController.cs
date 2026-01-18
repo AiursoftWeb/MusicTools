@@ -117,6 +117,7 @@ public class FilesController(
         {
             return BadRequest("Attempted to access a restricted path.");
         }
+
         if (!System.IO.File.Exists(physicalPath))
         {
             return NotFound();
