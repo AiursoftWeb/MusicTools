@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>「睇」出音樂的語言</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>連結一切</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>拆解十二平均律系統</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>探索大調</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>探索小調</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>音調並非孤立存在。&apos;五度圈&apos;是音樂的指南針，揭示所有調號的順序（C → G → D...）及其和聲關係。它是作曲、編曲和即興演奏的核心藍圖。</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>音樂並非魔法；它是一門精妙的數學、物理與模式的結合。我們的工具將這些模式一一揭示：</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>播放隨機旋律</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>五度圈的奧秘</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>理論可能枯燥，但親眼見證其運作卻充滿樂趣。這工具的核心價值在於「即時同步」。當你選取新的調式時，半音音階圓、五度圈、鋼琴鍵和五線譜會即時更新。你會立刻明白為何G大調只有一個升號！</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>工具介面預覽</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>歡迎使用互動式音樂理論工具。我們助您將音樂理論的抽象概念——半音音階、五度圈及鋼琴鍵盤——連結起來，讓您真正「看見」音樂的運作原理。</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>無論你係初學者、好奇嘅愛好者，定係經驗豐富嘅音樂製作人，呢個工具都會提供一個直覺性嘅沙盒，讓你探索調性、和聲同音階結構。</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>為什麼八度音會分成12個音鍵？現代音樂建立於「十二平均律」之上，這是一種巧妙的數學折衷方案，令所有調性聽起來都「合適」。我們的半音圓環令這個抽象的音高系統變得直觀易懂。</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>音樂為什麼會設計成這樣？</value>
+  </data>
+
+</root>

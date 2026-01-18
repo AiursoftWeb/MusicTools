@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>« Voyez » le langage de la musique</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Connecter tout</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Décortiquer le système à 12 tons</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Explorer le mode majeur</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Explore Mineur</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Les tons ne sont pas isolés. Le &apos;Cercle des quintes&apos; est la boussole de la musique, révélant l&apos;ordre de toutes les signatures tonales (Do -&gt; Sol -&gt; Ré...) et leurs relations harmoniques. Il constitue le plan fondamental de la composition, de l&apos;arrangement et de l&apos;improvisation.</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>La musique n&apos;est pas de la magie ; c&apos;est une combinaison brillante de mathématiques, de physique et de motifs. Notre outil révèle ces motifs :</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Lire une mélodie aléatoire</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Le pouvoir du cercle des quintes</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>La théorie peut être sèche, mais la voir en action est amusant. La valeur centrale de cet outil est la « synchronisation en temps réel ». Lorsque vous sélectionnez une nouvelle tonalité, le cercle chromatique, le cercle des quintes, les touches du piano et la notation sur portée se mettent à jour instantanément. Vous comprendrez immédiatement pourquoi la tonalité de Sol majeur n’a qu’une altération !</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Aperçu de l&apos;interface de l&apos;outil</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Bienvenue sur l&apos;outil interactif de théorie musicale. Nous vous aidons à relier les concepts abstraits de la théorie musicale — l&apos;échelle chromatique, le cercle des quintes et le clavier de piano — vous permettant véritablement &apos;voir&apos; comment fonctionne la musique.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Que vous soyez un étudiant débutant, un passionné curieux ou un producteur expérimenté, cet outil vous offrira un environnement intuitif pour explorer les tonalités, l&apos;harmonie et les structures d&apos;échelle.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Pourquoi une octave est-elle divisée en 12 touches ? La musique moderne repose sur le « tempérament égal à 12 tons », un brillant compromis mathématique qui permet à toutes les tonalités de sonner « acceptables ». Notre Cercle chromatique rend ce système de hauteurs abstrait visuellement intuitif.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Pourquoi la musique est-elle conçue de cette manière ?</value>
+  </data>
+
+</root>

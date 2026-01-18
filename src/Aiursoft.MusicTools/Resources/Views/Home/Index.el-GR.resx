@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Βλέπε&apos; τη γλώσσα της μουσικής</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Συνδέοντας Όλα</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Αποσυναρμολόγηση του Συστήματος των 12 Τόνων</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Εξερευνήστε Μεγάλο</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Εξερεύνηση Μινόρ</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Οι κλειδιά δεν είναι απομονωμένα. Ο «Κύκλος των Πέντε» είναι το βοηθητικό μέσο της μουσικής, που αποκαλύπτει τη σειρά όλων των κλειδιών (C -&gt; G -&gt; D...) και τις χορδικές τους σχέσεις. Είναι η βασική σχεδίαση για σύνθεση, διατύπωση και εικαστική εκτέλεση.</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Η μουσική δεν είναι μαγεία· είναι μια θαυμάσια συνδυασμός μαθηματικών, φυσικής και μοτίβων. Το εργαλείο μας αποκαλύπτει αυτά τα μοτίβα:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Αναπαραγωγή Τυχαίας Μελωδίας</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Η μαγεία του Κύκλου των Πέντετων</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Η θεωρία μπορεί να είναι ξηρή, αλλά η παρατήρησή της σε εφαρμογή είναι διασκεδαστική. Το κύριο πλεονέκτημα αυτού του εργαλείου είναι η &quot;πραγματικός χρόνος συγχρονισμός&quot;. Όταν επιλέξετε μια νέα κλίμακα, ο Χρωματικός Κύκλος, ο Κύκλος των Πέντε, τα κλειδιά του πιάνου και η νοταρική γραμμή ενημερώνονται αμέσως. Θα καταλάβετε αμέσως γιατί η G Μαζόρ έχει μόνο μία ανεβασμένη νότα!</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Καλώς ήρθατε στο διαδραστικό εργαλείο θεωρίας μουσικής. Βοηθούμε στη σύνδεση των αφηρημένων εννοιών της θεωρίας μουσικής — της Χρωματικής Κλίμακας, του Κύκλου των Πέντε, και του πιάνου — επιτρέποντας σας να &apos;δείτε&apos; πραγματικά πώς λειτουργεί η μουσική.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Εάν είστε αρχάριος φοιτητής, ένας ενδιαφερόμενος ερευνητής ή ένας εμπειρογνώμονας παραγωγός, αυτό το εργαλείο θα σας παρέχει ένα εύκολο περιβάλλον για την εξερεύνηση των κλειδιών, της αρμονίας και των δομών των κλίμακας.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Γιατί διαιρείται μία οκτάβα σε 12 κλειδιά; Η σύγχρονη μουσική βασίζεται στο &quot;12-Τόνο Ισομερές Τόνο&quot;, μία εξαιρετική μαθηματική συμβιβαστική λύση που επιτρέπει σε όλα τα κλειδιά να ακούγονται &quot;αποδεκτά&quot;. Ο Χρωματικός Κύκλος μας κάνει αυτό το αφηρημένο σύστημα ψηλαφήσιμο οπτικά.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Γιατί έχει σχεδιαστεί η μουσική με αυτόν τον τρόπο;</value>
+  </data>
+
+</root>
