@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>บันไดเสียงโครมาติก</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>วงจรของคู่ 5</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>วิธีการใช้งาน</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>เปียโนแบบโต้ตอบ</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>กุญแจเสียงตัวเลข</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>กุญแจประจำบันไดเสียง</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>เล่นวนซ้ำ</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>เล่น</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>เลือกคีย์อย่างรวดเร็ว</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>หมุนซ้าย</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>หมุนขวา</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>เลือกคีย์เมเจอร์</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>เพลง</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>เครื่องเล่นเพลง</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>สเกลโครมาติกแสดงโน้ตทั้งหมด 12 เสียง ตัวเลขด้านใน (1-7) เน้นโน้ตของเมเจอร์สเกลสำหรับคีย์ที่เลือก</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>วงจรคู่ 5 จัดเรียงคีย์ตามหลักของคู่ 5 สมบูรณ์ การหมุนวงจรนี้แสดงให้เห็นว่าคีย์ต่างๆ มีความสัมพันธ์กันอย่างไร แต่ละครั้งที่คลิก (หนึ่ง &apos;คู่ 5&apos;) จะเพิ่มหรือลดเครื่องหมายชาร์ป/แฟล็ตหนึ่งตัวออกจากกุญแจประจำบันไดเสียง</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>เปียโนแบบโต้ตอบจะทำการเน้นโน้ตทั้งหมด (และระดับเสียงของโน้ตเหล่านั้น) สำหรับคีย์ที่เลือกโดยอัตโนมัติ</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>การแสดงคีย์ซิกเนเจอร์จะแสดงเครื่องหมายชาร์ปหรือแฟลตที่ถูกต้องสำหรับคีย์นั้นๆ บนบรรทัดห้าโน้ตทั้งเส้นตรีเบิลและเส้นเบส</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>เครื่องมือนี้ช่วยให้คุณเห็นภาพทฤษฎีดนตรี โดยเชื่อมโยง Chromatic Scale, Circle of Fifths, คีย์บอร์ดเปียโน และสัญกรณ์ดนตรีมาตรฐานไว้ในที่เดียว</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>โทนิค</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>ใช้ปุ่ม &apos;หมุน&apos; ที่อยู่ใต้วงกลมใดวงกลมหนึ่งเพื่อเลือกคีย์ใหม่</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>ยินดีต้อนรับ!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>นี่คืออะไร?</value>
+  </data>
+
+</root>

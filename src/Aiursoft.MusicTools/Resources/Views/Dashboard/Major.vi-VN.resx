@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>Âm giai Chromatic</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Vòng Tròn Quãng Năm</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Cách Sử Dụng</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Đàn Piano Tương Tác</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Giản Phổ</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Hóa biểu</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Phát lại theo vòng lặp</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Phát</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Chọn Nhanh Âm Giai</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Xoay Trái</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Xoay Phải</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>Chọn một giọng trưởng</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Bài hát</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Trình Phát Nhạc</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>Thang âm Chromatic hiển thị tất cả 12 nốt nhạc. Các số bên trong (1-7) làm nổi bật các nốt của thang âm trưởng cho tông đã chọn.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Vòng tròn Quãng 5 sắp xếp các giọng dựa trên quãng 5 đúng. Việc xoay vòng tròn này minh họa mối quan hệ giữa các giọng. Mỗi lần nhấp (một &apos;quãng 5&apos;) sẽ thêm hoặc bớt một dấu thăng/giáng khỏi hóa biểu.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Đàn Piano Tương tác sẽ tự động làm nổi bật tất cả các nốt (và bậc âm của chúng) cho tông đã chọn.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Màn hình hiển thị Bộ Khoá (Key Signature) cho thấy các dấu thăng (#) hoặc dấu giáng (b) chính xác cho âm giai trên cả hai khoá Sol (treble clef) và khoá Fa (bass clef).</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Công cụ này giúp bạn hình dung lý thuyết âm nhạc. Nó kết nối Thang Chromatic, Vòng tròn Quãng 5, bàn phím piano và ký hiệu âm nhạc tiêu chuẩn tại một nơi duy nhất.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Âm chủ</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Sử dụng các nút &apos;Xoay&apos; bên dưới một trong hai vòng tròn để chọn một âm giai mới.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Chào mừng!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Đây là gì?</value>
+  </data>
+
+</root>

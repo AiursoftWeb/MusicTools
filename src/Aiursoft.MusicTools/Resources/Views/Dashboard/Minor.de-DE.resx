@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>Chromatische Tonleiter</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Quintenzirkel</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Verwendung</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interaktives Klavier</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Jianpu-Tonart</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Tonart</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Wiedergabe schleife</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Abspielen</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Schnellauswahl Tonart</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Nach links drehen</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Nach rechts drehen</value>
+  </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>Wählen Sie eine Moll-Tonart</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Lied</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Song-Player</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>Die chromatische Tonleiter zeigt alle 12 Töne. Die inneren Zahlen (1-7) heben die Töne der Moll-Tonleiter für die gewählte Tonart hervor.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Der Quintenzirkel ordnet Tonarten auf der Grundlage von reinen Quinten an. Durch Drehen dieses Kreises wird verdeutlicht, wie Tonarten miteinander verwandt sind. Jeder Klick (eine ‚Quinte‘) fügt der Tonart einen Kreuz-Vorzeichen hinzu oder entfernt ein B-Vorzeichen.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Das interaktive Piano hebt automatisch alle Noten (und ihre Stufen innerhalb der Tonleiter) für die gewählte Tonart hervor.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Die Anzeige der Vorzeichen zeigt die korrekten Kreuze und Be der Tonart sowohl im Violin- als auch im Bassschlüssel an.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Dieses Tool hilft dir, die Musiktheorie zu visualisieren. Es verbindet die chromatische Tonleiter, den Quintenzirkel, die Klaviertastatur und die Standard-Notation an einem Ort.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Grundton</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Verwenden Sie die &apos;Drehen&apos;-Schaltflächen unter einem der Kreise, um eine neue Tonart auszuwählen.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Willkommen!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Was ist das?</value>
+  </data>
+
+</root>

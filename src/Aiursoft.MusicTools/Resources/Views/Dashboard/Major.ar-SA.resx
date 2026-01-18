@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>السلم الكروماتيكي</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>دائرة الخامسات</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>كيفية استخدامه</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>بيانو تفاعلي</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>مفتاح جيانبو</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>المفتاح الموسيقي</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>تشغيل متكرر</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>تشغيل</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>اختر المفتاح بسرعة</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>تدوير لليسار</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>تدوير لليمين</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>اختر مفتاحًا رئيسيًا</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>الأغنية</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>مشغل الأغاني</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>يظهر السلم الكروماتي جميع النوتات الإثني عشر. تُبرز الأرقام الداخلية (7-1) نوتات السلم الكبير للمفتاح المحدد.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>ينظم دائرة الخامسات المفاتيح بناءً على الخامسات الكاملة. تدوير هذه الدائرة يوضح كيفية ارتباط المفاتيح ببعضها. كل نقرة (تمثل &apos;خامسة&apos;) تضيف أو تزيل علامة رفع/خفض واحدة من سلّم المفتاح الموسيقي.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>سوف تقوم البيانو التفاعلي بتسليط الضوء تلقائياً على جميع النوتات (ودرجات السلم الموسيقي الخاصة بها) للمفتاح المحدد.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>يعرض رمز المفتاح العلامات الموسيقية الحادة (Sharps) أو المسطحة (Flats) الصحيحة للمفتاح الموسيقي على كل من المدرجين الصولفي (Treble Clef) والباسي (Bass Clef).</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>تساعدك هذه الأداة على تصور نظرية الموسيقى. فهي تربط السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو، والتدوين الموسيقي القياسي في مكان واحد.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>النغمة الأساسية</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>استخدم أزرار &apos;تدوير&apos; الموجودة تحت أي من الدائرتين لاختيار مفتاح موسيقي جديد.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>مرحباً!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>ما هذا؟</value>
+  </data>
+
+</root>

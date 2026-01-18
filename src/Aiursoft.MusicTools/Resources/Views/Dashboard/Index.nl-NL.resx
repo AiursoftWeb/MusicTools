@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Zie&apos; de Taal van Muziek</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>Alles Verbinden</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Deconstructie van het 12-toonssysteem</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Verken Majeur</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Verken Mineur</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Toonsoorten staan niet op zichzelf. De &apos;Circle of Fifths&apos; is het kompas van de muziek, dat de volgorde van alle toonsoorten (C -&gt; G -&gt; D...) en hun harmonische relaties onthult. Het is de blauwdruk voor compositie, arrangement en improvisatie.</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Muziek is geen magie; het is een briljante combinatie van wiskunde, natuurkunde en patronen. Onze tool onthult deze patronen:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Speel Willekeurige Melodie</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>De Magie van de Kwintencirkel</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Theorie kan droog zijn, maar het in actie zien is leuk. De kernwaarde van dit hulpmiddel is &apos;real-time synchronisatie&apos;. Wanneer je een nieuwe toonsoort selecteert, worden de Chromatic Circle, Circle of Fifths, pianotoetsen en notenbalk notatie onmiddellijk bijgewerkt. Je ziet meteen in waarom G majeur maar één kruis heeft!</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Voorbeeld van de toolinterface</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Welkom bij het interactieve muziektheorie-instrument. Wij helpen je de abstracte concepten van muziektheorie—de chromatische toonladder, de kwintencirkel en het pianoklavier—met elkaar te verbinden, zodat je daadwerkelijk kunt &apos;zien&apos; hoe muziek werkt.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Of je nu een beginnende student, een nieuwsgierige liefhebber of een ervaren producer bent, deze tool biedt een intuïtieve speelomgeving om toonsoorten, harmonie en toonladderstructuren te verkennen.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Waarom is een octaaf verdeeld in 12 tonen? Moderne muziek is gebouwd op &apos;12-toonsgelijkzwevende stemming&apos;, een briljant wiskundig compromis dat ervoor zorgt dat alle toonsoorten &apos;acceptabel&apos; klinken. Onze Chromatic Circle maakt dit abstracte toonsysteem visueel intuïtief.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Waarom is muziek op deze manier ontworpen?</value>
+  </data>
+
+</root>

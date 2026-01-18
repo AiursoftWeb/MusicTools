@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 नोट / स्तर</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 नोट्स / स्तर</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 नोट्स / स्तर</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ अंतिम स्टैंड ⚠</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 बार</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 नोट</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 बार</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>प्रति स्तर 4 बीट जोड़ें</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>प्रति स्तर 8 बीट जोड़ें</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>प्रत्येक स्तर पर एक नोट जोड़ें</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>अस्वराभासी</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>कांस्य</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>सी मेजर</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>गणना</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>गणना</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>केवल टॉनिक की जाँच करें</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>गंभीर स्वास्थ्य</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>वर्तमान कठिनाई</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>डायमंड</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>कठिनाई</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>कठिनाई</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>कठिनाई विवरण</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>कठिनाई स्तर</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>अंतिम स्कोर</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>पूर्ण क्रोमैटिक स्केल (कठिन)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>खेल समाप्त</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>सोना</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>ग्रैंडमास्टर</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>कठिन</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>वृद्धि</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>मध्यम</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>स्तर</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>पहुँचा गया स्तर</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>स्तर प्राप्त किया:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) सुनें</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>रेंज सुनें</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>धुन सुनें, उसे याद करें, और पियानो पर उसे दोहराएं।</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>मेलोडी मेमोरी</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>संगीत शैली</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>कोई असफलता नहीं</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>कोई पूर्वावलोकन नहीं</value>
+  </data>
+  <data name="No Score" xml:space="preserve">
+    <value>कोई स्कोर नहीं</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>स्वर</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>नौसिखिया</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>अभ्यास</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>प्रैक्टिस मोड</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>पूर्वावलोकन</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>प्रगति</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>यादृच्छिक कुंजी</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>रैंक</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>धुन याद रखें और उसे पियानो पर दोहराएं।</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>नौसिखिया</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>मूल स्वर</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>स्केल</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>चांदी</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>पूर्वावलोकन छोड़ें</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>मानक (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>मानक पिच (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>खेल शुरू करें</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>तुरंत शुरू करें</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>कुल स्कोर</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>स्थानांतरित मेजर स्केल</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>फिर से प्रयास करें</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>दृश्य संकेत सक्षम</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>केवल सफेद कुंजियाँ (सबसे आसान)</value>
+  </data>
+
+</root>

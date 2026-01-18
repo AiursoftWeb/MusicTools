@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>音楽の言葉を「見る」</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>すべてをつなぐ</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>12音階システムの解体</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>長調を探る</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>短調を探る</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>調は孤立した存在ではありません。『五度圏』は音楽の羅針盤であり、すべての調号（C → G → D...）の順序とそれらの和声的関係を明らかにします。それは作曲、編曲、即興演奏のための核心となる設計図です。</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>音楽は魔法ではありません。それは数学、物理学、パターンの見事な組み合わせなのです。私たちのツールはこれらのパターンを明らかにします：</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>ランダムなメロディを再生</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>五度圏の魔法</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>理論は退屈になりがちですが、実際に動きを見ると楽しいものです。このツールの核となる価値は「リアルタイム同期」にあります。新しいキーを選択すると、クロマティックサークル、五度圏、ピアノキー、五線譜が即座に更新されます。なぜト長調（G Major）にシャープが1つしかないのか、すぐに理解できるでしょう！</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>ツールインターフェースのプレビュー</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>対話型音楽理論ツールへようこそ。このツールでは、音楽理論の抽象的な概念—半音階（Chromatic Scale）、五度圏（Circle of Fifths）、ピアノキーボード—を結びつけ、音楽の仕組みを本当の意味で「視覚的」に理解できるよう支援します。</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>初心者の学生、好奇心旺盛な愛好家、ベテランのプロデューサーを問わず、このツールはキー、ハーモニー、スケール構造を探求するための直感的なサンドボックスを提供します。</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>なぜ1オクターブは12鍵に分割されているのでしょうか？現代音楽は「12平均律」という、すべての調が「許容できる」響きを持つようにした数学的な妥協の産物の上に成り立っています。私たちの「クロマティック・サークル」は、この抽象的な音高システムを視覚的に直感的に理解できるようにします。</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>音楽はなぜこのように設計されているのでしょうか？</value>
+  </data>
+
+</root>

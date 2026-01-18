@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>반음계</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>5도권</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>사용 방법</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>대화형 피아노</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>겐푸 조</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>조표</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>반복 재생</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>재생</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>빠른 조성 선택</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>왼쪽으로 회전</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>오른쪽으로 회전</value>
+  </data>
+  <data name="Select a Major Key" xml:space="preserve">
+    <value>장조 선택</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>노래</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>노래 재생기</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the major scale for the selected key." xml:space="preserve">
+    <value>크로매틱 스케일은 12개의 모든 음을 보여줍니다. 내부 숫자(1-7)는 선택한 키의 메이저 스케일 음을 강조 표시합니다.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>5도권은 완전 5도에 기반하여 조성을 체계화합니다. 이 원을 회전시키면 각 조성 간의 관계를 확인할 수 있습니다. 한 번 클릭할 때마다(즉, &apos;5도&apos; 이동) 조표의 샵(#) 또는 플랫(b)이 하나씩 추가되거나 제거됩니다.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>인터랙티브 피아노는 선택한 키에 대한 모든 음(그리고 그 음계의 단계)을 자동으로 강조 표시합니다.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>조표 표시창에서는 선택된 조에 대한 올바른 샵(#) 또는 플랫(♭)을 높은음자리표와 낮은음자리표 모두에 표시합니다.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>이 도구는 음악 이론을 시각화하는 데 도움을 줍니다. 크로매틱 스케일(Chromatic Scale), 5도권(Circle of Fifths), 피아노 건반, 그리고 표준 악보 표기법을 한곳에 모두 연결해 보여줍니다.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>토닉</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>어느 쪽 원 아래에 있는 &apos;회전&apos; 버튼을 사용하여 새로운 조(key)를 선택하세요.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>환영합니다!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>이것은 무엇인가요?</value>
+  </data>
+
+</root>

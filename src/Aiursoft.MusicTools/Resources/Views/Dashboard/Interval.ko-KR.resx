@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>증 18도</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>증11도</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>증4도</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>선택된 키를 다시 클릭하면 선택이 해제됩니다.</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>아래 피아노에서 아무 키 두 개를 클릭하세요.</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>불협화음</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>사용 방법</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>불완전 협화음</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>인터랙티브 피아노</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>음정 계산기</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>장14도</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>장9도</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>장2도</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>장 17도</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>장7도</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>장 16도</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>장6도</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>장 10도</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>장3도</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>장 13도</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>장 20도</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>장 이십일도</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>단 14도</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>단9도</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>단2도</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>단 17도</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>단7도</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>단 16도</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>단 6도</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>단 10도</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>단 3도</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>단 13도</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>단 20도</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>단 21도</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>완전 협화음</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>완전 18도</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>완전 11도</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>완전 15도</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>완전 5도</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>완전 4도</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>완전 십구도</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>완전 8도</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>완전 12도</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>완전 22도</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>완전 1도</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>낮은 음을 먼저 입력해 주세요.</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>선택 초기화</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>결과</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>날카로운 불협화음</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>선택한 첫 번째 음이 루트가 됩니다.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>두 음표 사이의 간격이 계산되어 표시됩니다.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>에서</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>음표 이름을 인식할 수 없습니다</value>
+  </data>
+
+</root>

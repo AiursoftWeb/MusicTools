@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Oktalapan Belas Augmented</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>Augmented Eleventh</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Augmented Fourth</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Klik tombol yang sudah dipilih sekali lagi untuk membatalkan pemilihannya.</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Klik dua tuts mana saja pada piano di bawah.</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Disonansi</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Cara Penggunaan</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Konsonansi Tidak Sempurna</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Piano Interaktif</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Kalkulator Interval</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Terts Besar Keempat Belas</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Nada Kesembilan Mayor</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Sekon Mayor</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Septima Belas Mayor</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Septima Mayor</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Sekstam Besar</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Seksta Mayor</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Sepuluh Mayor</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Terts Mayor</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Tiga Belas Mayor</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Oktaf Kedua Puluh Mayor</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Oktaf Kedua Puluh Satu Mayor</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Oktaf Kecil keempat belas</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Nada Kesembilan Minor</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Sekon Minor</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Septima Belas Minor</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Septima Minor</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Minor Keenam Belas</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Sekst Minor</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Sepuluh Minor</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Terts Minor</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Tiga Belas Minor</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Kedua Puluh Minor</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Minor Kedua Puluh Satu</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Konsonansi Sempurna</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Oktav Sempurna Delapan Belas</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Interval Kesebelas Sempurna</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Kuartim Belas Sempurna</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Kuinta Sempurna</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Kuart Sempurna</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Oktaf Sempurna Kesembilan Belas</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Oktav Sempurna</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Kedua Belas Sempurna</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Oktaf Kedua Sempurna</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Unison Sempurna</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Masukkan dengan nada yang lebih rendah terlebih dahulu</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Atur Ulang Pilihan</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Hasil</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Disonansi Tajam</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Nada pertama yang Anda pilih akan menjadi root.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Interval antara dua not akan dihitung dan ditampilkan.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>ke</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Tidak dapat mengenali nama not</value>
+  </data>
+
+</root>

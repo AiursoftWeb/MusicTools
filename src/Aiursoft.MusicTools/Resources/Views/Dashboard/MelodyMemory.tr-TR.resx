@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 Nota / Seviye</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 Nota / Seviye</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 Nota / Seviye</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Son Savunma ⚠</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 Ölçü</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 Nota</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 Ölçü</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Seviye başına 4 vuruş ekle</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Seviye başına 8 vuruş ekle</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Her seviyede bir nota ekle</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonal</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Bronz</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>Do Majör</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Hesapla</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Hesaplama</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Sadece tonik notayı kontrol et</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kritik Sağlık</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Mevcut Zorluk</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Elmas</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Zorluk</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Zorluk</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Zorluk Dağılımı</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Zorluk Derecesi</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Son Puan</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Tam Kromatik dizi (Zor)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Oyun Bitti</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Altın</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Usta</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Zor</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Artış</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Orta Seviye</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Seviye</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Ulaşılan Seviye</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Seviyeye Ulaşıldı:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>A4 (440Hz) dinleyin</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Aralığı dinle</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Melodiyi dinleyin, ezberleyin ve piyanoda tekrar çalın.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodi Hafızası</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Müzik Tarzı</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Başarısızlık Yok</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Önizleme Yok</value>
+  </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Puan Yok</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notlar</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Acemi</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Alıştırma</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Alıştırma Modu</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Önizleme</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>İlerleme</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Rastgele Anahtar</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rütbe</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Melodiyi hatırla ve piyanoda tekrarla.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Çaylak</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Kök Not</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Gam</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Gümüş</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Önizlemeyi Atla</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standart (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standart Akort (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Oyunu Başlat</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Hemen Başla</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Toplam Puan</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Aktarım Yapılmış Majör Gamı</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Tekrar Dene</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Görsel ipuçları etkin</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Sadece beyaz tuşlar (En Kolay)</value>
+  </data>
+
+</root>

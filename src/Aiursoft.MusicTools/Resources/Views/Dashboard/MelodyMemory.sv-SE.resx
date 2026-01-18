@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="+1 Note / Lvl" xml:space="preserve">
+    <value>+1 ton per nivå</value>
+  </data>
+  <data name="+4 Notes / Lvl" xml:space="preserve">
+    <value>+4 toner / nivå</value>
+  </data>
+  <data name="+8 Notes / Lvl" xml:space="preserve">
+    <value>+8 toner / nivå</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Sista striden ⚠</value>
+  </data>
+  <data name="1 Bar" xml:space="preserve">
+    <value>1 takt</value>
+  </data>
+  <data name="1 Note" xml:space="preserve">
+    <value>1 ton</value>
+  </data>
+  <data name="2 Bars" xml:space="preserve">
+    <value>2 takter</value>
+  </data>
+  <data name="Add 4 beats per level" xml:space="preserve">
+    <value>Lägg till 4 taktslag per nivå</value>
+  </data>
+  <data name="Add 8 beats per level" xml:space="preserve">
+    <value>Lägg till 8 taktslag per nivå</value>
+  </data>
+  <data name="Add one note per level" xml:space="preserve">
+    <value>Lägg till en ton per nivå</value>
+  </data>
+  <data name="Atonal" xml:space="preserve">
+    <value>Atonal</value>
+  </data>
+  <data name="Bronze" xml:space="preserve">
+    <value>Brons</value>
+  </data>
+  <data name="C Major" xml:space="preserve">
+    <value>C-dur</value>
+  </data>
+  <data name="Calc" xml:space="preserve">
+    <value>Beräkna</value>
+  </data>
+  <data name="Calculation" xml:space="preserve">
+    <value>Beräkning</value>
+  </data>
+  <data name="Check tonic only" xml:space="preserve">
+    <value>Kontrollera endast grundtonen</value>
+  </data>
+  <data name="Critical Health" xml:space="preserve">
+    <value>Kritisk hälsa</value>
+  </data>
+  <data name="Current Difficulty" xml:space="preserve">
+    <value>Nuvarande svårighetsgrad</value>
+  </data>
+  <data name="Diamond" xml:space="preserve">
+    <value>Diamant</value>
+  </data>
+  <data name="Diff" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="Difficulty Breakdown" xml:space="preserve">
+    <value>Svårighetsfördelning</value>
+  </data>
+  <data name="Difficulty Rating" xml:space="preserve">
+    <value>Svårighetsgrad</value>
+  </data>
+  <data name="Final Score" xml:space="preserve">
+    <value>Slutpoäng</value>
+  </data>
+  <data name="Full Chromatic scale (Hard)" xml:space="preserve">
+    <value>Full kromatisk skala (Svårt)</value>
+  </data>
+  <data name="Game Over" xml:space="preserve">
+    <value>Spelet är slut</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Guld</value>
+  </data>
+  <data name="Grandmaster" xml:space="preserve">
+    <value>Stormästare</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Svår</value>
+  </data>
+  <data name="Increment" xml:space="preserve">
+    <value>Ökning</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Medel</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Nivå</value>
+  </data>
+  <data name="Level Reached" xml:space="preserve">
+    <value>Nivå uppnådd</value>
+  </data>
+  <data name="Level Reached: " xml:space="preserve">
+    <value>Nivå uppnådd:</value>
+  </data>
+  <data name="Listen to A4 (440Hz)" xml:space="preserve">
+    <value>Lyssna på A4 (440 Hz)</value>
+  </data>
+  <data name="Listen to range" xml:space="preserve">
+    <value>Lyssna på omfånget</value>
+  </data>
+  <data name="Listen to the melody, memorize it, and replay it on the piano." xml:space="preserve">
+    <value>Lyssna på melodin, memorera den och spela upp den på pianot.</value>
+  </data>
+  <data name="Melody Memory" xml:space="preserve">
+    <value>Melodiminne</value>
+  </data>
+  <data name="Music Style" xml:space="preserve">
+    <value>Musikstil</value>
+  </data>
+  <data name="No Fail" xml:space="preserve">
+    <value>Inget misslyckande</value>
+  </data>
+  <data name="No Preview" xml:space="preserve">
+    <value>Ingen förhandsvisning</value>
+  </data>
+  <data name="No Score" xml:space="preserve">
+    <value>Inget poäng</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Noter</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Nybörjare</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Öva</value>
+  </data>
+  <data name="Practice Mode" xml:space="preserve">
+    <value>Övningsläge</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Förhandsgranska</value>
+  </data>
+  <data name="Progression" xml:space="preserve">
+    <value>Progression</value>
+  </data>
+  <data name="Random Key" xml:space="preserve">
+    <value>Slumpmässig tonart</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Remember the melody and repeat it on the piano." xml:space="preserve">
+    <value>Kom ihåg melodin och upprepa den på pianot.</value>
+  </data>
+  <data name="Rookie" xml:space="preserve">
+    <value>Nybörjare</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Grundton</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Skala</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="Skip Preview" xml:space="preserve">
+    <value>Hoppa över förhandsvisning</value>
+  </data>
+  <data name="Standard (A4)" xml:space="preserve">
+    <value>Standard (A4)</value>
+  </data>
+  <data name="Standard Pitch (A)" xml:space="preserve">
+    <value>Standard Pitch (A)</value>
+  </data>
+  <data name="Start Game" xml:space="preserve">
+    <value>Starta spelet</value>
+  </data>
+  <data name="Start immediately" xml:space="preserve">
+    <value>Starta omedelbart</value>
+  </data>
+  <data name="Total Score" xml:space="preserve">
+    <value>Totalpoäng</value>
+  </data>
+  <data name="Transposed Major scale" xml:space="preserve">
+    <value>Transponerad dur-skala</value>
+  </data>
+  <data name="Try Again" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+  <data name="Visual hints enabled" xml:space="preserve">
+    <value>Visuella ledtrådar aktiverade</value>
+  </data>
+  <data name="White keys only (Easiest)" xml:space="preserve">
+    <value>Endast vita tangenter (Lättast)</value>
+  </data>
+
+</root>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Chromatic Scale" xml:space="preserve">
+    <value>Kromatik Dizi</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Beşliler Çemberi</value>
+  </data>
+  <data name="How to Use It" xml:space="preserve">
+    <value>Nasıl Kullanılır</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Etkileşimli Piyano</value>
+  </data>
+  <data name="Jianpu Key" xml:space="preserve">
+    <value>Jianpu Anahtarı</value>
+  </data>
+  <data name="Key Signature" xml:space="preserve">
+    <value>Anahtar İmzası</value>
+  </data>
+  <data name="Loop Playback" xml:space="preserve">
+    <value>Döngü Oynatma</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Oynat</value>
+  </data>
+  <data name="Quick Select Key" xml:space="preserve">
+    <value>Hızlı Tuş Seçimi</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Sola Döndür</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Sağa Döndür</value>
+  </data>
+  <data name="Select a Minor Key" xml:space="preserve">
+    <value>Bir Minör Ton Seçin</value>
+  </data>
+  <data name="Song" xml:space="preserve">
+    <value>Şarkı</value>
+  </data>
+  <data name="Song Player" xml:space="preserve">
+    <value>Şarkı Çalar</value>
+  </data>
+  <data name="The Chromatic Scale shows all 12 notes. The inner numbers (1-7) highlight the notes of the minor scale for the selected key." xml:space="preserve">
+    <value>Kromatik Skala, 12 notanın tamamını gösterir. İçteki sayılar (1-7), seçilen ton için minör gamın notalarını vurgular.</value>
+  </data>
+  <data name="The Circle of Fifths organizes keys based on perfect fifths. Rotating this circle demonstrates how keys are related. Each click (a &apos;fifth&apos;) adds or removes one sharp/flat from the key signature." xml:space="preserve">
+    <value>Beşliler Çemberi, anahtarları tam beşliler temelinde düzenler. Bu çemberin döndürülmesi, anahtarların birbiriyle nasıl ilişkili olduğunu gösterir. Her tıklama (bir &apos;beşli&apos;), anahtar iminden bir diyez ya da bemol ekler veya çıkarır.</value>
+  </data>
+  <data name="The Interactive Piano will automatically highlight all the notes (and their scale degrees) for the selected key." xml:space="preserve">
+    <value>Etkileşimli Piyano, seçilen ton için tüm notaları (ve derecelerini) otomatik olik olarak vurgulayacaktır.</value>
+  </data>
+  <data name="The Key Signature display shows the correct sharps or flats for the key on both the treble and bass clefs." xml:space="preserve">
+    <value>Anahtar İmza görüntüsü, seçilen anahtar için doğru diyez ve bemolleri hem sol anahtarı hem de fa anahtarı üzerinde gösterir.</value>
+  </data>
+  <data name="This tool helps you visualize music theory. It connects the Chromatic Scale, the Circle of Fifths, the piano keyboard, and standard music notation all in one place." xml:space="preserve">
+    <value>Bu araç, müzik teorisini görselleştirmenize yardımcı olur. Kromatik Gam, Beşliler Çemberi, piyano klavyesi ve standart müzik notasyonunu tek bir yerde birleştirir.</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonik</value>
+  </data>
+  <data name="Use the &apos;Rotate&apos; buttons under either circle to select a new key." xml:space="preserve">
+    <value>Yeni bir anahtar seçmek için her iki dairenin altındaki &apos;Döndür&apos; düğmelerini kullanın.</value>
+  </data>
+  <data name="Welcome!" xml:space="preserve">
+    <value>Hoş Geldiniz!</value>
+  </data>
+  <data name="What is this?" xml:space="preserve">
+    <value>Bu nedir?</value>
+  </data>
+
+</root>

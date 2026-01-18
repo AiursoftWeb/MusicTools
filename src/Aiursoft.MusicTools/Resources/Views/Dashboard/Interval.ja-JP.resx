@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>増十八度</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>増十一度</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>増四度</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>選択したキーを再度クリックすると選択が解除されます。</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>下のピアノの任意の2つの鍵をクリックしてください。</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>不協和音</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>使い方</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>不完全協和音程</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>インタラクティブピアノ</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>音程計算機</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>長14度</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>長九度</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>長二度</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>長17度</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>長七度</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>長16度</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>長六度</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>長10度</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>長三度</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>長13度</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>長20度</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>長21度</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>短14度</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>短九度</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>短二度</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>短17度</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>短七度</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>短16度</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>短六度</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>短十度</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>短三度</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>短13度</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>短20度</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>短21度</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>完全協和音程</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>完全十八度</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>完全11度</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>完全十五度</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>完全五度</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>完全四度</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>完全十九度</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>完全八度</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>完全十二度</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>完全二十二度</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>完全一度</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>低い音から入力してください</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>選択をリセット</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>計算結果</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>鋭い不協和音</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>最初に選択した音がルートになります。</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>2つの音の間隔が計算され、表示されます。</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>音符名を認識できません</value>
+  </data>
+
+</root>

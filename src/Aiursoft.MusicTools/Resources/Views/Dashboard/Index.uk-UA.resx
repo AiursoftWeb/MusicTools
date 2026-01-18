@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>«Побачити» мову музики</value>
+  </data>
+  <data name="Connecting Everything" xml:space="preserve">
+    <value>З&apos;єднання всього</value>
+  </data>
+  <data name="Deconstructing the 12-Tone System" xml:space="preserve">
+    <value>Деконструювання 12-тонової системи</value>
+  </data>
+  <data name="Explore Major" xml:space="preserve">
+    <value>Дослідити мажор</value>
+  </data>
+  <data name="Explore Minor" xml:space="preserve">
+    <value>Дослідити мінор</value>
+  </data>
+  <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
+    <value>Тональності не існують ізольовано. &apos;Коло квінт&apos; — це музичний компас, який розкриває порядок усіх ключових знаків (C -&gt; G -&gt; D...) та їх гармонійні зв&apos;язки. Це фундаментальна схема для композиції, аранжування та імпровізації.</value>
+  </data>
+  <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
+    <value>Музика — це не магія; це блискуче поєднання математики, фізики та закономірностей. Наш інструмент розкриває ці закономірності:</value>
+  </data>
+  <data name="Play Random Melody" xml:space="preserve">
+    <value>Відтворити випадкову мелодію</value>
+  </data>
+  <data name="The Magic of the Circle of Fifths" xml:space="preserve">
+    <value>Чарівність кола квінт</value>
+  </data>
+  <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
+    <value>Теорія може бути сухою, але спостерігати її в дії — це цікаво. Основна цінність цього інструменту — «синхронізація в реальному часі». Коли ви обираєте нову тональність, хроматичне коло, квінтове коло, клавіші піаніно та нотний стан оновлюються миттєво. Ви одразу зрозумієте, чому в Сі мажорі лише один дієз!</value>
+  </data>
+  <data name="Tool Interface Preview" xml:space="preserve">
+    <value>Попередній перегляд інтерфейсу інструменту</value>
+  </data>
+  <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
+    <value>Ласкаво просимо до інтерактивного інструменту теорії музики. Ми допомагаємо вам поєднати абстрактні поняття теорії музики—Хроматичну Гаму, Квінтове Коло та клавіатуру піаніно—дозволяючи вам по-справжньому «побачити», як працює музика.</value>
+  </data>
+  <data name="Whether you are a beginner student, a curious enthusiast, or an experienced producer, this tool will provide an intuitive sandbox for exploring keys, harmony, and scale structures." xml:space="preserve">
+    <value>Незалежно від того, чи ви студент-початківець, допитливий ентузіаст чи досвідчений продюсер, цей інструмент надасть вам інтуїтивно зрозумілий майданчик для дослідження тональностей, гармоній та структур ладів.</value>
+  </data>
+  <data name="Why is an octave divided into 12 keys? Modern music is built on &apos;12-Tone Equal Temperament,&apos; a brilliant mathematical compromise that allows all keys to sound &apos;acceptable.&apos; Our Chromatic Circle makes this abstract pitch system visually intuitive." xml:space="preserve">
+    <value>Чому октава поділена на 12 звуків? Сучасна музика побудована на «рівномірно темперованому строї», геніальному математичному компромісі, який дозволяє всім тональностям звучати «прийнятно». Наш хроматичний круг робить цю абстрактну систему висот звуку наочною та зрозумілою.</value>
+  </data>
+  <data name="Why is music designed this way?" xml:space="preserve">
+    <value>Чому музика влаштована саме так?</value>
+  </data>
+
+</root>

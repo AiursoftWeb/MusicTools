@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Eighteenth" xml:space="preserve">
+    <value>Augmentowana oktawa decydująca</value>
+  </data>
+  <data name="Augmented Eleventh" xml:space="preserve">
+    <value>Augmented Eleventh</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Czwarta zwiększona</value>
+  </data>
+  <data name="Click a selected key again to deselect it." xml:space="preserve">
+    <value>Kliknij ponownie wybrany klawisz, aby go odznaczyć.</value>
+  </data>
+  <data name="Click any two keys on the piano below." xml:space="preserve">
+    <value>Kliknij dowolne dwa klawisze na poniższym fortepianie.</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dysonans</value>
+  </data>
+  <data name="How to Use" xml:space="preserve">
+    <value>Jak korzystać</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Niedoskonała konsonans</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interaktywne Pianino</value>
+  </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Kalkulator Interwałów</value>
+  </data>
+  <data name="Major Fourteenth" xml:space="preserve">
+    <value>Wielka kwarta decyma</value>
+  </data>
+  <data name="Major Ninth" xml:space="preserve">
+    <value>Wielka nona</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Wielka sekunda</value>
+  </data>
+  <data name="Major Seventeenth" xml:space="preserve">
+    <value>Wielka septyma decymalna</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Wielka septyma</value>
+  </data>
+  <data name="Major Sixteenth" xml:space="preserve">
+    <value>Wielka sekstędziesiątowa</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Wielka seksta</value>
+  </data>
+  <data name="Major Tenth" xml:space="preserve">
+    <value>Wielka decyma</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Wielka tercja</value>
+  </data>
+  <data name="Major Thirteenth" xml:space="preserve">
+    <value>Wielka tercdecyma</value>
+  </data>
+  <data name="Major Twentieth" xml:space="preserve">
+    <value>Wielka dwudziesta</value>
+  </data>
+  <data name="Major Twenty-First" xml:space="preserve">
+    <value>Wielka dwudziesta pierwsza</value>
+  </data>
+  <data name="Minor Fourteenth" xml:space="preserve">
+    <value>Mała kwarta decymalna</value>
+  </data>
+  <data name="Minor Ninth" xml:space="preserve">
+    <value>Nona mała</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Sekunda mała</value>
+  </data>
+  <data name="Minor Seventeenth" xml:space="preserve">
+    <value>Siedemnasta mała</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Septyma mała</value>
+  </data>
+  <data name="Minor Sixteenth" xml:space="preserve">
+    <value>Szesnasta mała</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Seksta mała</value>
+  </data>
+  <data name="Minor Tenth" xml:space="preserve">
+    <value>Mala decyma</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Tercja mała</value>
+  </data>
+  <data name="Minor Thirteenth" xml:space="preserve">
+    <value>Mine tercdecyma</value>
+  </data>
+  <data name="Minor Twentieth" xml:space="preserve">
+    <value>Moll dwudziesta</value>
+  </data>
+  <data name="Minor Twenty-First" xml:space="preserve">
+    <value>Mała dwudziesta pierwsza</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Konsonans doskonały</value>
+  </data>
+  <data name="Perfect Eighteenth" xml:space="preserve">
+    <value>Czysta oktawa decydująca</value>
+  </data>
+  <data name="Perfect Eleventh" xml:space="preserve">
+    <value>Czysta undecyma</value>
+  </data>
+  <data name="Perfect Fifteenth" xml:space="preserve">
+    <value>Kwintdecyma czysta</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Kwinta czysta</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Czysta kwarta</value>
+  </data>
+  <data name="Perfect Nineteenth" xml:space="preserve">
+    <value>Dziewiętnasta czysta</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Oktawa czysta</value>
+  </data>
+  <data name="Perfect Twelfth" xml:space="preserve">
+    <value>Czysta kwinta</value>
+  </data>
+  <data name="Perfect Twenty-Second" xml:space="preserve">
+    <value>Czysta dwudziesta sekunda</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Czysta pryma</value>
+  </data>
+  <data name="Please input with the lower note first" xml:space="preserve">
+    <value>Wprowadź dźwięki, zaczynając od niższego.</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Wyczyść zaznaczenie</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Wynik</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Ostra Dysonansja</value>
+  </data>
+  <data name="The first note you select will be the root." xml:space="preserve">
+    <value>Pierwszy wybrany dźwięk będzie toniką.</value>
+  </data>
+  <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
+    <value>Interwał między dwiema nutami zostanie obliczony i wyświetlony.</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>do</value>
+  </data>
+  <data name="Unable to recognize note name" xml:space="preserve">
+    <value>Nie można rozpoznać nazwy nuty</value>
+  </data>
+
+</root>
