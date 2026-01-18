@@ -1,12 +1,11 @@
 using Aiursoft.UiStack.Layout;
 
-namespace Aiursoft.MusicTools.Models.HomeViewModels;
+namespace Aiursoft.MusicTools.Models.DashboardViewModels;
 
 public class IndexViewModel : UiStackLayoutViewModel
 {
     public IndexViewModel()
     {
-        PageTitle = "Music Theory Visualizer";
+        PageTitle = "Dashboard";
     }
 }
-
