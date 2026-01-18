@@ -1,6 +1,5 @@
-@{
-    ViewData["Title"] = "Home";
-}
+
+<vc:marketing-navbar></vc:marketing-navbar>
 
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -25,11 +24,11 @@
             </p>
 
             <div class="d-grid gap-3 d-md-flex justify-content-md-start mt-4">
-                <a asp-controller="Home" asp-action="Major"
+                <a asp-controller="Dashboard" asp-action="Major"
                    class="btn btn-primary btn-lg px-4 me-md-2 d-flex align-items-center justify-content-center">
                     @Localizer["Explore Major"]
                 </a>
-                <a asp-controller="Home" asp-action="Minor"
+                <a asp-controller="Dashboard" asp-action="Minor"
                    class="btn btn-outline-secondary btn-lg px-4 d-flex align-items-center justify-content-center">
                     @Localizer["Explore Minor"]
                 </a>
@@ -101,3 +100,6 @@
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"/>
 }
+
+
+<vc:marketing-footer></vc:marketing-footer>
