@@ -19,7 +19,7 @@ namespace Aiursoft.MusicTools.Controllers;
 [LimitPerMin]
 public class RolesController(
     UserManager<User> userManager,
-    TemplateDbContext context,
+    MusicToolsDbContext context,
     RoleManager<IdentityRole> roleManager)
     : Controller
 {

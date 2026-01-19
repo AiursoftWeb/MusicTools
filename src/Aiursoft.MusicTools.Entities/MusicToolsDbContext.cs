@@ -7,7 +7,7 @@ namespace Aiursoft.MusicTools.Entities;
 
 [ExcludeFromCodeCoverage]
 
-public abstract class TemplateDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
+public abstract class MusicToolsDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
 

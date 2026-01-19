@@ -19,7 +19,7 @@ namespace Aiursoft.MusicTools.Controllers;
 [LimitPerMin]
 public class PermissionsController(
     RoleManager<IdentityRole> roleManager,
-    TemplateDbContext context)
+    MusicToolsDbContext context)
     : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanReadPermissions)]

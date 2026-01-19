@@ -9,6 +9,19 @@ namespace Aiursoft.MusicTools.Controllers;
 [LimitPerMin]
 public class DashboardController : Controller
 {
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Dashboard",
+        LinkOrder = 0)]
+    public IActionResult Index()
+    {
+        return this.StackView(new IndexViewModel());
+    }
+
 
     [RenderInNavBar(
         NavGroupName = "Tools",
