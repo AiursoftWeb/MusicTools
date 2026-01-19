@@ -1,3 +1,4 @@
+using Aiursoft.MusicTools.Models.DeployViewModels;
 using Aiursoft.MusicTools.Models.HomeViewModels;
 using Aiursoft.MusicTools.Services;
 using Aiursoft.WebTools.Attributes;
@@ -13,4 +14,8 @@ public class HomeController : Controller
         return this.SimpleView(new IndexViewModel());
     }
 
+    public IActionResult SelfHost()
+    {
+        return this.SimpleView(new SelfHostViewModel());
+    }
 }
