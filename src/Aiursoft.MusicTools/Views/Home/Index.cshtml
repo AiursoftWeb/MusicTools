@@ -91,6 +91,25 @@
     </div>
 </div>
 
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">@Localizer["100% Free & Open Source"]</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">
+                @Localizer["MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!"]
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a asp-controller="Home" asp-action="SelfHost" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                    @Localizer["Self Host"]
+                </a>
+                <a href="https://gitlab.aiursoft.com/aiursoft/musicTools" target="_blank" class="btn btn-outline-light btn-lg px-4">
+                    @Localizer["View Source"]
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script type="module" src="~/dist/scripts/homepage.js" asp-append-version="true"></script>
