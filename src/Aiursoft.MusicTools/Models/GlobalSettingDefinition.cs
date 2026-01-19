@@ -9,4 +9,3 @@ public class GlobalSettingDefinition
     public required string DefaultValue { get; init; }
     public Dictionary<string, string>? ChoiceOptions { get; init; }
 }
-

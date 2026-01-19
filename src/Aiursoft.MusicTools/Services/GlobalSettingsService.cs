@@ -118,4 +118,3 @@ public class GlobalSettingsService(TemplateDbContext dbContext, IConfiguration c
         await dbContext.SaveChangesAsync();
     }
 }
-

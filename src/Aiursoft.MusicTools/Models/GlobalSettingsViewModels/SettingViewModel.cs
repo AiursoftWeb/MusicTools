@@ -11,4 +11,3 @@ public class SettingViewModel
     public bool IsOverriddenByConfig { get; set; }
     public Dictionary<string, string>? ChoiceOptions { get; set; }
 }
-
