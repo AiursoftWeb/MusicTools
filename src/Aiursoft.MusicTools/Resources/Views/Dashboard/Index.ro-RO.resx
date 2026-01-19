@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>O bază modernă, bogată în funcționalități și extrem de extensibilă pentru aplicația web următoare.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Un metronom simplu și sigur pentru a vă ajuta să păstrați ritmul.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Traduceri accelerate de inteligență artificială</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Gestionare utilizatori integrată</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Calculează scale și acorduri majore pe baza unei note de bază.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Calculați scalele și acordurile minore (naturale, armonice și melodice).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>Calculați intervalele muzicale dintre două note.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Provocă-ți memoria muzicală repetând melodiile.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Include suport pentru Docker pentru implementări simplificate și consistente.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Gestionare integrată de fișiere</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Calculator de Intervale</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Test interval</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonurile nu sunt izolate. „Cercul cvintelor” este busola muzicii, dezvăluind ordinea tuturor armăturilor (C -&gt; G -&gt; D...) și a relațiilor lor armonice. Este planul de bază pentru compoziție, aranjament și improvizație.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Calculatoarele pentru tonalități majore</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Test de Memorie Melodică</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Metronom</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Calculatoarele pentru tonalități mici</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modelele sunt validate pe ambele părți, client și server, pe baza anotărilor de date.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Suport pentru mai multe furnizori de baze de date</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Muzică</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muzica nu este magie; este o combinație strălucită de matematică, fizică și modele. Instrumentul nostru dezvăluie aceste modele:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools oferă o colecție de unelte esențiale pentru muzicieni și studenți. Exploră calculatoarele și testele de antrenament auditiv pentru a-ți îmbunătăți abilitățile muzicale.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Deschide</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Integrare OpenID Connect</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Începe un proiect nou</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Start Test</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Suportă atât variabilele de mediu, cât și setările stocate în baza de date, cu prioritate automată acordată variabilelor de mediu pentru suprascrieri fără probleme.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Testează-ți auzul identificând intervale muzicale.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Magia Cercului de Cvinte</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Previzualizare Interfață Instrument</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Unelte</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bine ați venit</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>Bine ați venit la MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Bun venit la instrumentul interactiv de teorie muzicală. Vă ajutăm să conectați conceptele abstracte ale teoriei muzicii—Scala Cromatică, Cercul cvintelor și claviatură de pian—permițându-vă să „vedeți” cu adevărat cum funcționează muzica.</value>

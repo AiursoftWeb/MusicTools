@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Een modern, functierijk en zeer uitbreidbaar fundament voor je volgende webapplicatie.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Een eenvoudige en betrouwbare metronoom om je tijd te houden.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI-geïntegreerde vertalingen</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Ingebouwde gebruikersbeheer</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Bereken grote toonladders en akkoorden op basis van een grondtoon.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Bereken majeur toonladders en akkoorden (natuurlijk, harmonisch en melodisch).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>Bereken muzikale intervallen tussen twee noten.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Test je muziekmemory door melodieën te herhalen.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Kom met Docker-ondersteuning voor vereenvoudigde en consistente implementaties.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Geïntegreerd bestandsbeheer</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Intervalrekenmachine</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Intervaltest</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Toonsoorten staan niet op zichzelf. De &apos;Circle of Fifths&apos; is het kompas van de muziek, dat de volgorde van alle toonsoorten (C -&gt; G -&gt; D...) en hun harmonische relaties onthult. Het is de blauwdruk voor compositie, arrangement en improvisatie.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Major Calculator</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Melodiegeheugen test</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Metronoom</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Minoorrekenmachine</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modellen worden gevalideerd aan zowel de client- als de serverside op basis van gegevensannotaties.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Ondersteuning voor meerdere databaseproviders</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Muziek</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muziek is geen magie; het is een briljante combinatie van wiskunde, natuurkunde en patronen. Onze tool onthult deze patronen:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools biedt een verzameling essentiële hulpmiddelen voor muzikanten en studenten. Verken onze rekenmachines en ooronderzoekstests om je muzikale vaardigheden te verbeteren.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integratie</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Een nieuw project starten</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Test starten</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Ondersteunt zowel omgevingsvariabelen als database-gebaseerde instellingen, met automatische voorrang aan omgevingsvariabelen voor naadloze overschrijvingen.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Test je oor door muzikale intervallen te herkennen.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>De Magie van de Kwintencirkel</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Voorbeeld van de toolinterface</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Gereedschappen</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welkom</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>Welkom bij MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Welkom bij het interactieve muziektheorie-instrument. Wij helpen je de abstracte concepten van muziektheorie—de chromatische toonladder, de kwintencirkel en het pianoklavier—met elkaar te verbinden, zodat je daadwerkelijk kunt &apos;zien&apos; hoe muziek werkt.</value>

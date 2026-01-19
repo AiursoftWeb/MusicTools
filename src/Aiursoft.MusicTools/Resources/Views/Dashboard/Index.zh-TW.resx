@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>一個現代、功能豐富且高度可擴展的基礎架構，為您的下一個網路應用程式提供支援。</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>一個簡單且可靠的節拍器，幫助您掌握節奏。</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI驅動的翻譯</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>內建使用者管理</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>根據基準音計算大調音階與和弦。</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>計算小調音階與和弦（自然小調、和聲小調與旋律小調）。</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>計算兩個音符之間的音程。</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>挑戰你的音樂記憶，重複旋律。</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>內建 Docker 支援，讓部署更簡化且一致。</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>整合式檔案管理</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>音程計算機</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>音程測驗</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>調性並非孤立存在。「五度圈」是音樂的羅盤，它揭示了所有調號的順序（C -&gt; G -&gt; D...）及其和聲關係。它是作曲、編曲與即興演奏的核心藍圖。</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>大調計算器</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>旋律記憶測驗</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>節拍器</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>小調計算器</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>模型會根據資料註解，在用戶端與伺服器端同時進行驗證。</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>支援多資料庫提供者</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>音樂</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音樂並非魔法，而是數學、物理與規律的巧妙結合。我們的工具正是為了揭示這些規律：</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools 提供一系列音樂家與學生不可或缺的工具。探索我們的計算工具與聽覺訓練測驗，提升您的音樂技能。</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>開啟</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect 集成</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>開始新專案</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>開始測驗</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>支援環境變數與資料庫儲存的設定，並自動優先使用環境變數以實現無縫覆蓋。</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>透過辨識音樂音程來測試你的聽力。</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圈的神奇魔力</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>工具介面預覽</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>工具</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>歡迎使用 MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>歡迎使用互動式樂理工具。我們協助您連結樂理中的抽象概念——半音階、五度圈與鋼琴鍵盤——讓您能真正「看見」音樂的運作方式。</value>

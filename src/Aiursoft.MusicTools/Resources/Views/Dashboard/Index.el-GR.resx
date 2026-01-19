@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Μια σύγχρονη, πλούσια σε λειτουργίες και υψηλά εκτείσιμη βάση για την επόμενη σας εφαρμογή για το διαδίκτυο.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Ένας απλός και αξιόπιστος μετρονόμος για να σας βοηθήσει να κρατήσετε το ρυθμό.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Μεταφράσεις με Τεχνητή Νοημοσύνη</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Ενσωματωμένη Διαχείριση Χρηστών</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Υπολογίστε μεγάλες κλίμακες και χορδές βασιζόμενοι σε μία βασική νότα.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Υπολογίστε μικρές κλίμακες και χορδές (φυσικές, αρμονικές και μελωδικές).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>Υπολογίστε μουσικά διαστήματα μεταξύ δύο νότων.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Προκάλεσε τη μουσική σου μνήμη επαναλαμβάνοντας μελωδίες.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Διαθέτει υποστήριξη για Docker για απλοποιημένη και συνεπή μεταφορά.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Ολοκληρωμένη Διαχείριση Αρχείων</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Υπολογιστής Διαστημάτων</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Δοκιμασία Διαστημάτων</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Οι τόνoι δεν είναι απομονωμένοι. Ο «Κύκλος των Πέμπτων» είναι η πυξίδα της μουσικής, αποκαλύπτοντας τη σειρά όλων των τoνικών επιγραφών (C -&gt; G -&gt; D...) και τις αρμονικές τους σχέσεις. Είναι ο βασικός σχεδιασμός για τη σύνθεση, τη διασκευή και την αυτοσχεδιαστική μουσική.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Μεγάλος Υπολογιστής</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Δοκιμή Μνήμης Μελωδίας</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Μετρονόμος</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Μικρός Υπολογιστής</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Οι μοντέλα ελέγχονται σε επίπεδο πελάτη και εξυπηρετητή βάσει σημειώσεων δεδομένων.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Υποστήριξη Πολλαπλών Παρόχων Βάσης Δεδομένων</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Μουσική</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Η μουσική δεν είναι μαγεία· είναι μια ευφυής συνδυασμός μαθηματικών, φυσικής και μοτίβων. Το εργαλείο μας αποκαλύπτει αυτά τα μοτίβα:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>Το MusicTools παρέχει συλλογή απαραίτητων εργαλείων για μουσικούς και μαθητές. Ανακαλύψτε τους υπολογιστές μας και τις δοκιμασίες εξάσκησης ακοής για να βελτιώσετε τις μουσικές σας ικανότητες.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Άνοιγμα</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Ενσωμάτωση OpenID Connect</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Ξεκινήστε ένα νέο έργο</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Ξεκίνα Τεστ</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Υποστηρίζει και τις δύο μεθόδους, μεταβλητές περιβάλλοντος και ρυθμίσεις που αποθηκεύονται σε βάση δεδομένων, με αυτόματη προτεραιότητα προς τις μεταβλητές περιβάλλοντος για ομαλές επικαλύψεις.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Δοκιμάστε την ακοή σας, αναγνωρίζοντας μουσικά διαστήματα.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Η Μαγεία του Κύκλου των Πέμπτων</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Εργαλεία</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Καλώς ήρθατε</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>Καλώς ήρθατε στο MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Καλωσορίσατε στο διαδραστικό εργαλείο μουσικής θεωρίας. Σας βοηθάμε να συνδέσετε τις αφηρημένες έννοιες της μουσικής θεωρίας—τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων και το πληκτρολόγιο πιάνου—επιτρέποντάς σας να «δείτε» πραγματικά πώς λειτουργεί η μουσική.</value>

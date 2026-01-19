@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>أساس حديث، غني بالميزات، وقابل للتوسيع بشكل كبير لتطبيق الويب التالي الخاص بك.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>معقّم بسيط وموثوق لمساعدتك على الحفاظ على الإيقاع.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>ترجمة مدعومة بالذكاء الاصطناعي</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>إدارة المستخدم المدمجة</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>احسب المقياس الرئيسي والكُورات بناءً على ملاحظة جذرية.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>احسب المقياس الصغير والشُّرُوط (الطبيعي، التوافقي، والموسيقي).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>احسب الفواصل الموسيقية بين ملاحظتين.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>تحدّي ذاكرتك الموسيقية من خلال تكرار اللحن.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>يأتي مع دعم دوكير لDeployment مبسطة ومتزنة.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>إدارة الملفات المتكاملة</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>آلة حاسبة الفواصل</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>اختبار الفاصل</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>المفاتيح الموسيقية ليست منعزلة. إن &quot;دائرة الخامسات&quot; هي بوصلة الموسيقى، فهي تكشف ترتيب جميع سلالم المفاتيح (C -&gt; G -&gt; D...) وعلاقاتها التوافقية. إنها المخطط الأساسي للتأليف، والتوزيع، والارتجال.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>الآلة الحاسبة للماجور</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>اختبار تذكّر اللحن</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>ميترو놈</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>الآلة الحاسبة الصغرى</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>تتم مصادقة النماذج على الطرفين العميل والخادم بناءً على ملاحظات البيانات.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>دعم متعدد مزودي قواعد البيانات</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>الموسيقى</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>الموسيقى ليست سحرًا؛ إنها مزيج رائع من الرياضيات والفيزياء والأنماط. أداتنا تكشف هذه الأنماط:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>توفر MusicTools مجموعة من الأدوات الأساسية للموسيقيين والطلاب. استكشف حاسباتنا واختبارات تدريب السمع لتحسين مهاراتك الموسيقية.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>افتح</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>تكامل OpenID Connect</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>시작 مشروع جديد</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>ابدأ الاختبار</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>يدعم متغيرات البيئة والإعدادات المخزنة في قاعدة البيانات، مع منح الأولوية التلقائية لمتغيرات البيئة لضمان التجاوزات السلسة.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>اختبار مهارتك السمعية من خلال تحديد الفواصل الموسيقية.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>سحر دائرة الخامسات</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>معاينة واجهة الأداة</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>أدوات</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>مرحباً</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>أهلاً بكم في MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>مرحبًا بك في أداة نظرية الموسيقى التفاعلية. نحن نساعدك في ربط المفاهيم المجردة لنظرية الموسيقى — السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو — مما يتيح لك &quot;رؤية&quot; كيفية عمل الموسيقى حقًا.</value>
