@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Melihat&apos; Bahasa Musik</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>Dukungan &quot;fire-and-forget&quot; untuk tugas berjalan lama (seperti email atau AI), dilengkapi antarmuka GUI untuk manajemen antrian, pemrosesan paralel, dan pembatalan.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>Sistem kontrol akses berbasis peran (RBAC) bawaan untuk manajemen izin yang halus.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>Solusi lengkap untuk otentikasi pengguna dan manajemen profil.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>Tata letak yang sepenuhnya responsif dan terlihat bagus di perangkat desktop maupun mobile.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>Dasar yang modern, kaya fitur, dan sangat dapat diperluas untuk aplikasi web Anda berikutnya.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>Terjemahan Berbasis AI</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Semua dependensi secara otomatis terdaftar dan selalu tersedia melalui injeksi konstruktor.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Mode Gelap Otomatis</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Injeksi Ketergantungan Otomatis</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Penanganan Zona Waktu Otomatis</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Terjemahan otomatis, didorong oleh AI ke dalam 28 bahasa.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Pemrosesan Tugas Latar Belakang</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Manajemen Pengguna Bawaan</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Datang dengan dukungan Docker untuk penyebaran yang disederhanakan dan konsisten.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Dokumentasi yang Komprehensif</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Menghubungkan Segalanya</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Validasi Konsistensi</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Membedah Sistem 12-Nada</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Kembangkan secara eksklusif dalam UTC sementara sistem secara otomatis mengonversi dan menampilkan tanggal dalam zona waktu lokal pengguna.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Dockerized untuk Deploi yang Mudah</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Navigasi Dinamis</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Dengan mudah beralih antara penyedia basis data, termasuk SQLite, MySQL, SQL Server, dan basis data dalam memori untuk pengujian.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Tulis tes integrasi dengan mudah menggunakan basis data dalam memori, sistem file sementara, mocking bawaan, dan simulasi permintaan HTTP dunia nyata.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Jelajahi Mayor</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Jelajahi Minor</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Memiliki sistem manajemen file bawaan dengan kompresi avatar otomatis dan perlindungan privasi.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Kelola pekerjaan berulang seperti pembersihan dan sinkronisasi dengan antarmuka GUI komprehensif untuk memantau riwayat eksekusi dan log.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Halo Dunia!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Termasuk dokumentasi yang lengkap dan contoh praktis untuk memulai dengan cepat.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Manajemen Berkas Terintegrasi</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Nada-nada kunci tidak terisolasi. &apos;Circle of Fifths&apos; adalah kompasnya musik, yang mengungkap urutan semua tanda kunci (C -&gt; G -&gt; D...) dan hubungan harmonisnya. Ini adalah cetak biru inti untuk komposisi, aransemen, dan improvisasi.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Model divalidasi di sisi klien dan server berdasarkan anotasi data.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Dukungan Beberapa Penyedia Basis Data</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Musik bukanlah sihir; ia adalah kombinasi brilian dari matematika, fisika, dan pola. Alat kami mengungkap pola-pola ini:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>Integrasi OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Mainkan Melodi Acak</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>Otorisasi RBAC</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Baca dokumentasi</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Desain Responsif</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Pengujian Integrasi yang Kuat</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Manajemen Tugas yang Dijadwalkan</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Terintegrasi secara mulus dengan penyedia OpenID Connect mana pun, dengan sinkronisasi peran otomatis.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Oversight Konfigurasi Cerdas</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Mode gelap cerdas yang menyesuaikan diri dengan pengaturan sistem pengguna.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Mulai proyek baru</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Mendukung variabel lingkungan dan pengaturan berbasis basis data, dengan prioritas otomatis diberikan kepada variabel lingkungan untuk penggantian yang mulus.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Keajaiban Lingkaran Kwin</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>Bilah navigasi secara otomatis menyesuaikan berdasarkan peran dan izin pengguna.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori bisa terasa membosankan, tetapi menyaksikannya dalam aksi itu menyenangkan. Nilai inti dari alat ini adalah &apos;sinkronisasi waktu-nyata.&apos; Saat Anda memilih kunci baru, Lingkaran Kromatik, Lingkaran Quint, tuts piano, dan notasi balok akan langsung diperbarui. Anda akan langsung memahami mengapa G Mayor hanya memiliki satu kres!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Ini adalah proyek templat, di mana kita memulai perjalanan voyager...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Pratinjau Antarmuka Alat</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Selamat Datang</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Selamat datang di alat teori musik interaktif. Kami membantu Anda menghubungkan konsep abstrak teori musik—Skala Kromatis, Lingkaran Kuint, dan keyboard piano—sehingga Anda dapat benar-benar &apos;melihat&apos; bagaimana musik bekerja.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Mengapa musik dirancang seperti ini?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Mengapa menggunakan Template Aiursoft?</value>
   </data>
 
 </root>

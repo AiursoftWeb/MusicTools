@@ -51,6 +51,9 @@
   <data name="Create User" xml:space="preserve">
     <value>Luo käyttäjä</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Hallintapaneeli</value>
+  </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Poista rooli</value>
   </data>

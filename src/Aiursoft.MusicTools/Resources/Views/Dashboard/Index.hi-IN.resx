@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>संगीत की भाषा को &apos;देखें&apos;</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>लंबे समय तक चलने वाले कार्यों (जैसे ईमेल या एआई) के लिए &quot;फायर-एंड-फॉरगेट&quot; समर्थन, जिसमें कतार प्रबंधन, समानांतर प्रसंस्करण और रद्द करने के लिए एक GUI शामिल है।</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>एक निर्मित भूमिका-आधारित पहुँच नियंत्रण (RBAC) प्रणाली सूक्ष्म अनुमति प्रबंधन के लिए।</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>उपयोगकर्ता प्रमाणीकरण और प्रोफ़ाइल प्रबंधन के लिए एक पूर्ण समाधान।</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>एक पूरी तरह से अनुकूलित लेआउट जो डेस्कटॉप और मोबाइल डिवाइस दोनों पर शानदार दिखता है।</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>अपने अगले वेब एप्लिकेशन के लिए एक आधुनिक, फीचर-समृद्ध और बहुत अधिक विस्तारयोग्य आधार।</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>एआई-संचालित अनुवाद</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>सभी निर्भरताएँ स्वचालित रूप से पंजीकृत हैं और कंस्ट्रक्टर इंजेक्शन के माध्यम से हमेशा उपलब्ध हैं।</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>स्वचालित डार्क मोड</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>स्वचालित निर्भरता निवेशन</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>स्वचालित समय क्षेत्र प्रबंधन</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>स्वचालित, एआई-चालित 28 भाषाओं में अनुवाद।</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>बैकग्राउंड जॉब प्रोसेसिंग</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>एम्बेडेड उपयोगकर्ता प्रबंधन</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>डॉकर समर्थन के साथ आता है सरल और समान डिप्लॉयमेंट के लिए।</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>व्यापक दस्तावेज़ीकरण</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>सब कुछ जोड़ना</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>सुसंगतता प्रमाणीकरण</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>12-स्वर प्रणाली का विश्लेषण</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>यूटीसी में सिर्फ विकसित करें, जबकि सिस्टम स्वचालित रूप से उपयोगकर्ता के स्थानीय समय क्षेत्र में तारीखों को परिवर्तित और प्रदर्शित करता है।</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>डॉकराइज़्ड आसान डिप्लॉयमेंट के लिए</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>डायनामिक नेविगेशन बार</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>आसानी से डेटाबेस प्रदाताओं के बीच स्विच करें, जिसमें SQLite, MySQL, SQL Server, और परीक्षण के लिए एक इन-मेमोरी डेटाबेस शामिल है।</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>अनुकूल रूप से इन्टीग्रेशन टेस्ट लिखें, इन-मेमोरी डेटाबेस, अस्थायी फाइल सिस्टम, बिल्ट-इन मॉकिंग और वास्तविक दुनिया के HTTP रिक्वेस्ट सिमुलेशन का उपयोग करके।</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>मेजर एक्सप्लोर करें</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>माइनर एक्सप्लोर करें</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>एक स्वचालित एवं अवतार संपीड़न और गोपनीयता सुरक्षा के साथ एक निर्मित फ़ाइल प्रबंधन प्रणाली के साथ विशेषता है।</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>नियमित कार्यों जैसे साफ़ करना और समन्वयन को एक व्यापक GUI के साथ प्रबंधित करें जो निष्पादन इतिहास और लॉग के निगरानी के लिए उपलब्ध है।</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>नमस्ते दुनिया!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>शुरुआत करने के लिए व्यापक दस्तावेज़न और व्यावहारिक उदाहरण शामिल हैं।</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>एकीकृत फ़ाइल प्रबंधन</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>सुर अलग-थलग नहीं होते। &apos;Circle of Fifths&apos; संगीत का कम्पास है, जो सभी सुर हस्ताक्षरों (C -&gt; G -&gt; D...) के क्रम और उनके सुरीले संबंधों को प्रकट करता है। यह संरचना, आयोजन और आशु रचना के लिए मुख्य नक्शा है।</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>मॉडल्स को डेटा एनोटेशन्स के आधार पर क्लाइंट और सर्वर दोनों तरफ वैधता के लिए जांचा जाता है।</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>बहु-डेटाबेस प्रदाता समर्थन</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>संगीत कोई जादू नहीं है; यह गणित, भौतिकी और पैटर्न का एक शानदार संयोजन है। हमारा टूल इन पैटर्नों को उजागर करता है:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>OpenID कनेक्ट एकीकरण</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>यादृच्छिक धुन बजाएं</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>RBAC प्राधिकरण</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>दस्तावेज़ पढ़ें</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>प्रतिक्रियाशील डिज़ाइन</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>दृढ़ एकीकरण परीक्षण</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>योजित कार्य प्रबंधन</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>किसी भी OpenID Connect प्रदाता के साथ बिना किसी रुकावट के एकीकृत करें, स्वचालित भूमिका समन्वय के साथ।</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>स्मार्ट कॉन्फ़िगरेशन ओवरराइड्स</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>स्मार्ट डार्क मोड जो उपयोगकर्ता के सिस्टम सेटिंग्स के अनुसार अनुकूलित होता है।</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>एक नया प्रोजेक्ट शुरू करें</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>पर्यावरण चर और डेटाबेस-आधारित सेटिंग्स दोनों का समर्थन करता है, जहां पर्यावरण चर को बिना किसी रुकावट के ओवरराइड करने के लिए स्वचालित प्राथमिकता दी जाती है।</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>पंचम के चक्र का जादू</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>नेविगेशन बार उपयोगकर्ता के भूमिकाओं और अनुमतियों के आधार पर स्वचालित रूप से समायोजित होता है।</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>सिद्धांत नीरस हो सकता है, लेकिन इसे क्रियान्वित होते देखना मजेदार है। इस टूल का मुख्य मूल्य &apos;रीयल-टाइम सिंक्रनाइज़ेशन&apos; है। जब आप एक नई कुंजी चुनते हैं, तो क्रोमैटिक सर्कल, सर्कल ऑफ फिफ्थ्स, पियानो कीज़ और स्टाफ नोटेशन तुरंत अपडेट हो जाते हैं। आप तुरंत समझ जाएंगे कि जी मेजर में केवल एक ही शार्प क्यों होता है!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>यह एक टेम्पलेट प्रोजेक्ट है, जहाँ हम वॉयेजर की शुरुआत करते हैं...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>टूल इंटरफ़ेस पूर्वावलोकन</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>स्वागतम्</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>इंटरैक्टिव संगीत सिद्धांत टूल में आपका स्वागत है। हम आपको संगीत सिद्धांत की अमूर्त अवधारणाओं—क्रोमैटिक स्केल, सर्कल ऑफ फ़िफ्थ्स, और पियानो कीबोर्ड—को जोड़ने में मदद करते हैं, जिससे आप वास्तव में &apos;देख&apos; सकें कि संगीत कैसे काम करता है।</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>संगीत को इस तरह से क्यों डिज़ाइन किया गया है?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>ऐयूरसॉफ्ट टेम्पलेट का उपयोग क्यों करें?</value>
   </data>
 
 </root>

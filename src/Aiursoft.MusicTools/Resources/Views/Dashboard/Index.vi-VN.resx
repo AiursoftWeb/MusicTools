@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Thấy&apos; Ngôn Ngữ Của Âm Nhạc</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>Hỗ trợ kiểu &quot;bắn và quên&quot; cho các tác vụ kéo dài (như email hoặc AI), tích hợp giao diện người dùng (GUI) để quản lý hàng đợi, xử lý song song và hủy bỏ.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>Hệ thống kiểm soát truy cập dựa trên vai trò (RBAC) tích hợp sẵn để quản lý quyền hạn chi tiết.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>Một giải pháp toàn diện cho xác thực người dùng và quản lý hồ sơ.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>Một bố cục hoàn toàn phản hồi, trông tuyệt vời trên cả thiết bị để bàn và thiết bị di động.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>Một nền tảng hiện đại, đầy đủ tính năng và có khả năng mở rộng cao cho ứng dụng web tiếp theo của bạn.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>Dịch thuật được hỗ trợ bởi AI</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Tất cả các phụ thuộc được đăng ký tự động và luôn sẵn sàng thông qua chèn vào hàm tạo.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Chế độ tối tự động</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Tiêm phụ thuộc tự động</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Xử lý múi giờ tự động</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Dịch thuật tự động, được điều khiển bởi AI sang 28 ngôn ngữ.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Xử lý nhiệm vụ nền</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Quản lý người dùng tích hợp</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Được tích hợp hỗ trợ Docker để triển khai đơn giản và nhất quán.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Tài liệu toàn diện</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Kết Nối Mọi Thứ</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Xác thực tính nhất quán</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Giải Mã Hệ Thống 12 Âm</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Phát triển riêng biệt bằng múi giờ UTC trong khi hệ thống tự động chuyển đổi và hiển thị ngày tháng theo múi giờ địa phương của người dùng.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Docker hóa để triển khai dễ dàng</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Thanh điều hướng động</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Chuyển đổi dễ dàng giữa các nhà cung cấp cơ sở dữ liệu, bao gồm SQLite, MySQL, SQL Server và cơ sở dữ liệu trong bộ nhớ dành cho kiểm thử.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Viết các bài kiểm thử tích hợp một cách dễ dàng bằng cách sử dụng cơ sở dữ liệu trong bộ nhớ, hệ thống tệp tạm thời, mô phỏng tích hợp sẵn và mô phỏng yêu cầu HTTP thực tế.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Khám Phá Trưởng</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Khám Phá Âm Giai Thứ</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Tích hợp hệ thống quản lý tập tin tích hợp với nén ảnh đại diện tự động và bảo vệ quyền riêng tư.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Xử lý các tác vụ lặp lại như dọn dẹp và đồng bộ hóa với giao diện người dùng toàn diện để theo dõi lịch sử thực thi và nhật ký.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Xin chào Thế giới!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Bao gồm tài liệu chi tiết và các ví dụ thực tế để bạn bắt đầu nhanh chóng.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Quản lý tập tin tích hợp</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Các âm giai không tồn tại biệt lập. &apos;Circle of Fifths&apos; chính là la bàn của âm nhạc, tiết lộ trật tự của tất cả các dấu hóa (C -&gt; G -&gt; D...) và mối quan hệ hòa âm giữa chúng. Nó là bản thiết kế cốt lõi cho việc sáng tác, hòa âm phối khí và ngẫu hứng.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Các mô hình được xác thực trên cả phía client và server dựa trên các ghi chú dữ liệu.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Hỗ trợ nhiều nhà cung cấp cơ sở dữ liệu</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Âm nhạc không phải là phép thuật; nó là sự kết hợp tuyệt vời giữa toán học, vật lý và các mẫu hình. Công cụ của chúng tôi tiết lộ những mẫu hình này:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>Tích hợp OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Phát Giai Điệu Ngẫu Nhiên</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>Phân quyền RBAC</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Đọc tài liệu</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Thiết kế phản hồi</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Kiểm thử tích hợp mạnh mẽ</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Quản lý Nhiệm vụ Lịch trình</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Tích hợp liền mạch với bất kỳ nhà cung cấp OpenID Connect nào, với đồng bộ vai trò tự động.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Ghi đè cấu hình thông minh</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Chế độ tối thông minh tự động điều chỉnh theo cài đặt hệ thống của người dùng.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Bắt đầu một dự án mới</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Hỗ trợ cả biến môi trường và cài đặt dựa trên cơ sở dữ liệu, với ưu tiên tự động cho biến môi trường để ghi đè một cách liền mạch.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Sự Kỳ Diệu Của Vòng Tròn Quãng 5</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>Thanh điều hướng tự động điều chỉnh dựa trên vai trò và quyền hạn người dùng.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Lý thuyết có thể khô khan, nhưng quan sát nó trong thực tế lại rất thú vị. Giá trị cốt lõi của công cụ này là &apos;đồng bộ hóa thời gian thực.&apos; Khi bạn chọn một âm giai mới, Vòng Tròn Chromatic, Vòng Tròn Quãng Năm, các phím đàn piano và ký hiệu khuông nhạc sẽ cập nhật ngay lập tức. Bạn sẽ ngay lập tức hiểu tại sao Sol Trưởng (G Major) chỉ có một dấu thăng!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Đây là một dự án mẫu, nơi chúng tôi bắt đầu hành trình của người du hành...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Xem trước Giao diện Công cụ</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Chào mừng</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Chào mừng bạn đến với công cụ lý thuyết âm nhạc tương tác. Chúng tôi giúp bạn kết nối các khái niệm trừu tượng của lý thuyết âm nhạc—Chromatic Scale, Circle of Fifths và bàn phím piano—cho phép bạn thực sự &apos;nhìn thấy&apos; cách âm nhạc vận hành.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Tại sao âm nhạc lại được thiết kế theo cách này?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Tại sao nên sử dụng Mẫu Aiursoft?</value>
   </data>
 
 </root>
