@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;มองเห็น&apos; ภาษาของดนตรี</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>การสนับสนุนแบบ &quot;Fire-and-forget&quot; สำหรับงานที่ใช้เวลานาน (เช่น อีเมลหรือ AI) พร้อมอินเทอร์เฟซผู้ใช้กราฟิก (GUI) สำหรับการจัดการคิว การประมวลผลแบบขนาน และการยกเลิก</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>ระบบควบคุมการเข้าถึงตามบทบาท (RBAC) แบบฝังในตัว สำหรับการจัดการสิทธิ์อย่างละเอียด</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>โซลูชันครบวงจรสำหรับการยืนยันตัวตนของผู้ใช้และการจัดการโปรไฟล์</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>รูปแบบที่ปรับตัวได้ทั้งหมด ซึ่งดูดีบนอุปกรณ์เดสก์ท็อปและมือถือทั้งสองอย่าง</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>รากฐานที่ทันสมัย ครบครันด้วยคุณสมบัติ และขยายได้อย่างยืดหยุ่นสูง สำหรับแอปพลิเคชันเว็บของคุณในครั้งต่อไป</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>การแปลด้วยปัญญาประดิษฐ์</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>ทุกการพึ่งพาจะถูกลงทะเบียนโดยอัตโนมัติและพร้อมใช้งานตลอดเวลาผ่านการแทรกซึมผ่านคอนสตรักเตอร์</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>โหมดมืดอัตโนมัติ</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>การแทรกซึมการพึ่งพาอัตโนมัติ</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>การจัดการเขตเวลาแบบอัตโนมัติ</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>การแปลอัตโนมัติที่ขับเคลื่อนด้วยปัญญาประดิษฐ์ รองรับ 28 ภาษา</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>การประมวลผลงานหลังบ้าน</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>การจัดการผู้ใช้แบบฝังใน</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>มาพร้อมการสนับสนุน Docker สำหรับการปรับใช้งานที่ง่ายและสอดคล้องกัน</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>เอกสารประกอบอย่างละเอียด</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>เชื่อมโยงทุกสิ่ง</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>การตรวจสอบความสอดคล้อง</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>การแยกประกอบระบบ 12 เสียง</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>พัฒนาเฉพาะในเวลา UTC ในขณะที่ระบบจะแปลงและแสดงวันที่โดยอัตโนมัติเป็นเขตเวลาท้องถิ่นของผู้ใช้</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>ใช้ Docker สำหรับการติดตั้งที่ง่าย</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>แถบนำทางแบบไดนามิก</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>เปลี่ยนผู้ให้บริการฐานข้อมูลได้อย่างง่ายดาย รวมถึง SQLite, MySQL, SQL Server และฐานข้อมูลในหน่วยความจำสำหรับการทดสอบ</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>เขียนการทดสอบการรวมระบบได้อย่างง่ายดาย โดยใช้ฐานข้อมูลในหน่วยความจำ ระบบไฟล์ชั่วคราว การจำลองแบบที่มีอยู่ในตัว และการจำลองการร้องขอ HTTP แบบจริงในโลกแห่งความเป็นจริง</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>สำรวจบันไดเสียงเมเจอร์</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>สำรวจบันไดเสียงไมเนอร์</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>มีระบบจัดการไฟล์แบบฝังในตัวพร้อมการบีบอัดภาพโปรไฟล์อัตโนมัติและป้องกันความเป็นส่วนตัว</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>จัดการงานที่เกิดซ้ำ เช่น การทำความสะอาดและประสานข้อมูล ด้วยอินเทอร์เฟซกราฟิกที่ครอบคลุมสำหรับติดตามประวัติการดำเนินการและบันทึกการใช้งาน</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>สวัสดีโลก!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>รวมเอกสารประกอบอย่างละเอียดและตัวอย่างการใช้งานจริงเพื่อให้คุณเริ่มต้นได้อย่างรวดเร็ว</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>การจัดการไฟล์แบบบูรณาการ</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>คีย์ไม่ได้แยกจากกัน &apos;Circle of Fifths&apos; คือเข็มทิศของดนตรี ที่เผยให้เห็นลำดับของคีย์ทั้งหมด (C -&gt; G -&gt; D...) และความสัมพันธ์ทางฮาร์โมนิกของพวกมัน มันคือพิมพ์เขียวหลักสำหรับการแต่งเพลง การเรียบเรียง และการด้นสด</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>โมเดลจะได้รับการตรวจสอบความถูกต้องทั้งในด้านไคลเอนต์และเซิร์ฟเวอร์ โดยอิงตามการตั้งค่าข้อมูล</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>การรองรับผู้ให้บริการฐานข้อมูลหลายตัว</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>ดนตรีไม่ใช่เวทมนตร์ แต่เป็นการผสมผสานอันชาญฉลาดระหว่างคณิตศาสตร์ ฟิสิกส์ และรูปแบบ โปรแกรมของเราเปิดเผยรูปแบบเหล่านี้:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>การผสานระบบ OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>เล่นทำนองสุ่ม</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>การอนุญาตแบบ RBAC</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>อ่านเอกสาร</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>การออกแบบที่ตอบสนอง</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>การทดสอบการผสานระบบที่มั่นคง</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>การจัดการงานที่กำหนดเวลา</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>รวมเข้ากับผู้ให้บริการ OpenID Connect ทุกตัวได้อย่างราบรื่น พร้อมการซิงค์บทบาทอัตโนมัติ</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>การแทนที่การตั้งค่าอัจฉริยะ</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>โหมดมืดอัจฉริยะที่ปรับตัวตามการตั้งค่าระบบของผู้ใช้งาน</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>เริ่มโครงการใหม่</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>รองรับตัวแปรสภาพแวดล้อมและตั้งค่าที่เก็บในฐานข้อมูลทั้งสองแบบ โดยให้ลำดับความสำคัญอัตโนมัติแก่ตัวแปรสภาพแวดล้อมเพื่อการแทนที่อย่างราบรื่น</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>เวทมนตร์ของวงจรฟิฟธ์</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>แถบนำทางจะปรับตัวอัตโนมัติตามบทบาทและสิทธิ์ของผู้ใช้</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>ทฤษฎีอาจจะฟังดูน่าเบื่อ แต่การได้เห็นมันทำงานจริงนั้นสนุกมาก ค่าหลักของเครื่องมือนี้คือ &apos;การซิงค์แบบเรียลไทม์&apos; เมื่อคุณเลือกคีย์ใหม่ วงโครมาติก วงแห่งฟิฟธ์ คีย์เปียโน และโน้ตบรรทัดห้าเส้นจะอัปเดตทันที คุณจะเข้าใจในทันทีว่าทำไมคีย์ G Major ถึงมีชาร์ปแค่ตัวเดียว!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>นี่คือโปรเจกต์ต้นแบบ ซึ่งเราเริ่มต้นการเดินทางของนักเดินทาง...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>ตัวอย่างหน้าจอเครื่องมือ</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>ยินดีต้อนรับ</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>ยินดีต้อนรับสู่เครื่องมือทฤษฎีดนตรีเชิงโต้ตอบ เราช่วยให้คุณเชื่อมโยงแนวคิดเชิงนามธรรมของทฤษฎีดนตรี ได้แก่ สเกลโครมาติก วงกลมแห่งฟิฟธ์ และคีย์บอร์ดเปียโน เพื่อให้คุณสามารถ &apos;มองเห็น&apos; วิธีการทำงานของดนตรีได้อย่างแท้จริง</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>ทำไมดนตรีจึงถูกออกแบบมาแบบนี้?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>ทำไมต้องใช้เทมเพลต Aiursoft?</value>
   </data>
 
 </root>

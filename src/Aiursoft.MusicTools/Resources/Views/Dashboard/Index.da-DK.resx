@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Se&apos; Musikens Sprog</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>&quot;Fire-and-forget&quot;-støtte til langvarige opgaver (som emails eller AI), med en brugergrænseflade til køhåndtering, parallell behandling og afbrydelse.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>En indbygget system til adgangsstyring baseret på roller (RBAC) til detaljeret tilladelsesstyring.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>En komplet løsning til brugerautentificering og profilhåndtering.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>En fuldt responsiv layout, der ser flot ud på både desktop- og mobilenheder.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>En moderne, funktionstæt og højt udvidelsesbar grundlag til din næste webapplikation.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>AI-drevne oversættelser</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Alle afhængigheder registreres automatisk og er altid tilgængelige via konstruktør-injektion.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Automatisk mørk tilstand</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Automatisk afhængighedsinjektion</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Automatisk tidszonenhåndtering</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Automatisk, AI-drevet oversættelse til 28 sprog.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Baggrundsjobhåndtering</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Indbygget brugerstyring</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Kommer med Docker-understøttelse til forenklet og konsekvent implementering.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Udførlig dokumentation</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Forbinder alt</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Konsistensvalidering</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Dekonstruktion af det 12-tonede system</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Udvikl udelukkende i UTC, mens systemet automatisk konverterer og viser datoer i brugerens lokale tidszone.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Dockeriseret til nem installation</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Dynamisk navigation</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Skift nemt mellem databaseudbydere, herunder SQLite, MySQL, SQL Server og en i-hukommelsesdatabase til test.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Skriv integrations-tester let og nemt ved hjælp af minnebaserede databaser, midlertidige filsystemer, indbygget mockning og simulering af virkelige HTTP-anmodninger.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Udforsk Dur</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Udforsk Dur</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Funktioner et indbygget filhåndteringssystem med automatisk avatarkomprimering og privatlivsbeskyttelse.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Håndter gentagende opgaver som rydning og synkronisering med en omfattende brugergrænseflade til overvågning af udførelseshistorik og logfiler.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Hej Verden!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Inkluderer omfattende dokumentation og praktiske eksempler, så du hurtigt kan komme i gang.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Integreret filhåndtering</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonearter er ikke isolerede. &apos;Circle of Fifths&apos; er musikens kompas, som afslutter rækkefølgen af alle tonearter (C -&gt; G -&gt; D...) og deres harmoniske sammenhænge. Den er den centrale blåkopi for komposition, arrangement og improvisation.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Modeller valideres på både klient- og serversiden baseret på dataanmeldelser.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Støtte for flere databaseudbydere</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Musik er ikke magi; det er en genial kombination af matematik, fysik og mønstre. Vores værktøj afslører disse mønstre:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>OpenID Connect-integration</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Afspil tilfældig melodi</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>RBAC-autorisering</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Læs dokumentet</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Responsiv design</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Robust integrationsprøvning</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Planlagt opgavestyring</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Integrationer uden afbrydelser med enhver OpenID Connect-leverandør, med automatisk rollesynkronisering.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Smart Konfigurations-Overrides</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Smart mørk tilstand, der tilpasser sig brugerenes systemindstillinger.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Start et nyt projekt</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Støtter både miljøvariabler og databasebaserede indstillinger, med automatisk prioritet til miljøvariabler for smidige genoptagelser.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Cirklen af Kvinters Magi</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>Navigationsbaren tilpasses automatisk baseret på brugerroller og tilladelser.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori kan være tør, men at se den i aktion er sjovt. Kernen i dette værktøj er &apos;realtidssynkronisering.&apos; Når du vælger en ny toneart, opdateres den kromatiske cirkel, kvintcirklen, klaverets tangenter og nodalskriften øjeblikkeligt. Du vil med det samme forstå, hvorfor G-dur kun har ét kryds!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Dette er et skabelonprojekt, hvor vi starter rejseføreren...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Eksempel på værktøjets grænseflade</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Velkommen</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Velkommen til det interaktive musikteori-værktøj. Vi hjælper dig med at forbinde musikteoriens abstrakte koncepter – den kromatiske skala, kvintcirklen og klaverets keyboard – så du virkelig kan &apos;se&apos;, hvordan musik fungerer.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Hvorfor er musik designet på denne måde?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Hvorfor bruge Aiursoft-skabelonen?</value>
   </data>
 
 </root>

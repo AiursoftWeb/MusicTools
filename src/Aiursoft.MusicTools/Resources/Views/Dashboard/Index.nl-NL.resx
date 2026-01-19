@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Zie&apos; de Taal van Muziek</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>&quot;Fire-and-forget&quot;-ondersteuning voor langlopende taken (zoals e-mails of AI), met een GUI voor wachtrijbeheer, parallelle verwerking en annulering.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>Een ingebouwd systeem voor Role-Based Access Control (RBAC) voor gedetailleerde machtigingsbeheer.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>Een complete oplossing voor gebruikersauthenticatie en profielbeheer.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>Een volledig responsieve lay-out die er goed uit ziet op zowel desktop- als mobiele apparaten.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>Een modern, functierijk en zeer uitbreidbaar fundament voor je volgende webapplicatie.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>AI-geïntegreerde vertalingen</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Alle afhankelijkheden worden automatisch geregistreerd en altijd beschikbaar via constructorinjection.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Automatische donkere modus</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Automatische afhankelijkheidsinjectie</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Automatische tijdzonebehandeling</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Automatische, AI-gebaseerde vertaling in 28 talen.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Achtergrondtaakverwerking</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Ingebouwde gebruikersbeheer</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Kom met Docker-ondersteuning voor vereenvoudigde en consistente implementaties.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Uitgebreide documentatie</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Alles Verbinden</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Consistentievalidatie</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Deconstructie van het 12-toonssysteem</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Ontwikkel uitsluitend in UTC, terwijl het systeem data automatisch converteert en weergeeft in de lokale tijdzone van de gebruiker.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Dockerized voor eenvoudige implementatie</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Dynamische navigatiebalk</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Eenvoudig wisselen tussen databaseproviders, inclusief SQLite, MySQL, SQL Server en een in-memory database voor testdoeleinden.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Schrijf eenvoudig integratietests met behulp van in-memory databases, tijdelijke bestandssystemen, ingebouwde mocking en simulatie van werkelijke HTTP-verzoeken.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Verken Majeur</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Verken Mineur</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Heeft een ingebouwd bestandsbeheersysteem met automatische avatarcompressie en privacybescherming.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Verwerk herhalende taken zoals opschonen en synchronisatie met een uitgebreide GUI voor het bewaken van uitvoeringsgeschiedenis en logbestanden.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Hallo Wereld!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Inclusief uitgebreide documentatie en praktische voorbeelden om snel aan de slag te gaan.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Geïntegreerd bestandsbeheer</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Toonsoorten staan niet op zichzelf. De &apos;Circle of Fifths&apos; is het kompas van de muziek, dat de volgorde van alle toonsoorten (C -&gt; G -&gt; D...) en hun harmonische relaties onthult. Het is de blauwdruk voor compositie, arrangement en improvisatie.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Modellen worden gevalideerd aan zowel de client- als de serverside op basis van gegevensannotaties.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Ondersteuning voor meerdere databaseproviders</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muziek is geen magie; het is een briljante combinatie van wiskunde, natuurkunde en patronen. Onze tool onthult deze patronen:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>OpenID Connect-integratie</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Speel Willekeurige Melodie</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>RBAC-autorisatie</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Lees het document</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Responsieve ontwerp</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Robuuste integratietesting</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Geplande taakbeheer</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Naadloos integreren met elke OpenID Connect-provider, met automatische rol synchronisatie.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Slimme Configuratie-Overschrijvingen</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Slimme donkere modus die zich aanpast aan de systeeminstellingen van de gebruiker.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Een nieuw project starten</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Ondersteunt zowel omgevingsvariabelen als database-gebaseerde instellingen, met automatische voorrang aan omgevingsvariabelen voor naadloze overschrijvingen.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>De Magie van de Kwintencirkel</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>De navigatiebalk past zich automatisch aan op basis van gebruikersrollen en permissies.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Theorie kan droog zijn, maar het in actie zien is leuk. De kernwaarde van dit hulpmiddel is &apos;real-time synchronisatie&apos;. Wanneer je een nieuwe toonsoort selecteert, worden de Chromatic Circle, Circle of Fifths, pianotoetsen en notenbalk notatie onmiddellijk bijgewerkt. Je ziet meteen in waarom G majeur maar één kruis heeft!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Dit is een sjabloonproject waarin we de reiziger beginnen...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Voorbeeld van de toolinterface</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welkom</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Welkom bij het interactieve muziektheorie-instrument. Wij helpen je de abstracte concepten van muziektheorie—de chromatische toonladder, de kwintencirkel en het pianoklavier—met elkaar te verbinden, zodat je daadwerkelijk kunt &apos;zien&apos; hoe muziek werkt.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Waarom is muziek op deze manier ontworpen?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Waarom gebruik je de Aiursoft Template?</value>
   </data>
 
 </root>

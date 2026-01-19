@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&quot;اِشْهَد&quot; لُغَةَ المُوسِيقَى</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>دعم &quot;Fire-and-forget&quot; للمهام الطويلة (مثل البريد الإلكتروني أو الذكاء الاصطناعي)، يشمل واجهة رسومية لإدارة الطابور، والمعالجة المتوازية، والإلغاء.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>نظام مدمج للتحكم بالوصول بناءً على الصلاحيات (RBAC) لإدارة الصلاحيات بدرجة دقيقة.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>حل شامل لإدارة المصادقة للمستخدم وإدارة الملفات الشخصية.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>تصميم متجاوب بالكامل يظهر بشكل رائع على كل من أجهزة السطحية والأجهزة المحمولة.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>أساس حديث، غني بالميزات، وقابل للتوسيع بشكل كبير لتطبيق الويب التالي الخاص بك.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>ترجمة مدعومة بالذكاء الاصطناعي</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>جميع الاعتماديات تُسجّل تلقائيًا وتكون دائمًا متاحة عبر التغذية بالإنشاء.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>الوضع الداكن التلقائي</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>إدخال الاعتماد تلقائيًا</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>التعامل التلقائي مع نطاقات الزمن</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>ترجمة تلقائية، مدعومة بالذكاء الاصطناعي، إلى 28 لغة.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>معالجة المهام الخلفية</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>إدارة المستخدم المدمجة</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>يأتي مع دعم دوكير لDeployment مبسطة ومتزنة.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>توثيق شامل</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>ربط كل شيء</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>التحقق من الاتساق</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>تفكيك نظام الاثنتي عشرة نغمة</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>طور بشكل حصري باستخدام التوقيت العالمي الموحد (UTC) بينما يقوم النظام تلقائيًا بتحويل التواريخ وعرضها بالتوقيت المحلي للمستخدم.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>مُحَوَّل إلى Docker لتسهيل النشر</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>شريط التنقل الديناميكي</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>يمكنك بسهولة التبديل بين مزودي قواعد البيانات، بما في ذلك SQLite وMySQL وSQL Server وقاعدة بيانات داخل الذاكرة لاختبار البرامج.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>اكتب اختبارات التكامل بسهولة باستخدام قواعد بيانات الذاكرة المؤقتة، وأنظمة ملفات مؤقتة، والمحاكاة المضمنة، ومحاكاة طلبات HTTP الحقيقية.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>استكشف السلم الكبير</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>استكشف المقامات الصغيرة</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>يتميز بنظام إدارة ملفات مدمج مع ضغط تلقائي للصورة الرمزية وحماية الخصوصية.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>تعامل مع المهام الدورية مثل التنظيف والمزامنة باستخدام واجهة رسومية شاملة لمراقبة سجلات التاريخ والسجلات.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>مرحبا بالعالم!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>يشمل وثائق شاملة وأمثلة عملية للبدء بسرعة.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>إدارة الملفات المتكاملة</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>المفاتيح الموسيقية ليست منعزلة. إن &quot;دائرة الخامسات&quot; هي بوصلة الموسيقى، فهي تكشف ترتيب جميع سلالم المفاتيح (C -&gt; G -&gt; D...) وعلاقاتها التوافقية. إنها المخطط الأساسي للتأليف، والتوزيع، والارتجال.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>تتم مصادقة النماذج على الطرفين العميل والخادم بناءً على ملاحظات البيانات.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>دعم متعدد مزودي قواعد البيانات</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>الموسيقى ليست سحرًا؛ إنها مزيج رائع من الرياضيات والفيزياء والأنماط. أداتنا تكشف هذه الأنماط:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>تكامل OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>تشغيل لحن عشوائي</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>الصلاحيات القائمة على الأدوار (RBAC)</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>اقرأ المستند</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>تصميم متجاوب</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>اختبارات دمج قوية</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>إدارة المهام المجدولة</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>تتكامل بسلاسة مع أي مزود OpenID Connect، مع مزامنة تلقائية للدور.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>تجاوزات التهيئة الذكية</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>وضع داكن ذكي يتكيف مع إعدادات النظام الخاصة بالمستخدم.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>시작 مشروع جديد</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>يدعم متغيرات البيئة والإعدادات المخزنة في قاعدة البيانات، مع منح الأولوية التلقائية لمتغيرات البيئة لضمان التجاوزات السلسة.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>سحر دائرة الخامسات</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>شريط التنقل يتكيف تلقائيًا بناءً على أدوار المستخدم والصلاحيات.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>قد تكون النظرية جافة، لكن مشاهدة التطبيق العملي ممتعة. القيمة الأساسية لهذه الأداة هي &apos;المزامنة الفورية&apos;. عند اختيار مفتاح موسيقي جديد، يتم تحديث الدورة الكروماتية، ودورة الخامسات، ومفاتيح البيانو، ورموز المدرج الموسيقي على الفور. ستفهم على الفور سبب احتواء مقام G الكبير على علامة رفع واحدة فقط!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>هذا مشروع نموذجي، حيث نبدأ رحلة المavigатор...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>معاينة واجهة الأداة</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>مرحباً</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>مرحبًا بك في أداة نظرية الموسيقى التفاعلية. نحن نساعدك في ربط المفاهيم المجردة لنظرية الموسيقى — السلم الكروماتي، ودائرة الخامسات، ولوحة مفاتيح البيانو — مما يتيح لك &quot;رؤية&quot; كيفية عمل الموسيقى حقًا.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>لماذا صُمِّمت الموسيقى بهذه الطريقة؟</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>لماذا تستخدم قالب Aiursoft؟</value>
   </data>
 
 </root>

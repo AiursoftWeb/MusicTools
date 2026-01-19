@@ -51,6 +51,9 @@
   <data name="Create User" xml:space="preserve">
     <value>Створити користувача</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Панель керування</value>
+  </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Видалити роль</value>
   </data>

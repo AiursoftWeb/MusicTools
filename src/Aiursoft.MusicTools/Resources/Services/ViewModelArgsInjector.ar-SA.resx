@@ -51,6 +51,9 @@
   <data name="Create User" xml:space="preserve">
     <value>إنشاء مستخدم</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
+  </data>
   <data name="Delete Role" xml:space="preserve">
     <value>حذف الدور</value>
   </data>

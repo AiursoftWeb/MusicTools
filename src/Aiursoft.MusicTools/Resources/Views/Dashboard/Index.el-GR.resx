@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>«Δες» τη Γλώσσα της Μουσικής</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>Υποστήριξη &quot;Fire-and-forget&quot; για μακροχρόνιες εργασίες (όπως ηλεκτρονικά ταχυδρομεία ή ΤΝ), με διεπαφή χρήστη για διαχείριση ουράς, παράλληλη επεξεργασία και ακύρωση.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>Ένα ενσωματωμένο σύστημα διαχείρισης προσβάσεων με βάση τους ρόλους (RBAC) για λεπτομερή διαχείριση δικαιωμάτων.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>Μια εντελώς ενσωματωμένη λύση για την εξουσιοδότηση χρηστών και τη διαχείριση προφίλ.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>Μια πλήρως ευανάγνωστη διάταξη που φαίνεται εξαιρετικά καλή σε τόσο επιφάνεια εργασίας όσο και σε κινητά συσκευή.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>Μια σύγχρονη, πλούσια σε λειτουργίες και υψηλά εκτείσιμη βάση για την επόμενη σας εφαρμογή για το διαδίκτυο.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>Μεταφράσεις με Τεχνητή Νοημοσύνη</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Όλες οι εξαρτήσεις εγγράφονται αυτόματα και είναι πάντα διαθέσιμες μέσω εισαγωγής διαμέσου κατασκευαστή.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Αυτόματο Σκοτεινό Θέμα</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Αυτόματη Εισαγωγή Εξαρτήσεων</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Αυτόματη Χειρισμός Ζώνης Ώρας</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Αυτόματη, προωθούμενη από τεχνητή νοημοσύνη μετάφραση σε 28 γλώσσες.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Επεξεργασία εργασιών στο παρασκήνιο</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Ενσωματωμένη Διαχείριση Χρηστών</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Διαθέτει υποστήριξη για Docker για απλοποιημένη και συνεπή μεταφορά.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Λεπτομερής Εγχειρίδιο</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Σύνδεση Όλων</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Έλεγχος Συνέπειας</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Αποδόμηση του Συστήματος των 12 Φθόγγων</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Αναπτύξτε αποκλειστικά στο UTC, ενώ το σύστημα μετατρέπει και εμφανίζει αυτόματα τις ημερομηνίες στην τοπική ώρα του χρήστη.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Διαμορφωμένο με Docker για εύκολη μεταφόρτωση</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Δυναμική Γραμμή Πλοήγησης</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Εύκολη αλλαγή μεταξύ παροχέων βάσης δεδομένων, συμπεριλαμβανομένου του SQLite, MySQL, SQL Server και μιας βάσης δεδομένων στη μνήμη για δοκιμές.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Απλά και εύκολα γράψτε δοκιμές ενσωμάτωσης χρησιμοποιώντας μνήμης βάσεις δεδομένων, προσωρινά συστήματα αρχείων, ενσωματωμένη μοκάριση και πραγματική προσομοίωση αιτήσεων HTTP.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Εξερευνήστε τη Ματζόρε</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Εξερευνήστε την Ελάσσονα</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Διαθέτει σύστημα διαχείρισης αρχείων ενσωματωμένο στο σύστημα με αυτόματη συμπίεση αβατάρ και προστασία της ιδιωτικότητας.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Διαχειριστείτε επαναλαμβανόμενες εργασίες όπως καθαρισμός και συγχρονισμός με ένα εκτεταμένο GUI για την παρακολούθηση της ιστορίας εκτέλεσης και των καταγραφών.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Γεια σου Κόσμε!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Συμπεριλαμβάνει εκτενή δοκιμασία και πρακτικά παραδείγματα για να ξεκινήσετε γρήγορα.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Ολοκληρωμένη Διαχείριση Αρχείων</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Οι τόνoι δεν είναι απομονωμένοι. Ο «Κύκλος των Πέμπτων» είναι η πυξίδα της μουσικής, αποκαλύπτοντας τη σειρά όλων των τoνικών επιγραφών (C -&gt; G -&gt; D...) και τις αρμονικές τους σχέσεις. Είναι ο βασικός σχεδιασμός για τη σύνθεση, τη διασκευή και την αυτοσχεδιαστική μουσική.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Οι μοντέλα ελέγχονται σε επίπεδο πελάτη και εξυπηρετητή βάσει σημειώσεων δεδομένων.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Υποστήριξη Πολλαπλών Παρόχων Βάσης Δεδομένων</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Η μουσική δεν είναι μαγεία· είναι μια ευφυής συνδυασμός μαθηματικών, φυσικής και μοτίβων. Το εργαλείο μας αποκαλύπτει αυτά τα μοτίβα:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>Ενσωμάτωση OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Παίξε Τυχαία Μελωδία</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>Προστασία βασισμένη σε ρόλους (RBAC)</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Διαβάστε το έγγραφο</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Ευέλικτος Σχεδιασμός</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Αξιόπιστη Δοκιμή Ενοποίησης</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Διαχείριση Προγραμματισμένων Εργασιών</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Ολοκληρωμένη ενσωμάτωση με οποιοδήποτε προμηθευτή OpenID Connect, με αυτόματη συγχρονισμό ρόλων.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Έξυπνες Αντικαταστάσεις Ρυθμίσεων</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Έξυπνο σκοτεινό θέμα που προσαρμόζεται στις ρυθμίσεις του συστήματος του χρήστη.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Ξεκινήστε ένα νέο έργο</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Υποστηρίζει και τις δύο μεθόδους, μεταβλητές περιβάλλοντος και ρυθμίσεις που αποθηκεύονται σε βάση δεδομένων, με αυτόματη προτεραιότητα προς τις μεταβλητές περιβάλλοντος για ομαλές επικαλύψεις.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Η Μαγεία του Κύκλου των Πέμπτων</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>Το μενού πλοήγησης προσαρμόζεται αυτόματα βάσει των ρόλων και των επιτροπών του χρήστη.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Η θεωρία μπορεί να είναι ξηρή, αλλά το να την παρακολουθείς σε πράξη είναι διασκεδαστικό. Η βασική αξία αυτού του εργαλείου είναι ο &apos;συγχρονισμός σε πραγματικό χρόνο&apos;. Όταν επιλέγετε μια νέα τονικότητα, ο Χρωματικός Κύκλος, ο Κύκλος των Πέμπτων, τα πλήκτρα του πιάνου και ο μουσικός συμβολισμός ενημερώνονται αμέσως. Θα καταλάβετε αμέσως γιαquoi η Σολ Ματζόρε έχει μόνο ένα δίεση!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Αυτό είναι ένα πρότυπο έργο, όπου ξεκινάμε τον περιήγηση...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Καλώς ήρθατε</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Καλωσορίσατε στο διαδραστικό εργαλείο μουσικής θεωρίας. Σας βοηθάμε να συνδέσετε τις αφηρημένες έννοιες της μουσικής θεωρίας—τη Χρωματική Κλίμακα, τον Κύκλο των Πέμπτων και το πληκτρολόγιο πιάνου—επιτρέποντάς σας να «δείτε» πραγματικά πώς λειτουργεί η μουσική.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Γιατί η μουσική είναι σχεδιασμένη έτσι;</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Γιατί να χρησιμοποιήσετε το πρότυπο Aiursoft;</value>
   </data>
 
 </root>

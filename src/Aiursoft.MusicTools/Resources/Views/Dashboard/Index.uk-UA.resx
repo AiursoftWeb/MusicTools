@@ -21,11 +21,74 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>«Побачити» мову музики</value>
   </data>
+  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+    <value>Підтримка «відправив і забув» для довготривалих завдань (наприклад, електронної пошти або штучного інтелекту), із графічним інтерфейсом для керування чергою, паралельною обробкою та скасуванням.</value>
+  </data>
+  <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
+    <value>Вбудована система керування доступом на основі ролей (RBAC) для детального керування дозволами.</value>
+  </data>
+  <data name="A complete solution for user authentication and profile management." xml:space="preserve">
+    <value>Повний рішення для автентифікації користувачів та управління профілями.</value>
+  </data>
+  <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
+    <value>Повністю адаптивний макет, який гарно виглядає як на стаціонарних, так і на мобільних пристроях.</value>
+  </data>
+  <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
+    <value>Сучасна, функціональна та дуже розширювана основа для вашого наступного веб-додатку.</value>
+  </data>
+  <data name="AI-Powered Translations" xml:space="preserve">
+    <value>AI-підібрані переклади</value>
+  </data>
+  <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
+    <value>Всі залежності автоматично реєструються і завжди доступні через ін&apos;єкцію конструктора.</value>
+  </data>
+  <data name="Automatic Dark Mode" xml:space="preserve">
+    <value>Автоматичний темний режим</value>
+  </data>
+  <data name="Automatic Dependency Injection" xml:space="preserve">
+    <value>Автоматичне впровадження залежностей</value>
+  </data>
+  <data name="Automatic Time Zone Handling" xml:space="preserve">
+    <value>Автоматичне управління часовими зонами</value>
+  </data>
+  <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
+    <value>Автоматична, з використанням штучного інтелекту переклад на 28 мов.</value>
+  </data>
+  <data name="Background Job Processing" xml:space="preserve">
+    <value>Обробка фонових завдань</value>
+  </data>
+  <data name="Built-in User Management" xml:space="preserve">
+    <value>Вбудований менеджмент користувачів</value>
+  </data>
+  <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
+    <value>Містить підтримку Docker для спрощеного та узгодженого розгортання.</value>
+  </data>
+  <data name="Comprehensive Documentation" xml:space="preserve">
+    <value>Докладна документація</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>З&apos;єднання всього</value>
   </data>
+  <data name="Consistency Validation" xml:space="preserve">
+    <value>Перевірка узгодженості</value>
+  </data>
   <data name="Deconstructing the 12-Tone System" xml:space="preserve">
     <value>Деконструювання 12-тонової системи</value>
+  </data>
+  <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
+    <value>Розробляйте виключно в UTC, тоді як система автоматично перетворює та відображає дати у часовому поясі користувача.</value>
+  </data>
+  <data name="Dockerized for Easy Deployment" xml:space="preserve">
+    <value>Dockerized для легкого розгортання</value>
+  </data>
+  <data name="Dynamic Navigation Bar" xml:space="preserve">
+    <value>Динамічна панель навігації</value>
+  </data>
+  <data name="Easily switch between database providers, including SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
+    <value>Легко переключатися між постачальниками баз даних, включаючи SQLite, MySQL, SQL Server та ін-меморі додаток для тестування.</value>
+  </data>
+  <data name="Effortlessly write integration tests using in-memory databases, temporary file systems, built-in mocking, and real-world HTTP request simulation." xml:space="preserve">
+    <value>Легко пишіть інтеграційні тести, використовуючи вбудовані бази даних, тимчасові файлові системи, вбудоване мокування та симуляцію реальних HTTP-запитів.</value>
   </data>
   <data name="Explore Major" xml:space="preserve">
     <value>Дослідити мажор</value>
@@ -33,23 +96,86 @@
   <data name="Explore Minor" xml:space="preserve">
     <value>Дослідити мінор</value>
   </data>
+  <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
+    <value>Містить вбудовану систему управління файлами з автоматичною компресією аватарів та захистом приватності.</value>
+  </data>
+  <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
+    <value>Керуйте повторюваними завданнями, такими як очищення та синхронізація, за допомогою комплексного графічного інтерфейсу для моніторингу історії виконання та журналів.</value>
+  </data>
+  <data name="Hello World!" xml:space="preserve">
+    <value>Привіт Світ!</value>
+  </data>
+  <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
+    <value>Містить розгорнуту документацію та практичні приклади для швидкого початку роботи.</value>
+  </data>
+  <data name="Integrated File Management" xml:space="preserve">
+    <value>Інтегроване керування файлами</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Тональності не існують ізольовано. &apos;Коло квінт&apos; — це музичний компас, який розкриває порядок усіх ключових знаків (C -&gt; G -&gt; D...) та їх гармонійні зв&apos;язки. Це фундаментальна схема для композиції, аранжування та імпровізації.</value>
+  </data>
+  <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
+    <value>Моделі валідуються на клієнтській та серверній сторонах на основі анотацій даних.</value>
+  </data>
+  <data name="Multiple Database Provider Support" xml:space="preserve">
+    <value>Підтримка кількох постачальників баз даних</value>
   </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Музика — це не магія; це блискуче поєднання математики, фізики та закономірностей. Наш інструмент розкриває ці закономірності:</value>
   </data>
+  <data name="OpenID Connect Integration" xml:space="preserve">
+    <value>Інтеграція OpenID Connect</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Відтворити випадкову мелодію</value>
+  </data>
+  <data name="RBAC Authorization" xml:space="preserve">
+    <value>Авторизація RBAC</value>
+  </data>
+  <data name="Read the document" xml:space="preserve">
+    <value>Прочитати документ</value>
+  </data>
+  <data name="Responsive Design" xml:space="preserve">
+    <value>Адаптивний дизайн</value>
+  </data>
+  <data name="Robust Integration Testing" xml:space="preserve">
+    <value>Надійне тестування інтеграції</value>
+  </data>
+  <data name="Scheduled Task Management" xml:space="preserve">
+    <value>Планування завдань</value>
+  </data>
+  <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
+    <value>Надзвичайно легко інтегрувати з будь-яким постачальником OpenID Connect із автоматичною синхронізацією ролей.</value>
+  </data>
+  <data name="Smart Configuration Overrides" xml:space="preserve">
+    <value>Розумні перевизначення налаштувань</value>
+  </data>
+  <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
+    <value>Розумний темний режим, який адаптується до налаштувань системи користувача.</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Почати новий проект</value>
+  </data>
+  <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
+    <value>Підтримує як змінні середовища, так і налаштування, зберігані в базі даних, з автоматичним пріоритетом для змінних середовища для безперервного перевизначення.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Чарівність кола квінт</value>
   </data>
+  <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
+    <value>Навігаційна панель автоматично налаштовується залежно від ролей та дозволів користувача.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Теорія може бути сухою, але спостерігати її в дії — це цікаво. Основна цінність цього інструменту — «синхронізація в реальному часі». Коли ви обираєте нову тональність, хроматичне коло, квінтове коло, клавіші піаніно та нотний стан оновлюються миттєво. Ви одразу зрозумієте, чому в Сі мажорі лише один дієз!</value>
   </data>
+  <data name="This is a template project, where we start the voyager..." xml:space="preserve">
+    <value>Це шаблонний проект, де ми розпочинаємо підприємство...</value>
+  </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Попередній перегляд інтерфейсу інструменту</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Ласкаво просимо</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Ласкаво просимо до інтерактивного інструменту теорії музики. Ми допомагаємо вам поєднати абстрактні поняття теорії музики—Хроматичну Гаму, Квінтове Коло та клавіатуру піаніно—дозволяючи вам по-справжньому «побачити», як працює музика.</value>
@@ -62,6 +188,9 @@
   </data>
   <data name="Why is music designed this way?" xml:space="preserve">
     <value>Чому музика влаштована саме так?</value>
+  </data>
+  <data name="Why use the Aiursoft Template?" xml:space="preserve">
+    <value>Чому використовувати шаблон Aiursoft?</value>
   </data>
 
 </root>

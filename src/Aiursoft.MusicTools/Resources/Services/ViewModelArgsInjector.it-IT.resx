@@ -51,6 +51,9 @@
   <data name="Create User" xml:space="preserve">
     <value>Crea Utente</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Elimina Ruolo</value>
   </data>
