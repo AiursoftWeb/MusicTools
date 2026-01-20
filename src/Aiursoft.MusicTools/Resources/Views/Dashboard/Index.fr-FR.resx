@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Une base moderne, riche en fonctionnalités et hautement extensible pour votre prochaine application web.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Un métronome simple et fiable pour vous aider à garder le tempo.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Traductions alimentées par l&apos;IA</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Gestion des utilisateurs intégrée</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Calculez les gammes majeures et les accords à partir d&apos;une note de base.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Calculez les gammes et accords mineurs (naturelle, harmonique et mélodique).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>Calculer les intervalles musicaux entre deux notes.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Mettez votre mémoire musicale à l&apos;épreuve en répétant des mélodies.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Fourni avec le support Docker pour un déploiement simplifié et cohérent.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Gestion intégrée des fichiers</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Calculateur d&apos;intervalle</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Test d&apos;intervalle</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Les tonalités ne sont pas isolées. Le &apos;Cercle des Quintes&apos; est la boussole de la musique, révélant l&apos;ordre de toutes les armures (Do -&gt; Sol -&gt; Ré...) et leurs relations harmoniques. C&apos;est le plan directeur essentiel pour la composition, l&apos;arrangement et l&apos;improvisation.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Calculateur de gammes majeures</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Test de mémoire mélodique</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Métronome</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Calculateur mineur</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Les modèles sont validés côté client et côté serveur en fonction des annotations de données.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Prise en charge de plusieurs fournisseurs de bases de données</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Musique</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>La musique n&apos;est pas de la magie ; c&apos;est une brillante combinaison de mathématiques, de physique et de motifs. Notre outil révèle ces structures :</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools propose une collection d&apos;outils essentiels pour les musiciens et les étudiants. Explorez nos calculateurs et tests d&apos;entraînement auditif pour améliorer vos compétences musicales.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Ouvrir</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Intégration OpenID Connect</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Démarrer un nouveau projet</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Démarrer le test</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Prend en charge les variables d&apos;environnement et les paramètres stockés dans la base de données, avec une priorité automatique accordée aux variables d&apos;environnement pour des substitutions fluides.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Testez votre oreille en identifiant des intervalles musicaux.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>La Magie du Cercle des Quintes</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Aperçu de l&apos;interface de l&apos;outil</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Outils</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenue</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>Bienvenue sur MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Bienvenue dans l&apos;outil interactif de théorie musicale. Nous vous aidons à connecter les concepts abstraits de la théorie musicale — l&apos;échelle chromatique, le cercle des quintes et le clavier de piano — vous permettant de véritablement « voir » comment la musique fonctionne.</value>

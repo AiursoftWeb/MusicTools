@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Sıradışı, özellik zengini ve çok yönlü, bir sonraki web uygulamanız için sağlam bir temel.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Zaman tutmanıza yardımcı olacak basit ve güvenilir bir metronom.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Yapay Zeka Destekli Çeviriler</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Gömülü Kullanıcı Yönetimi</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Ana notaya göre major ölçekleri ve akorları hesaplayın.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Küçük ölçekleri ve akorları (doğal, harmonik ve melodik) hesapla.</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>İki nota arasındaki müzikal aralıkları hesaplayın.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Melodileri tekrarlayarak müzik hafızanızı zorlayın.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Docker desteğiyle gelir, basitleştirilmiş ve tutarlı dağıtımlar için.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Entegre Dosya Yönetimi</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Aralık Hesaplayıcı</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Interval Test</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonlar izole değildir. &apos;Beşliler Çemberi&apos;, müziğin pusulasıdır; tüm ton imzalarının (C -&gt; G -&gt; D...) sırasını ve armonik ilişkilerini ortaya koyar. Besteleme, düzenleme ve doğaçlama için temel şemadır.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Büyük Hesaplayıcı</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Melodi Bellek Testi</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Metronome</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Minör Hesaplayıcı</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modeller, veri eklemelerine dayalı olarak hem istemci hem de sunucu tarafında doğrulanır.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Çoklu Veritabanı Sağlayıcı Desteği</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Müzik</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Müzik bir sihir değildir; matematik, fizik ve desenlerin parlak bir birleşimidir. Aracımız bu desenleri ortaya çıkarır:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools, müzisyenler ve öğrenciler için temel araçlar topluluğu sunar. Müzik becerilerinizi geliştirmek için hesaplayıcılarımızı ve kulak eğitim testlerimizi keşfedin.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Aç</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect Entegrasyonu</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Yeni bir proje başlat</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Testi Başlat</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Ortam değişkenleri ve veritabanına dayalı ayarlar destekler, sorunsuz geçişler için otomatik olarak ortam değişkenlerine öncelik verilir.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Müziksel aralıkları tanımlayarak kulağınızı test edin.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Beşliler Çemberinin Büyüsü</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Arayüz Önizlemesi</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Araçlar</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Hoşgeldiniz</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>MusicTools&apos;a Hoş Geldiniz</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Etkileşimli müzik teorisi aracına hoş geldiniz. Müzik teorisinin soyut kavramlarını—Kromatik Dizi, Beşliler Çemberi ve piyano klavyesi—birbirine bağlamanıza yardımcı olarak, müziğin nasıl işlediğini gerçekten &apos;görmenizi&apos; sağlıyoruz.</value>

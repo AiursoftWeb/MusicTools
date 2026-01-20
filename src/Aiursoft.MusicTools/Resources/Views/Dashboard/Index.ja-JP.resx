@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>次回のWebアプリケーション用のモダンで機能豊富かつ高拡張性の基盤です。</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>シンプルで信頼性の高いメトロノームで、正確なリズムを保つお手伝いをします。</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI対応翻訳</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>組み込みユーザー管理</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>ルートノートに基づいて主要スケールとコードを計算します。</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>マイナー音階とコードを計算する（自然音階、和音音階、メロディ音階）。</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>2つの音の間の音程を計算します。</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>メロディーを繰り返して、あなたの音楽記憶力を試しましょう。</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Dockerサポートを備えており、シンプルで一貫性のあるデプロイが可能になります。</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>統合ファイル管理</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>インターバル計算機</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>音程テスト</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>調は孤立した存在ではありません。『五度圏』は音楽の羅針盤であり、すべての調号（C → G → D...）の順序とそれらの和声的関係を明らかにします。それは作曲、編曲、即興演奏のための核心となる設計図です。</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>メジャー計算機</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>メロディーメモリーテスト</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>メトロノーム</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>マイナー計算機</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>モデルは、データ注釈に基づいて、クライアントおよびサーバーの両方で検証されます。</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>複数のデータベースプロバイダーサポート</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>音楽</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音楽は魔法ではありません。それは数学、物理学、パターンの見事な組み合わせなのです。私たちのツールはこれらのパターンを明らかにします：</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicToolsは音楽家や学生のための必須ツールのコレクションを提供しています。計算機と聴覚訓練テストを活用して、あなたの音楽スキルを向上させましょう。</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>開く</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect 統合</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>新しいプロジェクトの開始</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>テスト開始</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>環境変数とデータベースベースの設定の両方をサポートしており、環境変数に自動的に優先順位が与えられ、スムーズな上書きが可能になります。</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>音程を聞き分けることで耳を鍛えましょう。</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圏の魔法</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>ツールインターフェースのプレビュー</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>ツール</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>ようこそ</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>MusicToolsへようこそ</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>対話型音楽理論ツールへようこそ。このツールでは、音楽理論の抽象的な概念—半音階（Chromatic Scale）、五度圏（Circle of Fifths）、ピアノキーボード—を結びつけ、音楽の仕組みを本当の意味で「視覚的」に理解できるよう支援します。</value>

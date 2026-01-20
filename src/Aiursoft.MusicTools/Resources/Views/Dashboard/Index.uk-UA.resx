@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Сучасна, функціональна та дуже розширювана основа для вашого наступного веб-додатку.</value>
   </data>
+  <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
+    <value>Простий і надійний метроном, щоб допомогти вам тримати ритм.</value>
+  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI-підібрані переклади</value>
   </data>
@@ -59,6 +62,18 @@
   </data>
   <data name="Built-in User Management" xml:space="preserve">
     <value>Вбудований менеджмент користувачів</value>
+  </data>
+  <data name="Calculate major scales and chords based on a root note." xml:space="preserve">
+    <value>Обчислити великі лади та акорди на основі основного ноти.</value>
+  </data>
+  <data name="Calculate minor scales and chords (natural, harmonic, and melodic)." xml:space="preserve">
+    <value>Розрахувати мінорні гамі та акорди (природні, гармонійні та мелодичні).</value>
+  </data>
+  <data name="Calculate musical intervals between two notes." xml:space="preserve">
+    <value>Обчислити музичні інтервали між двома нотами.</value>
+  </data>
+  <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
+    <value>Викличте свою музичну пам&apos;ять, повторюючи мелодії.</value>
   </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Містить підтримку Docker для спрощеного та узгодженого розгортання.</value>
@@ -111,8 +126,26 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Інтегроване керування файлами</value>
   </data>
+  <data name="Interval Calculator" xml:space="preserve">
+    <value>Калькулятор інтервалів</value>
+  </data>
+  <data name="Interval Test" xml:space="preserve">
+    <value>Тест інтервалів</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Тональності не існують ізольовано. &apos;Коло квінт&apos; — це музичний компас, який розкриває порядок усіх ключових знаків (C -&gt; G -&gt; D...) та їх гармонійні зв&apos;язки. Це фундаментальна схема для композиції, аранжування та імпровізації.</value>
+  </data>
+  <data name="Major Calculator" xml:space="preserve">
+    <value>Калькулятор мажорних акордів</value>
+  </data>
+  <data name="Melody Memory Test" xml:space="preserve">
+    <value>Тест пам&apos;яті мелодії</value>
+  </data>
+  <data name="Metronome" xml:space="preserve">
+    <value>Метроном</value>
+  </data>
+  <data name="Minor Calculator" xml:space="preserve">
+    <value>Мінорний калькулятор</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Моделі валідуються на клієнтській та серверній сторонах на основі анотацій даних.</value>
@@ -120,8 +153,17 @@
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Підтримка кількох постачальників баз даних</value>
   </data>
+  <data name="Music" xml:space="preserve">
+    <value>Музика</value>
+  </data>
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Музика — це не магія; це блискуче поєднання математики, фізики та закономірностей. Наш інструмент розкриває ці закономірності:</value>
+  </data>
+  <data name="MusicTools provides a collection of essential tools for musicians and students. Explore our calculators and ear training tests to enhance your musical skills." xml:space="preserve">
+    <value>MusicTools надає збірку необхідних інструментів для музикантів та студентів. Ознайомтеся з нашими калькуляторами та тестами на розвиток слуху, щоб покращити свої музичні навички.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Відкрити</value>
   </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Інтеграція OpenID Connect</value>
@@ -156,8 +198,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Почати новий проект</value>
   </data>
+  <data name="Start Test" xml:space="preserve">
+    <value>Почати тест</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Підтримує як змінні середовища, так і налаштування, зберігані в базі даних, з автоматичним пріоритетом для змінних середовища для безперервного перевизначення.</value>
+  </data>
+  <data name="Test your ear by identifying musical intervals." xml:space="preserve">
+    <value>Протестуйте свій слух, визначаючи музичні інтервали.</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Чарівність кола квінт</value>
@@ -174,8 +222,14 @@
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Попередній перегляд інтерфейсу інструменту</value>
   </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Інструменти</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Ласкаво просимо</value>
+  </data>
+  <data name="Welcome to MusicTools" xml:space="preserve">
+    <value>Ласкаво просимо до MusicTools</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Ласкаво просимо до інтерактивного інструменту теорії музики. Ми допомагаємо вам поєднати абстрактні поняття теорії музики—Хроматичну Гаму, Квінтове Коло та клавіатуру піаніно—дозволяючи вам по-справжньому «побачити», як працює музика.</value>
