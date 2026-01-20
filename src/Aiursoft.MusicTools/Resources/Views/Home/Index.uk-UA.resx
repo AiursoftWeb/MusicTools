@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Бачте&apos; мову музики</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Безкоштовно та з відкритим вихідним кодом</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Підключення всього</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Музика — це не магія; це чудова суміш математики, фізики та закономірностей. Наш інструмент розкриває ці закономірності:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools — це безкоштовний програмний продукт. Ми віримо, що інструменти навчання музичній теорії мають бути доступними для всіх. Ви можете знайти наш вихідний код на GitLab, перевірити його, а навіть запустити власну копію!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Відтворити випадкову мелодію</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Самостійна установка</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Магія кола п&apos;ятниць</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Попередній перегляд інтерфейсу інструменту</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Переглянути вихідний код</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Ласкаво просимо до інтерактивного інструменту з теорії музики. Ми допомагаємо вам з&apos;єднати абстрактні поняття музики — Хроматичний стрій, Круг п’ятниць та клавіатуру фортепіано — щоб ви справді могли &apos;побачити&apos;, як працює музика.</value>

@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>“看”懂音乐的语言</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% 免费且开源</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>连接一切</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音乐并非魔法；它是一种精妙的数学、物理和规律的结合。我们的工具揭示了这些规律：</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools 是一款免费软件。我们相信，音乐教育工具应当对每个人开放可用。您可以在 GitLab 上找到我们的源代码，进行审查，甚至自行托管实例！</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>播放随机旋律</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>自托管</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圈的奥秘</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>工具界面预览</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>查看源代码</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>欢迎使用交互式音乐理论工具。我们帮助您将音乐理论的抽象概念——半音阶、五度圈和钢琴键盘——联系起来，让您真正“看”懂音乐的运作原理。</value>

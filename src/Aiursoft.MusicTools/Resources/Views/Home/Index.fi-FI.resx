@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&quot;Näe&quot; musiikin kieltä</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100 % ilmaista ja avoimen lähdekoodin</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Yhdistämällä kaiken</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Musiikki ei ole magia; se on loistava yhdistelmä matematiikasta, fysiikasta ja malleista. Työkalumme paljastaa nämä mallit:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools on ilmaista ohjelmistoa. Uskomme, että musiikin opetusvälineet tulisi olla saatavilla kaikille. Voit etsiä lähdekoodimme GitLabista, tarkistaa sen ja jopa käynnistää omansa instanssin!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Toista satunnainen sävelmä</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Omistuspalvelu</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Ympyrän viidesiänen magia</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Työkalun käyttöliittymän esikatselu</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Näytä lähdekoodi</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Tervetuloa interaktiiviseen musiikin teorian työkaluun. Autamme sinua yhdistämään musiikin teorian abstraktit käsitteet — kromatisen skaalan, viideskierroksen ja pianon näppäimet — mahdollistaen sinun todella &apos;nähdä&apos;, kuinka musiikki toimii.</value>

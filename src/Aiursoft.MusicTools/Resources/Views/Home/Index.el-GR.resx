@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Βλέπε&apos; τη γλώσσα της μουσικής</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Δωρεάν &amp; Ανοιχτού Κώδικα</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Συνδέοντας Όλα</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Η μουσική δεν είναι μαγεία· είναι μια θαυμάσια συνδυασμός μαθηματικών, φυσικής και μοτίβων. Το εργαλείο μας αποκαλύπτει αυτά τα μοτίβα:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>Το MusicTools είναι μια δωρεάν εφαρμογή. Πιστεύουμε ότι τα εργαλεία εκπαίδευσης στη μουσική θα πρέπει να είναι προσβάσιμα για όλους. Μπορείτε να βρείτε τον πηγαίο κώδικά μας στο GitLab, να τον ελέγξετε και ακόμα να εκτελέσετε τη δική σας εκδοχή!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Αναπαραγωγή Τυχαίας Μελωδίας</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Αυτοδιαχείριση</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Η μαγεία του Κύκλου των Πέντετων</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Προβολή Πηγής</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Καλώς ήρθατε στο διαδραστικό εργαλείο θεωρίας μουσικής. Βοηθούμε στη σύνδεση των αφηρημένων εννοιών της θεωρίας μουσικής — της Χρωματικής Κλίμακας, του Κύκλου των Πέντε, και του πιάνου — επιτρέποντας σας να &apos;δείτε&apos; πραγματικά πώς λειτουργεί η μουσική.</value>

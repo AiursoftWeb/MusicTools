@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;เห็น&apos; ภาษาของดนตรี</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% ฟรีและเปิดเผยโค้ด</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>เชื่อมทุกอย่างเข้าด้วยกัน</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>ดนตรีไม่ใช่เวทมนตร์; มันคือการรวมกันอย่างยอดเยี่ยมของคณิตศาสตร์ ฟิสิกส์ และรูปแบบต่างๆ เครื่องมือของเราเผยให้เห็นรูปแบบเหล่านี้:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools เป็นซอฟต์แวร์ฟรี พวกเราเชื่อว่าเครื่องมือการเรียนรู้ดนตรีควรเข้าถึงได้สำหรับทุกคน คุณสามารถค้นหาโค้ดต้นฉบับของเราได้ที่ GitLab ตรวจสอบมันได้ และแม้แต่โฮสต์ตัวเองก็ได้!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>เล่นทำนองสุ่ม</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>โฮสต์เอง</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>ความมหัศจรรย์ของวงกลมของห้า</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>ตัวอย่างการดูอินเทอร์เฟซเครื่องมือ</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>ดูรหัสแหล่งที่มา</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>ยินดีต้อนรับสู่เครื่องมือทฤษฎีดนตรีแบบโต้ตอบ เราช่วยให้คุณเชื่อมโยงแนวคิดเชิงนามธรรมของทฤษฎีดนตรี—สเกลโครมาติก สเกลวงกลมของห้าทอน และคีย์เปียโน—ทำให้คุณสามารถ &quot;เห็น&quot; ได้อย่างแท้จริงว่าดนตรีทำงานอย่างไร</value>

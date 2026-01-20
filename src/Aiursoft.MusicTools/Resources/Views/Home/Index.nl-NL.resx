@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Zie&apos; de taal van de muziek</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Gratis &amp; Open Source</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Alles Verbinden</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muziek is geen magie; het is een briljante combinatie van wiskunde, natuurkunde en patronen. Onze tool onthult deze patronen:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools is een stuk gratis software. We geloven dat muzieleducatietools voor iedereen toegankelijk moeten zijn. Je kunt onze broncode vinden op GitLab, deze controleren en zelfs je eigen instantie hosten!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Willekeurige melodie afspelen</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Zelf hosten</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>De magie van de vijfde cirkel</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Voorbeeld van hulpmiddelinterface</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Bekijk broncode</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Welkom bij het interactieve muziektheoriehulpmiddel. Wij helpen je de abstracte concepten van muziektheorie—de Chromatische Toonladder, de Vijfde Cirkel en het piano-toetsenbord—te verbinden, zodat je werkelijk &apos;ziet&apos; hoe muziek werkt.</value>

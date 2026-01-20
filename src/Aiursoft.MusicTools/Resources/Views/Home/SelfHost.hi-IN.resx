@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="About MusicTools" xml:space="preserve">
+      <data name=".NET 10 SDK" xml:space="preserve">
+    <value>.NET 10 SDK</value>
+  </data>
+  <data name="About MusicTools" xml:space="preserve">
     <value>संगीत उपकरणों के बारे में</value>
   </data>
   <data name="Always create a personal fork before submitting PRs." xml:space="preserve">
@@ -65,6 +68,9 @@
   </data>
   <data name="MusicTools is a project built with ASP.NET Core that provides various music-related tools and features. Deploy this on your server, open MusicTools in your browser, and access music education tools instantly." xml:space="preserve">
     <value>MusicTools एक प्रोजेक्ट है जो ASP.NET Core के साथ बनाया गया है जो विभिन्न संगीत संबंधी उपकरणों और विशेषताओं को प्रदान करता है। इसे अपने सर्वर पर डेप्लॉय करें, ब्राउज़र में MusicTools खोलें, और संगीत शिक्षा के उपकरणों तक तुरंत पहुंचें।</value>
+  </data>
+  <data name="Node.js" xml:space="preserve">
+    <value>Node.js</value>
   </data>
   <data name="Open the `.sln` file." xml:space="preserve">
     <value>.sln` फ़ाइल खोलें।</value>

@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Veja&apos; a Linguagem da Música</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Gratuito &amp; de Código Aberto</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>A conectar tudo</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>A música não é magia; é uma combinação brilhante de matemática, física e padrões. A nossa ferramenta revela estes padrões:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>O MusicTools é um software livre. Acreditamos que as ferramentas de educação musical devem ser acessíveis a todos. Pode encontrar o nosso código fonte no GitLab, analisá-lo e até executar a sua própria instância!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Reproduzir Melodia Aleatória</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Auto-Hospedar</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>A Magia do Círculo dos Quintos</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Pré-visualização da Interface da Ferramenta</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Ver Código Fonte</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Bem-vindo à ferramenta interativa de teoria musical. Ajudamo-lo a ligar os conceitos abstratos da teoria musical — a Escala Cromática, o Círculo dos Quintos e o teclado do piano — permitindo-lhe verdadeiramente &apos;ver&apos; como a música funciona.</value>

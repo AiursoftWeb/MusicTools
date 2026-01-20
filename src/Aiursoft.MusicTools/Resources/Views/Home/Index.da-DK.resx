@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Se&apos; sproget i musikken</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Gratis &amp; Åben Kilde</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Forbinder alt</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Musik er ikke magi; det er en glimrende kombination af matematik, fysik og mønstre. Vores værktøj afslører disse mønstre:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools er et stykke fri software. Vi tror, at musikundervisningsværktøjer bør være tilgængelige for alle. Du kan finde vores kildekode på GitLab, gennemgå den, og selv vælge at hoste din egen instans!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Afspil tilfældig melodi</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Selvhost</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Den magiske cirkel af femtonder</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Værktøjsgrensesnit forhåndsvisning</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Vis kildekode</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Velkommen til den interaktive musikteori-værktøj. Vi hjælper dig med at forbinde de abstrakte koncepter inden for musikteori – den chromatiske skala, cirklen af femtedele og piano-tastaturet – så du virkelig kan &apos;se&apos;, hvordan musik fungerer.</value>

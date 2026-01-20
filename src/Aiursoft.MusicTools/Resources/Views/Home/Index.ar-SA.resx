@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;شَاهِد&apos; لغة الموسيقى</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% مجاني وشفاف</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>ربط كل شيء</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>الموسيقى ليست سحرًا؛ بل هي مزيج رائع من الرياضيات والفيزياء والنماذج. أداتنا تكشف هذه النماذج:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools هو برنامج مجاني. نحن نؤمن بأن أدوات تعليم الموسيقى يجب أن تكون متاحة للجميع. يمكنك العثور على كودنا المصدري على GitLab، ومراجعته، وحتى تشغيل نسخة خاصة بك!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>تشغيل اللحن العشوائي</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>استضافة ذاتية</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>سحر دائرة الأوتار الخامسة</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>معاينة واجهة الأداة</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>عرض المصدر</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>مرحبًا بك في أداة نظرية الموسيقى التفاعلية. نساعدك على ربط المفاهيم الافتراضية في نظرية الموسيقى—المقياس الكروي، دائرة الأرباع، ولوحة مفاتيح البيانو—مما يمكّنك من رؤية حقيقية لكيفية عمل الموسيقى.</value>
