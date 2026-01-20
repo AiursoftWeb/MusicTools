@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>音楽の言語を「見る」</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% フリー &amp; オープンソース</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>すべてをつなげる</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音楽は魔法ではない。それは数学、物理学、そしてパターンの素晴らしい組み合わせなのだ。私たちのツールがこれらのパターンを明らかにする。</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicToolsは無料のソフトウェアです。音楽教育ツールは誰にでも利用可能であるべきだと私たちは信じています。GitLabでソースコードを確認でき、検証することも、自前のインスタンスをホストすることもできます！</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>ランダムなメロディを再生</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>セルフホスト</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圈の魔法</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>ツールインターフェースプレビュー</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>ソースを表示</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>インタラクティブな音楽理論ツールへようこそ。私たちは、音楽理論の抽象的な概念——音階、五度の輪、ピアノ鍵盤——を結びつけることで、音楽がどのように機能しているかを本当に「見る」ことができるようになります。</value>

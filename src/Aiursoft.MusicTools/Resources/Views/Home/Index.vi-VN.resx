@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Hãy nhìn&apos; ngôn ngữ của âm nhạc</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Miễn phí &amp; Mã nguồn mở</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Kết Nối Mọi Thứ</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Âm nhạc không phải là phép màu; đó là sự kết hợp tuyệt vời giữa toán học, vật lý và các mẫu hình. Công cụ của chúng tôi tiết lộ những mẫu hình này:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools là một phần mềm miễn phí. Chúng tôi tin rằng các công cụ giáo dục âm nhạc nên được mọi người tiếp cận dễ dàng. Bạn có thể tìm thấy mã nguồn của chúng tôi trên GitLab, kiểm tra nó và thậm chí tự lưu trữ một phiên bản riêng của mình!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Phát giai điệu ngẫu nhiên</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Tự host</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Điều kỳ diệu của Vòng năm thứ năm</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Xem trước giao diện công cụ</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Xem Mã Nguồn</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Chào mừng bạn đến với công cụ lý thuyết âm nhạc tương tác. Chúng tôi giúp bạn kết nối các khái niệm trừu tượng của lý thuyết âm nhạc—Thang âm chromatic, Vòng năm thứ, và bàn phím piano—giúp bạn thực sự &apos;nhìn thấy&apos; cách âm nhạc hoạt động.</value>

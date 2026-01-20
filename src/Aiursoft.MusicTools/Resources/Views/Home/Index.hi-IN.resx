@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;देखें&apos; संगीत की भाषा</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% मुफ्त और ओपन सोर्स</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>सब कुछ कनेक्ट करना</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>संगीत जादू नहीं है; यह गणित, भौतिकी और पैटर्न का एक अद्भुत संयोजन है। हमारा टूल इन पैटर्न को उजागर करता है:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools एक मुफ्त सॉफ्टवेयर है। हम विश्वास करते हैं कि संगीत शिक्षा के उपकरण हर किसी के लिए उपलब्ध होने चाहिए। आप हमारा स्रोत कोड GitLab पर पा सकते हैं, इसकी समीक्षा कर सकते हैं, और यहां तक कि अपनी अपनी प्रतिलिपि भी स्थापित कर सकते हैं!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>यादृच्छिक धुन प्ले करें</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>स्वयं होस्ट करें</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>पांचवें के वृत्त का जादू</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>टूल इंटरफेस प्रीव्यू</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>स्रोत देखें</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>संगीत सिद्धांत उपकरण में आपका स्वागत है। हम आपकी संगीत सिद्धांत की अमूर्त अवधारणाओं—क्रोमैटिक स्केल, फाइफ्थ्स का सर्किल, और पियानो की कीबोर्ड—को जोड़ने में मदद करते हैं, जिससे आप सचमुच &apos;देख सकें&apos; कि संगीत कैसे काम करता है।</value>

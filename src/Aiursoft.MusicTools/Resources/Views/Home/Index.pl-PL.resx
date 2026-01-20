@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Zobacz&apos; język muzyki</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% darmowy i z otwartym kodem źródłowym</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Łączenie wszystkiego</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muzyka nie jest magią; to genialne połączenie matematyki, fizyki i wzorców. Nasz narzędzie ujawnia te wzorce:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools to oprogramowanie open source. Uważamy, że narzędzia do nauki muzyki powinny być dostępne dla wszystkich. Możesz znaleźć nasz kod źródłowy na GitLab, przeprowadzić jego audyt i nawet uruchomić własną instancję!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Odtwórz losowy melodię</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Samodzielne hostowanie</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Magia Koła Piątek</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Podgląd interfejsu narzędzia</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Zobacz kod źródłowy</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Witamy w interaktywnym narzędziu do teorii muzyki. Pomagamy Ci połączyć abstrakcyjne pojęcia teorii muzyki – Skalę Chromatyczną, Okrąg Piątek i klawiaturę fortepianu – umożliwiając Ci prawdziwe „zobaczenie”, jak działa muzyka.</value>

@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;Vezi&apos; limba muzicii</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Gratuit &amp; Cod Deschis</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Conectarea Tuturor</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Muzica nu este magie; este o combinație minunată de matematică, fizică și modele. Instrumentul nostru dezvăluie aceste modele:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools este un software gratuit. Credem că instrumentele de învățare a muzicii ar trebui să fie accesibile pentru toată lumea. Poți găsi codul sursă la GitLab, îl poți verifica și chiar să îți găsești propria instanță!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Redă melodie aleatorie</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Autogăzduire</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Magia Cercului Cincimilor</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Previzualizare interfață instrument</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Vizualizează Codul Sursă</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Bine ați venit la instrumentul interactiv de teorie muzicală. Vă ajutăm să legați conceptele abstracte ale teoriei muzicale — Scala cromatică, Cercul cvintelor și tastatura pianului — permițându-vă să „vedeți” cu adevărat cum funcționează muzica.</value>

@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&quot;Müziğin Dilini &apos;Gör&apos; &quot;</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100% Ücretsiz &amp; Açık Kaynak</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Her Şeyi Bağlantı Kurmak</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Müzik sihir değil; matematik, fizik ve desenlerin harika bir birleşimi. Aracımız bu desenleri ortaya çıkarıyor:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools, ücretsiz bir yazılımdır. Müzik eğitim araçlarının herkesin erişimine açık olması gerektiğine inanıyoruz. Kaynak kodumuzu GitLab&apos;da bulabilir, denetleyebilir ve hatta kendi sunucunuzu da barındırabilirsiniz!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Rastgele Melodi Oynat</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Kendi Sunucunu Kur</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Beşlerin Dairesinin Büyüsü</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Araç Arayüzü Ön İzlemesi</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Kaynakları Görüntüle</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Etkileşimli müzik teorisi aracına hoş geldiniz. Müzik teorisinin soyut kavramlarını—Kromatik Ölçek, Beşli Döngü ve piyano klavyesi—bağlantılarla birleştirerek müzik nasıl işlediğini gerçekten &apos;görmeyi&apos; sağlıyoruz.</value>

@@ -21,6 +21,9 @@
       <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
     <value>&apos;See&apos; die Sprache der Musik</value>
   </data>
+  <data name="100% Free &amp; Open Source" xml:space="preserve">
+    <value>100 % frei &amp; Open Source</value>
+  </data>
   <data name="Connecting Everything" xml:space="preserve">
     <value>Alles verbinden</value>
   </data>
@@ -39,8 +42,14 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Musik ist kein Zauber; es ist eine brillante Kombination aus Mathematik, Physik und Mustern. Unser Tool zeigt diese Muster auf:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools ist eine kostenlose Software. Wir glauben, dass Musik-Lernwerkzeuge für alle zugänglich sein sollten. Sie können unseren Quellcode auf GitLab finden, ihn überprüfen und sogar Ihre eigene Instanz hosten!</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Zufällige Melodie abspielen</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Selbst hosten</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Die Magie des Fünftelkreises</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Werkzeug-Schnittstellen-Vorschau</value>
+  </data>
+  <data name="View Source" xml:space="preserve">
+    <value>Quellcode anzeigen</value>
   </data>
   <data name="Welcome to the interactive music theory tool. We help you connect the abstract concepts of music theory—the Chromatic Scale, the Circle of Fifths, and the piano keyboard—allowing you to truly &apos;see&apos; how music works." xml:space="preserve">
     <value>Willkommen beim interaktiven Musiktheorie-Tool. Wir helfen Ihnen, die abstrakten Konzepte der Musiktheorie – die Chromatische Skala, den Quintenzirkel und die Klaviatur – miteinander zu verbinden, sodass Sie Musik wirklich &apos;sehen&apos; können.</value>
