@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>การเข้าถึงถูกปฏิเสธ</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>การตั้งค่าบัญชี</value>
   </data>
   <data name="Admin" xml:space="preserve">
@@ -35,6 +38,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>งานพื้นหลัง</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>คำขอผิดพลาด</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>เปลี่ยนรูปโปรไฟล์</value>
@@ -93,11 +99,17 @@
   <data name="Info" xml:space="preserve">
     <value>ข้อมูล</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>ข้อผิดพลาดของเซิร์ฟเวอร์ภายใน</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>เครื่องคำนวณช่วงเสียง</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>การทดสอบช่วงเสียง</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>การถูปิดใช้งาน</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>เข้าสู่ระบบ</value>
@@ -120,8 +132,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>เครื่องคำนวณคีย์ไมเนอร์</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>ตัวแสดงผลทฤษฎีดนตรี</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>เครื่องมือด้านดนตรี</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>ไม่พบ</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>รายละเอียดสิทธิ์การเข้าถึง</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>สิทธิ์การใช้งาน</value>
@@ -146,6 +167,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>บทบาท</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>โฮสต์เอง</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>ตั้งค่าเซิร์ฟเวอร์ของตนเอง</value>

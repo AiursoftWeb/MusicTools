@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Access Denied</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Amministratore</value>
   </data>
   <data name="Administration" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>Lavori in background</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Richiesta non valida</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Cambia Avatar</value>
@@ -90,11 +96,17 @@
   <data name="Info" xml:space="preserve">
     <value>Informazioni</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Errore del server interno</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Calcolatore di Intervalli</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Test sugli intervalli</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Blocco</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Accedi</value>
@@ -117,8 +129,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Calcolatore di Scale Minori</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>Visualizzatore di Teoria Musicale</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>Strumenti Musicali</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Non trovato</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Dettagli autorizzazioni</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Permessi</value>
@@ -143,6 +164,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Ruoli</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Ospita tu stesso</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>Autodistribuisci un nuovo server</value>

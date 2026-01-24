@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Acces interzis</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>Sarcini în fundal</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Cerere invalidă</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Schimbă Avatarul</value>
@@ -90,11 +96,17 @@
   <data name="Info" xml:space="preserve">
     <value>Informații</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Eroare interne a serverului</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Calculator de Intervale</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Test de interval</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Blocare</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Autentificare</value>
@@ -117,8 +129,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Calculator de acorduri minore</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>Visualizator Teorie Muzicală</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>Instrumente Muzicale</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Nu a fost găsit</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Detalii permisiuni</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Permisiuni</value>
@@ -143,6 +164,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roluri</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Autogestionare</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>Găzduire auto pentru un server nou</value>
