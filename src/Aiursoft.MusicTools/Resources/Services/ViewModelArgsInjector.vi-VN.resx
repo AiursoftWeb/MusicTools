@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Truy cập bị từ chối</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>Cài đặt Tài khoản</value>
   </data>
   <data name="Admin" xml:space="preserve">
@@ -35,6 +38,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>Các tác vụ nền</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Yêu cầu sai</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Thay đổi Ảnh đại diện</value>
@@ -93,11 +99,17 @@
   <data name="Info" xml:space="preserve">
     <value>Thông tin</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Lỗi máy chủ nội bộ</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Máy Tính Khoảng Cách</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Kiểm tra quãng</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Khóa tài khoản</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Đăng nhập</value>
@@ -120,8 +132,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Máy Tính Âm Giai Thứ</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>Trình hiển thị lý thuyết âm nhạc</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>Công cụ Âm nhạc</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Không tìm thấy</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Chi tiết quyền hạn</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Quyền hạn</value>
@@ -146,6 +167,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Vai trò</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Tự host</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>Tự host một máy chủ mới</value>

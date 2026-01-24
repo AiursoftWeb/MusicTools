@@ -85,6 +85,16 @@ public class ViewModelArgsInjector(
         _ = localizer["Global Settings"];
     
         _ = localizer["Dashboard"];
+    
+        _ = localizer["Access Denied"];
+        _ = localizer["Bad Request"];
+        _ = localizer["Internal Server Error"];
+        _ = localizer["Lockout"];
+        _ = localizer["Music Theory Visualizer"];
+        _ = localizer["Not Found"];
+        _ = localizer["Permission Details"];
+        _ = localizer["Register"];
+        _ = localizer["Self Host"];
     }
 
     public void InjectSimple(

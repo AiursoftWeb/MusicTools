@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Dostęp zabroniony</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>Zadania w tle</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Błąd żądania</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Zmień awatar</value>
@@ -90,11 +96,17 @@
   <data name="Info" xml:space="preserve">
     <value>Informacje</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Wewnętrzny błąd serwera</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Kalkulator Interwałów</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Test interwałów</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Blokada</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Zaloguj się</value>
@@ -117,8 +129,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Kalkulator Minor</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>Wizualizator Teorii Muzyki</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>Narzędzia Muzyczne</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Nie znaleziono</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Szczegóły uprawnień</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Uprawnienia</value>
@@ -143,6 +164,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Role</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Samodzielne hostowanie</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>Samodzielnie hostuj nowy serwer</value>

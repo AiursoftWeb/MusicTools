@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Akses Ditolak</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>Pekerjaan Latar Belakang</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Permintaan Salah</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Ubah Avatar</value>
@@ -90,11 +96,17 @@
   <data name="Info" xml:space="preserve">
     <value>Informasi</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Kesalahan Server Internal</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Kalkulator Interval</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Tes Interval</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Kunci Keluar</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Masuk</value>
@@ -117,8 +129,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>Kalkulator Minor</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>Visualizer Teori Musik</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>Alat Musik</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Tidak Ditemukan</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Detail Izin</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Izin</value>
@@ -143,6 +164,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Peran</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Host Sendiri</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>Sendiri Host Server Baru</value>

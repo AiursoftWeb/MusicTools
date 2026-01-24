@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>पहुँच अस्वीकृत</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>प्रशासक</value>
   </data>
   <data name="Administration" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>बैकग्राउंड जॉब्स</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>खराब अनुरोध</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>अवतार बदलें</value>
@@ -90,11 +96,17 @@
   <data name="Info" xml:space="preserve">
     <value>जानकारी</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>आ interनल सर्वर त्रुटि</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>अंतराल कैलकुलेटर</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>अंतराल परीक्षण</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>लॉकआउट</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>लॉगिन</value>
@@ -117,8 +129,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>माइनर कैलकुलेटर</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>संगीत सिद्धांत विजुअलाइज़र</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>संगीत उपकरण</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>नहीं मिला</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>अनुमति विवरण</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>अनुमतियाँ</value>
@@ -143,6 +164,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>भूमिकाएँ</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>सेल्फ होस्ट</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>एक नया सर्वर सेल्फ होस्ट करें</value>

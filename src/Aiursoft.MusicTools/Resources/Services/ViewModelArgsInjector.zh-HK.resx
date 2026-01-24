@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>存取被拒</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>帳戶設定</value>
   </data>
   <data name="Admin" xml:space="preserve">
@@ -35,6 +38,9 @@
   </data>
   <data name="Background Jobs" xml:space="preserve">
     <value>後台工作</value>
+  </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>錯誤請求</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>更改頭像</value>
@@ -93,11 +99,17 @@
   <data name="Info" xml:space="preserve">
     <value>資訊</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>內部伺服器錯誤</value>
+  </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>音程計算機</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>音程測試</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>帳戶暫時停用</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>登入</value>
@@ -120,8 +132,17 @@
   <data name="Minor Calculator" xml:space="preserve">
     <value>小調計算器</value>
   </data>
+  <data name="Music Theory Visualizer" xml:space="preserve">
+    <value>音樂理論視覺化工具</value>
+  </data>
   <data name="Music Tools" xml:space="preserve">
     <value>音樂工具</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>找不到</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>權限詳情</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>權限</value>
@@ -146,6 +167,9 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>角色</value>
+  </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>自架設</value>
   </data>
   <data name="Self Host a New Server" xml:space="preserve">
     <value>自架設新伺服器</value>
