@@ -102,8 +102,9 @@ public class ViewModelArgsInjector(
         HttpContext context,
         UiStackLayoutViewModel toInject)
     {
+        var projectName = globalSettingsService.GetSettingValueAsync("ProjectName").GetAwaiter().GetResult();
         toInject.PageTitle = localizer[toInject.PageTitle ?? "View"];
-        toInject.AppName = localizer["Template"];
+        toInject.AppName = projectName;
         toInject.Theme = UiTheme.Light;
         toInject.SidebarTheme = UiSidebarTheme.Default;
         toInject.Layout = UiLayout.Fluid;
@@ -115,10 +116,10 @@ public class ViewModelArgsInjector(
         UiStackLayoutViewModel toInject)
     {
         var preferDarkTheme = context.Request.Cookies[ThemeController.ThemeCookieKey] == true.ToString();
-        toInject.PageTitle = localizer[toInject.PageTitle ?? "View"];
         var projectName = globalSettingsService.GetSettingValueAsync("ProjectName").GetAwaiter().GetResult();
         var bandName = globalSettingsService.GetSettingValueAsync("BrandName").GetAwaiter().GetResult();
         var brandHomeUrl = globalSettingsService.GetSettingValueAsync("BrandHomeUrl").GetAwaiter().GetResult();
+        toInject.PageTitle = localizer[toInject.PageTitle ?? "View"];
         toInject.AppName = projectName;
         toInject.Theme = preferDarkTheme ? UiTheme.Dark : UiTheme.Light;
         toInject.SidebarTheme = preferDarkTheme ? UiSidebarTheme.Dark : UiSidebarTheme.Default;
@@ -155,7 +156,7 @@ public class ViewModelArgsInjector(
                     }
                     else
                     {
-                        var authResult = authorizationService.AuthorizeAsync(context.User, linkDef.RequiredPolicy).Result;
+                        var authResult = authorizationService.AuthorizeAsync(context.User, linkDef.RequiredPolicy).GetAwaiter().GetResult();
                         isVisible = authResult.Succeeded;
                     }
 
