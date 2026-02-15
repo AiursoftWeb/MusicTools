@@ -140,13 +140,18 @@
 }
 
 /* --- 钢琴 (Mobile Base Styles) --- */
+.piano-container {
+    padding-bottom: 20px;
+    overflow-y: hidden;
+}
+
 .piano {
     display: flex;
     flex-wrap: nowrap;
     /* 关键：强制单行 */
     padding: 0;
-    margin: 42px auto 0;
-    /* 保持 42px 顶部空间给指示器 */
+    margin: 42px auto 20px;
+    /* 保持 42px 顶部空间给指示器, 20px 底部空间给阴影和位移 */
     list-style: none;
     height: 180px;
     /* 移动端高度减小 */
