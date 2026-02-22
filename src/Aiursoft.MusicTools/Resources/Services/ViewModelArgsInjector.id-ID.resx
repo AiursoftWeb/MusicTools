@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Alat</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Tuner</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Tidak Diizinkan</value>
   </data>

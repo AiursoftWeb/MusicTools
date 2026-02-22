@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>उपकरण</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>ट्यूनर</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>अनधिकृत</value>
   </data>

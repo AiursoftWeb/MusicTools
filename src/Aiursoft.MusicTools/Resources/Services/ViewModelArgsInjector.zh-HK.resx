@@ -195,6 +195,9 @@
   <data name="Tools" xml:space="preserve">
     <value>工具</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>調音器</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>未獲授權</value>
   </data>

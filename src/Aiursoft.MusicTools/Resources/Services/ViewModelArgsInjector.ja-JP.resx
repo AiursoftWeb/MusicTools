@@ -195,6 +195,9 @@
   <data name="Tools" xml:space="preserve">
     <value>ツール</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>チューナー</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>権限がありません</value>
   </data>

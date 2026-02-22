@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Інструменти</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Тюнер</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Неавторизовано</value>
   </data>

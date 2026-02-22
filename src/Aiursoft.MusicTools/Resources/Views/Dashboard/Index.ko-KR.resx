@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>다음 웹 애플리케이션을 위한 현대적이고 기능이 풍부하며 매우 확장 가능한 기반</value>
   </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>전문가용 튜너로 악기를 맞출 수 있도록 도와줍니다.</value>
+  </data>
   <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
     <value>간단하고 신뢰할 수 있는 메트로놈으로 시간을 지키는 데 도움을 드립니다.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>도구</value>
+  </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>튜너</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>환영합니다</value>
