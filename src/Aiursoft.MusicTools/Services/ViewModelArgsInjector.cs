@@ -70,6 +70,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Interval Calculator"];
         _ = localizer["Interval test"];
         _ = localizer["Metronome"];
+        _ = localizer["Tuner"];
         _ = localizer["Melody Memory Test"];
         _ = localizer["Tests"];
 

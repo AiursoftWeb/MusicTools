@@ -129,6 +129,9 @@
   <data name="Metronome" xml:space="preserve">
     <value>Metronome</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Tuner</value>
+  </data>
   <data name="Minor Calculator" xml:space="preserve">
     <value>Minor Calculator</value>
   </data>

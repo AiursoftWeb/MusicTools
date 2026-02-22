@@ -228,6 +228,12 @@
   <data name="Welcome" xml:space="preserve">
     <value>欢迎</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>调音器</value>
+  </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>专业的调音器，帮助您校准乐器。</value>
+  </data>
   <data name="Welcome to MusicTools" xml:space="preserve">
     <value>欢迎使用 MusicTools</value>
   </data>

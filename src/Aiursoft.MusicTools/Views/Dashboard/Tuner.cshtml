@@ -1,0 +1,82 @@
+@inject IViewLocalizer Localizer
+@model Aiursoft.MusicTools.Models.DashboardViewModels.TunerViewModel
+
+<div class="container mt-5">
+    <div class="card shadow-sm" style="max-width: 900px; margin: 0 auto;">
+        <div class="card-body text-center p-5">
+            <h1 class="mb-4">@Localizer[Model.PageTitle ?? string.Empty]</h1>
+
+            <div class="row mb-4">
+                <div class="col-md-6 mb-4">
+                    <div class="tuner-meter card bg-light p-4 h-100">
+                        <div id="note-display" class="display-1 fw-bold text-primary mb-2">-</div>
+                        <div id="frequency-display" class="fs-4 text-muted mb-4">0.00 Hz</div>
+                        
+                        <div class="meter-container position-relative mb-3" style="height: 60px;">
+                            <div class="meter-background bg-secondary bg-opacity-10 rounded-pill w-100 h-100"></div>
+                            <div id="meter-pointer" class="position-absolute top-0 start-50 translate-middle-x bg-primary rounded-pill h-100 transition-all" style="width: 4px; left: 50%;"></div>
+                            <div class="position-absolute top-100 start-50 translate-middle-x mt-1 fw-bold text-primary">0</div>
+                            <div class="position-absolute top-100 start-0 mt-1 text-muted">-50</div>
+                            <div class="position-absolute top-100 end-0 mt-1 text-muted">+50</div>
+                        </div>
+                        <div id="cents-display" class="mt-4 fs-5 fw-medium text-muted">0 cents</div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="frequency-history card bg-light p-4 h-100">
+                        <h5 class="card-title text-muted mb-3">@Localizer["Frequency History"]</h5>
+                        <div class="canvas-container" style="flex-grow: 1; min-height: 200px;">
+                            <canvas id="frequency-chart" width="400" height="200" style="width: 100%; height: 100%;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="start-stop-btn" 
+                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all"
+                    data-text-start="@Localizer["Start Tuner"]"
+                    data-text-stop="@Localizer["Stop Tuner"]">
+                <span id="btn-icon">🎤</span> <span id="btn-text">@Localizer["Start Tuner"]</span>
+            </button>
+
+            <div id="unsupported-warning" class="alert alert-danger mt-4 d-none">
+                @Localizer["Your browser does not support audio recording or frequency analysis."]
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section Styles {
+    <style>
+        .tuner-meter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .meter-container {
+            width: 100%;
+            border: 1px solid #dee2e6;
+            overflow: visible;
+        }
+
+        #meter-pointer {
+            transition: left 0.1s ease-out;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .canvas-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section Scripts {
+    <script src="~/scripts/tuner.js"></script>
+}

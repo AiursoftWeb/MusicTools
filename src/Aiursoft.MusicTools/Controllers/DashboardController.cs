@@ -87,6 +87,20 @@ public class DashboardController : Controller
     {
         return this.StackView(new MetronomeViewModel());
     }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Tuner",
+        LinkOrder = 6)]
+    public IActionResult Tuner()
+    {
+        return this.StackView(new TunerViewModel());
+    }
+
     [RenderInNavBar(
         NavGroupName = "Tools",
         NavGroupOrder = 1,
@@ -94,7 +108,7 @@ public class DashboardController : Controller
         CascadedLinksIcon = "headphones",
         CascadedLinksOrder = 2,
         LinkText = "Melody Memory Test",
-        LinkOrder = 6)]
+        LinkOrder = 7)]
     public IActionResult MelodyMemory()
     {
         return this.StackView(new MelodyMemoryViewModel());
