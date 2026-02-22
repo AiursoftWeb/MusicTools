@@ -129,9 +129,6 @@
   <data name="Metronome" xml:space="preserve">
     <value>节拍器</value>
   </data>
-  <data name="Tuner" xml:space="preserve">
-    <value>调音器</value>
-  </data>
   <data name="Minor Calculator" xml:space="preserve">
     <value>小调计算器</value>
   </data>
@@ -197,6 +194,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>工具</value>
+  </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>调音器</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>未授权</value>

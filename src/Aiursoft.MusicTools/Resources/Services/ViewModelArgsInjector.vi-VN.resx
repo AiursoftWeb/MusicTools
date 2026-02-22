@@ -195,6 +195,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Công cụ</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Bộ điều chỉnh</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Không được ủy quyền</value>
   </data>

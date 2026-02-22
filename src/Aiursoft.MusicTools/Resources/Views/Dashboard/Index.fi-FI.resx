@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Moderni, ominaisuudeltaan rikas ja korkeasti laajennettava pohja seuraavalle verkkosovelluksellesi.</value>
   </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>Amatöörinen sävellystunerointi, joka auttaa sinua sävellystunnoissa instrumenttejäsi.</value>
+  </data>
   <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
     <value>Yksinkertainen ja luotettava metronomi, joka auttaa sinua pitämään aikaa.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Työkalut</value>
+  </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Soittimen säätö</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Tervetuloa</value>
