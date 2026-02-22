@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Instrumente</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Tunere</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Neautorizat</value>
   </data>

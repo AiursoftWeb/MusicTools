@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Työkalut</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Soittimen säätö</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Luvaton</value>
   </data>

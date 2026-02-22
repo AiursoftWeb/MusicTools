@@ -192,6 +192,9 @@
   <data name="Tools" xml:space="preserve">
     <value>Araçlar</value>
   </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Tuner</value>
+  </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Yetkisiz</value>
   </data>

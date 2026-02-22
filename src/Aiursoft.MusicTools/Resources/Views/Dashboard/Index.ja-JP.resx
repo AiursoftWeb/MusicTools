@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>次回のWebアプリケーション用のモダンで機能豊富かつ高拡張性の基盤です。</value>
   </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>プロフェッショナルなチューナーで、楽器のチューニングをお手伝いします。</value>
+  </data>
   <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
     <value>シンプルで信頼性の高いメトロノームで、正確なリズムを保つお手伝いをします。</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>ツール</value>
+  </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>チューナー</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>ようこそ</value>

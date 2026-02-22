@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>一个现代化、功能丰富且高度可扩展的平台，用于构建您的下一个 Web 应用程序。</value>
   </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>专业的调音器，帮助您校准乐器。</value>
+  </data>
   <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
     <value>一个简单可靠的节拍器，帮助您掌握节奏。</value>
   </data>
@@ -225,14 +228,11 @@
   <data name="Tools" xml:space="preserve">
     <value>工具</value>
   </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>欢迎</value>
-  </data>
   <data name="Tuner" xml:space="preserve">
     <value>调音器</value>
   </data>
-  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
-    <value>专业的调音器，帮助您校准乐器。</value>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎</value>
   </data>
   <data name="Welcome to MusicTools" xml:space="preserve">
     <value>欢迎使用 MusicTools</value>

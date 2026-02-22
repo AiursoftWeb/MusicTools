@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>O bază modernă, bogată în funcționalități și extrem de extensibilă pentru aplicația web următoare.</value>
   </data>
+  <data name="A professional tuner to help you tune your instruments." xml:space="preserve">
+    <value>Un acordor profesional pentru a vă ajuta să acordați instrumentele.</value>
+  </data>
   <data name="A simple and reliable metronome to help you keep time." xml:space="preserve">
     <value>Un metronom simplu și sigur pentru a vă ajuta să păstrați ritmul.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Unelte</value>
+  </data>
+  <data name="Tuner" xml:space="preserve">
+    <value>Tunere</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bine ați venit</value>
