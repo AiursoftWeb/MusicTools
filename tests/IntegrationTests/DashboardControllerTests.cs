@@ -18,4 +18,12 @@ public class DashboardControllerTests : TestBase
         // We just check if we get a response.
         Assert.IsNotNull(response);
     }
+
+    [TestMethod]
+    public async Task GetTuner()
+    {
+        var url = "/Dashboard/Tuner";
+        var response = await Http.GetAsync(url);
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
 }
