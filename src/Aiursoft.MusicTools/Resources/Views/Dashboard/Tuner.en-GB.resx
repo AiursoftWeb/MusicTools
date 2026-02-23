@@ -30,10 +30,11 @@
   <data name="Tuner" xml:space="preserve">
     <value>Tuner</value>
   </data>
-  <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
-    <value>Your browser does not support audio recording or frequency analysis.</value>
-  </data>
   <data name="Waveform" xml:space="preserve">
     <value>Waveform</value>
   </data>
+  <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
+    <value>Your browser does not support audio recording or frequency analysis.</value>
+  </data>
+
 </root>

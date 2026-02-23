@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Ferma Accordatore</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Forma d&apos;onda</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Il tuo browser non supporta la registrazione audio o l&apos;analisi della frequenza.</value>
   </data>

@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Detener afinador</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Forma de onda</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Su navegador no admite la grabación de audio ni el análisis de frecuencia.</value>
   </data>

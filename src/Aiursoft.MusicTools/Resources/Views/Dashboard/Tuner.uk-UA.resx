@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Зупинити налаштування</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Хвилева форма</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Ваш браузер не підтримує запис аудіо або аналіз частоти.</value>
   </data>

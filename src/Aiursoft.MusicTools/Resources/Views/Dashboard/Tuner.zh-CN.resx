@@ -30,10 +30,11 @@
   <data name="Tuner" xml:space="preserve">
     <value>调音器</value>
   </data>
-  <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
-    <value>您的浏览器不支持音频录制或频率分析。</value>
-  </data>
   <data name="Waveform" xml:space="preserve">
     <value>波形</value>
   </data>
+  <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
+    <value>您的浏览器不支持音频录制或频率分析。</value>
+  </data>
+
 </root>

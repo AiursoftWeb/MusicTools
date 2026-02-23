@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>튜너 정지</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>파형</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>브라우저가 오디오 녹음 또는 주파수 분석을 지원하지 않습니다.</value>
   </data>
