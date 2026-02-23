@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Hentikan Tuner</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Gelombang</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Peramban Anda tidak mendukung perekaman audio atau analisis frekuensi.</value>
   </data>

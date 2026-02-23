@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Dừng máy điều chỉnh</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Dạng sóng</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Trình duyệt của bạn không hỗ trợ ghi âm âm thanh hoặc phân tích tần số.</value>
   </data>

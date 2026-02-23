@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>ट्यूनर बंद करें</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>तरंग आकृति</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>आपका ब्राउज़र ऑडियो रिकॉर्डिंग या आवृत्ति विश्लेषण का समर्थन नहीं करता है।</value>
   </data>

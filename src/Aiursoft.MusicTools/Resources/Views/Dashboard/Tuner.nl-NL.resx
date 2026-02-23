@@ -27,6 +27,9 @@
   <data name="Stop Tuner" xml:space="preserve">
     <value>Stop Tuner</value>
   </data>
+  <data name="Waveform" xml:space="preserve">
+    <value>Golfvorm</value>
+  </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>Uw browser ondersteunt geen audio-opname of frequentie-analyse.</value>
   </data>
