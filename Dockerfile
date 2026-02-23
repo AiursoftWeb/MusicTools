@@ -6,10 +6,11 @@ ARG PROJ_NAME="Aiursoft.MusicTools"
 FROM --platform=$BUILDPLATFORM hub.aiursoft.com/node:24-alpine AS npm-env
 ARG CSPROJ_PATH
 WORKDIR /src
-COPY . .
-
-# NPM Build at PGK_JSON_PATH
+# Only copy package files to take advantage of Docker cache
+COPY ${CSPROJ_PATH}wwwroot/package.json ${CSPROJ_PATH}wwwroot/package-lock.json* ${CSPROJ_PATH}wwwroot/.npmrc* /src/${CSPROJ_PATH}wwwroot/
 RUN npm install --prefix "${CSPROJ_PATH}wwwroot" --loglevel verbose
+# Copy full source for build
+COPY ${CSPROJ_PATH}wwwroot/ /src/${CSPROJ_PATH}wwwroot/
 RUN npm run build --prefix "${CSPROJ_PATH}wwwroot"
 
 # ============================
@@ -20,7 +21,9 @@ ARG PROJ_NAME
 ARG TARGETARCH
 
 WORKDIR /src
-COPY --from=npm-env /src .
+COPY . .
+# Copy node_modules and build output from npm-env
+COPY --from=npm-env /src/${CSPROJ_PATH}wwwroot /src/${CSPROJ_PATH}wwwroot
 
 # Build
 RUN if [ "$TARGETARCH" = "arm64" ]; then \
