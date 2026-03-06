@@ -4,6 +4,9 @@ class IntervalTraining {
     #piano;
     #localizedStrings;
     #intervalKeys;
+    #isPlaying = false;
+    #correctCount = 0;
+    #wrongCount = 0;
     #intervalSemitones = {
         'p1': 0, 'm2': 1, 'maj2': 2, 'm3': 3, 'maj3': 4,
         'p4': 5, 'a4': 6, 'd5': 6, 'p5': 7, 'a5': 8,
@@ -30,6 +33,14 @@ class IntervalTraining {
         intervalButtons.forEach(btn => {
             btn.addEventListener('click', (e) => this.#handleAnswer(e.currentTarget));
         });
+
+        // Mode change listener
+        const modeRadios = document.querySelectorAll('input[name="start-mode"]');
+        modeRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                this.nextQuestion();
+            });
+        });
     }
 
     #midiToNoteName(midi) {
@@ -39,18 +50,53 @@ class IntervalTraining {
     }
 
     async playInterval() {
+        if (this.#isPlaying) return;
+        this.#isPlaying = true;
+
+        const playButton = document.getElementById('play-button');
+        if (playButton) {
+            playButton.disabled = true;
+            playButton.classList.add('opacity-50');
+        }
+
         const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
         const targetNote = this.#midiToNoteName(this.#currentTargetMidi);
 
         this.#piano.playNote(baseNote, 0.5);
         await new Promise(r => setTimeout(r, 600));
         this.#piano.playNote(targetNote, 0.5);
+        await new Promise(r => setTimeout(r, 600));
+
+        this.#isPlaying = false;
+        if (playButton) {
+            playButton.disabled = false;
+            playButton.classList.remove('opacity-50');
+        }
+
+        // Show options after the first playback
+        const optionsContainer = document.getElementById('interval-options-row');
+        if (optionsContainer) {
+            optionsContainer.classList.remove('d-none');
+        }
     }
 
     nextQuestion() {
-        this.#currentBaseMidi = 60 + Math.floor(Math.random() * 12); // Random note from C4 to B4
+        const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
+        
+        if (selectedMode === 'fixed-c') {
+            this.#currentBaseMidi = 60; // Middle C (C4)
+        } else {
+            this.#currentBaseMidi = 60 + Math.floor(Math.random() * 12); // Random note from C4 to B4
+        }
+        
         this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
         this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
+
+        // Update Question UI
+        const questionLabel = document.getElementById('question-label');
+        if (questionLabel && this.#localizedStrings.questionTemplate) {
+             questionLabel.textContent = this.#localizedStrings.questionTemplate;
+        }
 
         // Reset buttons
         document.querySelectorAll('.interval-btn').forEach(btn => {
@@ -66,6 +112,9 @@ class IntervalTraining {
         const correctSemitones = this.#intervalSemitones[this.#currentIntervalKey];
 
         if (selectedSemitones === correctSemitones) {
+            this.#correctCount++;
+            document.getElementById('correct-count').textContent = this.#correctCount;
+
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-success');
             
@@ -78,8 +127,12 @@ class IntervalTraining {
                 this.playInterval();
             }, 1000);
         } else {
+            this.#wrongCount++;
+            document.getElementById('wrong-count').textContent = this.#wrongCount;
+
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-danger');
+            button.disabled = true; // Disable current wrong button
         }
     }
 }
@@ -91,6 +144,7 @@ window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
     const localizedStrings = {
         correct: localizationData.correct,
         wrong: localizationData.wrong,
+        questionTemplate: localizationData.questionTemplate,
         intervals: {
             'p1': localizationData.intP1,
             'm2': localizationData.intM2,

@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>अंतराल परीक्षण</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>अंतराल प्रशिक्षण</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>लॉकआउट</value>
   </data>

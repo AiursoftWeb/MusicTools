@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Тест інтервалів</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Інтервальне тренування</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Блокування</value>
   </data>

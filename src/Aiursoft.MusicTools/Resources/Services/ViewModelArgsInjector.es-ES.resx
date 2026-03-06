@@ -108,6 +108,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Prueba de intervalo</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Entrenamiento de intervalos</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Bloqueo</value>
   </data>

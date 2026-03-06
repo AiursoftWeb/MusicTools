@@ -234,3 +234,6 @@ class ExamQuestion {
         }
     }
 }
+
+window.ExamQuestion = ExamQuestion;
+export default ExamQuestion;

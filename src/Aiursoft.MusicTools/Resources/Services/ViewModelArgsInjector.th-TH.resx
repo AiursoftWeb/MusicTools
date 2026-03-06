@@ -108,6 +108,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>การทดสอบช่วงเสียง</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>การฝึกช่วงจังหวะ</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>การถูปิดใช้งาน</value>
   </data>

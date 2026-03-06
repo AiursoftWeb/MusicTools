@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Aralık Testi</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Aralık eğitimi</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Hesap Kilitlendi</value>
   </data>

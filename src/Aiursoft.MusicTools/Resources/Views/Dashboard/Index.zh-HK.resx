@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>音程測試</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>音程訓練</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>調性並非孤立存在。「五度圈」(Circle of Fifths) 猶如音樂的指南針，揭示所有調號順序（C -&gt; G -&gt; D...）及其和聲關係，是作曲、編曲與即興演奏的核心藍圖。</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>開始測試</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>開始訓練</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>支援環境變數及資料庫支援的設定，並自動優先使用環境變數以實現無縫覆蓋。</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>工具</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>透過識別鋼琴上演奏的音樂音程來訓練您的聽覺。</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>調音器</value>

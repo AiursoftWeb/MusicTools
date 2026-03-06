@@ -108,6 +108,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>음정 테스트</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>음정 훈련</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>잠금</value>
   </data>

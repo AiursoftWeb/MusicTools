@@ -108,6 +108,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>音程測試</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>音程訓練</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>帳戶暫時停用</value>
   </data>

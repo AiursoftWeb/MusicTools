@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>اختبار الفترة</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>التدريب الفاصل</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>حظر الحساب</value>
   </data>

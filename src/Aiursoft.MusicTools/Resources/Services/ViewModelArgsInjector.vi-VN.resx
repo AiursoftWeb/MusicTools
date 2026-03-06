@@ -108,6 +108,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Kiểm tra quãng</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Huấn luyện quãng</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Khóa tài khoản</value>
   </data>

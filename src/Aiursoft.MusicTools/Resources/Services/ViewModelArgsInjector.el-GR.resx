@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Δοκιμή διαστήματος</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Διαστημική προπόνηση</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Κλείδωμα</value>
   </data>

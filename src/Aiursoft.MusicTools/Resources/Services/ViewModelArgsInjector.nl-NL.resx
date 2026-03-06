@@ -105,6 +105,9 @@
   <data name="Interval test" xml:space="preserve">
     <value>Intervaltest</value>
   </data>
+  <data name="Interval training" xml:space="preserve">
+    <value>Intervallen training</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Account vergrendeld</value>
   </data>

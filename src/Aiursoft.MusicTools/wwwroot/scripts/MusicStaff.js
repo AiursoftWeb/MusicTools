@@ -269,3 +269,6 @@ class MusicStaff {
         this.#noteGroup.appendChild(line);
     }
 }
+
+window.MusicStaff = MusicStaff;
+export default MusicStaff;

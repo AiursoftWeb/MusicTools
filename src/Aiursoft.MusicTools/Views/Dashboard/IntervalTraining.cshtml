@@ -24,16 +24,40 @@
      style="display: none;">
 </div>
 
-<div class="container-fluid py-4">
+<div class="container-fluid py-4 position-relative">
+    <!-- Score Counters -->
+    <div class="position-absolute top-0 end-0 mt-3 me-3 d-flex gap-3">
+        <div class="bg-light rounded-pill px-3 py-2 shadow-sm d-flex align-items-center gap-2 border" title="@Localizer["Correct"]">
+            <span class="fs-4">✅</span>
+            <span id="correct-count" class="fs-4 fw-bold text-success">0</span>
+        </div>
+        <div class="bg-light rounded-pill px-3 py-2 shadow-sm d-flex align-items-center gap-2 border" title="@Localizer["Wrong"]">
+            <span class="fs-4">❌</span>
+            <span id="wrong-count" class="fs-4 fw-bold text-danger">0</span>
+        </div>
+    </div>
+
     <div class="row g-4 justify-content-center mb-4">
         <div class="col-lg-8 text-center">
             <h1 class="display-5 mb-4">@Localizer["Interval Training"]</h1>
-            <p class="lead">@Localizer["Listen to the two notes and identify the interval between them."]</p>
+            <p id="question-label" class="lead">@Localizer["Listen to the two notes and identify the interval between them."]</p>
         </div>
     </div>
 
     <div class="row g-4 justify-content-center mb-5">
-        <div class="col-lg-4 d-flex justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center gap-4 flex-wrap">
+            <div class="btn-group shadow-sm" role="group" aria-label="Start mode">
+                <input type="radio" class="btn-check" name="start-mode" id="mode-random" value="random" checked autocomplete="off">
+                <label class="btn btn-outline-primary px-3 py-2" for="mode-random">
+                    <i class="bi bi-shuffle me-1"></i> @Localizer["Random Start"]
+                </label>
+
+                <input type="radio" class="btn-check" name="start-mode" id="mode-fixed-c" value="fixed-c" autocomplete="off">
+                <label class="btn btn-outline-primary px-3 py-2" for="mode-fixed-c">
+                    <i class="bi bi-type-bold me-1"></i> @Localizer["Start from C"]
+                </label>
+            </div>
+
             <button id="play-button" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow hover-scale d-flex align-items-center gap-2">
                 <i class="bi bi-play-fill fs-3"></i>
                 <span class="fs-4 fw-bold">@Localizer["Play Interval"]</span>
@@ -41,7 +65,7 @@
         </div>
     </div>
 
-    <div class="row g-4 justify-content-center">
+    <div id="interval-options-row" class="row g-4 justify-content-center d-none">
         <div class="col-lg-10">
             <div id="interval-options" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
                 <!-- Intervals will be injected here -->
@@ -59,7 +83,7 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 
 @section scripts {
-    <script type="module" src="~/dist/scripts/interval-training.js" asp-append-version="true"></script>
+    <script type="module" src="~/dist/scripts/intervalTraining.js" asp-append-version="true"></script>
     <script>
         window.addEventListener('load', () => {
              window.startIntervalTraining('piano-container', 'localization-data');
