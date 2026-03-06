@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>Збільшена квінта</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Збільшена кварта</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Правильно</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Вірно!</value>
+  </data>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>Зменшена квінта</value>
+  </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Тренування інтервалів</value>
+  </data>
+  <data name="Listen to the two notes and identify the interval between them." xml:space="preserve">
+    <value>Прослухайте дві ноти та визначте інтервал між ними.</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Велика секунда</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Велика септима</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Велика секста</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Велика терція</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Мала секунда</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Мала септима</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Мала секста</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Мала терція</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Чиста квінта</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Чиста кварта</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Доконна октава</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Велика унісон</value>
+  </data>
+  <data name="Play Interval" xml:space="preserve">
+    <value>Відтворити інтервал</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>Випадковий старт</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>Починати з C</value>
+  </data>
+  <data name="What is the interval of the notes played?" xml:space="preserve">
+    <value>Який інтервал у відтворених нот?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>Неправильно</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Неправильно.</value>
+  </data>
+
+</root>

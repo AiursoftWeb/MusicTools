@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>वृद्धित पंचम</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>वर्धित चतुर्थ</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>सही</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>सही!</value>
+  </data>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>घटाया हुआ पंचम</value>
+  </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>अंतराल प्रशिक्षण</value>
+  </data>
+  <data name="Listen to the two notes and identify the interval between them." xml:space="preserve">
+    <value>दो स्वरों को सुनें और उनके बीच के अंतराल की पहचान करें।</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>महत्वपूर्ण दूसरा</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>महान सातवां</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>महत्त्वपूर्ण छठा</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>महान तृतीय</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>लघु द्वितीय</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>लघु सप्तम</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>लघु छठा</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>लघु तृतीय</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>पूर्ण पंचम</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>पूर्ण चतुर्थ</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>पूर्ण अष्टक</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>पूर्ण एकता</value>
+  </data>
+  <data name="Play Interval" xml:space="preserve">
+    <value>अंतराल बजाएं</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>यादृच्छिक प्रारंभ</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>सी से शुरू करें</value>
+  </data>
+  <data name="What is the interval of the notes played?" xml:space="preserve">
+    <value>बजाए गए नोटों का अंतराल क्या है?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>गलत</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>गलत।</value>
+  </data>
+
+</root>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>Kelima Bertambah</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Kuartus Bertambah</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Benar</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Benar!</value>
+  </data>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>Kelima Berkurang</value>
+  </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Pelatihan Interval</value>
+  </data>
+  <data name="Listen to the two notes and identify the interval between them." xml:space="preserve">
+    <value>Dengarkan dua nada tersebut dan identifikasi interval di antara keduanya.</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Sekor Mayor</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Septima Mayor</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Seksia Mayor</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Triton Mayor</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Sekunder Minor</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Septim Minor</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Seksia Minor</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Tersebut Kecil</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Kwintal Murni</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Kuartal Sempurna</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Oktaf Sempurna</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Unison Sempurna</value>
+  </data>
+  <data name="Play Interval" xml:space="preserve">
+    <value>Putar Interval</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>Mulai Acak</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>Mulai dari C</value>
+  </data>
+  <data name="What is the interval of the notes played?" xml:space="preserve">
+    <value>Berapa interval nada yang dimainkan?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>Salah</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Salah.</value>
+  </data>
+
+</root>

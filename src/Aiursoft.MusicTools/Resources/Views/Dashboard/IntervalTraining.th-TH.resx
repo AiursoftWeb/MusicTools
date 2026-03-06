@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>ควินท์เพิ่มขึ้น</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>สี่เพิ่ม</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>ถูกต้อง</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>ถูกต้อง!</value>
+  </data>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>พิชิตห้า</value>
+  </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>การฝึกช่วงเสียง</value>
+  </data>
+  <data name="Listen to the two notes and identify the interval between them." xml:space="preserve">
+    <value>ฟังโน้ตทั้งสองและระบุช่วงเสียงระหว่างพวกมัน</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>โทนใหญ่</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>เซเวนต์เมเจอร์</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>หกใหญ่</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>คู่สามใหญ่</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>โทน้อย</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>เซเว่นธ์ไมเนอร์</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>หกน้อย</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>สามรอง</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>เพอร์เฟคต์ ฟิฟท์</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>เพอร์เฟกต์โฟร์ท</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>เพอร์เฟกต์ออกเตฟ</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>เอกภาพสมบูรณ์แบบ</value>
+  </data>
+  <data name="Play Interval" xml:space="preserve">
+    <value>เล่นช่วงเสียง</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>เริ่มต้นแบบสุ่ม</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>เริ่มจากโน้ต C</value>
+  </data>
+  <data name="What is the interval of the notes played?" xml:space="preserve">
+    <value>ช่วงของโน้ตที่เล่นคือช่วงใด?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>ผิด</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>ผิดครับ</value>
+  </data>
+
+</root>

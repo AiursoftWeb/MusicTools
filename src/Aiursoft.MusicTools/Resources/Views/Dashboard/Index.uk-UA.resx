@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Тест інтервалів</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Тренування інтервалів</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Тональності не існують ізольовано. &apos;Коло квінт&apos; — це музичний компас, який розкриває порядок усіх ключових знаків (C -&gt; G -&gt; D...) та їх гармонійні зв&apos;язки. Це фундаментальна схема для композиції, аранжування та імпровізації.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Почати тест</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Розпочнути тренування</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Підтримує як змінні середовища, так і налаштування, зберігані в базі даних, з автоматичним пріоритетом для змінних середовища для безперервного перевизначення.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Інструменти</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Тренуйте слух, визначаючи музичні інтервали, що граються на фортепіано.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Тюнер</value>

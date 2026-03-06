@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Test interval</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Exerciții de intervale</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonurile nu sunt izolate. „Cercul cvintelor” este busola muzicii, dezvăluind ordinea tuturor armăturilor (C -&gt; G -&gt; D...) și a relațiilor lor armonice. Este planul de bază pentru compoziție, aranjament și improvizație.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Start Test</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Începe antrenamentul</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Suportă atât variabilele de mediu, cât și setările stocate în baza de date, cu prioritate automată acordată variabilelor de mediu pentru suprascrieri fără probleme.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Unelte</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Antrenează-ți auzul identificând intervalele muzicale redate la pian.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Tunere</value>

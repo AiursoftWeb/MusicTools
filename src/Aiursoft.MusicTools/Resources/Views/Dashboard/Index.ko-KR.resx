@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>음간 테스트</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>음정 훈련</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>조성은 고립되어 있지 않습니다. &apos;Circle of Fifths&apos;는 음악의 나침반으로, 모든 조표의 순서(C -&gt; G -&gt; D...)와 그 화성 관계를 보여줍니다. 이것은 작곡, 편곡, 즉흥 연주의 핵심 청사진입니다.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>테스트 시작</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>연습 시작</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>환경 변수와 데이터베이스 기반 설정을 모두 지원하며, 환경 변수에 자동 우선 순위가 주어져 원활한 오버라이드를 제공합니다.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>도구</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>피아노에서 연주되는 음정 식별을 통해 청각을 훈련하세요.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>튜너</value>

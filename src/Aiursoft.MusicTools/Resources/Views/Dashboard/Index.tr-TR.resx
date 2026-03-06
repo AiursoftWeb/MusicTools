@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Interval Test</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Aralık Eğitimi</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonlar izole değildir. &apos;Beşliler Çemberi&apos;, müziğin pusulasıdır; tüm ton imzalarının (C -&gt; G -&gt; D...) sırasını ve armonik ilişkilerini ortaya koyar. Besteleme, düzenleme ve doğaçlama için temel şemadır.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Testi Başlat</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Eğitimi Başlat</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Ortam değişkenleri ve veritabanına dayalı ayarlar destekler, sorunsuz geçişler için otomatik olarak ortam değişkenlerine öncelik verilir.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Araçlar</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Piyano üzerinde çalınan müzikal aralıkları belirleyerek kulağınızı eğitin.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Tuner</value>

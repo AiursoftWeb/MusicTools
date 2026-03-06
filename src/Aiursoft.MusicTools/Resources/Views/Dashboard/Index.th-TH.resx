@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>การทดสอบช่วงเสียง</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>การฝึกช่วงเสียง</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>คีย์ไม่ได้แยกจากกัน &apos;Circle of Fifths&apos; คือเข็มทิศของดนตรี ที่เผยให้เห็นลำดับของคีย์ทั้งหมด (C -&gt; G -&gt; D...) และความสัมพันธ์ทางฮาร์โมนิกของพวกมัน มันคือพิมพ์เขียวหลักสำหรับการแต่งเพลง การเรียบเรียง และการด้นสด</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>เริ่มการทดสอบ</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>เริ่มการฝึกฝน</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>รองรับตัวแปรสภาพแวดล้อมและตั้งค่าที่เก็บในฐานข้อมูลทั้งสองแบบ โดยให้ลำดับความสำคัญอัตโนมัติแก่ตัวแปรสภาพแวดล้อมเพื่อการแทนที่อย่างราบรื่น</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>เครื่องมือ</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>ฝึกหูของคุณโดยการระบุช่วงเสียงทางดนตรีที่เล่นบนเปียโน</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>เครื่องปรับเสียง</value>

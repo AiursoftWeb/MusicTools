@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Intervaltest</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Intervaltraining</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Toonsoorten staan niet op zichzelf. De &apos;Circle of Fifths&apos; is het kompas van de muziek, dat de volgorde van alle toonsoorten (C -&gt; G -&gt; D...) en hun harmonische relaties onthult. Het is de blauwdruk voor compositie, arrangement en improvisatie.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Test starten</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Start Training</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Ondersteunt zowel omgevingsvariabelen als database-gebaseerde instellingen, met automatische voorrang aan omgevingsvariabelen voor naadloze overschrijvingen.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Gereedschappen</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Train je oor door muzikale intervallen die op de piano worden gespeeld te herkennen.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Stemming</value>

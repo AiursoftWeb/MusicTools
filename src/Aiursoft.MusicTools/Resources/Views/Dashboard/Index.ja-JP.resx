@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>音程テスト</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>音程トレーニング</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>調は孤立した存在ではありません。『五度圏』は音楽の羅針盤であり、すべての調号（C → G → D...）の順序とそれらの和声的関係を明らかにします。それは作曲、編曲、即興演奏のための核心となる設計図です。</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>テスト開始</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>トレーニングを開始</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>環境変数とデータベースベースの設定の両方をサポートしており、環境変数に自動的に優先順位が与えられ、スムーズな上書きが可能になります。</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>ツール</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>ピアノで演奏される音程を識別して耳を鍛えましょう。</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>チューナー</value>

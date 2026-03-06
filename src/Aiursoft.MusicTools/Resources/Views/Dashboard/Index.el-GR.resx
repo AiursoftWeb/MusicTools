@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Δοκιμασία Διαστημάτων</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Εκπαίδευση Διαστημάτων</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Οι τόνoι δεν είναι απομονωμένοι. Ο «Κύκλος των Πέμπτων» είναι η πυξίδα της μουσικής, αποκαλύπτοντας τη σειρά όλων των τoνικών επιγραφών (C -&gt; G -&gt; D...) και τις αρμονικές τους σχέσεις. Είναι ο βασικός σχεδιασμός για τη σύνθεση, τη διασκευή και την αυτοσχεδιαστική μουσική.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Ξεκίνα Τεστ</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Έναρξη Εκπαίδευσης</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Υποστηρίζει και τις δύο μεθόδους, μεταβλητές περιβάλλοντος και ρυθμίσεις που αποθηκεύονται σε βάση δεδομένων, με αυτόματη προτεραιότητα προς τις μεταβλητές περιβάλλοντος για ομαλές επικαλύψεις.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Εργαλεία</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Εξασκήστε το αυτί σας εντοπίζοντας μουσικά διαστήματα που παίζονται στο πιάνο.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Tuner</value>

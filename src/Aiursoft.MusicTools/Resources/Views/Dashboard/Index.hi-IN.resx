@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>अंतराल परीक्षण</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>अंतराल प्रशिक्षण</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>सुर अलग-थलग नहीं होते। &apos;Circle of Fifths&apos; संगीत का कम्पास है, जो सभी सुर हस्ताक्षरों (C -&gt; G -&gt; D...) के क्रम और उनके सुरीले संबंधों को प्रकट करता है। यह संरचना, आयोजन और आशु रचना के लिए मुख्य नक्शा है।</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>परीक्षण शुरू करें</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>प्रशिक्षण शुरू करें</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>पर्यावरण चर और डेटाबेस-आधारित सेटिंग्स दोनों का समर्थन करता है, जहां पर्यावरण चर को बिना किसी रुकावट के ओवरराइड करने के लिए स्वचालित प्राथमिकता दी जाती है।</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>उपकरण</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>पियानो पर बजाए गए संगीतमय अंतरालों की पहचान करके अपने कान की प्रशिक्षण करें।</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>ट्यूनर</value>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Fifth" xml:space="preserve">
+    <value>Wzmożona kwinta</value>
+  </data>
+  <data name="Augmented Fourth" xml:space="preserve">
+    <value>Prawy kwart</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Poprawnie</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Poprawnie!</value>
+  </data>
+  <data name="Diminished Fifth" xml:space="preserve">
+    <value>Spłycona kwinta</value>
+  </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Trening interwałów</value>
+  </data>
+  <data name="Listen to the two notes and identify the interval between them." xml:space="preserve">
+    <value>Posłuchaj dwóch dźwięków i zidentyfikuj odległość między nimi.</value>
+  </data>
+  <data name="Major Second" xml:space="preserve">
+    <value>Wielka sekunda</value>
+  </data>
+  <data name="Major Seventh" xml:space="preserve">
+    <value>Duodwudniowa</value>
+  </data>
+  <data name="Major Sixth" xml:space="preserve">
+    <value>Duś wielki</value>
+  </data>
+  <data name="Major Third" xml:space="preserve">
+    <value>Duży tercja</value>
+  </data>
+  <data name="Minor Second" xml:space="preserve">
+    <value>Mala sekunda</value>
+  </data>
+  <data name="Minor Seventh" xml:space="preserve">
+    <value>Mała siódma</value>
+  </data>
+  <data name="Minor Sixth" xml:space="preserve">
+    <value>Mniejsza seksta</value>
+  </data>
+  <data name="Minor Third" xml:space="preserve">
+    <value>Mniejsza trzecia</value>
+  </data>
+  <data name="Perfect Fifth" xml:space="preserve">
+    <value>Kwinta czysta</value>
+  </data>
+  <data name="Perfect Fourth" xml:space="preserve">
+    <value>Czwarta doskonała</value>
+  </data>
+  <data name="Perfect Octave" xml:space="preserve">
+    <value>Dokładna oktawa</value>
+  </data>
+  <data name="Perfect Unison" xml:space="preserve">
+    <value>Idealna unisona</value>
+  </data>
+  <data name="Play Interval" xml:space="preserve">
+    <value>Odtwórz interwał</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>Losowy początek</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>Rozpocznij od C</value>
+  </data>
+  <data name="What is the interval of the notes played?" xml:space="preserve">
+    <value>Jaki jest interwał odtworzonych dźwięków?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>Źle</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Źle.</value>
+  </data>
+
+</root>

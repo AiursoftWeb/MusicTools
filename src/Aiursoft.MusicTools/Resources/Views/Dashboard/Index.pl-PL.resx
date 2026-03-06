@@ -135,6 +135,9 @@
   <data name="Interval Test" xml:space="preserve">
     <value>Test interwałów</value>
   </data>
+  <data name="Interval Training" xml:space="preserve">
+    <value>Trening interwałów</value>
+  </data>
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonacje nie są odizolowane. &apos;Koło kwintowe&apos; jest kompasem muzyki, odsłaniającym kolejność wszystkich znaków przykluczowych (C -&gt; G -&gt; D...) oraz ich harmoniczne powiązania. Jest to fundamentalny plan dla kompozycji, aranżacji i improwizacji.</value>
   </data>
@@ -204,6 +207,9 @@
   <data name="Start Test" xml:space="preserve">
     <value>Rozpocznij test</value>
   </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Rozpocznij trening</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Obsługuje zarówno zmienne środowiskowe, jak i ustawienia oparte na bazie danych, przy czym zmienne środowiskowe otrzymują automatycznie wyższy priorytet, co zapewnia bezproblemowe zastępowanie ustawień.</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Narzędzia</value>
+  </data>
+  <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
+    <value>Trening słuchu poprzez rozpoznawanie interwałów muzycznych granych na fortepianie.</value>
   </data>
   <data name="Tuner" xml:space="preserve">
     <value>Dźwiękowska</value>
