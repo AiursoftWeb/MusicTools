@@ -59,13 +59,20 @@ class IntervalTraining {
             playButton.classList.add('opacity-50');
         }
 
+        const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
         const targetNote = this.#midiToNoteName(this.#currentTargetMidi);
 
-        this.#piano.playNote(baseNote, 0.5);
-        await new Promise(r => setTimeout(r, 600));
-        this.#piano.playNote(targetNote, 0.5);
-        await new Promise(r => setTimeout(r, 600));
+        if (selectedMode === 'harmonic') {
+            this.#piano.playNote(baseNote, 1.0);
+            this.#piano.playNote(targetNote, 1.0);
+            await new Promise(r => setTimeout(r, 1200));
+        } else {
+            this.#piano.playNote(baseNote, 0.5);
+            await new Promise(r => setTimeout(r, 600));
+            this.#piano.playNote(targetNote, 0.5);
+            await new Promise(r => setTimeout(r, 600));
+        }
 
         this.#isPlaying = false;
         if (playButton) {

@@ -51,10 +51,12 @@ public class StorageService(
         await lockObj.WaitAsync();
         try
         {
-            var expectedFileName = Path.GetFileName(physicalPath);
+            var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(physicalPath);
+            var extension = Path.GetExtension(physicalPath);
             while (File.Exists(physicalPath))
             {
-                expectedFileName = "_" + expectedFileName;
+                var randomSuffix = Guid.NewGuid().ToString("N").Substring(0, 8);
+                var expectedFileName = $"{fileNameWithoutExtension}-{randomSuffix}{extension}";
                 physicalPath = Path.Combine(directory!, expectedFileName);
             }
 
