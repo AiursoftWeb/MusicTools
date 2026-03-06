@@ -9,8 +9,8 @@ class IntervalTraining {
     #wrongCount = 0;
     #intervalSemitones = {
         'p1': 0, 'm2': 1, 'maj2': 2, 'm3': 3, 'maj3': 4,
-        'p4': 5, 'a4': 6, 'd5': 6, 'p5': 7, 'a5': 8,
-        'm6': 8, 'maj6': 9, 'm7': 10, 'maj7': 11, 'p8': 12
+        'p4': 5, 'a4': 6, 'p5': 7, 'm6': 8, 'maj6': 9, 
+        'm7': 10, 'maj7': 11, 'p8': 12
     };
     #currentBaseMidi;
     #currentIntervalKey;
@@ -160,9 +160,7 @@ window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
             'maj3': localizationData.intMaj3,
             'p4': localizationData.intP4,
             'a4': localizationData.intA4,
-            'd5': localizationData.intD5,
             'p5': localizationData.intP5,
-            'a5': localizationData.intA5,
             'm6': localizationData.intM6,
             'maj6': localizationData.intMaj6,
             'm7': localizationData.intM7,
