@@ -26,4 +26,12 @@ public class DashboardControllerTests : TestBase
         var response = await Http.GetAsync(url);
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
+
+    [TestMethod]
+    public async Task GetIntervalTraining()
+    {
+        var url = "/Dashboard/IntervalTraining";
+        var response = await Http.GetAsync(url);
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
 }
