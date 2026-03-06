@@ -1,0 +1,88 @@
+@{
+    ViewData["Title"] = @Localizer["Interval Training"];
+}
+
+<div id="localization-data"
+     data-correct="@Localizer["Correct!"]"
+     data-wrong="@Localizer["Wrong."]"
+     data-question-template="@Localizer["What is the interval of the notes played?"]"
+     data-int-p1="@Localizer["Perfect Unison"]"
+     data-int-m2="@Localizer["Minor Second"]"
+     data-int-maj2="@Localizer["Major Second"]"
+     data-int-m3="@Localizer["Minor Third"]"
+     data-int-maj3="@Localizer["Major Third"]"
+     data-int-p4="@Localizer["Perfect Fourth"]"
+     data-int-a4="@Localizer["Augmented Fourth"]"
+     data-int-d5="@Localizer["Diminished Fifth"]"
+     data-int-p5="@Localizer["Perfect Fifth"]"
+     data-int-a5="@Localizer["Augmented Fifth"]"
+     data-int-m6="@Localizer["Minor Sixth"]"
+     data-int-maj6="@Localizer["Major Sixth"]"
+     data-int-m7="@Localizer["Minor Seventh"]"
+     data-int-maj7="@Localizer["Major Seventh"]"
+     data-int-p8="@Localizer["Perfect Octave"]"
+     style="display: none;">
+</div>
+
+<div class="container-fluid py-4">
+    <div class="row g-4 justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-5 mb-4">@Localizer["Interval Training"]</h1>
+            <p class="lead">@Localizer["Listen to the two notes and identify the interval between them."]</p>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mb-5">
+        <div class="col-lg-4 d-flex justify-content-center">
+            <button id="play-button" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow hover-scale d-flex align-items-center gap-2">
+                <i class="bi bi-play-fill fs-3"></i>
+                <span class="fs-4 fw-bold">@Localizer["Play Interval"]</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-10">
+            <div id="interval-options" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                <!-- Intervals will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+             <div id="piano-container" class="piano-container table-responsive d-none"></div>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section scripts {
+    <script type="module" src="~/dist/scripts/interval-training.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+             window.startIntervalTraining('piano-container', 'localization-data');
+        });
+    </script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"></link>
+
+    <style>
+        .hover-scale {
+            transition: transform 0.2s;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .interval-btn {
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+}

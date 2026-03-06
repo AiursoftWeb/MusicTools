@@ -70,6 +70,7 @@ export default defineConfig({
                 musicStaff: resolve(__dirname, "scripts/MusicStaff.js"),
                 metronome: resolve(__dirname, "scripts/metronome.js"),
                 melodyMemory: resolve(__dirname, "scripts/melody-memory.js"),
+                intervalTraining: resolve(__dirname, "scripts/interval-training.js"),
             },
             output: {
                 format: "es",
