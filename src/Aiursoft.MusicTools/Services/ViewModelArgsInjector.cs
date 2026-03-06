@@ -97,6 +97,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Permission Details"];
         _ = localizer["Register"];
         _ = localizer["Self Host"];
+    
+        _ = localizer["Interval training"];
     }
 
     public void InjectSimple(
