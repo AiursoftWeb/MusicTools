@@ -96,5 +96,25 @@
   <data name="Wrong." xml:space="preserve">
     <value>Wrong.</value>
   </data>
-
+  <data name="I give up" xml:space="preserve">
+    <value>I give up</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Next Question</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Perfect Consonance</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Imperfect Consonance</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonance</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Sharp Dissonance</value>
+  </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Correct Answer</value>
+  </data>
 </root>

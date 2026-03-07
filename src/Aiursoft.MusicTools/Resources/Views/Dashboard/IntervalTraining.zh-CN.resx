@@ -96,5 +96,25 @@
   <data name="Wrong." xml:space="preserve">
     <value>错误。</value>
   </data>
-
+  <data name="I give up" xml:space="preserve">
+    <value>放弃</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>下一题</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>完全协和</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>不完全协和</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>不协和</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>极不协和</value>
+  </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>正确答案</value>
+  </data>
 </root>
