@@ -30,7 +30,6 @@ const NOTE_LETTER_TO_DEGREE = { 'C': 0, 'D': 1, 'E': 2, 'F': 3, 'G': 4, 'A': 5, 
 const DEGREE_TO_NOTE_LETTER = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
 
 const INTERVAL_DEFINITIONS = {
-    'p1': { semis: 0,  degree: 1 },
     'm2': { semis: 1,  degree: 2 },
     'maj2': { semis: 2,  degree: 2 },
     'm3': { semis: 3,  degree: 3 },
@@ -43,8 +42,7 @@ const INTERVAL_DEFINITIONS = {
     'a5': { semis: 8,  degree: 5 },
     'maj6': { semis: 9,  degree: 6 },
     'm7': { semis: 10, degree: 7 },
-    'maj7': { semis: 11, degree: 7 },
-    'p8': { semis: 12, degree: 8 }
+    'maj7': { semis: 11, degree: 7 }
 };
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
 
