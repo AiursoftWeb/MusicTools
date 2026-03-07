@@ -6,7 +6,6 @@
      data-correct="@Localizer["Correct!"]"
      data-wrong="@Localizer["Wrong."]"
      data-question-template="@Localizer["What is the (0) of the note above?"]"
-     data-int-p1="@Localizer["Perfect Unison"]"
      data-int-m2="@Localizer["Minor Second"]"
      data-int-maj2="@Localizer["Major Second"]"
      data-int-m3="@Localizer["Minor Third"]"
@@ -20,7 +19,6 @@
      data-int-maj6="@Localizer["Major Sixth"]"
      data-int-m7="@Localizer["Minor Seventh"]"
      data-int-maj7="@Localizer["Major Seventh"]"
-     data-int-p8="@Localizer["Perfect Octave"]"
      style="display: none;">
 </div>
 
@@ -78,7 +76,6 @@
                 wrong: localizationData.wrong,
                 questionTemplate: localizationData.questionTemplate,
                 intervals: {
-                    'p1': localizationData.intP1,
                     'm2': localizationData.intM2,
                     'maj2': localizationData.intMaj2, // <--- 修复 (M2 -> maj2)
                     'm3': localizationData.intM3,
@@ -91,8 +88,7 @@
                     'm6': localizationData.intM6,
                     'maj6': localizationData.intMaj6, // <--- 修复 (M6 -> maj6)
                     'm7': localizationData.intM7,
-                    'maj7': localizationData.intMaj7, // <--- 修复 (M7 -> maj7)
-                    'p8': localizationData.intP8
+                    'maj7': localizationData.intMaj7 // <--- 修复 (M7 -> maj7)
                 }
             };
 

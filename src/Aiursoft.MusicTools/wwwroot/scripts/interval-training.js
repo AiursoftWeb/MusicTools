@@ -8,9 +8,9 @@ class IntervalTraining {
     #correctCount = 0;
     #wrongCount = 0;
     #intervalSemitones = {
-        'p1': 0, 'm2': 1, 'maj2': 2, 'm3': 3, 'maj3': 4,
+        'm2': 1, 'maj2': 2, 'm3': 3, 'maj3': 4,
         'p4': 5, 'a4': 6, 'p5': 7, 'm6': 8, 'maj6': 9, 
-        'm7': 10, 'maj7': 11, 'p8': 12
+        'm7': 10, 'maj7': 11
     };
     #currentBaseMidi;
     #currentIntervalKey;
@@ -153,7 +153,6 @@ window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
         wrong: localizationData.wrong,
         questionTemplate: localizationData.questionTemplate,
         intervals: {
-            'p1': localizationData.intP1,
             'm2': localizationData.intM2,
             'maj2': localizationData.intMaj2,
             'm3': localizationData.intM3,
@@ -164,8 +163,7 @@ window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
             'm6': localizationData.intM6,
             'maj6': localizationData.intMaj6,
             'm7': localizationData.intM7,
-            'maj7': localizationData.intMaj7,
-            'p8': localizationData.intP8
+            'maj7': localizationData.intMaj7
         }
     };
 
