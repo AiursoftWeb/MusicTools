@@ -27,14 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Correct</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Correct Answer</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Correct!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Diminished Fifth</value>
   </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonance</value>
+  </data>
   <data name="Harmonic" xml:space="preserve">
     <value>Harmonic</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>I give up</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Imperfect Consonance</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Interval Training</value>
@@ -66,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Minor Third</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Next Question</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Perfect Consonance</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Perfect Fifth</value>
   </data>
@@ -84,6 +102,9 @@
   <data name="Random Start" xml:space="preserve">
     <value>Random Start</value>
   </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Sharp Dissonance</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Start from C</value>
   </data>
@@ -96,25 +117,5 @@
   <data name="Wrong." xml:space="preserve">
     <value>Wrong.</value>
   </data>
-  <data name="I give up" xml:space="preserve">
-    <value>I give up</value>
-  </data>
-  <data name="Next Question" xml:space="preserve">
-    <value>Next Question</value>
-  </data>
-  <data name="Perfect Consonance" xml:space="preserve">
-    <value>Perfect Consonance</value>
-  </data>
-  <data name="Imperfect Consonance" xml:space="preserve">
-    <value>Imperfect Consonance</value>
-  </data>
-  <data name="Dissonance" xml:space="preserve">
-    <value>Dissonance</value>
-  </data>
-  <data name="Sharp Dissonance" xml:space="preserve">
-    <value>Sharp Dissonance</value>
-  </data>
-  <data name="Correct Answer" xml:space="preserve">
-    <value>Correct Answer</value>
-  </data>
+
 </root>
