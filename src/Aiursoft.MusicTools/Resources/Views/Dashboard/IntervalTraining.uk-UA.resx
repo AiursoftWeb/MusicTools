@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Правильно</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Правильна відповідь</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Вірно!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Зменшена квінта</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Дисонанс</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Гармонічний</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Я здаюся</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Недосконала консонанс</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Тренування інтервалів</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Мала терція</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Наступне запитання</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Досконала консонанс</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Чиста квінта</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Випадковий старт</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Різкий дисонанс</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Починати з C</value>

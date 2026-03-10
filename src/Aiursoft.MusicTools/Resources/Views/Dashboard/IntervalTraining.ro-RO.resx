@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Corect</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Răspuns Corect</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Corect!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Quintă micsorată</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Disonanță</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Armonic</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Mă predau</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Consonanță imperfectă</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Antrenament de intervale</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Terță mică</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Întrebarea Următoare</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Consonanță Perfectă</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Cintă perfectă</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Pornire aleatorie</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Disonanță acută</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Începe de la Do</value>

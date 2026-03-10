@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>صحيح</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>الإجابة الصحيحة</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>صحيح!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>خامسة ناقصة</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>تنافر</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>توافقي</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>أستسلم</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>التناغم غير الكامل</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>تدريب الفواصل</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>ثالث صغير</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>السؤال التالي</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>التناغم المثالي</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>الخمسة المثالية</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>بداية عشوائية</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>تناغم حاد</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>ابدأ من دو</value>

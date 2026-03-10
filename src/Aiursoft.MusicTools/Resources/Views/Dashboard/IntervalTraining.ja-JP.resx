@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>正解</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>正解</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>正解！</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>減五度</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>不協和音</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>和音</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>諦めます</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>不完全協和</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>音程トレーニング</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>短三度</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>次の問題</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>完全協和</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>完全五度</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>ランダム開始</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>鋭い不協和音</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>C から開始</value>

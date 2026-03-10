@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Верно</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Правильный ответ</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Верно!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Уменьшенная квинта</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Диссонанс</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Гармонический</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Я сдаюсь</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Неполная созвучность</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Тренировка интервалов</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Малая терция</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Следующий вопрос</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Совершенное согласие</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Современная квинта</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Случайный старт</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Острая диссонансность</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Начать с ноты До</value>

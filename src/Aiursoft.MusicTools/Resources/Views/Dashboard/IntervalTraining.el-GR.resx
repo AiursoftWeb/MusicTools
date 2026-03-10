@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Σωστό</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Σωστή Απάντηση</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Σωστά!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Ελαττωμένη Πέμπτη</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Δυσφωνία</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Αρμονικός</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Παραδίδωμαι</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Ατελής Συμφωνία</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Εξάσκηση Διαστημάτων</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Μικρό Τρίτο</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Επόμενο Ερώτημα</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Τέλειο Συμφώνημα</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Τέλειο Πέμπτο</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Τυχαία Έναρξη</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Οξύς Δυσφωνία</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Έναρξη από το Ντο</value>
