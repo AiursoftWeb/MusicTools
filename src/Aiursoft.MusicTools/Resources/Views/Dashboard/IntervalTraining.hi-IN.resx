@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>सही</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>सही उत्तर</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>सही!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>घटाया हुआ पंचम</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>विषमता</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>संगीतमय</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>मैं हार मानता हूँ</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>अपूर्ण स्वरमेल</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>अंतराल प्रशिक्षण</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>लघु तृतीय</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>अगला प्रश्न</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>पूर्ण सन्निपात</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>पूर्ण पंचम</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>यादृच्छिक प्रारंभ</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>तीव्र विषमता</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>सी से शुरू करें</value>

@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Benar</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Jawaban Benar</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Benar!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Kelima Berkurang</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonansi</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Harmonik</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Saya menyerah</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Konsistensi Tidak Sempurna</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Pelatihan Interval</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Tersebut Kecil</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Pertanyaan Selanjutnya</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Kesesuaian Sempurna</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Kwintal Murni</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Mulai Acak</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Disonansi Tajam</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Mulai dari C</value>

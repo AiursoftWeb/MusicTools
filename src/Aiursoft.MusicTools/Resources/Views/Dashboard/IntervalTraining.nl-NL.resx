@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Correct</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Correcte Antwoord</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Correct!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Gedempte kwint</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonantie</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Harmonisch</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Ik geef het op</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Onvolmaakte consonantie</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Intervaltraining</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Kleine terts</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Volgende vraag</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Volmaakte consonant</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Perfecte kwint</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Willekeurige start</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Scherpe dissonantie</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Start bij C</value>

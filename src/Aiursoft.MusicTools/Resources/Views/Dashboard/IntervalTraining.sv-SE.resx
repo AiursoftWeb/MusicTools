@@ -27,11 +27,26 @@
   <data name="Correct" xml:space="preserve">
     <value>Rätt</value>
   </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Rätt svar</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Rätt!</value>
   </data>
   <data name="Diminished Fifth" xml:space="preserve">
     <value>Minskad kvint</value>
+  </data>
+  <data name="Dissonance" xml:space="preserve">
+    <value>Dissonans</value>
+  </data>
+  <data name="Harmonic" xml:space="preserve">
+    <value>Harmonisk</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Jag ger upp</value>
+  </data>
+  <data name="Imperfect Consonance" xml:space="preserve">
+    <value>Imperfekt konsonans</value>
   </data>
   <data name="Interval Training" xml:space="preserve">
     <value>Intervallträning</value>
@@ -63,6 +78,12 @@
   <data name="Minor Third" xml:space="preserve">
     <value>Liten terts</value>
   </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Nästa fråga</value>
+  </data>
+  <data name="Perfect Consonance" xml:space="preserve">
+    <value>Perfekt konsonans</value>
+  </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Perfekt kvint</value>
   </data>
@@ -80,6 +101,9 @@
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Slumpmässig start</value>
+  </data>
+  <data name="Sharp Dissonance" xml:space="preserve">
+    <value>Vass dissonans</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Börja på C</value>
