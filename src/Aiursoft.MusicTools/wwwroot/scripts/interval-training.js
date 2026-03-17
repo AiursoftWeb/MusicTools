@@ -93,14 +93,22 @@ class IntervalTraining {
         this.#isShowingResult = false;
         const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         
-        if (selectedMode === 'fixed-c') {
-            this.#currentBaseMidi = 60; // Middle C (C4)
-        } else {
-            this.#currentBaseMidi = 48 + Math.floor(Math.random() * 24); // Random note from C3 to B4
+        let isValid = false;
+        while (!isValid) {
+            if (selectedMode === 'fixed-c') {
+                this.#currentBaseMidi = 60; // Middle C (C4)
+            } else {
+                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 25); // Random note from C3 (48) to C5 (72)
+            }
+            
+            this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
+            this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
+            
+            // Limit target to G2 (43) to G5 (79)
+            if (this.#currentTargetMidi >= 43 && this.#currentTargetMidi <= 79) {
+                isValid = true;
+            }
         }
-        
-        this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
-        this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
 
         // Update Question UI
         const questionLabel = document.getElementById('question-label');
