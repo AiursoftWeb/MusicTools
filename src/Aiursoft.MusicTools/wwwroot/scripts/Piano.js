@@ -10,6 +10,7 @@ class Piano {
     #onClickCallback;
     #activeKeys;
     #tonePianoInstance; // Instance of @tonejs/piano
+    #activeOscillators = new Set();
 
     // --- 2. 静态数据 ---
     static NOTE_NAMES = [
@@ -305,9 +306,15 @@ class Piano {
             sustainLevel,
             scheduledEndTime - releaseTime
         );
-        gainNode.gain.linearRampToValueAtTime(0, scheduledEndTime);
+        gainNode.gain.setValueAtTime(0, scheduledEndTime);
         oscillator.connect(gainNode);
         gainNode.connect(this.#audioContext.destination);
+        
+        this.#activeOscillators.add(oscillator);
+        oscillator.onended = () => {
+            this.#activeOscillators.delete(oscillator);
+        };
+        
         oscillator.start(now);
         oscillator.stop(scheduledEndTime);
     }
@@ -352,6 +359,27 @@ class Piano {
                 scaleDegreeEl.textContent = "";
             }
         });
+    }
+
+    stopAll() {
+        const now = (typeof Tone !== "undefined" && Tone.now) ? Tone.now() : 0;
+        if (this.#tonePianoInstance && this.#tonePianoInstance.loaded) {
+            this.#keyMap.forEach((_, noteName) => {
+                try {
+                    this.#tonePianoInstance.keyUp({ note: noteName, time: now });
+                } catch(e) {}
+            });
+        }
+        
+        if (this.#activeOscillators) {
+            this.#activeOscillators.forEach(osc => {
+                try {
+                    osc.stop();
+                    osc.disconnect();
+                } catch(e) {}
+            });
+            this.#activeOscillators.clear();
+        }
     }
 
     // ... (bindToComputerKeyboard 100% 不变) ...

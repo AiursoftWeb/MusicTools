@@ -6,6 +6,7 @@ class IntervalTraining {
     #intervalKeys;
     #isPlaying = false;
     #isShowingResult = false;
+    #playAbortController = null;
     #correctCount = 0;
     #wrongCount = 0;
     #intervalSemitones = {
@@ -51,45 +52,93 @@ class IntervalTraining {
         return `${noteName}${octave}`;
     }
 
+    #delay(ms, signal) {
+        return new Promise((resolve, reject) => {
+            const timer = setTimeout(resolve, ms);
+            if (signal) {
+                signal.addEventListener('abort', () => {
+                    clearTimeout(timer);
+                    reject(new DOMException('Aborted', 'AbortError'));
+                }, { once: true });
+            }
+        });
+    }
+
     async playInterval() {
         if (this.#isPlaying) return;
         this.#isPlaying = true;
 
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
+        }
+        const currentAbortController = new AbortController();
+        this.#playAbortController = currentAbortController;
+        const signal = currentAbortController.signal;
+
         const playButton = document.getElementById('play-button');
+        const playButtonIcon = playButton?.querySelector('i');
+        const originalIconClass = playButtonIcon?.className;
+
         if (playButton) {
             playButton.disabled = true;
             playButton.classList.add('opacity-50');
+            if (playButtonIcon) {
+                playButtonIcon.className = 'spinner-border spinner-border-sm';
+            }
         }
 
         const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
         const targetNote = this.#midiToNoteName(this.#currentTargetMidi);
 
-        if (selectedMode === 'harmonic') {
-            this.#piano.playNote(baseNote, 1.0);
-            this.#piano.playNote(targetNote, 1.0);
-            await new Promise(r => setTimeout(r, 1200));
-        } else {
-            this.#piano.playNote(baseNote, 0.5);
-            await new Promise(r => setTimeout(r, 600));
-            this.#piano.playNote(targetNote, 0.5);
-            await new Promise(r => setTimeout(r, 600));
-        }
+        this.#piano.stopAll();
 
-        this.#isPlaying = false;
-        if (playButton) {
-            playButton.disabled = false;
-            playButton.classList.remove('opacity-50');
-        }
+        try {
+            if (selectedMode === 'harmonic') {
+                this.#piano.playNote(baseNote, 1.0);
+                this.#piano.playNote(targetNote, 1.0);
+                await this.#delay(1200, signal);
+            } else {
+                this.#piano.playNote(baseNote, 0.5);
+                await this.#delay(600, signal);
+                this.#piano.playNote(targetNote, 0.5);
+                await this.#delay(600, signal);
+            }
 
-        // Show options after the first playback
-        const optionsContainer = document.getElementById('interval-options-row');
-        if (optionsContainer && !this.#isShowingResult) {
-            optionsContainer.classList.remove('d-none');
+            // Hard cooldown 1.5s
+            await this.#delay(1500, signal);
+        } catch (e) {
+            if (e.name === 'AbortError') {
+                return;
+            }
+            throw e;
+        } finally {
+            if (this.#playAbortController === currentAbortController) {
+                this.#isPlaying = false;
+                if (playButton) {
+                    playButton.disabled = false;
+                    playButton.classList.remove('opacity-50');
+                    if (playButtonIcon && originalIconClass) {
+                        playButtonIcon.className = originalIconClass;
+                    }
+                }
+
+                // Show options after the first playback
+                const optionsContainer = document.getElementById('interval-options-row');
+                if (optionsContainer && !this.#isShowingResult) {
+                    optionsContainer.classList.remove('d-none');
+                }
+            }
         }
     }
 
     nextQuestion() {
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
+        }
+        this.#piano.stopAll();
+        this.#isPlaying = false;
+
         this.#isShowingResult = false;
         const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         
