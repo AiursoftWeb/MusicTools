@@ -71,6 +71,7 @@ export default defineConfig({
                 metronome: resolve(__dirname, "scripts/metronome.js"),
                 melodyMemory: resolve(__dirname, "scripts/melody-memory.js"),
                 intervalTraining: resolve(__dirname, "scripts/interval-training.js"),
+                chordTraining: resolve(__dirname, "scripts/chord-training.js"),
                 intervalExam: resolve(__dirname, "scripts/interval-exam.js"),
                 tuner: resolve(__dirname, "scripts/tuner.js"),
             },
