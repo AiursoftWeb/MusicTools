@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Haastele musiikillista muistiasi toistamalla sävelmää.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Sointuharjoittelu</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Sisältää Docker-tukea yksinkertaistettuun ja johdonmukaiseen käyttöönottoon.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Työkalut</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Harjoita korvaasi tunnistamalla pianolla soitettuja sointuja.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Harjoita korvaasi tunnistamalla pianolla soitettuja musiikillisia välejä.</value>
