@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Arpeggio" xml:space="preserve">
+    <value>Арпеджио</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
+    <value>Увеличенная терция</value>
+  </data>
+  <data name="Block Chord" xml:space="preserve">
+    <value>Блок-аккорд</value>
+  </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Тренировка аккордов</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Верно</value>
+  </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>Правильный ответ</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Верно!</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Уменьшенное трезвучие</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>Я сдаюсь</value>
+  </data>
+  <data name="Listen to the chord and identify its type." xml:space="preserve">
+    <value>Внимательно прослушайте аккорд и определите его тип.</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Большая терция</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Минорное трезвучие</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Следующий вопрос</value>
+  </data>
+  <data name="Play Chord" xml:space="preserve">
+    <value>Играть аккорд</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>Случайный старт</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>Начать с C</value>
+  </data>
+  <data name="What is the type of the chord played?" xml:space="preserve">
+    <value>Какой тип аккорда был сыгран?</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>Неверно</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>Неверно.</value>
+  </data>
+
+</root>

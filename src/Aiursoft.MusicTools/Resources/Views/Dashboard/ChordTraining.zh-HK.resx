@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Arpeggio" xml:space="preserve">
+    <value>琶音</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
+    <value>增三和弦</value>
+  </data>
+  <data name="Block Chord" xml:space="preserve">
+    <value>和弦塊奏</value>
+  </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>和弦訓練</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>正確</value>
+  </data>
+  <data name="Correct Answer" xml:space="preserve">
+    <value>正確答案</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>正確！</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>減三和弦</value>
+  </data>
+  <data name="I give up" xml:space="preserve">
+    <value>我放棄了</value>
+  </data>
+  <data name="Listen to the chord and identify its type." xml:space="preserve">
+    <value>聆聽和弦並識別其類型。</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>大三和弦</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>小三和弦</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>下一題</value>
+  </data>
+  <data name="Play Chord" xml:space="preserve">
+    <value>播放和弦</value>
+  </data>
+  <data name="Random Start" xml:space="preserve">
+    <value>隨機開始</value>
+  </data>
+  <data name="Start from C" xml:space="preserve">
+    <value>由 C 開始</value>
+  </data>
+  <data name="What is the type of the chord played?" xml:space="preserve">
+    <value>所演奏的和弦類型是什麼？</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Wrong." xml:space="preserve">
+    <value>錯誤。</value>
+  </data>
+
+</root>

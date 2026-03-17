@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Test je muziekmemory door melodieën te herhalen.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Akoordtraining</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Kom met Docker-ondersteuning voor vereenvoudigde en consistente implementaties.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Gereedschappen</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Train je oor door muzikale akkoorden die op de piano worden gespeeld te identificeren.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Train je oor door muzikale intervallen die op de piano worden gespeeld te herkennen.</value>

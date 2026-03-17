@@ -51,6 +51,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>修改个人资料</value>
   </data>
+  <data name="Chord training" xml:space="preserve">
+    <value>和弦训练</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>点击登录</value>
   </data>

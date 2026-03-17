@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Uji ingatan musikal Anda dengan mengulangi melodi.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Pelatihan Akor</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Datang dengan dukungan Docker untuk penyebaran yang disederhanakan dan konsisten.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Alat</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Latih telinga Anda dengan mengidentifikasi akor musik yang dimainkan di piano.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Latih telinga Anda dengan mengidentifikasi interval musik yang dimainkan di piano.</value>

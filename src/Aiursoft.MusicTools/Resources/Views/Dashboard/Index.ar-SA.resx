@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>تحدّي ذاكرتك الموسيقية من خلال تكرار اللحن.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>تدريب الأوتار</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>يأتي مع دعم دوكير لDeployment مبسطة ومتزنة.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>أدوات</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>درب أذنك من خلال تحديد الأوتار الموسيقية المنفذة على البيانو.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>اقدر أذنك عن طريق تحديد الفواصل الموسيقية المنفذة على البيانو.</value>

@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Provocă-ți memoria muzicală repetând melodiile.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Antrenament acorduri</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Include suport pentru Docker pentru implementări simplificate și consistente.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Unelte</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Antrenează-ți urechea identificând acordurile muzicale jucate la pian.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Antrenează-ți auzul identificând intervalele muzicale redate la pian.</value>

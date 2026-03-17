@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>メロディーを繰り返して、あなたの音楽記憶力を試しましょう。</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>コードトレーニング</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Dockerサポートを備えており、シンプルで一貫性のあるデプロイが可能になります。</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>ツール</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>ピアノで演奏された音楽の和音を見分けて、耳を鍛えましょう。</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>ピアノで演奏される音程を識別して耳を鍛えましょう。</value>

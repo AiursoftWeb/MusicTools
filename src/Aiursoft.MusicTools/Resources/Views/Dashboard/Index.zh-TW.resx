@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>挑戰你的音樂記憶，重複旋律。</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>和弦訓練</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>內建 Docker 支援，讓部署更簡化且一致。</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>工具</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>透過辨識鋼琴上演奏的和弦來訓練您的聽覺。</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>透過辨識鋼琴上演奏的音程來訓練您的聽力。</value>
