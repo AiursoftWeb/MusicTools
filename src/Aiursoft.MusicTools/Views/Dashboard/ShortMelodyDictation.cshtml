@@ -1,0 +1,206 @@
+@{
+    ViewData["Title"] = @Localizer["Short Melody Dictation"];
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+
+            <!-- SCREEN 1: START SCREEN -->
+            <div id="start-overlay" class="card shadow-lg border-0 mx-auto" style="max-width: 900px; min-height: 600px;">
+                <div class="card-body p-4 p-md-5 d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-5">
+                        <div class="display-1 text-warning mb-2">🎵</div>
+                        <h1 class="display-5 fw-bold mb-3">@Localizer["Short Melody Dictation"]</h1>
+                        <p class="text-secondary lead">@Localizer["Listen to a short melody and dictate it."]</p>
+                    </div>
+
+                    <div class="w-100" style="max-width: 800px;">
+                        <div class="row g-4 mb-5 text-start">
+                            <div class="col-md-4">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Bars"]</label>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="bars" id="bars-2" value="2" checked>
+                                        <label class="form-check-label" for="bars-2">2 @Localizer["Bars"]</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="bars" id="bars-4" value="4">
+                                        <label class="form-check-label" for="bars-4">4 @Localizer["Bars"]</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Time Signature"]</label>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timeSignature" id="ts-24" value="2/4">
+                                        <label class="form-check-label" for="ts-24">2/4</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timeSignature" id="ts-34" value="3/4">
+                                        <label class="form-check-label" for="ts-34">3/4</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="timeSignature" id="ts-44" value="4/4" checked>
+                                        <label class="form-check-label" for="ts-44">4/4</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Answer Mode"]</label>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gameMode" id="mode-a" value="A" checked>
+                                        <label class="form-check-label" for="mode-a">@Localizer["Virtual Piano"]</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gameMode" id="mode-b" value="B">
+                                        <label class="form-check-label" for="mode-b">@Localizer["Staff Fragments"]</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="btn-start" class="btn btn-warning btn-lg w-100 p-3 fs-4 fw-bold rounded-pill shadow-sm text-uppercase tracking-wider hover-scale">
+                            @Localizer["Start Training"]
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCREEN 2: GAME AREA -->
+            <div id="game-board" class="d-none w-100">
+                <div class="d-flex flex-column align-items-center w-100">
+
+                    <!-- Controls Bar -->
+                    <div class="w-100 mb-4 px-0" style="max-width: 1000px;">
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button id="btn-play-standard" class="btn btn-outline-secondary">
+                                <i class="bi bi-music-note"></i> @Localizer["Standard C4"]
+                            </button>
+                            <button id="btn-play-melody" class="btn btn-primary btn-lg px-5">
+                                <i class="bi bi-play-fill"></i> @Localizer["Play Melody"]
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mode A: Piano Area -->
+                    <div id="piano-area" class="w-100 px-0 d-none">
+                         <div class="row justify-content-center">
+                            <div class="col-lg-12 position-relative text-center px-0">
+                                <div id="piano-container" class="piano-container table-responsive"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mode B: Staff Area -->
+                    <div id="staff-area" class="w-100 px-0 d-none">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4">
+                                <div id="staff-answer1-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="staff-answer2-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="staff-answer3-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                         <button id="btn-next" class="btn btn-outline-primary px-4">@Localizer["Skip / Next"]</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="localization-data" hidden
+     data-correct="@Localizer["Correct!"]"
+     data-wrong="@Localizer["Wrong. Try again!"]">
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section scripts {
+    <script type="module" src="~/dist/scripts/musicStaff.js" asp-append-version="true"></script>
+    <script type="module" src="~/dist/scripts/shortMelodyDictation.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const dom = {
+                startOverlay: document.getElementById('start-overlay'),
+                gameBoard: document.getElementById('game-board'),
+                btnStart: document.getElementById('btn-start'),
+                btnPlayMelody: document.getElementById('btn-play-melody'),
+                btnPlayStandard: document.getElementById('btn-play-standard'),
+                btnNext: document.getElementById('btn-next'),
+                pianoArea: document.getElementById('piano-area'),
+                staffArea: document.getElementById('staff-area'),
+                pianoContainer: document.getElementById('piano-container'),
+                answerStaffContainers: [
+                    document.getElementById('staff-answer1-container'),
+                    document.getElementById('staff-answer2-container'),
+                    document.getElementById('staff-answer3-container')
+                ],
+                answerElements: [
+                    document.getElementById('staff-answer1-container'),
+                    document.getElementById('staff-answer2-container'),
+                    document.getElementById('staff-answer3-container')
+                ]
+            };
+
+            const locData = document.getElementById('localization-data').dataset;
+            const loc = {
+                correct: locData.correct,
+                wrong: locData.wrong
+            };
+
+            if (typeof ShortMelodyDictation !== 'undefined') {
+                new ShortMelodyDictation(dom, loc);
+            } else {
+                console.error("ShortMelodyDictation script not loaded correctly.");
+            }
+        });
+    </script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+    <style>
+        .hover-scale { transition: transform 0.2s; }
+        .hover-scale:hover { transform: scale(1.02); }
+
+        .staff-answer-container {
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+            min-height: 200px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .staff-answer-container:hover {
+            border-color: #0d6efd !important;
+            background-color: #f8f9fa;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Highlight piano keys when playing */
+        .piano-container li.playing {
+            background-color: #ffc107 !important;
+            box-shadow: 0 0 15px #ffc107;
+        }
+        .piano-container li.black.playing {
+            background-color: #ffca28 !important;
+        }
+    </style>
+}

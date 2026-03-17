@@ -73,6 +73,7 @@ export default defineConfig({
                 intervalTraining: resolve(__dirname, "scripts/interval-training.js"),
                 chordTraining: resolve(__dirname, "scripts/chord-training.js"),
                 intervalExam: resolve(__dirname, "scripts/interval-exam.js"),
+                shortMelodyDictation: resolve(__dirname, "scripts/short-melody-dictation.js"),
                 tuner: resolve(__dirname, "scripts/tuner.js"),
             },
             output: {
