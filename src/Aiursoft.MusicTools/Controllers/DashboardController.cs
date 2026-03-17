@@ -126,4 +126,17 @@ public class DashboardController : Controller
     {
         return this.StackView(new MelodyMemoryViewModel());
     }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Chord training",
+        LinkOrder = 9)]
+    public IActionResult ChordTraining()
+    {
+        return this.StackView(new ChordTrainingViewModel());
+    }
 }

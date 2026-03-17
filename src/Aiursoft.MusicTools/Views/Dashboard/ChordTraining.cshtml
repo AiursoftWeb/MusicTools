@@ -1,0 +1,131 @@
+@{
+    ViewData["Title"] = @Localizer["Chord Training"];
+}
+
+<div id="localization-data"
+     data-correct="@Localizer["Correct!"]"
+     data-wrong="@Localizer["Wrong."]"
+     data-give-up="@Localizer["I give up"]"
+     data-next-question="@Localizer["Next Question"]"
+     data-play-chord="@Localizer["Play Chord"]"
+     data-question-template="@Localizer["What is the type of the chord played?"]"
+     data-chord-major="@Localizer["Major Triad"]"
+     data-chord-minor="@Localizer["Minor Triad"]"
+     data-chord-diminished="@Localizer["Diminished Triad"]"
+     data-chord-augmented="@Localizer["Augmented Triad"]"
+     style="display: none;">
+</div>
+
+<div class="container-fluid py-4 position-relative">
+    <!-- Score Counters -->
+    <div class="position-absolute top-0 end-0 mt-3 me-3 d-flex gap-3">
+        <div class="bg-light rounded-pill px-3 py-2 shadow-sm d-flex align-items-center gap-2 border" title="@Localizer["Correct"]">
+            <span class="fs-4">✅</span>
+            <span id="correct-count" class="fs-4 fw-bold text-success">0</span>
+        </div>
+        <div class="bg-light rounded-pill px-3 py-2 shadow-sm d-flex align-items-center gap-2 border" title="@Localizer["Wrong"]">
+            <span class="fs-4">❌</span>
+            <span id="wrong-count" class="fs-4 fw-bold text-danger">0</span>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-5 mb-4">@Localizer["Chord Training"]</h1>
+            <p id="question-label" class="lead">@Localizer["Listen to the chord and identify its type."]</p>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mb-5">
+        <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center gap-4">
+            <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <div class="btn-group shadow-sm" role="group" aria-label="Start mode">
+                    <input type="radio" class="btn-check" name="start-mode" id="mode-random" value="random" checked autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="mode-random">
+                        <i class="bi bi-shuffle me-1"></i> @Localizer["Random Start"]
+                    </label>
+
+                    <input type="radio" class="btn-check" name="start-mode" id="mode-fixed-c" value="fixed-c" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="mode-fixed-c">
+                        <i class="bi bi-type-bold me-1"></i> @Localizer["Start from C"]
+                    </label>
+                </div>
+                
+                <div class="btn-group shadow-sm" role="group" aria-label="Play mode">
+                    <input type="radio" class="btn-check" name="play-mode" id="mode-block" value="block" checked autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="mode-block">
+                        <i class="bi bi-music-note-list me-1"></i> @Localizer["Block Chord"]
+                    </label>
+
+                    <input type="radio" class="btn-check" name="play-mode" id="mode-arpeggio" value="arpeggio" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="mode-arpeggio">
+                        <i class="bi bi-music-note-beamed me-1"></i> @Localizer["Arpeggio"]
+                    </label>
+                </div>
+            </div>
+
+            <button id="play-button" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow hover-scale d-flex align-items-center gap-2">
+                <i class="bi bi-play-fill fs-3"></i>
+                <span id="play-button-text" class="fs-4 fw-bold">@Localizer["Play Chord"]</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="chord-options-row" class="row g-4 justify-content-center d-none">
+        <div class="col-lg-10">
+            <div id="chord-options" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
+                <!-- Chords will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="result-details" class="row g-4 justify-content-center mt-5 d-none">
+        <div class="col-lg-4">
+            <div class="card h-100 shadow-sm border-0 bg-light">
+                <div class="card-body text-center d-flex flex-column justify-content-center">
+                    <h6 class="text-muted text-uppercase small mb-2">@Localizer["Correct Answer"]</h6>
+                    <h2 id="result-chord-name" class="display-6 fw-bold text-primary mb-2"></h2>
+                    <p id="result-inversion" class="lead text-info fw-bold mb-0"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div id="piano-container" class="piano-container table-responsive"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section scripts {
+    <script type="module" src="~/dist/scripts/chordTraining.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+             window.startChordTraining('piano-container', 'localization-data');
+        });
+    </script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"></link>
+
+    <style>
+        .hover-scale {
+            transition: transform 0.2s;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .chord-btn {
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+}

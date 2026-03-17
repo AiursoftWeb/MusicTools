@@ -34,4 +34,12 @@ public class DashboardControllerTests : TestBase
         var response = await Http.GetAsync(url);
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
+
+    [TestMethod]
+    public async Task GetChordTraining()
+    {
+        var url = "/Dashboard/ChordTraining";
+        var response = await Http.GetAsync(url);
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
 }
