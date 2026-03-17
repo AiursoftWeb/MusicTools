@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Викличте свою музичну пам&apos;ять, повторюючи мелодії.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Тренування акордів</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Містить підтримку Docker для спрощеного та узгодженого розгортання.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Інструменти</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Розвивайте слух, визначаючи музичні акорди, які виконуються на фортепіано.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Тренуйте слух, визначаючи музичні інтервали, що граються на фортепіано.</value>

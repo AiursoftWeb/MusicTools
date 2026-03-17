@@ -51,6 +51,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Thay đổi Hồ sơ</value>
   </data>
+  <data name="Chord training" xml:space="preserve">
+    <value>Luyện tập hợp âm</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Nhấp để đăng nhập</value>
   </data>

@@ -48,6 +48,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Profiel wijzigen</value>
   </data>
+  <data name="Chord training" xml:space="preserve">
+    <value>Akoorden training</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Klik om in te loggen</value>
   </data>

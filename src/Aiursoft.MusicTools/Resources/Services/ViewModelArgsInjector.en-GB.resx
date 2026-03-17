@@ -51,6 +51,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Change Profile</value>
   </data>
+  <data name="Chord training" xml:space="preserve">
+    <value>Chord training</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Click to log in</value>
   </data>

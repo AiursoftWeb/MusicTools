@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Проверьте свою музыкальную память, повторяя мелодии.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Тренировка аккордов</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Имеет поддержку Docker для упрощённого и единообразного развертывания.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Инструменты</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Развивайте слух, определяя музыкальные аккорды, сыгранные на фортепиано.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Развивайте слух, определяя музыкальные интервалы, исполняемые на фортепиано.</value>

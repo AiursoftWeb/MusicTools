@@ -99,6 +99,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Self Host"];
     
         _ = localizer["Interval training"];
+    
+        _ = localizer["Chord training"];
     }
 
     public void InjectSimple(

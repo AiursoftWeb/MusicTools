@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Melodileri tekrarlayarak müzik hafızanızı zorlayın.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Akort Eğitimi</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Docker desteğiyle gelir, basitleştirilmiş ve tutarlı dağıtımlar için.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Araçlar</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Piyano üzerinde çalınan müzikal akorları tanıyarak kulağınızı eğitin.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Piyano üzerinde çalınan müzikal aralıkları belirleyerek kulağınızı eğitin.</value>
