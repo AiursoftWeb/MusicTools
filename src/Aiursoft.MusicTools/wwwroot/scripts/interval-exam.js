@@ -47,8 +47,9 @@ const INTERVAL_DEFINITIONS = {
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
 
 const EXAM_PITCHES = [
-    'C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4',
-    'C#4', 'Eb4', 'F#4', 'G#4', 'Bb4'
+    'C3', 'C#3', 'D3', 'Eb3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A3', 'Bb3', 'B3',
+    'C4', 'C#4', 'D4', 'Eb4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'Bb4', 'B4',
+    'C5'
 ];
 
 // --- 2. 核心考试逻辑 (已重构) ---
@@ -144,13 +145,33 @@ class ExamQuestion {
         return targetLetter + accidentalSymbol + targetOctave; // 'C' + '𝄪' + '5'
     }
 
+    #isPitchInRange(pitch) {
+        if (!pitch) return false;
+        const baseLetter = pitch.charAt(0);
+        const baseAccidental = (pitch.length > 2 && (pitch.charAt(1) === '#' || pitch.charAt(1) === 'b' || pitch.charAt(1) === '𝄪' || pitch.charAt(1) === '𝄫')) ? pitch.slice(1, -1) : '';
+        const baseOctave = parseInt(pitch.slice(baseLetter.length + baseAccidental.length), 10);
+
+        const NOTE_TO_SEMI = { 'C': 0, 'D': 2, 'E': 4, 'F': 5, 'G': 7, 'A': 9, 'B': 11 };
+        const ACC_TO_VAL = { '': 0, '#': 1, 'b': -1, '𝄪': 2, '𝄫': -2 };
+
+        const semi = NOTE_TO_SEMI[baseLetter] + (ACC_TO_VAL[baseAccidental] || 0) + (baseOctave + 1) * 12;
+        // G2 = 43, G5 = 79
+        return semi >= 43 && semi <= 79;
+    }
+
     nextQuestion() {
         // ... (此函数 100% 不变)
-        const basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
-        const intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
-        const interval = INTERVAL_DEFINITIONS[intervalKey];
-        const localizedIntervalName = this.#localizedStrings.intervals[intervalKey];
-        this.#correctAnswerPitch = this.calculateInterval(basePitch, interval);
+        let basePitch, intervalKey, interval, localizedIntervalName;
+        let isValid = false;
+        while (!isValid) {
+            basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
+            intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
+            interval = INTERVAL_DEFINITIONS[intervalKey];
+            this.#correctAnswerPitch = this.calculateInterval(basePitch, interval);
+            isValid = this.#isPitchInRange(this.#correctAnswerPitch);
+        }
+        localizedIntervalName = this.#localizedStrings.intervals[intervalKey];
+        
         const wrongAnswers = this.generateWrongAnswers(basePitch, interval, this.#correctAnswerPitch);
         const allAnswers = [this.#correctAnswerPitch, ...wrongAnswers];
         this.shuffleArray(allAnswers);
@@ -183,7 +204,7 @@ class ExamQuestion {
             const wrongIntervalKey = INTERVAL_KEYS.find(key => key !== currentIntervalKey);
             const wrongInterval = INTERVAL_DEFINITIONS[wrongIntervalKey];
             const wrongAnswer1 = this.calculateInterval(basePitch, wrongInterval);
-            if (wrongAnswer1 !== correctAnswer && wrongAnswer1 !== basePitch) {
+            if (wrongAnswer1 !== correctAnswer && wrongAnswer1 !== basePitch && this.#isPitchInRange(wrongAnswer1)) {
                 wrongAnswers.add(wrongAnswer1);
             }
         } catch (e) { console.error("Error generating wrong answer 1:", e); }
@@ -210,7 +231,7 @@ class ExamQuestion {
                     enharmonicAnswer = possibleNotes.flat + correctOctave;
                 }
             }
-            if (enharmonicAnswer && enharmonicAnswer !== correctAnswer && enharmonicAnswer !== basePitch) {
+            if (enharmonicAnswer && enharmonicAnswer !== correctAnswer && enharmonicAnswer !== basePitch && this.#isPitchInRange(enharmonicAnswer)) {
                 wrongAnswers.add(enharmonicAnswer);
             }
         } catch (e) { console.error("Error generating wrong answer 2:", e); }
