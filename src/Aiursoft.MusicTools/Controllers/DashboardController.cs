@@ -133,8 +133,21 @@ public class DashboardController : Controller
         CascadedLinksGroupName = "Tests",
         CascadedLinksIcon = "headphones",
         CascadedLinksOrder = 2,
-        LinkText = "Chord training",
+        LinkText = "Short Melody Dictation",
         LinkOrder = 9)]
+    public IActionResult ShortMelodyDictation()
+    {
+        return this.StackView(new ShortMelodyDictationViewModel());
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Chord training",
+        LinkOrder = 10)]
     public IActionResult ChordTraining()
     {
         return this.StackView(new ChordTrainingViewModel());

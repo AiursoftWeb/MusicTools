@@ -155,9 +155,14 @@ class MusicStaff {
     /**
      * [!! 修改 !!] 绘制单个音符
      * (现在可以解析 C𝄪5 这样的音高)
+     * @param {string} pitch - e.g. "C4", "Eb4"
+     * @param {number} horizontalOffset - (Optional) Additional X offset in pixels.
+     * @param {boolean} clear - (Optional) Whether to clear existing notes.
      */
-    showNote(pitch) {
-        this.clearNote();
+    showNote(pitch, horizontalOffset = 0, clear = true) {
+        if (clear) {
+            this.clearNote();
+        }
         if (!pitch) return;
 
         // 1. [!! 修复 !!] 解析音高
@@ -203,9 +208,9 @@ class MusicStaff {
         const hasKeySignature = (this.#currentKeySignature && this.#currentKeySignature.count > 0);
         const KEY_SIGNATURE_SPACE_SHIFT = 160; // (你的 160px)
 
-        let noteLeftPx = 320;
-        let ledgerLeftPx = 310;
-        let accidentalLeftPx = 300;
+        let noteLeftPx = 320 + horizontalOffset;
+        let ledgerLeftPx = 310 + horizontalOffset;
+        let accidentalLeftPx = 300 + horizontalOffset;
 
         if (!hasKeySignature) {
             noteLeftPx -= KEY_SIGNATURE_SPACE_SHIFT;
@@ -248,6 +253,28 @@ class MusicStaff {
         noteEl.style.top = `${finalTop}em`;
         noteEl.style.left = `${noteLeftPx}px`;
         this.#noteGroup.appendChild(noteEl);
+    }
+
+    /**
+     * Renders a sequence of notes.
+     * @param {Array} melody - Array of note objects {pitch, duration, time}
+     */
+    showMelody(melody) {
+        this.clearNote();
+        if (!melody || melody.length === 0) return;
+
+        // Calculate required width
+        const lastNote = melody[melody.length - 1];
+        const totalBeats = lastNote.time + lastNote.duration;
+        const requiredWidth = 320 + totalBeats * 80 + 100;
+        this.#staffWrapper.style.width = `${requiredWidth}px`;
+
+        // Spread notes along the staff.
+        // Simple heuristic: 80px per beat.
+        melody.forEach(note => {
+            const offset = note.time * 80; // 80px per beat
+            this.showNote(note.pitch, offset, false);
+        });
     }
 
     // =================================================================
