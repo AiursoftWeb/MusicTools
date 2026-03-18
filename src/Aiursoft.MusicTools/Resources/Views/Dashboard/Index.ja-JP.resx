@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>調は孤立した存在ではありません。『五度圏』は音楽の羅針盤であり、すべての調号（C → G → D...）の順序とそれらの和声的関係を明らかにします。それは作曲、編曲、即興演奏のための核心となる設計図です。</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>短いメロディを聴き、ピアノまたは五線譜で記述してください。</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>メジャー計算機</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>任意のOpenID Connectプロバイダーとシームレスに統合でき、ロールの自動同期が可能です。</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>短旋律記譜</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>スマート設定オーバーライド</value>

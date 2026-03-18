@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>المفاتيح الموسيقية ليست منعزلة. إن &quot;دائرة الخامسات&quot; هي بوصلة الموسيقى، فهي تكشف ترتيب جميع سلالم المفاتيح (C -&gt; G -&gt; D...) وعلاقاتها التوافقية. إنها المخطط الأساسي للتأليف، والتوزيع، والارتجال.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>استمع إلى لحن قصير واكتبه على البيانو أو الشريط الموسيقي.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>الآلة الحاسبة للماجور</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>تتكامل بسلاسة مع أي مزود OpenID Connect، مع مزامنة تلقائية للدور.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>دكتات لحن قصير</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>تجاوزات التهيئة الذكية</value>

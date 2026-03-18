@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>调性并非孤立存在。&quot;五度圈&quot;（Circle of Fifths）是音乐世界的罗盘，它揭示了所有调号（C -&gt; G -&gt; D...）的排列顺序及其和声关系，是作曲、编曲与即兴创作的核心蓝图。</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>聆听一段短旋律，并在钢琴或五线谱上将其听写出来。</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>大调计算器</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>无缝集成任意 OpenID Connect 提供商，支持自动角色同步。</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>短旋律听写</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>智能配置覆盖</value>

@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonacje nie są odizolowane. &apos;Koło kwintowe&apos; jest kompasem muzyki, odsłaniającym kolejność wszystkich znaków przykluczowych (C -&gt; G -&gt; D...) oraz ich harmoniczne powiązania. Jest to fundamentalny plan dla kompozycji, aranżacji i improwizacji.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Posłuchaj krótkiej melodii i nagraj ją na pianinie lub na nutowym.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Kalkulator skal major</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Bezproblematyczna integracja z dowolnym dostawcą OpenID Connect z automatycznym synchronizowaniem ról.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Dyktowanie krótkiej melodii</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Inteligentne Zastąpienia Konfiguracji</value>

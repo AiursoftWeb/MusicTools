@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Toonsoorten staan niet op zichzelf. De &apos;Circle of Fifths&apos; is het kompas van de muziek, dat de volgorde van alle toonsoorten (C -&gt; G -&gt; D...) en hun harmonische relaties onthult. Het is de blauwdruk voor compositie, arrangement en improvisatie.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Luister naar een korte melodie en schrijf deze neer op de piano of op de notenbalk.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Major Calculator</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Naadloos integreren met elke OpenID Connect-provider, met automatische rol synchronisatie.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Dictaat van korte melodieën</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Slimme Configuratie-Overschrijvingen</value>

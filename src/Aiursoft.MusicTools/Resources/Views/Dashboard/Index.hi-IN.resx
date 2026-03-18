@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>सुर अलग-थलग नहीं होते। &apos;Circle of Fifths&apos; संगीत का कम्पास है, जो सभी सुर हस्ताक्षरों (C -&gt; G -&gt; D...) के क्रम और उनके सुरीले संबंधों को प्रकट करता है। यह संरचना, आयोजन और आशु रचना के लिए मुख्य नक्शा है।</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>एक छोटी धुन सुनें और उसे पियानो या स्टाफ पर लिखें।</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>मेजर कैलकुलेटर</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>किसी भी OpenID Connect प्रदाता के साथ बिना किसी रुकावट के एकीकृत करें, स्वचालित भूमिका समन्वय के साथ।</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>छोटी धुन की डिक्टेशन</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>स्मार्ट कॉन्फ़िगरेशन ओवरराइड्स</value>

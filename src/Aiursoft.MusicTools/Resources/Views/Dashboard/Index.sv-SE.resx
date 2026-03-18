@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonarter är inte isolerade. &apos;Circle of Fifths&apos; är musikens kompass, som avslutar ordningen för alla tonarter (C -&gt; G -&gt; D...) och deras harmoniska relationer. Den är kärnmodellen för komposition, arrangemang och improvisation.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Lyssna på en kort melodi och diktera den på pianot eller i notsystemet.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Stor räknare</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Smygande integrering med vilken OpenID Connect-leverantör som helst, med automatisk rollsynkronisering.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Diktat av korta melodier</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Smart Configuration Overrides</value>

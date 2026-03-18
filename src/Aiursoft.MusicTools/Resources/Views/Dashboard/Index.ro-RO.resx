@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonurile nu sunt izolate. „Cercul cvintelor” este busola muzicii, dezvăluind ordinea tuturor armăturilor (C -&gt; G -&gt; D...) și a relațiilor lor armonice. Este planul de bază pentru compoziție, aranjament și improvizație.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Ascultați o melodie scurtă și dictați-o la pian sau pe portativ.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Calculatoarele pentru tonalități majore</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Integrează ușor cu orice furnizor OpenID Connect, cu sincronizare automată a rolurilor.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Ditare a unei melodii scurte</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Supravățuiri inteligente de configurare</value>
