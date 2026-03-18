@@ -180,6 +180,9 @@
   <data name="Settings" xml:space="preserve">
     <value>Definições</value>
   </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Ditado de Melodia Curta</value>
+  </data>
   <data name="Sign out" xml:space="preserve">
     <value>Terminar sessão</value>
   </data>

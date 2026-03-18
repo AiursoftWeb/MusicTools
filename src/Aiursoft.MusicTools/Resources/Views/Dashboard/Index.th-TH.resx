@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>คีย์ไม่ได้แยกจากกัน &apos;Circle of Fifths&apos; คือเข็มทิศของดนตรี ที่เผยให้เห็นลำดับของคีย์ทั้งหมด (C -&gt; G -&gt; D...) และความสัมพันธ์ทางฮาร์โมนิกของพวกมัน มันคือพิมพ์เขียวหลักสำหรับการแต่งเพลง การเรียบเรียง และการด้นสด</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>ฟังทำนองสั้นๆ แล้วเขียนโน้ตลงบนเปียโนหรือบรรทัดห้าเส้น</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>เครื่องคำนวณเมเจอร์</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>รวมเข้ากับผู้ให้บริการ OpenID Connect ทุกตัวได้อย่างราบรื่น พร้อมการซิงค์บทบาทอัตโนมัติ</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>การฝึกเขียนทำนองสั้นๆ</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>การแทนที่การตั้งค่าอัจฉริยะ</value>

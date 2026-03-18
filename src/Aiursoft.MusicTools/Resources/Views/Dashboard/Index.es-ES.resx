@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Las tonalidades no están aisladas. El &apos;Círculo de Quintas&apos; es la brújula de la música, que revela el orden de todas las armaduras de clave (Do -&gt; Sol -&gt; Re...) y sus relaciones armónicas. Es el plano fundamental para la composición, los arreglos y la improvisación.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Escuche una melodía corta y dictela en el piano o en el pentagrama.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Calculadora de acordes mayores</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Integración fluida con cualquier proveedor de OpenID Connect, con sincronización automática de roles.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Dictado de melodías cortas</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Sobrescrituras inteligentes de configuración</value>

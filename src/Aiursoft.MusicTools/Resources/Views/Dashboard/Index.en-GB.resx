@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Keys do not exist in isolation. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It is the core blueprint for composition, arrangement, and improvisation.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Listen to a short melody and dictate it on the piano or stave.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Major Calculator</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Short Melody Dictation</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Smart Configuration Overrides</value>

@@ -183,6 +183,9 @@
   <data name="Settings" xml:space="preserve">
     <value>설정</value>
   </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>짧은 선율 독보</value>
+  </data>
   <data name="Sign out" xml:space="preserve">
     <value>로그아웃</value>
   </data>

@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Тональности не изолированы. «Квинтовый круг» — это компас в музыке, раскрывающий порядок всех тональностей (C -&gt; G -&gt; D...) и их гармонические взаимосвязи. Это основная схема для композиции, аранжировки и импровизации.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Прослушайте короткую мелодию и запишите её на пианино или в нотном стане.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Калькулятор мажора</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Безупречно интегрируйтесь с любым провайдером OpenID Connect с автоматической синхронизацией ролей.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Диктант по короткой мелодии</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Умные переопределения конфигурации</value>

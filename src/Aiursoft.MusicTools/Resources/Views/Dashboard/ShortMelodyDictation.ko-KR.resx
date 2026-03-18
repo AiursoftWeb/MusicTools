@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Answer Mode" xml:space="preserve">
+    <value>답변 모드</value>
+  </data>
+  <data name="Bars" xml:space="preserve">
+    <value>마디</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>정답입니다!</value>
+  </data>
+  <data name="Listen to a short melody and dictate it." xml:space="preserve">
+    <value>짧은 선율을 듣고 받아쓰세요.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>멜로디 재생</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>짧은 멜로디 독서</value>
+  </data>
+  <data name="Skip / Next" xml:space="preserve">
+    <value>건너뛰기 / 다음</value>
+  </data>
+  <data name="Staff Fragments" xml:space="preserve">
+    <value>악보 조각</value>
+  </data>
+  <data name="Standard C4" xml:space="preserve">
+    <value>표준 C4</value>
+  </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>훈련 시작</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>박자</value>
+  </data>
+  <data name="Virtual Piano" xml:space="preserve">
+    <value>가상 피아노</value>
+  </data>
+  <data name="Wrong. Try again!" xml:space="preserve">
+    <value>틀렸습니다. 다시 시도하세요!</value>
+  </data>
+
+</root>

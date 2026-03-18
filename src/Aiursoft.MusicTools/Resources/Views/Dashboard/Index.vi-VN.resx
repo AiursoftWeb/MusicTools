@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Các âm giai không tồn tại biệt lập. &apos;Circle of Fifths&apos; chính là la bàn của âm nhạc, tiết lộ trật tự của tất cả các dấu hóa (C -&gt; G -&gt; D...) và mối quan hệ hòa âm giữa chúng. Nó là bản thiết kế cốt lõi cho việc sáng tác, hòa âm phối khí và ngẫu hứng.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Nghe một giai điệu ngắn và chép lại nó trên piano hoặc trên khuông nhạc.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Bộ tính thang âm trưởng</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Tích hợp liền mạch với bất kỳ nhà cung cấp OpenID Connect nào, với đồng bộ vai trò tự động.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Đánh chép giai điệu ngắn</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Ghi đè cấu hình thông minh</value>

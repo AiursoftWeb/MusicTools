@@ -180,6 +180,9 @@
   <data name="Settings" xml:space="preserve">
     <value>Asetukset</value>
   </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Lyhyen melodian diktaatio</value>
+  </data>
   <data name="Sign out" xml:space="preserve">
     <value>Kirjaudu ulos</value>
   </data>

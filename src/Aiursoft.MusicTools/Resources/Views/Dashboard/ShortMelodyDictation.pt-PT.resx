@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Answer Mode" xml:space="preserve">
+    <value>Modo de Resposta</value>
+  </data>
+  <data name="Bars" xml:space="preserve">
+    <value>compassos</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Correto!</value>
+  </data>
+  <data name="Listen to a short melody and dictate it." xml:space="preserve">
+    <value>Ouça uma melodia curta e ditte-a.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>Tocar Melodia</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Ditado de Melodia Curta</value>
+  </data>
+  <data name="Skip / Next" xml:space="preserve">
+    <value>Saltar / Seguinte</value>
+  </data>
+  <data name="Staff Fragments" xml:space="preserve">
+    <value>Fragmentos de Pauta</value>
+  </data>
+  <data name="Standard C4" xml:space="preserve">
+    <value>Dó4 Padrão</value>
+  </data>
+  <data name="Start Training" xml:space="preserve">
+    <value>Iniciar Treino</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Compasso</value>
+  </data>
+  <data name="Virtual Piano" xml:space="preserve">
+    <value>Piano Virtual</value>
+  </data>
+  <data name="Wrong. Try again!" xml:space="preserve">
+    <value>Errado. Tente novamente!</value>
+  </data>
+
+</root>

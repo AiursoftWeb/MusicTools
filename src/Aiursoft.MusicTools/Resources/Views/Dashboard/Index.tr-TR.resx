@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Tonlar izole değildir. &apos;Beşliler Çemberi&apos;, müziğin pusulasıdır; tüm ton imzalarının (C -&gt; G -&gt; D...) sırasını ve armonik ilişkilerini ortaya koyar. Besteleme, düzenleme ve doğaçlama için temel şemadır.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Kısa bir melodiyi dinleyin ve onu piyano üzerinde veya notada yazın.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Büyük Hesaplayıcı</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Herhangi bir OpenID Connect sağlayıcısıyla sorunsuz entegre olun, otomatik rol senkronizasyonu ile.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Kısa Melodi Diktasyonu</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Akıllı Yapılandırma Geçersiz Kılma</value>

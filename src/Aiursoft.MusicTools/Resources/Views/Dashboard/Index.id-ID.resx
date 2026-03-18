@@ -144,6 +144,9 @@
   <data name="Keys are not isolated. The &apos;Circle of Fifths&apos; is music&apos;s compass, revealing the order of all key signatures (C -&gt; G -&gt; D...) and their harmonic relationships. It&apos;s the core blueprint for composition, arrangement, and improvisation." xml:space="preserve">
     <value>Nada-nada kunci tidak terisolasi. &apos;Circle of Fifths&apos; adalah kompasnya musik, yang mengungkap urutan semua tanda kunci (C -&gt; G -&gt; D...) dan hubungan harmonisnya. Ini adalah cetak biru inti untuk komposisi, aransemen, dan improvisasi.</value>
   </data>
+  <data name="Listen to a short melody and dictate it on the piano or staff." xml:space="preserve">
+    <value>Dengarkan melodi pendek dan notasiannya di piano atau pada garis notasi.</value>
+  </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Kalkulator Mayor</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Terintegrasi secara mulus dengan penyedia OpenID Connect mana pun, dengan sinkronisasi peran otomatis.</value>
+  </data>
+  <data name="Short Melody Dictation" xml:space="preserve">
+    <value>Diktat Melodi Pendek</value>
   </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Oversight Konfigurasi Cerdas</value>
