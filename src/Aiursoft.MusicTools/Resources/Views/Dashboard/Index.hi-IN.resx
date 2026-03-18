@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>ध्वनि स记忆 को चुनौती दें बार-बार धुनों को दोहराकर।</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>संयुक्त स्वर प्रशिक्षण</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>डॉकर समर्थन के साथ आता है सरल और समान डिप्लॉयमेंट के लिए।</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>उपकरण</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>पियानो पर बजाए गए संगीतमय सप्तकों की पहचान करके अपने कानों की प्रशिक्षण करें।</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>पियानो पर बजाए गए संगीतमय अंतरालों की पहचान करके अपने कान की प्रशिक्षण करें।</value>

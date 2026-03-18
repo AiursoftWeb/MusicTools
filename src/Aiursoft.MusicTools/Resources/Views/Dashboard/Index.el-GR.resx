@@ -78,6 +78,9 @@
   <data name="Challenge your musical memory by repeating melodies." xml:space="preserve">
     <value>Προκάλεσε τη μουσική σου μνήμη επαναλαμβάνοντας μελωδίες.</value>
   </data>
+  <data name="Chord Training" xml:space="preserve">
+    <value>Εκπαίδευση Ακορδών</value>
+  </data>
   <data name="Comes with Docker support for simplified and consistent deployments." xml:space="preserve">
     <value>Διαθέτει υποστήριξη για Docker για απλοποιημένη και συνεπή μεταφορά.</value>
   </data>
@@ -233,6 +236,9 @@
   </data>
   <data name="Tools" xml:space="preserve">
     <value>Εργαλεία</value>
+  </data>
+  <data name="Train your ear by identifying musical chords played on the piano." xml:space="preserve">
+    <value>Εξασκήστε το αυτί σας εντοπίζοντας μουσικά συγγράμματα που παίζονται στο πιάνο.</value>
   </data>
   <data name="Train your ear by identifying musical intervals played on the piano." xml:space="preserve">
     <value>Εξασκήστε το αυτί σας εντοπίζοντας μουσικά διαστήματα που παίζονται στο πιάνο.</value>
