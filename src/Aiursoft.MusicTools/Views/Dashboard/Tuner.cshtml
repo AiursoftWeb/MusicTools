@@ -45,9 +45,7 @@
             </div>
 
             <button id="start-stop-btn" 
-                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all"
-                    data-text-start="@Localizer["Start Tuner"]"
-                    data-text-stop="@Localizer["Stop Tuner"]">
+                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all">
                 <span id="btn-icon">🎤</span> <span id="btn-text">@Localizer["Start Tuner"]</span>
             </button>
 
@@ -56,6 +54,14 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="loc-data" hidden>
+    <span data-key="start-tuner">@Localizer["Start Tuner"]</span>
+    <span data-key="stop-tuner">@Localizer["Stop Tuner"]</span>
+    <span data-key="cents">@Localizer["cents"]</span>
+    <span data-key="unsupported">@Localizer["Your browser does not support audio recording or frequency analysis."]</span>
+    <span data-key="mic-error">@Localizer["Could not access microphone. Please ensure permissions are granted."]</span>
 </div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@

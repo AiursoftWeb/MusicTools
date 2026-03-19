@@ -1,4 +1,5 @@
 import Piano from './Piano.js';
+import { getLocalizedText } from './localization.js';
 
 // 钢琴键盘的 "data-note" 使用的是升号 (#)
 const SHARP_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
@@ -21,65 +22,55 @@ window.addEventListener('DOMContentLoaded', () => {
     const intervalRatioEl = document.getElementById('interval-ratio');
     const intervalErrorEl = document.getElementById('interval-error');
 
-    // (B) [!! 修复 !!] 确保你使用的是唯一的 ID，例如 "calc-localization-data"
-    let localeData = document.getElementById("calc-localization-data");
-    if (!localeData) {
-        localeData = document.getElementById("localization-data");
-        console.warn("[Init] Warning: Found fallback 'localization-data'. Please update HTML to 'calc-localization-data' to avoid ID conflicts.");
-        if(!localeData) {
-            console.error("CRITICAL: localization-data element not found. Stopping script.");
-            return;
-        }
-    }
-
     // (C) 获取本地化字符串
     const localizedStrings = {
-        // ... (所有字符串... )
-        perfectUnison: localeData.dataset.perfectUnison,
-        minorSecond: localeData.dataset.minorSecond,
-        majorSecond: localeData.dataset.majorSecond,
-        minorThird: localeData.dataset.minorThird,
-        majorThird: localeData.dataset.majorThird,
-        perfectFourth: localeData.dataset.perfectFourth,
-        augmentedFourth: localeData.dataset.augmentedFourth,
-        perfectFifth: localeData.dataset.perfectFifth,
-        minorSixth: localeData.dataset.minorSixth,
-        majorSixth: localeData.dataset.majorSixth,
-        minorSeventh: localeData.dataset.minorSeventh,
-        majorSeventh: localeData.dataset.majorSeventh,
-        perfectOctave: localeData.dataset.perfectOctave,
-        minorNinth: localeData.dataset.minorNinth,
-        majorNinth: localeData.dataset.majorNinth,
-        minorTenth: localeData.dataset.minorTenth,
-        majorTenth: localeData.dataset.majorTenth,
-        perfectEleventh: localeData.dataset.perfectEleventh,
-        augmentedEleventh: localeData.dataset.augmentedEleventh,
-        perfectTwelfth: localeData.dataset.perfectTwelfth,
-        minorThirteenth: localeData.dataset.minorThirteenth,
-        majorThirteenth: localeData.dataset.majorThirteenth,
-        minorFourteenth: localeData.dataset.minorFourteenth,
-        majorFourteenth: localeData.dataset.majorFourteenth,
-        perfectFifteenth: localeData.dataset.perfectFifteenth,
-        minorSixteenth: localeData.dataset.minorSixteenth,
-        majorSixteenth: localeData.dataset.majorSixteenth,
-        minorSeventeenth: localeData.dataset.minorSeventeenth,
-        majorSeventeenth: localeData.dataset.majorSeventeenth,
-        perfectEighteenth: localeData.dataset.perfectEighteenth,
-        augmentedEighteenth: localeData.dataset.augmentedEighteenth,
-        perfectNineteenth: localeData.dataset.perfectNineteenth,
-        minorTwentieth: localeData.dataset.minorTwentieth,
-        majorTwentieth: localeData.dataset.majorTwentieth,
-        minorTwentyFirst: localeData.dataset.minorTwentyFirst,
-        majorTwentyFirst: localeData.dataset.majorTwentyFirst,
-        perfectTwentySecond: localeData.dataset.perfectTwentySecond,
-        unableToRecognizeNoteName: localeData.dataset.unableToRecognizeNoteName,
-        pleaseIputWithTheLowerNoteFirst: localeData.dataset.pleaseIputWithTheLowerNoteFirst,
+        perfectUnison: getLocalizedText('perfect-unison', 'Perfect Unison'),
+        minorSecond: getLocalizedText('minor-second', 'Minor Second'),
+        majorSecond: getLocalizedText('major-second', 'Major Second'),
+        minorThird: getLocalizedText('minor-third', 'Minor Third'),
+        majorThird: getLocalizedText('major-third', 'Major Third'),
+        perfectFourth: getLocalizedText('perfect-fourth', 'Perfect Fourth'),
+        augmentedFourth: getLocalizedText('augmented-fourth', 'Augmented Fourth'),
+        perfectFifth: getLocalizedText('perfect-fifth', 'Perfect Fifth'),
+        minorSixth: getLocalizedText('minor-sixth', 'Minor Sixth'),
+        majorSixth: getLocalizedText('major-sixth', 'Major Sixth'),
+        minorSeventh: getLocalizedText('minor-seventh', 'Minor Seventh'),
+        majorSeventh: getLocalizedText('major-seventh', 'Major Seventh'),
+        perfectOctave: getLocalizedText('perfect-octave', 'Perfect Octave'),
+        minorNinth: getLocalizedText('minor-ninth', 'Minor Ninth'),
+        majorNinth: getLocalizedText('major-ninth', 'Major Ninth'),
+        minorTenth: getLocalizedText('minor-tenth', 'Minor Tenth'),
+        majorTenth: getLocalizedText('major-tenth', 'Major Tenth'),
+        perfectEleventh: getLocalizedText('perfect-eleventh', 'Perfect Eleventh'),
+        augmentedEleventh: getLocalizedText('augmented-eleventh', 'Augmented Eleventh'),
+        perfectTwelfth: getLocalizedText('perfect-twelfth', 'Perfect Twelfth'),
+        minorThirteenth: getLocalizedText('minor-thirteenth', 'Minor Thirteenth'),
+        majorThirteenth: getLocalizedText('major-thirteenth', 'Major Thirteenth'),
+        minorFourteenth: getLocalizedText('minor-fourteenth', 'Minor Fourteenth'),
+        majorFourteenth: getLocalizedText('major-fourteenth', 'Major Fourteenth'),
+        perfectFifteenth: getLocalizedText('perfect-fifteenth', 'Perfect Fifteenth'),
+        minorSixteenth: getLocalizedText('minor-sixteenth', 'Minor Sixteenth'),
+        majorSixteenth: getLocalizedText('major-sixteenth', 'Major Sixteenth'),
+        minorSeventeenth: getLocalizedText('minor-seventeenth', 'Minor Seventeenth'),
+        majorSeventeenth: getLocalizedText('major-seventeenth', 'Major Seventeenth'),
+        perfectEighteenth: getLocalizedText('perfect-eighteenth', 'Perfect Eighteenth'),
+        augmentedEighteenth: getLocalizedText('augmented-eighteenth', 'Augmented Eighteenth'),
+        perfectNineteenth: getLocalizedText('perfect-nineteenth', 'Perfect Nineteenth'),
+        minorTwentieth: getLocalizedText('minor-twentieth', 'Minor Twentieth'),
+        majorTwentieth: getLocalizedText('major-twentieth', 'Major Twentieth'),
+        minorTwentyFirst: getLocalizedText('minor-twenty-first', 'Minor Twenty-First'),
+        majorTwentyFirst: getLocalizedText('major-twenty-first', 'Major Twenty-First'),
+        perfectTwentySecond: getLocalizedText('perfect-twenty-second', 'Perfect Twenty-Second'),
+        unableToRecognizeNoteName: getLocalizedText('unable-to-recognize-note-name', 'Unable to recognize note name'),
+        pleaseIputWithTheLowerNoteFirst: getLocalizedText('please-iput-with-the-lower-note-first', 'Please input with the lower note first'),
         
         // Consonance levels
-        consonancePerfect: localeData.dataset.consonancePerfect,
-        consonanceImperfect: localeData.dataset.consonanceImperfect,
-        consonanceDissonance: localeData.dataset.consonanceDissonance,
-        consonanceSharpDissonance: localeData.dataset.consonanceSharpDissonance
+        consonancePerfect: getLocalizedText('consonance-perfect', 'Perfect Consonance'),
+        consonanceImperfect: getLocalizedText('consonance-imperfect', 'Imperfect Consonance'),
+        consonanceDissonance: getLocalizedText('consonance-dissonance', 'Dissonance'),
+        consonanceSharpDissonance: getLocalizedText('consonance-sharp-dissonance', 'Sharp Dissonance'),
+        approximateRatio: getLocalizedText('approximate-ratio', 'Approximate Ratio'),
+        preciseRatio: getLocalizedText('precise-ratio', 'Precise Ratio')
     };
     console.log("[Init] Localization strings loaded.");
 
@@ -310,21 +301,21 @@ window.addEventListener('DOMContentLoaded', () => {
                     const cents = result.yueluErrorCents.toFixed(2);
                     const ratioText = `${result.yuelu.d} : ${result.yuelu.n}`;
                     if (Math.abs(cents) < 0.01) {
-                        intervalRatioEl.innerHTML = `约率: <strong style="font-size: 1.2em; vertical-align: -0.05em;">=</strong> ${ratioText} (Perfect)`;
+                        intervalRatioEl.innerHTML = `${localizedStrings.approximateRatio}: <strong style="font-size: 1.2em; vertical-align: -0.05em;">=</strong> ${ratioText} (Perfect)`;
                     } else if (cents > 0) {
-                        intervalRatioEl.innerHTML = `约率: ≈ ${ratioText} (+${cents} cents)`;
+                        intervalRatioEl.innerHTML = `${localizedStrings.approximateRatio}: ≈ ${ratioText} (+${cents} cents)`;
                     } else {
-                        intervalRatioEl.innerHTML = `约率: ≈ ${ratioText} (${cents} cents)`;
+                        intervalRatioEl.innerHTML = `${localizedStrings.approximateRatio}: ≈ ${ratioText} (${cents} cents)`;
                     }
                     if (result.milu.n !== result.yuelu.n || result.milu.d !== result.yuelu.d) {
                         const miluCents = result.miluErrorCents.toFixed(2);
                         const miluRatioText = `${result.milu.d} : ${result.milu.n}`;
                         if (Math.abs(miluCents) < 0.01) {
-                            intervalErrorEl.innerText = `密率: = ${miluRatioText} (Perfect)`;
+                            intervalErrorEl.innerText = `${localizedStrings.preciseRatio}: = ${miluRatioText} (Perfect)`;
                         } else if (miluCents > 0) {
-                            intervalErrorEl.innerText = `密率: ≈ ${miluRatioText} (+${miluCents} cents)`;
+                            intervalErrorEl.innerText = `${localizedStrings.preciseRatio}: ≈ ${miluRatioText} (+${miluCents} cents)`;
                         } else {
-                            intervalErrorEl.innerText = `密率: ≈ ${miluRatioText} (${miluCents} cents)`;
+                            intervalErrorEl.innerText = `${localizedStrings.preciseRatio}: ≈ ${miluRatioText} (${miluCents} cents)`;
                         }
                     } else {
                         intervalErrorEl.innerText = '';

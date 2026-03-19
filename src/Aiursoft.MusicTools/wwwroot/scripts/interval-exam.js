@@ -1,3 +1,6 @@
+import { getLocalizedText } from './localization.js';
+import MusicStaff from './MusicStaff.js';
+
 /* =================================================================
  * == interval-exam.js
  * - [!! 真正修复 !!]
@@ -255,4 +258,45 @@ class ExamQuestion {
 }
 
 window.ExamQuestion = ExamQuestion;
+
+window.startIntervalExam = (questionStaffId, answerStaffIds, questionLabelId) => {
+    const localizedStrings = {
+        correct: getLocalizedText('correct', 'Correct!'),
+        wrong: getLocalizedText('wrong', 'Wrong.'),
+        questionTemplate: getLocalizedText('question-template', 'What is the (0) of the note above?'),
+        intervals: {
+            'm2': getLocalizedText('int-m2', 'Minor Second'),
+            'maj2': getLocalizedText('int-maj2', 'Major Second'),
+            'm3': getLocalizedText('int-m3', 'Minor Third'),
+            'maj3': getLocalizedText('int-maj3', 'Major Third'),
+            'p4': getLocalizedText('int-p4', 'Perfect Fourth'),
+            'a4': getLocalizedText('int-a4', 'Augmented Fourth'),
+            'd5': getLocalizedText('int-d5', 'Diminished Fifth'),
+            'p5': getLocalizedText('int-p5', 'Perfect Fifth'),
+            'a5': getLocalizedText('int-a5', 'Augmented Fifth'),
+            'm6': getLocalizedText('int-m6', 'Minor Sixth'),
+            'maj6': getLocalizedText('int-maj6', 'Major Sixth'),
+            'm7': getLocalizedText('int-m7', 'Minor Seventh'),
+            'maj7': getLocalizedText('int-maj7', 'Major Seventh')
+        }
+    };
+
+    const questionLabel = document.getElementById(questionLabelId);
+    const answerElements = answerStaffIds.map(id => document.getElementById(id));
+
+    const questionStaff = new MusicStaff(questionStaffId, { clef: 'treble' });
+    const answerStaffs = answerStaffIds.map(id => new MusicStaff(id, { clef: 'treble' }));
+
+    const examQuestion = new ExamQuestion(
+        questionStaff,
+        answerStaffs,
+        answerElements,
+        questionLabel,
+        localizedStrings
+    );
+
+    examQuestion.nextQuestion();
+    return examQuestion;
+};
+
 export default ExamQuestion;

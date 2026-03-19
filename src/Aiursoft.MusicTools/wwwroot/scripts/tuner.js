@@ -1,3 +1,5 @@
+import { getLocalizedText } from './localization.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const startStopBtn = document.getElementById('start-stop-btn');
     const btnText = document.getElementById('btn-text');
@@ -60,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateTuner();
         } catch (err) {
             console.error('Error accessing microphone:', err);
-            alert('Could not access microphone. Please ensure permissions are granted.');
+            alert(getLocalizedText('mic-error', 'Could not access microphone. Please ensure permissions are granted.'));
         }
     }
 
@@ -81,17 +83,17 @@ document.addEventListener('DOMContentLoaded', () => {
         noteDisplay.textContent = '-';
         frequencyDisplay.textContent = '0.00 Hz';
         meterPointer.style.left = '50%';
-        centsDisplay.textContent = '0 cents';
+        centsDisplay.textContent = '0 ' + getLocalizedText('cents', 'cents');
     }
 
     function updateBtnUI() {
         if (isRunning) {
-            btnText.textContent = startStopBtn.getAttribute('data-text-stop');
+            btnText.textContent = getLocalizedText('stop-tuner', 'Stop Tuner');
             btnIcon.textContent = "⏹";
             startStopBtn.classList.remove('btn-primary');
             startStopBtn.classList.add('btn-danger');
         } else {
-            btnText.textContent = startStopBtn.getAttribute('data-text-start');
+            btnText.textContent = getLocalizedText('start-tuner', 'Start Tuner');
             btnIcon.textContent = "🎤";
             startStopBtn.classList.remove('btn-danger');
             startStopBtn.classList.add('btn-primary');
@@ -185,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update meter: cents range -50 to +50
             const percent = 50 + cents; // -50 -> 0%, 0 -> 50%, 50 -> 100%
             meterPointer.style.left = Math.max(0, Math.min(100, percent)) + "%";
-            centsDisplay.textContent = (cents > 0 ? "+" : "") + cents + " cents";
+            centsDisplay.textContent = (cents > 0 ? "+" : "") + cents + " " + getLocalizedText('cents', 'cents');
             
             // Color based on closeness
             if (Math.abs(cents) < 5) {

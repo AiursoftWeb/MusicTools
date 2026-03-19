@@ -1,4 +1,5 @@
 import Piano from './Piano.js';
+import { getLocalizedText } from './localization.js';
 
 class ChordTraining {
     #piano;
@@ -235,24 +236,22 @@ class ChordTraining {
 }
 
 // Global entry point
-window.startChordTraining = (pianoContainerId, localizationDataId) => {
-    const localizationData = document.getElementById(localizationDataId).dataset;
-
+window.startChordTraining = (pianoContainerId) => {
     const localizedStrings = {
-        correct: localizationData.correct,
-        wrong: localizationData.wrong,
-        giveUp: localizationData.giveUp,
-        nextQuestion: localizationData.nextQuestion,
-        playChord: localizationData.playChord,
-        questionTemplate: localizationData.questionTemplate,
-        rootPosition: localizationData.rootPosition,
-        firstInversion: localizationData.firstInversion,
-        secondInversion: localizationData.secondInversion,
+        correct: getLocalizedText('correct', 'Correct!'),
+        wrong: getLocalizedText('wrong', 'Wrong.'),
+        giveUp: getLocalizedText('give-up', 'I give up'),
+        nextQuestion: getLocalizedText('next-question', 'Next Question'),
+        playChord: getLocalizedText('play-chord', 'Play Chord'),
+        questionTemplate: getLocalizedText('question-template', 'What is the type of the chord played?'),
+        rootPosition: getLocalizedText('root-position', 'Root Position'),
+        firstInversion: getLocalizedText('first-inversion', 'First Inversion'),
+        secondInversion: getLocalizedText('second-inversion', 'Second Inversion'),
         chords: {
-            'major': localizationData.chordMajor,
-            'minor': localizationData.chordMinor,
-            'diminished': localizationData.chordDiminished,
-            'augmented': localizationData.chordAugmented
+            'major': getLocalizedText('chord-major', 'Major Triad'),
+            'minor': getLocalizedText('chord-minor', 'Minor Triad'),
+            'diminished': getLocalizedText('chord-diminished', 'Diminished Triad'),
+            'augmented': getLocalizedText('chord-augmented', 'Augmented Triad')
         }
     };
 

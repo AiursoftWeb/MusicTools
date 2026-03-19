@@ -1,6 +1,7 @@
 import Piano from "./Piano.js";
 import confetti from "canvas-confetti";
 import { MelodyGenerator } from "./MelodyGenerator.js";
+import { getLocalizedText } from "./localization.js";
 
 // --- Game State ---
 const livesContainer = document.getElementById("lives-container");
@@ -770,11 +771,6 @@ function captureGameConfig(styleRad, previewRad, progressionRad) {
 
     // Use the robust calculation for the actual score
     gameConfig.difficultyScore = getCalculatedDifficultyScore();
-}
-
-function getLocalizedText(key, defaultText) {
-    const el = document.querySelector(`#loc-data span[data-key="${key}"]`);
-    return el ? el.innerText : defaultText;
 }
 
 function getRankData(currentLevel) {
