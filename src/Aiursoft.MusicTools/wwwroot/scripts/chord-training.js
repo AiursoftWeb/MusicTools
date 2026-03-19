@@ -282,7 +282,7 @@ window.startChordTraining = (pianoContainerId, localizationDataId) => {
 
     const piano = new Piano(document.getElementById(pianoContainerId), {
         octaves: 3,
-        startOctave: 3,
+        startOctave: 2,
         isClickable: true,
         showNoteNames: true,
         showTonicIndicator: false

@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Initialize Piano
     const piano = new Piano(pianoContainer, {
         octaves: 3,
-        startOctave: 4,
+        startOctave: 3,
         isClickable: true,
         showNoteNames: true,
         showTonicIndicator: false
@@ -214,7 +214,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (baseValue === undefined) {
                 throw new Error(`${localizedStrings.unableToRecognizeNoteName}: ${noteName}`);
             }
-            const absoluteValue = baseValue + octave * 12;
+            const absoluteValue = baseValue + (octave + 1) * 12;
             return { noteName, octave, baseValue, absoluteValue };
         }
         try {

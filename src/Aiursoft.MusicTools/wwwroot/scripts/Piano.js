@@ -54,7 +54,7 @@ class Piano {
         this.#container = containerEl;
         this.#options = {
             octaves: 2,
-            startOctave: 4,
+            startOctave: 3,
             isClickable: false,
             showNoteNames: true,
             showTonicIndicator: true,
@@ -122,7 +122,7 @@ class Piano {
             const keyName = Piano.NOTE_NAMES[keyIndex];
             const octave = this.#options.startOctave + Math.floor(i / 12);
             const noteName = `${keyName}${octave}`;
-            const midiNote = Piano.NOTE_TO_BASE_MIDI[keyName] + octave * 12;
+            const midiNote = Piano.NOTE_TO_BASE_MIDI[keyName] + (octave + 1) * 12;
             const li = document.createElement("li");
             const isBlack = keyName.includes("#");
             li.dataset.note = noteName;

@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     // 初始化钢琴控件
     const piano = new Piano(pianoEl, {
         octaves: 4,
-        startOctave: 3,
+        startOctave: 2,
         isClickable: true,
         showNoteNames: true,
         showTonicIndicator: false
@@ -19,34 +19,34 @@ window.addEventListener('load', () => {
     // 绑定键盘映射
     piano.bindToComputerKeyboard({
         // QWERTY (低音区)
-        'W': 'A2',
-        'E': 'B2',
-        'R': 'C3',
-        'T': 'D3',
-        'Y': 'E3',
-        'U': 'F3',
-        'I': 'G3',
-        'O': 'A3',
-        'P': 'B3',
+        'W': 'A1',
+        'E': 'B1',
+        'R': 'C2',
+        'T': 'D2',
+        'Y': 'E2',
+        'U': 'F2',
+        'I': 'G2',
+        'O': 'A2',
+        'P': 'B2',
         // ASDF (中音区)
-        'A': 'C4',
-        'S': 'D4',
-        'D': 'E4',
-        'F': 'F4',
-        'G': 'G4',
-        'H': 'A4',
-        'J': 'B4',
-        'K': 'C5',
-        'L': 'D5',
-        ';': 'E5',
+        'A': 'C3',
+        'S': 'D3',
+        'D': 'E3',
+        'F': 'F3',
+        'G': 'G3',
+        'H': 'A3',
+        'J': 'B3',
+        'K': 'C4',
+        'L': 'D4',
+        ';': 'E4',
         // ZXCV (高音区)
-        'Z': 'F5',
-        'X': 'G5',
-        'C': 'A5',
-        'V': 'B5',
-        'B': 'C6',
-        'N': 'D6',
-        'M': 'E6'
+        'Z': 'F4',
+        'X': 'G4',
+        'C': 'A4',
+        'V': 'B4',
+        'B': 'C5',
+        'N': 'D5',
+        'M': 'E5'
     });
 
     // 绑定随机旋律按钮

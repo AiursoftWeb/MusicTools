@@ -47,9 +47,9 @@ const INTERVAL_DEFINITIONS = {
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
 
 const EXAM_PITCHES = [
+    'C2', 'C#2', 'D2', 'Eb2', 'E2', 'F2', 'F#2', 'G2', 'G#2', 'A2', 'Bb2', 'B2',
     'C3', 'C#3', 'D3', 'Eb3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A3', 'Bb3', 'B3',
-    'C4', 'C#4', 'D4', 'Eb4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'Bb4', 'B4',
-    'C5'
+    'C4'
 ];
 
 // --- 2. 核心考试逻辑 (已重构) ---
@@ -115,22 +115,22 @@ class ExamQuestion {
         // 4a. 目标的 *实际* 绝对半音 (e.g., F#4 + 增五度)
         const baseNaturalSemitone = NOTE_TO_SEMITONE[baseLetter]; // F -> 5
         const baseAccidentalValue = ACCIDENTAL_TO_VALUE[baseAccidental]; // # -> 1
-        const baseAbsoluteSemitone = (baseNaturalSemitone + baseAccidentalValue) + (baseOctave * 12);
-        // F#4 = (5 + 1) + (4 * 12) = 54
+        const baseAbsoluteSemitone = (baseNaturalSemitone + baseAccidentalValue) + ((baseOctave + 1) * 12);
+        // F#4 = (5 + 1) + ((4 + 1) * 12) = 66
         const targetAbsoluteSemitone = baseAbsoluteSemitone + interval.semis;
-        // 54 + 8 (增五) = 62
-        // 54 + 12 (纯八) = 66
+        // 66 + 8 (增五) = 74
+        // 66 + 12 (纯八) = 78
 
         // 4b. 目标的 *自然* 绝对半音 (e.g., C5)
         const targetNaturalSemitone = NOTE_TO_SEMITONE[targetLetter]; // C -> 0
-        const targetNaturalAbsoluteSemitone = targetNaturalSemitone + (targetOctave * 12);
-        // C5 = 0 + (5 * 12) = 60
-        // (F5 = 5 + (5 * 12) = 65)
+        const targetNaturalAbsoluteSemitone = targetNaturalSemitone + ((targetOctave + 1) * 12);
+        // C5 = 0 + ((5 + 1) * 12) = 72
+        // (F5 = 5 + ((5 + 1) * 12) = 77)
 
         // 4c. 偏移量 = 实际 - 自然
         const accidentalValue = targetAbsoluteSemitone - targetNaturalAbsoluteSemitone;
-        // 增五: 62 - 60 = 2
-        // 纯八: 66 - 65 = 1
+        // 增五: 74 - 72 = 2
+        // 纯八: 78 - 77 = 1
 
         // 5. 查找调号
         const accidentalSymbol = VALUE_TO_ACCIDENTAL[accidentalValue];
