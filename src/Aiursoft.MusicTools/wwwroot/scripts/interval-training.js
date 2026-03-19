@@ -153,8 +153,8 @@ class IntervalTraining {
             this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
             this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
             
-            // Limit target to G2 (43) to G5 (79)
-            if (this.#currentTargetMidi >= 43 && this.#currentTargetMidi <= 79) {
+            // Limit target and base to C3 (48) to C5 (72)
+            if (this.#currentTargetMidi >= 48 && this.#currentTargetMidi <= 72) {
                 isValid = true;
             }
         }
@@ -347,7 +347,7 @@ window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
     intervalOptionsContainer.appendChild(giveUpCol);
 
     const piano = new Piano(document.getElementById(pianoContainerId), {
-        octaves: 3,
+        octaves: 2,
         startOctave: 3,
         isClickable: true,
         showNoteNames: true,

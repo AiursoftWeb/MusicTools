@@ -43,8 +43,8 @@ let isCurrentLevelPerfect = true;
 let timerId = null;
 let gameDifficulty = "music";
 
-const OCTAVE_START = 4;
-const OCTAVE_COUNT = 3; // 3 Octaves requested (Expanded Keyboard)
+const OCTAVE_START = 3;
+const OCTAVE_COUNT = 2; // 2 Octaves (C3-C5 range)
 let melodyGenerator = new MelodyGenerator();
 let songBuffer = [];
 
@@ -183,9 +183,9 @@ window.playDebugMelody = async function () {
     let notesToPlay = validNotesForLevel;
     if (!notesToPlay || notesToPlay.length === 0) {
         console.warn(
-            "⚠️ Game not started. Defaulting to C Major (C4-C5) for debug."
+            "⚠️ Game not started. Defaulting to C Major (C3-C4) for debug."
         );
-        notesToPlay = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+        notesToPlay = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4"];
     } else {
         console.log(`🔑 Current Scale: ${notesToPlay.join(", ")}`);
     }
@@ -259,11 +259,10 @@ async function startGame() {
 
     // Set Up Key/Notes
     if (style === "atonal") {
-        // Atonal: Use Chromatic Scale C4-C5 (1 Octave + 1 note)
+        // Atonal: Use Chromatic Scale C3-C5 (2 Octaves)
         validNotesForLevel = [];
         const startIdx = ALL_NOTES_NAMES.indexOf("C");
         for (let i = 0; i <= 24; i++) {
-            // Two Octaves Chromatic
             const noteAbsIndex = startIdx + i;
             const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
             const octaveShift = Math.floor(noteAbsIndex / 12);
@@ -288,21 +287,37 @@ async function startGame() {
 
         currentKeyRoot = rootNote;
 
-        // Generate EXACTLY 2 Octaves of Valid Notes
+        // Generate Valid Notes within C3-C5 range
         validNotesForLevel = [];
 
-        const rootIndex = ALL_NOTES_NAMES.indexOf(rootNote);
-        // Major Scale Steps extended to 2 octaves
-        const majorSteps = [
-            0, 2, 4, 5, 7, 9, 11, 12, 14, 16, 17, 19, 21, 23, 24,
-        ];
-
-        for (let step of majorSteps) {
-            const noteAbsIndex = rootIndex + step;
-            const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
-            const octaveShift = Math.floor((rootIndex + step) / 12);
-            validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
+        const majorSteps = [0, 2, 4, 5, 7, 9, 11]; // One octave steps
+        
+        // Iterate from C3 to C5 and check if note is in the scale
+        for (let octave = 3; octave <= 5; octave++) {
+            for (let noteName of ALL_NOTES_NAMES) {
+                const fullNoteName = `${noteName}${octave}`;
+                const noteMidi = (octave + 1) * 12 + ALL_NOTES_NAMES.indexOf(noteName);
+                
+                // C3 is 48, C5 is 72
+                if (noteMidi < 48 || noteMidi > 72) continue;
+                
+                // Check if in scale (relative to root)
+                const noteIndex = ALL_NOTES_NAMES.indexOf(noteName);
+                const rootIndex = ALL_NOTES_NAMES.indexOf(rootNote);
+                const distance = (noteIndex - rootIndex + 12) % 12;
+                
+                if (majorSteps.includes(distance)) {
+                    validNotesForLevel.push(fullNoteName);
+                }
+            }
         }
+        
+        // Sort validNotesForLevel by pitch (MIDI)
+        validNotesForLevel.sort((a, b) => {
+            const midiA = (parseInt(a.slice(-1)) + 1) * 12 + ALL_NOTES_NAMES.indexOf(a.slice(0, -1));
+            const midiB = (parseInt(b.slice(-1)) + 1) * 12 + ALL_NOTES_NAMES.indexOf(b.slice(0, -1));
+            return midiA - midiB;
+        });
 
         console.log(
             `Game Style: ${style} (${rootNote} Major) - Notes: ${validNotesForLevel.join(
