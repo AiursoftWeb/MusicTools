@@ -15,9 +15,10 @@ export class MelodyGenerator {
         const rawNotes = Scale.get(`${key} ${actualScaleType}`).notes;
 
         // Pre-calculate correct octaves for the scale to ensure it ascends
-        // e.g. G Major: G, A, B, C, D, E, F# -> G4, A4, B4, C5, D5, E5, F#5
+        // e.g. G Major: G, A, B, C, D, E, F# -> G3, A3, B3, C4, D4, E4, F#4
+        // In MIDI standard, Middle C (C4) is 60. We limit the range to C3-C5.
         this.scaleObjects = [];
-        let currentOctave = 4;
+        let currentOctave = 3;
         let previousMidi = -1;
 
         rawNotes.forEach(rawName => {
@@ -45,7 +46,7 @@ export class MelodyGenerator {
             previousMidi = testMidi;
         });
 
-        // 锁定舒适音域 C4 - G5 (extended dynamically based on scale)
+        // 锁定舒适音域 C3 - C5 (extended dynamically based on scale)
         this.minRange = 0; 
         this.maxRange = this.isAtonal ? 24 : 14; // Approx 2 octaves
         

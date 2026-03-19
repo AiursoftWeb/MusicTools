@@ -145,16 +145,19 @@ class IntervalTraining {
         let isValid = false;
         while (!isValid) {
             if (selectedMode === 'fixed-c') {
-                this.#currentBaseMidi = 60; // Middle C (C4)
+                // In MIDI standard, Middle C (C4) is 60.
+                this.#currentBaseMidi = 60; 
             } else {
-                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 25); // Random note from C3 (48) to C5 (72)
+                // Ensure base note does not cause target note to easily exceed C5 (72).
+                // Base note ranges from C3 (48) to B3 (59).
+                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
             }
             
             this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
             this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
             
-            // Limit target to G2 (43) to G5 (79)
-            if (this.#currentTargetMidi >= 43 && this.#currentTargetMidi <= 79) {
+            // Ensure target falls within real C3 (48) to C5 (72)
+            if (this.#currentTargetMidi >= 48 && this.#currentTargetMidi <= 72) {
                 isValid = true;
             }
         }

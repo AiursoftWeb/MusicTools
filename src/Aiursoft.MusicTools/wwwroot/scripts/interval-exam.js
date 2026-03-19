@@ -47,7 +47,6 @@ const INTERVAL_DEFINITIONS = {
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
 
 const EXAM_PITCHES = [
-    'C2', 'C#2', 'D2', 'Eb2', 'E2', 'F2', 'F#2', 'G2', 'G#2', 'A2', 'Bb2', 'B2',
     'C3', 'C#3', 'D3', 'Eb3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A3', 'Bb3', 'B3',
     'C4'
 ];
@@ -155,8 +154,9 @@ class ExamQuestion {
         const ACC_TO_VAL = { '': 0, '#': 1, 'b': -1, '𝄪': 2, '𝄫': -2 };
 
         const semi = NOTE_TO_SEMI[baseLetter] + (ACC_TO_VAL[baseAccidental] || 0) + (baseOctave + 1) * 12;
-        // G2 = 43, G5 = 79
-        return semi >= 43 && semi <= 79;
+        // In MIDI standard, Middle C (C4) is 60.
+        // We ensure all exam notes strictly fall within the real C3 (48) to C5 (72) range.
+        return semi >= 48 && semi <= 72;
     }
 
     nextQuestion() {
