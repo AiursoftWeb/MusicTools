@@ -29,7 +29,7 @@ class ShortMelodyDictation {
     _init() {
         this.piano = new Piano(this.dom.pianoContainer, {
             octaves: 2,
-            startOctave: 4,
+            startOctave: 3,
             isClickable: true,
             showNoteNames: true,
             showTonicIndicator: true,

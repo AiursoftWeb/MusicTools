@@ -164,8 +164,8 @@ class ScaleVisualizerEngine {
         let tonicNote = '';
 
         // 匹配 Piano.js 的默认起始八度
-        // (Piano.js 默认 startOctave: 4)
-        const startOctave = 4;
+        // (Piano.js 默认 startOctave: 3)
+        const startOctave = 3;
 
         // 2. 计算新的音符和音阶度数
         this.scaleIntervals.forEach((interval, i) => {
@@ -364,7 +364,7 @@ class ScaleVisualizerEngine {
         // 1. Initialize Piano
         this.#piano = new Piano(this.pianoContainer, {
             octaves: 2,
-            startOctave: 4,
+            startOctave: 3,
             isClickable: true,
             showNoteNames: true,
             showTonicIndicator: true,

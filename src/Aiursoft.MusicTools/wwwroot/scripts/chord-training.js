@@ -102,28 +102,40 @@ class ChordTraining {
         this.#isShowingResult = false;
         const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         
-        if (startMode === 'fixed-c') {
-            this.#currentBaseMidi = 60; // Middle C (C4)
-        } else {
-            this.#currentBaseMidi = 48 + Math.floor(Math.random() * 24); // Random note from C3 to B4
-        }
+        let isValid = false;
+        let notesMidi;
         
-        this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
-        this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
-        
-        // Calculate notes based on chord type and inversion
-        const intervals = this.#chordTypes[this.#currentChordKey];
-        let notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
-        
-        if (this.#currentInversion === 1) {
-            // First inversion: root note goes up an octave
-            notesMidi[0] += 12;
-            notesMidi.sort((a, b) => a - b);
-        } else if (this.#currentInversion === 2) {
-            // Second inversion: root and third go up an octave
-            notesMidi[0] += 12;
-            notesMidi[1] += 12;
-            notesMidi.sort((a, b) => a - b);
+        while (!isValid) {
+            if (startMode === 'fixed-c') {
+                // In MIDI standard, Middle C (C4) is 60.
+                this.#currentBaseMidi = 60; 
+            } else {
+                // Base note from C3 (48) to B3 (59)
+                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+            }
+            
+            this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
+            this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
+            
+            // Calculate notes based on chord type and inversion
+            const intervals = this.#chordTypes[this.#currentChordKey];
+            notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
+            
+            if (this.#currentInversion === 1) {
+                // First inversion: root note goes up an octave
+                notesMidi[0] += 12;
+                notesMidi.sort((a, b) => a - b);
+            } else if (this.#currentInversion === 2) {
+                // Second inversion: root and third go up an octave
+                notesMidi[0] += 12;
+                notesMidi[1] += 12;
+                notesMidi.sort((a, b) => a - b);
+            }
+
+            // Ensure all notes are within the real C3 (48) to C5 (72) range
+            if (notesMidi[notesMidi.length - 1] <= 72 && notesMidi[0] >= 48) {
+                isValid = true;
+            }
         }
         
         this.#currentNotesMidi = notesMidi;
@@ -281,7 +293,7 @@ window.startChordTraining = (pianoContainerId) => {
 
     const piano = new Piano(document.getElementById(pianoContainerId), {
         octaves: 3,
-        startOctave: 3,
+        startOctave: 2,
         isClickable: true,
         showNoteNames: true,
         showTonicIndicator: false

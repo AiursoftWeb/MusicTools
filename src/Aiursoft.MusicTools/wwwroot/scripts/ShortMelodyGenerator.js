@@ -8,13 +8,14 @@ export class ShortMelodyGenerator {
     constructor() {
         this.scaleNotes = Scale.get("C major").notes;
         this.pitches = [];
-        // Use a comfortable range: C4 to G5
-        const octaves = [4, 5];
+        // Ensure all generated notes strictly fall within the real C3 (48) to C5 (72) range.
+        // In MIDI standard, Middle C (C4) is 60.
+        const octaves = [3, 4, 5];
         octaves.forEach(octave => {
             this.scaleNotes.forEach(note => {
                 const fullNote = `${note}${octave}`;
                 const midi = Note.midi(fullNote);
-                if (midi >= 60 && midi <= 79) { // C4 to G5
+                if (midi >= 48 && midi <= 72) { // C3 to C5
                     this.pitches.push({
                         name: fullNote,
                         midi: midi
@@ -68,9 +69,17 @@ export class ShortMelodyGenerator {
         if (melody.length > 0) {
             const lastNote = melody[melody.length - 1];
             const prevNote = melody.length > 1 ? melody[melody.length - 2] : null;
-            if (prevNote && prevNote.midi >= 67) {
-                lastNote.pitch = "C5";
-                lastNote.midi = 72;
+            if (prevNote) {
+                if (prevNote.midi > 65) {
+                    lastNote.pitch = "C5";
+                    lastNote.midi = 72;
+                } else if (prevNote.midi < 55) {
+                    lastNote.pitch = "C3";
+                    lastNote.midi = 48;
+                } else {
+                    lastNote.pitch = "C4";
+                    lastNote.midi = 60;
+                }
             } else {
                 lastNote.pitch = "C4";
                 lastNote.midi = 60;

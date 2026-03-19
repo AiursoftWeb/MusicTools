@@ -44,8 +44,8 @@ let isCurrentLevelPerfect = true;
 let timerId = null;
 let gameDifficulty = "music";
 
-const OCTAVE_START = 4;
-const OCTAVE_COUNT = 3; // 3 Octaves requested (Expanded Keyboard)
+const OCTAVE_START = 3;
+const OCTAVE_COUNT = 2; // 2 Octaves requested (Expanded Keyboard, C3 to C5)
 let melodyGenerator = new MelodyGenerator();
 let songBuffer = [];
 
@@ -78,7 +78,7 @@ for (let o = 0; o < OCTAVE_COUNT; o++) {
 }
 
 // Map of Root Note -> Array of Note Names (Spanning full available range that fit in scale)
-// Note: If Key is G, and Range is C4-B5. G Major includes F#.
+// Note: If Key is G, and Range is C3-C5. G Major includes F#.
 // We need to generate legal notes for the KEY across the ENTIRE range.
 const SCALES = {};
 
@@ -184,9 +184,9 @@ window.playDebugMelody = async function () {
     let notesToPlay = validNotesForLevel;
     if (!notesToPlay || notesToPlay.length === 0) {
         console.warn(
-            "⚠️ Game not started. Defaulting to C Major (C4-C5) for debug."
+            "⚠️ Game not started. Defaulting to C Major (C3-C4) for debug."
         );
-        notesToPlay = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+        notesToPlay = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4"];
     } else {
         console.log(`🔑 Current Scale: ${notesToPlay.join(", ")}`);
     }
