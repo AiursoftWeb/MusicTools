@@ -204,9 +204,9 @@ class ChordTraining {
 
         const chordName = this.#localizedStrings.chords[this.#currentChordKey];
         
-        let inversionText = "Root Position";
-        if (this.#currentInversion === 1) inversionText = "First Inversion";
-        if (this.#currentInversion === 2) inversionText = "Second Inversion";
+        let inversionText = this.#localizedStrings.rootPosition;
+        if (this.#currentInversion === 1) inversionText = this.#localizedStrings.firstInversion;
+        if (this.#currentInversion === 2) inversionText = this.#localizedStrings.secondInversion;
 
         const nameEl = document.getElementById('result-chord-name');
         if (nameEl) nameEl.textContent = chordName;
@@ -245,6 +245,9 @@ window.startChordTraining = (pianoContainerId, localizationDataId) => {
         nextQuestion: localizationData.nextQuestion,
         playChord: localizationData.playChord,
         questionTemplate: localizationData.questionTemplate,
+        rootPosition: localizationData.rootPosition,
+        firstInversion: localizationData.firstInversion,
+        secondInversion: localizationData.secondInversion,
         chords: {
             'major': localizationData.chordMajor,
             'minor': localizationData.chordMinor,
