@@ -15,9 +15,9 @@ export class MelodyGenerator {
         const rawNotes = Scale.get(`${key} ${actualScaleType}`).notes;
 
         // Pre-calculate correct octaves for the scale to ensure it ascends
-        // e.g. G Major: G, A, B, C, D, E, F# -> G3, A3, B3, C4, D4, E4, F#4
+        // e.g. G Major: G, A, B, C, D, E, F# -> G4, A4, B4, C5, D5, E5, F#5
         this.scaleObjects = [];
-        let currentOctave = 3;
+        let currentOctave = 4;
         let previousMidi = -1;
 
         rawNotes.forEach(rawName => {
@@ -30,7 +30,7 @@ export class MelodyGenerator {
             // Tentatively try current octave
             let testMidi = Note.midi(`${noteName}${currentOctave}`);
             
-            // If we wrapped around (e.g. B3 -> C3), bump octave
+            // If we wrapped around (e.g. B4 -> C4), bump octave
             // Logic: if new note is lower than previous, it must be in next octave
             // Exception: The first note is just reference
             if (previousMidi !== -1 && testMidi < previousMidi) {
@@ -45,9 +45,9 @@ export class MelodyGenerator {
             previousMidi = testMidi;
         });
 
-        // 锁定舒适音域 C3 - C5
+        // 锁定舒适音域 C4 - G5 (extended dynamically based on scale)
         this.minRange = 0; 
-        this.maxRange = this.isAtonal ? 24 : 14; // Approx 2 octaves (C3 to C5)
+        this.maxRange = this.isAtonal ? 24 : 14; // Approx 2 octaves
         
         // 钟声锚点：High C (7), Sol (4), High Sol (11)
         this.sparkleAnchors = [7, 4, 11]; 
