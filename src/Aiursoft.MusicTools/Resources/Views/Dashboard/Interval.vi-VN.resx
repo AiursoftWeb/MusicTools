@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Eighteenth" xml:space="preserve">
+      <data name="Approximate Ratio" xml:space="preserve">
+    <value>Tỷ lệ xấp xỉ</value>
+  </data>
+  <data name="Augmented Eighteenth" xml:space="preserve">
     <value>Quãng Mười Tám Tăng</value>
   </data>
   <data name="Augmented Eleventh" xml:space="preserve">
@@ -155,6 +158,9 @@
   </data>
   <data name="Please input with the lower note first" xml:space="preserve">
     <value>Vui lòng nhập nốt thấp hơn trước.</value>
+  </data>
+  <data name="Precise Ratio" xml:space="preserve">
+    <value>Tỷ lệ chính xác</value>
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>Thiết lập lại lựa chọn</value>
