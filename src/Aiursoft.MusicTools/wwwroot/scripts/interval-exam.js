@@ -155,8 +155,8 @@ class ExamQuestion {
         const ACC_TO_VAL = { '': 0, '#': 1, 'b': -1, '𝄪': 2, '𝄫': -2 };
 
         const semi = NOTE_TO_SEMI[baseLetter] + (ACC_TO_VAL[baseAccidental] || 0) + (baseOctave + 1) * 12;
-        // C3 = 48, C5 = 72
-        return semi >= 48 && semi <= 72;
+        // G2 = 43, G5 = 79
+        return semi >= 43 && semi <= 79;
     }
 
     nextQuestion() {
