@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Frequency History" xml:space="preserve">
+      <data name="cents" xml:space="preserve">
+    <value>centésimos</value>
+  </data>
+  <data name="Could not access microphone. Please ensure permissions are granted." xml:space="preserve">
+    <value>Não foi possível aceder ao microfone. Por favor, verifique se as permissões foram concedidas.</value>
+  </data>
+  <data name="Frequency History" xml:space="preserve">
     <value>Histórico de Frequência</value>
   </data>
   <data name="Start Tuner" xml:space="preserve">

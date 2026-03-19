@@ -42,6 +42,9 @@
   <data name="Diminished Triad" xml:space="preserve">
     <value>減三和弦</value>
   </data>
+  <data name="First Inversion" xml:space="preserve">
+    <value>第一转位</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>我放棄了</value>
   </data>
@@ -60,8 +63,20 @@
   <data name="Play Chord" xml:space="preserve">
     <value>播放和弦</value>
   </data>
+  <data name="Random Root" xml:space="preserve">
+    <value>随机根音</value>
+  </data>
   <data name="Random Start" xml:space="preserve">
     <value>隨機開始</value>
+  </data>
+  <data name="Root as C" xml:space="preserve">
+    <value>以 C 为根音</value>
+  </data>
+  <data name="Root Position" xml:space="preserve">
+    <value>原位</value>
+  </data>
+  <data name="Second Inversion" xml:space="preserve">
+    <value>第二转位</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>由 C 開始</value>
@@ -76,19 +91,4 @@
     <value>錯誤。</value>
   </data>
 
-  <data name="Root as C" xml:space="preserve">
-    <value>以 C 为根音</value>
-  </data>
-  <data name="Random Root" xml:space="preserve">
-    <value>随机根音</value>
-  </data>
-  <data name="Root Position" xml:space="preserve">
-    <value>原位</value>
-  </data>
-  <data name="First Inversion" xml:space="preserve">
-    <value>第一转位</value>
-  </data>
-  <data name="Second Inversion" xml:space="preserve">
-    <value>第二转位</value>
-  </data>
 </root>

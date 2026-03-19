@@ -42,6 +42,9 @@
   <data name="Diminished Triad" xml:space="preserve">
     <value>Tierce diminuée</value>
   </data>
+  <data name="First Inversion" xml:space="preserve">
+    <value>First Inversion</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>Je renonce</value>
   </data>
@@ -60,8 +63,20 @@
   <data name="Play Chord" xml:space="preserve">
     <value>Jouer l&apos;accord</value>
   </data>
+  <data name="Random Root" xml:space="preserve">
+    <value>Random Root</value>
+  </data>
   <data name="Random Start" xml:space="preserve">
     <value>Démarrage aléatoire</value>
+  </data>
+  <data name="Root as C" xml:space="preserve">
+    <value>Root as C</value>
+  </data>
+  <data name="Root Position" xml:space="preserve">
+    <value>Root Position</value>
+  </data>
+  <data name="Second Inversion" xml:space="preserve">
+    <value>Second Inversion</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Commencer par Do</value>
@@ -76,19 +91,4 @@
     <value>Incorrect.</value>
   </data>
 
-  <data name="Root as C" xml:space="preserve">
-    <value>Root as C</value>
-  </data>
-  <data name="Random Root" xml:space="preserve">
-    <value>Random Root</value>
-  </data>
-  <data name="Root Position" xml:space="preserve">
-    <value>Root Position</value>
-  </data>
-  <data name="First Inversion" xml:space="preserve">
-    <value>First Inversion</value>
-  </data>
-  <data name="Second Inversion" xml:space="preserve">
-    <value>Second Inversion</value>
-  </data>
 </root>
