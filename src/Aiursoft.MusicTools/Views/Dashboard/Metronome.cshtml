@@ -50,9 +50,7 @@
             </div>
 
             <button id="start-stop-btn" 
-                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all"
-                    data-text-start="@Localizer["Start"]"
-                    data-text-stop="@Localizer["Stop"]">
+                    class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all">
                 <span id="btn-icon">▶</span> <span id="btn-text">@Localizer["Start"]</span>
             </button>
             
@@ -61,6 +59,11 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="loc-data" hidden>
+    <span data-key="start">@Localizer["Start"]</span>
+    <span data-key="stop">@Localizer["Stop"]</span>
 </div>
 @* ReSharper disable once Razor.SectionNotResolved *@
 

@@ -2,24 +2,23 @@
     ViewData["Title"] = @Localizer["Interval Exam"];
 }
 
-<div id="localization-data"
-     data-correct="@Localizer["Correct!"]"
-     data-wrong="@Localizer["Wrong."]"
-     data-question-template="@Localizer["What is the (0) of the note above?"]"
-     data-int-m2="@Localizer["Minor Second"]"
-     data-int-maj2="@Localizer["Major Second"]"
-     data-int-m3="@Localizer["Minor Third"]"
-     data-int-maj3="@Localizer["Major Third"]"
-     data-int-p4="@Localizer["Perfect Fourth"]"
-     data-int-a4="@Localizer["Augmented Fourth"]"
-     data-int-d5="@Localizer["Diminished Fifth"]"
-     data-int-p5="@Localizer["Perfect Fifth"]"
-     data-int-a5="@Localizer["Augmented Fifth"]"
-     data-int-m6="@Localizer["Minor Sixth"]"
-     data-int-maj6="@Localizer["Major Sixth"]"
-     data-int-m7="@Localizer["Minor Seventh"]"
-     data-int-maj7="@Localizer["Major Seventh"]"
-     style="display: none;">
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct!"]</span>
+    <span data-key="wrong">@Localizer["Wrong."]</span>
+    <span data-key="question-template">@Localizer["What is the (0) of the note above?"]</span>
+    <span data-key="int-m2">@Localizer["Minor Second"]</span>
+    <span data-key="int-maj2">@Localizer["Major Second"]</span>
+    <span data-key="int-m3">@Localizer["Minor Third"]</span>
+    <span data-key="int-maj3">@Localizer["Major Third"]</span>
+    <span data-key="int-p4">@Localizer["Perfect Fourth"]</span>
+    <span data-key="int-a4">@Localizer["Augmented Fourth"]</span>
+    <span data-key="int-d5">@Localizer["Diminished Fifth"]</span>
+    <span data-key="int-p5">@Localizer["Perfect Fifth"]</span>
+    <span data-key="int-a5">@Localizer["Augmented Fifth"]</span>
+    <span data-key="int-m6">@Localizer["Minor Sixth"]</span>
+    <span data-key="int-maj6">@Localizer["Major Sixth"]</span>
+    <span data-key="int-m7">@Localizer["Minor Seventh"]</span>
+    <span data-key="int-maj7">@Localizer["Major Seventh"]</span>
 </div>
 
 <div class="container-fluid py-4">
@@ -67,61 +66,7 @@
 
     <script>
         window.addEventListener('load', () => {
-
-            // --- A. 获取本地化字符串 ---
-            const localizationData = document.getElementById('localization-data').dataset;
-
-            const localizedStrings = {
-                correct: localizationData.correct,
-                wrong: localizationData.wrong,
-                questionTemplate: localizationData.questionTemplate,
-                intervals: {
-                    'm2': localizationData.intM2,
-                    'maj2': localizationData.intMaj2, // <--- 修复 (M2 -> maj2)
-                    'm3': localizationData.intM3,
-                    'maj3': localizationData.intMaj3, // <--- 修复 (M3 -> maj3)
-                    'p4': localizationData.intP4,
-                    'a4': localizationData.intA4,
-                    'd5': localizationData.intD5,
-                    'p5': localizationData.intP5,
-                    'a5': localizationData.intA5,
-                    'm6': localizationData.intM6,
-                    'maj6': localizationData.intMaj6, // <--- 修复 (M6 -> maj6)
-                    'm7': localizationData.intM7,
-                    'maj7': localizationData.intMaj7 // <--- 修复 (M7 -> maj7)
-                }
-            };
-
-            // --- B. 获取所有 DOM 元素 ---
-            const questionStaffEl = document.getElementById('question-staff-container');
-            const answer1El = document.getElementById('staff-answer1-container');
-            const answer2El = document.getElementById('staff-answer2-container');
-            const answer3El = document.getElementById('staff-answer3-container');
-            const questionLabel = document.getElementById('questionLabel');
-
-            const answerElements = [answer1El, answer2El, answer3El];
-
-            // --- C. 创建 MusicStaff 实例 ---
-            const questionStaff = new MusicStaff(questionStaffEl.id, {clef: 'treble'});
-
-            const answerStaffs = [
-                new MusicStaff(answer1El.id, {clef: 'treble'}),
-                new MusicStaff(answer2El.id, {clef: 'treble'}),
-                new MusicStaff(answer3El.id, {clef: 'treble'})
-            ];
-
-            // --- D. 创建 ExamQuestion 实例 ---
-            // [修改] 注入 localizedStrings
-            const examQuestion = new ExamQuestion(
-                questionStaff,
-                answerStaffs,
-                answerElements,
-                questionLabel,
-                localizedStrings // <--- [新]
-            );
-
-            // --- E. 开始考试! ---
-            examQuestion.nextQuestion();
+             window.startIntervalExam('question-staff-container', ['staff-answer1-container', 'staff-answer2-container', 'staff-answer3-container'], 'questionLabel');
         });
     </script>
 }

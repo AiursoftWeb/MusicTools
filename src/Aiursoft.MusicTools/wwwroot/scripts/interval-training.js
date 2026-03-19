@@ -1,4 +1,5 @@
 import Piano from './Piano.js';
+import { getLocalizedText } from './localization.js';
 
 class IntervalTraining {
     #piano;
@@ -293,33 +294,31 @@ class IntervalTraining {
 }
 
 // Global entry point
-window.startIntervalTraining = (pianoContainerId, localizationDataId) => {
-    const localizationData = document.getElementById(localizationDataId).dataset;
-
+window.startIntervalTraining = (pianoContainerId) => {
     const localizedStrings = {
-        correct: localizationData.correct,
-        wrong: localizationData.wrong,
-        giveUp: localizationData.giveUp,
-        nextQuestion: localizationData.nextQuestion,
-        playInterval: localizationData.playInterval,
-        questionTemplate: localizationData.questionTemplate,
+        correct: getLocalizedText('correct', 'Correct!'),
+        wrong: getLocalizedText('wrong', 'Wrong.'),
+        giveUp: getLocalizedText('give-up', 'I give up'),
+        nextQuestion: getLocalizedText('next-question', 'Next Question'),
+        playInterval: getLocalizedText('play-interval', 'Play Interval'),
+        questionTemplate: getLocalizedText('question-template', 'What is the interval of the notes played?'),
         intervals: {
-            'm2': localizationData.intM2,
-            'maj2': localizationData.intMaj2,
-            'm3': localizationData.intM3,
-            'maj3': localizationData.intMaj3,
-            'p4': localizationData.intP4,
-            'a4': localizationData.intA4,
-            'p5': localizationData.intP5,
-            'm6': localizationData.intM6,
-            'maj6': localizationData.intMaj6,
-            'm7': localizationData.intM7,
-            'maj7': localizationData.intMaj7
+            'm2': getLocalizedText('int-m2', 'Minor Second'),
+            'maj2': getLocalizedText('int-maj2', 'Major Second'),
+            'm3': getLocalizedText('int-m3', 'Minor Third'),
+            'maj3': getLocalizedText('int-maj3', 'Major Third'),
+            'p4': getLocalizedText('int-p4', 'Perfect Fourth'),
+            'a4': getLocalizedText('int-a4', 'Augmented Fourth'),
+            'p5': getLocalizedText('int-p5', 'Perfect Fifth'),
+            'm6': getLocalizedText('int-m6', 'Minor Sixth'),
+            'maj6': getLocalizedText('int-maj6', 'Major Sixth'),
+            'm7': getLocalizedText('int-m7', 'Minor Seventh'),
+            'maj7': getLocalizedText('int-maj7', 'Major Seventh')
         },
-        consonancePerfect: localizationData.consonancePerfect,
-        consonanceImperfect: localizationData.consonanceImperfect,
-        consonanceDissonance: localizationData.consonanceDissonance,
-        consonanceSharpDissonance: localizationData.consonanceSharpDissonance
+        consonancePerfect: getLocalizedText('consonance-perfect', 'Perfect Consonance'),
+        consonanceImperfect: getLocalizedText('consonance-imperfect', 'Imperfect Consonance'),
+        consonanceDissonance: getLocalizedText('consonance-dissonance', 'Dissonance'),
+        consonanceSharpDissonance: getLocalizedText('consonance-sharp-dissonance', 'Sharp Dissonance')
     };
 
     const intervalKeys = Object.keys(localizedStrings.intervals);

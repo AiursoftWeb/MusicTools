@@ -122,9 +122,9 @@
     </div>
 </div>
 
-<div id="localization-data" hidden
-     data-correct="@Localizer["Correct!"]"
-     data-wrong="@Localizer["Wrong. Try again!"]">
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct!"]</span>
+    <span data-key="wrong">@Localizer["Wrong. Try again!"]</span>
 </div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@
@@ -134,39 +134,7 @@
     <script type="module" src="~/dist/scripts/shortMelodyDictation.js" asp-append-version="true"></script>
     <script>
         window.addEventListener('load', () => {
-            const dom = {
-                startOverlay: document.getElementById('start-overlay'),
-                gameBoard: document.getElementById('game-board'),
-                btnStart: document.getElementById('btn-start'),
-                btnPlayMelody: document.getElementById('btn-play-melody'),
-                btnPlayStandard: document.getElementById('btn-play-standard'),
-                btnNext: document.getElementById('btn-next'),
-                pianoArea: document.getElementById('piano-area'),
-                staffArea: document.getElementById('staff-area'),
-                pianoContainer: document.getElementById('piano-container'),
-                answerStaffContainers: [
-                    document.getElementById('staff-answer1-container'),
-                    document.getElementById('staff-answer2-container'),
-                    document.getElementById('staff-answer3-container')
-                ],
-                answerElements: [
-                    document.getElementById('staff-answer1-container'),
-                    document.getElementById('staff-answer2-container'),
-                    document.getElementById('staff-answer3-container')
-                ]
-            };
-
-            const locData = document.getElementById('localization-data').dataset;
-            const loc = {
-                correct: locData.correct,
-                wrong: locData.wrong
-            };
-
-            if (typeof ShortMelodyDictation !== 'undefined') {
-                new ShortMelodyDictation(dom, loc);
-            } else {
-                console.error("ShortMelodyDictation script not loaded correctly.");
-            }
+            window.startShortMelodyDictation();
         });
     </script>
 }

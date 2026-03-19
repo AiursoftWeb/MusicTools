@@ -2,21 +2,20 @@
     ViewData["Title"] = @Localizer["Chord Training"];
 }
 
-<div id="localization-data"
-     data-correct="@Localizer["Correct!"]"
-     data-wrong="@Localizer["Wrong."]"
-     data-give-up="@Localizer["I give up"]"
-     data-next-question="@Localizer["Next Question"]"
-     data-play-chord="@Localizer["Play Chord"]"
-     data-question-template="@Localizer["What is the type of the chord played?"]"
-     data-chord-major="@Localizer["Major Triad"]"
-     data-chord-minor="@Localizer["Minor Triad"]"
-     data-chord-diminished="@Localizer["Diminished Triad"]"
-     data-chord-augmented="@Localizer["Augmented Triad"]"
-     data-root-position="@Localizer["Root Position"]"
-     data-first-inversion="@Localizer["First Inversion"]"
-     data-second-inversion="@Localizer["Second Inversion"]"
-     style="display: none;">
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct!"]</span>
+    <span data-key="wrong">@Localizer["Wrong."]</span>
+    <span data-key="give-up">@Localizer["I give up"]</span>
+    <span data-key="next-question">@Localizer["Next Question"]</span>
+    <span data-key="play-chord">@Localizer["Play Chord"]</span>
+    <span data-key="question-template">@Localizer["What is the type of the chord played?"]</span>
+    <span data-key="chord-major">@Localizer["Major Triad"]</span>
+    <span data-key="chord-minor">@Localizer["Minor Triad"]</span>
+    <span data-key="chord-diminished">@Localizer["Diminished Triad"]</span>
+    <span data-key="chord-augmented">@Localizer["Augmented Triad"]</span>
+    <span data-key="root-position">@Localizer["Root Position"]</span>
+    <span data-key="first-inversion">@Localizer["First Inversion"]</span>
+    <span data-key="second-inversion">@Localizer["Second Inversion"]</span>
 </div>
 
 <div class="container-fluid py-4 position-relative">
@@ -108,7 +107,7 @@
     <script type="module" src="~/dist/scripts/chordTraining.js" asp-append-version="true"></script>
     <script>
         window.addEventListener('load', () => {
-             window.startChordTraining('piano-container', 'localization-data');
+             window.startChordTraining('piano-container');
         });
     </script>
 }

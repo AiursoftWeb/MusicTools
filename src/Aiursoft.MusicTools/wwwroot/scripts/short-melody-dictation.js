@@ -3,6 +3,7 @@ import AudioPlayer from './AudioPlayer.js';
 import MusicStaff from './MusicStaff.js';
 import { ShortMelodyGenerator } from './ShortMelodyGenerator.js';
 import * as Tone from 'tone';
+import { getLocalizedText } from './localization.js';
 
 class ShortMelodyDictation {
     constructor(domElements, localizedStrings) {
@@ -196,4 +197,36 @@ class ShortMelodyDictation {
 }
 
 window.ShortMelodyDictation = ShortMelodyDictation;
+
+window.startShortMelodyDictation = () => {
+    const dom = {
+        startOverlay: document.getElementById('start-overlay'),
+        gameBoard: document.getElementById('game-board'),
+        btnStart: document.getElementById('btn-start'),
+        btnPlayMelody: document.getElementById('btn-play-melody'),
+        btnPlayStandard: document.getElementById('btn-play-standard'),
+        btnNext: document.getElementById('btn-next'),
+        pianoArea: document.getElementById('piano-area'),
+        staffArea: document.getElementById('staff-area'),
+        pianoContainer: document.getElementById('piano-container'),
+        answerStaffContainers: [
+            document.getElementById('staff-answer1-container'),
+            document.getElementById('staff-answer2-container'),
+            document.getElementById('staff-answer3-container')
+        ],
+        answerElements: [
+            document.getElementById('staff-answer1-container'),
+            document.getElementById('staff-answer2-container'),
+            document.getElementById('staff-answer3-container')
+        ]
+    };
+
+    const loc = {
+        correct: getLocalizedText('correct', 'Correct!'),
+        wrong: getLocalizedText('wrong', 'Wrong. Try again!')
+    };
+
+    return new ShortMelodyDictation(dom, loc);
+};
+
 export default ShortMelodyDictation;

@@ -2,29 +2,28 @@
     ViewData["Title"] = @Localizer["Interval Training"];
 }
 
-<div id="localization-data"
-     data-correct="@Localizer["Correct!"]"
-     data-wrong="@Localizer["Wrong."]"
-     data-give-up="@Localizer["I give up"]"
-     data-next-question="@Localizer["Next Question"]"
-     data-play-interval="@Localizer["Play Interval"]"
-     data-question-template="@Localizer["What is the interval of the notes played?"]"
-     data-int-m2="@Localizer["Minor Second"]"
-     data-int-maj2="@Localizer["Major Second"]"
-     data-int-m3="@Localizer["Minor Third"]"
-     data-int-maj3="@Localizer["Major Third"]"
-     data-int-p4="@Localizer["Perfect Fourth"]"
-     data-int-a4="@Localizer["Augmented Fourth"]"
-     data-int-p5="@Localizer["Perfect Fifth"]"
-     data-int-m6="@Localizer["Minor Sixth"]"
-     data-int-maj6="@Localizer["Major Sixth"]"
-     data-int-m7="@Localizer["Minor Seventh"]"
-     data-int-maj7="@Localizer["Major Seventh"]"
-     data-consonance-perfect="@Localizer["Perfect Consonance"]"
-     data-consonance-imperfect="@Localizer["Imperfect Consonance"]"
-     data-consonance-dissonance="@Localizer["Dissonance"]"
-     data-consonance-sharp-dissonance="@Localizer["Sharp Dissonance"]"
-     style="display: none;">
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct!"]</span>
+    <span data-key="wrong">@Localizer["Wrong."]</span>
+    <span data-key="give-up">@Localizer["I give up"]</span>
+    <span data-key="next-question">@Localizer["Next Question"]</span>
+    <span data-key="play-interval">@Localizer["Play Interval"]</span>
+    <span data-key="question-template">@Localizer["What is the interval of the notes played?"]</span>
+    <span data-key="int-m2">@Localizer["Minor Second"]</span>
+    <span data-key="int-maj2">@Localizer["Major Second"]</span>
+    <span data-key="int-m3">@Localizer["Minor Third"]</span>
+    <span data-key="int-maj3">@Localizer["Major Third"]</span>
+    <span data-key="int-p4">@Localizer["Perfect Fourth"]</span>
+    <span data-key="int-a4">@Localizer["Augmented Fourth"]</span>
+    <span data-key="int-p5">@Localizer["Perfect Fifth"]</span>
+    <span data-key="int-m6">@Localizer["Minor Sixth"]</span>
+    <span data-key="int-maj6">@Localizer["Major Sixth"]</span>
+    <span data-key="int-m7">@Localizer["Minor Seventh"]</span>
+    <span data-key="int-maj7">@Localizer["Major Seventh"]</span>
+    <span data-key="consonance-perfect">@Localizer["Perfect Consonance"]</span>
+    <span data-key="consonance-imperfect">@Localizer["Imperfect Consonance"]</span>
+    <span data-key="consonance-dissonance">@Localizer["Dissonance"]</span>
+    <span data-key="consonance-sharp-dissonance">@Localizer["Sharp Dissonance"]</span>
 </div>
 
 <div class="container-fluid py-4 position-relative">
@@ -107,7 +106,7 @@
     <script type="module" src="~/dist/scripts/intervalTraining.js" asp-append-version="true"></script>
     <script>
         window.addEventListener('load', () => {
-             window.startIntervalTraining('piano-container', 'localization-data');
+             window.startIntervalTraining('piano-container');
         });
     </script>
 }

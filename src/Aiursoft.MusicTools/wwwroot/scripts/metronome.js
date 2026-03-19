@@ -1,3 +1,5 @@
+import { getLocalizedText } from './localization.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const bpmSlider = document.getElementById('bpm-slider');
     const bpmDisplay = document.getElementById('bpm-display');
@@ -231,9 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
             isPlaying = false;
             window.clearTimeout(timerID);
             
-            // Use localized text from data attributes
-            const startText = startStopBtn.getAttribute('data-text-start');
-            btnText.textContent = startText;
+            // Use localized text
+            btnText.textContent = getLocalizedText('start', 'Start');
             btnIcon.textContent = "▶";
             
             startStopBtn.classList.remove('btn-danger');
@@ -248,9 +249,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nextNoteTime = audioContext.currentTime + 0.1;
             scheduler();
             
-            // Use localized text from data attributes
-            const stopText = startStopBtn.getAttribute('data-text-stop');
-            btnText.textContent = stopText;
+            // Use localized text
+            btnText.textContent = getLocalizedText('stop', 'Stop');
             btnIcon.textContent = "⏸";
             
             startStopBtn.classList.remove('btn-primary');

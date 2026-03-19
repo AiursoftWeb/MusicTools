@@ -1,4 +1,5 @@
 import ScaleVisualizerEngine from './ScaleVisualizerEngine.js';
+import { getLocalizedText } from './localization.js';
 
 window.addEventListener("load", () => {
 
@@ -57,8 +58,7 @@ window.addEventListener("load", () => {
     // =================== 2. 构建配置与启动引擎 ========================
     // =====================================================================
 
-    const localeData = document.getElementById("localization-data");
-    const localizedTonic = (localeData && localeData.dataset.tonic) ? localeData.dataset.tonic : "Tonic";
+    const localizedTonic = getLocalizedText('tonic', 'Tonic');
 
     // [新设计] 配置对象现在传递 keyDefinitions
     const majorConfig = {
