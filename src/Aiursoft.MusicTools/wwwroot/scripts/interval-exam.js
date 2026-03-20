@@ -50,8 +50,8 @@ const INTERVAL_DEFINITIONS = {
 const INTERVAL_KEYS = Object.keys(INTERVAL_DEFINITIONS);
 
 const EXAM_PITCHES = [
-    'C3', 'C#3', 'D3', 'Eb3', 'E3', 'F3', 'F#3', 'G3', 'G#3', 'A3', 'Bb3', 'B3',
-    'C4'
+    'C4', 'C#4', 'D4', 'Eb4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'Bb4', 'B4',
+    'C5'
 ];
 
 // --- 2. 核心考试逻辑 (已重构) ---
@@ -158,8 +158,8 @@ class ExamQuestion {
 
         const semi = NOTE_TO_SEMI[baseLetter] + (ACC_TO_VAL[baseAccidental] || 0) + (baseOctave + 1) * 12;
         // In MIDI standard, Middle C (C4) is 60.
-        // We ensure all exam notes strictly fall within the real C3 (48) to C5 (72) range.
-        return semi >= 48 && semi <= 72;
+        // We ensure all exam notes strictly fall within the real C4 (60) to C6 (84) range.
+        return semi >= 60 && semi <= 84;
     }
 
     nextQuestion() {
