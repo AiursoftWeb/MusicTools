@@ -27,6 +27,9 @@
   <data name="Block Chord" xml:space="preserve">
     <value>عازف الكورد</value>
   </data>
+  <data name="C Major (White Keys)" xml:space="preserve">
+    <value>دوّر C الكبير (الأساس الأبيض)</value>
+  </data>
   <data name="Chord Training" xml:space="preserve">
     <value>تدريب الأوتار</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>ثلاثي ناقص</value>
+  </data>
+  <data name="Fifth note" xml:space="preserve">
+    <value>نوتة خامسة</value>
   </data>
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
@@ -63,8 +69,14 @@
   <data name="Play Chord" xml:space="preserve">
     <value>اعزف العزف</value>
   </data>
+  <data name="Random Inversion" xml:space="preserve">
+    <value>قلب عشوائي</value>
+  </data>
   <data name="Random Root" xml:space="preserve">
     <value>Random Root</value>
+  </data>
+  <data name="Random Scale" xml:space="preserve">
+    <value>مقياس عشوائي</value>
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>بدء عشوائي</value>
@@ -72,14 +84,23 @@
   <data name="Root as C" xml:space="preserve">
     <value>Root as C</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>نوتة الجذر</value>
+  </data>
   <data name="Root Position" xml:space="preserve">
     <value>Root Position</value>
+  </data>
+  <data name="Root position (Root is lowest)" xml:space="preserve">
+    <value>موضع الجذر (الجذر هو الأدنى)</value>
   </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>ابدأ من C</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>النوتة الثالثة</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>ما هو نوع العزف المنفّذ؟</value>

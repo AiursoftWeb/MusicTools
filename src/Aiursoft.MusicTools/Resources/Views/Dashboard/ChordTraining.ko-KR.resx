@@ -27,6 +27,9 @@
   <data name="Block Chord" xml:space="preserve">
     <value>블록 코드</value>
   </data>
+  <data name="C Major (White Keys)" xml:space="preserve">
+    <value>C 메이저 (흰 건반)</value>
+  </data>
   <data name="Chord Training" xml:space="preserve">
     <value>화음 훈련</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>감3화음</value>
+  </data>
+  <data name="Fifth note" xml:space="preserve">
+    <value>다섯 번째 음</value>
   </data>
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
@@ -63,8 +69,14 @@
   <data name="Play Chord" xml:space="preserve">
     <value>코드 재생</value>
   </data>
+  <data name="Random Inversion" xml:space="preserve">
+    <value>랜덤 인버전</value>
+  </data>
   <data name="Random Root" xml:space="preserve">
     <value>Random Root</value>
+  </data>
+  <data name="Random Scale" xml:space="preserve">
+    <value>랜덤 음계</value>
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>무작위 시작</value>
@@ -72,14 +84,23 @@
   <data name="Root as C" xml:space="preserve">
     <value>Root as C</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>루트 음</value>
+  </data>
   <data name="Root Position" xml:space="preserve">
     <value>Root Position</value>
+  </data>
+  <data name="Root position (Root is lowest)" xml:space="preserve">
+    <value>루트 위치 (루트가 가장 낮음)</value>
   </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>C에서 시작</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>3음</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>연주된 화음의 종류는 무엇인가요?</value>

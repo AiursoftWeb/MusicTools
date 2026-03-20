@@ -27,6 +27,9 @@
   <data name="Block Chord" xml:space="preserve">
     <value>柱式和弦</value>
   </data>
+  <data name="C Major (White Keys)" xml:space="preserve">
+    <value>C 大调 (仅限白键)</value>
+  </data>
   <data name="Chord Training" xml:space="preserve">
     <value>和弦训练</value>
   </data>
@@ -66,8 +69,14 @@
   <data name="Play Chord" xml:space="preserve">
     <value>播放和弦</value>
   </data>
+  <data name="Random Inversion" xml:space="preserve">
+    <value>随机排列</value>
+  </data>
   <data name="Random Root" xml:space="preserve">
     <value>随机根音</value>
+  </data>
+  <data name="Random Scale" xml:space="preserve">
+    <value>随机调性</value>
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>随机开始</value>
@@ -75,38 +84,29 @@
   <data name="Root as C" xml:space="preserve">
     <value>以 C 为根音</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>根音</value>
+  </data>
   <data name="Root Position" xml:space="preserve">
     <value>原位</value>
   </data>
-  <data name="Root note" xml:space="preserve">
-    <value>根音</value>
+  <data name="Root position (Root is lowest)" xml:space="preserve">
+    <value>根音是最低音</value>
   </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>第二转位</value>
   </data>
-  <data name="Third note" xml:space="preserve">
-    <value>三音</value>
-  </data>
   <data name="Start from C" xml:space="preserve">
     <value>从 C 开始</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>三音</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>所演奏的和弦类型是什么？</value>
   </data>
   <data name="Wrong" xml:space="preserve">
     <value>错误</value>
-  </data>
-  <data name="C Major (White Keys)" xml:space="preserve">
-    <value>C 大调 (仅限白键)</value>
-  </data>
-  <data name="Random Scale" xml:space="preserve">
-    <value>随机调性</value>
-  </data>
-  <data name="Root position (Root is lowest)" xml:space="preserve">
-    <value>根音是最低音</value>
-  </data>
-  <data name="Random Inversion" xml:space="preserve">
-    <value>随机排列</value>
   </data>
   <data name="Wrong." xml:space="preserve">
     <value>错误。</value>

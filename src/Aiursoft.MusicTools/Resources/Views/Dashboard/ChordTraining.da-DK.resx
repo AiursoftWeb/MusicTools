@@ -27,6 +27,9 @@
   <data name="Block Chord" xml:space="preserve">
     <value>Blokkaccord</value>
   </data>
+  <data name="C Major (White Keys)" xml:space="preserve">
+    <value>C-dur (hvide tangenter)</value>
+  </data>
   <data name="Chord Training" xml:space="preserve">
     <value>Akordtræning</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>Mindre triad</value>
+  </data>
+  <data name="Fifth note" xml:space="preserve">
+    <value>Femte tone</value>
   </data>
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
@@ -63,8 +69,14 @@
   <data name="Play Chord" xml:space="preserve">
     <value>Afspil akkord</value>
   </data>
+  <data name="Random Inversion" xml:space="preserve">
+    <value>Tilfældig inversion</value>
+  </data>
   <data name="Random Root" xml:space="preserve">
     <value>Random Root</value>
+  </data>
+  <data name="Random Scale" xml:space="preserve">
+    <value>Tilfældig skala</value>
   </data>
   <data name="Random Start" xml:space="preserve">
     <value>Tilfældig start</value>
@@ -72,14 +84,23 @@
   <data name="Root as C" xml:space="preserve">
     <value>Root as C</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>Grundtone</value>
+  </data>
   <data name="Root Position" xml:space="preserve">
     <value>Root Position</value>
+  </data>
+  <data name="Root position (Root is lowest)" xml:space="preserve">
+    <value>Rodposition (roden er lavest)</value>
   </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Start fra C</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>Tredje tone</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>Hvilken type akkord blev spillet?</value>
