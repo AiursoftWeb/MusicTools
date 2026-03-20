@@ -312,6 +312,20 @@ class ChordTraining {
         const inversionEl = document.getElementById('result-inversion');
         if (inversionEl) inversionEl.textContent = inversionText;
 
+        const intervals = this.#chordTypes[this.#currentChordKey];
+        const rootNote = this.#midiToNoteName(this.#currentBaseMidi);
+        const thirdNote = this.#midiToNoteName(this.#currentBaseMidi + intervals[1]);
+        const fifthNote = this.#midiToNoteName(this.#currentBaseMidi + intervals[2]);
+
+        const rootEl = document.getElementById('result-root-note');
+        if (rootEl) rootEl.textContent = rootNote;
+
+        const thirdEl = document.getElementById('result-third-note');
+        if (thirdEl) thirdEl.textContent = thirdNote;
+
+        const fifthEl = document.getElementById('result-fifth-note');
+        if (fifthEl) fifthEl.textContent = fifthNote;
+
         // Highlight piano
         const notesToHighlight = this.#currentNotesMidi.map(midi => this.#midiToNoteName(midi));
         this.#piano.clearAllHighlights();
@@ -344,6 +358,9 @@ window.startChordTraining = (pianoContainerId) => {
         rootPosition: getLocalizedText('root-position', 'Root Position'),
         firstInversion: getLocalizedText('first-inversion', 'First Inversion'),
         secondInversion: getLocalizedText('second-inversion', 'Second Inversion'),
+        rootNote: getLocalizedText('root-note', 'Root note'),
+        thirdNote: getLocalizedText('third-note', 'Third note'),
+        fifthNote: getLocalizedText('fifth-note', 'Fifth note'),
         chords: {
             'major': getLocalizedText('chord-major', 'Major Triad'),
             'minor': getLocalizedText('chord-minor', 'Minor Triad'),

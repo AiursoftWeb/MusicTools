@@ -49,6 +49,11 @@ public class DashboardControllerTests : TestBase
         var url = "/Dashboard/ChordTraining";
         var response = await Http.GetAsync(url);
         Assert.IsTrue(response.IsSuccessStatusCode);
+        
+        var content = await response.Content.ReadAsStringAsync();
+        Assert.IsTrue(content.Contains("id=\"result-root-note\""));
+        Assert.IsTrue(content.Contains("id=\"result-third-note\""));
+        Assert.IsTrue(content.Contains("id=\"result-fifth-note\""));
     }
 
     [TestMethod]
