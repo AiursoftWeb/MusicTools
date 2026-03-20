@@ -42,6 +42,9 @@
   <data name="Diminished Triad" xml:space="preserve">
     <value>减三和弦</value>
   </data>
+  <data name="Fifth note" xml:space="preserve">
+    <value>五音</value>
+  </data>
   <data name="First Inversion" xml:space="preserve">
     <value>第一转位</value>
   </data>
@@ -75,8 +78,14 @@
   <data name="Root Position" xml:space="preserve">
     <value>原位</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>根音</value>
+  </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>第二转位</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>三音</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>从 C 开始</value>

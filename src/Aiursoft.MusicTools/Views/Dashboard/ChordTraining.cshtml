@@ -16,6 +16,9 @@
     <span data-key="root-position">@Localizer["Root Position"]</span>
     <span data-key="first-inversion">@Localizer["First Inversion"]</span>
     <span data-key="second-inversion">@Localizer["Second Inversion"]</span>
+    <span data-key="root-note">@Localizer["Root note"]</span>
+    <span data-key="third-note">@Localizer["Third note"]</span>
+    <span data-key="fifth-note">@Localizer["Fifth note"]</span>
 </div>
 
 <div class="container-fluid py-4 position-relative">
@@ -87,7 +90,12 @@
                 <div class="card-body text-center d-flex flex-column justify-content-center">
                     <h6 class="text-muted text-uppercase small mb-2">@Localizer["Correct Answer"]</h6>
                     <h2 id="result-chord-name" class="display-6 fw-bold text-primary mb-2"></h2>
-                    <p id="result-inversion" class="lead text-info fw-bold mb-0"></p>
+                    <p id="result-inversion" class="lead text-info fw-bold mb-3"></p>
+                    <div class="border-top pt-3 text-start">
+                        <p class="mb-1"><span class="text-muted small">@Localizer["Root note"]:</span> <span id="result-root-note" class="fw-bold"></span></p>
+                        <p class="mb-1"><span class="text-muted small">@Localizer["Third note"]:</span> <span id="result-third-note" class="fw-bold"></span></p>
+                        <p class="mb-0"><span class="text-muted small">@Localizer["Fifth note"]:</span> <span id="result-fifth-note" class="fw-bold"></span></p>
+                    </div>
                 </div>
             </div>
         </div>

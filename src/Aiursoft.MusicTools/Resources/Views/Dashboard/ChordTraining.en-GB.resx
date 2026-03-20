@@ -42,6 +42,9 @@
   <data name="Diminished Triad" xml:space="preserve">
     <value>Diminished Triad</value>
   </data>
+  <data name="Fifth note" xml:space="preserve">
+    <value>Fifth note</value>
+  </data>
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
@@ -75,8 +78,14 @@
   <data name="Root Position" xml:space="preserve">
     <value>Root Position</value>
   </data>
+  <data name="Root note" xml:space="preserve">
+    <value>Root note</value>
+  </data>
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
+  </data>
+  <data name="Third note" xml:space="preserve">
+    <value>Third note</value>
   </data>
   <data name="Start from C" xml:space="preserve">
     <value>Start from C</value>
