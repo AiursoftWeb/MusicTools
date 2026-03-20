@@ -64,6 +64,30 @@
                         <i class="bi bi-music-note-beamed me-1"></i> @Localizer["Arpeggio"]
                     </label>
                 </div>
+
+                <div class="btn-group shadow-sm" role="group" aria-label="Scale mode">
+                    <input type="radio" class="btn-check" name="scale-mode" id="scale-c-major" value="c-major" checked autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="scale-c-major">
+                        <i class="bi bi-circle me-1"></i> @Localizer["C Major (White Keys)"]
+                    </label>
+
+                    <input type="radio" class="btn-check" name="scale-mode" id="scale-random" value="random" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="scale-random">
+                        <i class="bi bi-palette me-1"></i> @Localizer["Random Scale"]
+                    </label>
+                </div>
+
+                <div class="btn-group shadow-sm" role="group" aria-label="Voicing mode">
+                    <input type="radio" class="btn-check" name="voicing-mode" id="voicing-root" value="root" checked autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="voicing-root">
+                        <i class="bi bi-arrow-down-circle me-1"></i> @Localizer["Root position (Root is lowest)"]
+                    </label>
+
+                    <input type="radio" class="btn-check" name="voicing-mode" id="voicing-random" value="random" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="voicing-random">
+                        <i class="bi bi-layers me-1"></i> @Localizer["Random Inversion"]
+                    </label>
+                </div>
             </div>
 
             <button id="play-button" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow hover-scale d-flex align-items-center gap-2">

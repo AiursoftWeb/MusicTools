@@ -87,6 +87,18 @@
   <data name="Wrong" xml:space="preserve">
     <value>錯誤</value>
   </data>
+  <data name="C Major (White Keys)" xml:space="preserve">
+    <value>C 大調 (僅限白鍵)</value>
+  </data>
+  <data name="Random Scale" xml:space="preserve">
+    <value>隨機調性</value>
+  </data>
+  <data name="Root position (Root is lowest)" xml:space="preserve">
+    <value>根音是最低音</value>
+  </data>
+  <data name="Random Inversion" xml:space="preserve">
+    <value>隨機排列</value>
+  </data>
   <data name="Wrong." xml:space="preserve">
     <value>錯誤。</value>
   </data>
