@@ -19,11 +19,29 @@ class ShortMelodyDictation {
         this.mode = 'A'; // 'A' for piano, 'B' for staff
         this.playCount = 0;
         this.isPlaying = false;
+        this.#playAbortController = null;
         
         this.wrongMelodies = [];
         this.allChoices = [];
         
         this._init();
+    }
+
+    #playAbortController;
+
+    #delay(ms, signal) {
+        return new Promise((resolve, reject) => {
+            if (signal?.aborted) {
+                return reject(new DOMException('Aborted', 'AbortError'));
+            }
+            const timer = setTimeout(resolve, ms);
+            if (signal) {
+                signal.addEventListener('abort', () => {
+                    clearTimeout(timer);
+                    reject(new DOMException('Aborted', 'AbortError'));
+                }, { once: true });
+            }
+        });
     }
 
     _init() {
@@ -65,6 +83,13 @@ class ShortMelodyDictation {
     }
 
     nextQuestion() {
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
+        }
+        this.piano.stopAll();
+        this.isPlaying = false;
+        this.dom.btnPlayMelody.disabled = false;
+
         const bars = parseInt(document.querySelector('input[name="bars"]:checked').value);
         const timeSignature = document.querySelector('input[name="timeSignature"]:checked').value;
         this.mode = document.querySelector('input[name="gameMode"]:checked').value;
@@ -85,135 +110,67 @@ class ShortMelodyDictation {
         this.playMelody();
     }
 
-    _setupStaffChoices() {
-        const wrong1 = this._generateWrongMelody(this.currentMelody);
-        let wrong2 = this._generateWrongMelody(this.currentMelody);
-        
-        // Try to make them different
-        let attempts = 0;
-        while (JSON.stringify(wrong1) === JSON.stringify(wrong2) && attempts < 10) {
-            wrong2 = this._generateWrongMelody(this.currentMelody);
-            attempts++;
-        }
+    // ... (rest of methods)
 
-        this.wrongMelodies = [wrong1, wrong2];
-
-        this.allChoices = [
-            { melody: this.currentMelody, correct: true },
-            { melody: this.wrongMelodies[0], correct: false },
-            { melody: this.wrongMelodies[1], correct: false }
-        ];
-
-        this._shuffleArray(this.allChoices);
-
-        this.allChoices.forEach((choice, index) => {
-            this.answerStaffs[index].showMelody(choice.melody);
-        });
-    }
-
-    _generateWrongMelody(original) {
-        const pitches = this.generator.pitches;
-        const originalIndices = original.map(n => pitches.findIndex(p => p.midi === n.midi));
-        const len = original.length;
-        const monotonicity = [];
-        for (let i = 0; i < len - 1; i++) {
-            monotonicity.push(Math.sign(originalIndices[i+1] - originalIndices[i]));
-        }
-
-        const possibleWrongMelodies = [];
-
-        // Strategy 1: Global shifts
-        for (let shift = -3; shift <= 3; shift++) {
-            if (shift === 0) continue;
-            const candidate = originalIndices.map(idx => idx + shift);
-            if (candidate.every(idx => idx >= 0 && idx < pitches.length)) {
-                possibleWrongMelodies.push(candidate);
-            }
-        }
-
-        // Strategy 2: Change 1 or 2 notes
-        for (let attempt = 0; attempt < 100; attempt++) {
-            const candidate = [...originalIndices];
-            const numChanges = Math.floor(Math.random() * 2) + 1;
-            for (let c = 0; c < numChanges; c++) {
-                const changeIdx = Math.floor(Math.random() * len);
-                candidate[changeIdx] = Math.floor(Math.random() * pitches.length);
-            }
-
-            // Check monotonicity
-            let match = true;
-            for (let i = 0; i < len - 1; i++) {
-                if (Math.sign(candidate[i+1] - candidate[i]) !== monotonicity[i]) {
-                    match = false;
-                    break;
-                }
-            }
-            if (match && JSON.stringify(candidate) !== JSON.stringify(originalIndices)) {
-                possibleWrongMelodies.push(candidate);
-                if (possibleWrongMelodies.length > 30) break;
-            }
-        }
-
-        if (possibleWrongMelodies.length > 0) {
-            const selectedIndices = possibleWrongMelodies[Math.floor(Math.random() * possibleWrongMelodies.length)];
-            const wrong = JSON.parse(JSON.stringify(original));
-            for (let i = 0; i < len; i++) {
-                wrong[i].pitch = pitches[selectedIndices[i]].name;
-                wrong[i].midi = pitches[selectedIndices[i]].midi;
-            }
-            return wrong;
-        }
-
-        // Fallback (should be extremely rare given the above strategies)
-        const wrong = JSON.parse(JSON.stringify(original));
-        const indexToChange = Math.floor(Math.random() * wrong.length);
-        const originalPitch = wrong[indexToChange].pitch;
-        let newPitchObj;
-        do {
-            newPitchObj = pitches[Math.floor(Math.random() * pitches.length)];
-        } while (newPitchObj.name === originalPitch);
-        
-        wrong[indexToChange].pitch = newPitchObj.name;
-        wrong[indexToChange].midi = newPitchObj.midi;
-        return wrong;
-    }
-
-    playMelody() {
+    async playMelody() {
         if (this.isPlaying) return;
         this.isPlaying = true;
         this.dom.btnPlayMelody.disabled = true;
+
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
+        }
+        const currentAbortController = new AbortController();
+        this.#playAbortController = currentAbortController;
+        const signal = currentAbortController.signal;
 
         this.playCount++;
         console.log(`Playing melody. Count: ${this.playCount}`);
         
         this.piano.stopAll();
         const beatDuration = 0.5; // 120 BPM
-        let maxTimeMs = 0;
 
-        this.currentMelody.forEach(note => {
-            const startTimeMs = note.time * beatDuration * 1000;
-            const durationMs = note.duration * beatDuration * 1000;
-            maxTimeMs = Math.max(maxTimeMs, startTimeMs + durationMs);
+        try {
+            // Sort notes by time just in case
+            const sortedNotes = [...this.currentMelody].sort((a, b) => a.time - b.time);
             
-            // Visual feedback on piano
-            setTimeout(() => {
+            let currentTime = 0;
+            for (const note of sortedNotes) {
+                const waitTime = (note.time - currentTime) * beatDuration * 1000;
+                if (waitTime > 0) {
+                    await this.#delay(waitTime, signal);
+                }
+                currentTime = note.time;
+
+                if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
+
+                // Sound and Visual
+                const duration = note.duration * beatDuration;
+                this.piano.playNote(note.pitch, duration, false); 
+
                 const keyEl = this.dom.pianoContainer.querySelector(`[data-note="${note.pitch}"]`);
                 if (keyEl) {
                     keyEl.classList.add('playing');
-                    setTimeout(() => keyEl.classList.remove('playing'), durationMs * 0.8);
+                    setTimeout(() => keyEl.classList.remove('playing'), duration * 800);
                 }
-            }, startTimeMs);
+            }
 
-            // Sound
-            setTimeout(() => {
-                this.piano.playNote(note.pitch, note.duration * beatDuration, false); 
-            }, startTimeMs);
-        });
-
-        setTimeout(() => {
-            this.isPlaying = false;
-            this.dom.btnPlayMelody.disabled = false;
-        }, maxTimeMs + 100);
+            // Final wait for last note
+            const lastNote = sortedNotes[sortedNotes.length - 1];
+            if (lastNote) {
+                await this.#delay(lastNote.duration * beatDuration * 1000 + 100, signal);
+            }
+        } catch (e) {
+            if (e.name === 'AbortError') {
+                return;
+            }
+            throw e;
+        } finally {
+            if (this.#playAbortController === currentAbortController) {
+                this.isPlaying = false;
+                this.dom.btnPlayMelody.disabled = false;
+            }
+        }
     }
 
     playStandardPitch() {

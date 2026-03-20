@@ -55,6 +55,9 @@ class IntervalTraining {
 
     #delay(ms, signal) {
         return new Promise((resolve, reject) => {
+            if (signal?.aborted) {
+                return reject(new DOMException('Aborted', 'AbortError'));
+            }
             const timer = setTimeout(resolve, ms);
             if (signal) {
                 signal.addEventListener('abort', () => {
@@ -63,6 +66,28 @@ class IntervalTraining {
                 }, { once: true });
             }
         });
+    }
+
+    #setPlayButtonLoading(isLoading) {
+        const playButton = document.getElementById('play-button');
+        const playButtonIcon = playButton?.querySelector('i');
+        const playIconClass = 'bi bi-play-fill fs-3';
+        const spinnerClass = 'spinner-border spinner-border-sm';
+
+        if (playButton) {
+            playButton.disabled = isLoading;
+            if (isLoading) {
+                playButton.classList.add('opacity-50');
+                if (playButtonIcon) {
+                    playButtonIcon.className = spinnerClass;
+                }
+            } else {
+                playButton.classList.remove('opacity-50');
+                if (playButtonIcon) {
+                    playButtonIcon.className = playIconClass;
+                }
+            }
+        }
     }
 
     async playInterval() {
@@ -76,17 +101,7 @@ class IntervalTraining {
         this.#playAbortController = currentAbortController;
         const signal = currentAbortController.signal;
 
-        const playButton = document.getElementById('play-button');
-        const playButtonIcon = playButton?.querySelector('i');
-        const originalIconClass = playButtonIcon?.className;
-
-        if (playButton) {
-            playButton.disabled = true;
-            playButton.classList.add('opacity-50');
-            if (playButtonIcon) {
-                playButtonIcon.className = 'spinner-border spinner-border-sm';
-            }
-        }
+        this.#setPlayButtonLoading(true);
 
         const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
@@ -95,6 +110,7 @@ class IntervalTraining {
         this.#piano.stopAll();
 
         try {
+            if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
             if (selectedMode === 'harmonic') {
                 this.#piano.playNote(baseNote, 1.0);
                 this.#piano.playNote(targetNote, 1.0);
@@ -102,10 +118,12 @@ class IntervalTraining {
             } else {
                 this.#piano.playNote(baseNote, 0.5);
                 await this.#delay(600, signal);
+                if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
                 this.#piano.playNote(targetNote, 0.5);
                 await this.#delay(600, signal);
             }
 
+            if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
             // Hard cooldown 1.5s
             await this.#delay(1500, signal);
         } catch (e) {
@@ -116,13 +134,7 @@ class IntervalTraining {
         } finally {
             if (this.#playAbortController === currentAbortController) {
                 this.#isPlaying = false;
-                if (playButton) {
-                    playButton.disabled = false;
-                    playButton.classList.remove('opacity-50');
-                    if (playButtonIcon && originalIconClass) {
-                        playButtonIcon.className = originalIconClass;
-                    }
-                }
+                this.#setPlayButtonLoading(false);
 
                 // Show options after the first playback
                 const optionsContainer = document.getElementById('interval-options-row');
@@ -139,6 +151,7 @@ class IntervalTraining {
         }
         this.#piano.stopAll();
         this.#isPlaying = false;
+        this.#setPlayButtonLoading(false);
 
         this.#isShowingResult = false;
         const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
