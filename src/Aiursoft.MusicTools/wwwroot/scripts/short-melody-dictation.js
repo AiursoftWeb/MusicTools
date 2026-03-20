@@ -217,7 +217,7 @@ class ShortMelodyDictation {
     }
 
     playStandardPitch() {
-        this.piano.playNote("C4", 1.0, true);
+        this.piano.playNote("A4", 1.0, true);
     }
 
     _handlePianoClick(note) {

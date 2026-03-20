@@ -50,4 +50,12 @@ public class DashboardControllerTests : TestBase
         var response = await Http.GetAsync(url);
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
+
+    [TestMethod]
+    public async Task GetShortMelodyDictation()
+    {
+        var url = "/Dashboard/ShortMelodyDictation";
+        var response = await Http.GetAsync(url);
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
 }

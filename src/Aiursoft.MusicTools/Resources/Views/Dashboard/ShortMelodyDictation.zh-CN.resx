@@ -42,8 +42,8 @@
   <data name="Staff Fragments" xml:space="preserve">
     <value>五线谱片段</value>
   </data>
-  <data name="Standard C4" xml:space="preserve">
-    <value>标准音 C4</value>
+  <data name="Standard A4" xml:space="preserve">
+    <value>标准音 A4</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>开始训练</value>
