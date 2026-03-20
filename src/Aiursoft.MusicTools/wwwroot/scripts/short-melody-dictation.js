@@ -86,10 +86,17 @@ class ShortMelodyDictation {
     }
 
     _setupStaffChoices() {
-        this.wrongMelodies = [
-            this._generateWrongMelody(this.currentMelody),
-            this._generateWrongMelody(this.currentMelody)
-        ];
+        const wrong1 = this._generateWrongMelody(this.currentMelody);
+        let wrong2 = this._generateWrongMelody(this.currentMelody);
+        
+        // Try to make them different
+        let attempts = 0;
+        while (JSON.stringify(wrong1) === JSON.stringify(wrong2) && attempts < 10) {
+            wrong2 = this._generateWrongMelody(this.currentMelody);
+            attempts++;
+        }
+
+        this.wrongMelodies = [wrong1, wrong2];
 
         this.allChoices = [
             { melody: this.currentMelody, correct: true },
@@ -105,19 +112,69 @@ class ShortMelodyDictation {
     }
 
     _generateWrongMelody(original) {
-        const wrong = JSON.parse(JSON.stringify(original));
-        const numChanges = Math.floor(Math.random() * 2) + 1; // 1 or 2
-        for (let i = 0; i < numChanges; i++) {
-            const indexToChange = Math.floor(Math.random() * wrong.length);
-            const originalPitch = wrong[indexToChange].pitch;
-            let newPitchObj;
-            do {
-                newPitchObj = this.generator.pitches[Math.floor(Math.random() * this.generator.pitches.length)];
-            } while (newPitchObj.name === originalPitch);
-            
-            wrong[indexToChange].pitch = newPitchObj.name;
-            wrong[indexToChange].midi = newPitchObj.midi;
+        const pitches = this.generator.pitches;
+        const originalIndices = original.map(n => pitches.findIndex(p => p.midi === n.midi));
+        const len = original.length;
+        const monotonicity = [];
+        for (let i = 0; i < len - 1; i++) {
+            monotonicity.push(Math.sign(originalIndices[i+1] - originalIndices[i]));
         }
+
+        const possibleWrongMelodies = [];
+
+        // Strategy 1: Global shifts
+        for (let shift = -3; shift <= 3; shift++) {
+            if (shift === 0) continue;
+            const candidate = originalIndices.map(idx => idx + shift);
+            if (candidate.every(idx => idx >= 0 && idx < pitches.length)) {
+                possibleWrongMelodies.push(candidate);
+            }
+        }
+
+        // Strategy 2: Change 1 or 2 notes
+        for (let attempt = 0; attempt < 100; attempt++) {
+            const candidate = [...originalIndices];
+            const numChanges = Math.floor(Math.random() * 2) + 1;
+            for (let c = 0; c < numChanges; c++) {
+                const changeIdx = Math.floor(Math.random() * len);
+                candidate[changeIdx] = Math.floor(Math.random() * pitches.length);
+            }
+
+            // Check monotonicity
+            let match = true;
+            for (let i = 0; i < len - 1; i++) {
+                if (Math.sign(candidate[i+1] - candidate[i]) !== monotonicity[i]) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match && JSON.stringify(candidate) !== JSON.stringify(originalIndices)) {
+                possibleWrongMelodies.push(candidate);
+                if (possibleWrongMelodies.length > 30) break;
+            }
+        }
+
+        if (possibleWrongMelodies.length > 0) {
+            const selectedIndices = possibleWrongMelodies[Math.floor(Math.random() * possibleWrongMelodies.length)];
+            const wrong = JSON.parse(JSON.stringify(original));
+            for (let i = 0; i < len; i++) {
+                wrong[i].pitch = pitches[selectedIndices[i]].name;
+                wrong[i].midi = pitches[selectedIndices[i]].midi;
+            }
+            return wrong;
+        }
+
+        // Fallback (should be extremely rare given the above strategies)
+        const wrong = JSON.parse(JSON.stringify(original));
+        const indexToChange = Math.floor(Math.random() * wrong.length);
+        const originalPitch = wrong[indexToChange].pitch;
+        let newPitchObj;
+        do {
+            newPitchObj = pitches[Math.floor(Math.random() * pitches.length)];
+        } while (newPitchObj.name === originalPitch);
+        
+        wrong[indexToChange].pitch = newPitchObj.name;
+        wrong[indexToChange].midi = newPitchObj.midi;
         return wrong;
     }
 
