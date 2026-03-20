@@ -54,6 +54,9 @@
   <data name="Virtual Piano" xml:space="preserve">
     <value>虚拟钢琴</value>
   </data>
+  <data name="Virtual Piano (Visualized)" xml:space="preserve">
+    <value>虚拟钢琴（可视化）</value>
+  </data>
   <data name="Wrong. Try again!" xml:space="preserve">
     <value>错误。再试一次！</value>
   </data>

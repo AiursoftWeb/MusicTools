@@ -34,6 +34,9 @@
   <data name="Virtual Piano" xml:space="preserve">
     <value>Virtual Piano</value>
   </data>
+  <data name="Virtual Piano (Visualized)" xml:space="preserve">
+    <value>Virtual Piano (Visualized)</value>
+  </data>
   <data name="Staff Fragments" xml:space="preserve">
     <value>Staff Fragments</value>
   </data>
