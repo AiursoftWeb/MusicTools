@@ -7,6 +7,7 @@ class ChordTraining {
     #chordKeys;
     #isPlaying = false;
     #isShowingResult = false;
+    #playAbortController = null;
     #correctCount = 0;
     #wrongCount = 0;
     
@@ -58,47 +59,107 @@ class ChordTraining {
         return `${noteName}${octave}`;
     }
 
+    #delay(ms, signal) {
+        return new Promise((resolve, reject) => {
+            if (signal?.aborted) {
+                return reject(new DOMException('Aborted', 'AbortError'));
+            }
+            const timer = setTimeout(resolve, ms);
+            if (signal) {
+                signal.addEventListener('abort', () => {
+                    clearTimeout(timer);
+                    reject(new DOMException('Aborted', 'AbortError'));
+                }, { once: true });
+            }
+        });
+    }
+
+    #setPlayButtonLoading(isLoading) {
+        const playButton = document.getElementById('play-button');
+        const playButtonIcon = playButton?.querySelector('i');
+        const playIconClass = 'bi bi-play-fill fs-3';
+        const spinnerClass = 'spinner-border spinner-border-sm';
+
+        if (playButton) {
+            playButton.disabled = isLoading;
+            if (isLoading) {
+                playButton.classList.add('opacity-50');
+                if (playButtonIcon) {
+                    playButtonIcon.className = spinnerClass;
+                }
+            } else {
+                playButton.classList.remove('opacity-50');
+                if (playButtonIcon) {
+                    playButtonIcon.className = playIconClass;
+                }
+            }
+        }
+    }
+
     async playChord() {
         if (this.#isPlaying) return;
         this.#isPlaying = true;
 
-        const playButton = document.getElementById('play-button');
-        if (playButton) {
-            playButton.disabled = true;
-            playButton.classList.add('opacity-50');
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
         }
+        const currentAbortController = new AbortController();
+        this.#playAbortController = currentAbortController;
+        const signal = currentAbortController.signal;
+
+        this.#setPlayButtonLoading(true);
 
         const playMode = document.querySelector('input[name="play-mode"]:checked')?.value || 'block';
-        
         const notesToPlay = this.#currentNotesMidi.map(midi => this.#midiToNoteName(midi));
 
-        if (playMode === 'block') {
-            notesToPlay.forEach(note => {
-                this.#piano.playNote(note, 1.0);
-            });
-            await new Promise(r => setTimeout(r, 1200));
-        } else if (playMode === 'arpeggio') {
-            for (const note of notesToPlay) {
-                this.#piano.playNote(note, 0.7);
-                await new Promise(r => setTimeout(r, 400));
+        this.#piano.stopAll();
+
+        try {
+            if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
+            if (playMode === 'block') {
+                notesToPlay.forEach(note => {
+                    this.#piano.playNote(note, 1.0);
+                });
+                await this.#delay(1200, signal);
+            } else if (playMode === 'arpeggio') {
+                for (const note of notesToPlay) {
+                    if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
+                    this.#piano.playNote(note, 0.7);
+                    await this.#delay(400, signal);
+                }
+                await this.#delay(600, signal); // Pause after arpeggio
             }
-            await new Promise(r => setTimeout(r, 600)); // Pause after arpeggio
-        }
+            
+            if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
+            // Hard cooldown
+            await this.#delay(1000, signal);
+        } catch (e) {
+            if (e.name === 'AbortError') {
+                return;
+            }
+            throw e;
+        } finally {
+            if (this.#playAbortController === currentAbortController) {
+                this.#isPlaying = false;
+                this.#setPlayButtonLoading(false);
 
-        this.#isPlaying = false;
-        if (playButton) {
-            playButton.disabled = false;
-            playButton.classList.remove('opacity-50');
-        }
-
-        // Show options after the first playback
-        const optionsContainer = document.getElementById('chord-options-row');
-        if (optionsContainer && !this.#isShowingResult) {
-            optionsContainer.classList.remove('d-none');
+                // Show options after the first playback
+                const optionsContainer = document.getElementById('chord-options-row');
+                if (optionsContainer && !this.#isShowingResult) {
+                    optionsContainer.classList.remove('d-none');
+                }
+            }
         }
     }
 
     nextQuestion() {
+        if (this.#playAbortController) {
+            this.#playAbortController.abort();
+        }
+        this.#piano.stopAll();
+        this.#isPlaying = false;
+        this.#setPlayButtonLoading(false);
+
         this.#isShowingResult = false;
         const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
         
