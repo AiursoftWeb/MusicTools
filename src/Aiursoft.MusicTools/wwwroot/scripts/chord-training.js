@@ -44,7 +44,7 @@ class ChordTraining {
             }
         });
 
-        const modeRadios = document.querySelectorAll('input[name="start-mode"]');
+        const modeRadios = document.querySelectorAll('input[name="start-mode"], input[name="scale-mode"], input[name="voicing-mode"]');
         modeRadios.forEach(radio => {
             radio.addEventListener('change', () => {
                 this.nextQuestion();
@@ -101,21 +101,45 @@ class ChordTraining {
     nextQuestion() {
         this.#isShowingResult = false;
         const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
+        const scaleMode = document.querySelector('input[name="scale-mode"]:checked')?.value || 'c-major';
+        const voicingMode = document.querySelector('input[name="voicing-mode"]:checked')?.value || 'root';
         
         let isValid = false;
         let notesMidi;
         
         while (!isValid) {
-            if (startMode === 'fixed-c') {
-                // In MIDI standard, Middle C (C4) is 60.
-                this.#currentBaseMidi = 60; 
+            if (scaleMode === 'c-major') {
+                const whiteKeys = [48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71];
+                const whiteKeyToType = {
+                    0: 'major', // C
+                    2: 'minor', // D
+                    4: 'minor', // E
+                    5: 'major', // F
+                    7: 'major', // G
+                    9: 'minor', // A
+                    11: 'diminished' // B
+                };
+                
+                if (startMode === 'fixed-c') {
+                    this.#currentBaseMidi = 60;
+                } else {
+                    this.#currentBaseMidi = whiteKeys[Math.floor(Math.random() * whiteKeys.length)];
+                }
+                this.#currentChordKey = whiteKeyToType[this.#currentBaseMidi % 12];
             } else {
-                // Base note from C3 (48) to B3 (59)
-                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+                if (startMode === 'fixed-c') {
+                    this.#currentBaseMidi = 60; 
+                } else {
+                    this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+                }
+                this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
             }
-            
-            this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
-            this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
+
+            if (voicingMode === 'root') {
+                this.#currentInversion = 0;
+            } else {
+                this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
+            }
             
             // Calculate notes based on chord type and inversion
             const intervals = this.#chordTypes[this.#currentChordKey];
