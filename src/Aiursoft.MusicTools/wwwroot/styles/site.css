@@ -247,6 +247,7 @@
     bottom: 8px;
     /* 调整位置 */
     width: 100%;
+    left: 0;
     text-align: center;
     color: #a0a0a0;
     pointer-events: none;
@@ -263,6 +264,7 @@
     position: absolute;
     top: 65%;
     width: 100%;
+    left: 0;
     text-align: center;
     font-weight: bold;
     color: #2c3e50;
