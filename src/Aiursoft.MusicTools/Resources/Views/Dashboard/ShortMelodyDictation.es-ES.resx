@@ -42,8 +42,8 @@
   <data name="Staff Fragments" xml:space="preserve">
     <value>Fragmentos de pentagrama</value>
   </data>
-  <data name="Standard C4" xml:space="preserve">
-    <value>Do C4 estándar</value>
+  <data name="Standard A4" xml:space="preserve">
+    <value>La A4 estándar</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>Iniciar entrenamiento</value>

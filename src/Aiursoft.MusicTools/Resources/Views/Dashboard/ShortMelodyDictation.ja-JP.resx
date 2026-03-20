@@ -42,8 +42,8 @@
   <data name="Staff Fragments" xml:space="preserve">
     <value>楽譜の断片</value>
   </data>
-  <data name="Standard C4" xml:space="preserve">
-    <value>標準C4</value>
+  <data name="Standard A4" xml:space="preserve">
+    <value>標準A4</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>トレーニングを開始</value>

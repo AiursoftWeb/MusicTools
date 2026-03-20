@@ -42,8 +42,8 @@
   <data name="Staff Fragments" xml:space="preserve">
     <value>악보 조각</value>
   </data>
-  <data name="Standard C4" xml:space="preserve">
-    <value>표준 C4</value>
+  <data name="Standard A4" xml:space="preserve">
+    <value>표준 A4</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>훈련 시작</value>
