@@ -83,22 +83,13 @@ class IntervalTraining {
 
     #setPlayButtonLoading(isLoading) {
         const playButton = document.getElementById('play-button');
-        const playButtonIcon = playButton?.querySelector('i');
-        const playIconClass = 'bi bi-play-fill fs-3';
-        const spinnerClass = 'spinner-border spinner-border-sm';
 
         if (playButton) {
             playButton.disabled = isLoading;
             if (isLoading) {
                 playButton.classList.add('opacity-50');
-                if (playButtonIcon) {
-                    playButtonIcon.className = spinnerClass;
-                }
             } else {
                 playButton.classList.remove('opacity-50');
-                if (playButtonIcon) {
-                    playButtonIcon.className = playIconClass;
-                }
             }
         }
     }
