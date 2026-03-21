@@ -18,6 +18,7 @@ class IntervalTraining {
     #currentBaseMidi;
     #currentIntervalKey;
     #currentTargetMidi;
+    #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
     constructor(piano, localizedStrings) {
@@ -31,6 +32,10 @@ class IntervalTraining {
     #setupEventListeners() {
         const playButton = document.getElementById('play-button');
         playButton.addEventListener('click', () => {
+            if (this.#autoNextTimeout) {
+                clearTimeout(this.#autoNextTimeout);
+                this.#autoNextTimeout = null;
+            }
             if (this.#isShowingResult) {
                 this.nextQuestion();
                 this.playInterval();
@@ -42,6 +47,10 @@ class IntervalTraining {
         const modeRadios = document.querySelectorAll('input[name="start-mode"]');
         modeRadios.forEach(radio => {
             radio.addEventListener('change', () => {
+                if (this.#autoNextTimeout) {
+                    clearTimeout(this.#autoNextTimeout);
+                    this.#autoNextTimeout = null;
+                }
                 this.nextQuestion();
             });
         });
@@ -55,10 +64,14 @@ class IntervalTraining {
 
     #delay(ms, signal) {
         return new Promise((resolve, reject) => {
-            if (signal?.aborted) {
-                return reject(new DOMException('Aborted', 'AbortError'));
-            }
-            const timer = setTimeout(resolve, ms);
+            const timer = setTimeout(() => {
+                if (signal?.aborted) {
+                    reject(new DOMException('Aborted', 'AbortError'));
+                } else {
+                    resolve();
+                }
+            }, ms);
+            
             if (signal) {
                 signal.addEventListener('abort', () => {
                     clearTimeout(timer);
@@ -135,6 +148,7 @@ class IntervalTraining {
             if (this.#playAbortController === currentAbortController) {
                 this.#isPlaying = false;
                 this.#setPlayButtonLoading(false);
+                this.#playAbortController = null;
 
                 // Show options after the first playback
                 const optionsContainer = document.getElementById('interval-options-row');
@@ -148,6 +162,11 @@ class IntervalTraining {
     nextQuestion() {
         if (this.#playAbortController) {
             this.#playAbortController.abort();
+            this.#playAbortController = null;
+        }
+        if (this.#autoNextTimeout) {
+            clearTimeout(this.#autoNextTimeout);
+            this.#autoNextTimeout = null;
         }
         this.#piano.stopAll();
         this.#isPlaying = false;
@@ -226,11 +245,14 @@ class IntervalTraining {
             
             // Disable all buttons to prevent multiple clicks
             document.querySelectorAll('.interval-btn').forEach(btn => btn.disabled = true);
+            this.#setPlayButtonLoading(true);
 
             // Wait a bit and next question
-            setTimeout(() => {
+            if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
+            this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
                 this.playInterval();
+                this.#autoNextTimeout = null;
             }, 1000);
         } else {
             this.#wrongCount++;

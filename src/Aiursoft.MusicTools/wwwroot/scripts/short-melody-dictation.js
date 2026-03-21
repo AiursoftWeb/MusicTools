@@ -20,6 +20,7 @@ class ShortMelodyDictation {
         this.playCount = 0;
         this.isPlaying = false;
         this.#playAbortController = null;
+        this.#playingTimeouts = [];
         
         this.wrongMelodies = [];
         this.allChoices = [];
@@ -27,14 +28,17 @@ class ShortMelodyDictation {
         this._init();
     }
 
-    #playAbortController;
+    #playingTimeouts;
 
     #delay(ms, signal) {
         return new Promise((resolve, reject) => {
-            if (signal?.aborted) {
-                return reject(new DOMException('Aborted', 'AbortError'));
-            }
-            const timer = setTimeout(resolve, ms);
+            const timer = setTimeout(() => {
+                if (signal?.aborted) {
+                    reject(new DOMException('Aborted', 'AbortError'));
+                } else {
+                    resolve();
+                }
+            }, ms);
             if (signal) {
                 signal.addEventListener('abort', () => {
                     clearTimeout(timer);
@@ -85,7 +89,10 @@ class ShortMelodyDictation {
     nextQuestion() {
         if (this.#playAbortController) {
             this.#playAbortController.abort();
+            this.#playAbortController = null;
         }
+        this.#playingTimeouts.forEach(t => clearTimeout(t));
+        this.#playingTimeouts = [];
         this.piano.stopAll();
         this.isPlaying = false;
         this.dom.btnPlayMelody.disabled = false;
@@ -169,7 +176,11 @@ class ShortMelodyDictation {
                     const keyEl = this.dom.pianoContainer.querySelector(`[data-note="${note.pitch}"]`);
                     if (keyEl) {
                         keyEl.classList.add('playing');
-                        setTimeout(() => keyEl.classList.remove('playing'), duration * 800);
+                        const pTimeout = setTimeout(() => {
+                            keyEl.classList.remove('playing');
+                            this.#playingTimeouts = this.#playingTimeouts.filter(t => t !== pTimeout);
+                        }, duration * 800);
+                        this.#playingTimeouts.push(pTimeout);
                     }
                 }
             }
@@ -188,6 +199,7 @@ class ShortMelodyDictation {
             if (this.#playAbortController === currentAbortController) {
                 this.isPlaying = false;
                 this.dom.btnPlayMelody.disabled = false;
+                this.#playAbortController = null;
             }
         }
     }

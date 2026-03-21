@@ -43,6 +43,7 @@ let isCurrentLevelPerfect = true;
 
 let timerId = null;
 let gameDifficulty = "music";
+let playbackAbortController = null;
 
 const OCTAVE_START = 3;
 const OCTAVE_COUNT = 2; // 2 Octaves requested (Expanded Keyboard, C3 to C5)
@@ -169,6 +170,28 @@ function updateCurrentDifficultyDisplay() {
     }
 }
 
+function delay(ms, signal) {
+    return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => {
+            if (signal?.aborted) {
+                reject(new DOMException("Aborted", "AbortError"));
+            } else {
+                resolve();
+            }
+        }, ms);
+        if (signal) {
+            signal.addEventListener(
+                "abort",
+                () => {
+                    clearTimeout(timer);
+                    reject(new DOMException("Aborted", "AbortError"));
+                },
+                { once: true }
+            );
+        }
+    });
+}
+
 // --- Public Control Functions (attached to window for buttons) ---
 window.startMelodyGame = function () {
     startGame();
@@ -226,7 +249,7 @@ window.playDebugMelody = async function () {
 
         // Wait for rhythm
         // Base Beat 500ms = 120 BPM
-        await new Promise((r) => setTimeout(r, 500 * item.duration));
+        await delay(500 * item.duration);
     }
 
     console.log(
@@ -238,6 +261,12 @@ window.playDebugMelody = async function () {
 // --- Game Logic ---
 
 async function startGame() {
+    if (playbackAbortController) {
+        playbackAbortController.abort();
+    }
+    playbackAbortController = new AbortController();
+    const signal = playbackAbortController.signal;
+
     // Read Options
     const styleRad = document.querySelector('input[name="musicStyle"]:checked');
     const previewRad = document.querySelector(
@@ -357,13 +386,20 @@ async function startGame() {
     }
 
     // PLAY PREVIEW
-    await playPreview(preview, validNotesForLevel);
+    try {
+        await playPreview(preview, validNotesForLevel, signal);
 
-    // Small delay before starting
-    setTimeout(nextLevel, 500);
+        // Small delay before starting
+        await delay(500, signal);
+        if (signal.aborted) return;
+        nextLevel(signal);
+    } catch (e) {
+        if (e.name === "AbortError") return;
+        throw e;
+    }
 }
 
-async function playPreview(type, notesToPlay) {
+async function playPreview(type, notesToPlay, signal) {
     if (type === "skip") return;
 
     piContainerClickable(false);
@@ -383,12 +419,21 @@ async function playPreview(type, notesToPlay) {
 
     // Play them
     for (let note of previewSequence) {
+        if (signal?.aborted) throw new DOMException("Aborted", "AbortError");
         if (piano) piano.playNote(note, 0.4, true); // Visual Always On for Preview
-        await new Promise((r) => setTimeout(r, 500));
+        await delay(500, signal);
     }
 }
 
-async function nextLevel() {
+async function nextLevel(signal) {
+    if (!signal) {
+        if (playbackAbortController) {
+            playbackAbortController.abort();
+        }
+        playbackAbortController = new AbortController();
+        signal = playbackAbortController.signal;
+    }
+
     isPlayerTurn = false;
     playerStep = 0;
     isCurrentLevelPerfect = true;
@@ -431,32 +476,39 @@ async function nextLevel() {
     // This is important for bar/double-bar modes where multiple notes are added per level
     renderProgressDots(sequence.length);
 
-    await new Promise((r) => setTimeout(r, 600));
+    try {
+        await delay(600, signal);
 
-    // Playback sequence
-    for (let i = 0; i < sequence.length; i++) {
-        updateDot(i, "active");
+        // Playback sequence
+        for (let i = 0; i < sequence.length; i++) {
+            if (signal.aborted) throw new DOMException("Aborted", "AbortError");
+            updateDot(i, "active");
 
-        const item = sequence[i];
-        const note = item.note;
-        const duration = item.duration || 1.0;
+            const item = sequence[i];
+            const note = item.note;
+            const duration = item.duration || 1.0;
 
-        // In practice mode, show visual hints during exam playback
-        // In all other modes, no visual hints during exam
-        const useVisual = gameDifficulty === "practice";
+            // In practice mode, show visual hints during exam playback
+            // In all other modes, no visual hints during exam
+            const useVisual = gameDifficulty === "practice";
 
-        if (piano) piano.playNote(note, 0.4, useVisual);
+            if (piano) piano.playNote(note, 0.4, useVisual);
 
-        // Base Beat for 120 BPM = 500ms
-        const baseBeat = 500;
-        await new Promise((r) => setTimeout(r, baseBeat * duration));
+            // Base Beat for 120 BPM = 500ms
+            const baseBeat = 500;
+            await delay(baseBeat * duration, signal);
 
-        updateDot(i, "inactive");
+            updateDot(i, "inactive");
+        }
+
+        if (signal.aborted) throw new DOMException("Aborted", "AbortError");
+        isPlayerTurn = true;
+        piContainerClickable(true);
+        startTurnTimer();
+    } catch (e) {
+        if (e.name === "AbortError") return;
+        throw e;
     }
-
-    isPlayerTurn = true;
-    piContainerClickable(true);
-    startTurnTimer();
 }
 
 function piContainerClickable(clickable) {
@@ -491,6 +543,9 @@ function handleInput(noteName) {
 }
 
 function handleMistake(wrongNote) {
+    if (playbackAbortController) {
+        playbackAbortController.abort();
+    }
     lives--;
     isCurrentLevelPerfect = false;
     perfectStreak = 0;
@@ -840,6 +895,9 @@ function updateInGameRank() {
 }
 
 function gameOver() {
+    if (playbackAbortController) {
+        playbackAbortController.abort();
+    }
     hideTimer();
     if (gameContainer) gameContainer.classList.remove("critical");
 

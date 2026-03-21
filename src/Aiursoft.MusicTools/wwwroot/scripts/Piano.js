@@ -11,6 +11,7 @@ class Piano {
     #activeKeys;
     #tonePianoInstance; // Instance of @tonejs/piano
     #activeOscillators = new Set();
+    #visualTimeouts = new Map(); // noteName -> timeoutId
 
     // --- 2. 静态数据 ---
     static NOTE_NAMES = [
@@ -380,6 +381,15 @@ class Piano {
             });
             this.#activeOscillators.clear();
         }
+
+        // Clear all visual active states and timeouts
+        this.#keyMap.forEach((keyEl, noteName) => {
+            keyEl.classList.remove("active");
+            if (this.#visualTimeouts.has(noteName)) {
+                clearTimeout(this.#visualTimeouts.get(noteName));
+                this.#visualTimeouts.delete(noteName);
+            }
+        });
     }
 
     // ... (bindToComputerKeyboard 100% 不变) ...
@@ -411,10 +421,15 @@ class Piano {
 
         // Visualize
         if (visual) {
+            if (this.#visualTimeouts.has(noteName)) {
+                clearTimeout(this.#visualTimeouts.get(noteName));
+            }
             keyEl.classList.add("active");
-            setTimeout(() => {
+            const timeoutId = setTimeout(() => {
                 keyEl.classList.remove("active");
+                this.#visualTimeouts.delete(noteName);
             }, duration * 1000);
+            this.#visualTimeouts.set(noteName, timeoutId);
         }
     }
 

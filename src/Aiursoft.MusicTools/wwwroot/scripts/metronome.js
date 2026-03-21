@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentBeat = 0;
     let currentSubBeat = 0;
     let timerID = null;
+    let visualTimeouts = [];
     
     // Configuration
     let bpm = 90;
@@ -198,9 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Visual scheduling
         const drawTime = (time - audioContext.currentTime) * 1000;
-        setTimeout(() => {
+        const vTimeout = setTimeout(() => {
             drawBeat(beatNumber, subBeatNumber);
+            visualTimeouts = visualTimeouts.filter(t => t !== vTimeout);
         }, Math.max(0, drawTime));
+        visualTimeouts.push(vTimeout);
     }
     
     function drawBeat(beat, subBeat) {
@@ -232,6 +235,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isPlaying) {
             isPlaying = false;
             window.clearTimeout(timerID);
+            visualTimeouts.forEach(t => clearTimeout(t));
+            visualTimeouts = [];
             
             // Use localized text
             btnText.textContent = getLocalizedText('start', 'Start');

@@ -348,8 +348,26 @@ class AudioPlayer {
         });
         this.activeOscillators.clear();
 
+        // 2. 停止 TonePiano
+        if (this.tonePianoInstance && this.tonePianoInstance.loaded) {
+            // Tone.js context time
+            const toneNow = Tone.now();
+            // We can't easily stop all scheduled notes in Tone.Piano without knowing which ones are playing
+            // but we can at least call keyUp for a wide range or handle it via Transport if we used it.
+            // Since we don't have a list of active notes here, we'll just hope keyUp for all notes works
+            // or better yet, if we had a way to cancel scheduled events.
+            // Actually, for simple usage, stopping the context or using a separate GainNode is better.
+            // But here we can just call keyUp for all MIDI notes 0-127 if we really want to be sure.
+            for (let i = 0; i < 127; i++) {
+                try {
+                    const noteName = Tone.Frequency(i, "midi").toNote();
+                    this.tonePianoInstance.keyUp({ note: noteName, time: toneNow });
+                } catch(e) {}
+            }
+        }
+
         // ===================【!! 关键修复 !!】===================
-        // 2. 停止所有已预定的 "幽灵" 标记 (循环和结束标记)
+        // 3. 停止所有已预定的 "幽灵" 标记 (循环和结束标记)
         this.activeMarkers.forEach(marker => {
             marker.onended = null; // 必须清除回调，防止 stop() 触发 onended
             marker.stop(now);
