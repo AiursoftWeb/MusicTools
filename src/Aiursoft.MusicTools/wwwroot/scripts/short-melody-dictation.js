@@ -28,6 +28,7 @@ class ShortMelodyDictation {
         this._init();
     }
 
+    #playAbortController;
     #playingTimeouts;
 
     #delay(ms, signal) {
@@ -132,7 +133,7 @@ class ShortMelodyDictation {
         this._shuffleArray(this.allChoices);
 
         this.allChoices.forEach((choice, index) => {
-            this.answerStaffs[index].drawMelody(choice.melody);
+            this.answerStaffs[index].showMelody(choice.melody);
         });
     }
 
