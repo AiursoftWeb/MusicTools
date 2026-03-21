@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>ثلاثية مضافة</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>حاسبة الأوتار</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>اختيار الأوتار</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>نوع الوتر</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>دائرة الخامسة</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>محدد الدرجة</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>معلومات التكتيل المكتشفة</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>الأكوراد الدياتونية</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>سابع مضمحل</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>ثلاثي منقوص</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>سابع سائد</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>سابع نصف منقوص</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>البيانو التفاعلي</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>وتر غير صالح</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>مربع كبير 7</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>ثلاثية كبرى</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>مربع صغير 7</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>ثلاثية صغرى</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>محدد النمط</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>إعادة تعيين التحديد</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>تدوير لليسار</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>تدوير لليمين</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>النغمة الأساسية</value>
+  </data>
+
+</root>

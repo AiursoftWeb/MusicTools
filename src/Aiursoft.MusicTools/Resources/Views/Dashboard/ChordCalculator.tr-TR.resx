@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Artişör Üçlü</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Akort Hesaplayıcı</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Akor Seçimi</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Akor Türü</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Beşliler Çemberi</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Derece Seçici</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Algılanan Akort Bilgisi</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Diatonik Akorlar</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Azaltılmış 7&apos;li</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Azaltılmış Üçlü</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Baskın 7&apos;li</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Yarı-azaltılmış 7&apos;li</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Etkileşimli Piyano</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Geçersiz Akor</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Major 7.</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Büyük Akor</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Küçük 7&apos;li</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Küçük Akor</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Mod Seçici</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notlar</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Seçimi Sıfırla</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Sola Döndür</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Sağa Döndür</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonik</value>
+  </data>
+
+</root>

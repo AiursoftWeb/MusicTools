@@ -54,6 +54,9 @@
   <data name="Virtual Piano" xml:space="preserve">
     <value>Virtueel piano</value>
   </data>
+  <data name="Virtual Piano (Visualized)" xml:space="preserve">
+    <value>Virtueel Piano (Gevisualiseerd)</value>
+  </data>
   <data name="Wrong. Try again!" xml:space="preserve">
     <value>Fout. Probeer opnieuw!</value>
   </data>

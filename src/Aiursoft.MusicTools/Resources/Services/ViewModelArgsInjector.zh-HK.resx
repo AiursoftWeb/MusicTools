@@ -51,6 +51,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>更改個人資料</value>
   </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>和弦計算器</value>
+  </data>
   <data name="Chord training" xml:space="preserve">
     <value>和弦訓練</value>
   </data>

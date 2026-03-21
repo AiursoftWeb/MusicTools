@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>Akoordy 7</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>Amploggio</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>Dobrze!</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Czwartka zmniejszona</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>Trójdźwięk zmniejszony</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>Piąta nuta</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Półdiminutowa 7</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>Podaję się</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>Posłuchaj akordu i zidentyfikuj jego rodzaj.</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Sekstakord duży siódmy</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>Trójdźwięk durowy</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7th</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>Trójdźwięk molowy</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>Siódmy dźwięk</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Rozpocznij od C</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>Trzecia inwersja</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>Trzecia nuta</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>Trady</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>Jaki jest rodzaj granego akordu?</value>

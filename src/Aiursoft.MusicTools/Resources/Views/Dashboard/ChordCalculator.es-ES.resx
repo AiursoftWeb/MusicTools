@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Aumentada</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Calculadora de Acordes</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Selección de acordes</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Tipo de acorde</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Círculo de quintas</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Selector de grado</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Información del acorde detectado</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Acordes Diatónicos</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Séptima disminuida</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Acorde disminuido</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Séptima dominante</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Semi-diminuto 7</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Piano Interactivo</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Acordes no válidos</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Séptima Mayor</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Acorde Mayor</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Séptima menor</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Acorde menor</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Selector de modo</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Restaurar selección</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Girar a la izquierda</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Girar a la derecha</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tónica</value>
+  </data>
+
+</root>

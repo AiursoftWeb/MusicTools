@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Acordă augmentată</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Calculator de acorduri</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Selectarea acordurilor</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Tip de acord</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Cercul de cvinte</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Selector de grad</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Informații despre acordul detectat</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Accorduri diatonice</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Acord diminuat de 7</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Tricord diminuat</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Semi-diminuat 7</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Pianou interactiv</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Acord Invalid</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Acord de Major 7</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Acord major</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Acord minor</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Selector de mod</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Resetează selecția</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Rotire stânga</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotează la dreapta</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonica</value>
+  </data>
+
+</root>

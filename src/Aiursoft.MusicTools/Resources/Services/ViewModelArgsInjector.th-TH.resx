@@ -51,6 +51,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>เปลี่ยนโปรไฟล์</value>
   </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณคอร์ด</value>
+  </data>
   <data name="Chord training" xml:space="preserve">
     <value>การฝึกคอร์ด</value>
   </data>

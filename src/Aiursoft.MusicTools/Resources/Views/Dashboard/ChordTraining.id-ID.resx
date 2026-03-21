@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>Kord 7</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>Arpeggio</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>Benar!</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Diminished 7th</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>Triad Berkurang</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>Catatan kelima</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Half-Diminished 7th</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>Saya menyerah</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>Dengarkan akord tersebut dan identifikasi jenisnya.</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Mayor 7</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>Triad Mayor</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7th</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>Triad Minor</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>Catatan ketujuh</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Mulai dari C</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>Inversi Ketiga</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>Catatan ketiga</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>Triad</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>Apa jenis akor yang dimainkan?</value>
