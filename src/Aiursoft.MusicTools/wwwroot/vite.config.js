@@ -72,6 +72,7 @@ export default defineConfig({
                 melodyMemory: resolve(__dirname, "scripts/melody-memory.js"),
                 intervalTraining: resolve(__dirname, "scripts/interval-training.js"),
                 chordTraining: resolve(__dirname, "scripts/chord-training.js"),
+                chordCalculator: resolve(__dirname, "scripts/chord-calculator.js"),
                 intervalExam: resolve(__dirname, "scripts/interval-exam.js"),
                 shortMelodyDictation: resolve(__dirname, "scripts/short-melody-dictation.js"),
                 tuner: resolve(__dirname, "scripts/tuner.js"),

@@ -117,11 +117,24 @@ public class DashboardController : Controller
     [RenderInNavBar(
         NavGroupName = "Tools",
         NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Chord Calculator",
+        LinkOrder = 8)]
+    public IActionResult ChordCalculator()
+    {
+        return this.StackView(new ChordCalculatorViewModel());
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
         CascadedLinksGroupName = "Tests",
         CascadedLinksIcon = "headphones",
         CascadedLinksOrder = 2,
         LinkText = "Melody Memory Test",
-        LinkOrder = 8)]
+        LinkOrder = 9)]
     public IActionResult MelodyMemory()
     {
         return this.StackView(new MelodyMemoryViewModel());
@@ -134,7 +147,7 @@ public class DashboardController : Controller
         CascadedLinksIcon = "headphones",
         CascadedLinksOrder = 2,
         LinkText = "Short Melody Dictation",
-        LinkOrder = 9)]
+        LinkOrder = 10)]
     public IActionResult ShortMelodyDictation()
     {
         return this.StackView(new ShortMelodyDictationViewModel());
@@ -147,7 +160,7 @@ public class DashboardController : Controller
         CascadedLinksIcon = "headphones",
         CascadedLinksOrder = 2,
         LinkText = "Chord training",
-        LinkOrder = 10)]
+        LinkOrder = 11)]
     public IActionResult ChordTraining()
     {
         return this.StackView(new ChordTrainingViewModel());
