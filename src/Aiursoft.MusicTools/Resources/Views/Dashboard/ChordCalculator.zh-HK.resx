@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>所有調均可作為主音</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>增三和弦</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>已偵測的和弦資訊</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>七和弦音階和弦</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>自然音階和弦</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>音階預設</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>正三和弦</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>減七和弦</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>重置選擇</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>根音</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>向左旋轉</value>

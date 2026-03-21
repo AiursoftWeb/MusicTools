@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>すべてのキーがルートになります</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>増三和音</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>検出されたコード情報</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>ダイアトニック7thコード</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>ダイアトニックコード</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>ダイアトニックプリセット</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>ダイアトニック・トライアド</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>diminished 7th</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>選択をリセット</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>ルート音</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>左へ回転</value>

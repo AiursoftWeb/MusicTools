@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>Kaikki sävelet voivat olla perussäveliä</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>Augmentoitu kolmisointu</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>Tunnistettu sointutieto</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>Diatoniset 7. sointukierrokset</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>Diatoniset soinnit</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>Diatoniset sävellykset</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>Diatoniset kolmisoinnut</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>Diminuttyys 7</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>Tyhjennä valinta</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Pohjasäveli</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Käännä vasemmalle</value>

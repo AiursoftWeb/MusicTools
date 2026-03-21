@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>सभी की रूट हो सकती हैं</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>वर्धित त्रिक</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>पता लगाए गए चोर्ड की जानकारी</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>डायटोनिक 7थ अक्षर</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>डायटोनिक चोर्ड</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>स्वरमय पूर्वनिर्धारित</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>डायटोनिक त्रिक</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>घटित 7थ</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>चयन रीसेट करें</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>मूल नोट</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>बाएं घुमाएं</value>

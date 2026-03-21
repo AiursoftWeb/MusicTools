@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>Tutte le tonalità possono essere fondamentali</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>Triade aumentata</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>Informazioni sull&apos;accordo rilevato</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>Accordi diatonici di settima</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>Accordi diatonici</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>Presets diatonici</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>Triadi diatoniche</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>Settima diminuita</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>Reimposta selezione</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Nota fondamentale</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Ruota a sinistra</value>

@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>모든 키를 루트로 사용할 수 있습니다</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>증가 삼화음</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>감지된 코드 정보</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>디아토닉 7 화음</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>디아토닉 화음</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>다성음 사전 설정</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>디아토닉 3 화음</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>감소 7화음</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>선택 초기화</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>루트 음</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>왼쪽으로 회전</value>

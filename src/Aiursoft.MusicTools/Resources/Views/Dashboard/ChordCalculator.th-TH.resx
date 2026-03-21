@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>คีย์ทั้งหมดสามารถเป็นรากฐานได้</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>คอร์ดสามเสียงเพิ่ม</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>ข้อมูลคอร์ดที่ตรวจพบ</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>คอร์ด 7 เสียงไดอะโทนิก</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>คอร์ดไดอาโทนิก</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>ไดอะโทนิกเพรเซต</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>คอร์ดสามเสียงไดอาโทนิก</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>diminished seventh</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>รีเซ็ตการเลือก</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>โน้ตหลัก</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>หมุนซ้าย</value>
