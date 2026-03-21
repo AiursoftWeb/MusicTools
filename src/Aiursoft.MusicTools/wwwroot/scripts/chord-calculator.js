@@ -50,6 +50,7 @@ class ChordCalculator {
         });
 
         this.#piano.onClick((noteName) => {
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('locked'));
             const li = this.#dom.pianoContainer.querySelector(`[data-note="${noteName}"]`);
             const midi = parseInt(li.dataset.midi);
             const index = this.#activeNotes.indexOf(midi);
