@@ -1,41 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:element name="root" msdata:IsDataSet="true">
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
-  <resheader name="version"><value>1.3</value></resheader>
-  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
-  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
-  <data name="Chord Calculator" xml:space="preserve"><value>Chord Calculator</value></data>
-  <data name="Circle of Fifths" xml:space="preserve"><value>Circle of Fifths</value></data>
-  <data name="Rotate Left" xml:space="preserve"><value>Rotate Left</value></data>
-  <data name="Rotate Right" xml:space="preserve"><value>Rotate Right</value></data>
-  <data name="Chord Selection" xml:space="preserve"><value>Chord Selection</value></data>
-  <data name="Lock Selection" xml:space="preserve"><value>Lock Selection</value></data>
-  <data name="Diatonic Presets" xml:space="preserve"><value>Diatonic Presets</value></data>
-  <data name="Mode Selector" xml:space="preserve"><value>Mode Selector</value></data>
-  <data name="Diatonic Chords" xml:space="preserve"><value>Diatonic Chords</value></data>
-  <data name="Diatonic Triads" xml:space="preserve"><value>Diatonic Triads</value></data>
-  <data name="Diatonic 7th Chords" xml:space="preserve"><value>Diatonic 7th Chords</value></data>
-  <data name="Major Triad" xml:space="preserve"><value>Major Triad</value></data>
-  <data name="Minor Triad" xml:space="preserve"><value>Minor Triad</value></data>
-  <data name="Diminished Triad" xml:space="preserve"><value>Diminished Triad</value></data>
-  <data name="Augmented Triad" xml:space="preserve"><value>Augmented Triad</value></data>
-  <data name="Major 7th" xml:space="preserve"><value>Major 7th</value></data>
-  <data name="Dominant 7th" xml:space="preserve"><value>Dominant 7th</value></data>
-  <data name="Minor 7th" xml:space="preserve"><value>Minor 7th</value></data>
-  <data name="Half-Diminished 7th" xml:space="preserve"><value>Half-Diminished 7th</value></data>
-  <data name="Diminished 7th" xml:space="preserve"><value>Diminished 7th</value></data>
-  <data name="Degree Selector" xml:space="preserve"><value>Degree Selector</value></data>
-  <data name="Interactive Piano" xml:space="preserve"><value>Interactive Piano</value></data>
-  <data name="Reset Selection" xml:space="preserve"><value>Reset Selection</value></data>
-  <data name="Detected Chord Info" xml:space="preserve"><value>Detected Chord Info</value></data>
-  <data name="Notes" xml:space="preserve"><value>Notes</value></data>
-  <data name="Chord Type" xml:space="preserve"><value>Chord Type</value></data>
-  <data name="Root Note" xml:space="preserve"><value>Root Note</value></data>
-  <data name="All keys can be root" xml:space="preserve"><value>All keys can be root</value></data>
-  <data name="Tonic" xml:space="preserve"><value>Tonic</value></data>
-  <data name="Invalid Chord" xml:space="preserve"><value>Invalid Chord</value></data>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="All keys can be root" xml:space="preserve">
+    <value>All keys can be root</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
+    <value>Augmented Triad</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Chord Calculator</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Chord Selection</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Chord Type</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Circle of Fifths</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Degree Selector</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Detected Chord Info</value>
+  </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>Diatonic 7th Chords</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Diatonic Chords</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>Diatonic Presets</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>Diatonic Triads</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Diminished 7th</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Diminished Triad</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Half-Diminished 7th</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Interactive Piano</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Invalid Chord</value>
+  </data>
+  <data name="Lock Selection" xml:space="preserve">
+    <value>Lock Selection</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Major 7th</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Major Triad</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7th</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Minor Triad</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Mode Selector</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Reset Selection</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Root Note</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Rotate Left</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Rotate Right</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Tonic</value>
+  </data>
+
 </root>

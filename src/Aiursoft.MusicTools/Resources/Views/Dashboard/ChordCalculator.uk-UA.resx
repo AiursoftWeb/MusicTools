@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>Усі тональності можуть бути основними</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>Удосконалений тріад</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>Інформація про виявленний акорд</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>Діатонічні септакорди</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>Діатонічні акорди</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>Діатонічні пресети</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>Діатонічні тріади</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>Семізменений септакорд</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>Скинути вибір</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Кореневий тон</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Поворот ліворуч</value>

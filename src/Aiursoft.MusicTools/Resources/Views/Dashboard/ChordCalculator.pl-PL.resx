@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Triad" xml:space="preserve">
+      <data name="All keys can be root" xml:space="preserve">
+    <value>Wszystkie klucze mogą być toniką</value>
+  </data>
+  <data name="Augmented Triad" xml:space="preserve">
     <value>Triada zwyżkowana</value>
   </data>
   <data name="Chord Calculator" xml:space="preserve">
@@ -39,8 +42,17 @@
   <data name="Detected Chord Info" xml:space="preserve">
     <value>Informacje o wykrytym akordzie</value>
   </data>
+  <data name="Diatonic 7th Chords" xml:space="preserve">
+    <value>Akordy diatoniczne 7-dźwiękowe</value>
+  </data>
   <data name="Diatonic Chords" xml:space="preserve">
     <value>Akordy diatoniczne</value>
+  </data>
+  <data name="Diatonic Presets" xml:space="preserve">
+    <value>Ustawienia diatoniczne</value>
+  </data>
+  <data name="Diatonic Triads" xml:space="preserve">
+    <value>Trójdźwięki diatoniczne</value>
   </data>
   <data name="Diminished 7th" xml:space="preserve">
     <value>Zmniejszona 7</value>
@@ -80,6 +92,9 @@
   </data>
   <data name="Reset Selection" xml:space="preserve">
     <value>Resetuj wybór</value>
+  </data>
+  <data name="Root Note" xml:space="preserve">
+    <value>Dźwięk podstawowy</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Obróć w lewo</value>
