@@ -1,8 +1,5 @@
-@inject IViewLocalizer Localizer
-@model Aiursoft.MusicTools.Models.DashboardViewModels.ChordCalculatorViewModel
-
 @{
-    ViewData["Title"] = Localizer["Chord Calculator"];
+    ViewData["Title"] = @Localizer["Chord Calculator"];
 }
 
 <div id="loc-data" hidden>
@@ -12,6 +9,11 @@
     <span data-key="minor-triad">@Localizer["Minor Triad"]</span>
     <span data-key="diminished-triad">@Localizer["Diminished Triad"]</span>
     <span data-key="augmented-triad">@Localizer["Augmented Triad"]</span>
+    <span data-key="maj7-chord">@Localizer["Major 7th"]</span>
+    <span data-key="dom7-chord">@Localizer["Dominant 7th"]</span>
+    <span data-key="min7-chord">@Localizer["Minor 7th"]</span>
+    <span data-key="m7b5-chord">@Localizer["Half-Diminished 7th"]</span>
+    <span data-key="dim7-chord">@Localizer["Diminished 7th"]</span>
     <span data-key="invalid-chord">@Localizer["Invalid Chord"]</span>
 </div>
 
@@ -79,6 +81,21 @@
                         </div>
                         <div class="col">
                             <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="augmented">@Localizer["Augmented Triad"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="maj7">@Localizer["Major 7th"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="dom7">@Localizer["Dominant 7th"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="min7">@Localizer["Minor 7th"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="m7b5">@Localizer["Half-Diminished 7th"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="dim7">@Localizer["Diminished 7th"]</button>
                         </div>
                     </div>
 

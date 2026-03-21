@@ -14,14 +14,20 @@ class ChordCalculator {
     #notesSharp = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
     #notesFlat = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
     
-    // Major scale intervals for inner degree visualization
     #majorScaleIntervals = [0, 2, 4, 5, 7, 9, 11];
     
-    #triadTypes = {
+    #chordTypes = {
+        // Triads
         'major': { name: getLocalizedText('major-triad', 'Major Triad'), intervals: [4, 3] },
         'minor': { name: getLocalizedText('minor-triad', 'Minor Triad'), intervals: [3, 4] },
         'diminished': { name: getLocalizedText('diminished-triad', 'Diminished Triad'), intervals: [3, 3] },
-        'augmented': { name: getLocalizedText('augmented-triad', 'Augmented Triad'), intervals: [4, 4] }
+        'augmented': { name: getLocalizedText('augmented-triad', 'Augmented Triad'), intervals: [4, 4] },
+        // 7th Chords
+        'maj7': { name: getLocalizedText('maj7-chord', 'Major 7th'), intervals: [4, 3, 4] },
+        'dom7': { name: getLocalizedText('dom7-chord', 'Dominant 7th'), intervals: [4, 3, 3] },
+        'min7': { name: getLocalizedText('min7-chord', 'Minor 7th'), intervals: [3, 4, 3] },
+        'm7b5': { name: getLocalizedText('m7b5-chord', 'Half-Diminished 7th'), intervals: [3, 3, 4] },
+        'dim7': { name: getLocalizedText('dim7-chord', 'Diminished 7th'), intervals: [3, 3, 3] }
     };
 
     #diatonicDegrees = [
@@ -39,7 +45,7 @@ class ChordCalculator {
         this.#setupPiano();
         this.#setupCircleOfFifths();
         this.#setupControls();
-        this.#updateUIFromControls(false); // Initial load, don't play
+        this.#updateUIFromControls(false); 
     }
 
     #setupPiano() {
@@ -60,7 +66,8 @@ class ChordCalculator {
                 this.#activeNotes.splice(index, 1);
             } else {
                 this.#activeNotes.push(midi);
-                if (this.#activeNotes.length > 3) {
+                // FIFO logic updated to support 4 notes for 7th chords
+                if (this.#activeNotes.length > 4) {
                     this.#activeNotes.shift();
                 }
             }
@@ -77,7 +84,6 @@ class ChordCalculator {
     }
 
     #setupCircleOfFifths() {
-        // 1. Create outer notes
         const outerRadius = (this.#dom.fifthsOuterCircle.offsetWidth / 2) * 0.85;
         this.#circleOfFifthsOrder.forEach((noteIndex, i) => {
             const angle = (i / 12) * 360 - 90;
@@ -86,11 +92,9 @@ class ChordCalculator {
             const noteEl = document.createElement("div");
             noteEl.className = "note";
             noteEl.style.transform = `translate(${x}px, ${y}px)`;
-            
             if (this.#notes[noteIndex].includes("♯") || this.#notes[noteIndex].includes("♭")) {
                 noteEl.dataset.isBlackKey = "true";
             }
-            
             const labelEl = document.createElement("div");
             labelEl.className = "note-label";
             labelEl.textContent = this.#notes[noteIndex];
@@ -98,14 +102,12 @@ class ChordCalculator {
             this.#dom.fifthsOuterCircle.appendChild(noteEl);
         });
 
-        // 2. Create inner degrees
         const innerRadius = (this.#dom.fifthsInnerCircle.offsetWidth / 2) * 0.8;
         this.#majorScaleIntervals.forEach((interval, i) => {
             const circlePos = this.#circleOfFifthsOrder.indexOf(interval);
             const angle = (circlePos / 12) * 360 - 90;
             const x = innerRadius * Math.cos((angle * Math.PI) / 180);
             const y = innerRadius * Math.sin((angle * Math.PI) / 180);
-            
             const degreeEl = document.createElement("div");
             degreeEl.className = "degree";
             degreeEl.textContent = i + 1;
@@ -177,18 +179,23 @@ class ChordCalculator {
         }
         
         const rootIndex = (this.#currentStep + rootOffset) % 12;
-        const intervals = this.#triadTypes[chordType].intervals;
+        const intervals = this.#chordTypes[chordType].intervals;
         
-        const note1 = rootIndex;
-        const note2 = (rootIndex + intervals[0]) % 12;
-        const note3 = (rootIndex + intervals[0] + intervals[1]) % 12;
-        
+        // Forward generation upgraded to handle N intervals
         const startOctave = 3;
-        this.#activeNotes = [
-            rootIndex + (startOctave + 1) * 12,
-            note2 + (startOctave + (note2 < rootIndex ? 2 : 1)) * 12,
-            note3 + (startOctave + (note3 < rootIndex ? 2 : 1)) * 12
-        ].sort((a, b) => a - b);
+        let currentMidiInOctave = rootIndex + (startOctave + 1) * 12;
+        this.#activeNotes = [currentMidiInOctave];
+        let cumulativeInterval = 0;
+        
+        intervals.forEach(interval => {
+            cumulativeInterval += interval;
+            const nextNotePc = (rootIndex + cumulativeInterval) % 12;
+            // Check if we cross an octave boundary relative to root
+            const octaveOffset = (rootIndex + cumulativeInterval >= 12) ? 1 : 0;
+            this.#activeNotes.push(nextNotePc + (startOctave + 1 + octaveOffset) * 12);
+        });
+        
+        this.#activeNotes.sort((a, b) => a - b);
         
         this.#updatePianoHighlights();
         this.#identifyChordFromPiano(); 
@@ -212,8 +219,9 @@ class ChordCalculator {
     }
 
     #identifyChordFromPiano() {
-        if (this.#activeNotes.length !== 3) {
-            this.#dom.detectedNotes.textContent = this.#activeNotes.length > 0 
+        const noteCount = this.#activeNotes.length;
+        if (noteCount !== 3 && noteCount !== 4) {
+            this.#dom.detectedNotes.textContent = noteCount > 0 
                 ? this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ') 
                 : '--';
             this.#dom.detectedType.textContent = '--';
@@ -224,34 +232,34 @@ class ChordCalculator {
             return;
         }
 
-        let pitchClasses = [...new Set(this.#activeNotes.map(m => m % 12))].sort((a, b) => a - b);
-        if (pitchClasses.length !== 3) {
+        const pitchClasses = [...new Set(this.#activeNotes.map(m => m % 12))].sort((a, b) => a - b);
+        if (pitchClasses.length !== noteCount) {
              this.#dom.detectedType.textContent = getLocalizedText('invalid-chord', 'Invalid Chord');
              return;
         }
 
         let foundChord = null;
-        let sortedNotes = [...this.#activeNotes].sort((a, b) => a - b);
-        let normalizedPcs = sortedNotes.map(n => n % 12);
+        let currentPcs = [...pitchClasses];
 
-        for (let i = 0; i < 3; i++) {
-            const n1 = normalizedPcs[0];
-            const n2 = normalizedPcs[1];
-            const n3 = normalizedPcs[2];
+        for (let i = 0; i < noteCount; i++) {
+            // Calculate current intervals
+            let currentIntervals = [];
+            for (let j = 0; j < noteCount - 1; j++) {
+                currentIntervals.push((currentPcs[j + 1] - currentPcs[j] + 12) % 12);
+            }
             
-            const diff1 = (n2 - n1 + 12) % 12;
-            const diff2 = (n3 - n2 + 12) % 12;
-            
-            for (const [type, data] of Object.entries(this.#triadTypes)) {
-                if (diff1 === data.intervals[0] && diff2 === data.intervals[1]) {
-                    foundChord = { root: n1, type: type, originalRootMidi: sortedNotes[0] };
+            const intervalStr = JSON.stringify(currentIntervals);
+            for (const [type, data] of Object.entries(this.#chordTypes)) {
+                if (JSON.stringify(data.intervals) === intervalStr) {
+                    foundChord = { root: currentPcs[0], type: type };
                     break;
                 }
             }
             if (foundChord) break;
             
-            sortedNotes = [sortedNotes[1], sortedNotes[2], sortedNotes[0] + 12];
-            normalizedPcs = sortedNotes.map(n => n % 12);
+            // Rotate the set
+            currentPcs.push(currentPcs.shift());
+            currentPcs = currentPcs.map((pc, idx) => (idx === noteCount - 1 ? pc : pc)); // Logical rotation only
         }
 
         if (!foundChord) {
@@ -261,9 +269,16 @@ class ChordCalculator {
             document.querySelectorAll('.mode-btn').forEach(i => i.classList.remove('active'));
             this.#dom.detectedNotes.textContent = this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ');
         } else {
-            const smartNotes = this.#getEnharmonicNotes(foundChord.root, foundChord.type, sortedNotes);
+            const root = foundChord.root;
+            const sortedByRoot = [...this.#activeNotes].sort((a, b) => {
+                const aPc = (a % 12 - root + 12) % 12;
+                const bPc = (b % 12 - root + 12) % 12;
+                return aPc - bPc;
+            });
+
+            const smartNotes = this.#getEnharmonicNotes(foundChord.root, foundChord.type, sortedByRoot);
             const rootName = smartNotes[0].replace(/\d+$/, '');
-            const typeName = this.#triadTypes[foundChord.type].name;
+            const typeName = this.#chordTypes[foundChord.type].name;
             
             this.#dom.detectedType.textContent = typeName;
             this.#dom.chordResultDisplay.textContent = `${rootName} ${typeName}`;
@@ -315,12 +330,13 @@ class ChordCalculator {
         const rootLetter = rootName[0];
         const rootLetterIdx = letters.indexOf(rootLetter);
         
+        const degreeSteps = [0, 2, 4, 6, 8, 10]; // Support up to 13th chords potentially
+
         return sortedMidis.map((midi, i) => {
             const pc = midi % 12;
             const octave = Math.floor(midi / 12) - 1;
             
-            const degree = (i === 0 ? 1 : (i === 1 ? 3 : 5));
-            const targetLetterIdx = (rootLetterIdx + (degree === 1 ? 0 : (degree === 3 ? 2 : 4))) % 7;
+            const targetLetterIdx = (rootLetterIdx + degreeSteps[i]) % 7;
             const targetLetter = letters[targetLetterIdx];
             const targetBaseMidi = letterToMidi[targetLetter];
             
@@ -340,7 +356,6 @@ class ChordCalculator {
     #getSmartRootName(pc) {
         const circleIndex = this.#circleOfFifthsOrder.indexOf(this.#currentStep);
         const isSharpKey = circleIndex <= 6;
-        
         const scalePcs = [0, 2, 4, 5, 7, 9, 11].map(i => (i + this.#currentStep) % 12);
         const scaleIdx = scalePcs.indexOf(pc);
         
@@ -355,23 +370,18 @@ class ChordCalculator {
             const letterToMidi = { "C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11 };
             const tonicLetter = officialTonicName[0];
             const tonicLetterIdx = letters.indexOf(tonicLetter);
-            
             const targetLetterIdx = (tonicLetterIdx + scaleIdx) % 7;
             const targetLetter = letters[targetLetterIdx];
             const targetBaseMidi = letterToMidi[targetLetter];
-            
             let diff = (pc - targetBaseMidi + 12) % 12;
             if (diff > 6) diff -= 12;
-            
             let accidental = "";
             if (diff === 1) accidental = "#";
             else if (diff === 2) accidental = "##";
             else if (diff === -1) accidental = "b";
             else if (diff === -2) accidental = "bb";
-            
             return targetLetter + accidental;
         }
-        
         return isSharpKey ? this.#notesSharp[pc] : this.#notesFlat[pc];
     }
 }
@@ -388,6 +398,5 @@ window.addEventListener('load', () => {
         detectedNotes: document.getElementById("detected-notes"),
         detectedType: document.getElementById("detected-type")
     };
-
     new ChordCalculator(dom);
 });

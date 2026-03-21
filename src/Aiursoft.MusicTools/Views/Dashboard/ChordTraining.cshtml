@@ -13,12 +13,19 @@
     <span data-key="chord-minor">@Localizer["Minor Triad"]</span>
     <span data-key="chord-diminished">@Localizer["Diminished Triad"]</span>
     <span data-key="chord-augmented">@Localizer["Augmented Triad"]</span>
+    <span data-key="chord-maj7">@Localizer["Major 7th"]</span>
+    <span data-key="chord-dom7">@Localizer["Dominant 7th"]</span>
+    <span data-key="chord-min7">@Localizer["Minor 7th"]</span>
+    <span data-key="chord-m7b5">@Localizer["Half-Diminished 7th"]</span>
+    <span data-key="chord-dim7">@Localizer["Diminished 7th"]</span>
     <span data-key="root-position">@Localizer["Root Position"]</span>
     <span data-key="first-inversion">@Localizer["First Inversion"]</span>
     <span data-key="second-inversion">@Localizer["Second Inversion"]</span>
+    <span data-key="third-inversion">@Localizer["Third Inversion"]</span>
     <span data-key="root-note">@Localizer["Root note"]</span>
     <span data-key="third-note">@Localizer["Third note"]</span>
     <span data-key="fifth-note">@Localizer["Fifth note"]</span>
+    <span data-key="seventh-note">@Localizer["Seventh note"]</span>
 </div>
 
 <div class="container-fluid py-4 position-relative">
@@ -44,6 +51,18 @@
     <div class="row g-4 justify-content-center mb-5">
         <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center gap-4">
             <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <div class="btn-group shadow-sm" role="group" aria-label="Chord Category">
+                    <input type="radio" class="btn-check" name="chord-category" id="cat-triad" value="triad" checked autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="cat-triad">
+                        @Localizer["Triads"]
+                    </label>
+
+                    <input type="radio" class="btn-check" name="chord-category" id="cat-seventh" value="seventh" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-2" for="cat-seventh">
+                        @Localizer["7th Chords"]
+                    </label>
+                </div>
+
                 <div class="btn-group shadow-sm" role="group" aria-label="Start mode">
                     <input type="radio" class="btn-check" name="start-mode" id="mode-random" value="random" checked autocomplete="off">
                     <label class="btn btn-outline-primary px-3 py-2" for="mode-random">
@@ -106,7 +125,8 @@
                     <div class="border-top pt-3 text-start">
                         <p class="mb-1"><span class="text-muted small">@Localizer["Root note"]:</span> <span id="result-root-note" class="fw-bold"></span></p>
                         <p class="mb-1"><span class="text-muted small">@Localizer["Third note"]:</span> <span id="result-third-note" class="fw-bold"></span></p>
-                        <p class="mb-0"><span class="text-muted small">@Localizer["Fifth note"]:</span> <span id="result-fifth-note" class="fw-bold"></span></p>
+                        <p class="mb-1"><span class="text-muted small">@Localizer["Fifth note"]:</span> <span id="result-fifth-note" class="fw-bold"></span></p>
+                        <p class="mb-0 d-none" id="result-seventh-row"><span class="text-muted small">@Localizer["Seventh note"]:</span> <span id="result-seventh-note" class="fw-bold"></span></p>
                     </div>
                 </div>
             </div>

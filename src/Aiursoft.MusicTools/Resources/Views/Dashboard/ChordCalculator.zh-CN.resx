@@ -19,6 +19,11 @@
   <data name="Minor Triad" xml:space="preserve"><value>小三和弦</value></data>
   <data name="Diminished Triad" xml:space="preserve"><value>减三和弦</value></data>
   <data name="Augmented Triad" xml:space="preserve"><value>增三和弦</value></data>
+  <data name="Major 7th" xml:space="preserve"><value>大七和弦</value></data>
+  <data name="Dominant 7th" xml:space="preserve"><value>属七和弦</value></data>
+  <data name="Minor 7th" xml:space="preserve"><value>小七和弦</value></data>
+  <data name="Half-Diminished 7th" xml:space="preserve"><value>半减七和弦</value></data>
+  <data name="Diminished 7th" xml:space="preserve"><value>减七和弦</value></data>
   <data name="Degree Selector" xml:space="preserve"><value>级数选择器</value></data>
   <data name="Interactive Piano" xml:space="preserve"><value>交互式钢琴</value></data>
   <data name="Reset Selection" xml:space="preserve"><value>重置选择</value></data>

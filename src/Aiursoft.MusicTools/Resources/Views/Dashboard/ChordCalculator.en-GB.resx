@@ -19,6 +19,11 @@
   <data name="Minor Triad" xml:space="preserve"><value>Minor Triad</value></data>
   <data name="Diminished Triad" xml:space="preserve"><value>Diminished Triad</value></data>
   <data name="Augmented Triad" xml:space="preserve"><value>Augmented Triad</value></data>
+  <data name="Major 7th" xml:space="preserve"><value>Major 7th</value></data>
+  <data name="Dominant 7th" xml:space="preserve"><value>Dominant 7th</value></data>
+  <data name="Minor 7th" xml:space="preserve"><value>Minor 7th</value></data>
+  <data name="Half-Diminished 7th" xml:space="preserve"><value>Half-Diminished 7th</value></data>
+  <data name="Diminished 7th" xml:space="preserve"><value>Diminished 7th</value></data>
   <data name="Degree Selector" xml:space="preserve"><value>Degree Selector</value></data>
   <data name="Interactive Piano" xml:space="preserve"><value>Interactive Piano</value></data>
   <data name="Reset Selection" xml:space="preserve"><value>Reset Selection</value></data>

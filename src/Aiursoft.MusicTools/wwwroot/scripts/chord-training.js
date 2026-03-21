@@ -4,24 +4,31 @@ import { getLocalizedText } from './localization.js';
 class ChordTraining {
     #piano;
     #localizedStrings;
-    #chordKeys;
+    #chordTypes = {
+        'triad': {
+            'major': [0, 4, 7],
+            'minor': [0, 3, 7],
+            'diminished': [0, 3, 6],
+            'augmented': [0, 4, 8]
+        },
+        'seventh': {
+            'maj7': [0, 4, 7, 11],
+            'dom7': [0, 4, 7, 10],
+            'min7': [0, 3, 7, 10],
+            'm7b5': [0, 3, 6, 10],
+            'dim7': [0, 3, 6, 9]
+        }
+    };
+    
     #isPlaying = false;
     #isShowingResult = false;
     #playAbortController = null;
     #correctCount = 0;
     #wrongCount = 0;
     
-    // Chord intervals from root (in semitones)
-    #chordTypes = {
-        'major': [0, 4, 7],
-        'minor': [0, 3, 7],
-        'diminished': [0, 3, 6],
-        'augmented': [0, 4, 8]
-    };
-    
     #currentBaseMidi;
     #currentChordKey;
-    #currentInversion; // 0: Root, 1: 1st Inversion, 2: 2nd Inversion
+    #currentInversion; 
     #currentNotesMidi = [];
     #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
@@ -30,8 +37,8 @@ class ChordTraining {
     constructor(piano, localizedStrings) {
         this.#piano = piano;
         this.#localizedStrings = localizedStrings;
-        this.#chordKeys = Object.keys(this.#chordTypes);
         this.#setupEventListeners();
+        this.#refreshOptions();
         this.nextQuestion();
     }
 
@@ -60,6 +67,44 @@ class ChordTraining {
                 this.nextQuestion();
             });
         });
+
+        const categoryRadios = document.querySelectorAll('input[name="chord-category"]');
+        categoryRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                this.#refreshOptions();
+                this.nextQuestion();
+            });
+        });
+    }
+
+    #refreshOptions() {
+        const category = document.querySelector('input[name="chord-category"]:checked')?.value || 'triad';
+        const chordOptionsContainer = document.getElementById('chord-options');
+        chordOptionsContainer.innerHTML = '';
+
+        const chords = this.#chordTypes[category];
+        Object.keys(chords).forEach(key => {
+            const col = document.createElement('div');
+            col.className = 'col';
+            const button = document.createElement('button');
+            button.className = 'btn btn-outline-secondary w-100 py-3 rounded-3 shadow-sm chord-btn';
+            button.dataset.key = key;
+            button.textContent = this.#localizedStrings.chords[key];
+            button.addEventListener('click', (e) => this.#handleAnswer(e.currentTarget));
+            col.appendChild(button);
+            chordOptionsContainer.appendChild(col);
+        });
+
+        // Add "I give up" button
+        const giveUpCol = document.createElement('div');
+        giveUpCol.className = 'col';
+        const giveUpButton = document.createElement('button');
+        giveUpButton.className = 'btn btn-outline-warning w-100 py-3 rounded-3 shadow-sm chord-btn';
+        giveUpButton.dataset.key = 'give-up';
+        giveUpButton.textContent = this.#localizedStrings.giveUp;
+        giveUpButton.addEventListener('click', (e) => this.#handleAnswer(e.currentTarget));
+        giveUpCol.appendChild(giveUpButton);
+        chordOptionsContainer.appendChild(giveUpCol);
     }
 
     #midiToNoteName(midi) {
@@ -89,7 +134,6 @@ class ChordTraining {
 
     #setPlayButtonLoading(isLoading) {
         const playButton = document.getElementById('play-button');
-
         if (playButton) {
             playButton.disabled = isLoading;
             if (isLoading) {
@@ -131,23 +175,19 @@ class ChordTraining {
                     this.#piano.playNote(note, 0.7);
                     await this.#delay(400, signal);
                 }
-                await this.#delay(600, signal); // Pause after arpeggio
+                await this.#delay(600, signal);
             }
             
             if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
-            // Hard cooldown
             await this.#delay(1000, signal);
         } catch (e) {
-            if (e.name === 'AbortError') {
-                return;
-            }
+            if (e.name === 'AbortError') return;
             console.error('[ChordTraining] Error playing chord:', e);
         } finally {
             this.#isPlaying = false;
             this.#setPlayButtonLoading(false);
             this.#playAbortController = null;
 
-            // Show options after the first playback
             const optionsContainer = document.getElementById('chord-options-row');
             if (optionsContainer && !this.#isShowingResult) {
                 optionsContainer.classList.remove('d-none');
@@ -169,7 +209,6 @@ class ChordTraining {
             this.#isPlaying = false;
             this.#setPlayButtonLoading(false);
 
-            // Reset buttons early to ensure UI is interactive even if selection takes a moment
             document.querySelectorAll('.chord-btn').forEach(btn => {
                 btn.classList.remove('btn-success', 'btn-danger');
                 btn.classList.remove('btn-outline-secondary', 'btn-outline-warning');
@@ -182,9 +221,13 @@ class ChordTraining {
             });
 
             this.#isShowingResult = false;
+            const category = document.querySelector('input[name="chord-category"]:checked')?.value || 'triad';
             const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
             const voicingMode = document.querySelector('input[name="voicing-mode"]:checked')?.value || 'root';
             
+            const chordsInCategory = this.#chordTypes[category];
+            const keysInCategory = Object.keys(chordsInCategory);
+
             let isValid = false;
             let notesMidi = [];
             let iterations = 0;
@@ -192,48 +235,34 @@ class ChordTraining {
             while (!isValid && iterations < 100) {
                 iterations++;
                 
-                // 1. Pick Chord Type
-                this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
+                this.#currentChordKey = keysInCategory[Math.floor(Math.random() * keysInCategory.length)];
 
-                // 2. Pick Base Note (Root)
                 if (startMode === 'fixed-c') {
-                    // Use C4 (60)
                     this.#currentBaseMidi = 60;
                 } else {
-                    // Any note in a reasonable range (C3 to B4)
                     this.#currentBaseMidi = 48 + Math.floor(Math.random() * 24); 
-                    
-                    // If the root is C, force it to be C4 (60)
                     if (this.#currentBaseMidi % 12 === 0) {
                         this.#currentBaseMidi = 60;
                     }
                 }
 
-                // 3. Pick Inversion
+                const intervals = chordsInCategory[this.#currentChordKey];
+                const noteCount = intervals.length;
+
                 if (voicingMode === 'root') {
                     this.#currentInversion = 0;
                 } else {
-                    this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
+                    this.#currentInversion = Math.floor(Math.random() * noteCount);
                 }
                 
-                // Calculate notes based on chord type and inversion
-                const intervals = this.#chordTypes[this.#currentChordKey];
                 notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
                 
-                if (this.#currentInversion === 1) {
-                    // First inversion: root note goes up an octave
+                for(let i = 0; i < this.#currentInversion; i++) {
                     notesMidi[0] += 12;
-                    notesMidi.sort((a, b) => a - b);
-                } else if (this.#currentInversion === 2) {
-                    // Second inversion: root and third go up an octave
-                    notesMidi[0] += 12;
-                    notesMidi[1] += 12;
                     notesMidi.sort((a, b) => a - b);
                 }
 
-                // Ensure all notes are within the real C3 (48) to C5 (72) range
                 if (notesMidi[notesMidi.length - 1] <= 72 && notesMidi[0] >= 48) {
-                    // Prevent consecutive identical questions unless forced by restrictions
                     const questionState = `${this.#currentBaseMidi}-${this.#currentChordKey}-${this.#currentInversion}`;
                     if (questionState !== this.#lastQuestion || iterations > 50) {
                         isValid = true;
@@ -244,26 +273,21 @@ class ChordTraining {
             
             this.#currentNotesMidi = notesMidi;
 
-
-            // Update Question UI
             const questionLabel = document.getElementById('question-label');
             if (questionLabel && this.#localizedStrings.questionTemplate) {
                  questionLabel.textContent = this.#localizedStrings.questionTemplate;
             }
 
-            // Reset Play Button
             const playButtonText = document.getElementById('play-button-text');
             if (playButtonText) {
                 playButtonText.textContent = this.#localizedStrings.playChord;
             }
 
-            // Hide result details
             document.getElementById('result-details')?.classList.add('d-none');
             document.getElementById('chord-options-row')?.classList.remove('d-none');
             this.#piano.clearAllHighlights();
         } catch (e) {
             console.error('[ChordTraining] Error in nextQuestion:', e);
-            // Ensure buttons are re-enabled even on error
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = false);
             this.#setPlayButtonLoading(false);
         }
@@ -284,11 +308,9 @@ class ChordTraining {
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-success');
             
-            // Disable all buttons to prevent multiple clicks
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = true);
             this.#setPlayButtonLoading(true);
 
-            // Wait a bit and next question
             if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
             this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
@@ -301,17 +323,13 @@ class ChordTraining {
 
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-danger');
-            button.disabled = true; // Disable current wrong button
+            button.disabled = true;
         }
     }
 
     #showResult() {
         this.#isShowingResult = true;
-        
-        // Hide options
         document.getElementById('chord-options-row')?.classList.add('d-none');
-        
-        // Show details
         const resultDetails = document.getElementById('result-details');
         if (resultDetails) {
             resultDetails.classList.remove('d-none');
@@ -322,6 +340,7 @@ class ChordTraining {
         let inversionText = this.#localizedStrings.rootPosition;
         if (this.#currentInversion === 1) inversionText = this.#localizedStrings.firstInversion;
         if (this.#currentInversion === 2) inversionText = this.#localizedStrings.secondInversion;
+        if (this.#currentInversion === 3) inversionText = this.#localizedStrings.thirdInversion;
 
         const nameEl = document.getElementById('result-chord-name');
         if (nameEl) nameEl.textContent = chordName;
@@ -329,33 +348,34 @@ class ChordTraining {
         const inversionEl = document.getElementById('result-inversion');
         if (inversionEl) inversionEl.textContent = inversionText;
 
-        const intervals = this.#chordTypes[this.#currentChordKey];
-        const rootNote = this.#midiToNoteName(this.#currentBaseMidi);
-        const thirdNote = this.#midiToNoteName(this.#currentBaseMidi + intervals[1]);
-        const fifthNote = this.#midiToNoteName(this.#currentBaseMidi + intervals[2]);
-
         const rootEl = document.getElementById('result-root-note');
-        if (rootEl) rootEl.textContent = rootNote;
+        if (rootEl) rootEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[0]);
 
         const thirdEl = document.getElementById('result-third-note');
-        if (thirdEl) thirdEl.textContent = thirdNote;
+        if (thirdEl) thirdEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[1]);
 
         const fifthEl = document.getElementById('result-fifth-note');
-        if (fifthEl) fifthEl.textContent = fifthNote;
+        if (fifthEl) fifthEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[2]);
 
-        // Highlight piano
+        const seventhRow = document.getElementById('result-seventh-row');
+        const seventhEl = document.getElementById('result-seventh-note');
+        if (this.#currentNotesMidi.length > 3) {
+            seventhRow?.classList.remove('d-none');
+            if (seventhEl) seventhEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[3]);
+        } else {
+            seventhRow?.classList.add('d-none');
+        }
+
         const notesToHighlight = this.#currentNotesMidi.map(midi => this.#midiToNoteName(midi));
         this.#piano.clearAllHighlights();
         this.#piano.highlightKeys(notesToHighlight, 'select-highlight');
 
-        // Change Play Button to Next Question
         const playButtonText = document.getElementById('play-button-text');
         if (playButtonText) {
             playButtonText.textContent = this.#localizedStrings.nextQuestion;
         }
     }
 
-    // Set up answer handlers for dynamically created buttons
     setupButtonHandlers() {
         document.querySelectorAll('.chord-btn').forEach(btn => {
             btn.addEventListener('click', (e) => this.#handleAnswer(e.currentTarget));
@@ -363,7 +383,6 @@ class ChordTraining {
     }
 }
 
-// Global entry point
 window.startChordTraining = (pianoContainerId) => {
     const localizedStrings = {
         correct: getLocalizedText('correct', 'Correct!'),
@@ -375,40 +394,23 @@ window.startChordTraining = (pianoContainerId) => {
         rootPosition: getLocalizedText('root-position', 'Root Position'),
         firstInversion: getLocalizedText('first-inversion', 'First Inversion'),
         secondInversion: getLocalizedText('second-inversion', 'Second Inversion'),
+        thirdInversion: getLocalizedText('third-inversion', 'Third Inversion'),
         rootNote: getLocalizedText('root-note', 'Root note'),
         thirdNote: getLocalizedText('third-note', 'Third note'),
         fifthNote: getLocalizedText('fifth-note', 'Fifth note'),
+        seventhNote: getLocalizedText('seventh-note', 'Seventh note'),
         chords: {
             'major': getLocalizedText('chord-major', 'Major Triad'),
             'minor': getLocalizedText('chord-minor', 'Minor Triad'),
             'diminished': getLocalizedText('chord-diminished', 'Diminished Triad'),
-            'augmented': getLocalizedText('chord-augmented', 'Augmented Triad')
+            'augmented': getLocalizedText('chord-augmented', 'Augmented Triad'),
+            'maj7': getLocalizedText('chord-maj7', 'Major 7th'),
+            'dom7': getLocalizedText('chord-dom7', 'Dominant 7th'),
+            'min7': getLocalizedText('chord-min7', 'Minor 7th'),
+            'm7b5': getLocalizedText('chord-m7b5', 'Half-Diminished 7th'),
+            'dim7': getLocalizedText('chord-dim7', 'Diminished 7th')
         }
     };
-
-    const chordKeys = Object.keys(localizedStrings.chords);
-    const chordOptionsContainer = document.getElementById('chord-options');
-
-    chordKeys.forEach(key => {
-        const col = document.createElement('div');
-        col.className = 'col';
-        const button = document.createElement('button');
-        button.className = 'btn btn-outline-secondary w-100 py-3 rounded-3 shadow-sm chord-btn';
-        button.dataset.key = key;
-        button.textContent = localizedStrings.chords[key];
-        col.appendChild(button);
-        chordOptionsContainer.appendChild(col);
-    });
-
-    // Add "I give up" button
-    const giveUpCol = document.createElement('div');
-    giveUpCol.className = 'col';
-    const giveUpButton = document.createElement('button');
-    giveUpButton.className = 'btn btn-outline-warning w-100 py-3 rounded-3 shadow-sm chord-btn';
-    giveUpButton.dataset.key = 'give-up';
-    giveUpButton.textContent = localizedStrings.giveUp;
-    giveUpCol.appendChild(giveUpButton);
-    chordOptionsContainer.appendChild(giveUpCol);
 
     const piano = new Piano(document.getElementById(pianoContainerId), {
         octaves: 3,
@@ -418,7 +420,5 @@ window.startChordTraining = (pianoContainerId) => {
         showTonicIndicator: false
     });
 
-    const training = new ChordTraining(piano, localizedStrings);
-    training.setupButtonHandlers();
-    return training;
+    return new ChordTraining(piano, localizedStrings);
 };
