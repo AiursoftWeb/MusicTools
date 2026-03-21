@@ -25,6 +25,7 @@ class ChordTraining {
     #currentNotesMidi = [];
     #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    #lastQuestion = null;
 
     constructor(piano, localizedStrings) {
         this.#piano = piano;
@@ -49,7 +50,7 @@ class ChordTraining {
             }
         });
 
-        const modeRadios = document.querySelectorAll('input[name="start-mode"], input[name="scale-mode"], input[name="voicing-mode"]');
+        const modeRadios = document.querySelectorAll('input[name="start-mode"], input[name="voicing-mode"]');
         modeRadios.forEach(radio => {
             radio.addEventListener('change', () => {
                 if (this.#autoNextTimeout) {
@@ -109,24 +110,24 @@ class ChordTraining {
     }
 
     async playChord() {
-        if (this.#isPlaying) return;
-        this.#isPlaying = true;
-
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-        }
-        const currentAbortController = new AbortController();
-        this.#playAbortController = currentAbortController;
-        const signal = currentAbortController.signal;
-
-        this.#setPlayButtonLoading(true);
-
-        const playMode = document.querySelector('input[name="play-mode"]:checked')?.value || 'block';
-        const notesToPlay = this.#currentNotesMidi.map(midi => this.#midiToNoteName(midi));
-
-        this.#piano.stopAll();
-
         try {
+            if (this.#isPlaying) return;
+            this.#isPlaying = true;
+
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+            }
+            const currentAbortController = new AbortController();
+            this.#playAbortController = currentAbortController;
+            const signal = currentAbortController.signal;
+
+            this.#setPlayButtonLoading(true);
+
+            const playMode = document.querySelector('input[name="play-mode"]:checked')?.value || 'block';
+            const notesToPlay = (this.#currentNotesMidi || []).map(midi => this.#midiToNoteName(midi));
+
+            this.#piano.stopAll();
+
             if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
             if (playMode === 'block') {
                 notesToPlay.forEach(note => {
@@ -149,128 +150,132 @@ class ChordTraining {
             if (e.name === 'AbortError') {
                 return;
             }
-            throw e;
+            console.error('[ChordTraining] Error playing chord:', e);
         } finally {
-            if (this.#playAbortController === currentAbortController) {
-                this.#isPlaying = false;
-                this.#setPlayButtonLoading(false);
-                this.#playAbortController = null;
+            this.#isPlaying = false;
+            this.#setPlayButtonLoading(false);
+            this.#playAbortController = null;
 
-                // Show options after the first playback
-                const optionsContainer = document.getElementById('chord-options-row');
-                if (optionsContainer && !this.#isShowingResult) {
-                    optionsContainer.classList.remove('d-none');
-                }
+            // Show options after the first playback
+            const optionsContainer = document.getElementById('chord-options-row');
+            if (optionsContainer && !this.#isShowingResult) {
+                optionsContainer.classList.remove('d-none');
             }
         }
     }
 
     nextQuestion() {
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-            this.#playAbortController = null;
-        }
-        if (this.#autoNextTimeout) {
-            clearTimeout(this.#autoNextTimeout);
-            this.#autoNextTimeout = null;
-        }
-        this.#piano.stopAll();
-        this.#isPlaying = false;
-        this.#setPlayButtonLoading(false);
+        try {
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+                this.#playAbortController = null;
+            }
+            if (this.#autoNextTimeout) {
+                clearTimeout(this.#autoNextTimeout);
+                this.#autoNextTimeout = null;
+            }
+            this.#piano.stopAll();
+            this.#isPlaying = false;
+            this.#setPlayButtonLoading(false);
 
-        this.#isShowingResult = false;
-        const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
-        const scaleMode = document.querySelector('input[name="scale-mode"]:checked')?.value || 'c-major';
-        const voicingMode = document.querySelector('input[name="voicing-mode"]:checked')?.value || 'root';
-        
-        let isValid = false;
-        let notesMidi;
-        
-        while (!isValid) {
-            if (scaleMode === 'c-major') {
-                const whiteKeys = [48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71];
-                const whiteKeyToType = {
-                    0: 'major', // C
-                    2: 'minor', // D
-                    4: 'minor', // E
-                    5: 'major', // F
-                    7: 'major', // G
-                    9: 'minor', // A
-                    11: 'diminished' // B
-                };
+            // Reset buttons early to ensure UI is interactive even if selection takes a moment
+            document.querySelectorAll('.chord-btn').forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.remove('btn-outline-secondary', 'btn-outline-warning');
+                if (btn.dataset.key === 'give-up') {
+                    btn.classList.add('btn-outline-warning');
+                } else {
+                    btn.classList.add('btn-outline-secondary');
+                }
+                btn.disabled = false;
+            });
+
+            this.#isShowingResult = false;
+            const startMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
+            const voicingMode = document.querySelector('input[name="voicing-mode"]:checked')?.value || 'root';
+            
+            let isValid = false;
+            let notesMidi = [];
+            let iterations = 0;
+            
+            while (!isValid && iterations < 100) {
+                iterations++;
                 
+                // 1. Pick Chord Type
+                this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
+
+                // 2. Pick Base Note (Root)
                 if (startMode === 'fixed-c') {
+                    // Use C4 (60)
                     this.#currentBaseMidi = 60;
                 } else {
-                    this.#currentBaseMidi = whiteKeys[Math.floor(Math.random() * whiteKeys.length)];
+                    // Any note in a reasonable range (C3 to B4)
+                    this.#currentBaseMidi = 48 + Math.floor(Math.random() * 24); 
+                    
+                    // If the root is C, force it to be C4 (60)
+                    if (this.#currentBaseMidi % 12 === 0) {
+                        this.#currentBaseMidi = 60;
+                    }
                 }
-                this.#currentChordKey = whiteKeyToType[this.#currentBaseMidi % 12];
-            } else {
-                if (startMode === 'fixed-c') {
-                    this.#currentBaseMidi = 60; 
+
+                // 3. Pick Inversion
+                if (voicingMode === 'root') {
+                    this.#currentInversion = 0;
                 } else {
-                    this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+                    this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
                 }
-                this.#currentChordKey = this.#chordKeys[Math.floor(Math.random() * this.#chordKeys.length)];
-            }
+                
+                // Calculate notes based on chord type and inversion
+                const intervals = this.#chordTypes[this.#currentChordKey];
+                notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
+                
+                if (this.#currentInversion === 1) {
+                    // First inversion: root note goes up an octave
+                    notesMidi[0] += 12;
+                    notesMidi.sort((a, b) => a - b);
+                } else if (this.#currentInversion === 2) {
+                    // Second inversion: root and third go up an octave
+                    notesMidi[0] += 12;
+                    notesMidi[1] += 12;
+                    notesMidi.sort((a, b) => a - b);
+                }
 
-            if (voicingMode === 'root') {
-                this.#currentInversion = 0;
-            } else {
-                this.#currentInversion = Math.floor(Math.random() * 3); // 0, 1, or 2
+                // Ensure all notes are within the real C3 (48) to C5 (72) range
+                if (notesMidi[notesMidi.length - 1] <= 72 && notesMidi[0] >= 48) {
+                    // Prevent consecutive identical questions unless forced by restrictions
+                    const questionState = `${this.#currentBaseMidi}-${this.#currentChordKey}-${this.#currentInversion}`;
+                    if (questionState !== this.#lastQuestion || iterations > 50) {
+                        isValid = true;
+                        this.#lastQuestion = questionState;
+                    }
+                }
             }
             
-            // Calculate notes based on chord type and inversion
-            const intervals = this.#chordTypes[this.#currentChordKey];
-            notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
-            
-            if (this.#currentInversion === 1) {
-                // First inversion: root note goes up an octave
-                notesMidi[0] += 12;
-                notesMidi.sort((a, b) => a - b);
-            } else if (this.#currentInversion === 2) {
-                // Second inversion: root and third go up an octave
-                notesMidi[0] += 12;
-                notesMidi[1] += 12;
-                notesMidi.sort((a, b) => a - b);
+            this.#currentNotesMidi = notesMidi;
+
+
+            // Update Question UI
+            const questionLabel = document.getElementById('question-label');
+            if (questionLabel && this.#localizedStrings.questionTemplate) {
+                 questionLabel.textContent = this.#localizedStrings.questionTemplate;
             }
 
-            // Ensure all notes are within the real C3 (48) to C5 (72) range
-            if (notesMidi[notesMidi.length - 1] <= 72 && notesMidi[0] >= 48) {
-                isValid = true;
+            // Reset Play Button
+            const playButtonText = document.getElementById('play-button-text');
+            if (playButtonText) {
+                playButtonText.textContent = this.#localizedStrings.playChord;
             }
+
+            // Hide result details
+            document.getElementById('result-details')?.classList.add('d-none');
+            document.getElementById('chord-options-row')?.classList.remove('d-none');
+            this.#piano.clearAllHighlights();
+        } catch (e) {
+            console.error('[ChordTraining] Error in nextQuestion:', e);
+            // Ensure buttons are re-enabled even on error
+            document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = false);
+            this.#setPlayButtonLoading(false);
         }
-        
-        this.#currentNotesMidi = notesMidi;
-
-        // Update Question UI
-        const questionLabel = document.getElementById('question-label');
-        if (questionLabel && this.#localizedStrings.questionTemplate) {
-             questionLabel.textContent = this.#localizedStrings.questionTemplate;
-        }
-
-        // Reset buttons
-        document.querySelectorAll('.chord-btn').forEach(btn => {
-            btn.classList.remove('btn-success', 'btn-danger');
-            btn.classList.remove('btn-outline-secondary', 'btn-outline-warning');
-            if (btn.dataset.key === 'give-up') {
-                btn.classList.add('btn-outline-warning');
-            } else {
-                btn.classList.add('btn-outline-secondary');
-            }
-            btn.disabled = false;
-        });
-
-        // Reset Play Button
-        const playButtonText = document.getElementById('play-button-text');
-        if (playButtonText) {
-            playButtonText.textContent = this.#localizedStrings.playChord;
-        }
-
-        // Hide result details
-        document.getElementById('result-details')?.classList.add('d-none');
-        document.getElementById('chord-options-row')?.classList.remove('d-none');
-        this.#piano.clearAllHighlights();
     }
 
     #handleAnswer(button) {

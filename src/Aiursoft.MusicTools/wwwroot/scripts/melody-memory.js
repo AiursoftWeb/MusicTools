@@ -261,132 +261,124 @@ window.playDebugMelody = async function () {
 // --- Game Logic ---
 
 async function startGame() {
-    if (playbackAbortController) {
-        playbackAbortController.abort();
-    }
-    playbackAbortController = new AbortController();
-    const signal = playbackAbortController.signal;
-
-    // Read Options
-    const styleRad = document.querySelector('input[name="musicStyle"]:checked');
-    const previewRad = document.querySelector(
-        'input[name="gamePreview"]:checked'
-    );
-    const progressionRad = document.querySelector(
-        'input[name="gameProgression"]:checked'
-    );
-
-    // Capture Difficulty Config
-    captureGameConfig(styleRad, previewRad, progressionRad);
-
-    // Default to C Major if nothing checked
-    const style = styleRad ? styleRad.value : "c-major";
-    const preview = previewRad ? previewRad.value : "scale";
-
-    // Determine if we're in practice mode
-    // In practice mode, exam sounds should be visualized
-    gameDifficulty = style === "practice" ? "practice" : "music";
-
-    // Set Up Key/Notes
-    if (style === "atonal") {
-        // Atonal: Use Chromatic Scale C4-C5 (1 Octave + 1 note)
-        validNotesForLevel = [];
-        const startIdx = ALL_NOTES_NAMES.indexOf("C");
-        for (let i = 0; i <= 24; i++) {
-            // Two Octaves Chromatic
-            const noteAbsIndex = startIdx + i;
-            const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
-            const octaveShift = Math.floor(noteAbsIndex / 12);
-            validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
-        }
-        currentKeyRoot = "C";
-        console.log("Game Style: Atonal (Chromatic 2 Octaves)");
-    } else {
-        // Tonal or Practice (both use C Major scale)
-        let rootNote = "C";
-
-        if (style === "tonal") {
-            // Random Key
-            rootNote =
-                ALL_NOTES_NAMES[
-                    Math.floor(Math.random() * ALL_NOTES_NAMES.length)
-                ];
-        } else {
-            // Forced C Major (for c-major and practice modes)
-            rootNote = "C";
-        }
-
-        currentKeyRoot = rootNote;
-
-        // Generate EXACTLY 2 Octaves of Valid Notes
-        validNotesForLevel = [];
-
-        const rootIndex = ALL_NOTES_NAMES.indexOf(rootNote);
-        // Major Scale Steps extended to 2 octaves
-        const majorSteps = [
-            0, 2, 4, 5, 7, 9, 11, 12, 14, 16, 17, 19, 21, 23, 24,
-        ];
-
-        for (let step of majorSteps) {
-            const noteAbsIndex = rootIndex + step;
-            const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
-            const octaveShift = Math.floor((rootIndex + step) / 12);
-            validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
-        }
-
-        console.log(
-            `Game Style: ${style} (${rootNote} Major) - Notes: ${validNotesForLevel.join(
-                ", "
-            )}`
-        );
-    }
-
-    // Initialize Melody Generator with current Key
-    // Use "major" scale (not pentatonic) to satisfy "GABCDE#FG" request
-    melodyGenerator = new MelodyGenerator(
-        currentKeyRoot,
-        style === "atonal" ? "atonal" : "major"
-    );
-
-    sequence = [];
-    songBuffer = []; // Reset buffer
-    level = 1;
-
-    lastRankText = "";
-    lives = 3;
-    perfectStreak = 0;
-    updateLivesUI();
-    updateInGameRank();
-
-    // Switch UI Screens
-    // New Logic: We have 3 screens: Start, Game, GameOver.
-    // 1. Hide Start
-    if (startOverlay) {
-        startOverlay.classList.add("d-none"); // Bootstrap utility
-        startOverlay.classList.remove("d-flex"); // Remove flex if present
-    }
-
-    // 2. Hide Game Over (just in case)
-    if (gameOverOverlay) {
-        gameOverOverlay.classList.add("d-none");
-    }
-
-    // 3. Show Game Board
-    if (gameContainer) {
-        gameContainer.classList.remove("d-none");
-        gameContainer.classList.add("d-flex"); // Restore flex layout
-
-        // Trigger Piano Resize/Redraw since it was hidden
-        // Force a resize event or re-init might be needed if ToneJS/Canvas calculated 0 width
-        if (piano) {
-            // We might need to ensure the container has width now
-            // Fortunately Tone.js Piano often uses simple divs, but let's be safe.
-            // If Piano.js handles ResizeObserver, we are good.
-        }
-    }
-
-    // PLAY PREVIEW
     try {
+        if (playbackAbortController) {
+            playbackAbortController.abort();
+        }
+        playbackAbortController = new AbortController();
+        const signal = playbackAbortController.signal;
+
+        // Read Options
+        const styleRad = document.querySelector('input[name="musicStyle"]:checked');
+        const previewRad = document.querySelector(
+            'input[name="gamePreview"]:checked'
+        );
+        const progressionRad = document.querySelector(
+            'input[name="gameProgression"]:checked'
+        );
+
+        // Capture Difficulty Config
+        captureGameConfig(styleRad, previewRad, progressionRad);
+
+        // Default to C Major if nothing checked
+        const style = styleRad ? styleRad.value : "c-major";
+        const preview = previewRad ? previewRad.value : "scale";
+
+        // Determine if we're in practice mode
+        // In practice mode, exam sounds should be visualized
+        gameDifficulty = style === "practice" ? "practice" : "music";
+
+        // Set Up Key/Notes
+        if (style === "atonal") {
+            // Atonal: Use Chromatic Scale C4-C5 (1 Octave + 1 note)
+            validNotesForLevel = [];
+            const startIdx = ALL_NOTES_NAMES.indexOf("C");
+            for (let i = 0; i <= 24; i++) {
+                // Two Octaves Chromatic
+                const noteAbsIndex = startIdx + i;
+                const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
+                const octaveShift = Math.floor(noteAbsIndex / 12);
+                validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
+            }
+            currentKeyRoot = "C";
+            console.log("Game Style: Atonal (Chromatic 2 Octaves)");
+        } else {
+            // Tonal or Practice (both use C Major scale)
+            let rootNote = "C";
+
+            if (style === "tonal") {
+                // Random Key
+                rootNote =
+                    ALL_NOTES_NAMES[
+                        Math.floor(Math.random() * ALL_NOTES_NAMES.length)
+                    ];
+            } else {
+                // Forced C Major (for c-major and practice modes)
+                rootNote = "C";
+            }
+
+            currentKeyRoot = rootNote;
+
+            // Generate EXACTLY 2 Octaves of Valid Notes
+            validNotesForLevel = [];
+
+            const rootIndex = ALL_NOTES_NAMES.indexOf(rootNote);
+            // Major Scale Steps extended to 2 octaves
+            const majorSteps = [
+                0, 2, 4, 5, 7, 9, 11, 12, 14, 16, 17, 19, 21, 23, 24,
+            ];
+
+            for (let step of majorSteps) {
+                const noteAbsIndex = rootIndex + step;
+                const noteName = ALL_NOTES_NAMES[noteAbsIndex % 12];
+                const octaveShift = Math.floor((rootIndex + step) / 12);
+                validNotesForLevel.push(`${noteName}${OCTAVE_START + octaveShift}`);
+            }
+
+            console.log(
+                `Game Style: ${style} (${rootNote} Major) - Notes: ${validNotesForLevel.join(
+                    ", "
+                )}`
+            );
+        }
+
+        // Initialize Melody Generator with current Key
+        // Use "major" scale (not pentatonic) to satisfy "GABCDE#FG" request
+        melodyGenerator = new MelodyGenerator(
+            currentKeyRoot,
+            style === "atonal" ? "atonal" : "major"
+        );
+
+        sequence = [];
+        songBuffer = []; // Reset buffer
+        level = 1;
+
+        lastRankText = "";
+        lives = 3;
+        perfectStreak = 0;
+        updateLivesUI();
+        updateInGameRank();
+
+        // Switch UI Screens
+        // New Logic: We have 3 screens: Start, Game, GameOver.
+        // 1. Hide Start
+        if (startOverlay) {
+            startOverlay.classList.add("d-none"); // Bootstrap utility
+            startOverlay.classList.remove("d-flex"); // Remove flex if present
+        }
+
+        // 2. Hide Game Over (just in case)
+        if (gameOverOverlay) {
+            gameOverOverlay.classList.add("d-none");
+        }
+
+        // 3. Show Game Board
+        if (gameContainer) {
+            gameContainer.classList.remove("d-none");
+            gameContainer.classList.add("d-flex"); // Restore flex layout
+        }
+
+        // PLAY PREVIEW
         await playPreview(preview, validNotesForLevel, signal);
 
         // Small delay before starting
@@ -395,7 +387,16 @@ async function startGame() {
         nextLevel(signal);
     } catch (e) {
         if (e.name === "AbortError") return;
-        throw e;
+        console.error("[MelodyMemory] Error in startGame:", e);
+        // Show start overlay again on error
+        if (startOverlay) {
+            startOverlay.classList.remove("d-none");
+            startOverlay.classList.add("d-flex");
+        }
+        if (gameContainer) {
+            gameContainer.classList.add("d-none");
+        }
+        piContainerClickable(true);
     }
 }
 
@@ -426,57 +427,59 @@ async function playPreview(type, notesToPlay, signal) {
 }
 
 async function nextLevel(signal) {
-    if (!signal) {
-        if (playbackAbortController) {
-            playbackAbortController.abort();
+    try {
+        if (!signal) {
+            if (playbackAbortController) {
+                playbackAbortController.abort();
+            }
+            playbackAbortController = new AbortController();
+            signal = playbackAbortController.signal;
         }
-        playbackAbortController = new AbortController();
-        signal = playbackAbortController.signal;
-    }
 
-    isPlayerTurn = false;
-    playerStep = 0;
-    isCurrentLevelPerfect = true;
+        isPlayerTurn = false;
+        playerStep = 0;
+        isCurrentLevelPerfect = true;
 
-    hideTimer();
-    piContainerClickable(false); // Visual indication
+        hideTimer();
+        piContainerClickable(false); // Visual indication
 
-    updateInGameRank();
+        updateInGameRank();
 
-    // Generate Note Logic
-    const mode = gameConfig.progressionMode || "prog-note";
-    let addedDuration = 0;
-    const targetDuration =
-        mode === "prog-double" ? 8 : mode === "prog-bar" ? 4 : 0;
+        // Generate Note Logic
+        const mode = gameConfig.progressionMode || "prog-note";
+        let addedDuration = 0;
+        const targetDuration =
+            mode === "prog-double" ? 8 : mode === "prog-bar" ? 4 : 0;
 
-    if (mode === "prog-note") {
-        const nextMelodyItem = melodyGenerator.getNextNote();
-        const sequenceItem = {
-            note: nextMelodyItem.name,
-            duration: nextMelodyItem.duration,
-            isBarStart: nextMelodyItem.isBarStart,
-        };
-        sequence.push(sequenceItem);
-    } else {
-        // Bar or Double
-        while (addedDuration < targetDuration) {
+        if (mode === "prog-note") {
             const nextMelodyItem = melodyGenerator.getNextNote();
-
             const sequenceItem = {
                 note: nextMelodyItem.name,
                 duration: nextMelodyItem.duration,
                 isBarStart: nextMelodyItem.isBarStart,
             };
             sequence.push(sequenceItem);
-            addedDuration += nextMelodyItem.duration;
+        } else {
+            // Bar or Double
+            let iterations = 0;
+            while (addedDuration < targetDuration && iterations < 50) {
+                iterations++;
+                const nextMelodyItem = melodyGenerator.getNextNote();
+
+                const sequenceItem = {
+                    note: nextMelodyItem.name,
+                    duration: nextMelodyItem.duration,
+                    isBarStart: nextMelodyItem.isBarStart,
+                };
+                sequence.push(sequenceItem);
+                addedDuration += nextMelodyItem.duration;
+            }
         }
-    }
 
-    // Render progress dots based on actual sequence length (not level number)
-    // This is important for bar/double-bar modes where multiple notes are added per level
-    renderProgressDots(sequence.length);
+        // Render progress dots based on actual sequence length (not level number)
+        // This is important for bar/double-bar modes where multiple notes are added per level
+        renderProgressDots(sequence.length);
 
-    try {
         await delay(600, signal);
 
         // Playback sequence
@@ -507,7 +510,10 @@ async function nextLevel(signal) {
         startTurnTimer();
     } catch (e) {
         if (e.name === "AbortError") return;
-        throw e;
+        console.error("[MelodyMemory] Error in nextLevel:", e);
+        // Ensure the game doesn't hang
+        isPlayerTurn = true;
+        piContainerClickable(true);
     }
 }
 

@@ -104,25 +104,25 @@ class IntervalTraining {
     }
 
     async playInterval() {
-        if (this.#isPlaying) return;
-        this.#isPlaying = true;
-
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-        }
-        const currentAbortController = new AbortController();
-        this.#playAbortController = currentAbortController;
-        const signal = currentAbortController.signal;
-
-        this.#setPlayButtonLoading(true);
-
-        const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
-        const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
-        const targetNote = this.#midiToNoteName(this.#currentTargetMidi);
-
-        this.#piano.stopAll();
-
         try {
+            if (this.#isPlaying) return;
+            this.#isPlaying = true;
+
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+            }
+            const currentAbortController = new AbortController();
+            this.#playAbortController = currentAbortController;
+            const signal = currentAbortController.signal;
+
+            this.#setPlayButtonLoading(true);
+
+            const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
+            const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
+            const targetNote = this.#midiToNoteName(this.#currentTargetMidi);
+
+            this.#piano.stopAll();
+
             if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
             if (selectedMode === 'harmonic') {
                 this.#piano.playNote(baseNote, 1.0);
@@ -143,86 +143,92 @@ class IntervalTraining {
             if (e.name === 'AbortError') {
                 return;
             }
-            throw e;
+            console.error('[IntervalTraining] Error playing interval:', e);
         } finally {
-            if (this.#playAbortController === currentAbortController) {
-                this.#isPlaying = false;
-                this.#setPlayButtonLoading(false);
-                this.#playAbortController = null;
+            this.#isPlaying = false;
+            this.#setPlayButtonLoading(false);
+            this.#playAbortController = null;
 
-                // Show options after the first playback
-                const optionsContainer = document.getElementById('interval-options-row');
-                if (optionsContainer && !this.#isShowingResult) {
-                    optionsContainer.classList.remove('d-none');
-                }
+            // Show options after the first playback
+            const optionsContainer = document.getElementById('interval-options-row');
+            if (optionsContainer && !this.#isShowingResult) {
+                optionsContainer.classList.remove('d-none');
             }
         }
     }
 
     nextQuestion() {
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-            this.#playAbortController = null;
-        }
-        if (this.#autoNextTimeout) {
-            clearTimeout(this.#autoNextTimeout);
-            this.#autoNextTimeout = null;
-        }
-        this.#piano.stopAll();
-        this.#isPlaying = false;
-        this.#setPlayButtonLoading(false);
-
-        this.#isShowingResult = false;
-        const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
-        
-        let isValid = false;
-        while (!isValid) {
-            if (selectedMode === 'fixed-c') {
-                // In MIDI standard, Middle C (C4) is 60.
-                this.#currentBaseMidi = 60; 
-            } else {
-                // Ensure base note does not cause target note to easily exceed C5 (72).
-                // Base note ranges from C3 (48) to B3 (59).
-                this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+        try {
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+                this.#playAbortController = null;
             }
+            if (this.#autoNextTimeout) {
+                clearTimeout(this.#autoNextTimeout);
+                this.#autoNextTimeout = null;
+            }
+            this.#piano.stopAll();
+            this.#isPlaying = false;
+            this.#setPlayButtonLoading(false);
+
+            // Reset buttons early
+            document.querySelectorAll('.interval-btn').forEach(btn => {
+                btn.classList.remove('btn-success', 'btn-danger');
+                btn.classList.remove('btn-outline-secondary', 'btn-outline-warning');
+                if (btn.dataset.key === 'give-up') {
+                    btn.classList.add('btn-outline-warning');
+                } else {
+                    btn.classList.add('btn-outline-secondary');
+                }
+                btn.disabled = false;
+            });
+
+            this.#isShowingResult = false;
+            const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
             
-            this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
-            this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
-            
-            // Ensure target falls within real C3 (48) to C5 (72)
-            if (this.#currentTargetMidi >= 48 && this.#currentTargetMidi <= 72) {
-                isValid = true;
+            let isValid = false;
+            let iterations = 0;
+            while (!isValid && iterations < 100) {
+                iterations++;
+                if (selectedMode === 'fixed-c') {
+                    // In MIDI standard, Middle C (C4) is 60.
+                    this.#currentBaseMidi = 60; 
+                } else {
+                    // Ensure base note does not cause target note to easily exceed C5 (72).
+                    // Base note ranges from C3 (48) to B3 (59).
+                    this.#currentBaseMidi = 48 + Math.floor(Math.random() * 12); 
+                }
+                
+                this.#currentIntervalKey = this.#intervalKeys[Math.floor(Math.random() * this.#intervalKeys.length)];
+                this.#currentTargetMidi = this.#currentBaseMidi + this.#intervalSemitones[this.#currentIntervalKey];
+                
+                // Ensure target falls within real C3 (48) to C5 (72)
+                if (this.#currentTargetMidi >= 48 && this.#currentTargetMidi <= 72) {
+                    isValid = true;
+                }
             }
-        }
 
-        // Update Question UI
-        const questionLabel = document.getElementById('question-label');
-        if (questionLabel && this.#localizedStrings.questionTemplate) {
-             questionLabel.textContent = this.#localizedStrings.questionTemplate;
-        }
-
-        // Reset buttons
-        document.querySelectorAll('.interval-btn').forEach(btn => {
-            btn.classList.remove('btn-success', 'btn-danger');
-            btn.classList.remove('btn-outline-secondary', 'btn-outline-warning');
-            if (btn.dataset.key === 'give-up') {
-                btn.classList.add('btn-outline-warning');
-            } else {
-                btn.classList.add('btn-outline-secondary');
+            // Update Question UI
+            const questionLabel = document.getElementById('question-label');
+            if (questionLabel && this.#localizedStrings.questionTemplate) {
+                 questionLabel.textContent = this.#localizedStrings.questionTemplate;
             }
-            btn.disabled = false;
-        });
 
-        // Reset Play Button
-        const playButtonText = document.getElementById('play-button-text');
-        if (playButtonText) {
-            playButtonText.textContent = this.#localizedStrings.playInterval;
+            // Reset Play Button
+            const playButtonText = document.getElementById('play-button-text');
+            if (playButtonText) {
+                playButtonText.textContent = this.#localizedStrings.playInterval;
+            }
+
+            // Hide result details
+            document.getElementById('result-details')?.classList.add('d-none');
+            document.getElementById('interval-options-row')?.classList.remove('d-none');
+            this.#piano.clearAllHighlights();
+        } catch (e) {
+            console.error('[IntervalTraining] Error in nextQuestion:', e);
+            document.querySelectorAll('.interval-btn').forEach(btn => btn.disabled = false);
+            this.#setPlayButtonLoading(false);
         }
-
-        // Hide result details
-        document.getElementById('result-details')?.classList.add('d-none');
-        document.getElementById('interval-options-row')?.classList.remove('d-none');
-        this.#piano.clearAllHighlights();
     }
 
     #handleAnswer(button) {

@@ -163,40 +163,45 @@ class ExamQuestion {
     }
 
     nextQuestion() {
-        // ... (此函数 100% 不变)
-        let basePitch, intervalKey, interval, localizedIntervalName;
-        let isValid = false;
-        while (!isValid) {
-            basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
-            intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
-            interval = INTERVAL_DEFINITIONS[intervalKey];
-            this.#correctAnswerPitch = this.calculateInterval(basePitch, interval);
-            isValid = this.#isPitchInRange(this.#correctAnswerPitch);
+        try {
+            let basePitch, intervalKey, interval, localizedIntervalName;
+            let isValid = false;
+            let iterations = 0;
+            while (!isValid && iterations < 100) {
+                iterations++;
+                basePitch = EXAM_PITCHES[Math.floor(Math.random() * EXAM_PITCHES.length)];
+                intervalKey = INTERVAL_KEYS[Math.floor(Math.random() * INTERVAL_KEYS.length)];
+                interval = INTERVAL_DEFINITIONS[intervalKey];
+                this.#correctAnswerPitch = this.calculateInterval(basePitch, interval);
+                isValid = this.#isPitchInRange(this.#correctAnswerPitch);
+            }
+            localizedIntervalName = this.#localizedStrings.intervals[intervalKey];
+            
+            const wrongAnswers = this.generateWrongAnswers(basePitch, interval, this.#correctAnswerPitch);
+            const allAnswers = [this.#correctAnswerPitch, ...wrongAnswers];
+            this.shuffleArray(allAnswers);
+
+            console.clear();
+            console.group("--- 🎵 考试题目调试信息 🎵 ---");
+            console.log(`题目 (Question): ${basePitch} 的 ${localizedIntervalName} 是？`);
+            console.log(`✅ 计算出的正确答案 (Correct): ${this.#correctAnswerPitch}`);
+            console.log(`❌ 生成的错误答案 (Wrong): ${wrongAnswers.join(', ')}`);
+            console.log("--- 答案分配 (Assignment) ---");
+            console.log(`   ➡️ 答案 1 (ID: ${this.#answerElements[0].id}) 设为: ${allAnswers[0]} ${allAnswers[0] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+            console.log(`   ➡️ 答案 2 (ID: ${this.#answerElements[1].id}) 设为: ${allAnswers[1]} ${allAnswers[1] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+            console.log(`   ➡️ 答案 3 (ID: ${this.#answerElements[2].id}) 设为: ${allAnswers[2]} ${allAnswers[2] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
+            console.groupEnd();
+
+            for (let i = 0; i < this.#answerStaffs.length; i++) {
+                this.#answerStaffs[i].showNote(allAnswers[i]);
+                this.#answerElements[i].dataset.pitch = allAnswers[i];
+            }
+
+            this.#questionStaff.showNote(basePitch);
+            this.#questionLabel.innerText = this.#localizedStrings.questionTemplate.replace('(0)', localizedIntervalName);
+        } catch (e) {
+            console.error('[IntervalExam] Error in nextQuestion:', e);
         }
-        localizedIntervalName = this.#localizedStrings.intervals[intervalKey];
-        
-        const wrongAnswers = this.generateWrongAnswers(basePitch, interval, this.#correctAnswerPitch);
-        const allAnswers = [this.#correctAnswerPitch, ...wrongAnswers];
-        this.shuffleArray(allAnswers);
-
-        console.clear();
-        console.group("--- 🎵 考试题目调试信息 🎵 ---");
-        console.log(`题目 (Question): ${basePitch} 的 ${localizedIntervalName} 是？`);
-        console.log(`✅ 计算出的正确答案 (Correct): ${this.#correctAnswerPitch}`);
-        console.log(`❌ 生成的错误答案 (Wrong): ${wrongAnswers.join(', ')}`);
-        console.log("--- 答案分配 (Assignment) ---");
-        console.log(`   ➡️ 答案 1 (ID: ${this.#answerElements[0].id}) 设为: ${allAnswers[0]} ${allAnswers[0] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
-        console.log(`   ➡️ 答案 2 (ID: ${this.#answerElements[1].id}) 设为: ${allAnswers[1]} ${allAnswers[1] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
-        console.log(`   ➡️ 答案 3 (ID: ${this.#answerElements[2].id}) 设为: ${allAnswers[2]} ${allAnswers[2] === this.#correctAnswerPitch ? ' (✅)' : ''}`);
-        console.groupEnd();
-
-        for (let i = 0; i < this.#answerStaffs.length; i++) {
-            this.#answerStaffs[i].showNote(allAnswers[i]);
-            this.#answerElements[i].dataset.pitch = allAnswers[i];
-        }
-
-        this.#questionStaff.showNote(basePitch);
-        this.#questionLabel.innerText = this.#localizedStrings.questionTemplate.replace('(0)', localizedIntervalName);
     }
 
     generateWrongAnswers(basePitch, interval, correctAnswer) {

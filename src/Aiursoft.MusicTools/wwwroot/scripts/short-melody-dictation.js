@@ -88,40 +88,54 @@ class ShortMelodyDictation {
     }
 
     nextQuestion() {
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-            this.#playAbortController = null;
+        try {
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+                this.#playAbortController = null;
+            }
+            this.#playingTimeouts.forEach(t => clearTimeout(t));
+            this.#playingTimeouts = [];
+            this.piano.stopAll();
+            this.isPlaying = false;
+            this.dom.btnPlayMelody.disabled = false;
+
+            const barsInput = document.querySelector('input[name="bars"]:checked');
+            const bars = barsInput ? parseInt(barsInput.value) : 2;
+            const timeSignatureInput = document.querySelector('input[name="timeSignature"]:checked');
+            const timeSignature = timeSignatureInput ? timeSignatureInput.value : "4/4";
+            const modeInput = document.querySelector('input[name="gameMode"]:checked');
+            this.mode = modeInput ? modeInput.value : 'A';
+
+            this.currentMelody = this.generator.generate(bars, timeSignature);
+            this.userAttempt = [];
+            this.playCount = 0;
+            
+            if (this.mode === 'A' || this.mode === 'C') {
+                this.dom.pianoArea.classList.remove('d-none');
+                this.dom.staffArea.classList.add('d-none');
+            } else {
+                this.dom.pianoArea.classList.add('d-none');
+                this.dom.staffArea.classList.remove('d-none');
+                this._setupStaffChoices();
+            }
+
+            this.playMelody();
+        } catch (e) {
+            console.error('[ShortMelodyDictation] Error in nextQuestion:', e);
+            this.isPlaying = false;
+            this.dom.btnPlayMelody.disabled = false;
         }
-        this.#playingTimeouts.forEach(t => clearTimeout(t));
-        this.#playingTimeouts = [];
-        this.piano.stopAll();
-        this.isPlaying = false;
-        this.dom.btnPlayMelody.disabled = false;
-
-        const bars = parseInt(document.querySelector('input[name="bars"]:checked').value);
-        const timeSignature = document.querySelector('input[name="timeSignature"]:checked').value;
-        this.mode = document.querySelector('input[name="gameMode"]:checked').value;
-
-        this.currentMelody = this.generator.generate(bars, timeSignature);
-        this.userAttempt = [];
-        this.playCount = 0;
-        
-        if (this.mode === 'A' || this.mode === 'C') {
-            this.dom.pianoArea.classList.remove('d-none');
-            this.dom.staffArea.classList.add('d-none');
-        } else {
-            this.dom.pianoArea.classList.add('d-none');
-            this.dom.staffArea.classList.remove('d-none');
-            this._setupStaffChoices();
-        }
-
-        this.playMelody();
     }
 
     _setupStaffChoices() {
+        const barsInput = document.querySelector('input[name="bars"]:checked');
+        const bars = barsInput ? parseInt(barsInput.value) : 2;
+        const timeSignatureInput = document.querySelector('input[name="timeSignature"]:checked');
+        const timeSignature = timeSignatureInput ? timeSignatureInput.value : "4/4";
+
         this.wrongMelodies = [
-            this.generator.generate(parseInt(document.querySelector('input[name="bars"]:checked').value), document.querySelector('input[name="timeSignature"]:checked').value),
-            this.generator.generate(parseInt(document.querySelector('input[name="bars"]:checked').value), document.querySelector('input[name="timeSignature"]:checked').value)
+            this.generator.generate(bars, timeSignature),
+            this.generator.generate(bars, timeSignature)
         ];
 
         this.allChoices = [
@@ -138,24 +152,24 @@ class ShortMelodyDictation {
     }
 
     async playMelody() {
-        if (this.isPlaying) return;
-        this.isPlaying = true;
-        this.dom.btnPlayMelody.disabled = true;
-
-        if (this.#playAbortController) {
-            this.#playAbortController.abort();
-        }
-        const currentAbortController = new AbortController();
-        this.#playAbortController = currentAbortController;
-        const signal = currentAbortController.signal;
-
-        this.playCount++;
-        console.log(`Playing melody. Count: ${this.playCount}`);
-        
-        this.piano.stopAll();
-        const beatDuration = 0.5; // 120 BPM
-
         try {
+            if (this.isPlaying) return;
+            this.isPlaying = true;
+            this.dom.btnPlayMelody.disabled = true;
+
+            if (this.#playAbortController) {
+                this.#playAbortController.abort();
+            }
+            const currentAbortController = new AbortController();
+            this.#playAbortController = currentAbortController;
+            const signal = currentAbortController.signal;
+
+            this.playCount++;
+            console.log(`Playing melody. Count: ${this.playCount}`);
+            
+            this.piano.stopAll();
+            const beatDuration = 0.5; // 120 BPM
+
             // Sort notes by time just in case
             const sortedNotes = [...this.currentMelody].sort((a, b) => a.time - b.time);
             
@@ -195,13 +209,11 @@ class ShortMelodyDictation {
             if (e.name === 'AbortError') {
                 return;
             }
-            throw e;
+            console.error('[ShortMelodyDictation] Error playing melody:', e);
         } finally {
-            if (this.#playAbortController === currentAbortController) {
-                this.isPlaying = false;
-                this.dom.btnPlayMelody.disabled = false;
-                this.#playAbortController = null;
-            }
+            this.isPlaying = false;
+            this.dom.btnPlayMelody.disabled = false;
+            this.#playAbortController = null;
         }
     }
 
