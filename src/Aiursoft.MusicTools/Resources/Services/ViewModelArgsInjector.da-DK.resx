@@ -48,6 +48,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Rediger profil</value>
   </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Akordberegner</value>
+  </data>
   <data name="Chord training" xml:space="preserve">
     <value>Akordtræning</value>
   </data>

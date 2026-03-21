@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Hợp âm tăng</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Máy tính hợp âm</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Chọn hợp âm</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Loại hợp âm</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Vòng tròn quãng năm</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Bộ chọn bậc</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Thông tin hợp âm đã phát hiện</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Hợp âm Diatonic</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Giảm 7</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Hợp ba giảm</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Hợp âm 7 thống trị</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Half-Diminished 7th</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Piano Tương tác</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Hợp âm không hợp lệ</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Hợp âm trưởng 7</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Hợp âm trưởng ba âm</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Hợp âm thứ 7</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Hợp âm thứ</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Bộ chọn chế độ</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Nốt nhạc</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Đặt lại lựa chọn</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Xoay trái</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Xoay sang phải</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Nốt chủ</value>
+  </data>
+
+</root>

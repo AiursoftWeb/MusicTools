@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>คอร์ดสามเสียงเพิ่ม</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>เครื่องคำนวณคอร์ด</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>การเลือกคอร์ด</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>ประเภทคอร์ด</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>วงกลมของห้า</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>ตัวเลือกขั้น</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>ข้อมูลคอร์ดที่ตรวจพบ</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>คอร์ดไดอาโทนิก</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>diminished seventh</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>คอร์ดสามเสียงลดทอน</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>แฮฟ-ดิมินิชชด์ 7th</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>เปียโนแบบโต้ตอบ</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>คอร์ดไม่ถูกต้อง</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>เมเจอร์เซเว่น</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>คอร์ดสามเสียงใหญ่</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>คอร์ดไมเนอร์ 7</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>คอร์ดตรีคายน้อย</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>ตัวเลือกโหมด</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>โน้ต</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>รีเซ็ตการเลือก</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>หมุนซ้าย</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>หมุนไปทางขวา</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>โน้ตหลัก</value>
+  </data>
+
+</root>

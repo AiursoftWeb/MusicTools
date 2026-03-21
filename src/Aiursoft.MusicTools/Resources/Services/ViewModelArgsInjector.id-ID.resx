@@ -48,6 +48,9 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Ubah Profil</value>
   </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Kalkulator Akor</value>
+  </data>
   <data name="Chord training" xml:space="preserve">
     <value>Pelatihan Akor</value>
   </data>
