@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>7th-soinnut</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>Arpeggio</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>Oikein!</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Diminished 7th</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>Pienen kvintin kolmisointu</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominanttiseptakkord</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>Viides sävel</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>puolidiminutoitu 7.</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>Antaudun</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>Kuuntele sointu ja määritä sen tyyppi.</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Suuri 7.</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>Suuri kolmiääni</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7 -akkordi</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>Pieni kolmikko</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>seitsemäs sävel</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Aloita C:stä</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>Kolmas käännös</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>Kolmas sävel</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>Triadeja</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>Mikä on soitetun akkordin tyyppi?</value>

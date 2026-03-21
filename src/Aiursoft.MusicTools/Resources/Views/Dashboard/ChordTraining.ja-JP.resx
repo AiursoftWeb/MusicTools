@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>7th コード</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>アルペジオ</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>正解！</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>diminished 7th</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>減三和音</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>ドミナント7th</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>第五音</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>半減七和音</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>諦めます</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>和音を聞き、その種類を特定してください。</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>メジャーセブス</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>長三和音</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>マイナー7th</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>短三和音</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>7th note</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Cから始める</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>第三転位</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>三度音</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>トライアド</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>演奏されたコードの種類は何ですか？</value>

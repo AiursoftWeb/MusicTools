@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Удосконалений тріад</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Калькулятор акордів</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Вибір акорду</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Тип акорду</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Круг квінт</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Вибір ступеня</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Інформація про виявленний акорд</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Діатонічні акорди</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Семізменений септакорд</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Скорочений тріад</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Домінантсептакорд</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Півзменшений септакорд</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Інтерактивне піаніно</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Неправильний акорд</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Ма́жор 7</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Великий тріадний акорд</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Мінорне септакорд</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Мініорний тріад</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Вибір режиму</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Ноти</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Скинути вибір</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Поворот ліворуч</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Повернути праворуч</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Тоніка</value>
+  </data>
+
+</root>

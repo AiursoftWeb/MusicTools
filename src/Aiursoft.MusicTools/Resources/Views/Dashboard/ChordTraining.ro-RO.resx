@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>Acorduri de 7</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>Arapgio</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>Corect!</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Acord diminuat cu 7</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>Triadă diminuită</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Dominant 7th</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>A cincea notă</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Semi-diminuată de 7</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>Mă predau</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>Ascultați acordul și identificați tipul său.</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Acord Major 7</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>Triadă Majoră</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Minor 7th</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>Triadă Minoră</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>Nota a șaptea</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>Începe de la C</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>A treia inversie</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>Nota a treia</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>Triade</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>Care este tipul acordului redat?</value>

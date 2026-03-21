@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Arpeggio" xml:space="preserve">
+      <data name="7th Chords" xml:space="preserve">
+    <value>7th 화음</value>
+  </data>
+  <data name="Arpeggio" xml:space="preserve">
     <value>아르페지오</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
@@ -42,8 +45,14 @@
   <data name="Correct!" xml:space="preserve">
     <value>정답입니다!</value>
   </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>감소 7화음</value>
+  </data>
   <data name="Diminished Triad" xml:space="preserve">
     <value>감3화음</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>지배 7화음</value>
   </data>
   <data name="Fifth note" xml:space="preserve">
     <value>다섯 번째 음</value>
@@ -51,14 +60,23 @@
   <data name="First Inversion" xml:space="preserve">
     <value>First Inversion</value>
   </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>반감 7화음</value>
+  </data>
   <data name="I give up" xml:space="preserve">
     <value>포기합니다</value>
   </data>
   <data name="Listen to the chord and identify its type." xml:space="preserve">
     <value>화음을 듣고 그 종류를 식별하세요.</value>
   </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>마저 7th</value>
+  </data>
   <data name="Major Triad" xml:space="preserve">
     <value>장3화음</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>마이너 7th</value>
   </data>
   <data name="Minor Triad" xml:space="preserve">
     <value>단조 삼화음</value>
@@ -96,11 +114,20 @@
   <data name="Second Inversion" xml:space="preserve">
     <value>Second Inversion</value>
   </data>
+  <data name="Seventh note" xml:space="preserve">
+    <value>7 음</value>
+  </data>
   <data name="Start from C" xml:space="preserve">
     <value>C에서 시작</value>
   </data>
+  <data name="Third Inversion" xml:space="preserve">
+    <value>3 차 역위</value>
+  </data>
   <data name="Third note" xml:space="preserve">
     <value>3음</value>
+  </data>
+  <data name="Triads" xml:space="preserve">
+    <value>트라이어드</value>
   </data>
   <data name="What is the type of the chord played?" xml:space="preserve">
     <value>연주된 화음의 종류는 무엇인가요?</value>

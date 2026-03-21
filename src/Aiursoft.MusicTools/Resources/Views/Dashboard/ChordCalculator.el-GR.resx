@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Augmented Triad" xml:space="preserve">
+    <value>Αυξημένη Τρίδα</value>
+  </data>
+  <data name="Chord Calculator" xml:space="preserve">
+    <value>Υπολογιστής Συμφωνιών</value>
+  </data>
+  <data name="Chord Selection" xml:space="preserve">
+    <value>Επιλογή Συμφωνίας</value>
+  </data>
+  <data name="Chord Type" xml:space="preserve">
+    <value>Τύπος Συμφωνίας</value>
+  </data>
+  <data name="Circle of Fifths" xml:space="preserve">
+    <value>Κύκλος των Πέντε</value>
+  </data>
+  <data name="Degree Selector" xml:space="preserve">
+    <value>Επιλογέας Βαθμίδας</value>
+  </data>
+  <data name="Detected Chord Info" xml:space="preserve">
+    <value>Πληροφορίες Συμφωνίας που Εντοπίστηκαν</value>
+  </data>
+  <data name="Diatonic Chords" xml:space="preserve">
+    <value>Διατονικά Αρμόνια</value>
+  </data>
+  <data name="Diminished 7th" xml:space="preserve">
+    <value>Ελαττωμένη 7η</value>
+  </data>
+  <data name="Diminished Triad" xml:space="preserve">
+    <value>Ελαττωμένη Τρίδα</value>
+  </data>
+  <data name="Dominant 7th" xml:space="preserve">
+    <value>Εξαρτημένο 7ο</value>
+  </data>
+  <data name="Half-Diminished 7th" xml:space="preserve">
+    <value>Ημι-ελαττωμένη 7η</value>
+  </data>
+  <data name="Interactive Piano" xml:space="preserve">
+    <value>Διαδραστικό Πιάνο</value>
+  </data>
+  <data name="Invalid Chord" xml:space="preserve">
+    <value>Άκυρη Συμφωνία</value>
+  </data>
+  <data name="Major 7th" xml:space="preserve">
+    <value>Μεγάλη 7η</value>
+  </data>
+  <data name="Major Triad" xml:space="preserve">
+    <value>Μεγάλη Τρίτη</value>
+  </data>
+  <data name="Minor 7th" xml:space="preserve">
+    <value>Μικρή 7η</value>
+  </data>
+  <data name="Minor Triad" xml:space="preserve">
+    <value>Ελάσσων Τρίχορδο</value>
+  </data>
+  <data name="Mode Selector" xml:space="preserve">
+    <value>Επιλογέα Λειτουργίας</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Σημειώσεις</value>
+  </data>
+  <data name="Reset Selection" xml:space="preserve">
+    <value>Επαναφορά επιλογής</value>
+  </data>
+  <data name="Rotate Left" xml:space="preserve">
+    <value>Περιστροφή Αριστερά</value>
+  </data>
+  <data name="Rotate Right" xml:space="preserve">
+    <value>Περιστροφή δεξιά</value>
+  </data>
+  <data name="Tonic" xml:space="preserve">
+    <value>Τονική</value>
+  </data>
+
+</root>
