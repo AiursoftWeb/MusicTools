@@ -13,8 +13,12 @@
   <data name="Rotate Left" xml:space="preserve"><value>Rotate Left</value></data>
   <data name="Rotate Right" xml:space="preserve"><value>Rotate Right</value></data>
   <data name="Chord Selection" xml:space="preserve"><value>Chord Selection</value></data>
+  <data name="Lock Selection" xml:space="preserve"><value>Lock Selection</value></data>
+  <data name="Diatonic Presets" xml:space="preserve"><value>Diatonic Presets</value></data>
   <data name="Mode Selector" xml:space="preserve"><value>Mode Selector</value></data>
   <data name="Diatonic Chords" xml:space="preserve"><value>Diatonic Chords</value></data>
+  <data name="Diatonic Triads" xml:space="preserve"><value>Diatonic Triads</value></data>
+  <data name="Diatonic 7th Chords" xml:space="preserve"><value>Diatonic 7th Chords</value></data>
   <data name="Major Triad" xml:space="preserve"><value>Major Triad</value></data>
   <data name="Minor Triad" xml:space="preserve"><value>Minor Triad</value></data>
   <data name="Diminished Triad" xml:space="preserve"><value>Diminished Triad</value></data>
@@ -30,6 +34,8 @@
   <data name="Detected Chord Info" xml:space="preserve"><value>Detected Chord Info</value></data>
   <data name="Notes" xml:space="preserve"><value>Notes</value></data>
   <data name="Chord Type" xml:space="preserve"><value>Chord Type</value></data>
+  <data name="Root Note" xml:space="preserve"><value>Root Note</value></data>
+  <data name="All keys can be root" xml:space="preserve"><value>All keys can be root</value></data>
   <data name="Tonic" xml:space="preserve"><value>Tonic</value></data>
   <data name="Invalid Chord" xml:space="preserve"><value>Invalid Chord</value></data>
 </root>

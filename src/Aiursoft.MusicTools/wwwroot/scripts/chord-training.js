@@ -8,7 +8,7 @@ class ChordTraining {
         'triad': {
             'major': [0, 4, 7],
             'minor': [0, 3, 7],
-            'diminished': [0, 3, 6],
+            'dimidished': [0, 3, 6],
             'augmented': [0, 4, 8]
         },
         'seventh': {
@@ -29,9 +29,10 @@ class ChordTraining {
     #currentBaseMidi;
     #currentChordKey;
     #currentInversion; 
-    #currentNotesMidi = [];
+    #currentFunctionalNotes = []; // Stores objects: { midi: number, funcIdx: number }
     #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    #notesFlat = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
     #lastQuestion = null;
 
     constructor(piano, localizedStrings) {
@@ -95,7 +96,6 @@ class ChordTraining {
             chordOptionsContainer.appendChild(col);
         });
 
-        // Add "I give up" button
         const giveUpCol = document.createElement('div');
         giveUpCol.className = 'col';
         const giveUpButton = document.createElement('button');
@@ -122,7 +122,6 @@ class ChordTraining {
                     resolve();
                 }
             }, ms);
-            
             if (signal) {
                 signal.addEventListener('abort', () => {
                     clearTimeout(timer);
@@ -159,7 +158,7 @@ class ChordTraining {
             this.#setPlayButtonLoading(true);
 
             const playMode = document.querySelector('input[name="play-mode"]:checked')?.value || 'block';
-            const notesToPlay = (this.#currentNotesMidi || []).map(midi => this.#midiToNoteName(midi));
+            const notesToPlay = this.#currentFunctionalNotes.map(n => this.#midiToNoteName(n.midi));
 
             this.#piano.stopAll();
 
@@ -170,9 +169,11 @@ class ChordTraining {
                 });
                 await this.#delay(1200, signal);
             } else if (playMode === 'arpeggio') {
-                for (const note of notesToPlay) {
+                // Play in physical pitch order for arpeggio
+                const sortedNotes = [...this.#currentFunctionalNotes].sort((a, b) => a.midi - b.midi);
+                for (const n of sortedNotes) {
                     if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
-                    this.#piano.playNote(note, 0.7);
+                    this.#piano.playNote(this.#midiToNoteName(n.midi), 0.7);
                     await this.#delay(400, signal);
                 }
                 await this.#delay(600, signal);
@@ -229,7 +230,6 @@ class ChordTraining {
             const keysInCategory = Object.keys(chordsInCategory);
 
             let isValid = false;
-            let notesMidi = [];
             let iterations = 0;
             
             while (!isValid && iterations < 100) {
@@ -246,8 +246,8 @@ class ChordTraining {
                     }
                 }
 
-                const intervals = chordsInCategory[this.#currentChordKey];
-                const noteCount = intervals.length;
+                const absoluteOffsets = chordsInCategory[this.#currentChordKey];
+                const noteCount = absoluteOffsets.length;
 
                 if (voicingMode === 'root') {
                     this.#currentInversion = 0;
@@ -255,24 +255,29 @@ class ChordTraining {
                     this.#currentInversion = Math.floor(Math.random() * noteCount);
                 }
                 
-                notesMidi = intervals.map(interval => this.#currentBaseMidi + interval);
+                // Track identity: funcIdx 0=root, 1=3rd, 2=5th, 3=7th
+                let notesWithFunction = absoluteOffsets.map((offset, index) => ({
+                    midi: this.#currentBaseMidi + offset,
+                    funcIdx: index
+                }));
                 
+                // Apply inversions by shifting the lowest functional note
                 for(let i = 0; i < this.#currentInversion; i++) {
-                    notesMidi[0] += 12;
-                    notesMidi.sort((a, b) => a - b);
+                    let lowest = notesWithFunction.reduce((prev, curr) => (curr.midi < prev.midi ? curr : prev));
+                    lowest.midi += 12;
                 }
 
-                if (notesMidi[notesMidi.length - 1] <= 72 && notesMidi[0] >= 48) {
+                const midis = notesWithFunction.map(n => n.midi);
+                if (Math.max(...midis) <= 72 && Math.min(...midis) >= 48) {
                     const questionState = `${this.#currentBaseMidi}-${this.#currentChordKey}-${this.#currentInversion}`;
                     if (questionState !== this.#lastQuestion || iterations > 50) {
                         isValid = true;
                         this.#lastQuestion = questionState;
+                        this.#currentFunctionalNotes = notesWithFunction;
                     }
                 }
             }
             
-            this.#currentNotesMidi = notesMidi;
-
             const questionLabel = document.getElementById('question-label');
             if (questionLabel && this.#localizedStrings.questionTemplate) {
                  questionLabel.textContent = this.#localizedStrings.questionTemplate;
@@ -295,22 +300,17 @@ class ChordTraining {
 
     #handleAnswer(button) {
         const selectedKey = button.dataset.key;
-        
         if (selectedKey === 'give-up') {
             this.#showResult();
             return;
         }
-
         if (selectedKey === this.#currentChordKey) {
             this.#correctCount++;
             document.getElementById('correct-count').textContent = this.#correctCount;
-
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-success');
-            
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = true);
             this.#setPlayButtonLoading(true);
-
             if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
             this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
@@ -320,11 +320,35 @@ class ChordTraining {
         } else {
             this.#wrongCount++;
             document.getElementById('wrong-count').textContent = this.#wrongCount;
-
             button.classList.remove('btn-outline-secondary');
             button.classList.add('btn-danger');
             button.disabled = true;
         }
+    }
+
+    #getSmartNoteName(rootPc, midi, funcIdx) {
+        const letters = ["C", "D", "E", "F", "G", "A", "B"];
+        const letterToMidi = { "C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11 };
+        
+        const rootNameSimple = this.#notesFlat[rootPc];
+        const rootLetter = rootNameSimple[0];
+        const rootLetterIdx = letters.indexOf(rootLetter);
+        const degreeSteps = [0, 2, 4, 6];
+
+        const pc = midi % 12;
+        const octave = Math.floor(midi / 12) - 1;
+        const targetLetterIdx = (rootLetterIdx + degreeSteps[funcIdx]) % 7;
+        const targetLetter = letters[targetLetterIdx];
+        const targetBaseMidi = letterToMidi[targetLetter];
+        
+        let diff = (pc - targetBaseMidi + 12) % 12;
+        if (diff > 6) diff -= 12;
+        let accidental = "";
+        if (diff === 1) accidental = "#";
+        else if (diff === 2) accidental = "##";
+        else if (diff === -1) accidental = "b";
+        else if (diff === -2) accidental = "bb";
+        return targetLetter + accidental + octave;
     }
 
     #showResult() {
@@ -335,38 +359,36 @@ class ChordTraining {
             resultDetails.classList.remove('d-none');
         }
 
-        const chordName = this.#localizedStrings.chords[this.#currentChordKey];
+        const rootPc = this.#currentBaseMidi % 12;
         
+        const chordName = this.#localizedStrings.chords[this.#currentChordKey];
         let inversionText = this.#localizedStrings.rootPosition;
         if (this.#currentInversion === 1) inversionText = this.#localizedStrings.firstInversion;
         if (this.#currentInversion === 2) inversionText = this.#localizedStrings.secondInversion;
         if (this.#currentInversion === 3) inversionText = this.#localizedStrings.thirdInversion;
 
-        const nameEl = document.getElementById('result-chord-name');
-        if (nameEl) nameEl.textContent = chordName;
+        document.getElementById('result-chord-name').textContent = chordName;
+        document.getElementById('result-inversion').textContent = inversionText;
 
-        const inversionEl = document.getElementById('result-inversion');
-        if (inversionEl) inversionEl.textContent = inversionText;
+        // Populate results using the tracked MIDI values
+        const rootObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 0);
+        const thirdObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 1);
+        const fifthObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 2);
+        const seventhObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 3);
 
-        const rootEl = document.getElementById('result-root-note');
-        if (rootEl) rootEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[0]);
-
-        const thirdEl = document.getElementById('result-third-note');
-        if (thirdEl) thirdEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[1]);
-
-        const fifthEl = document.getElementById('result-fifth-note');
-        if (fifthEl) fifthEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[2]);
+        document.getElementById('result-root-note').textContent = this.#getSmartNoteName(rootPc, rootObj.midi, 0);
+        document.getElementById('result-third-note').textContent = this.#getSmartNoteName(rootPc, thirdObj.midi, 1);
+        document.getElementById('result-fifth-note').textContent = this.#getSmartNoteName(rootPc, fifthObj.midi, 2);
 
         const seventhRow = document.getElementById('result-seventh-row');
-        const seventhEl = document.getElementById('result-seventh-note');
-        if (this.#currentNotesMidi.length > 3) {
+        if (seventhObj) {
             seventhRow?.classList.remove('d-none');
-            if (seventhEl) seventhEl.textContent = this.#midiToNoteName(this.#currentNotesMidi[3]);
+            document.getElementById('result-seventh-note').textContent = this.#getSmartNoteName(rootPc, seventhObj.midi, 3);
         } else {
             seventhRow?.classList.add('d-none');
         }
 
-        const notesToHighlight = this.#currentNotesMidi.map(midi => this.#midiToNoteName(midi));
+        const notesToHighlight = this.#currentFunctionalNotes.map(n => this.#midiToNoteName(n.midi));
         this.#piano.clearAllHighlights();
         this.#piano.highlightKeys(notesToHighlight, 'select-highlight');
 
@@ -374,12 +396,6 @@ class ChordTraining {
         if (playButtonText) {
             playButtonText.textContent = this.#localizedStrings.nextQuestion;
         }
-    }
-
-    setupButtonHandlers() {
-        document.querySelectorAll('.chord-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => this.#handleAnswer(e.currentTarget));
-        });
     }
 }
 
@@ -402,7 +418,7 @@ window.startChordTraining = (pianoContainerId) => {
         chords: {
             'major': getLocalizedText('chord-major', 'Major Triad'),
             'minor': getLocalizedText('chord-minor', 'Minor Triad'),
-            'diminished': getLocalizedText('chord-diminished', 'Diminished Triad'),
+            'dimidished': getLocalizedText('chord-diminished', 'Diminished Triad'),
             'augmented': getLocalizedText('chord-augmented', 'Augmented Triad'),
             'maj7': getLocalizedText('chord-maj7', 'Major 7th'),
             'dom7': getLocalizedText('chord-dom7', 'Dominant 7th'),

@@ -15,6 +15,7 @@
     <span data-key="m7b5-chord">@Localizer["Half-Diminished 7th"]</span>
     <span data-key="dim7-chord">@Localizer["Diminished 7th"]</span>
     <span data-key="invalid-chord">@Localizer["Invalid Chord"]</span>
+    <span data-key="all-keys-root">@Localizer["All keys can be root"]</span>
 </div>
 
 <div class="container-fluid py-4">
@@ -65,13 +66,20 @@
                     <h5 class="card-title mb-0">@Localizer["Chord Selection"]</h5>
                 </div>
                 <div class="card-body">
+                    <h6 class="card-subtitle mb-3 text-muted">@Localizer["Diatonic Presets"]</h6>
+                    <div class="row row-cols-1 row-cols-md-2 g-2 mb-4">
+                        <div class="col">
+                            <button class="btn btn-outline-info w-100 py-2 mode-btn" data-mode="diatonic-triad">@Localizer["Diatonic Triads"]</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-info w-100 py-2 mode-btn" data-mode="diatonic-seventh">@Localizer["Diatonic 7th Chords"]</button>
+                        </div>
+                    </div>
+
                     <h6 class="card-subtitle mb-3 text-muted">@Localizer["Mode Selector"]</h6>
                     <div class="row row-cols-1 row-cols-md-2 g-2 mb-4" id="mode-selector">
                         <div class="col">
-                            <button class="btn btn-outline-primary w-100 py-2 mode-btn active" data-mode="diatonic">@Localizer["Diatonic Chords"]</button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="major">@Localizer["Major Triad"]</button>
+                            <button class="btn btn-outline-primary w-100 py-2 mode-btn active locked" data-mode="major">@Localizer["Major Triad"]</button>
                         </div>
                         <div class="col">
                             <button class="btn btn-outline-primary w-100 py-2 mode-btn" data-mode="minor">@Localizer["Minor Triad"]</button>
@@ -118,7 +126,7 @@
 
         <!-- Right Column: Keyboard -->
         <div class="col-lg-7">
-            <div class="card h-100">
+            <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h5 class="card-title mb-0">@Localizer["Interactive Piano"]</h5>
                     <button class="btn btn-sm btn-outline-secondary" id="reset-piano-btn">
@@ -131,23 +139,29 @@
                         @Localizer["Reset Selection"]
                     </button>
                 </div>
-                <div class="card-body d-flex flex-column">
+                <div class="card-body">
                     <div class="piano-container table-responsive mb-4">
                     </div>
                     
-                    <div class="mt-auto">
+                    <div class="mt-4">
                         <h6>@Localizer["Detected Chord Info"]</h6>
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="p-3 border rounded bg-light">
                                     <div class="small text-muted">@Localizer["Notes"]</div>
                                     <div class="h5 mb-0" id="detected-notes">--</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="p-3 border rounded bg-light">
                                     <div class="small text-muted">@Localizer["Chord Type"]</div>
                                     <div class="h5 mb-0" id="detected-type">--</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded bg-light">
+                                    <div class="small text-muted">@Localizer["Root Note"]</div>
+                                    <div class="h5 mb-0" id="detected-root">--</div>
                                 </div>
                             </div>
                         </div>
@@ -164,4 +178,23 @@
 
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"/>
+    <style>
+        .mode-btn.locked {
+            border: 2px solid #ffc107 !important;
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+            position: relative;
+        }
+        .mode-btn.locked::after {
+            content: '🔒';
+            position: absolute;
+            top: -12px;
+            right: -8px;
+            font-size: 0.9rem;
+            background: white;
+            border-radius: 50%;
+            padding: 2px;
+            line-height: 1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
 }

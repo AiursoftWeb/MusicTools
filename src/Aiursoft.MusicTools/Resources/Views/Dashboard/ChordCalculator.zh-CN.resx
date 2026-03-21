@@ -13,8 +13,12 @@
   <data name="Rotate Left" xml:space="preserve"><value>向左旋转</value></data>
   <data name="Rotate Right" xml:space="preserve"><value>向右旋转</value></data>
   <data name="Chord Selection" xml:space="preserve"><value>和弦选择</value></data>
+  <data name="Lock Selection" xml:space="preserve"><value>锁定选择</value></data>
+  <data name="Diatonic Presets" xml:space="preserve"><value>顺阶预设</value></data>
   <data name="Mode Selector" xml:space="preserve"><value>模式选择器</value></data>
   <data name="Diatonic Chords" xml:space="preserve"><value>基础顺阶和弦</value></data>
+  <data name="Diatonic Triads" xml:space="preserve"><value>基础顺阶三和弦</value></data>
+  <data name="Diatonic 7th Chords" xml:space="preserve"><value>基础顺阶七和弦</value></data>
   <data name="Major Triad" xml:space="preserve"><value>大三和弦</value></data>
   <data name="Minor Triad" xml:space="preserve"><value>小三和弦</value></data>
   <data name="Diminished Triad" xml:space="preserve"><value>减三和弦</value></data>
@@ -30,6 +34,8 @@
   <data name="Detected Chord Info" xml:space="preserve"><value>检测到的和弦信息</value></data>
   <data name="Notes" xml:space="preserve"><value>音符</value></data>
   <data name="Chord Type" xml:space="preserve"><value>和弦类型</value></data>
+  <data name="Root Note" xml:space="preserve"><value>主音</value></data>
+  <data name="All keys can be root" xml:space="preserve"><value>所有键都可作为主音</value></data>
   <data name="Tonic" xml:space="preserve"><value>主音</value></data>
   <data name="Invalid Chord" xml:space="preserve"><value>无效和弦</value></data>
 </root>

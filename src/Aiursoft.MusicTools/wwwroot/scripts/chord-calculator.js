@@ -17,28 +17,20 @@ class ChordCalculator {
     #majorScaleIntervals = [0, 2, 4, 5, 7, 9, 11];
     
     #chordTypes = {
-        // Triads
         'major': { name: getLocalizedText('major-triad', 'Major Triad'), intervals: [4, 3] },
         'minor': { name: getLocalizedText('minor-triad', 'Minor Triad'), intervals: [3, 4] },
         'diminished': { name: getLocalizedText('diminished-triad', 'Diminished Triad'), intervals: [3, 3] },
-        'augmented': { name: getLocalizedText('augmented-triad', 'Augmented Triad'), intervals: [4, 4] },
-        // 7th Chords
+        'augmented': { name: getLocalizedText('augmented-triad', 'Augmented Triad'), intervals: [4, 4], isSymmetrical: true },
         'maj7': { name: getLocalizedText('maj7-chord', 'Major 7th'), intervals: [4, 3, 4] },
         'dom7': { name: getLocalizedText('dom7-chord', 'Dominant 7th'), intervals: [4, 3, 3] },
         'min7': { name: getLocalizedText('min7-chord', 'Minor 7th'), intervals: [3, 4, 3] },
         'm7b5': { name: getLocalizedText('m7b5-chord', 'Half-Diminished 7th'), intervals: [3, 3, 4] },
-        'dim7': { name: getLocalizedText('dim7-chord', 'Diminished 7th'), intervals: [3, 3, 3] }
+        'dim7': { name: getLocalizedText('dim7-chord', 'Diminished 7th'), intervals: [3, 3, 3], isSymmetrical: true }
     };
 
-    #diatonicDegrees = [
-        { degree: 'I', type: 'major', offset: 0 },
-        { degree: 'II', type: 'minor', offset: 2 },
-        { degree: 'III', type: 'minor', offset: 4 },
-        { degree: 'IV', type: 'major', offset: 5 },
-        { degree: 'V', type: 'major', offset: 7 },
-        { degree: 'VI', type: 'minor', offset: 9 },
-        { degree: 'VII', type: 'diminished', offset: 11 }
-    ];
+    #diatonicTriads = ['major', 'minor', 'minor', 'major', 'major', 'minor', 'diminished'];
+    #diatonicSevenths = ['maj7', 'min7', 'min7', 'maj7', 'dom7', 'min7', 'm7b5'];
+    #diatonicOffsets = [0, 2, 4, 5, 7, 9, 11];
 
     constructor(domElements) {
         this.#dom = domElements;
@@ -66,12 +58,10 @@ class ChordCalculator {
                 this.#activeNotes.splice(index, 1);
             } else {
                 this.#activeNotes.push(midi);
-                // FIFO logic updated to support 4 notes for 7th chords
                 if (this.#activeNotes.length > 4) {
                     this.#activeNotes.shift();
                 }
             }
-            
             this.#updatePianoHighlights();
             this.#identifyChordFromPiano();
         });
@@ -134,8 +124,8 @@ class ChordCalculator {
         const modeButtons = document.querySelectorAll('.mode-btn');
         modeButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                modeButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                modeButtons.forEach(b => b.classList.remove('locked', 'active'));
+                btn.classList.add('active', 'locked');
                 this.#updateUIFromControls(true);
             });
         });
@@ -158,47 +148,52 @@ class ChordCalculator {
     }
 
     #updateUIFromControls(shouldPlay = false) {
-        const modeBtn = document.querySelector('.mode-btn.active');
+        const modeBtn = document.querySelector('.mode-btn.locked');
         if (!modeBtn) return;
-        const mode = modeBtn.dataset.mode;
+        let mode = modeBtn.dataset.mode;
 
         const degreeBtn = document.querySelector('.degree-btn.active');
         if (!degreeBtn) return;
         const degreeIndex = parseInt(degreeBtn.dataset.degree) - 1;
         
-        let chordType;
-        let rootOffset;
-        
-        if (mode === 'diatonic') {
-            const diatonic = this.#diatonicDegrees[degreeIndex];
-            chordType = diatonic.type;
-            rootOffset = diatonic.offset;
-        } else {
-            chordType = mode;
-            rootOffset = this.#diatonicDegrees[degreeIndex].offset;
+        let resolvedMode = mode;
+        if (mode === 'diatonic-triad') {
+            resolvedMode = this.#diatonicTriads[degreeIndex];
+        } else if (mode === 'diatonic-seventh') {
+            resolvedMode = this.#diatonicSevenths[degreeIndex];
         }
         
+        // Highlighting Logic:
+        const allModeButtons = document.querySelectorAll('.mode-btn');
+        allModeButtons.forEach(btn => {
+            const isUserChoice = btn.classList.contains('locked');
+            const isAutoResult = btn.dataset.mode === resolvedMode;
+            if (isUserChoice || isAutoResult) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        const chordType = resolvedMode;
+        const rootOffset = this.#diatonicOffsets[degreeIndex];
         const rootIndex = (this.#currentStep + rootOffset) % 12;
         const intervals = this.#chordTypes[chordType].intervals;
         
-        // Forward generation upgraded to handle N intervals
         const startOctave = 3;
         let currentMidiInOctave = rootIndex + (startOctave + 1) * 12;
         this.#activeNotes = [currentMidiInOctave];
         let cumulativeInterval = 0;
-        
         intervals.forEach(interval => {
             cumulativeInterval += interval;
             const nextNotePc = (rootIndex + cumulativeInterval) % 12;
-            // Check if we cross an octave boundary relative to root
             const octaveOffset = (rootIndex + cumulativeInterval >= 12) ? 1 : 0;
             this.#activeNotes.push(nextNotePc + (startOctave + 1 + octaveOffset) * 12);
         });
         
         this.#activeNotes.sort((a, b) => a - b);
-        
         this.#updatePianoHighlights();
-        this.#identifyChordFromPiano(); 
+        this.#identifyChordFromPiano(true); 
 
         if (shouldPlay) {
             this.#playCurrentChord();
@@ -218,36 +213,36 @@ class ChordCalculator {
         this.#piano.highlightKeys(pianoNoteNames, 'select-highlight');
     }
 
-    #identifyChordFromPiano() {
+    #identifyChordFromPiano(isInternal = false) {
+        const hasLock = document.querySelector('.mode-btn.locked');
         const noteCount = this.#activeNotes.length;
+
         if (noteCount !== 3 && noteCount !== 4) {
-            this.#dom.detectedNotes.textContent = noteCount > 0 
-                ? this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ') 
-                : '--';
+            this.#dom.detectedNotes.textContent = noteCount > 0 ? this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ') : '--';
             this.#dom.detectedType.textContent = '--';
+            this.#dom.detectedRoot.textContent = '--';
             this.#dom.chordResultDisplay.textContent = '--';
-            
-            document.querySelectorAll('.degree-btn').forEach(i => i.classList.remove('active'));
-            document.querySelectorAll('.mode-btn').forEach(i => i.classList.remove('active'));
+            if (!hasLock && !isInternal) {
+                document.querySelectorAll('.degree-btn').forEach(i => i.classList.remove('active'));
+                document.querySelectorAll('.mode-btn').forEach(i => i.classList.remove('active', 'locked'));
+            }
             return;
         }
 
         const pitchClasses = [...new Set(this.#activeNotes.map(m => m % 12))].sort((a, b) => a - b);
         if (pitchClasses.length !== noteCount) {
              this.#dom.detectedType.textContent = getLocalizedText('invalid-chord', 'Invalid Chord');
+             this.#dom.detectedRoot.textContent = '--';
              return;
         }
 
         let foundChord = null;
         let currentPcs = [...pitchClasses];
-
         for (let i = 0; i < noteCount; i++) {
-            // Calculate current intervals
             let currentIntervals = [];
             for (let j = 0; j < noteCount - 1; j++) {
                 currentIntervals.push((currentPcs[j + 1] - currentPcs[j] + 12) % 12);
             }
-            
             const intervalStr = JSON.stringify(currentIntervals);
             for (const [type, data] of Object.entries(this.#chordTypes)) {
                 if (JSON.stringify(data.intervals) === intervalStr) {
@@ -256,17 +251,17 @@ class ChordCalculator {
                 }
             }
             if (foundChord) break;
-            
-            // Rotate the set
             currentPcs.push(currentPcs.shift());
-            currentPcs = currentPcs.map((pc, idx) => (idx === noteCount - 1 ? pc : pc)); // Logical rotation only
         }
 
         if (!foundChord) {
             this.#dom.detectedType.textContent = getLocalizedText('invalid-chord', 'Invalid Chord');
+            this.#dom.detectedRoot.textContent = '--';
             this.#dom.chordResultDisplay.textContent = getLocalizedText('invalid-chord', 'Invalid Chord');
-            document.querySelectorAll('.degree-btn').forEach(i => i.classList.remove('active'));
-            document.querySelectorAll('.mode-btn').forEach(i => i.classList.remove('active'));
+            if (!hasLock && !isInternal) {
+                document.querySelectorAll('.degree-btn').forEach(i => i.classList.remove('active'));
+                document.querySelectorAll('.mode-btn').forEach(i => i.classList.remove('active', 'locked'));
+            }
             this.#dom.detectedNotes.textContent = this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ');
         } else {
             const root = foundChord.root;
@@ -279,40 +274,34 @@ class ChordCalculator {
             const smartNotes = this.#getEnharmonicNotes(foundChord.root, foundChord.type, sortedByRoot);
             const rootName = smartNotes[0].replace(/\d+$/, '');
             const typeName = this.#chordTypes[foundChord.type].name;
-            
             this.#dom.detectedType.textContent = typeName;
             this.#dom.chordResultDisplay.textContent = `${rootName} ${typeName}`;
             this.#dom.detectedNotes.textContent = smartNotes.join(', ');
             
-            const offset = (foundChord.root - this.#currentStep + 12) % 12;
-            const degreeMatch = this.#diatonicDegrees.find(d => d.offset === offset);
+            if (this.#chordTypes[foundChord.type].isSymmetrical) {
+                this.#dom.detectedRoot.textContent = getLocalizedText('all-keys-root', 'All keys can be root');
+            } else {
+                this.#dom.detectedRoot.textContent = rootName;
+            }
             
-            document.querySelectorAll('.mode-btn').forEach(btn => {
-                const mode = btn.dataset.mode;
-                const isDiatonic = mode === 'diatonic';
-                const isTypeMatch = mode === foundChord.type;
-                
-                if (isDiatonic) {
-                    if (degreeMatch && degreeMatch.type === foundChord.type) {
+            if (!hasLock && !isInternal) {
+                const offset = (foundChord.root - this.#currentStep + 12) % 12;
+                const degreeIndex = this.#diatonicOffsets.indexOf(offset);
+                document.querySelectorAll('.mode-btn').forEach(btn => {
+                    if (btn.dataset.mode === foundChord.type) {
                         btn.classList.add('active');
                     } else {
                         btn.classList.remove('active');
                     }
-                } else if (isTypeMatch) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-
-            document.querySelectorAll('.degree-btn').forEach(btn => {
-                const degree = btn.dataset.degree;
-                if (degreeMatch && degree === (this.#diatonicDegrees.indexOf(degreeMatch) + 1).toString()) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
+                });
+                document.querySelectorAll('.degree-btn').forEach(btn => {
+                    if (degreeIndex !== -1 && btn.dataset.degree === (degreeIndex + 1).toString()) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            }
         }
     }
 
@@ -325,30 +314,24 @@ class ChordCalculator {
     #getEnharmonicNotes(rootPc, chordType, sortedMidis) {
         const letters = ["C", "D", "E", "F", "G", "A", "B"];
         const letterToMidi = { "C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11 };
-        
         const rootName = this.#getSmartRootName(rootPc);
         const rootLetter = rootName[0];
         const rootLetterIdx = letters.indexOf(rootLetter);
-        
-        const degreeSteps = [0, 2, 4, 6, 8, 10]; // Support up to 13th chords potentially
+        const degreeSteps = [0, 2, 4, 6, 8, 10]; 
 
         return sortedMidis.map((midi, i) => {
             const pc = midi % 12;
             const octave = Math.floor(midi / 12) - 1;
-            
             const targetLetterIdx = (rootLetterIdx + degreeSteps[i]) % 7;
             const targetLetter = letters[targetLetterIdx];
             const targetBaseMidi = letterToMidi[targetLetter];
-            
             let diff = (pc - targetBaseMidi + 12) % 12;
             if (diff > 6) diff -= 12;
-            
             let accidental = "";
             if (diff === 1) accidental = "#";
             else if (diff === 2) accidental = "##";
             else if (diff === -1) accidental = "b";
             else if (diff === -2) accidental = "bb";
-            
             return targetLetter + accidental + octave;
         });
     }
@@ -358,14 +341,12 @@ class ChordCalculator {
         const isSharpKey = circleIndex <= 6;
         const scalePcs = [0, 2, 4, 5, 7, 9, 11].map(i => (i + this.#currentStep) % 12);
         const scaleIdx = scalePcs.indexOf(pc);
-        
         if (scaleIdx !== -1) {
             const tonicName = isSharpKey ? this.#notesSharp[this.#currentStep] : this.#notesFlat[this.#currentStep];
             let officialTonicName = tonicName;
             if (this.#currentStep === 1) officialTonicName = isSharpKey ? "C#" : "Db";
             if (this.#currentStep === 6) officialTonicName = isSharpKey ? "F#" : "Gb";
             if (this.#currentStep === 11) officialTonicName = isSharpKey ? "B" : "Cb";
-            
             const letters = ["C", "D", "E", "F", "G", "A", "B"];
             const letterToMidi = { "C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11 };
             const tonicLetter = officialTonicName[0];
@@ -396,7 +377,8 @@ window.addEventListener('load', () => {
         resetPianoBtn: document.getElementById("reset-piano-btn"),
         chordResultDisplay: document.getElementById("chord-result-display"),
         detectedNotes: document.getElementById("detected-notes"),
-        detectedType: document.getElementById("detected-type")
+        detectedType: document.getElementById("detected-type"),
+        detectedRoot: document.getElementById("detected-root")
     };
     new ChordCalculator(dom);
 });
