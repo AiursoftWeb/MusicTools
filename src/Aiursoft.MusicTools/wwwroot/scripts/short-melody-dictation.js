@@ -16,7 +16,7 @@ class ShortMelodyDictation {
         
         this.currentMelody = [];
         this.userAttempt = [];
-        this.mode = 'A'; // 'A' for piano, 'B' for staff
+        this.mode = 'A'; // 'A' for piano, 'B' for staff, 'C' for piano (no visual)
         this.playCount = 0;
         this.isPlaying = false;
         this.#playAbortController = null;
@@ -55,7 +55,7 @@ class ShortMelodyDictation {
         });
 
         this.piano.onClick((note) => {
-            if (this.mode === 'A') {
+            if (this.mode === 'A' || this.mode === 'C') {
                 this._handlePianoClick(note);
             }
         });
@@ -98,7 +98,7 @@ class ShortMelodyDictation {
         this.userAttempt = [];
         this.playCount = 0;
         
-        if (this.mode === 'A') {
+        if (this.mode === 'A' || this.mode === 'C') {
             this.dom.pianoArea.classList.remove('d-none');
             this.dom.staffArea.classList.add('d-none');
         } else {
@@ -110,7 +110,24 @@ class ShortMelodyDictation {
         this.playMelody();
     }
 
-    // ... (rest of methods)
+    _setupStaffChoices() {
+        this.wrongMelodies = [
+            this.generator.generate(parseInt(document.querySelector('input[name="bars"]:checked').value), document.querySelector('input[name="timeSignature"]:checked').value),
+            this.generator.generate(parseInt(document.querySelector('input[name="bars"]:checked').value), document.querySelector('input[name="timeSignature"]:checked').value)
+        ];
+
+        this.allChoices = [
+            { melody: this.currentMelody, correct: true },
+            { melody: this.wrongMelodies[0], correct: false },
+            { melody: this.wrongMelodies[1], correct: false }
+        ];
+
+        this._shuffleArray(this.allChoices);
+
+        this.allChoices.forEach((choice, index) => {
+            this.answerStaffs[index].drawMelody(choice.melody);
+        });
+    }
 
     async playMelody() {
         if (this.isPlaying) return;
@@ -148,10 +165,12 @@ class ShortMelodyDictation {
                 const duration = note.duration * beatDuration;
                 this.piano.playNote(note.pitch, duration, false); 
 
-                const keyEl = this.dom.pianoContainer.querySelector(`[data-note="${note.pitch}"]`);
-                if (keyEl) {
-                    keyEl.classList.add('playing');
-                    setTimeout(() => keyEl.classList.remove('playing'), duration * 800);
+                if (this.mode === 'A') {
+                    const keyEl = this.dom.pianoContainer.querySelector(`[data-note="${note.pitch}"]`);
+                    if (keyEl) {
+                        keyEl.classList.add('playing');
+                        setTimeout(() => keyEl.classList.remove('playing'), duration * 800);
+                    }
                 }
             }
 
