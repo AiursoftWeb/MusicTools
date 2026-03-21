@@ -23,7 +23,7 @@ class ChordTraining {
     #currentChordKey;
     #currentInversion; // 0: Root, 1: 1st Inversion, 2: 2nd Inversion
     #currentNotesMidi = [];
-    
+    #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
     constructor(piano, localizedStrings) {
@@ -37,6 +37,10 @@ class ChordTraining {
     #setupEventListeners() {
         const playButton = document.getElementById('play-button');
         playButton.addEventListener('click', () => {
+            if (this.#autoNextTimeout) {
+                clearTimeout(this.#autoNextTimeout);
+                this.#autoNextTimeout = null;
+            }
             if (this.#isShowingResult) {
                 this.nextQuestion();
                 this.playChord();
@@ -48,6 +52,10 @@ class ChordTraining {
         const modeRadios = document.querySelectorAll('input[name="start-mode"], input[name="scale-mode"], input[name="voicing-mode"]');
         modeRadios.forEach(radio => {
             radio.addEventListener('change', () => {
+                if (this.#autoNextTimeout) {
+                    clearTimeout(this.#autoNextTimeout);
+                    this.#autoNextTimeout = null;
+                }
                 this.nextQuestion();
             });
         });
@@ -61,10 +69,14 @@ class ChordTraining {
 
     #delay(ms, signal) {
         return new Promise((resolve, reject) => {
-            if (signal?.aborted) {
-                return reject(new DOMException('Aborted', 'AbortError'));
-            }
-            const timer = setTimeout(resolve, ms);
+            const timer = setTimeout(() => {
+                if (signal?.aborted) {
+                    reject(new DOMException('Aborted', 'AbortError'));
+                } else {
+                    resolve();
+                }
+            }, ms);
+            
             if (signal) {
                 signal.addEventListener('abort', () => {
                     clearTimeout(timer);
@@ -142,6 +154,7 @@ class ChordTraining {
             if (this.#playAbortController === currentAbortController) {
                 this.#isPlaying = false;
                 this.#setPlayButtonLoading(false);
+                this.#playAbortController = null;
 
                 // Show options after the first playback
                 const optionsContainer = document.getElementById('chord-options-row');
@@ -155,6 +168,11 @@ class ChordTraining {
     nextQuestion() {
         if (this.#playAbortController) {
             this.#playAbortController.abort();
+            this.#playAbortController = null;
+        }
+        if (this.#autoNextTimeout) {
+            clearTimeout(this.#autoNextTimeout);
+            this.#autoNextTimeout = null;
         }
         this.#piano.stopAll();
         this.#isPlaying = false;
@@ -272,11 +290,14 @@ class ChordTraining {
             
             // Disable all buttons to prevent multiple clicks
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = true);
+            this.#setPlayButtonLoading(true);
 
             // Wait a bit and next question
-            setTimeout(() => {
+            if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
+            this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
                 this.playChord();
+                this.#autoNextTimeout = null;
             }, 1000);
         } else {
             this.#wrongCount++;
