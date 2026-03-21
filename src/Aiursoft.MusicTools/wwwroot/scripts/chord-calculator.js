@@ -52,7 +52,6 @@ class ChordCalculator {
         this.#piano.onClick((noteName) => {
             const li = this.#dom.pianoContainer.querySelector(`[data-note="${noteName}"]`);
             const midi = parseInt(li.dataset.midi);
-            
             const index = this.#activeNotes.indexOf(midi);
             if (index !== -1) {
                 this.#activeNotes.splice(index, 1);
@@ -148,22 +147,26 @@ class ChordCalculator {
     }
 
     #updateUIFromControls(shouldPlay = false) {
-        const modeBtn = document.querySelector('.mode-btn.locked');
+        const modeBtn = document.querySelector('.mode-btn.locked') || document.querySelector('.mode-btn.active');
         if (!modeBtn) return;
-        let mode = modeBtn.dataset.mode;
+        const rawMode = modeBtn.dataset.mode;
 
         const degreeBtn = document.querySelector('.degree-btn.active');
         if (!degreeBtn) return;
         const degreeIndex = parseInt(degreeBtn.dataset.degree) - 1;
         
-        let resolvedMode = mode;
-        if (mode === 'diatonic-triad') {
+        let resolvedMode = rawMode;
+        if (rawMode === 'diatonic-triad') {
             resolvedMode = this.#diatonicTriads[degreeIndex];
-        } else if (mode === 'diatonic-seventh') {
+        } else if (rawMode === 'diatonic-seventh') {
             resolvedMode = this.#diatonicSevenths[degreeIndex];
         }
         
-        // Highlighting Logic:
+        if (!this.#chordTypes[resolvedMode]) {
+            console.warn(`[ChordCalculator] Unknown chord type: ${resolvedMode}`);
+            return;
+        }
+
         const allModeButtons = document.querySelectorAll('.mode-btn');
         allModeButtons.forEach(btn => {
             const isUserChoice = btn.classList.contains('locked');
@@ -183,6 +186,7 @@ class ChordCalculator {
         const startOctave = 3;
         let currentMidiInOctave = rootIndex + (startOctave + 1) * 12;
         this.#activeNotes = [currentMidiInOctave];
+        
         let cumulativeInterval = 0;
         intervals.forEach(interval => {
             cumulativeInterval += interval;
@@ -215,10 +219,11 @@ class ChordCalculator {
 
     #identifyChordFromPiano(isInternal = false) {
         const hasLock = document.querySelector('.mode-btn.locked');
-        const noteCount = this.#activeNotes.length;
+        const pitchClasses = [...new Set(this.#activeNotes.map(m => m % 12))].sort((a, b) => a - b);
+        const uniqueNoteCount = pitchClasses.length;
 
-        if (noteCount !== 3 && noteCount !== 4) {
-            this.#dom.detectedNotes.textContent = noteCount > 0 ? this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ') : '--';
+        if (uniqueNoteCount !== 3 && uniqueNoteCount !== 4) {
+            this.#dom.detectedNotes.textContent = this.#activeNotes.length > 0 ? this.#activeNotes.map(m => this.#midiToNoteNameSimple(m)).join(', ') : '--';
             this.#dom.detectedType.textContent = '--';
             this.#dom.detectedRoot.textContent = '--';
             this.#dom.chordResultDisplay.textContent = '--';
@@ -229,8 +234,9 @@ class ChordCalculator {
             return;
         }
 
-        const pitchClasses = [...new Set(this.#activeNotes.map(m => m % 12))].sort((a, b) => a - b);
-        if (pitchClasses.length !== noteCount) {
+        const keysPressed = this.#activeNotes.length;
+        if (keysPressed !== uniqueNoteCount) {
+             // Strict triad/seventh mode: no octave doubling allowed
              this.#dom.detectedType.textContent = getLocalizedText('invalid-chord', 'Invalid Chord');
              this.#dom.detectedRoot.textContent = '--';
              return;
@@ -238,9 +244,9 @@ class ChordCalculator {
 
         let foundChord = null;
         let currentPcs = [...pitchClasses];
-        for (let i = 0; i < noteCount; i++) {
+        for (let i = 0; i < uniqueNoteCount; i++) {
             let currentIntervals = [];
-            for (let j = 0; j < noteCount - 1; j++) {
+            for (let j = 0; j < uniqueNoteCount - 1; j++) {
                 currentIntervals.push((currentPcs[j + 1] - currentPcs[j] + 12) % 12);
             }
             const intervalStr = JSON.stringify(currentIntervals);
@@ -317,12 +323,13 @@ class ChordCalculator {
         const rootName = this.#getSmartRootName(rootPc);
         const rootLetter = rootName[0];
         const rootLetterIdx = letters.indexOf(rootLetter);
-        const degreeSteps = [0, 2, 4, 6, 8, 10]; 
+        
+        let degreeSteps = [0, 2, 4, 6]; 
 
         return sortedMidis.map((midi, i) => {
             const pc = midi % 12;
             const octave = Math.floor(midi / 12) - 1;
-            const targetLetterIdx = (rootLetterIdx + degreeSteps[i]) % 7;
+            const targetLetterIdx = (rootLetterIdx + (degreeSteps[i] || 0)) % 7;
             const targetLetter = letters[targetLetterIdx];
             const targetBaseMidi = letterToMidi[targetLetter];
             let diff = (pc - targetBaseMidi + 12) % 12;
