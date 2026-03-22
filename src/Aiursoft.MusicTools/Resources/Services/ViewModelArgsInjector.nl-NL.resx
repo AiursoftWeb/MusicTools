@@ -124,19 +124,19 @@
     <value>Log in om toegang te krijgen tot alle functies.</value>
   </data>
   <data name="Major Calculator" xml:space="preserve">
-    <value>Hoofdrekenmachine</value>
+    <value>Majeur-rekenmachine</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Beheren</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
-    <value>Melodiegeheugentest</value>
+    <value>Melodiegeheugen test</value>
   </data>
   <data name="Metronome" xml:space="preserve">
     <value>Metronoom</value>
   </data>
   <data name="Minor Calculator" xml:space="preserve">
-    <value>Kleine Rekenmachine</value>
+    <value>Minoor-rekenmachine</value>
   </data>
   <data name="Music Theory Visualizer" xml:space="preserve">
     <value>Muziektheorie Visualizer</value>
