@@ -127,7 +127,7 @@
     <value>Melden Sie sich an, um Zugriff auf alle Funktionen zu erhalten.</value>
   </data>
   <data name="Major Calculator" xml:space="preserve">
-    <value>Hauptrechner</value>
+    <value>Dur-Rechner</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Verwalten</value>
@@ -139,7 +139,7 @@
     <value>Metronom</value>
   </data>
   <data name="Minor Calculator" xml:space="preserve">
-    <value>Kleinrechner</value>
+    <value>Moll-Rechner</value>
   </data>
   <data name="Music Theory Visualizer" xml:space="preserve">
     <value>Musiktheorie-Visualisierer</value>

@@ -127,7 +127,7 @@
     <value>登入以使用所有功能。</value>
   </data>
   <data name="Major Calculator" xml:space="preserve">
-    <value>主要計算機</value>
+    <value>大調計算機</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
@@ -139,7 +139,7 @@
     <value>節拍器</value>
   </data>
   <data name="Minor Calculator" xml:space="preserve">
-    <value>小調計算器</value>
+    <value>小調計算機</value>
   </data>
   <data name="Music Theory Visualizer" xml:space="preserve">
     <value>音樂理論視覺化工具</value>
