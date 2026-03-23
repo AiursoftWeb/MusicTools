@@ -58,9 +58,11 @@ class MusicStaff {
     #noteGroup;
     #clefType;
     #currentKeySignature;
+    #baseX;
 
     constructor(containerId, options = {}) {
         this.#clefType = options.clef || 'treble';
+        this.#baseX = options.baseX || 240; // 默认 240px，向后兼容 Major/Minor 工具
         this.#container = document.getElementById(containerId);
 
         if (!this.#container) {
@@ -144,7 +146,7 @@ class MusicStaff {
             const positionerEl = document.createElement("span");
             positionerEl.className = "accidental";
             positionerEl.style.top = `${positions[i]}em`;
-            positionerEl.style.left = `${100 + i * 24}px`;
+            positionerEl.style.left = `${80 + i * 20}px`; // 从 50 增加到 80，间距从 15 增加到 20
             const glyphEl = document.createElement("span");
             glyphEl.textContent = symbolText;
             glyphEl.style.fontSize = "3.5em";
@@ -208,11 +210,11 @@ class MusicStaff {
 
         // 4. [!! 修复 !!] 动态 Left 位置 (逻辑不变)
         const hasKeySignature = (this.#currentKeySignature && this.#currentKeySignature.count > 0);
-        const KEY_SIGNATURE_SPACE_SHIFT = 160; // (你的 160px)
+        const KEY_SIGNATURE_SPACE_SHIFT = 120; // 为调号保留足够的安全空间
 
-        let noteLeftPx = 320 + horizontalOffset;
-        let ledgerLeftPx = 310 + horizontalOffset;
-        let accidentalLeftPx = 300 + horizontalOffset;
+        let noteLeftPx = this.#baseX + horizontalOffset;
+        let ledgerLeftPx = (this.#baseX - 10) + horizontalOffset;
+        let accidentalLeftPx = (this.#baseX - 20) + horizontalOffset;
 
         if (!hasKeySignature) {
             noteLeftPx -= KEY_SIGNATURE_SPACE_SHIFT;

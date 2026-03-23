@@ -38,17 +38,30 @@ class ChordTraining {
     #notesFlat = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
     #lastQuestion = null;
 
+    #KEY_SIGNATURES = {
+        0: { type: 'sharps', count: 0 }, // C
+        1: { type: 'flats',  count: 5 }, // Db
+        2: { type: 'sharps', count: 2 }, // D
+        3: { type: 'flats',  count: 3 }, // Eb
+        4: { type: 'sharps', count: 4 }, // E
+        5: { type: 'flats',  count: 1 }, // F
+        6: { type: 'sharps', count: 6 }, // F#
+        7: { type: 'sharps', count: 1 }, // G
+        8: { type: 'flats',  count: 4 }, // Ab
+        9: { type: 'sharps', count: 3 }, // A
+        10: { type: 'flats',  count: 2 }, // Bb
+        11: { type: 'sharps', count: 5 }  // B
+    };
+
     constructor(piano, localizedStrings) {
         this.#piano = piano;
         this.#localizedStrings = localizedStrings;
         
-        if (typeof MusicStaff !== 'undefined') {
-            const trebleContainer = document.getElementById('treble-staff-container');
-            const bassContainer = document.getElementById('bass-staff-container');
-            if (trebleContainer && bassContainer) {
-                this.#trebleStaff = new MusicStaff(trebleContainer.id, { clef: 'treble' });
-                this.#bassStaff = new MusicStaff(bassContainer.id, { clef: 'bass' });
-            }
+        const trebleContainer = document.getElementById('treble-staff-container');
+        const bassContainer = document.getElementById('bass-staff-container');
+        if (trebleContainer && bassContainer) {
+            this.#trebleStaff = new MusicStaff(trebleContainer.id, { clef: 'treble' });
+            this.#bassStaff = new MusicStaff(bassContainer.id, { clef: 'bass' });
         }
         
         this.#setupEventListeners();
@@ -281,7 +294,7 @@ class ChordTraining {
                 }
 
                 const midis = notesWithFunction.map(n => n.midi);
-                if (Math.max(...midis) <= 72 && Math.min(...midis) >= 48) {
+                if (Math.max(...midis) <= 72 && Math.min(...midis) >= 48) { // Fits 2-octave piano starting at C3
                     const questionState = `${this.#currentBaseMidi}-${this.#currentChordKey}-${this.#currentInversion}`;
                     if (questionState !== this.#lastQuestion || iterations > 50) {
                         isValid = true;
@@ -327,6 +340,7 @@ class ChordTraining {
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = true);
             this.#setPlayButtonLoading(true);
             if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
+            this.#showResult(); // Update staff immediately when correct
             this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
                 this.playChord();
@@ -368,10 +382,10 @@ class ChordTraining {
 
     #showResult() {
         this.#isShowingResult = true;
-        document.getElementById('chord-options-row')?.classList.add('d-none');
         const resultDetails = document.getElementById('result-details');
         if (resultDetails) {
             resultDetails.classList.remove('d-none');
+            document.getElementById('chord-options-row')?.classList.add('d-none');
         }
 
         const rootPc = this.#currentBaseMidi % 12;
@@ -416,8 +430,14 @@ class ChordTraining {
         this.#piano.highlightKeys(notesToHighlight, 'select-highlight');
 
         // Draw on staves
-        if (this.#trebleStaff) this.#trebleStaff.clearAll();
-        if (this.#bassStaff) this.#bassStaff.clearAll();
+        if (this.#trebleStaff) {
+            this.#trebleStaff.clearAll();
+            this.#trebleStaff.setKeySignature(this.#KEY_SIGNATURES[rootPc]);
+        }
+        if (this.#bassStaff) {
+            this.#bassStaff.clearAll();
+            this.#bassStaff.setKeySignature(this.#KEY_SIGNATURES[rootPc]);
+        }
         
         let trebleCleared = true;
         let bassCleared = true;
@@ -469,8 +489,8 @@ window.startChordTraining = (pianoContainerId) => {
     };
 
     const piano = new Piano(document.getElementById(pianoContainerId), {
-        octaves: 3,
-        startOctave: 2,
+        octaves: 2,
+        startOctave: 3,
         isClickable: true,
         showNoteNames: true,
         showTonicIndicator: false

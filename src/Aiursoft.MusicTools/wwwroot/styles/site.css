@@ -338,13 +338,11 @@
 
 .staff-wrapper {
     position: relative;
-    width: clamp(280px, 90vw, 400px);
-    /* 响应式宽度 */
-    height: 4em;
+    width: 400px; /* 固定宽度确保高低音谱表有足够的呼吸空间 */
+    height: 5em;
     font-size: 20px;
-    /* 关键：减小字体基准来缩小整个组件 */
     color: #000;
-    margin-bottom: 80px;
+    margin: 40px auto; /* 居中显示 */
 
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -377,6 +375,26 @@
     transform: translateY(-1.7em);
 }
 
+.music-staff-note {
+    font-family: 'Bravura', serif !important;
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-3.4em); /* 恢复音符的正确偏移 */
+    z-index: 20;
+}
+
+.music-staff-accidental {
+    font-family: 'Bravura', serif !important;
+    position: absolute;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transform: translateY(-2.9em); /* 恢复音符升降号的正确偏移 */
+    z-index: 20;
+}
+
 .key-signature-pair {
     display: flex;
     flex-direction: column;
@@ -404,51 +422,7 @@
 /* 音乐五线谱控件 (MusicStaff.js) 样式 */
 /* ================================== */
 
-/* 1. 单个音符 (用于 interval-exam)
- * 我们使用新类 .music-staff-note 以避免与五度圈 .note 冲突
- */
-.music-staff-note {
-    /* 1. 字体 */
-    font-family: 'Bravura', serif !important;
-
-    /* 2. 布局 (从 .accidental 复制而来) */
-    position: absolute;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    transform: translateY(-3.4em);
-    /* <-- [关键] 匹配 .accidental 的魔法数字 */
-}
-
-/* 2. 单个音符的升降号 (用于 interval-exam)
- * 我们使用新类 .music-staff-accidental
- */
-.music-staff-accidental {
-    /* 1. 字体 */
-    font-family: 'Bravura', serif !important;
-
-    /* 2. 布局 (从 .accidental 复制而来) */
-    position: absolute;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    transform: translateY(-2.9em);
-    /* <-- [关键] 匹配 .accidental 的魔法数字 */
-}
-
-/* 3. 调号 (用于 ScaleVisualizerEngine)
- * 这条现有的规则保持不变，.clef 和 .accidental
- * 被 MusicStaff.js (setKeySignature) 和 site.css (钢琴/五度圈) 共享
- */
-.clef,
-.accidental {
-    font-family: 'Bravura', serif !important;
-    position: absolute;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    transform: translateY(-1.7em);
-}
+/* 调号、谱号、音符、升降号均共享 .clef, .accidental, .music-staff-note, .music-staff-accidental 类并统一偏移 */
 
 /* =================================================================
  * == MusicStaff.js 控件样式
@@ -460,12 +434,8 @@
 .music-staff-ledger-line {
     position: absolute;
 
-    /* * 音符的 left 是 320px，字体大小是 3.5em。
-     * 符头的宽度大约是 1em。
-     * 310px 的 left 和 2em 的 width 应该能让它
-     * 在音符下方/上方居中。
+    /* * 符头的宽度大约是 1em。
      */
-    left: 310px;
     width: 2.2em;
 
     /* * 关键：加线的 top 是由 JS (style.top) 设置的。

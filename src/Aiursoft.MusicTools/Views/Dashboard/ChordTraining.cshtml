@@ -115,9 +115,9 @@
         </div>
     </div>
 
-    <div id="result-details" class="row g-4 justify-content-center mt-5 d-none">
+    <div class="row g-4 justify-content-center mt-5">
         <div class="col-lg-4">
-            <div class="card h-100 shadow-sm border-0 bg-light">
+            <div id="result-details" class="card h-100 shadow-sm border-0 bg-light d-none">
                 <div class="card-body text-center d-flex flex-column justify-content-center">
                     <h6 class="text-muted text-uppercase small mb-2">@Localizer["Correct Answer"]</h6>
                     <h2 id="result-chord-name" class="display-6 fw-bold text-primary mb-2"></h2>
@@ -132,7 +132,7 @@
             </div>
         </div>
         <div class="col-lg-8">
-            <div class="card h-100 shadow-sm border-0 mb-4">
+            <div class="card shadow-sm border-0 mb-4">
                 <div class="card-body">
                     <div id="piano-container" class="piano-container table-responsive"></div>
                 </div>
@@ -142,7 +142,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12 overflow-auto">
-                            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap">
+                            <div class="d-flex flex-column justify-content-center align-items-center gap-5">
                                 <div id="treble-staff-container"></div>
                                 <div id="bass-staff-container"></div>
                             </div>
