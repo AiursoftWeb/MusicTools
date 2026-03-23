@@ -1,8 +1,11 @@
 import Piano from './Piano.js';
+import MusicStaff from './MusicStaff.js';
 import { getLocalizedText } from './localization.js';
 
 class ChordTraining {
     #piano;
+    #trebleStaff;
+    #bassStaff;
     #localizedStrings;
     #chordTypes = {
         'triad': {
@@ -38,6 +41,16 @@ class ChordTraining {
     constructor(piano, localizedStrings) {
         this.#piano = piano;
         this.#localizedStrings = localizedStrings;
+        
+        if (typeof MusicStaff !== 'undefined') {
+            const trebleContainer = document.getElementById('treble-staff-container');
+            const bassContainer = document.getElementById('bass-staff-container');
+            if (trebleContainer && bassContainer) {
+                this.#trebleStaff = new MusicStaff(trebleContainer.id, { clef: 'treble' });
+                this.#bassStaff = new MusicStaff(bassContainer.id, { clef: 'bass' });
+            }
+        }
+        
         this.#setupEventListeners();
         this.#refreshOptions();
         this.nextQuestion();
@@ -291,6 +304,8 @@ class ChordTraining {
             document.getElementById('result-details')?.classList.add('d-none');
             document.getElementById('chord-options-row')?.classList.remove('d-none');
             this.#piano.clearAllHighlights();
+            if (this.#trebleStaff) this.#trebleStaff.clearAll();
+            if (this.#bassStaff) this.#bassStaff.clearAll();
         } catch (e) {
             console.error('[ChordTraining] Error in nextQuestion:', e);
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = false);
@@ -345,9 +360,9 @@ class ChordTraining {
         if (diff > 6) diff -= 12;
         let accidental = "";
         if (diff === 1) accidental = "#";
-        else if (diff === 2) accidental = "##";
+        else if (diff === 2) accidental = "𝄪";
         else if (diff === -1) accidental = "b";
-        else if (diff === -2) accidental = "bb";
+        else if (diff === -2) accidental = "𝄫";
         return targetLetter + accidental + octave;
     }
 
@@ -360,7 +375,7 @@ class ChordTraining {
         }
 
         const rootPc = this.#currentBaseMidi % 12;
-        
+
         const chordName = this.#localizedStrings.chords[this.#currentChordKey];
         let inversionText = this.#localizedStrings.rootPosition;
         if (this.#currentInversion === 1) inversionText = this.#localizedStrings.firstInversion;
@@ -376,14 +391,22 @@ class ChordTraining {
         const fifthObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 2);
         const seventhObj = this.#currentFunctionalNotes.find(n => n.funcIdx === 3);
 
-        document.getElementById('result-root-note').textContent = this.#getSmartNoteName(rootPc, rootObj.midi, 0);
-        document.getElementById('result-third-note').textContent = this.#getSmartNoteName(rootPc, thirdObj.midi, 1);
-        document.getElementById('result-fifth-note').textContent = this.#getSmartNoteName(rootPc, fifthObj.midi, 2);
+        const stavesNotes = [];
+        const processNote = (obj, funcIdx) => {
+            if (!obj) return null;
+            const smartName = this.#getSmartNoteName(rootPc, obj.midi, funcIdx);
+            stavesNotes.push({ name: smartName, midi: obj.midi });
+            return smartName;
+        };
+
+        document.getElementById('result-root-note').textContent = processNote(rootObj, 0);
+        document.getElementById('result-third-note').textContent = processNote(thirdObj, 1);
+        document.getElementById('result-fifth-note').textContent = processNote(fifthObj, 2);
 
         const seventhRow = document.getElementById('result-seventh-row');
         if (seventhObj) {
             seventhRow?.classList.remove('d-none');
-            document.getElementById('result-seventh-note').textContent = this.#getSmartNoteName(rootPc, seventhObj.midi, 3);
+            document.getElementById('result-seventh-note').textContent = processNote(seventhObj, 3);
         } else {
             seventhRow?.classList.add('d-none');
         }
@@ -391,6 +414,23 @@ class ChordTraining {
         const notesToHighlight = this.#currentFunctionalNotes.map(n => this.#midiToNoteName(n.midi));
         this.#piano.clearAllHighlights();
         this.#piano.highlightKeys(notesToHighlight, 'select-highlight');
+
+        // Draw on staves
+        if (this.#trebleStaff) this.#trebleStaff.clearAll();
+        if (this.#bassStaff) this.#bassStaff.clearAll();
+        
+        let trebleCleared = true;
+        let bassCleared = true;
+        
+        stavesNotes.forEach(n => {
+            if (n.midi >= 60) { // C4 and above goes to treble staff
+                this.#trebleStaff?.showNote(n.name, 0, trebleCleared, 'whole');
+                trebleCleared = false;
+            } else { // Below C4 goes to bass staff
+                this.#bassStaff?.showNote(n.name, 0, bassCleared, 'whole');
+                bassCleared = false;
+            }
+        });
 
         const playButtonText = document.getElementById('play-button-text');
         if (playButtonText) {
