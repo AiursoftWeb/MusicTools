@@ -42,7 +42,8 @@ class MusicStaff {
 
     static NOTE_GLYPHS = {
         STEM_UP: '\uE1D5',
-        STEM_DOWN: '\uE1D6'
+        STEM_DOWN: '\uE1D6',
+        WHOLE: '\uE1D2'
     };
 
 
@@ -158,8 +159,9 @@ class MusicStaff {
      * @param {string} pitch - e.g. "C4", "Eb4"
      * @param {number} horizontalOffset - (Optional) Additional X offset in pixels.
      * @param {boolean} clear - (Optional) Whether to clear existing notes.
+     * @param {string} duration - (Optional) 'quarter' (default) or 'whole'
      */
-    showNote(pitch, horizontalOffset = 0, clear = true) {
+    showNote(pitch, horizontalOffset = 0, clear = true, duration = 'quarter') {
         if (clear) {
             this.clearNote();
         }
@@ -244,7 +246,12 @@ class MusicStaff {
 
         // 7. [修改] 绘制音符 (逻辑不变)
         const stemUp = (position > 2.0);
-        const noteGlyph = stemUp ? MusicStaff.NOTE_GLYPHS.STEM_UP : MusicStaff.NOTE_GLYPHS.STEM_DOWN;
+        let noteGlyph;
+        if (duration === 'whole') {
+            noteGlyph = MusicStaff.NOTE_GLYPHS.WHOLE;
+        } else {
+            noteGlyph = stemUp ? MusicStaff.NOTE_GLYPHS.STEM_UP : MusicStaff.NOTE_GLYPHS.STEM_DOWN;
+        }
         const noteEl = this.#createGlyph(
             'music-staff-note',
             noteGlyph,
