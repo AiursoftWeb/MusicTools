@@ -340,7 +340,6 @@ class ChordTraining {
             document.querySelectorAll('.chord-btn').forEach(btn => btn.disabled = true);
             this.#setPlayButtonLoading(true);
             if (this.#autoNextTimeout) clearTimeout(this.#autoNextTimeout);
-            this.#showResult(); // Update staff immediately when correct
             this.#autoNextTimeout = setTimeout(() => {
                 this.nextQuestion();
                 this.playChord();
