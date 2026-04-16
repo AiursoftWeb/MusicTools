@@ -42,6 +42,9 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>음악은 마법이 아닙니다. 그것은 수학, 물리학, 패턴의 뛰어난 조합입니다. 우리의 도구는 이러한 패턴을 드러냅니다:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitHub, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools 는 무료 소프트웨어입니다. 음악 교육 도구는 모두에게 접근 가능해야 한다고 믿습니다. 소스 코드는 GitHub 에서 확인하고 감사한 후, 직접 인스턴스를 호스팅할 수도 있습니다!</value>
+  </data>
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools는 무료 소프트웨어입니다. 우리는 음악 교육 도구가 누구나 접근할 수 있어야 한다고 믿습니다. GitLab에서 소스 코드를 찾아 검토하고, 자체 인스턴스를 호스팅하는 것도 가능합니다!</value>
   </data>
