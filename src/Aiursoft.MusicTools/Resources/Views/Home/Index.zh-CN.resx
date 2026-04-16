@@ -42,6 +42,9 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音乐并非魔法；它是一种精妙的数学、物理和规律的结合。我们的工具揭示了这些规律：</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitHub, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools 是一款免费软件。我们相信音乐教育工具应该人人可用。您可以在 GitHub 上找到我们的源代码，进行审查，甚至托管您自己的实例！</value>
+  </data>
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools 是一款免费软件。我们相信，音乐教育工具应当对每个人开放可用。您可以在 GitLab 上找到我们的源代码，进行审查，甚至自行托管实例！</value>
   </data>

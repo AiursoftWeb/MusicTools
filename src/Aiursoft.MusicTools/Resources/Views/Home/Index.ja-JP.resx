@@ -42,6 +42,9 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>音楽は魔法ではない。それは数学、物理学、そしてパターンの素晴らしい組み合わせなのだ。私たちのツールがこれらのパターンを明らかにする。</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitHub, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools は無料のソフトウェアです。音楽教育ツールはすべての人にアクセス可能であるべきだと考えています。ソースコードは GitHub で確認でき、監査することも、ご自身でインスタンスをホストすることも可能です！</value>
+  </data>
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicToolsは無料のソフトウェアです。音楽教育ツールは誰にでも利用可能であるべきだと私たちは信じています。GitLabでソースコードを確認でき、検証することも、自前のインスタンスをホストすることもできます！</value>
   </data>

@@ -42,6 +42,9 @@
   <data name="Music isn&apos;t magic; it&apos;s a brilliant combination of math, physics, and patterns. Our tool reveals these patterns:" xml:space="preserve">
     <value>Âm nhạc không phải là phép màu; đó là sự kết hợp tuyệt vời giữa toán học, vật lý và các mẫu hình. Công cụ của chúng tôi tiết lộ những mẫu hình này:</value>
   </data>
+  <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitHub, audit it, and even host your own instance!" xml:space="preserve">
+    <value>MusicTools là một phần mềm miễn phí. Chúng tôi tin rằng các công cụ giáo dục âm nhạc nên được tiếp cận bởi mọi người. Bạn có thể tìm thấy mã nguồn của chúng tôi trên GitHub, kiểm tra nó, và thậm chí tự lưu trữ phiên bản riêng của mình!</value>
+  </data>
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools là một phần mềm miễn phí. Chúng tôi tin rằng các công cụ giáo dục âm nhạc nên được mọi người tiếp cận dễ dàng. Bạn có thể tìm thấy mã nguồn của chúng tôi trên GitLab, kiểm tra nó và thậm chí tự lưu trữ một phiên bản riêng của mình!</value>
   </data>
