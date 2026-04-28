@@ -11,7 +11,7 @@ MusicTools is a project built with ASP.NET Core that provides various music-rela
 
 ![screenshot](./screenshot.png)
 
-Default user name is `admin@default.com` and default password is `admin123`.
+Default user name is `admin@default.com` and default password is `Admin@123456!`.
 
 ## Try
 
