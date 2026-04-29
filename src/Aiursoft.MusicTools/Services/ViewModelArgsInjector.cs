@@ -105,6 +105,11 @@ public class ViewModelArgsInjector(
         _ = localizer["Short Melody Dictation"];
     
         _ = localizer["Chord Calculator"];
+    
+        _ = localizer["Chord Training"];
+        _ = localizer["Deploy Anywhere"];
+        _ = localizer["Interval Exam"];
+        _ = localizer["Interval Training"];
     }
 
     public void InjectSimple(
