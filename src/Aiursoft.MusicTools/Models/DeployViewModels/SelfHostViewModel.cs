@@ -6,6 +6,6 @@ public class SelfHostViewModel : UiStackLayoutViewModel
 {
     public SelfHostViewModel()
     {
-        PageTitle = "Self Host";
+        PageTitle = "Deploy Anywhere";
     }
 }

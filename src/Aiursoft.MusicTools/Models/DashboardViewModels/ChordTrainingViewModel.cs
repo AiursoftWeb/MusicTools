@@ -6,6 +6,6 @@ public class ChordTrainingViewModel : UiStackLayoutViewModel
 {
     public ChordTrainingViewModel()
     {
-        PageTitle = "Chord training";
+        PageTitle = "Chord Training";
     }
 }
