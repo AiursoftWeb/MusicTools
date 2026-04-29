@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>Triển khai</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>Triển khai Mọi nơi</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Thư mục</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Máy Tính Khoảng Cách</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Bài kiểm tra quãng âm</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Kiểm tra quãng</value>

@@ -75,6 +75,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>डिप्लॉय</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>कहीं भी डिप्लॉय करें</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>निर्देशिका</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>अंतराल कैलकुलेटर</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>अंतराल परीक्षा</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>अंतराल परीक्षण</value>
