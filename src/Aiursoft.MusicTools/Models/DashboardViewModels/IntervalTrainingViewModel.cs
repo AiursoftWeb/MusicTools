@@ -6,6 +6,6 @@ public class IntervalTrainingViewModel : UiStackLayoutViewModel
 {
     public IntervalTrainingViewModel()
     {
-        PageTitle = "Interval training";
+        PageTitle = "Interval Training";
     }
 }

@@ -6,6 +6,6 @@ public class IntervalExamViewModel : UiStackLayoutViewModel
 {
     public IntervalExamViewModel()
     {
-        PageTitle = "Interval test";
+        PageTitle = "Interval Exam";
     }
 }
