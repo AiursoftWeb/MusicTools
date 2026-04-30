@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>デプロイ</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>どこにでもデプロイ</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>ディレクトリ</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>音程計算機</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>インターバル試験</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>音程テスト</value>

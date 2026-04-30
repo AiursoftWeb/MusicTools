@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>배포</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>어디에나 배포</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>디렉터리</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>인터벌 계산기</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>음정 시험</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>음정 테스트</value>

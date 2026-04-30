@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>部署</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>任意部署</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>目錄</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>音程計算器</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>音程測驗</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>音程測驗</value>

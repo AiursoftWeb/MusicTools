@@ -75,6 +75,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>Δημοσίευση</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>Εγκατάσταση οπουδήποτε</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Κατάλογος</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Υπολογιστής Διαστημάτων</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Δοκιμή Διαστήματος</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Δοκιμή διαστήματος</value>

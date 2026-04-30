@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>เผยแพร่</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>ติดตั้งได้ทุกที่</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>ไดเรกทอรี</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>เครื่องคำนวณช่วงเสียง</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>การสอบวัดช่วงเสียง</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>การทดสอบช่วงเสียง</value>

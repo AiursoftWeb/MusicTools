@@ -75,6 +75,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>Implementare</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>Implementează oriunde</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Director</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Calculator de Intervale</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Examen de intervale</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Test de interval</value>

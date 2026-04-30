@@ -78,6 +78,9 @@
   <data name="Deploy" xml:space="preserve">
     <value>Desplegar</value>
   </data>
+  <data name="Deploy Anywhere" xml:space="preserve">
+    <value>Desplegar en cualquier lugar</value>
+  </data>
   <data name="Directory" xml:space="preserve">
     <value>Directorio</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Interval Calculator" xml:space="preserve">
     <value>Calculadora de Intervalos</value>
+  </data>
+  <data name="Interval Exam" xml:space="preserve">
+    <value>Examen de intervalos</value>
   </data>
   <data name="Interval test" xml:space="preserve">
     <value>Prueba de intervalo</value>
