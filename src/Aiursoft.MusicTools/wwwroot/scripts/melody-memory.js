@@ -126,6 +126,11 @@ window.addEventListener("load", () => {
     updateLivesUI();
 
     // Bind Difficulty Update
+    const startBtn = document.getElementById("start-game-btn");
+    if (startBtn) {
+        startBtn.addEventListener("click", () => startGame());
+    }
+
     const diffInputs = document.querySelectorAll(
         'input[name="musicStyle"], input[name="gamePreview"], input[name="gameProgression"]'
     );
