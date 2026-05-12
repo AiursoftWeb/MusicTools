@@ -236,7 +236,20 @@
 .piano .black.highlight.active,
 .piano .black.select-highlight.active {
     background-color: #495057;
-    /* 保持一致的“按下”颜色 */
+    /* 保持一致的”按下”颜色 */
+}
+
+/* --- Keyboard Focus Styles (Accessibility) --- */
+.piano .white:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: -3px;
+    z-index: 3;
+}
+
+.piano .black:focus-visible {
+    outline: 3px solid #0dcaf0;
+    outline-offset: -3px;
+    z-index: 4;
 }
 
 /* --- 琴键文字 (Mobile Base Styles) --- */

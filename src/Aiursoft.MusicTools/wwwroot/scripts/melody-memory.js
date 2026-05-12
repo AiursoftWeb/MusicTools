@@ -121,6 +121,21 @@ window.addEventListener("load", () => {
             showNoteNames: false,
         });
         piano.onClick((noteName) => handleInput(noteName));
+
+        piano.bindToComputerKeyboard({
+            // Lower octave (C3-B3) — white keys on QWERTY row
+            'Q': 'C3', 'W': 'D3', 'E': 'E3', 'R': 'F3',
+            'T': 'G3', 'Y': 'A3', 'U': 'B3',
+            // Lower octave (C3-B3) — black keys on number row
+            '2': 'C#3', '3': 'D#3', '5': 'F#3', '6': 'G#3', '7': 'A#3',
+            // Upper octave (C4-B4) — white keys on ZXCV row
+            'Z': 'C4', 'X': 'D4', 'C': 'E4', 'V': 'F4',
+            'B': 'G4', 'N': 'A4', 'M': 'B4',
+            // Upper octave (C4-B4) — black keys on ASDF row
+            'S': 'C#4', 'D': 'D#4', 'G': 'F#4', 'H': 'G#4', 'J': 'A#4',
+            // Final note
+            ',': 'C5',
+        });
     }
 
     updateLivesUI();
