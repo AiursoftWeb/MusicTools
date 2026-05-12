@@ -114,6 +114,8 @@ class Piano {
     #createPianoHTML() {
         const piano = document.createElement("ul");
         piano.className = "piano";
+        piano.setAttribute("role", "group");
+        piano.setAttribute("aria-label", "Piano");
         const noteCount = this.#options.octaves * 12;
         for (let i = 0; i <= noteCount; i++) {
             if (i === noteCount && Piano.NOTE_NAMES[i % 12] !== "C") {
@@ -130,6 +132,11 @@ class Piano {
             li.dataset.midi = midiNote;
             li.className = isBlack ? "black" : "white";
             li.style.zIndex = noteCount - i;
+            li.setAttribute("role", "button");
+            li.setAttribute("aria-label", noteName.replace("#", " sharp "));
+            if (this.#options.isClickable) {
+                li.tabIndex = 0;
+            }
             if (this.#options.showNoteNames && !isBlack) {
                 const noteNameSpan = document.createElement("span");
                 noteNameSpan.className = "note-name";
@@ -187,6 +194,20 @@ class Piano {
                 }
                 this.#playNote(midi);
             };
+
+            // --- C. Keyboard (Enter/Space) on focused key ---
+            keyEl.addEventListener("keydown", (event) => {
+                if (event.key !== "Enter" && event.key !== " ") return;
+                event.preventDefault();
+                if (event.repeat) return;
+                keyEl.classList.add("active");
+                playSound();
+                this.#onClickCallback(noteName);
+            });
+            keyEl.addEventListener("keyup", (event) => {
+                if (event.key !== "Enter" && event.key !== " ") return;
+                keyEl.classList.remove("active");
+            });
 
             if (isTouchDevice) {
                 // --- A. Touch Device (Mobile/Tablet) Logic ---
