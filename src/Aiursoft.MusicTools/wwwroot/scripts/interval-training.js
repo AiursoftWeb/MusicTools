@@ -108,6 +108,17 @@ class IntervalTraining {
 
             this.#setPlayButtonLoading(true);
 
+            // --- NEW: Wait for High-Quality Samples ---
+            if (this.#piano && !this.#piano.isLoaded) {
+                const playButtonText = document.getElementById('play-button-text');
+                const originalText = playButtonText ? playButtonText.textContent : '';
+                if (playButtonText) playButtonText.textContent = 'Loading...';
+
+                await this.#piano.waitForSamples();
+
+                if (playButtonText) playButtonText.textContent = originalText;
+            }
+
             const selectedMode = document.querySelector('input[name="start-mode"]:checked')?.value || 'random';
             const baseNote = this.#midiToNoteName(this.#currentBaseMidi);
             const targetNote = this.#midiToNoteName(this.#currentTargetMidi);

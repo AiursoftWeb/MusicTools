@@ -183,6 +183,17 @@ class ChordTraining {
 
             this.#setPlayButtonLoading(true);
 
+            // --- NEW: Wait for High-Quality Samples ---
+            if (this.#piano && !this.#piano.isLoaded) {
+                const playButtonText = document.getElementById('play-button-text');
+                const originalText = playButtonText ? playButtonText.textContent : '';
+                if (playButtonText) playButtonText.textContent = 'Loading...';
+
+                await this.#piano.waitForSamples();
+
+                if (playButtonText) playButtonText.textContent = originalText;
+            }
+
             const playMode = document.querySelector('input[name="play-mode"]:checked')?.value || 'block';
             const notesToPlay = this.#currentFunctionalNotes.map(n => this.#midiToNoteName(n.midi));
 

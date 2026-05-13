@@ -157,6 +157,16 @@ class ShortMelodyDictation {
             this.isPlaying = true;
             this.dom.btnPlayMelody.disabled = true;
 
+            // --- NEW: Wait for High-Quality Samples ---
+            if (this.piano && !this.piano.isLoaded) {
+                const originalText = this.dom.btnPlayMelody.innerHTML;
+                this.dom.btnPlayMelody.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Loading...`;
+
+                await this.piano.waitForSamples();
+
+                this.dom.btnPlayMelody.innerHTML = originalText;
+            }
+
             if (this.#playAbortController) {
                 this.#playAbortController.abort();
             }
