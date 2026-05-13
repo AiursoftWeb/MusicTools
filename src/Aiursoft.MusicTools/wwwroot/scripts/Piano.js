@@ -10,6 +10,7 @@ class Piano {
     #onClickCallback;
     #activeKeys;
     #tonePianoInstance; // Instance of @tonejs/piano
+    #loadPromise;
     #activeOscillators = new Set();
     #visualTimeouts = new Map(); // noteName -> timeoutId
 
@@ -77,8 +78,8 @@ class Piano {
                 url: "/dist/audio/salamander/",
             });
             this.#tonePianoInstance.toDestination();
-            this.#tonePianoInstance
-                .load()
+            this.#loadPromise = this.#tonePianoInstance.load();
+            this.#loadPromise
                 .then(() => {
                     console.log(
                         "[Piano.js] High-quality piano samples loaded from local storage!"
@@ -101,7 +102,13 @@ class Piano {
         // 4. 构建钢琴 (不变)
         this.#createPianoHTML();
 
-        // 5. 绑定事件 (不变)
+        // 4.1 Show loading state if clickable
+        if (this.#options.isClickable && !this.isLoaded) {
+            this.#showLoadingState();
+            this.waitForSamples().then(() => {
+                this.#hideLoadingState();
+            });
+        }
         if (this.#options.isClickable) {
             this.#addClickListeners();
         }
@@ -112,8 +119,14 @@ class Piano {
      * (此函数 100% 不变)
      */
     #createPianoHTML() {
+        // Ensure container is relative for loading overlay
+        if (this.#options.isClickable) {
+            this.#container.style.position = "relative";
+        }
+
         const piano = document.createElement("ul");
         piano.className = "piano";
+        // ... (rest of the code remains the same)
         piano.setAttribute("role", "group");
         piano.setAttribute("aria-label", "Piano");
         const noteCount = this.#options.octaves * 12;
@@ -292,9 +305,13 @@ class Piano {
 
     /**
      * [私有] 播放单个音符
-     * (此函数 100% 不变)
      */
-    #playNote(midiNote, duration = 0.5) {
+    async #playNote(midiNote, duration = 0.5) {
+        // --- NEW: Wait for samples if loading ---
+        if (this.#loadPromise) {
+            await this.#loadPromise;
+        }
+
         // 1. Try to use High-Quality Piano
         if (this.#tonePianoInstance && this.#tonePianoInstance.loaded) {
             const noteName = Tone.Frequency(midiNote, "midi").toNote();
@@ -344,6 +361,26 @@ class Piano {
     // =================================================================
     // =================== 4. 公共 API =================================
     // =================================================================
+
+    /**
+     * Wait for piano samples to load.
+     * @returns {Promise<void>}
+     */
+    async waitForSamples() {
+        if (!this.#options.isClickable) return;
+        if (this.#loadPromise) {
+            await this.#loadPromise;
+        }
+    }
+
+    /**
+     * Check if piano samples are loaded.
+     * @returns {boolean}
+     */
+    get isLoaded() {
+        if (!this.#options.isClickable) return true; // Not using samples
+        return !!(this.#tonePianoInstance && this.#tonePianoInstance.loaded);
+    }
 
     // ... (onClick, highlightKeys, showTonic, clearAllHighlights 100% 不变) ...
     onClick(callback) {
@@ -414,8 +451,7 @@ class Piano {
     }
 
     // ... (bindToComputerKeyboard 100% 不变) ...
-    // ... (bindToComputerKeyboard 100% 不变) ...
-    playNote(noteName, duration = 0.5, visual = true) {
+    async playNote(noteName, duration = 0.5, visual = true) {
         const keyEl = this.#keyMap.get(noteName);
         if (!keyEl) {
             console.warn(
@@ -438,7 +474,7 @@ class Piano {
         }
 
         const midi = parseInt(keyEl.dataset.midi, 10);
-        this.#playNote(midi, duration);
+        await this.#playNote(midi, duration);
 
         // Visualize
         if (visual) {
@@ -451,6 +487,48 @@ class Piano {
                 this.#visualTimeouts.delete(noteName);
             }, duration * 1000);
             this.#visualTimeouts.set(noteName, timeoutId);
+        }
+    }
+
+    #showLoadingState() {
+        if (!this.#container) return;
+
+        // Remove existing overlay if any
+        this.#hideLoadingState();
+
+        const overlay = document.createElement("div");
+        overlay.id = "piano-loading-overlay";
+        overlay.style.position = "absolute";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+        overlay.style.display = "flex";
+        overlay.style.flexDirection = "column";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+        overlay.style.zIndex = "1000";
+        overlay.style.borderRadius = "5px";
+        overlay.style.pointerEvents = "all"; // Block clicks
+
+        const spinner = document.createElement("div");
+        spinner.className = "spinner-border text-primary mb-2";
+        spinner.setAttribute("role", "status");
+
+        const text = document.createElement("span");
+        text.className = "fw-bold text-primary";
+        text.textContent = "Loading High-Quality Audio...";
+
+        overlay.appendChild(spinner);
+        overlay.appendChild(text);
+        this.#container.appendChild(overlay);
+    }
+
+    #hideLoadingState() {
+        const overlay = this.#container?.querySelector("#piano-loading-overlay");
+        if (overlay) {
+            overlay.remove();
         }
     }
 

@@ -238,15 +238,24 @@ class AudioPlayer {
         this.activeOscillators = new Set();
         this.activeMarkers = new Set();
         this.tonePianoInstance = null;
+        this.loadPromise = null;
 
         // Initialize high-quality Tone Piano
+        // Use local audio files for airgap deployment
+        console.log("[AudioPlayer] Initializing @tonejs/piano with local audio samples...");
         this.tonePianoInstance = new TonePiano({
-            velocities: 5
+            velocities: 5,
+            url: "/dist/audio/salamander/",
         });
         this.tonePianoInstance.toDestination();
-        this.tonePianoInstance.load().catch(err => {
-            console.error("[AudioPlayer] Failed to load piano samples:", err);
-        });
+        this.loadPromise = this.tonePianoInstance.load();
+        this.loadPromise
+            .then(() => {
+                console.log("[AudioPlayer] High-quality piano samples loaded!");
+            })
+            .catch(err => {
+                console.error("[AudioPlayer] Failed to load piano samples:", err);
+            });
 
         // DOM 元素
         this.playStopButton = elements.playStopButton;
@@ -377,11 +386,43 @@ class AudioPlayer {
     }
 
     /**
+     * Wait for piano samples to load.
+     * @returns {Promise<void>}
+     */
+    async waitForSamples() {
+        if (this.loadPromise) {
+            await this.loadPromise;
+        }
+    }
+
+    /**
+     * Check if piano samples are loaded.
+     * @returns {boolean}
+     */
+    get isLoaded() {
+        return !!(this.tonePianoInstance && this.tonePianoInstance.loaded);
+    }
+
+    /**
      * 【公共 API】
      * 播放当前选定的歌曲
      */
-    play() {
+    async play() {
         if (this.isPlaying) return; // 防止重复调用
+
+        // --- NEW: Wait for High-Quality Samples ---
+        if (!this.isLoaded) {
+            console.log("[AudioPlayer] Samples not ready, waiting...");
+            const originalContent = this.playStopButton.innerHTML;
+            this.playStopButton.disabled = true;
+            this.playStopButton.innerHTML = `<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span> Loading...`;
+
+            await this.waitForSamples();
+
+            this.playStopButton.disabled = false;
+            this.playStopButton.innerHTML = originalContent;
+            console.log("[AudioPlayer] Samples ready, starting playback.");
+        }
 
         if (this.audioContext.state === 'suspended') {
             this.audioContext.resume();

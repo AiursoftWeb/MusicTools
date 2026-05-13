@@ -281,7 +281,29 @@ window.playDebugMelody = async function () {
 // --- Game Logic ---
 
 async function startGame() {
+    const startBtn = document.getElementById("start-game-btn");
+    let originalBtnContent = "";
+
     try {
+        // --- NEW: Wait for High-Quality Samples ---
+        if (piano && !piano.isLoaded) {
+            console.log("[MelodyMemory] Piano samples not ready, waiting...");
+            if (startBtn) {
+                originalBtnContent = startBtn.innerHTML;
+                startBtn.disabled = true;
+                // Use a simple loading text or spinner
+                startBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Loading...`;
+            }
+
+            await piano.waitForSamples();
+
+            if (startBtn) {
+                startBtn.disabled = false;
+                startBtn.innerHTML = originalBtnContent;
+            }
+            console.log("[MelodyMemory] Piano samples loaded!");
+        }
+
         if (playbackAbortController) {
             playbackAbortController.abort();
         }
