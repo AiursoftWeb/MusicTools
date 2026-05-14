@@ -1,8 +1,10 @@
 import Piano from './Piano.js';
+import MusicStaff from './MusicStaff.js';
 import { getLocalizedText } from './localization.js';
 
 class IntervalTraining {
     #piano;
+    #staff;
     #localizedStrings;
     #intervalKeys;
     #isPlaying = false;
@@ -12,7 +14,7 @@ class IntervalTraining {
     #wrongCount = 0;
     #intervalSemitones = {
         'm2': 1, 'maj2': 2, 'm3': 3, 'maj3': 4,
-        'p4': 5, 'a4': 6, 'p5': 7, 'm6': 8, 'maj6': 9, 
+        'p4': 5, 'a4': 6, 'p5': 7, 'm6': 8, 'maj6': 9,
         'm7': 10, 'maj7': 11
     };
     #currentBaseMidi;
@@ -21,8 +23,9 @@ class IntervalTraining {
     #autoNextTimeout = null;
     #noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
-    constructor(piano, localizedStrings) {
+    constructor(piano, staff, localizedStrings) {
         this.#piano = piano;
+        this.#staff = staff;
         this.#localizedStrings = localizedStrings;
         this.#intervalKeys = Object.keys(localizedStrings.intervals);
         this.#setupEventListeners();
@@ -226,6 +229,7 @@ class IntervalTraining {
             document.getElementById('result-details')?.classList.add('d-none');
             document.getElementById('interval-options-row')?.classList.remove('d-none');
             this.#piano.clearAllHighlights();
+            this.#staff.clearAll();
         } catch (e) {
             console.error('[IntervalTraining] Error in nextQuestion:', e);
             document.querySelectorAll('.interval-btn').forEach(btn => btn.disabled = false);
@@ -324,6 +328,11 @@ class IntervalTraining {
         this.#piano.clearAllHighlights();
         this.#piano.highlightKeys([baseNote, targetNote], 'select-highlight');
 
+        // Show on staff
+        this.#staff.clearAll();
+        this.#staff.showNote(baseNote, 0, false);
+        this.#staff.showNote(targetNote, 80, false);
+
         // Change Play Button to Next Question
         const playButtonText = document.getElementById('play-button-text');
         if (playButtonText) {
@@ -340,7 +349,7 @@ class IntervalTraining {
 }
 
 // Global entry point
-window.startIntervalTraining = (pianoContainerId) => {
+window.startIntervalTraining = (pianoContainerId, staffContainerId) => {
     const localizedStrings = {
         correct: getLocalizedText('correct', 'Correct!'),
         wrong: getLocalizedText('wrong', 'Wrong.'),
@@ -399,7 +408,11 @@ window.startIntervalTraining = (pianoContainerId) => {
         showTonicIndicator: false
     });
 
-    const training = new IntervalTraining(piano, localizedStrings);
+    const staff = new MusicStaff(staffContainerId, {
+        clef: 'treble'
+    });
+
+    const training = new IntervalTraining(piano, staff, localizedStrings);
     training.setupButtonHandlers();
     return training;
 };

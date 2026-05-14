@@ -1,0 +1,62 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - iframe [ref=e5]:
+      - banner [ref=f2e2]:
+        - generic [ref=f2e3]:
+          - generic [ref=f2e5]:
+            - heading [level=1]
+          - generic [ref=f2e6]:
+            - generic [ref=f2e8]:
+              - link "Gmail" [ref=f2e10] [cursor=pointer]:
+                - /url: https://mail.google.com/mail/?tab=rm&ogbl
+              - link "搜索图片" [ref=f2e12] [cursor=pointer]:
+                - /url: https://www.google.com/imghp?hl=zh-CN&tab=ri&ogbl
+                - text: 图片
+            - button "Google 应用" [ref=f2e17] [cursor=pointer]:
+              - img [ref=f2e18]
+    - generic [ref=e12]:
+      - combobox "在 Google 中搜索或输入网址" [ref=e13]
+      - generic:
+        - button "语音搜索" [ref=e15] [cursor=pointer]
+        - button "按图搜索" [ref=e17] [cursor=pointer]
+    - generic [ref=e19]:
+      - generic "anti-spam inbox" [ref=e20] [cursor=pointer]:
+        - link "anti-spam inbox" [ref=e21]:
+          - /url: http://localhost:5173/
+        - button "可对“anti-spam inbox”快捷方式执行的更多操作" [ref=e22]
+        - generic [ref=e25]: anti-spam inbox
+      - generic "https://youtu.be/NjHs3eRJAYw" [ref=e26] [cursor=pointer]:
+        - link "https://youtu.be/NjHs3eRJAYw" [ref=e27]:
+          - /url: https://youtu.be/NjHs3eRJAYw
+        - button "可对“https://youtu.be/NjHs3eRJAYw”快捷方式执行的更多操作" [ref=e28]
+        - generic [ref=e31]: https://youtu.be/NjHs3eRJAYw
+      - generic "YouTube" [ref=e32] [cursor=pointer]:
+        - link "YouTube" [ref=e33]:
+          - /url: https://www.youtube.com/watch?v=NjHs3eRJAYw
+        - button "可对“YouTube”快捷方式执行的更多操作" [ref=e34]
+        - generic [ref=e37]: YouTube
+      - generic "Chrome 应用商店" [ref=e38] [cursor=pointer]:
+        - link "Chrome 应用商店" [ref=e39]:
+          - /url: https://chromewebstore.google.com/?utm_source=ext_app_menu
+        - button "可对“Chrome 应用商店”快捷方式执行的更多操作" [ref=e40]
+        - generic [ref=e43]: Chrome 应用商店
+      - generic "Example Domain" [ref=e44] [cursor=pointer]:
+        - link "Example Domain" [ref=e45]:
+          - /url: https://www.example.com/
+        - button "可对“Example Domain”快捷方式执行的更多操作" [ref=e46]
+        - generic [ref=e49]: Example Domain
+      - generic "应用商店" [ref=e50] [cursor=pointer]:
+        - link "应用商店" [ref=e51]:
+          - /url: https://chrome.google.com/webstore?hl=zh-CN
+        - button "可对“应用商店”快捷方式执行的更多操作" [ref=e52]
+        - generic [ref=e55]: 应用商店
+      - button "添加快捷方式" [ref=e56] [cursor=pointer]:
+        - generic [ref=e61]: 添加快捷方式
+      - generic:
+        - generic: 取消
+        - generic: 完成
+    - button "自定义 Chrome" [ref=e64] [cursor=pointer]:
+      - generic [ref=e65]:
+        - img
+      - generic [ref=e67]: 自定义 Chrome
+  - img [ref=e69]

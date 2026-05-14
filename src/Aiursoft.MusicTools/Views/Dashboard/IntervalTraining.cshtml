@@ -89,6 +89,7 @@
         <div class="col-lg-8">
             <div class="card h-100 shadow-sm border-0">
                 <div class="card-body">
+                    <div id="staff-container" class="mb-4"></div>
                     <div id="piano-container" class="piano-container table-responsive"></div>
                 </div>
             </div>
@@ -102,7 +103,7 @@
     <script type="module" src="~/dist/scripts/intervalTraining.js" asp-append-version="true"></script>
     <script>
         window.addEventListener('load', () => {
-             window.startIntervalTraining('piano-container');
+             window.startIntervalTraining('piano-container', 'staff-container');
         });
     </script>
 }

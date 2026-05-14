@@ -165,4 +165,30 @@ public class DashboardController : Controller
     {
         return this.StackView(new ChordTrainingViewModel());
     }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Melody Excerpt Quiz",
+        LinkOrder = 12)]
+    public IActionResult MelodyExcerptQuiz()
+    {
+        return this.StackView(new MelodyExcerptQuizViewModel());
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Four-Part Harmony",
+        LinkOrder = 13)]
+    public IActionResult FourPartHarmony()
+    {
+        return this.StackView(new FourPartHarmonyViewModel());
+    }
 }

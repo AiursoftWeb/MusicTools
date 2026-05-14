@@ -76,6 +76,8 @@ export default defineConfig({
                 intervalExam: resolve(__dirname, "scripts/interval-exam.js"),
                 shortMelodyDictation: resolve(__dirname, "scripts/short-melody-dictation.js"),
                 tuner: resolve(__dirname, "scripts/tuner.js"),
+                melodyExcerptQuiz: resolve(__dirname, "scripts/melody-excerpt-quiz.js"),
+                fourPartHarmony: resolve(__dirname, "scripts/four-part-harmony.js"),
             },
             output: {
                 format: "es",

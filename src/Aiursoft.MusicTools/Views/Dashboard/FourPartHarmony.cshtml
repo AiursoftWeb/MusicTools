@@ -1,0 +1,192 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+
+            <!-- SCREEN 1: START SCREEN -->
+            <div id="start-overlay" class="card shadow-lg border-0 mx-auto" style="max-width: 900px; min-height: 600px;">
+                <div class="card-body p-4 p-md-5 d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="mb-5">
+                        <div class="display-1 text-danger mb-2">🎹</div>
+                        <h1 class="display-5 fw-bold mb-3">@Localizer["Four-Part Harmony Dictation"]</h1>
+                        <p class="text-secondary lead">@Localizer["Listen to 3 bars of 4-part harmony and identify the correct progression."]</p>
+                    </div>
+
+                    <div class="w-100" style="max-width: 600px;">
+                        <div class="row g-4 mb-5 text-start">
+                            <div class="col-md-6">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Mode"]</label>
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="harmonyMode" id="mode-major" value="major" checked>
+                                        <label class="form-check-label" for="mode-major">@Localizer["Major Key"]</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="harmonyMode" id="mode-minor" value="minor">
+                                        <label class="form-check-label" for="mode-minor">@Localizer["Minor Key"]</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-uppercase text-secondary fw-bold small mb-3 d-block border-bottom pb-2">@Localizer["Information"]</label>
+                                <ul class="small text-muted ps-3">
+                                    <li>@Localizer["3 bars, 4/4 time signature."]</li>
+                                    <li>@Localizer["Audio plays max 3 times."]</li>
+                                    <li>@Localizer["1 minute time limit per question."]</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button id="btn-start" class="btn btn-danger btn-lg w-100 p-3 fs-4 fw-bold rounded-pill shadow-sm text-uppercase tracking-wider hover-scale">
+                            @Localizer["Start Exam"]
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCREEN 2: GAME AREA -->
+            <div id="game-board" class="d-none w-100">
+                <div class="d-flex flex-column align-items-center w-100">
+
+                    <!-- Header with Timer and Play Count -->
+                    <div class="w-100 mb-4 d-flex justify-content-between align-items-center bg-light p-3 rounded shadow-sm" style="max-width: 1100px;">
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="timer-display d-flex align-items-center gap-2">
+                                <i class="bi bi-clock-history fs-4 text-danger"></i>
+                                <span id="timer-text" class="fs-4 fw-bold font-monospace">01:00</span>
+                            </div>
+                            <div class="play-count-display d-flex align-items-center gap-2">
+                                <i class="bi bi-volume-up-fill fs-4 text-primary"></i>
+                                <span id="play-count-text" class="fs-4 fw-bold">0 / 3</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="rounded-pill px-3 py-1 border bg-white">
+                                <span class="text-success fw-bold">✅ <span id="correct-count">0</span></span>
+                            </div>
+                            <div class="rounded-pill px-3 py-1 border bg-white">
+                                <span class="text-danger fw-bold">❌ <span id="wrong-count">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Play Button -->
+                    <div class="w-100 mb-5 text-center" style="max-width: 1100px;">
+                        <button id="btn-play-harmony" class="btn btn-danger btn-lg rounded-pill px-5 py-3 shadow hover-scale d-flex align-items-center gap-2 mx-auto">
+                            <i class="bi bi-play-circle-fill fs-3"></i>
+                            <span class="fs-4 fw-bold">@Localizer["Play Harmony"]</span>
+                        </button>
+                    </div>
+
+                    <!-- Options Grid -->
+                    <div class="w-100" style="max-width: 1100px;">
+                        <div class="row g-4">
+                            <!-- Each option card -->
+                            @for (int i = 0; i < 4; i++)
+                            {
+                                <div class="col-xl-6">
+                                    <div id="option-@i" class="option-card border rounded shadow-sm p-3 bg-white h-100" data-index="@i">
+                                        <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                                            <span class="badge bg-secondary">@Localizer["Option"] @((char)('A' + i))</span>
+                                            <div class="roman-numerals-display fs-5 fw-bold text-primary" id="roman-@i"></div>
+                                        </div>
+                                        <div class="staff-pair-container">
+                                            <div id="soprano-staff-@i" class="soprano-staff mb-2"></div>
+                                            <div id="bass-staff-@i" class="bass-staff"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <button id="btn-next" class="btn btn-outline-danger px-5 py-2 fs-5 d-none">@Localizer["Next Question"]</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct!"]</span>
+    <span data-key="wrong">@Localizer["Wrong!"]</span>
+    <span data-key="timeout">@Localizer["Time's up!"]</span>
+    <span data-key="loading">@Localizer["Loading..."]</span>
+    <span data-key="out-of-plays">@Localizer["No more plays remaining!"]</span>
+</div>
+
+@section scripts {
+    <script type="module" src="~/dist/scripts/fourPartHarmony.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.startFourPartHarmony) {
+                window.startFourPartHarmony();
+            }
+        });
+    </script>
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+    <style>
+        .hover-scale { transition: transform 0.2s; }
+        .hover-scale:hover { transform: scale(1.05); }
+
+        .option-card {
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 350px;
+        }
+        .option-card:hover {
+            border-color: #dc3545 !important;
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.15) !important;
+            transform: translateY(-5px);
+        }
+        .option-card.correct {
+            border-color: #198754 !important;
+            border-width: 2px !important;
+            background-color: #f8fff9 !important;
+            pointer-events: none;
+        }
+        .option-card.wrong {
+            border-color: #dc3545 !important;
+            background-color: #fff8f8 !important;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        .timer-display.low {
+            color: #dc3545;
+            animation: pulse 1s infinite;
+        }
+
+        @@keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .staff-pair-container {
+            background: #fff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .soprano-staff, .bass-staff {
+            width: 100%;
+            height: 120px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .roman-numerals-display {
+            letter-spacing: 2px;
+        }
+    </style>
+}
