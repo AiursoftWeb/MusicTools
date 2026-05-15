@@ -1,4 +1,3 @@
-@using Microsoft.AspNetCore.Mvc.Localization
 @using Aiursoft.MusicTools.Services.FileStorage
 @model Aiursoft.MusicTools.Models.DashboardViewModels.MelodyExcerptQuizViewModel
 @inject IViewLocalizer Localizer
@@ -194,6 +193,7 @@
     <span data-key="no-score">@Localizer["Please upload a music score before starting."]</span>
 </div>
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script type="module" src="~/dist/scripts/melodyExcerptQuiz.js" asp-append-version="true"></script>
     <script>
@@ -205,6 +205,7 @@
     </script>
 }
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
     <style>

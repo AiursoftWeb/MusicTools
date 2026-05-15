@@ -1,4 +1,3 @@
-@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 
 <div class="container py-4">
@@ -121,6 +120,7 @@
     <span data-key="out-of-plays">@Localizer["No more plays remaining!"]</span>
 </div>
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script type="module" src="~/dist/scripts/fourPartHarmony.js" asp-append-version="true"></script>
     <script>
@@ -132,6 +132,7 @@
     </script>
 }
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
     <style>

@@ -1,6 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
-
 namespace Aiursoft.MusicTools.Tests.IntegrationTests;
 
 [TestClass]

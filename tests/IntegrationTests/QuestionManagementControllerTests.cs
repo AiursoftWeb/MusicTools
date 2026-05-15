@@ -69,10 +69,6 @@ public class QuestionManagementControllerTests : TestBase
 
         // 7. Delete Question
         var questionIdMatch = System.Text.RegularExpressions.Regex.Match(libraryHtml, @"DeleteQuestion/(\d+)");
-        // Wait, my view uses asp-route-id, so it might be /QuestionManagement/DeleteQuestion?id=1 or similar
-        // Let's check the form action in QuestionLibrary.cshtml
-        // <form asp-action="DeleteQuestion" asp-route-id="@item.Id" ...
-        questionIdMatch = System.Text.RegularExpressions.Regex.Match(libraryHtml, @"DeleteQuestion/(\d+)");
         if (!questionIdMatch.Success)
         {
              questionIdMatch = System.Text.RegularExpressions.Regex.Match(libraryHtml, @"id=(\d+)");
