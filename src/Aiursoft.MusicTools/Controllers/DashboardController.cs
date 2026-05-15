@@ -1,13 +1,15 @@
+using Aiursoft.MusicTools.Entities;
 using Aiursoft.MusicTools.Models.DashboardViewModels;
 using Aiursoft.MusicTools.Services;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.MusicTools.Controllers;
 
 [LimitPerMin]
-public class DashboardController : Controller
+public class DashboardController(MusicToolsDbContext context) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Tools",
@@ -174,9 +176,17 @@ public class DashboardController : Controller
         CascadedLinksOrder = 2,
         LinkText = "Melody Excerpt Quiz",
         LinkOrder = 12)]
-    public IActionResult MelodyExcerptQuiz()
+    public async Task<IActionResult> MelodyExcerptQuiz()
     {
-        return this.StackView(new MelodyExcerptQuizViewModel());
+        var questions = await context.Questions
+            .Include(q => q.Score)
+            .OrderByDescending(q => q.CreateTime)
+            .ToListAsync();
+
+        return this.StackView(new MelodyExcerptQuizViewModel
+        {
+            AvailableQuestions = questions
+        });
     }
 
     [RenderInNavBar(

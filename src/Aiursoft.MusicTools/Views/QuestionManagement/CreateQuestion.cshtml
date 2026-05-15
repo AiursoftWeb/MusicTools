@@ -1,0 +1,95 @@
+@using Aiursoft.MusicTools.Services.FileStorage
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.CreateQuestionViewModel
+@inject StorageService Storage
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Create Question from Score"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Question Details"]</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="CreateQuestion" method="post" id="create-question-form">
+                    <input type="hidden" asp-for="ScoreId" />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["Source Score"]</label>
+                        <input class="form-control" value="@Model.ScoreName" disabled />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">@Localizer["Question Title"]</label>
+                        <input asp-for="Title" class="form-control" placeholder="@Localizer["e.g. Opening Theme Identification"]" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="StartMeasureIndex" class="form-label">@Localizer["Start Measure Index (0-indexed)"]</label>
+                        <input asp-for="StartMeasureIndex" type="number" class="form-control" min="0" id="start-measure-input" />
+                        <span asp-validation-for="StartMeasureIndex" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="MeasureCount" class="form-label">@Localizer["Measure Count"]</label>
+                        <input asp-for="MeasureCount" type="number" class="form-control" value="4" readonly />
+                        <span asp-validation-for="MeasureCount" class="text-danger"></span>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary w-100">@Localizer["Create Question"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Score Preview"]</h5>
+                <h6 class="card-subtitle text-muted">@Localizer["Find the measures you want to use for the question."]</h6>
+            </div>
+            <div class="card-body">
+                <div id="osmd-container" style="width: 100%; height: 500px; overflow-y: auto;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.ScorePath != null)
+{
+    <div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
+}
+
+@section scripts {
+    <script type="module">
+        import { OpenSheetMusicDisplay } from 'opensheetmusicdisplay';
+
+        const osmd = new OpenSheetMusicDisplay("osmd-container", {
+            autoResize: true,
+            backend: "svg",
+            drawTitle: true,
+            drawMeasureNumbers: true
+        });
+
+        const scoreUrl = document.getElementById('score-url').textContent;
+
+        async function loadScore() {
+            try {
+                await osmd.load(scoreUrl);
+                osmd.render();
+            } catch (e) {
+                console.error("Failed to load score for preview", e);
+            }
+        }
+
+        loadScore();
+    </script>
+}

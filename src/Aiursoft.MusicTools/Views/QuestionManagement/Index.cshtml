@@ -1,0 +1,55 @@
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScoreLibraryViewModel
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Score Library"]</h3>
+    </div>
+
+    <div class="col-auto ms-auto mt-n1">
+        <a asp-action="UploadScore" class="btn btn-primary">
+            <i class="align-middle" data-lucide="upload"></i> @Localizer["Upload New Score"]
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["All Scores"]</h5>
+        <h6 class="card-subtitle text-muted">@Localizer["Managed music scores for generating quiz questions."]</h6>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>@Localizer["Name"]</th>
+                <th>@Localizer["Upload Time"]</th>
+                <th class="text-end">@Localizer["Actions"]</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Scores)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.UploadTime.ToLocalTime().ToString("g")</td>
+                    <td class="text-end">
+                        <a asp-action="CreateQuestion" asp-route-scoreId="@item.Id" class="btn btn-sm btn-outline-success">
+                            <i class="align-middle" data-lucide="plus-circle"></i> @Localizer["Create Question"]
+                        </a>
+                        <form asp-action="DeleteScore" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this score? All associated questions will be deleted."]')">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            @if (!Model.Scores.Any())
+            {
+                <tr>
+                    <td colspan="3" class="text-center text-muted">@Localizer["No scores found. Please upload one."]</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

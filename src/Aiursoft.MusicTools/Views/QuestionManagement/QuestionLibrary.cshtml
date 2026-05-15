@@ -1,0 +1,50 @@
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.QuestionLibraryViewModel
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Question Library"]</h3>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["All Quiz Questions"]</h5>
+        <h6 class="card-subtitle text-muted">@Localizer["Questions generated from the score library."]</h6>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>@Localizer["Title"]</th>
+                <th>@Localizer["Source Score"]</th>
+                <th>@Localizer["Start Measure"]</th>
+                <th>@Localizer["Created Time"]</th>
+                <th class="text-end">@Localizer["Actions"]</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Questions)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Score.Name</td>
+                    <td>@item.StartMeasureIndex</td>
+                    <td>@item.CreateTime.ToLocalTime().ToString("g")</td>
+                    <td class="text-end">
+                        <form asp-action="DeleteQuestion" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this question?"]')">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            @if (!Model.Questions.Any())
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">@Localizer["No questions found. Go to Score Library to create one."]</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

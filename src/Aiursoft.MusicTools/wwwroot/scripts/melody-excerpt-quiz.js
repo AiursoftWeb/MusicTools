@@ -20,12 +20,19 @@ class MelodyExcerptQuiz {
         this.correctCount = 0;
         this.wrongCount = 0;
 
+        // Bank mode state
+        this.isBankMode = false;
+        this.selectedBankQuestion = null;
+
         this._init();
     }
 
     async _init() {
         // Event listeners
         this.dom.btnStart.addEventListener('click', () => this.startGame());
+        if (this.dom.btnStartBank) {
+            this.dom.btnStartBank.addEventListener('click', () => this.startGameFromBank());
+        }
         this.dom.btnPlayMelody.addEventListener('click', () => this.playMelody());
         this.dom.btnNext.addEventListener('click', () => this.nextQuestion());
         this.dom.btnBack.addEventListener('click', () => location.reload());
@@ -37,6 +44,22 @@ class MelodyExcerptQuiz {
         this.dom.optionCards.forEach((card, index) => {
             card.addEventListener('click', () => this._handleChoice(index));
         });
+
+        // Question bank selection
+        if (this.dom.bankItems) {
+            this.dom.bankItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    this.dom.bankItems.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    this.selectedBankQuestion = {
+                        scoreUrl: item.dataset.scoreUrl,
+                        startMeasure: parseInt(item.dataset.startMeasure),
+                        title: item.dataset.title
+                    };
+                    this.dom.btnStartBank.classList.remove('d-none');
+                });
+            });
+        }
 
         // Initialize OSMD instances
         for (let i = 0; i < 4; i++) {
@@ -58,38 +81,41 @@ class MelodyExcerptQuiz {
 
         try {
             console.log(`[MelodyExcerptQuiz] Loading custom score: ${file.name}`);
-            let xmlString = "";
-            if (file.name.endsWith('.mxl')) {
-                const arrayBuffer = await file.arrayBuffer();
-                const zip = await JSZip.loadAsync(arrayBuffer);
-                let xmlFileContent = null;
-                for (let filename of Object.keys(zip.files)) {
-                    if (filename.endsWith('.xml') && !filename.startsWith('META-INF')) {
-                        xmlFileContent = await zip.files[filename].async("string");
-                        break;
-                    }
-                }
-                if (!xmlFileContent) throw new Error("Could not find .xml inside .mxl");
-                xmlString = xmlFileContent;
-            } else {
-                xmlString = await file.text();
-            }
-
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlString, "application/xml");
-
-            // Basic validation
-            if (xmlDoc.getElementsByTagName("measure").length < 4) {
-                throw new Error(this.loc.tooShort);
-            }
-
-            this.originalXmlDoc = xmlDoc;
+            this.originalXmlDoc = await this._parseFileToXml(file);
             console.log("[MelodyExcerptQuiz] Custom score parsed successfully.");
         } catch (error) {
             console.error("[MelodyExcerptQuiz] Error loading custom score:", error);
             alert(this.loc.customLoadFailed + error.message);
             event.target.value = ""; // Clear input
         }
+    }
+
+    async _parseFileToXml(file) {
+        let xmlString = "";
+        if (file.name.endsWith('.mxl')) {
+            const arrayBuffer = await file.arrayBuffer();
+            const zip = await JSZip.loadAsync(arrayBuffer);
+            let xmlFileContent = null;
+            for (let filename of Object.keys(zip.files)) {
+                if (filename.endsWith('.xml') && !filename.startsWith('META-INF')) {
+                    xmlFileContent = await zip.files[filename].async("string");
+                    break;
+                }
+            }
+            if (!xmlFileContent) throw new Error("Could not find .xml inside .mxl");
+            xmlString = xmlFileContent;
+        } else {
+            xmlString = await file.text();
+        }
+
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+
+        // Basic validation
+        if (xmlDoc.getElementsByTagName("measure").length < 4) {
+            throw new Error(this.loc.tooShort);
+        }
+        return xmlDoc;
     }
 
     async startGame() {
@@ -99,14 +125,35 @@ class MelodyExcerptQuiz {
             return;
         }
 
+        this.isBankMode = false;
         this.dom.startOverlay.classList.add('d-none');
         this.dom.gameBoard.classList.remove('d-none');
 
         this.nextQuestion();
     }
 
-    // Removed _loadSampleScore since default samples are no longer supported.
-    // Score must be provided by user upload.
+    async startGameFromBank() {
+        if (!this.selectedBankQuestion) return;
+
+        try {
+            // Load the score file from URL
+            const response = await fetch(this.selectedBankQuestion.scoreUrl);
+            if (!response.ok) throw new Error("Failed to fetch score file from server.");
+            const blob = await response.blob();
+            const file = new File([blob], "score.mxl", { type: blob.type });
+
+            this.originalXmlDoc = await this._parseFileToXml(file);
+            this.isBankMode = true;
+
+            this.dom.startOverlay.classList.add('d-none');
+            this.dom.gameBoard.classList.remove('d-none');
+
+            this.nextQuestion();
+        } catch (error) {
+            console.error("[MelodyExcerptQuiz] Error starting bank game:", error);
+            alert(this.loc.customLoadFailed + error.message);
+        }
+    }
 
     async nextQuestion() {
         this.isAnswered = false;
@@ -124,8 +171,17 @@ class MelodyExcerptQuiz {
         const measures = parts[0].getElementsByTagName("measure");
         const totalMeasures = measures.length;
 
-        // Randomly pick start measure (ensure at least 4 measures available)
-        const startMeasureIdx = Math.floor(Math.random() * (totalMeasures - 4));
+        let startMeasureIdx;
+        if (this.isBankMode && this.selectedBankQuestion) {
+            startMeasureIdx = this.selectedBankQuestion.startMeasure;
+            // If in bank mode, we only play this one question?
+            // Or we could pick another one from bank.
+            // For now, let's keep the user on this question or allow them to go back.
+        } else {
+            // Randomly pick start measure (ensure at least 4 measures available)
+            startMeasureIdx = Math.floor(Math.random() * (totalMeasures - 4));
+        }
+
         const targetMeasures = [startMeasureIdx, startMeasureIdx + 1, startMeasureIdx + 2, startMeasureIdx + 3];
 
         // 2. Generate correct option (the actual intercept)
@@ -159,6 +215,12 @@ class MelodyExcerptQuiz {
         this.audioPlayer.loadScore(hiddenOsmd);
 
         this.playMelody();
+
+        // If it was a bank question, after answering, maybe show "Back to Bank" instead of "Next"
+        if (this.isBankMode) {
+            this.dom.btnNext.textContent = getLocalizedText('back-to-bank', 'Back to Bank');
+            this.dom.btnNext.onclick = () => location.reload();
+        }
     }
 
     async playMelody() {
@@ -269,6 +331,8 @@ window.startMelodyExcerptQuiz = () => {
         startOverlay: document.getElementById('start-overlay'),
         gameBoard: document.getElementById('game-board'),
         btnStart: document.getElementById('btn-start'),
+        btnStartBank: document.getElementById('btn-start-bank'),
+        bankItems: document.querySelectorAll('.question-bank-item'),
         btnPlayMelody: document.getElementById('btn-play-melody'),
         btnNext: document.getElementById('btn-next'),
         btnBack: document.getElementById('btn-back'),
@@ -289,7 +353,8 @@ window.startMelodyExcerptQuiz = () => {
         loading: getLocalizedText('loading', 'Loading score...'),
         customLoadFailed: getLocalizedText('custom-load-failed', 'Failed to load the custom score: '),
         tooShort: getLocalizedText('too-short', 'Score must have at least 4 measures.'),
-        noScore: getLocalizedText('no-score', 'Please upload a music score before starting.')
+        noScore: getLocalizedText('no-score', 'Please upload a music score before starting.'),
+        backToBank: getLocalizedText('back-to-bank', 'Back to Bank')
     };
 
     return new MelodyExcerptQuiz(dom, loc);

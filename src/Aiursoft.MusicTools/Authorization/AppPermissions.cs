@@ -66,7 +66,10 @@ public class AppPermissions
                 localizer["Allows viewing the background job dashboard and managing jobs."]),
             new(AppPermissionNames.CanManageGlobalSettings,
                 localizer["Manage Global Settings"],
-                localizer["Allows viewing and modifying global application settings."])
+                localizer["Allows viewing and modifying global application settings."]),
+            new(AppPermissionNames.CanManageQuestions,
+                localizer["Manage Questions"],
+                localizer["Allows managing the score library and quiz questions."])
         ];
         return allPermission;
     }
