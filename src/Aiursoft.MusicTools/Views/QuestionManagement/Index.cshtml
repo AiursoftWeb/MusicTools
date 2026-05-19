@@ -32,6 +32,9 @@
                     <td>@item.Name</td>
                     <td>@item.UploadTime.ToLocalTime().ToString("g")</td>
                     <td class="text-end">
+                        <a asp-action="PreviewScore" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">
+                            <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]
+                        </a>
                         <a asp-action="CreateQuestion" asp-route-scoreId="@item.Id" class="btn btn-sm btn-outline-success">
                             <i class="align-middle" data-lucide="plus-circle"></i> @Localizer["Create Question"]
                         </a>

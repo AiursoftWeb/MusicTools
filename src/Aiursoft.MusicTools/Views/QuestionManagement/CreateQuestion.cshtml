@@ -70,27 +70,10 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    <script type="module">
-        import { OpenSheetMusicDisplay } from 'opensheetmusicdisplay';
-
-        const osmd = new OpenSheetMusicDisplay("osmd-container", {
-            autoResize: true,
-            backend: "svg",
-            drawTitle: true,
-            drawMeasureNumbers: true
+    <script type="module" src="~/dist/scripts/createQuestionPreview.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.startCreateQuestionPreview) window.startCreateQuestionPreview();
         });
-
-        const scoreUrl = document.getElementById('score-url').textContent;
-
-        async function loadScore() {
-            try {
-                await osmd.load(scoreUrl);
-                osmd.render();
-            } catch (e) {
-                console.error("Failed to load score for preview", e);
-            }
-        }
-
-        loadScore();
     </script>
 }

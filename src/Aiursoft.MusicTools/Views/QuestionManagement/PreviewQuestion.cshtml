@@ -1,0 +1,63 @@
+@using Aiursoft.MusicTools.Services.FileStorage
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.QuestionPreviewViewModel
+@inject StorageService Storage
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Question Preview"]: @Model.Title</h3>
+    </div>
+    <div class="col-auto ms-auto mt-n1">
+        <a asp-action="QuestionLibrary" class="btn btn-outline-secondary">
+            <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back to Library"]
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Question Info"]</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-5">@Localizer["Title"]</dt>
+                    <dd class="col-sm-7">@Model.Title</dd>
+                    <dt class="col-sm-5">@Localizer["Source Score"]</dt>
+                    <dd class="col-sm-7">@Model.ScoreName</dd>
+                    <dt class="col-sm-5">@Localizer["Start Measure"]</dt>
+                    <dd class="col-sm-7">@Model.StartMeasureIndex</dd>
+                    <dt class="col-sm-5">@Localizer["Measures"]</dt>
+                    <dd class="col-sm-7">@Model.MeasureCount</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">@Localizer["Excerpt Preview"]</h5>
+                <button id="btn-play" class="btn btn-primary rounded-pill px-4">
+                    <i class="align-middle" data-lucide="play"></i> @Localizer["Play"]
+                </button>
+            </div>
+            <div class="card-body">
+                <div id="osmd-container" style="width:100%; min-height:250px; overflow-x:auto;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
+<div id="start-measure" hidden>@Model.StartMeasureIndex</div>
+<div id="measure-count" hidden>@Model.MeasureCount</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script type="module" src="~/dist/scripts/questionPreview.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.startQuestionPreview) window.startQuestionPreview();
+        });
+    </script>
+}

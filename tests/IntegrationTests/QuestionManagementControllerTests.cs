@@ -20,10 +20,21 @@ public class QuestionManagementControllerTests : TestBase
         // 2. Upload Score
         // We need to simulate a file existing for the StorageService check.
         var storage = GetService<StorageService>();
-        var logicalPath = "score/test-integration.mxl";
+        var logicalPath = "score/test-integration.xml";
         var physicalPath = storage.GetFilePhysicalPath(logicalPath);
         Directory.CreateDirectory(Path.GetDirectoryName(physicalPath)!);
-        await File.WriteAllTextAsync(physicalPath, "dummy musicxml content");
+        var validMusicXml = @"<?xml version=""1.0"" encoding=""UTF-8""?>
+        <!DOCTYPE score-partwise PUBLIC ""-//Recordare//DTD MusicXML 3.1 Partwise//EN"" ""http://www.musicxml.org/dtds/partwise.dtd"">
+        <score-partwise version=""3.1"">
+          <part-list><score-part id=""P1""><part-name>Test</part-name></score-part></part-list>
+          <part id=""P1"">
+            <measure number=""1""><note><pitch><step>C</step><octave>4</octave></pitch><duration>4</duration><type>whole</type></note></measure>
+            <measure number=""2""><note><pitch><step>D</step><octave>4</octave></pitch><duration>4</duration><type>whole</type></note></measure>
+            <measure number=""3""><note><pitch><step>E</step><octave>4</octave></pitch><duration>4</duration><type>whole</type></note></measure>
+            <measure number=""4""><note><pitch><step>F</step><octave>4</octave></pitch><duration>4</duration><type>whole</type></note></measure>
+          </part>
+        </score-partwise>";
+        await File.WriteAllTextAsync(physicalPath, validMusicXml);
 
         var uploadResponse = await PostForm("/QuestionManagement/UploadScore", new Dictionary<string, string>
         {

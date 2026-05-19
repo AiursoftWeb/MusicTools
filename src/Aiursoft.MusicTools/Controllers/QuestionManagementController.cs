@@ -72,18 +72,26 @@ public class QuestionManagementController(
             return this.StackView(model);
         }
 
+        var physicalPath = "";
         try
         {
-            var physicalPath = storageService.GetFilePhysicalPath(model.ScorePath!, isVault: false);
-            if (!System.IO.File.Exists(physicalPath))
-            {
-                ModelState.AddModelError(nameof(model.ScorePath), "File upload failed or missing. Please re-upload.");
-                return this.StackView(model);
-            }
+            physicalPath = storageService.GetFilePhysicalPath(model.ScorePath!, isVault: false);
         }
         catch (ArgumentException)
         {
             return BadRequest();
+        }
+
+        if (!System.IO.File.Exists(physicalPath))
+        {
+            ModelState.AddModelError(nameof(model.ScorePath), "File upload failed or missing. Please re-upload.");
+            return this.StackView(model);
+        }
+
+        if (!IsValidMusicXml(physicalPath))
+        {
+            ModelState.AddModelError(nameof(model.ScorePath), "The file is not a valid MusicXML score. Please upload a proper MusicXML or MXL file.");
+            return this.StackView(model);
         }
 
         var score = new Score
@@ -97,6 +105,73 @@ public class QuestionManagementController(
         await context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> PreviewScore(int id)
+    {
+        var score = await context.Scores.FindAsync(id);
+        if (score == null) return NotFound();
+
+        return this.StackView(new ScorePreviewViewModel
+        {
+            ScoreName = score.Name,
+            ScorePath = score.FilePath
+        });
+    }
+
+    public async Task<IActionResult> PreviewQuestion(int id)
+    {
+        var question = await context.Questions
+            .Include(q => q.Score)
+            .FirstOrDefaultAsync(q => q.Id == id);
+        if (question == null) return NotFound();
+
+        return this.StackView(new QuestionPreviewViewModel
+        {
+            Title = question.Title,
+            ScoreName = question.Score.Name,
+            ScorePath = question.Score.FilePath,
+            StartMeasureIndex = question.StartMeasureIndex,
+            MeasureCount = question.MeasureCount
+        });
+    }
+
+    private static bool IsValidMusicXml(string physicalPath)
+    {
+        try
+        {
+            string xmlContent;
+            if (physicalPath.EndsWith(".mxl", StringComparison.OrdinalIgnoreCase))
+            {
+                using var archive = System.IO.Compression.ZipFile.OpenRead(physicalPath);
+                var xmlEntry = archive.Entries.FirstOrDefault(e =>
+                    e.Name.EndsWith(".xml", StringComparison.OrdinalIgnoreCase) &&
+                    !e.FullName.StartsWith("META-INF", StringComparison.OrdinalIgnoreCase));
+                if (xmlEntry == null) return false;
+                using var stream = xmlEntry.Open();
+                using var reader = new System.IO.StreamReader(stream);
+                xmlContent = reader.ReadToEnd();
+            }
+            else
+            {
+                xmlContent = System.IO.File.ReadAllText(physicalPath);
+            }
+
+            if (string.IsNullOrWhiteSpace(xmlContent)) return false;
+
+            var doc = System.Xml.Linq.XDocument.Parse(xmlContent);
+            var root = doc.Root;
+            if (root == null) return false;
+
+            var rootName = root.Name.LocalName;
+            if (rootName != "score-partwise" && rootName != "score-timewise") return false;
+
+            return root.Descendants().Any(e => e.Name.LocalName == "measure");
+        }
+        catch
+        {
+            return false;
+        }
     }
 
     public async Task<IActionResult> CreateQuestion(int scoreId)

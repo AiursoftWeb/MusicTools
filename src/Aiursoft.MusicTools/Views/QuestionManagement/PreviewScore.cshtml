@@ -1,0 +1,45 @@
+@using Aiursoft.MusicTools.Services.FileStorage
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScorePreviewViewModel
+@inject StorageService Storage
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Score Preview"]: @Model.ScoreName</h3>
+    </div>
+    <div class="col-auto ms-auto mt-n1">
+        <a asp-action="Index" class="btn btn-outline-secondary">
+            <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back to Library"]
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="card-title mb-0">@Model.ScoreName</h5>
+                    <h6 class="card-subtitle text-muted">@Localizer["Full score preview with playback."]</h6>
+                </div>
+                <button id="btn-play" class="btn btn-primary rounded-pill px-4">
+                    <i class="align-middle" data-lucide="play"></i> @Localizer["Play"]
+                </button>
+            </div>
+            <div class="card-body">
+                <div id="osmd-container" style="width:100%; min-height:400px; overflow-x:auto;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script type="module" src="~/dist/scripts/scorePreview.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (window.startScorePreview) window.startScorePreview();
+        });
+    </script>
+}
