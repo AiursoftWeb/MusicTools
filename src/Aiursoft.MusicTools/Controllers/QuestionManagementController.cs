@@ -72,7 +72,7 @@ public class QuestionManagementController(
             return this.StackView(model);
         }
 
-        var physicalPath = "";
+        string physicalPath;
         try
         {
             physicalPath = storageService.GetFilePhysicalPath(model.ScorePath!, isVault: false);
@@ -149,7 +149,7 @@ public class QuestionManagementController(
                     !e.FullName.StartsWith("META-INF", StringComparison.OrdinalIgnoreCase));
                 if (xmlEntry == null) return false;
                 using var stream = xmlEntry.Open();
-                using var reader = new System.IO.StreamReader(stream);
+                using var reader = new StreamReader(stream);
                 xmlContent = reader.ReadToEnd();
             }
             else
