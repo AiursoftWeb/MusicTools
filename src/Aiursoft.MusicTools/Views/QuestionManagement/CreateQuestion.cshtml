@@ -51,13 +51,35 @@
     </div>
 
     <div class="col-md-8">
-        <div class="card">
+        <div class="card mb-3">
             <div class="card-header">
-                <h5 class="card-title">@Localizer["Score Preview"]</h5>
-                <h6 class="card-subtitle text-muted">@Localizer["Find the measures you want to use for the question."]</h6>
+                <h5 class="card-title">@Localizer["Full Score Preview"]</h5>
+                <h6 class="card-subtitle text-muted">@Localizer["Click a measure range below to select 4 consecutive measures."]</h6>
             </div>
             <div class="card-body">
-                <div id="osmd-container" style="width: 100%; height: 500px; overflow-y: auto;"></div>
+                <div id="osmd-container" style="width: 100%; height: 400px; overflow-y: auto;"></div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Select Measures"]</h5>
+            </div>
+            <div class="card-body">
+                <div id="measure-selector" class="d-flex flex-wrap gap-1"></div>
+                <div class="text-muted mt-2">
+                    <small>@Localizer["Selected range:"] <span id="selected-range-text">—</span></small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Excerpt Preview"]</h5>
+                <h6 class="card-subtitle text-muted">@Localizer["Preview of the selected 4 measures."]</h6>
+            </div>
+            <div class="card-body">
+                <div id="osmd-excerpt-container" style="width: 100%; min-height: 150px;"></div>
             </div>
         </div>
     </div>
@@ -66,6 +88,20 @@
 @if (Model.ScorePath != null)
 {
     <div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <style>
+        .measure-btn {
+            min-width: 4.5rem;
+            transition: all 0.15s ease;
+        }
+        .measure-btn.in-range {
+            background-color: rgba(13, 110, 253, 0.1);
+            border-color: rgba(13, 110, 253, 0.35);
+        }
+    </style>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
