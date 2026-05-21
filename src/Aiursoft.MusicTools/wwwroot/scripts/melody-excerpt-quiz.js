@@ -19,8 +19,6 @@ class MelodyExcerptQuiz {
         this.correctCount = 0;
         this.wrongCount = 0;
 
-        this._isPlaying = false;
-
         this.isBankMode = false;
         this.selectedBankQuestion = null;
 
@@ -29,7 +27,7 @@ class MelodyExcerptQuiz {
 
     async _init() {
         this.dom.btnStart.addEventListener('click', () => this.startGame());
-        this.dom.btnPlayMelody.addEventListener('click', () => this._togglePlayback());
+        this.dom.btnPlayMelody.addEventListener('click', () => this._playFromStart());
         this.dom.btnNext.addEventListener('click', () => this.nextQuestion());
         this.dom.btnBack.addEventListener('click', () => location.reload());
 
@@ -69,29 +67,16 @@ class MelodyExcerptQuiz {
         }
     }
 
-    _setPlayButton(playing) {
-        this._isPlaying = playing;
-        this.dom.btnPlayMelody.innerHTML = playing
-            ? '<i class="bi bi-stop-fill"></i> ' + getLocalizedText('stop', 'Stop')
-            : '<i class="bi bi-play-fill"></i> ' + getLocalizedText('play-melody', 'Play Melody');
-    }
-
-    async _togglePlayback() {
-        if (this._isPlaying) {
-            try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
-            this._setPlayButton(false);
-        } else {
-            // Reload score and play from beginning
-            const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
-            await hiddenOsmd.load(this.currentExcerptXml);
-            hiddenOsmd.render();
-            await this.audioPlayer.loadScore(hiddenOsmd);
-            try {
-                await this.audioPlayer.play();
-                this._setPlayButton(true);
-            } catch (e) {
-                console.log('Playback error', e);
-            }
+    async _playFromStart() {
+        try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+        const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
+        await hiddenOsmd.load(this.currentExcerptXml);
+        hiddenOsmd.render();
+        await this.audioPlayer.loadScore(hiddenOsmd);
+        try {
+            await this.audioPlayer.play();
+        } catch (e) {
+            console.log('Playback error', e);
         }
     }
 
@@ -171,10 +156,7 @@ class MelodyExcerptQuiz {
     async nextQuestion() {
         this.isAnswered = false;
 
-        if (this._isPlaying) {
-            try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
-        }
-        this._setPlayButton(false);
+        try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
 
         this.dom.btnNext.classList.add('d-none');
         this.dom.optionCards.forEach(card => {
@@ -230,7 +212,6 @@ class MelodyExcerptQuiz {
         // Auto-play
         try {
             await this.audioPlayer.play();
-            this._setPlayButton(true);
         } catch (e) {
             console.log('Playback error', e);
         }
@@ -348,8 +329,7 @@ window.startMelodyExcerptQuiz = () => {
         noScore: getLocalizedText('no-score', 'Please upload a music score before starting.'),
         backToBank: getLocalizedText('back-to-bank', 'Back to Bank'),
         nextQuestion: getLocalizedText('next-question', 'Next Question'),
-        playMelody: getLocalizedText('play-melody', 'Play Melody'),
-        stop: getLocalizedText('stop', 'Stop')
+        playMelody: getLocalizedText('play-melody', 'Play Melody')
     };
 
     return new MelodyExcerptQuiz(dom, loc);
