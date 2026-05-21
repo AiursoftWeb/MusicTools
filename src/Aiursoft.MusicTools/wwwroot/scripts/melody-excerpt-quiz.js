@@ -15,7 +15,6 @@ class MelodyExcerptQuiz {
         this.currentExcerptXml = "";
         this.options = [];
         this.correctIndex = -1;
-        this.isPlaying = false;
         this.isAnswered = false;
         this.correctCount = 0;
         this.wrongCount = 0;
@@ -28,11 +27,13 @@ class MelodyExcerptQuiz {
     }
 
     async _init() {
+        // Listen for audio state changes to update play/pause/replay button
+        this.audioPlayer.on('state-change', (state) => {
+            this._updatePlayButton(state);
+        });
+
         // Event listeners
         this.dom.btnStart.addEventListener('click', () => this.startGame());
-        if (this.dom.btnStartBank) {
-            this.dom.btnStartBank.addEventListener('click', () => this.startGameFromBank());
-        }
         this.dom.btnPlayMelody.addEventListener('click', () => this.playMelody());
         this.dom.btnNext.addEventListener('click', () => this.nextQuestion());
         this.dom.btnBack.addEventListener('click', () => location.reload());
@@ -45,7 +46,7 @@ class MelodyExcerptQuiz {
             card.addEventListener('click', () => this._handleChoice(index));
         });
 
-        // Question bank selection
+        // Question bank selection — start game immediately on click
         if (this.dom.bankItems) {
             this.dom.bankItems.forEach(item => {
                 item.addEventListener('click', () => {
@@ -56,7 +57,7 @@ class MelodyExcerptQuiz {
                         startMeasure: parseInt(item.dataset.startMeasure),
                         title: item.dataset.title
                     };
-                    this.dom.btnStartBank.classList.remove('d-none');
+                    this.startGameFromBank();
                 });
             });
         }
@@ -72,6 +73,17 @@ class MelodyExcerptQuiz {
                 drawCredits: false
             });
             this.osmds.push(osmd);
+        }
+    }
+
+    _updatePlayButton(state) {
+        const btn = this.dom.btnPlayMelody;
+        if (state === 'PLAYING') {
+            btn.innerHTML = '<i class="bi bi-pause-fill"></i> ' + getLocalizedText('pause', 'Pause');
+        } else if (state === 'PAUSED') {
+            btn.innerHTML = '<i class="bi bi-play-fill"></i> ' + getLocalizedText('resume', 'Resume');
+        } else if (state === 'STOPPED') {
+            btn.innerHTML = '<i class="bi bi-arrow-repeat"></i> ' + getLocalizedText('replay', 'Replay');
         }
     }
 
@@ -157,8 +169,15 @@ class MelodyExcerptQuiz {
 
     async nextQuestion() {
         this.isAnswered = false;
-        this.isPlaying = false;
-        this.audioPlayer.stop();
+        this.hasPlayedOnce = false;
+
+        // Stop previous playback, but only if a score was loaded
+        if (this.audioPlayer.state !== 'INIT') {
+            try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+        }
+
+        // Reset play button
+        this.dom.btnPlayMelody.innerHTML = '<i class="bi bi-play-fill"></i> ' + getLocalizedText('play-melody', 'Play Melody');
 
         this.dom.btnNext.classList.add('d-none');
         this.dom.optionCards.forEach(card => {
@@ -174,9 +193,6 @@ class MelodyExcerptQuiz {
         let startMeasureIdx;
         if (this.isBankMode && this.selectedBankQuestion) {
             startMeasureIdx = this.selectedBankQuestion.startMeasure;
-            // If in bank mode, we only play this one question?
-            // Or we could pick another one from bank.
-            // For now, let's keep the user on this question or allow them to go back.
         } else {
             // Randomly pick start measure (ensure at least 4 measures available)
             startMeasureIdx = Math.floor(Math.random() * (totalMeasures - 4));
@@ -212,29 +228,50 @@ class MelodyExcerptQuiz {
         const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
         await hiddenOsmd.load(this.currentExcerptXml);
         hiddenOsmd.render();
-        this.audioPlayer.loadScore(hiddenOsmd);
+        await this.audioPlayer.loadScore(hiddenOsmd);
 
-        this.playMelody();
-
-        // If it was a bank question, after answering, maybe show "Back to Bank" instead of "Next"
+        // If it was a bank question, after answering, show "Back to Bank" instead of "Next"
         if (this.isBankMode) {
             this.dom.btnNext.textContent = getLocalizedText('back-to-bank', 'Back to Bank');
             this.dom.btnNext.onclick = () => location.reload();
+        } else {
+            this.dom.btnNext.textContent = getLocalizedText('next-question', 'Next Question');
+            this.dom.btnNext.onclick = () => this.nextQuestion();
         }
+
+        // Auto-play the melody
+        this.playMelody();
     }
 
     async playMelody() {
-        if (this.isPlaying) return;
-        this.isPlaying = true;
-        this.dom.btnPlayMelody.disabled = true;
+        const state = this.audioPlayer.state;
 
+        // If playing, pause
+        if (state === 'PLAYING') {
+            this.audioPlayer.pause();
+            return;
+        }
+
+        // If paused, resume
+        if (state === 'PAUSED') {
+            await this.audioPlayer.play();
+            return;
+        }
+
+        // If stopped (playback finished), reload before replaying
+        if (state === 'STOPPED') {
+            const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
+            await hiddenOsmd.load(this.currentExcerptXml);
+            hiddenOsmd.render();
+            await this.audioPlayer.loadScore(hiddenOsmd);
+        }
+
+        // Play (INIT or after reload from STOPPED)
         try {
+            this.hasPlayedOnce = true;
             await this.audioPlayer.play();
         } catch (e) {
-            console.log('Playback error');
-        } finally {
-            this.isPlaying = false;
-            this.dom.btnPlayMelody.disabled = false;
+            console.log('Playback error', e);
         }
     }
 
@@ -331,7 +368,6 @@ window.startMelodyExcerptQuiz = () => {
         startOverlay: document.getElementById('start-overlay'),
         gameBoard: document.getElementById('game-board'),
         btnStart: document.getElementById('btn-start'),
-        btnStartBank: document.getElementById('btn-start-bank'),
         bankItems: document.querySelectorAll('.question-bank-item'),
         btnPlayMelody: document.getElementById('btn-play-melody'),
         btnNext: document.getElementById('btn-next'),
@@ -354,7 +390,12 @@ window.startMelodyExcerptQuiz = () => {
         customLoadFailed: getLocalizedText('custom-load-failed', 'Failed to load the custom score: '),
         tooShort: getLocalizedText('too-short', 'Score must have at least 4 measures.'),
         noScore: getLocalizedText('no-score', 'Please upload a music score before starting.'),
-        backToBank: getLocalizedText('back-to-bank', 'Back to Bank')
+        backToBank: getLocalizedText('back-to-bank', 'Back to Bank'),
+        nextQuestion: getLocalizedText('next-question', 'Next Question'),
+        playMelody: getLocalizedText('play-melody', 'Play Melody'),
+        pause: getLocalizedText('pause', 'Pause'),
+        resume: getLocalizedText('resume', 'Resume'),
+        replay: getLocalizedText('replay', 'Replay')
     };
 
     return new MelodyExcerptQuiz(dom, loc);
