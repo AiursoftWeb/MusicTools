@@ -8,7 +8,7 @@ class MelodyExcerptQuiz {
         this.dom = domElements;
         this.loc = localizedStrings;
 
-        this.osmds = []; // Array of OSMD instances for options
+        this.osmds = [];
         this.audioPlayer = new OsmdAudioPlayer();
 
         this.originalXmlDoc = null;
@@ -19,7 +19,8 @@ class MelodyExcerptQuiz {
         this.correctCount = 0;
         this.wrongCount = 0;
 
-        // Bank mode state
+        this._isPlaying = false;
+
         this.isBankMode = false;
         this.selectedBankQuestion = null;
 
@@ -27,14 +28,8 @@ class MelodyExcerptQuiz {
     }
 
     async _init() {
-        // Listen for audio state changes to update play/pause/replay button
-        this.audioPlayer.on('state-change', (state) => {
-            this._updatePlayButton(state);
-        });
-
-        // Event listeners
         this.dom.btnStart.addEventListener('click', () => this.startGame());
-        this.dom.btnPlayMelody.addEventListener('click', () => this.playMelody());
+        this.dom.btnPlayMelody.addEventListener('click', () => this._togglePlayback());
         this.dom.btnNext.addEventListener('click', () => this.nextQuestion());
         this.dom.btnBack.addEventListener('click', () => location.reload());
 
@@ -46,7 +41,6 @@ class MelodyExcerptQuiz {
             card.addEventListener('click', () => this._handleChoice(index));
         });
 
-        // Question bank selection — start game immediately on click
         if (this.dom.bankItems) {
             this.dom.bankItems.forEach(item => {
                 item.addEventListener('click', () => {
@@ -62,7 +56,6 @@ class MelodyExcerptQuiz {
             });
         }
 
-        // Initialize OSMD instances
         for (let i = 0; i < 4; i++) {
             const osmd = new OpenSheetMusicDisplay(`staff-${i}`, {
                 autoResize: true,
@@ -76,14 +69,29 @@ class MelodyExcerptQuiz {
         }
     }
 
-    _updatePlayButton(state) {
-        const btn = this.dom.btnPlayMelody;
-        if (state === 'PLAYING') {
-            btn.innerHTML = '<i class="bi bi-pause-fill"></i> ' + getLocalizedText('pause', 'Pause');
-        } else if (state === 'PAUSED') {
-            btn.innerHTML = '<i class="bi bi-play-fill"></i> ' + getLocalizedText('resume', 'Resume');
-        } else if (state === 'STOPPED') {
-            btn.innerHTML = '<i class="bi bi-arrow-repeat"></i> ' + getLocalizedText('replay', 'Replay');
+    _setPlayButton(playing) {
+        this._isPlaying = playing;
+        this.dom.btnPlayMelody.innerHTML = playing
+            ? '<i class="bi bi-stop-fill"></i> ' + getLocalizedText('stop', 'Stop')
+            : '<i class="bi bi-play-fill"></i> ' + getLocalizedText('play-melody', 'Play Melody');
+    }
+
+    async _togglePlayback() {
+        if (this._isPlaying) {
+            try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+            this._setPlayButton(false);
+        } else {
+            // Reload score and play from beginning
+            const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
+            await hiddenOsmd.load(this.currentExcerptXml);
+            hiddenOsmd.render();
+            await this.audioPlayer.loadScore(hiddenOsmd);
+            try {
+                await this.audioPlayer.play();
+                this._setPlayButton(true);
+            } catch (e) {
+                console.log('Playback error', e);
+            }
         }
     }
 
@@ -92,13 +100,11 @@ class MelodyExcerptQuiz {
         if (!file) return;
 
         try {
-            console.log(`[MelodyExcerptQuiz] Loading custom score: ${file.name}`);
             this.originalXmlDoc = await this._parseFileToXml(file);
-            console.log("[MelodyExcerptQuiz] Custom score parsed successfully.");
         } catch (error) {
             console.error("[MelodyExcerptQuiz] Error loading custom score:", error);
             alert(this.loc.customLoadFailed + error.message);
-            event.target.value = ""; // Clear input
+            event.target.value = "";
         }
     }
 
@@ -123,7 +129,6 @@ class MelodyExcerptQuiz {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlString, "application/xml");
 
-        // Basic validation
         if (xmlDoc.getElementsByTagName("measure").length < 4) {
             throw new Error(this.loc.tooShort);
         }
@@ -131,7 +136,6 @@ class MelodyExcerptQuiz {
     }
 
     async startGame() {
-        // Ensure we have a score
         if (!this.originalXmlDoc) {
             alert(this.loc.noScore);
             return;
@@ -140,7 +144,6 @@ class MelodyExcerptQuiz {
         this.isBankMode = false;
         this.dom.startOverlay.classList.add('d-none');
         this.dom.gameBoard.classList.remove('d-none');
-
         this.nextQuestion();
     }
 
@@ -148,7 +151,6 @@ class MelodyExcerptQuiz {
         if (!this.selectedBankQuestion) return;
 
         try {
-            // Load the score file from URL
             const response = await fetch(this.selectedBankQuestion.scoreUrl);
             if (!response.ok) throw new Error("Failed to fetch score file from server.");
             const blob = await response.blob();
@@ -159,7 +161,6 @@ class MelodyExcerptQuiz {
 
             this.dom.startOverlay.classList.add('d-none');
             this.dom.gameBoard.classList.remove('d-none');
-
             this.nextQuestion();
         } catch (error) {
             console.error("[MelodyExcerptQuiz] Error starting bank game:", error);
@@ -169,15 +170,11 @@ class MelodyExcerptQuiz {
 
     async nextQuestion() {
         this.isAnswered = false;
-        this.hasPlayedOnce = false;
 
-        // Stop previous playback, but only if a score was loaded
-        if (this.audioPlayer.state !== 'INIT') {
+        if (this._isPlaying) {
             try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
         }
-
-        // Reset play button
-        this.dom.btnPlayMelody.innerHTML = '<i class="bi bi-play-fill"></i> ' + getLocalizedText('play-melody', 'Play Melody');
+        this._setPlayButton(false);
 
         this.dom.btnNext.classList.add('d-none');
         this.dom.optionCards.forEach(card => {
@@ -185,7 +182,6 @@ class MelodyExcerptQuiz {
             card.style.pointerEvents = 'auto';
         });
 
-        // 1. Intercept 4 bars from the full score
         const parts = this.originalXmlDoc.getElementsByTagName("part");
         const measures = parts[0].getElementsByTagName("measure");
         const totalMeasures = measures.length;
@@ -194,20 +190,15 @@ class MelodyExcerptQuiz {
         if (this.isBankMode && this.selectedBankQuestion) {
             startMeasureIdx = this.selectedBankQuestion.startMeasure;
         } else {
-            // Randomly pick start measure (ensure at least 4 measures available)
             startMeasureIdx = Math.floor(Math.random() * (totalMeasures - 4));
         }
 
         const targetMeasures = [startMeasureIdx, startMeasureIdx + 1, startMeasureIdx + 2, startMeasureIdx + 3];
-
-        // 2. Generate correct option (the actual intercept)
         const correctMeasureNodes = targetMeasures.map(idx => measures[idx]);
         const attributesNode = this._findAttributesUpTo(startMeasureIdx);
         const correctXml = this._createMusicXMLFromMeasures(attributesNode, correctMeasureNodes);
 
-        // 3. Generate 3 distractors by modifying the correct measures
         this.options = [{ xml: correctXml, isCorrect: true }];
-
         while (this.options.length < 4) {
             const modifiedMeasures = correctMeasureNodes.map(node => this._generateMeasureVariation(node));
             const distractorXml = this._createMusicXMLFromMeasures(attributesNode, modifiedMeasures);
@@ -218,19 +209,16 @@ class MelodyExcerptQuiz {
         this.correctIndex = this.options.findIndex(o => o.isCorrect);
         this.currentExcerptXml = this.options[this.correctIndex].xml;
 
-        // 4. Render options
         for (let i = 0; i < 4; i++) {
             await this.osmds[i].load(this.options[i].xml);
             this.osmds[i].render();
         }
 
-        // 5. Load correct audio
         const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
         await hiddenOsmd.load(this.currentExcerptXml);
         hiddenOsmd.render();
         await this.audioPlayer.loadScore(hiddenOsmd);
 
-        // If it was a bank question, after answering, show "Back to Bank" instead of "Next"
         if (this.isBankMode) {
             this.dom.btnNext.textContent = getLocalizedText('back-to-bank', 'Back to Bank');
             this.dom.btnNext.onclick = () => location.reload();
@@ -239,37 +227,10 @@ class MelodyExcerptQuiz {
             this.dom.btnNext.onclick = () => this.nextQuestion();
         }
 
-        // Auto-play the melody
-        this.playMelody();
-    }
-
-    async playMelody() {
-        const state = this.audioPlayer.state;
-
-        // If playing, pause
-        if (state === 'PLAYING') {
-            this.audioPlayer.pause();
-            return;
-        }
-
-        // If paused, resume
-        if (state === 'PAUSED') {
-            await this.audioPlayer.play();
-            return;
-        }
-
-        // If stopped (playback finished), reload before replaying
-        if (state === 'STOPPED') {
-            const hiddenOsmd = new OpenSheetMusicDisplay(document.createElement("div"));
-            await hiddenOsmd.load(this.currentExcerptXml);
-            hiddenOsmd.render();
-            await this.audioPlayer.loadScore(hiddenOsmd);
-        }
-
-        // Play (INIT or after reload from STOPPED)
+        // Auto-play
         try {
-            this.hasPlayedOnce = true;
             await this.audioPlayer.play();
+            this._setPlayButton(true);
         } catch (e) {
             console.log('Playback error', e);
         }
@@ -293,7 +254,6 @@ class MelodyExcerptQuiz {
         }
     }
 
-    // Helper: Find music attributes (key, clef, etc.) active at a given measure
     _findAttributesUpTo(measureIndex) {
         const parts = this.originalXmlDoc.getElementsByTagName("part");
         const measures = parts[0].getElementsByTagName("measure");
@@ -308,12 +268,10 @@ class MelodyExcerptQuiz {
         return lastAttributes;
     }
 
-    // Helper: Create a full MusicXML string from specific measure nodes
     _createMusicXMLFromMeasures(attributesNode, measureNodes) {
         let measuresXml = "";
         measureNodes.forEach((node, i) => {
             let mXml = new XMLSerializer().serializeToString(node);
-            // Ensure first measure has attributes if provided
             if (i === 0 && attributesNode && !mXml.includes("<attributes>")) {
                 const attrsXml = new XMLSerializer().serializeToString(attributesNode);
                 mXml = mXml.replace(/<measure[^>]*>/, `$&${attrsXml}`);
@@ -333,12 +291,10 @@ class MelodyExcerptQuiz {
         </score-partwise>`;
     }
 
-    // Helper: Generate a slight variation of a measure for distractors
     _generateMeasureVariation(measureNode) {
         const fakeNode = measureNode.cloneNode(true);
         const pitches = fakeNode.getElementsByTagName("pitch");
         if (pitches.length > 0) {
-            // Pick a random note and shift it
             const targetNoteIdx = Math.floor(Math.random() * pitches.length);
             const pitch = pitches[targetNoteIdx];
             const stepNode = pitch.getElementsByTagName("step")[0];
@@ -393,9 +349,7 @@ window.startMelodyExcerptQuiz = () => {
         backToBank: getLocalizedText('back-to-bank', 'Back to Bank'),
         nextQuestion: getLocalizedText('next-question', 'Next Question'),
         playMelody: getLocalizedText('play-melody', 'Play Melody'),
-        pause: getLocalizedText('pause', 'Pause'),
-        resume: getLocalizedText('resume', 'Resume'),
-        replay: getLocalizedText('replay', 'Replay')
+        stop: getLocalizedText('stop', 'Stop')
     };
 
     return new MelodyExcerptQuiz(dom, loc);
