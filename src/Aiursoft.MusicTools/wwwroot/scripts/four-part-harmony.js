@@ -193,8 +193,10 @@ class FourPartHarmony {
         this._stopTimer();
         if (this.isAnswered) return;
         this.isAnswered = true;
-        alert(this.loc.timeout);
+        this.wrongCount++;
         this._showCorrectAnswer();
+        this.dom.btnNext.classList.remove('d-none');
+        this._updateUI();
     }
 
     _handleChoice(index) {
