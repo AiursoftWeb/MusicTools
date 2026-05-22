@@ -21,6 +21,8 @@ class MelodyExcerptQuiz {
 
         this.isBankMode = false;
         this.selectedBankQuestion = null;
+        this.bankQuestionIndex = -1;
+        this._autoAdvanceTimer = null;
 
         this._init();
     }
@@ -28,8 +30,16 @@ class MelodyExcerptQuiz {
     async _init() {
         this.dom.btnStart.addEventListener('click', () => this.startGame());
         this.dom.btnPlayMelody.addEventListener('click', () => this._playFromStart());
-        this.dom.btnNext.addEventListener('click', () => this.nextQuestion());
-        this.dom.btnBack.addEventListener('click', () => location.reload());
+        // btnNext.onclick is set dynamically in nextQuestion()
+        this.dom.btnBack.addEventListener('click', () => {
+            if (this._autoAdvanceTimer) {
+                clearTimeout(this._autoAdvanceTimer);
+                this._autoAdvanceTimer = null;
+            }
+            try { this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+            this.dom.gameBoard.classList.add('d-none');
+            this.dom.startOverlay.classList.remove('d-none');
+        });
 
         if (this.dom.fileInput) {
             this.dom.fileInput.addEventListener('change', (e) => this._handleFileUpload(e));
@@ -39,11 +49,13 @@ class MelodyExcerptQuiz {
             card.addEventListener('click', () => this._handleChoice(index));
         });
 
-        if (this.dom.bankItems) {
-            this.dom.bankItems.forEach(item => {
+        if (this.dom.bankItems && this.dom.bankItems.length > 0) {
+            this.allBankItems = Array.from(this.dom.bankItems);
+            this.dom.bankItems.forEach((item, index) => {
                 item.addEventListener('click', () => {
                     this.dom.bankItems.forEach(i => i.classList.remove('active'));
                     item.classList.add('active');
+                    this.bankQuestionIndex = index;
                     this.selectedBankQuestion = {
                         scoreUrl: item.dataset.scoreUrl,
                         startMeasure: parseInt(item.dataset.startMeasure),
@@ -154,6 +166,10 @@ class MelodyExcerptQuiz {
     }
 
     async nextQuestion() {
+        if (this._autoAdvanceTimer) {
+            clearTimeout(this._autoAdvanceTimer);
+            this._autoAdvanceTimer = null;
+        }
         this.isAnswered = false;
 
         try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
@@ -202,9 +218,24 @@ class MelodyExcerptQuiz {
         await this.audioPlayer.loadScore(hiddenOsmd);
 
         if (this.isBankMode) {
-            this.dom.btnNext.textContent = getLocalizedText('back-to-bank', 'Back to Bank');
-            this.dom.btnNext.onclick = () => location.reload();
+            const hasMore = this.bankQuestionIndex + 1 < this.allBankItems.length;
+            const questionNum = this.bankQuestionIndex + 1;
+            const total = this.allBankItems.length;
+            this.dom.questionTitle.classList.remove('d-none');
+            this.dom.questionTitle.textContent = `${questionNum} / ${total} — ${this.selectedBankQuestion.title}`;
+            if (hasMore) {
+                this.dom.btnNext.textContent = getLocalizedText('next-question', 'Next Question');
+                this.dom.btnNext.onclick = () => this._advanceToNextBankQuestion();
+            } else {
+                this.dom.btnNext.textContent = getLocalizedText('back-to-bank', 'Back to Bank');
+                this.dom.btnNext.onclick = () => {
+                    try { this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+                    this.dom.gameBoard.classList.add('d-none');
+                    this.dom.startOverlay.classList.remove('d-none');
+                };
+            }
         } else {
+            this.dom.questionTitle.classList.add('d-none');
             this.dom.btnNext.textContent = getLocalizedText('next-question', 'Next Question');
             this.dom.btnNext.onclick = () => this.nextQuestion();
         }
@@ -217,6 +248,39 @@ class MelodyExcerptQuiz {
         }
     }
 
+    async _advanceToNextBankQuestion() {
+        this.bankQuestionIndex++;
+
+        if (this.bankQuestionIndex >= this.allBankItems.length) {
+            try { await this.audioPlayer.stop(); } catch (e) { /* ignore */ }
+            this.dom.gameBoard.classList.add('d-none');
+            this.dom.startOverlay.classList.remove('d-none');
+            return;
+        }
+
+        const nextItem = this.allBankItems[this.bankQuestionIndex];
+        this.dom.bankItems.forEach(i => i.classList.remove('active'));
+        nextItem.classList.add('active');
+
+        this.selectedBankQuestion = {
+            scoreUrl: nextItem.dataset.scoreUrl,
+            startMeasure: parseInt(nextItem.dataset.startMeasure),
+            title: nextItem.dataset.title
+        };
+
+        try {
+            const response = await fetch(this.selectedBankQuestion.scoreUrl);
+            if (!response.ok) throw new Error("Failed to fetch score file from server.");
+            const blob = await response.blob();
+            const file = new File([blob], "score.mxl", { type: blob.type });
+            this.originalXmlDoc = await this._parseFileToXml(file);
+            await this.nextQuestion();
+        } catch (error) {
+            console.error("[MelodyExcerptQuiz] Error advancing to next bank question:", error);
+            alert(this.loc.customLoadFailed + error.message);
+        }
+    }
+
     _handleChoice(index) {
         if (this.isAnswered) return;
 
@@ -225,8 +289,18 @@ class MelodyExcerptQuiz {
             this.correctCount++;
             this.dom.correctCountLabel.textContent = this.correctCount;
             this.dom.optionCards[index].classList.add('correct');
-            this.dom.btnNext.classList.remove('d-none');
             this.dom.optionCards.forEach(card => card.style.pointerEvents = 'none');
+
+            if (this.isBankMode) {
+                const hasMore = this.bankQuestionIndex + 1 < this.allBankItems.length;
+                if (hasMore) {
+                    this._autoAdvanceTimer = setTimeout(() => this._advanceToNextBankQuestion(), 1500);
+                } else {
+                    this.dom.btnNext.classList.remove('d-none');
+                }
+            } else {
+                this._autoAdvanceTimer = setTimeout(() => this.nextQuestion(), 1500);
+            }
         } else {
             this.wrongCount++;
             this.dom.wrongCountLabel.textContent = this.wrongCount;
@@ -317,7 +391,8 @@ window.startMelodyExcerptQuiz = () => {
             document.getElementById('option-3')
         ],
         correctCountLabel: document.getElementById('correct-count'),
-        wrongCountLabel: document.getElementById('wrong-count')
+        wrongCountLabel: document.getElementById('wrong-count'),
+        questionTitle: document.getElementById('current-question-title')
     };
 
     const loc = {
