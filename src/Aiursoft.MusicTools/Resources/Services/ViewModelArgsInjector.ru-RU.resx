@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Нажмите для входа</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Создать вопрос</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Создать роль</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Возможности</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Четырёхголосие</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Диктант четырехголосной гармонии</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Глобальные настройки</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Управление</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Викторина с отрывками мелодий</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Тест на запоминание мелодии</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Настройки профиля</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Банк вопросов</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Библиотека вопросов</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Предпросмотр вопроса</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Зарегистрироваться</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Роли</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Библиотека нот</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Предпросмотр партитуры</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Самостоятельная развертка</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Неавторизованный</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Загрузить партитуру</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Данные пользователя</value>

@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>लॉगिन करने के लिए क्लिक करें</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>प्रश्न बनाएं</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>भूमिका बनाएं</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>विशेषताएँ</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>चार-भाग सामंजस्य</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>चार-भाग समकालिकता श्रवण अभ्यास</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>सार्वविक विन्यास</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>प्रबंधित करें</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>संगीत अंश क्विज</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>मेलोडी मेमोरी टेस्ट</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>प्रोफ़ाइल सेटिंग्स</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>प्रश्न बैंक</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>प्रश्न लाइब्रेरी</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>प्रश्न पूर्वावलोकन</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>पंजीकरण करें</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>भूमिकाएँ</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>स्कोर लाइब्रेरी</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>स्कोर पूर्वावलोकन</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>सेल्फ होस्ट</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>अनधिकृत</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>स्कोर अपलोड करें</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>उपयोगकर्ता विवरण</value>

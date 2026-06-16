@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>在开发时请始终使用 UTC 时间，系统会自动将日期转换并显示为用户的本地时间。</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>通过识别女高音、低音和罗马数字来听写四部和声。</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>支持 Docker，轻松部署</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>内置文件管理系统，支持自动头像压缩与隐私保护。</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>四部和声</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>轻松管理如清理和同步等重复任务，通过全面的图形界面监控执行历史和日志。</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>你好，世界！</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>识别您所听到的旋律的正确乐谱。</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>包含详尽的文档和实用示例，助您快速上手。</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>大调计算器</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>旋律片段测试</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>旋律记忆测试</value>

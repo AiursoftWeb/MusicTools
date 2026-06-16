@@ -60,6 +60,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>ログインするにはクリック</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>質問を作成</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>ロールの作成</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>機能</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>4部合唱</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>四部和声ディクテーション</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>グローバル設定</value>
@@ -138,6 +147,9 @@
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>メロディ断片クイズ</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>メロディーメモリーテスト</value>
   </data>
@@ -171,6 +183,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>プロフィール設定</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>問題集</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>問題ライブラリ</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>問題プレビュー</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>登録</value>
   </data>
@@ -182,6 +203,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>ロール</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>スコアライブラリ</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>スコアプレビュー</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>セルフホスト</value>
@@ -218,6 +245,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>権限がありません</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>楽譜をアップロード</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>ユーザー詳細</value>

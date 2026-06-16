@@ -60,6 +60,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>로그인하려면 클릭</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>문제 만들기</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>역할 생성</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>기능</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>성악 4부 화성법</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>4성부 화성 독보</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>전역 설정</value>
@@ -138,6 +147,9 @@
   <data name="Manage" xml:space="preserve">
     <value>관리</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>메로디 발췌 퀴즈</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>멜로디 기억력 테스트</value>
   </data>
@@ -171,6 +183,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>프로필 설정</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>문항 은행</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>질문 라이브러리</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>질문 미리보기</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>회원가입</value>
   </data>
@@ -182,6 +203,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>역할</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>보존된 곡 목록</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>총보 미리보기</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>자체 호스팅</value>
@@ -218,6 +245,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>권한 없음</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>악보 업로드</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>사용자 세부 정보</value>

@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Kliknij, aby się zalogować</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Utwórz pytanie</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Utwórz rolę</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Funkcje</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Czworgłosie</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Dyktat partitury czworogłosowej</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Ustawienia globalne</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Zarządzaj</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Test z fragmentu melodii</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Test Pamięci Melodii</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Ustawienia profilu</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Baza pytań</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Biblioteka Pytań</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Podgląd pytania</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Zarejestruj</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Role</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Biblioteka nut</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Podgląd nut</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Samodzielne hostowanie</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Nieautoryzowany</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Prześlij nuty</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Szczegóły użytkownika</value>

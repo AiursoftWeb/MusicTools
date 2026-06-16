@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Klik om in te loggen</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Vraag maken</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Rol aanmaken</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Functionaliteiten</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Vierstemmige harmonie</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Vierstemmige harmonie dictaat</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Algemene instellingen</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Beheren</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodiefragmenttoets</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodiegeheugen test</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profielinstellingen</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Vragenbank</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Vraagbank</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Voorbeeldvraag</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registreren</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Rollen</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Notenbibliotheek</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Partituurvoorbeeld</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Zelf hosten</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Niet geautoriseerd</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Partituur uploaden</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Gebruikersgegevens</value>

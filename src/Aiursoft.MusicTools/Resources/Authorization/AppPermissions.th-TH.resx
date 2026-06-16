@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>อนุญาตให้กำหนดหรือลบบทบาทสำหรับผู้ใช้ใดๆ</value>
   </data>
+  <data name="Allows managing the score library and quiz questions." xml:space="preserve">
+    <value>อนุญาตให้จัดการคลังคะแนนและคำถามแบบทดสอบ</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>อนุญาตให้แก้ไขชื่อบทบาทและสิทธิ์ที่กำหนดให้</value>
   </data>
@@ -83,6 +86,9 @@
   </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>จัดการการตั้งค่าทั่วโลก</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>จัดการคำถาม</value>
   </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>ดูสิทธิ์การเข้าถึง</value>

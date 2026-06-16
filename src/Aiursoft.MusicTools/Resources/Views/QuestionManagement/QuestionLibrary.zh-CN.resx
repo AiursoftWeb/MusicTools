@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="All Quiz Questions" xml:space="preserve">
+    <value>所有测验题目</value>
+  </data>
+  <data name="Are you sure you want to delete this question?" xml:space="preserve">
+    <value>您确定要删除此问题吗？</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
+    <value>未找到问题。前往曲谱库创建一个。</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>题库</value>
+  </data>
+  <data name="Questions generated from the score library." xml:space="preserve">
+    <value>根据曲谱库生成的试题。</value>
+  </data>
+  <data name="Source Score" xml:space="preserve">
+    <value>原曲谱</value>
+  </data>
+  <data name="Start Measure" xml:space="preserve">
+    <value>起始小节</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+
+</root>

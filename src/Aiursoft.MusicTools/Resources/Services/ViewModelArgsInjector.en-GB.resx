@@ -60,6 +60,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Click to log in</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Create Question</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Create Role</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Features</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Four-Part Harmony</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Four-Part Harmony Dictation</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Global Settings</value>
@@ -138,6 +147,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melody Excerpt Quiz</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melody Memory Test</value>
   </data>
@@ -171,6 +183,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profile Settings</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Question Bank</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Question Library</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Question Preview</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>
   </data>
@@ -182,6 +203,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roles</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Score Library</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Score Preview</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Self Host</value>
@@ -218,6 +245,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Unauthorised</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Upload Score</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>User Details</value>

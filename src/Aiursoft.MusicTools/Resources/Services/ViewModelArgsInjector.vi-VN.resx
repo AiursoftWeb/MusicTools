@@ -60,6 +60,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Nhấp để đăng nhập</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Tạo câu hỏi</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Tạo Vai Trò</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Tính năng</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Hòa âm bốn phần</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Định âm hòa âm bốn bè</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Cài đặt toàn cục</value>
@@ -138,6 +147,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Quản lý</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Bài kiểm tra đoạn nhạc</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Bài Kiểm Tra Trí Nhớ Giai Điệu</value>
   </data>
@@ -171,6 +183,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Cài đặt Hồ sơ</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Ngân hàng câu hỏi</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Thư viện câu hỏi</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Xem trước câu hỏi</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Đăng ký</value>
   </data>
@@ -182,6 +203,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Vai trò</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Thư viện bản nhạc</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Xem trước bản nhạc</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Tự host</value>
@@ -218,6 +245,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Không được ủy quyền</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Tải lên bản nhạc</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Thông tin người dùng</value>

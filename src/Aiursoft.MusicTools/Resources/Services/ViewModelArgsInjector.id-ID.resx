@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Klik untuk masuk</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Buat Pertanyaan</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Buat Peran</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Fitur</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Harmoni Empat Bagian</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Diktat Harmoni Empat Suara</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Pengaturan Global</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Kelola</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Kuis Cuplikan Melodi</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Tes Memori Melodi</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Pengaturan Profil</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Bank Soal</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Perpustakaan Soal</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Pratinjau Pertanyaan</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Daftar</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Peran</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Pustaka Notasi</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Pratinjau Notasi</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Host Sendiri</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Tidak Diizinkan</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Unggah Partitur</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Detail Pengguna</value>
