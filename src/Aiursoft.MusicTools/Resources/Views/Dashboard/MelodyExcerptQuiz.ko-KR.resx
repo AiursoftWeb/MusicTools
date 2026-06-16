@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>뱅크로 돌아가기</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>문제 은행에서 문제를 선택하거나 나만의 악보를 업로드하세요.</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>정답입니다!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>난이도</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>쉬움 (인접음)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>사용자 지정 악보를 로드하지 못했습니다:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>어려움 (단추)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>주의 깊게 듣고 아래에서 올바른 악보를 선택하세요.</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>음원 불러오는 중...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>마디</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>악절 읽기 퀴즈</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>다음 질문</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>사전 정의된 질문이 없습니다. 업로드 옵션을 사용하십시오.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>멜로디 재생</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>시작하기 전에 악보를 업로드하세요.</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>4마디 이상 포함된 악보를 업로드하세요.</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>문제 은행</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>악보는 최소 4마디 이상이어야 합니다.</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>퀴즈 시작</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>마디표</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>악보 업로드 (MXL 또는 XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>악보 업로드</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>아직 정답이 아닙니다. 다시 도전해보세요.</value>
+  </data>
+
+</root>

@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Desarrolle exclusivamente en UTC mientras el sistema convierte y muestra automáticamente las fechas en la zona horaria local del usuario.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Dictada de armonía a cuatro voces identificando el soprano, el bajo y los números romanos.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerizado para una implementación sencilla</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Incluye un sistema de gestión de archivos integrado con compresión automática de avatares y protección de privacidad.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Armonía a cuatro voces</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Administra tareas recurrentes como limpieza y sincronización con una interfaz gráfica completa para supervisar el historial de ejecución y los registros.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hola Mundo!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Identifique la notación musical correcta para la melodía que escuche.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Incluye documentación extensa y ejemplos prácticos para que empieces rápidamente.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Calculadora de acordes mayores</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Quiz de fragmentos melódicos</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Prueba de Memoria Melódica</value>

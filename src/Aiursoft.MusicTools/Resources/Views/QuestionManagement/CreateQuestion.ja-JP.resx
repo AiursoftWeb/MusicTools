@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+    <value>下の小節範囲をクリックして、連続する4小節を選択してください。</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>問題を生成</value>
+  </data>
+  <data name="Create Question from Score" xml:space="preserve">
+    <value>楽譜から質問を作成</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>例：オープニングテーマの特定</value>
+  </data>
+  <data name="Excerpt Preview" xml:space="preserve">
+    <value>抜粋プレビュー</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>全楽譜プレビュー</value>
+  </data>
+  <data name="Measure Count" xml:space="preserve">
+    <value>小節数</value>
+  </data>
+  <data name="Preview of the selected 4 measures." xml:space="preserve">
+    <value>選択した4小節のプレビュー</value>
+  </data>
+  <data name="Question Details" xml:space="preserve">
+    <value>問題の詳細</value>
+  </data>
+  <data name="Question Title" xml:space="preserve">
+    <value>質問タイトル</value>
+  </data>
+  <data name="Select Measures" xml:space="preserve">
+    <value>小節を選択</value>
+  </data>
+  <data name="Selected range:" xml:space="preserve">
+    <value>選択範囲：</value>
+  </data>
+  <data name="Source Score" xml:space="preserve">
+    <value>原曲</value>
+  </data>
+  <data name="Start Measure Index (0-indexed)" xml:space="preserve">
+    <value>開始小節インデックス（0から始まる）</value>
+  </data>
+
+</root>

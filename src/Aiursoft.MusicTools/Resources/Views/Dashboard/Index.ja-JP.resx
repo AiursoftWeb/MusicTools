@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>UTCで専用に開発し、システムが日時をユーザーのローカルタイムゾーンに自動的に変換して表示します。</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>ソプラノ、バス、ローマ数字を特定することで、四部和声を聴解します。</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker対応でデプロイが簡単</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>自動アバター圧縮およびプライバシー保護機能を備えた組み込みファイル管理システムを搭載しています。</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>4部和声</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>クリーンアップや同期などの繰り返し実行ジョブを、実行履歴およびログの監視が可能な包括的なGUIで管理します。</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>こんにちは世界！</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>聴覚から得たメロディに対応する正しい楽譜を選択してください。</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>すぐに使い始められるように、詳細なドキュメントと実用的な例を豊富に用意しています。</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>メジャー計算機</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>旋律模写クイズ</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>メロディーメモリーテスト</value>

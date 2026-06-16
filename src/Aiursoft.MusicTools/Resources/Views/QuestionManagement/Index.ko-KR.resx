@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>작업</value>
+  </data>
+  <data name="All Scores" xml:space="preserve">
+    <value>전체 악보</value>
+  </data>
+  <data name="Are you sure you want to delete this score? All associated questions will be deleted." xml:space="preserve">
+    <value>이 악보를 삭제하시겠습니까? 관련된 모든 질문이 함께 삭제됩니다.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>문제 만들기</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Managed music scores for generating quiz questions." xml:space="preserve">
+    <value>퀴즈 문제 생성을 위한 음악 악보 관리</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="No scores found. Please upload one." xml:space="preserve">
+    <value>점수를 찾지 못했습니다. 점수를 업로드해 주세요.</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>악보 라이브러리</value>
+  </data>
+  <data name="Upload New Score" xml:space="preserve">
+    <value>새로운 악보 업로드</value>
+  </data>
+  <data name="Upload Time" xml:space="preserve">
+    <value>업로드 시간</value>
+  </data>
+
+</root>

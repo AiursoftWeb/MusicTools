@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Phát triển riêng biệt bằng múi giờ UTC trong khi hệ thống tự động chuyển đổi và hiển thị ngày tháng theo múi giờ địa phương của người dùng.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Viết lại hòa âm bốn phần bằng cách xác định soprano, bass và các số La Mã.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker hóa để triển khai dễ dàng</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Tích hợp hệ thống quản lý tập tin tích hợp với nén ảnh đại diện tự động và bảo vệ quyền riêng tư.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Giai điệu bốn giọng</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Xử lý các tác vụ lặp lại như dọn dẹp và đồng bộ hóa với giao diện người dùng toàn diện để theo dõi lịch sử thực thi và nhật ký.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Xin chào Thế giới!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Xác định ký hiệu âm nhạc chính xác cho giai điệu bạn nghe.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Bao gồm tài liệu chi tiết và các ví dụ thực tế để bạn bắt đầu nhanh chóng.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Bộ tính thang âm trưởng</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Trắc nghiệm đoạn giai điệu</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Kiểm tra trí nhớ giai điệu</value>
