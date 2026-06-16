@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>Back to Bank</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>Select a question from the bank or upload your own score.</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Correct!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>Easy (Stepwise)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>Failed to load the custom score:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>Hard (Leaps)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>Listen carefully and select the matching notation below.</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>Loading score...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>Bars</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melody Excerpt Quiz</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Next Question</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>No pre-defined questions available. Please use the upload option.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>Play Melody</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>Please upload a music score before starting.</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>Please upload a score with at least 4 bars.</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Question Bank</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>The score must have at least four bars.</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>Start Quiz</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Time Signature</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>Upload Music Score (MXL or XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Upload Score</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>Incorrect! Try again.</value>
+  </data>
+
+</root>

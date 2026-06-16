@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>返回題庫</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>從題庫中選擇題目，或上傳您自己的樂譜。</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>正確！</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難度</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>簡單（級進）</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>無法載入自訂樂譜：</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>困難（跳進）</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>請仔細聆聽，並從下方選出對應的樂譜記號。</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>載入樂譜中...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>小節</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>旋律片段測驗</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>下一題</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>目前沒有預設的問題。請使用上傳功能。</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>播放旋律</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>請在開始前先上傳樂譜。</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>請上傳一份至少包含 4 小節的樂譜。</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>題庫</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>樂譜至少需要有4小節。</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>開始測驗</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>拍號</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>上傳樂譜 (MXL 或 XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>上傳樂譜</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>錯了！請再試一次。</value>
+  </data>
+
+</root>

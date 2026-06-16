@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Натисніть, щоб увійти</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Створити запитання</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Створити роль</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Функції</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Чотириголосна гармонія</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Диктування чотирьохголосної гармонії</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Глобальні налаштування</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Керування</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Тест на фрагменти мелодії</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Тест на пам&apos;ять мелодій</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Налаштування профілю</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Банк запитань</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Бібліотека запитань</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Попередній перегляд запитання</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Реєстрація</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Ролі</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Бібліотека нот</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Перегляд партитури</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Самостійний хостинг</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Неавторизовано</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Завантажити партитуру</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Деталі користувача</value>

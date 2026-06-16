@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Klicka för att logga in</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Skapa fråga</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Skapa roll</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Funktioner</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Fyrstämmig harmoni</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Fyrstämmig harmonisatslittering</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Globala inställningar</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Hantera</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodifrågestund</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodiminne Test</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profilinställningar</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Frågebank</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Frågebank</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Frågeförhandsvisning</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registrera</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roller</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Notationsbibliotek</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Förhandsgranskning av notation</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Självvärd</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Obehörig</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Ladda upp notation</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Användardetaljer</value>

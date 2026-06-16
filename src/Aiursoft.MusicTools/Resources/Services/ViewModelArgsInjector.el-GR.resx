@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Κάντε κλικ για σύνδεση</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Δημιουργία Ερώτησης</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Δημιουργία Ρόλου</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Λειτουργίες</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Τετράφωνη Αρμονία</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Αντίληψη Εναρμόνισης Τεσσάρων Μελωδίας</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Καθολικές Ρυθμίσεις</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Διαχείριση</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Δοκιμή Αποσπάσματος Μελωδίας</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Δοκιμή Μνήμης Μελωδίας</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Ρυθμίσεις Προφίλ</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Τράπεζα Ερωτήσεων</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Βιβλιοθήκη Ερωτήσεων</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Προεπισκόπηση Ερώτησης</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Εγγραφή</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Ρόλοι</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Βιβλιοθήκη Σκορ</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Προεπισκόπηση Παρτιτούρας</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Αυτοδιαχείριση</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Μη Εξουσιοδοτημένος</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Ανέβασμα Παρτιτούρας</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Στοιχεία Χρήστη</value>

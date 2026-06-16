@@ -60,6 +60,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>คลิกเพื่อเข้าสู่ระบบ</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>สร้างคำถาม</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>สร้างบทบาท</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>คุณสมบัติ</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>ฮาร์โมนี่ 4 ส่วน</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>การเขียนโน้ตดนตรีฮาร์โมนีย์สี่ส่วน</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>ตั้งค่าทั่วไป</value>
@@ -138,6 +147,9 @@
   <data name="Manage" xml:space="preserve">
     <value>จัดการ</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>แบบทดสอบการจำทำนองส่วนสั้น</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>ทดสอบความจำทำนองเพลง</value>
   </data>
@@ -171,6 +183,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>การตั้งค่าโปรไฟล์</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>คลังข้อสอบ</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>คลังโจทย์</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>ตัวอย่างคำถาม</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>สมัครสมาชิก</value>
   </data>
@@ -182,6 +203,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>บทบาท</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>ห้องสมุดโน้ตดนตรี</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>ตัวอย่างการให้คะแนน</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>โฮสต์เอง</value>
@@ -218,6 +245,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>ไม่ได้รับอนุญาต</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>อัปโหลดสไลด์</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>รายละเอียดผู้ใช้</value>

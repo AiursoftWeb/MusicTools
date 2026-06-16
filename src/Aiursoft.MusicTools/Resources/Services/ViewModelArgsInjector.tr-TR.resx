@@ -57,6 +57,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Giriş yapmak için tıklayın</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Soru Oluştur</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Rol Oluştur</value>
   </data>
@@ -92,6 +95,12 @@
   </data>
   <data name="Features" xml:space="preserve">
     <value>Özellikler</value>
+  </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Dört Sesli Uyum</value>
+  </data>
+  <data name="Four-Part Harmony Dictation" xml:space="preserve">
+    <value>Dört Kısımlı Harmoni Diktasyonu</value>
   </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Genel Ayarlar</value>
@@ -135,6 +144,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Yönet</value>
   </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodi Alıntı Sınavı</value>
+  </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodi Hafıza Testi</value>
   </data>
@@ -168,6 +180,15 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profil Ayarları</value>
   </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Soru Bankası</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Soru Kitaplığı</value>
+  </data>
+  <data name="Question Preview" xml:space="preserve">
+    <value>Soru Önizleme</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Kayıt Ol</value>
   </data>
@@ -179,6 +200,12 @@
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roller</value>
+  </data>
+  <data name="Score Library" xml:space="preserve">
+    <value>Puan Kütüphanesi</value>
+  </data>
+  <data name="Score Preview" xml:space="preserve">
+    <value>Prelüzyon Öngörüsü</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Kendi Sunucunu Kur</value>
@@ -215,6 +242,9 @@
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Yetkisiz</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Not Yükle</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>Kullanıcı Detayları</value>

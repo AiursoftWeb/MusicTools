@@ -110,6 +110,17 @@ public class ViewModelArgsInjector(
         _ = localizer["Deploy Anywhere"];
         _ = localizer["Interval Exam"];
         _ = localizer["Interval Training"];
+    
+        _ = localizer["Create Question"];
+        _ = localizer["Four-Part Harmony"];
+        _ = localizer["Four-Part Harmony Dictation"];
+        _ = localizer["Melody Excerpt Quiz"];
+        _ = localizer["Question Bank"];
+        _ = localizer["Question Library"];
+        _ = localizer["Question Preview"];
+        _ = localizer["Score Library"];
+        _ = localizer["Score Preview"];
+        _ = localizer["Upload Score"];
     }
 
     public void InjectSimple(
