@@ -1,13 +1,15 @@
+using Aiursoft.MusicTools.Entities;
 using Aiursoft.MusicTools.Models.DashboardViewModels;
 using Aiursoft.MusicTools.Services;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.MusicTools.Controllers;
 
 [LimitPerMin]
-public class DashboardController : Controller
+public class DashboardController(MusicToolsDbContext context) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Tools",
@@ -164,5 +166,39 @@ public class DashboardController : Controller
     public IActionResult ChordTraining()
     {
         return this.StackView(new ChordTrainingViewModel());
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Melody Excerpt Quiz",
+        LinkOrder = 12)]
+    public async Task<IActionResult> MelodyExcerptQuiz()
+    {
+        var questions = await context.Questions
+            .Include(q => q.Score)
+            .OrderByDescending(q => q.CreateTime)
+            .ToListAsync();
+
+        return this.StackView(new MelodyExcerptQuizViewModel
+        {
+            AvailableQuestions = questions
+        });
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Tools",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Tests",
+        CascadedLinksIcon = "headphones",
+        CascadedLinksOrder = 2,
+        LinkText = "Four-Part Harmony",
+        LinkOrder = 13)]
+    public IActionResult FourPartHarmony()
+    {
+        return this.StackView(new FourPartHarmonyViewModel());
     }
 }

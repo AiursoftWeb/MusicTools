@@ -102,5 +102,10 @@
   <data name="View System Context" xml:space="preserve">
     <value>查看系统上下文</value>
   </data>
-
+  <data name="Manage Questions" xml:space="preserve">
+    <value>管理题库</value>
+  </data>
+  <data name="Allows managing the score library and quiz questions." xml:space="preserve">
+    <value>允许管理乐谱库和测验题目。</value>
+  </data>
 </root>
