@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>バンクに戻る</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>問題銀行から問題を選ぶか、独自の楽譜をアップロードしてください。</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>正解！</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難易度</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>簡単（順次進行）</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>カスタムスコアの読み込みに失敗しました：</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>ハード（跳躍）</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>よく聴いて、下に合った楽譜を選んでください。</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>楽譜を読み込み中...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>小節</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>メロディ断片クイズ</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>次の問題</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>事前設定された質問はありません。アップロードオプションをご利用ください。</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>メロディを再生</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>開始する前に楽譜をアップロードしてください。</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>4小節以上のスコアをアップロードしてください。</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>問題集</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>スコアは少なくとも4小節が必要です。</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>クイズを開始</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>拍子記号</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>楽譜をアップロード（MXL または XML）</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>楽譜をアップロード</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>不正解！もう一度挑戦してください。</value>
+  </data>
+
+</root>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>ย้อนกลับ</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>กลับสู่คลังเพลง</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>เลือกคำถามจากคลังคำถาม หรืออัปโหลดโน้ตเพลงของคุณเอง</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>ถูกต้อง!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>ความยาก</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>ง่าย (เรียงลำดับ)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>ไม่สามารถโหลดคอร์ดที่กำหนดเองได้:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>ยาก (การกระโดดข้ามตัว)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>ฟัง attentively แล้วเลือกโน้ตดนตรีที่ตรงกันด้านล่าง</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>กำลังโหลดโน้ตเพลง...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>小节</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>แบบทดสอบบทเพลงส่วนหนึ่ง</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>คำถามถัดไป</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>ไม่มีคำถามที่กำหนดไว้ล่วงหน้า กรุณาใช้ตัวเลือกอัปโหลด</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>เปิดเสียงเพลง</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>กรุณาอัปโหลดบทเพลงก่อนเริ่ม</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>กรุณาอัปโหลดโน้ตเพลงที่มีอย่างน้อย 4 มัด</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>คลังข้อสอบ</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>บทเพลงต้องมีอย่างน้อย 4 ห้อง</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>เริ่มแบบทดสอบ</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>ลายลักษณ์จังหวะ</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>อัปโหลดโน้ตดนตรี (MXL หรือ XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>อัปโหลดโน้ตเพลง</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>ผิด! ลองอีกครั้ง</value>
+  </data>
+
+</root>

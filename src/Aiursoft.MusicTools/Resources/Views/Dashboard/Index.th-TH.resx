@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>พัฒนาเฉพาะในเวลา UTC ในขณะที่ระบบจะแปลงและแสดงวันที่โดยอัตโนมัติเป็นเขตเวลาท้องถิ่นของผู้ใช้</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>ฟังเพลงและวิเคราะห์ประสานเสียงสี่ระดับเสียง โดยระบุ soprano, bass และเลขโรมัน</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>ใช้ Docker สำหรับการติดตั้งที่ง่าย</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>มีระบบจัดการไฟล์แบบฝังในตัวพร้อมการบีบอัดภาพโปรไฟล์อัตโนมัติและป้องกันความเป็นส่วนตัว</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>การฝึกประสานเสียงสี่ส่วน</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>จัดการงานที่เกิดซ้ำ เช่น การทำความสะอาดและประสานข้อมูล ด้วยอินเทอร์เฟซกราฟิกที่ครอบคลุมสำหรับติดตามประวัติการดำเนินการและบันทึกการใช้งาน</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>สวัสดีโลก!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>ระบุสัญลักษณ์ทางดนตรีที่ถูกต้องสำหรับทำนองที่คุณได้ยิน</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>รวมเอกสารประกอบอย่างละเอียดและตัวอย่างการใช้งานจริงเพื่อให้คุณเริ่มต้นได้อย่างรวดเร็ว</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>เครื่องคำนวณเมเจอร์</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>แบบทดสอบบทเพลงสั้นๆ</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>การทดสอบความจำทำนอง</value>
