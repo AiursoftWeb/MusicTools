@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>العودة إلى البنك</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>اختر سؤالاً من البنك أو ارفع نتيجتك الخاصة.</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>صحيح!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>المستوى</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>سهل (متسلسل)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>فشل في تحميل النتيجة المخصصة:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>صعبة (القفزات)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>استمع جيدًا وحدد التدوين المتطابق أدناه.</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>جاري تحميل النتيجة...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>الإيقاعات</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>اختبار مقتطفات الألحان</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>السؤال التالي</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>لا توجد أسئلة محددة مسبقاً متاحة. يرجى استخدام خيار الرفع.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>تشغيل اللحن</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>يرجى رفع partition موسيقي قبل البدء.</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>يرجى رفع نتاج موسيقي يتكون من 4 مقاطع على الأقل.</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>بنك الأسئلة</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>يجب أن يحتوي المسار على 4 مقاطع على الأقل.</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>ابدأ الاختبار</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>الإشارة الزمنية</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>تحميل النوتة الموسيقية (MXL أو XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>تحميل النتيجة</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>خطأ! حاول مرة أخرى.</value>
+  </data>
+
+</root>

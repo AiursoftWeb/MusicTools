@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>Voltar ao Banco</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>Escolha uma pergunta do banco de dados ou carregue a sua própria partitura.</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Correto!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Dificuldade</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>Fácil (Gradual)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>Falha ao carregar a partitura personalizada:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>Difícil (Saltos)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>Ouça com atenção e selecione a notação correspondente abaixo.</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>A carregar partitura...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>Compasses</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Quiz de Trecho Melódico</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Próxima Pergunta</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>Não existem perguntas predefinidas disponíveis. Por favor, utilize a opção de upload.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>Tocar Melodia</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>Por favor, carregue uma partitura musical antes de começar.</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>Por favor, carregue uma partitura com pelo menos 4 compassos.</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Banco de Perguntas</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>A partitura deve ter pelo menos 4 compassos.</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>Iniciar Questionário</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Compasso</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>Carregar Partitura Musical (MXL ou XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Carregar Partitura</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>Errado! Tente novamente.</value>
+  </data>
+
+</root>

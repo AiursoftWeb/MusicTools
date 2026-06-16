@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Разрабатывайте исключительно в UTC, а система автоматически преобразует и отображает даты в часовом поясе пользователя.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Разберите четырехголосное партесное складывание, определив сопрано, бас и римские цифры.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized for Easy Deployment</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Обладает встроенной системой управления файлами с автоматической компрессией аватаров и защитой конфиденциальности.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Четырёхголосная гармония</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Управляйте повторяющимися задачами, такими как очистка и синхронизация, с помощью комплексного графического интерфейса для мониторинга истории выполнения и журналов.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Привет, мир!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Определите правильное нотное обозначение услышанной мелодии.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Содержит подробную документацию и практические примеры для быстрого старта.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Калькулятор мажора</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Тест на узнавание мелодии</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Испытание на запоминание мелодии</value>

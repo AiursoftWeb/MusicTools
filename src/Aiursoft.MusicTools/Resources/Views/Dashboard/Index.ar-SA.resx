@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>طور بشكل حصري باستخدام التوقيت العالمي الموحد (UTC) بينما يقوم النظام تلقائيًا بتحويل التواريخ وعرضها بالتوقيت المحلي للمستخدم.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>قم بالإملاء للموسيقى الرباعية الأجزاء من خلال تحديد صوت السوبرانو، والباس، والأرقام الرومانية.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>مُحَوَّل إلى Docker لتسهيل النشر</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>يتميز بنظام إدارة ملفات مدمج مع ضغط تلقائي للصورة الرمزية وحماية الخصوصية.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>الانسجام الرباعي الأجزاء</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>تعامل مع المهام الدورية مثل التنظيف والمزامنة باستخدام واجهة رسومية شاملة لمراقبة سجلات التاريخ والسجلات.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>مرحبا بالعالم!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>حدد التدوين الموسيقي الصحيح للملفوفة التي تسمعها.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>يشمل وثائق شاملة وأمثلة عملية للبدء بسرعة.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>الآلة الحاسبة للماجور</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>اختبار مقتطفات الألحان</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>اختبار تذكّر اللحن</value>
