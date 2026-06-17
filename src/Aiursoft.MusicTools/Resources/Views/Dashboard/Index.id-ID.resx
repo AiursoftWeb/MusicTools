@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Kembangkan secara eksklusif dalam UTC sementara sistem secara otomatis mengonversi dan menampilkan tanggal dalam zona waktu lokal pengguna.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Diktakan harmoni empat suara dengan mengidentifikasi Soprano, Bass, dan Angka Romawi.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized untuk Deploi yang Mudah</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Memiliki sistem manajemen file bawaan dengan kompresi avatar otomatis dan perlindungan privasi.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Harmoni Empat Bagian</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Kelola pekerjaan berulang seperti pembersihan dan sinkronisasi dengan antarmuka GUI komprehensif untuk memantau riwayat eksekusi dan log.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Halo Dunia!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Identifikasi notasi musik yang benar untuk melodi yang Anda dengar.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Termasuk dokumentasi yang lengkap dan contoh praktis untuk memulai dengan cepat.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Kalkulator Mayor</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Kuis Cuplikan Melodi</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Uji Ingatan Melodi</value>

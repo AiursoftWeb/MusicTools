@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
+  <data name="All Quiz Questions" xml:space="preserve">
+    <value>Semua Pertanyaan Kuis</value>
+  </data>
+  <data name="Are you sure you want to delete this question?" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghapus pertanyaan ini?</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Waktu Dibuat</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Hapus</value>
+  </data>
+  <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
+    <value>Tidak ada pertanyaan yang ditemukan. Buka Pustaka Skor untuk membuat satu.</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Pratinjau</value>
+  </data>
+  <data name="Question Library" xml:space="preserve">
+    <value>Perpustakaan Soal</value>
+  </data>
+  <data name="Questions generated from the score library." xml:space="preserve">
+    <value>Pertanyaan yang dihasilkan dari perpustakaan skor.</value>
+  </data>
+  <data name="Source Score" xml:space="preserve">
+    <value>Sumber Musik</value>
+  </data>
+  <data name="Start Measure" xml:space="preserve">
+    <value>Taktik Awal</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Judul</value>
+  </data>
+
+</root>

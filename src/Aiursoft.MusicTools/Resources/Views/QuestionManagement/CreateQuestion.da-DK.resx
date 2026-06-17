@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+    <value>Klik på et systemområde nedenfor for at vælge 4 sammenhængende systemer.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Opret spørgsmål</value>
+  </data>
+  <data name="Create Question from Score" xml:space="preserve">
+    <value>Opret spørgsmål fra nodeliste</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>f.eks. Idetifikation af åbningsmotiv</value>
+  </data>
+  <data name="Excerpt Preview" xml:space="preserve">
+    <value>Uddragsforhåndsvisning</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Forhåndsvisning af fuld partitur</value>
+  </data>
+  <data name="Measure Count" xml:space="preserve">
+    <value>Antal takter</value>
+  </data>
+  <data name="Preview of the selected 4 measures." xml:space="preserve">
+    <value>Forhåndsvisning af de valgte 4 takter.</value>
+  </data>
+  <data name="Question Details" xml:space="preserve">
+    <value>Spørgsmålsdetaljer</value>
+  </data>
+  <data name="Question Title" xml:space="preserve">
+    <value>Spørgestionstittel</value>
+  </data>
+  <data name="Select Measures" xml:space="preserve">
+    <value>Vælg takter</value>
+  </data>
+  <data name="Selected range:" xml:space="preserve">
+    <value>Valgt interval:</value>
+  </data>
+  <data name="Source Score" xml:space="preserve">
+    <value>Kildepartitur</value>
+  </data>
+  <data name="Start Measure Index (0-indexed)" xml:space="preserve">
+    <value>Starttaktnummer (0-indeks)</value>
+  </data>
+
+</root>
