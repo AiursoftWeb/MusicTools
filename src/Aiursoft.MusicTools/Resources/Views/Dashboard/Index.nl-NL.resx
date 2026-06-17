@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Ontwikkel uitsluitend in UTC, terwijl het systeem data automatisch converteert en weergeeft in de lokale tijdzone van de gebruiker.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Noteer vierstemmige harmonie door het identificeren van sopraan, bas en Romeinse cijfers.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized voor eenvoudige implementatie</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Heeft een ingebouwd bestandsbeheersysteem met automatische avatarcompressie en privacybescherming.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Vierstemmige harmonie</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Verwerk herhalende taken zoals opschonen en synchronisatie met een uitgebreide GUI voor het bewaken van uitvoeringsgeschiedenis en logbestanden.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hallo Wereld!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Bepaal de juiste notatie voor de melodie die je hoort.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Inclusief uitgebreide documentatie en praktische voorbeelden om snel aan de slag te gaan.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Major Calculator</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodievraagje</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodiegeheugen test</value>
