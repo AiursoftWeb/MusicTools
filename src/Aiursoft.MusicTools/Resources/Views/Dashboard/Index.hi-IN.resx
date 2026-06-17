@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>यूटीसी में सिर्फ विकसित करें, जबकि सिस्टम स्वचालित रूप से उपयोगकर्ता के स्थानीय समय क्षेत्र में तारीखों को परिवर्तित और प्रदर्शित करता है।</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>सोप्रानो, बेस और रोमन अंकों की पहचान करके चार-भागीय सामंजस्य लिखवाएँ।</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>डॉकराइज़्ड आसान डिप्लॉयमेंट के लिए</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>एक स्वचालित एवं अवतार संपीड़न और गोपनीयता सुरक्षा के साथ एक निर्मित फ़ाइल प्रबंधन प्रणाली के साथ विशेषता है।</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>चार-आवाजी सामंजस्य</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>नियमित कार्यों जैसे साफ़ करना और समन्वयन को एक व्यापक GUI के साथ प्रबंधित करें जो निष्पादन इतिहास और लॉग के निगरानी के लिए उपलब्ध है।</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>नमस्ते दुनिया!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>जो सुरमाला आप सुन रहे हैं, उसके लिए सही संगीत संकेतन की पहचान करें।</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>शुरुआत करने के लिए व्यापक दस्तावेज़न और व्यावहारिक उदाहरण शामिल हैं।</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>मेजर कैलकुलेटर</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>मेलोडी अंश क्विज़</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>ध्वनि स्मृति परीक्षण</value>
