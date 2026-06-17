@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Kehitä vain UTC:ssä, kunnes järjestelmä muuntaa ja näyttää päivämäärät käyttäjän paikalliseen aikavyöhön automaattisesti.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Kirjoita nelisävelinen harmonia tunnistamalla sopraano-, bassosävelet ja roomalaiset numerot.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker-kehyttänyt helppokäyttöiseen käyttöönottoon</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Sisältää upotetun tiedostojen hallintajärjestelmän automaattisen etukuvien kompressoinnin ja yksityisyyssuojauksen kanssa.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Neliosainen harmonia</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Käsittele toistuvia tehtäviä, kuten siivouksen ja synkronoinnin, laajalla GUI:lla suoritushistorian ja lokien seurantaan.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hei Maailma!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Etsi oikea nuotinotatio kuulemallesi melodialle.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Sisältää laajaa dokumentaatiota ja käytännön esimerkkejä, joiden avulla pääset nopeasti alkuun.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Suuri laskin</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodiaotteen testi</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodin muistitesti</value>

@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Αναπτύξτε αποκλειστικά στο UTC, ενώ το σύστημα μετατρέπει και εμφανίζει αυτόματα τις ημερομηνίες στην τοπική ώρα του χρήστη.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Ακροαστείτε τετραφωνία εντοπίζοντας την Σοπράνο, την Μπάσο και τους Ρωμαϊκούς Αριθμούς.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Διαμορφωμένο με Docker για εύκολη μεταφόρτωση</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Διαθέτει σύστημα διαχείρισης αρχείων ενσωματωμένο στο σύστημα με αυτόματη συμπίεση αβατάρ και προστασία της ιδιωτικότητας.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Τετραφωνία</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Διαχειριστείτε επαναλαμβανόμενες εργασίες όπως καθαρισμός και συγχρονισμός με ένα εκτεταμένο GUI για την παρακολούθηση της ιστορίας εκτέλεσης και των καταγραφών.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Γεια σου Κόσμε!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Αναγνωρίστε τη σωστή μουσική σημειογραφία για τη μελωδία που ακούτε.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Συμπεριλαμβάνει εκτενή δοκιμασία και πρακτικά παραδείγματα για να ξεκινήσετε γρήγορα.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Μεγάλος Υπολογιστής</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Κουίζ Μελωδικού Αποσπάσματος</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Δοκιμή Μνήμης Μελωδίας</value>
