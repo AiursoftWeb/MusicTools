@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Back to Bank" xml:space="preserve">
+    <value>Powrót do banku</value>
+  </data>
+  <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
+    <value>Wybierz pytanie z banku lub prześlij własny utwór muzyczny.</value>
+  </data>
+  <data name="Correct!" xml:space="preserve">
+    <value>Dobrze!</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Poziom trudności</value>
+  </data>
+  <data name="Easy (Stepwise)" xml:space="preserve">
+    <value>Łatwy (skokowo)</value>
+  </data>
+  <data name="Failed to load the custom score: " xml:space="preserve">
+    <value>Nie udało się załadować niestandardowego nuty:</value>
+  </data>
+  <data name="Hard (Leaps)" xml:space="preserve">
+    <value>Trudny (skoki)</value>
+  </data>
+  <data name="Listen carefully and select the matching notation below." xml:space="preserve">
+    <value>Słuchaj uważnie i wybierz odpowiadającą notację poniżej.</value>
+  </data>
+  <data name="Loading score..." xml:space="preserve">
+    <value>Ładowanie nut...</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>Taktów</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Quiz z fragmentów melodii</value>
+  </data>
+  <data name="Next Question" xml:space="preserve">
+    <value>Następne pytanie</value>
+  </data>
+  <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
+    <value>Brak dostępnych predefiniowanych pytań. Korzystaj z opcji przesyłania.</value>
+  </data>
+  <data name="Play Melody" xml:space="preserve">
+    <value>Odtwórz Melodię</value>
+  </data>
+  <data name="Please upload a music score before starting." xml:space="preserve">
+    <value>Przed rozpoczęciem prześlij nuty.</value>
+  </data>
+  <data name="Please upload a score with at least 4 measures." xml:space="preserve">
+    <value>Prześł.partiturę zawierającą co najmniej 4 takty.</value>
+  </data>
+  <data name="Question Bank" xml:space="preserve">
+    <value>Bank pytań</value>
+  </data>
+  <data name="Score must have at least 4 measures." xml:space="preserve">
+    <value>Nutoryst musi mieć co najmniej 4 takty.</value>
+  </data>
+  <data name="Start Quiz" xml:space="preserve">
+    <value>Rozpocznij quiz</value>
+  </data>
+  <data name="Time Signature" xml:space="preserve">
+    <value>Czasowy</value>
+  </data>
+  <data name="Upload Music Score (MXL or XML)" xml:space="preserve">
+    <value>Prześlij nuty (MXL lub XML)</value>
+  </data>
+  <data name="Upload Score" xml:space="preserve">
+    <value>Prześlij nuty</value>
+  </data>
+  <data name="Wrong! Try again." xml:space="preserve">
+    <value>Źle! Spróbuj ponownie.</value>
+  </data>
+
+</root>

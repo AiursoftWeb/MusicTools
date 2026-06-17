@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>UTC&apos;de özel olarak geliştirin, sistem tarihleri otomatik olarak kullanıcının yerel saat dilimine dönüştürür ve görüntüler.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Soprano, Bas ve Roma Rakamlarını belirleyerek dört sesli harmoniyi yazdırın.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker ile Kolay Dağıtım İçin Hazır</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Gömülü bir dosya yönetim sistemi, otomatik avatar sıkıştırma ve gizlilik koruması ile birlikte gelir.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Dört Sırıtlı Harmoni</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Temizlik ve senkronizasyon gibi tekrarlayan görevleri, yürütme geçmişi ve günlükleri izlemek için kapsamlı bir GUI ile yönetin.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Merhaba Dünya!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Duyduğunuz melodinin doğru müzikal gösterimini belirleyin.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Kapsamlı belgeler ve hızlı başlamaya yardımcı olacak pratik örnekler içerir.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Büyük Hesaplayıcı</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Melodi Parçası Testi</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Melodi Bellek Testi</value>

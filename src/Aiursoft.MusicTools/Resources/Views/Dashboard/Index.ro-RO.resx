@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Dezvoltați exclusiv în UTC, în timp ce sistemul convertește și afișează automat datele în fereastra de timp locală a utilizatorului.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Dictează armonia în patru voci identificând Soprana, Bassul și cifrele romane.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerizat pentru o implementare ușoară</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Oferește un sistem integrat de gestionare a fișierelor cu comprimare automată a avatarelor și protecția confidențialității.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Harmonie pe patru voci</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Gestionează sarcinile periodice, cum ar fi curățarea și sincronizarea, cu o interfață grafică completă pentru monitorizarea istoricului de execuție și a jurnalelor.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Salut lume!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Identificați notația muzicală corectă pentru melodia pe care o auziți.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Include documentație extensivă și exemple practice pentru a începe rapid.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Calculatoarele pentru tonalități majore</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Test de fragment melodic</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Test de Memorie Melodică</value>

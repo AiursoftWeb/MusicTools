@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+    <value>Klicka på ett taktområde nedan för att välja 4 sammanhängande takter.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Skapa fråga</value>
+  </data>
+  <data name="Create Question from Score" xml:space="preserve">
+    <value>Skapa fråga från not</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>t.ex. Identifiera öppningstemat</value>
+  </data>
+  <data name="Excerpt Preview" xml:space="preserve">
+    <value>Excerpthoning</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Förhandsgranskning av fullständigt partitur</value>
+  </data>
+  <data name="Measure Count" xml:space="preserve">
+    <value>Antal takter</value>
+  </data>
+  <data name="Preview of the selected 4 measures." xml:space="preserve">
+    <value>Förhandsvisning av de valda 4 takterna.</value>
+  </data>
+  <data name="Question Details" xml:space="preserve">
+    <value>Frågedetaljer</value>
+  </data>
+  <data name="Question Title" xml:space="preserve">
+    <value>Frågetitel</value>
+  </data>
+  <data name="Select Measures" xml:space="preserve">
+    <value>Välj taktomfång</value>
+  </data>
+  <data name="Selected range:" xml:space="preserve">
+    <value>Utvalt intervall:</value>
+  </data>
+  <data name="Source Score" xml:space="preserve">
+    <value>Källnot</value>
+  </data>
+  <data name="Start Measure Index (0-indexed)" xml:space="preserve">
+    <value>Starttaktnummer (0-baserat)</value>
+  </data>
+
+</root>

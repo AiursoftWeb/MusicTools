@@ -99,6 +99,9 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Розробляйте виключно в UTC, тоді як система автоматично перетворює та відображає дати у часовому поясі користувача.</value>
   </data>
+  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
+    <value>Записуйте чотириголосну гармонію, визначаючи сопрано, бас та римські цифри.</value>
+  </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized для легкого розгортання</value>
   </data>
@@ -120,11 +123,17 @@
   <data name="Features a built-in file management system with automatic avatar compression and privacy protection." xml:space="preserve">
     <value>Містить вбудовану систему управління файлами з автоматичною компресією аватарів та захистом приватності.</value>
   </data>
+  <data name="Four-Part Harmony" xml:space="preserve">
+    <value>Чотириголосна гармонія</value>
+  </data>
   <data name="Handle recurring jobs like cleanup and synchronization with a comprehensive GUI for monitoring execution history and logs." xml:space="preserve">
     <value>Керуйте повторюваними завданнями, такими як очищення та синхронізація, за допомогою комплексного графічного інтерфейсу для моніторингу історії виконання та журналів.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Привіт Світ!</value>
+  </data>
+  <data name="Identify the correct musical notation for the melody you hear." xml:space="preserve">
+    <value>Визначте правильну нотацію для мелодії, яку ви чуєте.</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Містить розгорнуту документацію та практичні приклади для швидкого початку роботи.</value>
@@ -149,6 +158,9 @@
   </data>
   <data name="Major Calculator" xml:space="preserve">
     <value>Калькулятор мажорних акордів</value>
+  </data>
+  <data name="Melody Excerpt Quiz" xml:space="preserve">
+    <value>Квіз на розпізнавання мелодії</value>
   </data>
   <data name="Melody Memory Test" xml:space="preserve">
     <value>Тест пам&apos;яті мелодії</value>
