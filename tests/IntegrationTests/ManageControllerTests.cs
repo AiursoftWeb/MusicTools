@@ -3,7 +3,6 @@ using Aiursoft.MusicTools.Services;
 using Aiursoft.MusicTools.Entities;
 using System.Net;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
 namespace Aiursoft.MusicTools.Tests.IntegrationTests;
 
 [TestClass]
