@@ -121,6 +121,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Score Library"];
         _ = localizer["Score Preview"];
         _ = localizer["Upload Score"];
+    
+        _ = localizer["Delete Account"];
     }
 
     public void InjectSimple(
