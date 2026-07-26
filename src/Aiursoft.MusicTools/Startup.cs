@@ -7,6 +7,7 @@ using Aiursoft.MusicTools.InMemory;
 using Aiursoft.MusicTools.MySql;
 using Aiursoft.MusicTools.Services.Authentication;
 using Aiursoft.MusicTools.Sqlite;
+using Aiursoft.UiStack;
 using Aiursoft.UiStack.Layout;
 using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -76,6 +77,7 @@ public class Startup : IWebStartup
     {
         app.UseExceptionHandler("/Error/Code500");
         app.UseStatusCodePagesWithReExecute("/Error/Code{0}");
+        app.UseUIStack();
 
         var contentTypeProvider = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
         contentTypeProvider.Mappings[".mxl"] = "application/vnd.recordare.musicxml+xml";
