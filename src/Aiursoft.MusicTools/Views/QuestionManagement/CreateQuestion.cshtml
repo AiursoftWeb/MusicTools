@@ -1,115 +1,94 @@
-@using Aiursoft.MusicTools.Services.FileStorage
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.CreateQuestionViewModel
-@inject StorageService Storage
-
-<div class="row mb-2 mb-xl-3">
-    <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Create Question from Score"]</h3>
-    </div>
+<div class="listening-hero mb-4">
+    <span class="listening-eyebrow">@Localizer["COMPOSE A LISTENING CHALLENGE"]</span>
+    <h1>@Localizer["Create Question"]</h1>
+    <p>@Model.ScoreName · @Localizer["Choose listening context, then focus on one measure and one audible difference."]</p>
 </div>
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="card-title">@Localizer["Question Details"]</h5>
-            </div>
+<div class="row g-4" id="listening-create" data-score-id="@Model.ScoreId">
+    <div class="col-xl-4">
+        <form asp-action="CreateQuestion" method="post" id="create-question-form" class="card">
             <div class="card-body">
-                <form asp-action="CreateQuestion" method="post" id="create-question-form">
-                    <input type="hidden" asp-for="ScoreId" />
-                    <div asp-validation-summary="All" class="text-danger"></div>
-
-                    <div class="mb-3">
-                        <label class="form-label">@Localizer["Source Score"]</label>
-                        <input class="form-control" value="@Model.ScoreName" disabled />
-                    </div>
-
-                    <div class="mb-3">
-                        <label asp-for="Title" class="form-label">@Localizer["Question Title"]</label>
-                        <input asp-for="Title" class="form-control" placeholder="@Localizer["e.g. Opening Theme Identification"]" />
-                        <span asp-validation-for="Title" class="text-danger"></span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label asp-for="StartMeasureIndex" class="form-label">@Localizer["Start Measure Index (0-indexed)"]</label>
-                        <input asp-for="StartMeasureIndex" type="number" class="form-control" min="0" id="start-measure-input" />
-                        <span asp-validation-for="StartMeasureIndex" class="text-danger"></span>
-                    </div>
-
-                    <div class="mb-3">
-                        <label asp-for="MeasureCount" class="form-label">@Localizer["Measure Count"]</label>
-                        <input asp-for="MeasureCount" type="number" class="form-control" value="4" readonly />
-                        <span asp-validation-for="MeasureCount" class="text-danger"></span>
-                    </div>
-
-                    <div class="mt-4">
-                        <button type="submit" class="btn btn-primary w-100">@Localizer["Create Question"]</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <div class="card mb-3">
-            <div class="card-header">
-                <h5 class="card-title">@Localizer["Full Score Preview"]</h5>
-                <h6 class="card-subtitle text-muted">@Localizer["Click a measure range below to select 4 consecutive measures."]</h6>
-            </div>
-            <div class="card-body">
-                <div id="osmd-container" style="width: 100%; height: 400px; overflow-y: auto;"></div>
-            </div>
-        </div>
-
-        <div class="card mb-3">
-            <div class="card-header">
-                <h5 class="card-title">@Localizer["Select Measures"]</h5>
-            </div>
-            <div class="card-body">
-                <div id="measure-selector" class="d-flex flex-wrap gap-1"></div>
-                <div class="text-muted mt-2">
-                    <small>@Localizer["Selected range:"] <span id="selected-range-text">—</span></small>
+                <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+                <input type="hidden" asp-for="ScoreId" />
+                <input type="hidden" asp-for="StartMeasureIndex" />
+                <input type="hidden" asp-for="MeasureCount" />
+                <input type="hidden" asp-for="FocusMeasureIndex" />
+                <label asp-for="Title" class="form-label">@Localizer["Question Title"]</label>
+                <input asp-for="Title" class="form-control mb-3" />
+                <label asp-for="PartId" class="form-label">@Localizer["Instrument / part"]</label>
+                <select asp-for="PartId" class="form-select mb-3">
+                    @foreach (var part in Model.Parts) { <option value="@part.Id">@part.Name</option> }
+                </select>
+                <label asp-for="Staff" class="form-label">@Localizer["Voice / hands"]</label>
+                <select asp-for="Staff" class="form-select mb-3">
+                    <option value="">@Localizer["All staves (both hands)"]</option>
+                    <option value="1">@Localizer["Staff 1 (usually right hand)"]</option>
+                    <option value="2">@Localizer["Staff 2 (usually left hand)"]</option>
+                </select>
+                <div class="row g-2 mb-3">
+                    <div class="col"><label for="range-start" class="form-label">@Localizer["From position"]</label><input id="range-start" class="form-control" type="number" min="1" value="@(Model.StartMeasureIndex + 1)" /></div>
+                    <div class="col"><label for="range-end" class="form-label">@Localizer["Through position"]</label><input id="range-end" class="form-control" type="number" min="1" value="@(Model.StartMeasureIndex + Model.MeasureCount)" /></div>
                 </div>
+                <p class="small text-muted">@Localizer["This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included."]</p>
+                <div class="listening-focus-panel p-3 mb-3">
+                    <label for="focus-position" class="form-label">@Localizer["Target measure position"]</label>
+                    <input id="focus-position" type="number" min="1" value="@(Model.FocusMeasureIndex + 1)" class="form-control mb-3" />
+                    <label asp-for="FocusNotePosition" class="form-label">@Localizer["Target pitched note (count from 1 within this measure)"]</label>
+                    <input asp-for="FocusNotePosition" type="number" min="1" max="128" class="form-control mb-2" />
+                    <p class="small mb-0">@Localizer["Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location."]</p>
+                </div>
+                <label asp-for="Skill" class="form-label">@Localizer["Listening focus"]</label>
+                <select asp-for="Skill" class="form-select mb-3">
+                    <option value="0">@Localizer["Pitch: one note, same rhythm"]</option>
+                    <option value="1">@Localizer["Rhythm: one adjacent pair, same pitches"]</option>
+                </select>
+                <label asp-for="OptionCount" class="form-label">@Localizer["Number of reviewed versions"]</label>
+                <select asp-for="OptionCount" class="form-select mb-3"><option value="3">3</option><option value="4">4</option></select>
+                <label asp-for="Prompt" class="form-label">@Localizer["Tell students exactly what to listen for"]</label>
+                <textarea asp-for="Prompt" rows="2" maxlength="1000" class="form-control mb-3"></textarea>
+                <label asp-for="Difficulty" class="form-label">@Localizer["Difficulty"]</label>
+                <select asp-for="Difficulty" class="form-select mb-3">
+                    <option value="1">@Localizer["Beginner"]</option><option value="2">@Localizer["Intermediate"]</option><option value="3">@Localizer["Advanced"]</option>
+                </select>
+                <label asp-for="Explanation" class="form-label">@Localizer["Shared listening guidance"]</label>
+                <textarea asp-for="Explanation" class="form-control mb-3" rows="3"></textarea>
+                <p class="small text-muted">@Localizer["Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time."]</p>
+                <button type="submit" class="btn btn-primary w-100">@Localizer["Generate focused versions"]</button>
+                <p class="small text-muted mt-3 mb-0">@Localizer["Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original."]</p>
             </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                <h5 class="card-title">@Localizer["Excerpt Preview"]</h5>
-                <h6 class="card-subtitle text-muted">@Localizer["Preview of the selected 4 measures."]</h6>
+        </form>
+        <aside class="card"><div class="card-body">
+            <h3 class="h5">@Localizer["What makes a good question?"]</h3>
+            <p>@Localizer["Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick."]</p>
+            <p class="mb-0">@Localizer["A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes."]</p>
+        </div></aside>
+    </div>
+    <div class="col-xl-8">
+        <div class="card"><div class="card-header"><h3 class="card-title">@Localizer["1. Explore the score"]</h3></div><div class="card-body">
+            <p class="listening-error text-danger" role="alert"></p>
+            <div id="full-score" class="listening-score listening-full-score" data-score-url="@Url.Action("ScoreXml", new { id = Model.ScoreId })"></div>
+            <p class="small text-muted mt-3">@Localizer["Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score."]</p>
+            <div id="measure-selector" class="d-flex flex-wrap gap-1" aria-label="@Localizer["Measure selection"]"></div>
+        </div></div>
+        <div class="card"><div class="card-header d-flex flex-wrap justify-content-between gap-2">
+            <h3 class="card-title">@Localizer["2. Listen to your passage"]</h3>
+            <button id="preview-excerpt" type="button" class="btn btn-outline-primary">@Localizer["Update preview"]</button>
+        </div><div class="card-body">
+            <p class="small text-muted">@Localizer["Listening context"]</p>
+            <div id="excerpt-score" class="listening-score"></div>
+            <div class="listening-focus-panel p-3 mt-3">
+                <h4 class="h6">@Localizer["The only measure students will compare"]</h4>
+                <div id="focus-score" class="listening-score"></div>
             </div>
-            <div class="card-body">
-                <div id="osmd-excerpt-container" style="width: 100%; min-height: 150px;"></div>
-            </div>
-        </div>
+            <button id="audition-excerpt" type="button" class="btn btn-primary mt-3">@Localizer["Prepare audio"]</button>
+            <audio id="excerpt-audio" controls class="w-100 mt-3" hidden></audio>
+            <p id="excerpt-status" class="small text-muted mt-2" role="status"></p>
+        </div></div>
     </div>
 </div>
-
-@if (Model.ScorePath != null)
-{
-    <div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
-}
-
+<script type="application/json" id="score-parts">@Json.Serialize(Model.Parts)</script>
 @* ReSharper disable once Razor.SectionNotResolved *@
-@section styles {
-    <style>
-        .measure-btn {
-            min-width: 4.5rem;
-            transition: all 0.15s ease;
-        }
-        .measure-btn.in-range {
-            background-color: rgba(13, 110, 253, 0.1);
-            border-color: rgba(13, 110, 253, 0.35);
-        }
-    </style>
-}
-
+@section styles { <link rel="stylesheet" href="~/styles/listening.css" asp-append-version="true" /> }
 @* ReSharper disable once Razor.SectionNotResolved *@
-@section scripts {
-    <script type="module" src="~/dist/scripts/createQuestionPreview.js" asp-append-version="true"></script>
-    <script>
-        window.addEventListener('load', () => {
-            if (window.startCreateQuestionPreview) window.startCreateQuestionPreview();
-        });
-    </script>
-}
+@section scripts { <script type="module" src="~/dist/scripts/listeningAdmin.js" asp-append-version="true"></script> }
+<partial name="_ListeningText" />

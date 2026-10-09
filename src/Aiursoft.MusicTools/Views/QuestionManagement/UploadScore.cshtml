@@ -18,14 +18,23 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">@Localizer["MusicXML or MXL File"]</label>
+                <label asp-for="Author" class="form-label">@Localizer["Composer / arranger"]</label>
+                <input asp-for="Author" class="form-control mb-3" />
+                <label class="form-label">@Localizer["MusicXML file"]</label>
                 <vc:file-upload
                     asp-for="ScorePath"
                     subfolder="score"
                     allowed-extensions="mxl xml musicxml"
+                    is-vault="true"
                     max-size-in-mb="20">
                 </vc:file-upload>
                 <span asp-validation-for="ScorePath" class="text-danger"></span>
+                <div class="alert alert-info mt-3">
+                    <h4 class="h6">@Localizer["Have a MuseScore project instead?"]</h4>
+                    <p class="mb-2">@Localizer["Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed."]</p>
+                    <a asp-action="ExportMusicXml" class="btn btn-outline-primary btn-sm">@Localizer["Show me how to export"]</a>
+                </div>
+                <p class="small text-muted mt-2">@Localizer["Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions."]</p>
             </div>
 
             <div class="mt-4">
@@ -45,4 +54,15 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script>
+        document.addEventListener('change', event => {
+            const input = event.target;
+            if (input instanceof HTMLInputElement && input.type === 'file' &&
+                /\.(mscz|mscx)$/i.test(input.files?.[0]?.name ?? '')) {
+                event.stopImmediatePropagation();
+                input.value = '';
+                window.location.assign('@Url.Action("ExportMusicXml")');
+            }
+        }, true);
+    </script>
 }

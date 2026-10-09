@@ -1,0 +1,24 @@
+.listening-hero { background: linear-gradient(125deg, #182848, #3658a0 65%, #147d8c); color: white; border-radius: 1.2rem; padding: clamp(1.5rem, 4vw, 3rem); }
+.listening-hero h1 { color: white; font-weight: 700; margin: .5rem 0 1rem; }
+.listening-hero p { max-width: 52rem; opacity: .9; }
+.listening-eyebrow { font-size: .72rem; letter-spacing: .16em; font-weight: 700; }
+.listening-score { overflow-x: auto; background: #fff; color: #172033; border-radius: .65rem; min-height: 8rem; }
+.listening-full-score { max-height: 36rem; overflow-y: auto; }
+.listening-option { border-radius: 1rem; border: 1px solid var(--bs-border-color, #dfe4ef); overflow: hidden; }
+.listening-option .card-header { background: transparent; }
+.listening-option .listening-score { max-width: 36rem; margin-inline: auto; }
+#practice-cards { max-width: 96rem; margin-inline: auto; }
+@media (min-width: 1800px) { #practice-cards[data-count="3"] .listening-answer-column { width: 33.333333%; } }
+.listening-option.selected { border: 2px solid #3658a0; box-shadow: 0 0 0 3px #3658a018; }
+.listening-option.correct { border: 2px solid #198754; }
+.listening-option.incorrect { border: 2px solid #dc3545; }
+.listening-choice-label { display: flex; align-items: center; gap: .65rem; cursor: pointer; padding: 1rem 1.25rem; font-weight: 700; }
+.listening-choice-letter { display: inline-grid; place-items: center; border-radius: 50%; width: 2rem; height: 2rem; background: #edf1fb; color: #274985; }
+.listening-measure { min-width: 3rem; }
+.listening-measure small { display: block; font-size: .65rem; opacity: .75; }
+.listening-score svg { max-width: none; }
+.listening-error:empty { display: none; }
+.listening-focus-panel { border: 2px solid #3658a0; border-radius: .75rem; background: var(--bs-tertiary-bg, #edf1fb); }
+.listening-focus-playing { border-color: #198754; background: var(--bs-success-bg-subtle, #e9f7ef); }
+.listening-result { border-left: 4px solid #3658a0; padding: 1rem 1.5rem; background: var(--bs-tertiary-bg, #f2f5fa); border-radius: .5rem; }
+@media (max-width: 575px) { .listening-hero { padding: 1.5rem; } .listening-option .card-body { padding: .7rem; } }

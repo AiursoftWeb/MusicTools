@@ -11,13 +11,8 @@ public class MelodyExcerptQuizTests : TestBase
         response.EnsureSuccessStatusCode();
         var html = await response.Content.ReadAsStringAsync();
 
-        // Should contain key game elements
-        Assert.IsTrue(html.Contains("id=\"start-overlay\""));
-        Assert.IsTrue(html.Contains("id=\"game-board\""));
-        Assert.IsTrue(html.Contains("id=\"option-0\""));
-        Assert.IsTrue(html.Contains("id=\"option-1\""));
-        Assert.IsTrue(html.Contains("id=\"option-2\""));
-        Assert.IsTrue(html.Contains("id=\"option-3\""));
-        Assert.IsTrue(html.Contains("melodyExcerptQuiz.js"));
+        Assert.Contains("The stage is being prepared", html);
+        Assert.Contains("listeningPractice.js", html);
+        Assert.DoesNotContain("id=\"question-picker\"", html);
     }
 }

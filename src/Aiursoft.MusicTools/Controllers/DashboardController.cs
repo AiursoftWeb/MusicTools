@@ -179,6 +179,7 @@ public class DashboardController(MusicToolsDbContext context) : Controller
     public async Task<IActionResult> MelodyExcerptQuiz()
     {
         var questions = await context.Questions
+            .Where(q => q.IsFocused && q.Status == QuestionStatus.Published)
             .Include(q => q.Score)
             .OrderByDescending(q => q.CreateTime)
             .ToListAsync();

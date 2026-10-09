@@ -12,6 +12,14 @@ public abstract class MusicToolsDbContext(DbContextOptions options) : IdentityDb
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
     public DbSet<Score> Scores => Set<Score>();
     public DbSet<Question> Questions => Set<Question>();
+    public DbSet<QuestionOption> QuestionOptions => Set<QuestionOption>();
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+        builder.Entity<Question>().HasOne(q => q.Score).WithMany(s => s.Questions)
+            .HasForeignKey(q => q.ScoreId).OnDelete(DeleteBehavior.Restrict);
+    }
 
     public virtual  Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

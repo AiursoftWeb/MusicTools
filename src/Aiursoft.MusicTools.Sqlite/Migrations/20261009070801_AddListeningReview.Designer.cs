@@ -3,6 +3,7 @@ using System;
 using Aiursoft.MusicTools.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.MusicTools.Sqlite.Migrations
 {
     [DbContext(typeof(SqliteContext))]
-    partial class SqliteContextModelSnapshot : ModelSnapshot
+    [Migration("20261009070801_AddListeningReview")]
+    partial class AddListeningReview
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.12");
@@ -36,10 +39,6 @@ namespace Aiursoft.MusicTools.Sqlite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ContextMusicXmlPath")
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("CreateTime")
                         .HasColumnType("TEXT");
 
@@ -51,19 +50,7 @@ namespace Aiursoft.MusicTools.Sqlite.Migrations
                         .HasMaxLength(4000)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("FocusMeasureIndex")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("FocusNoteIndex")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsFocused")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("MeasureCount")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("OptionCount")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("PartId")
@@ -73,11 +60,6 @@ namespace Aiursoft.MusicTools.Sqlite.Migrations
 
                     b.Property<string>("ProcessingError")
                         .HasMaxLength(2000)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Prompt")
-                        .IsRequired()
-                        .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 
                     b.Property<Guid>("Revision")

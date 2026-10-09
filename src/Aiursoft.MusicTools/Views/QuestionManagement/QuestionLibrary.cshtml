@@ -25,9 +25,12 @@
             @foreach (var item in Model.Questions)
             {
                 <tr>
-                    <td>@item.Title</td>
+                    <td><strong>@item.Title</strong><div class="small text-muted">@Localizer[item.Skill.ToString()] · @Localizer[item.Status.ToString()]</div>
+                        @if (!item.IsFocused) { <span class="badge bg-secondary">@Localizer["Legacy — not offered to students"]</span> }
+                        else { <span class="small">@Localizer["Target measure"] @(item.FocusMeasureIndex + 1) · @item.OptionCount @Localizer["versions"]</span> }
+                    </td>
                     <td>@item.Score.Name</td>
-                    <td>@item.StartMeasureIndex</td>
+                    <td>@(item.StartMeasureIndex + 1)–@(item.StartMeasureIndex + item.MeasureCount)</td>
                     <td>@item.CreateTime.ToLocalTime().ToString("g")</td>
                     <td class="text-end">
                         <a asp-action="PreviewQuestion" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">

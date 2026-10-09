@@ -25,5 +25,51 @@ public class Question
 
     public int MeasureCount { get; set; } = 4;
 
+    public bool IsFocused { get; set; }
+
+    public int FocusMeasureIndex { get; set; }
+
+    public int FocusNoteIndex { get; set; }
+
+    public int OptionCount { get; set; } = 3;
+
+    [MaxLength(1000)]
+    public string Prompt { get; set; } = string.Empty;
+
+    [MaxLength(200)]
+    public string? ContextMusicXmlPath { get; set; }
+
+    [MaxLength(100)]
+    public string PartId { get; set; } = "P1";
+
+    public int? Staff { get; set; }
+
+    public ListeningSkill Skill { get; set; }
+
+    [Range(1, 3)]
+    public int Difficulty { get; set; } = 1;
+
+    [MaxLength(4000)]
+    public string Explanation { get; set; } = string.Empty;
+
+    public QuestionStatus Status { get; set; }
+
+    [MaxLength(2000)]
+    public string? ProcessingError { get; set; }
+
+    [ConcurrencyCheck]
+    public Guid Revision { get; set; } = Guid.NewGuid();
+
+    [InverseProperty(nameof(QuestionOption.Question))]
+    public ICollection<QuestionOption> Options { get; set; } = new List<QuestionOption>();
+
     public DateTime CreateTime { get; init; } = DateTime.UtcNow;
+}
+
+public enum QuestionStatus
+{
+    Draft,
+    Processing,
+    Published,
+    Failed
 }

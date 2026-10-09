@@ -1,63 +1,139 @@
-@using Aiursoft.MusicTools.Services.FileStorage
+@using Aiursoft.MusicTools.Entities
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.QuestionPreviewViewModel
-@inject StorageService Storage
-
-<div class="row mb-2 mb-xl-3">
-    <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Question Preview"]: @Model.Title</h3>
-    </div>
-    <div class="col-auto ms-auto mt-n1">
-        <a asp-action="QuestionLibrary" class="btn btn-outline-secondary">
-            <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back to Library"]
-        </a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="card mb-3">
-            <div class="card-header">
-                <h5 class="card-title">@Localizer["Question Info"]</h5>
-            </div>
-            <div class="card-body">
-                <dl class="row mb-0">
-                    <dt class="col-sm-5">@Localizer["Title"]</dt>
-                    <dd class="col-sm-7">@Model.Title</dd>
-                    <dt class="col-sm-5">@Localizer["Source Score"]</dt>
-                    <dd class="col-sm-7">@Model.ScoreName</dd>
-                    <dt class="col-sm-5">@Localizer["Start Measure"]</dt>
-                    <dd class="col-sm-7">@Model.StartMeasureIndex</dd>
-                    <dt class="col-sm-5">@Localizer["Measures"]</dt>
-                    <dd class="col-sm-7">@Model.MeasureCount</dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">@Localizer["Excerpt Preview"]</h5>
-                <button id="btn-play" class="btn btn-primary rounded-pill px-4">
-                    <i class="align-middle" data-lucide="play"></i> @Localizer["Play"]
-                </button>
-            </div>
-            <div class="card-body">
-                <div id="osmd-container" style="width:100%; min-height:250px; overflow-x:auto;"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
-<div id="start-measure" hidden>@Model.StartMeasureIndex</div>
-<div id="measure-count" hidden>@Model.MeasureCount</div>
-
-@* ReSharper disable once Razor.SectionNotResolved *@
-@section scripts {
-    <script type="module" src="~/dist/scripts/questionPreview.js" asp-append-version="true"></script>
-    <script>
-        window.addEventListener('load', () => {
-            if (window.startQuestionPreview) window.startQuestionPreview();
-        });
-    </script>
+@{
+    var question = Model.Question;
+    var editable = question.Status is QuestionStatus.Draft or QuestionStatus.Failed;
+    var ready = question.IsFocused && question.Options.Count == question.OptionCount && question.Options.All(o => o.AudioPath != null);
+    var versionNumber = 0;
 }
+<div class="listening-hero mb-4">
+    <span class="listening-eyebrow">@Localizer["MUSICIAN'S REVIEW DESK"]</span>
+    <h1>@question.Title</h1>
+    <p>@question.Score.Name · @(question.StartMeasureIndex + 1)–@(question.StartMeasureIndex + question.MeasureCount) · @Localizer[question.Skill.ToString()] · @Localizer[question.Status.ToString()]</p>
+    @if (question.IsFocused)
+    {
+        <p>@Localizer["Target measure"] @(question.FocusMeasureIndex + 1) · @Localizer["Target pitched note"] @(question.FocusNoteIndex + 1)</p>
+        <p>@question.Prompt</p>
+    }
+    <a asp-action="QuestionLibrary" class="btn btn-light">@Localizer["Back to Library"]</a>
+</div>
+@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert">@error</div> }
+@if (question.ProcessingError != null) { <div class="alert alert-danger">@question.ProcessingError</div> }
+@if (!question.IsFocused)
+{
+    <div class="alert alert-info">@Localizer["This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions."] <a asp-action="CreateQuestion" asp-route-scoreId="@question.ScoreId">@Localizer["Create Question"]</a></div>
+    @if (question.Status == QuestionStatus.Published)
+    {
+        <form asp-action="Withdraw" asp-route-id="@question.Id" method="post" class="mb-3">
+            <input type="hidden" name="revision" value="@question.Revision" />
+            <button class="btn btn-outline-warning">@Localizer["Withdraw legacy question"]</button>
+        </form>
+    }
+}
+else if (question.Status is QuestionStatus.Processing or QuestionStatus.Failed)
+{
+    <div class="card"><div class="card-body d-flex flex-wrap align-items-center gap-3">
+        <span>@Localizer["Context audio is prepared for every version. Each may be selected as the answer."]</span>
+        <a asp-action="PreviewQuestion" asp-route-id="@question.Id" class="btn btn-outline-primary">@Localizer["Refresh status"]</a>
+        <form asp-action="RetryAudio" asp-route-id="@question.Id" method="post">
+            <input type="hidden" name="revision" value="@question.Revision" />
+            <button class="btn btn-outline-secondary">@Localizer["Retry audio"]</button>
+        </form>
+    </div></div>
+}
+<p class="listening-error text-danger" role="alert"></p>
+@if (question.IsFocused)
+{
+    <div class="card mb-4"><div class="card-body">
+        <h3 class="h5">@Localizer["Shared listening context"]</h3>
+        <p>@Localizer["Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context."]</p>
+        <div class="listening-score listening-full-score" data-score-url="@Url.Action("ContextXml", new { id = question.Id })"></div>
+    </div></div>
+}
+<div class="row g-4">
+@foreach (var option in question.Options.OrderByDescending(o => o.IsCorrect).ThenBy(o => o.Id))
+{
+    versionNumber++;
+    <div class="col-xl-6">
+        <article class="card h-100 listening-option">
+            <div class="card-header d-flex justify-content-between">
+                <h3 class="card-title mb-0">@Localizer["Version"] @versionNumber</h3>
+                @if (question.IsFocused) { <span class="badge bg-primary">@Localizer["May be the answer"]</span> }
+            </div>
+            <div class="card-body">
+                <div class="listening-score" data-score-url="@Url.Action("OptionXml", new { id = option.Id })"></div>
+                <p class="small text-muted mt-3">@option.Explanation</p>
+                @if (option.AudioPath != null) { <audio controls preload="none" class="w-100" data-playback-url="@Url.Action("OptionAudio", new { id = option.Id })"></audio> }
+                @if (question.IsFocused && editable)
+                {
+                    <form asp-action="EditOption" asp-route-id="@question.Id" method="post" class="mt-3">
+                        <input type="hidden" name="optionId" value="@option.Id" />
+                        <input type="hidden" name="revision" value="@question.Revision" />
+                        <label class="form-label" for="edit-@option.Id">@Localizer["Edit the same target location"]</label>
+                        @if (question.Skill == ListeningSkill.Pitch)
+                        {
+                            <select id="edit-@option.Id" name="midi" class="form-select mb-2">
+                                @foreach (var pitchValue in Enumerable.Range(21, 88))
+                                {
+                                    string[] names = ["C", "C♯", "D", "D♯", "E", "F", "F♯", "G", "G♯", "A", "A♯", "B"];
+                                    <option value="@pitchValue" selected="@(Model.Pitches.GetValueOrDefault(option.Id) == pitchValue)">@(names[pitchValue % 12])@(pitchValue / 12 - 1)</option>
+                                }
+                            </select>
+                        }
+                        else
+                        {
+                            <select id="edit-@option.Id" name="rhythm" class="form-select mb-2" required>
+                                <option value="">@Localizer["Choose a rhythm pattern"]</option>
+                                <option value="equal">@Localizer["Equal (1:1)"]</option>
+                                <option value="long-short">@Localizer["Long–short (3:1)"]</option>
+                                <option value="short-long">@Localizer["Short–long (1:3)"]</option>
+                            </select>
+                        }
+                        <button class="btn btn-outline-primary">@Localizer["Save version and prepare audio"]</button>
+                    </form>
+                }
+                @if (question.IsFocused && !option.IsCorrect && editable)
+                {
+                    <form asp-action="ReplaceOption" asp-route-id="@question.Id" method="post" class="mt-3">
+                        <input type="hidden" name="optionId" value="@option.Id" />
+                        <input type="hidden" name="revision" value="@question.Revision" />
+                        <button class="btn btn-outline-secondary">@Localizer["Suggest another version at this location"]</button>
+                    </form>
+                }
+            </div>
+        </article>
+    </div>
+}
+</div>
+<div class="card mt-4"><div class="card-body">
+@if (question.Status == QuestionStatus.Published && question.IsFocused)
+{
+    <h3>@Localizer["Published and ready to practice"]</h3>
+    <p>@question.Explanation</p>
+    <form asp-action="Withdraw" asp-route-id="@question.Id" method="post">
+        <input type="hidden" name="revision" value="@question.Revision" />
+        <button class="btn btn-outline-warning">@Localizer["Withdraw to edit"]</button>
+        <a asp-controller="Dashboard" asp-action="MelodyExcerptQuiz" class="btn btn-primary">@Localizer["Open practice"]</a>
+    </form>
+}
+else if (editable && ready)
+{
+    <form asp-action="Publish" asp-route-id="@question.Id" method="post">
+        <input type="hidden" name="revision" value="@question.Revision" />
+        <label for="review-explanation" class="form-label">@Localizer["Shared listening guidance (the played version's details are added automatically)"]</label>
+        <textarea id="review-explanation" name="explanation" class="form-control mb-3" rows="3" required maxlength="4000">@question.Explanation</textarea>
+        <div class="form-check mb-3">
+            <input id="review-confirmation" type="checkbox" name="reviewed" value="true" class="form-check-input" required />
+            <label for="review-confirmation" class="form-check-label">@Localizer["I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer."]</label>
+        </div>
+        <p class="small text-muted">@Localizer["The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone."]</p>
+        <button class="btn btn-primary">@Localizer["Approve and publish"]</button>
+    </form>
+}
+else { <p class="mb-0">@Localizer["Complete audio preparation and review before publishing."]</p> }
+</div></div>
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles { <link rel="stylesheet" href="~/styles/listening.css" asp-append-version="true" /> }
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts { <script type="module" src="~/dist/scripts/listeningAdmin.js" asp-append-version="true"></script> }
+<partial name="_ListeningText" />

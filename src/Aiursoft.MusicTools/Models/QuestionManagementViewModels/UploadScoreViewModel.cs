@@ -11,6 +11,10 @@ public class UploadScoreViewModel : UiStackLayoutViewModel
     [MaxLength(100)]
     public string Name { get; set; } = string.Empty;
 
+    [MaxLength(200)]
+    [DisplayFormat(ConvertEmptyStringToNull = false)]
+    public string Author { get; set; } = string.Empty;
+
     [Required]
     [RegularExpression(@"^score/.*", ErrorMessage = "Invalid file path.")]
     public string? ScorePath { get; set; }

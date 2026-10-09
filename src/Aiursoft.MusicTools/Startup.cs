@@ -51,6 +51,8 @@ public class Startup : IWebStartup
         services.AddMemoryCache();
         services.AddHttpClient();
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
+        services.AddSingleton<Services.Listening.IScoreConverter>(provider =>
+            provider.GetRequiredService<Services.Listening.MusicXmlConverter>());
         services.AddSingleton<NavigationState<Startup>>();
 
         // Background job queue

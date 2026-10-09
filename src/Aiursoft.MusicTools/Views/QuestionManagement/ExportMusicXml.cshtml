@@ -1,0 +1,35 @@
+@model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ExportMusicXmlViewModel
+
+<div class="listening-hero mb-4 p-4 p-lg-5 rounded-4">
+    <span class="badge bg-light text-primary mb-3">MuseScore → MusicXML → MusicTools</span>
+    <h1 class="h2">@Localizer["Your score, ready for listening practice"]</h1>
+    <p class="lead mb-0">@Localizer["Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged."]</p>
+</div>
+<div class="row g-4 mb-4">
+    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm"><div class="card-body p-4">
+        <span class="badge bg-primary rounded-pill mb-3">1</span>
+        <h2 class="h4">@Localizer["Open your score"]</h2>
+        <p>@Localizer["Open the .mscz or .mscx project in MuseScore Studio on your computer."]</p>
+        <p class="text-muted mb-0">@Localizer["Keep the original project for future editing."]</p>
+    </div></div></div>
+    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm"><div class="card-body p-4">
+        <span class="badge bg-primary rounded-pill mb-3">2</span>
+        <h2 class="h4">@Localizer["Export MusicXML"]</h2>
+        <p>@Localizer["Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file."]</p>
+        <p class="text-muted mb-0">@Localizer["For piano, export the complete score with both hands. You can select just the right hand when creating a question."]</p>
+    </div></div></div>
+    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm"><div class="card-body p-4">
+        <span class="badge bg-primary rounded-pill mb-3">3</span>
+        <h2 class="h4">@Localizer["Upload and preview"]</h2>
+        <p>@Localizer["Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question."]</p>
+        <p class="text-muted mb-0">@Localizer["MusicXML preserves musical information, but spacing and page layout can differ from your original."]</p>
+    </div></div></div>
+</div>
+<div class="alert alert-warning">@Localizer["Renaming .mscz to .xml does not convert a score. Use MuseScore's Export command, not Save As or a PDF export."]</div>
+<a asp-action="UploadScore" class="btn btn-primary btn-lg">@Localizer["Return to MusicXML upload"]</a>
+<a href="https://handbook.musescore.org/file-management/file-export" target="_blank" rel="noopener noreferrer" class="btn btn-link">@Localizer["MuseScore export handbook"]</a>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/styles/listening.css" />
+}

@@ -17,7 +17,7 @@ namespace Aiursoft.MusicTools.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.7")
+                .HasAnnotation("ProductVersion", "10.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -43,16 +43,67 @@ namespace Aiursoft.MusicTools.MySql.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ContextMusicXmlPath")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
                     b.Property<DateTime>("CreateTime")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Difficulty")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Explanation")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("varchar(4000)");
+
+                    b.Property<int>("FocusMeasureIndex")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FocusNoteIndex")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsFocused")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<int>("MeasureCount")
                         .HasColumnType("int");
 
+                    b.Property<int>("OptionCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PartId")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("ProcessingError")
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<string>("Prompt")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<Guid>("Revision")
+                        .IsConcurrencyToken()
+                        .HasColumnType("char(36)");
+
                     b.Property<int>("ScoreId")
                         .HasColumnType("int");
 
+                    b.Property<int>("Skill")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Staff")
+                        .HasColumnType("int");
+
                     b.Property<int>("StartMeasureIndex")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -67,6 +118,39 @@ namespace Aiursoft.MusicTools.MySql.Migrations
                     b.ToTable("Questions");
                 });
 
+            modelBuilder.Entity("Aiursoft.MusicTools.Entities.QuestionOption", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AudioPath")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<string>("Explanation")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("MusicXmlPath")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("QuestionOptions");
+                });
+
             modelBuilder.Entity("Aiursoft.MusicTools.Entities.Score", b =>
                 {
                     b.Property<int>("Id")
@@ -75,15 +159,34 @@ namespace Aiursoft.MusicTools.MySql.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
                     b.Property<string>("FilePath")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
 
+                    b.Property<string>("ImportError")
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<int>("ImportStatus")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsPrivate")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
+
+                    b.Property<string>("NormalizedPath")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<DateTime>("UploadTime")
                         .HasColumnType("datetime(6)");
@@ -307,10 +410,21 @@ namespace Aiursoft.MusicTools.MySql.Migrations
                     b.HasOne("Aiursoft.MusicTools.Entities.Score", "Score")
                         .WithMany("Questions")
                         .HasForeignKey("ScoreId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Score");
+                });
+
+            modelBuilder.Entity("Aiursoft.MusicTools.Entities.QuestionOption", b =>
+                {
+                    b.HasOne("Aiursoft.MusicTools.Entities.Question", "Question")
+                        .WithMany("Options")
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Question");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -362,6 +476,11 @@ namespace Aiursoft.MusicTools.MySql.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Aiursoft.MusicTools.Entities.Question", b =>
+                {
+                    b.Navigation("Options");
                 });
 
             modelBuilder.Entity("Aiursoft.MusicTools.Entities.Score", b =>

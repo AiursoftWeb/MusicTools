@@ -1,45 +1,46 @@
-@using Aiursoft.MusicTools.Services.FileStorage
+@using Aiursoft.MusicTools.Entities
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScorePreviewViewModel
-@inject StorageService Storage
-
-<div class="row mb-2 mb-xl-3">
-    <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Score Preview"]: @Model.ScoreName</h3>
-    </div>
-    <div class="col-auto ms-auto mt-n1">
-        <a asp-action="Index" class="btn btn-outline-secondary">
-            <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back to Library"]
-        </a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <div>
-                    <h5 class="card-title mb-0">@Model.ScoreName</h5>
-                    <h6 class="card-subtitle text-muted">@Localizer["Full score preview with playback."]</h6>
-                </div>
-                <button id="btn-play" class="btn btn-primary rounded-pill px-4">
-                    <i class="align-middle" data-lucide="play"></i> @Localizer["Play"]
-                </button>
-            </div>
-            <div class="card-body">
-                <div id="osmd-container" style="width:100%; min-height:400px; overflow-x:auto;"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="score-url" hidden>@Storage.RelativePathToInternetUrl(Model.ScorePath)</div>
-
-@* ReSharper disable once Razor.SectionNotResolved *@
-@section scripts {
-    <script type="module" src="~/dist/scripts/scorePreview.js" asp-append-version="true"></script>
-    <script>
-        window.addEventListener('load', () => {
-            if (window.startScorePreview) window.startScorePreview();
-        });
-    </script>
+@{
+    var score = Model.Score;
 }
+<div class="listening-hero mb-4">
+    <span class="listening-eyebrow">@Localizer["YOUR SCORE LIBRARY"]</span>
+    <h1>@score.Name</h1>
+    <p>@score.Author</p>
+    <div class="d-flex flex-wrap gap-2">
+        <a asp-action="Index" class="btn btn-light">@Localizer["Back to Library"]</a>
+        <a asp-action="DownloadOriginal" asp-route-id="@score.Id" class="btn btn-outline-light">@Localizer["Download original"]</a>
+        @if (score.ImportStatus == ScoreImportStatus.Ready)
+        {
+            <a asp-action="CreateQuestion" asp-route-scoreId="@score.Id" class="btn btn-light">@Localizer["Create Question"]</a>
+        }
+    </div>
+</div>
+@if (score.ImportStatus != ScoreImportStatus.Ready)
+{
+    <div class="card"><div class="card-body">
+        <h3>@Localizer[score.ImportStatus.ToString()]</h3>
+        <p>@Localizer["Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background."]</p>
+        @if (score.ImportError != null) { <p class="text-danger">@score.ImportError</p> }
+        <a asp-action="PreviewScore" asp-route-id="@score.Id" class="btn btn-primary">@Localizer["Refresh status"]</a>
+        <form asp-action="RetryImport" asp-route-id="@score.Id" method="post" class="d-inline">
+            <button class="btn btn-outline-secondary">@Localizer["Import / retry"]</button>
+        </form>
+        <p class="small text-muted mt-3 mb-0">@Localizer["If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions."]</p>
+    </div></div>
+}
+else
+{
+    <div class="card"><div class="card-header d-flex justify-content-between align-items-center">
+        <h3 class="card-title mb-0">@Localizer["Full Score Preview"]</h3>
+        <label>@Localizer["Zoom"] <input class="score-zoom" type="range" min="0.6" max="1.6" step="0.1" value="1" /></label>
+    </div><div class="card-body">
+        <p class="listening-error text-danger" role="alert"></p>
+        <div class="listening-score" data-score-url="@Url.Action("ScoreXml", new { id = score.Id })"></div>
+    </div></div>
+}
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles { <link rel="stylesheet" href="~/styles/listening.css" asp-append-version="true" /> }
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts { <script type="module" src="~/dist/scripts/listeningAdmin.js" asp-append-version="true"></script> }
+<partial name="_ListeningText" />

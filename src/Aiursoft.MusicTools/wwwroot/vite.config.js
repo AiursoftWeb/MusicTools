@@ -57,6 +57,8 @@ export default defineConfig({
         },
         rollupOptions: {
             input: {
+                listeningAdmin: resolve(__dirname, "scripts/listening-admin.js"),
+                listeningPractice: resolve(__dirname, "scripts/listening-practice.js"),
                 homepage: resolve(__dirname, "scripts/homepage.js"),
                 piano: resolve(__dirname, "scripts/Piano.js"),
                 interval: resolve(__dirname, "scripts/interval.js"),
@@ -76,11 +78,7 @@ export default defineConfig({
                 intervalExam: resolve(__dirname, "scripts/interval-exam.js"),
                 shortMelodyDictation: resolve(__dirname, "scripts/short-melody-dictation.js"),
                 tuner: resolve(__dirname, "scripts/tuner.js"),
-                melodyExcerptQuiz: resolve(__dirname, "scripts/melody-excerpt-quiz.js"),
                 fourPartHarmony: resolve(__dirname, "scripts/four-part-harmony.js"),
-                scorePreview: resolve(__dirname, "scripts/score-preview.js"),
-                questionPreview: resolve(__dirname, "scripts/question-preview.js"),
-                createQuestionPreview: resolve(__dirname, "scripts/create-question-preview.js"),
             },
             output: {
                 format: "es",

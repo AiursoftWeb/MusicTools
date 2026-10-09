@@ -1,4 +1,10 @@
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScoreLibraryViewModel
+@using Aiursoft.MusicTools.Entities
+@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert">@error</div> }
+<form method="get" class="d-flex gap-2 mb-3">
+    <input name="search" value="@Context.Request.Query["search"]" class="form-control" placeholder="@Localizer["Search by title or composer"]" aria-label="@Localizer["Search scores"]" />
+    <button class="btn btn-outline-primary">@Localizer["Search"]</button>
+</form>
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Score Library"]</h3>
@@ -29,16 +35,19 @@
             @foreach (var item in Model.Scores)
             {
                 <tr>
-                    <td>@item.Name</td>
+                    <td><strong>@item.Name</strong><div class="small text-muted">@item.Author · @Localizer[item.ImportStatus.ToString()]</div></td>
                     <td>@item.UploadTime.ToLocalTime().ToString("g")</td>
                     <td class="text-end">
                         <a asp-action="PreviewScore" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">
                             <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]
                         </a>
+                        @if (item.ImportStatus == ScoreImportStatus.Ready)
+                        {
                         <a asp-action="CreateQuestion" asp-route-scoreId="@item.Id" class="btn btn-sm btn-outline-success">
                             <i class="align-middle" data-lucide="plus-circle"></i> @Localizer["Create Question"]
                         </a>
-                        <form asp-action="DeleteScore" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this score? All associated questions will be deleted."]')">
+                        }
+                        <form asp-action="DeleteScore" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Delete this score from the library? Referenced scores cannot be deleted."]')">
                             <button type="submit" class="btn btn-sm btn-outline-danger">
                                 <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
                             </button>
