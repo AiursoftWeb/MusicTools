@@ -123,6 +123,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Upload Score"];
     
         _ = localizer["Delete Account"];
+    
+        _ = localizer["Export MusicXML from MuseScore"];
     }
 
     public void InjectSimple(

@@ -96,6 +96,9 @@
   <data name="Error" xml:space="preserve">
     <value>त्रुटि</value>
   </data>
+  <data name="Export MusicXML from MuseScore" xml:space="preserve">
+    <value>MuseScore से MusicXML निर्यात करें</value>
+  </data>
   <data name="Features" xml:space="preserve">
     <value>विशेषताएँ</value>
   </data>

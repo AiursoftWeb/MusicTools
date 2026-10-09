@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>删除</value>
   </data>
+  <data name="Legacy — not offered to students" xml:space="preserve">
+    <value>历史遗留 — 不向学生提供</value>
+  </data>
   <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
     <value>未找到问题。前往曲谱库创建一个。</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Start Measure" xml:space="preserve">
     <value>起始小节</value>
   </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>目标小节</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>标题</value>
+  </data>
+  <data name="versions" xml:space="preserve">
+    <value>个版本</value>
   </data>
 
 </root>

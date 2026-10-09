@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>削除</value>
   </data>
+  <data name="Legacy — not offered to students" xml:space="preserve">
+    <value>旧式 — 学生には提供されません</value>
+  </data>
   <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
     <value>質問が見つかりません。スコアライブラリに移動して作成してください。</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Start Measure" xml:space="preserve">
     <value>開始小節</value>
   </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>対象小節</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>タイトル</value>
+  </data>
+  <data name="versions" xml:space="preserve">
+    <value>バリエーション</value>
   </data>
 
 </root>

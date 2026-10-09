@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Retour à la bibliothèque</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Créer une question</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Télécharger l’original</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Aperçu complet de la partition</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Aperçu complet de la partition avec lecture.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Si le serveur a redémarré pendant le traitement, relancez l’importation. Les partitions existantes doivent être importées avant de créer de nouvelles questions d’écoute.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Importer / réessayer</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>L’importation crée une partition lisible sur le Web sans modifier votre fichier d’origine. La conversion s’effectue en arrière-plan.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Lire</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Actualiser le statut</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Aperçu de la partition</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>VOTRE BIBLIOTHÈQUE DE PARTITIONS</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
   </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Wählen Sie eine Frage aus dem Fragepool oder laden Sie Ihr eigenes Notenblatt hoch.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Wähle deine Herausforderung</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Richtig!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Schwer (Größere Intervalle)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Hören Sie einen kurzen musikalischen Zusammenhang, konzentrieren Sie sich auf einen markierten Takt und wählen Sie die passende Notation aus. Drei oder vier plausible Varianten, eine klare Hör-Aufgabe. Kein Konto erforderlich.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Stufe</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>ZUHÖREN · WAHRNEHMEN · VERSTEHEN</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Hören Sie genau zu und wählen Sie die passende Notation unten aus.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Keine vordefinierten Fragen verfügbar. Bitte nutzen Sie die Upload-Option.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Notationsvergrößerung</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Ein Ton oder ein Rhythmusmuster – keine Suche nach vereinzelten Fehlern</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Es wird nur der Ziel­takt angezeigt. Alle Versionen unterscheiden sich an derselben Stelle; die Ausgangsversion ist nicht immer die richtige Antwort.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Melodie abspielen</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Bitte laden Sie einen Notentext mit mindestens 4 Takten hoch.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>veröffentlichte Fragen</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Fragenbank</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Zieltakt wiedergeben</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Spielen Sie die Aufnahme bei Bedarf erneut ab. Wählen Sie eine Antwort aus und senden Sie sie ab; gewertet wird Ihre erste abgegebene Antwort. Notenbild und Erklärung stehen Ihnen anschließend zum Lernen weiterhin zur Verfügung.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Der Part muss mindestens 4 Takte lang sein.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Starten / neuer Versuch</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Quiz starten</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Antwort absenden</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Die Bühne wird vorbereitet</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Es wurden noch keine Hörfragen veröffentlicht. Komm wieder, sobald ein Musiker den ersten Satz geprüft hat.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Taktart</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Partitur hochladen</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Welche Partitur passt zur Aufnahme?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Falsch! Versuchen Sie es erneut.</value>

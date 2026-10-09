@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Supprimer</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>Supprimer cette partition de la bibliothèque ? Les partitions référencées ne peuvent pas être supprimées.</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>Partitions musicales gérées pour générer des questions de quiz.</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>Bibliothèque de partitions</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>Rechercher par titre ou compositeur</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>Rechercher des partitions</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>Télécharger une nouvelle partition</value>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Correct!" xml:space="preserve">
+    <value>Chính xác!</value>
+  </data>
+  <data name="Could not load this question. Please try again." xml:space="preserve">
+    <value>Không thể tải câu hỏi này. Vui lòng thử lại.</value>
+  </data>
+  <data name="Keep listening." xml:space="preserve">
+    <value>Hãy tiếp tục lắng nghe.</value>
+  </data>
+  <data name="Listen to the target measure, then choose the matching short version. Any approved version may be played." xml:space="preserve">
+    <value>Hãy nghe ô nhịp mục tiêu, rồi chọn phiên bản ngắn khớp với ô nhịp đó. Có thể phát bất kỳ phiên bản nào đã được phê duyệt.</value>
+  </data>
+  <data name="Loading the short versions…" xml:space="preserve">
+    <value>Đang tải các phiên bản ngắn…</value>
+  </data>
+  <data name="Preparing audio…" xml:space="preserve">
+    <value>Đang chuẩn bị âm thanh…</value>
+  </data>
+  <data name="Ready. Press play to listen." xml:space="preserve">
+    <value>Sẵn sàng. Nhấn phát để nghe.</value>
+  </data>
+  <data name="Replay and compare the scores, or start a new attempt." xml:space="preserve">
+    <value>Phát lại và so sánh các điểm số, hoặc bắt đầu lượt thử mới.</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Phát lại ô nhịp mục tiêu</value>
+  </data>
+  <data name="Selection changed. Prepare audio again." xml:space="preserve">
+    <value>Lựa chọn đã thay đổi. Vui lòng chuẩn bị lại âm thanh.</value>
+  </data>
+  <data name="Target measure is playing — listen here." xml:space="preserve">
+    <value>Đang phát ô nhịp mục tiêu — hãy nghe tại đây.</value>
+  </data>
+  <data name="The recording could not be loaded. Start a new attempt or try again later." xml:space="preserve">
+    <value>Không thể tải bản ghi âm. Hãy bắt đầu lượt thử mới hoặc thử lại sau.</value>
+  </data>
+  <data name="The score could not be parsed." xml:space="preserve">
+    <value>Không thể phân tích bản nhạc.</value>
+  </data>
+
+</root>

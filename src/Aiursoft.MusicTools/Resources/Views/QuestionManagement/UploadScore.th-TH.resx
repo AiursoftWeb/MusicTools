@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>ผู้ประพันธ์เพลง / ผู้เรียบเรียง</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>เช่น โมสาร์ท โซนาตะ หมายเลข 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>ส่งออกโปรเจกต์ .mscz หรือ .mscx เป็น MusicXML บนคอมพิวเตอร์ของคุณ ไม่จำเป็นต้องแปลงไฟล์บนเซิร์ฟเวอร์</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>มีโปรเจกต์ MuseScore อยู่แล้วใช่ไหม?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>ไฟล์ MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>ไฟล์ MusicXML หรือ MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>ไฟล์ต้นฉบับจะถูกเก็บเป็นส่วนตัว การนำเข้าจะทำงานอยู่เบื้องหลัง และคุณสามารถดูตัวอย่างโน้ตเพลงที่ปรับรูปแบบแล้วก่อนสร้างคำถามได้</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>ชื่อเพลงบรรเลง</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>แสดงวิธีส่งออก</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>อัปโหลดและบันทึก</value>

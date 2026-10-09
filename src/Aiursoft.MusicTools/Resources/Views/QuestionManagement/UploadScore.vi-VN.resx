@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Nhạc sĩ sáng tác / phối khí</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>vd. Mozart Sonata No. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Hãy xuất dự án .mscz hoặc .mscx của bạn sang MusicXML trên máy tính. Không cần chuyển đổi trên máy chủ.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Thay vào đó, bạn có dự án MuseScore?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>Tệp MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>Tệp MusicXML hoặc MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Các bản gốc được giữ riêng tư. Quá trình nhập diễn ra trong nền; bạn có thể xem trước bản nhạc đã chuẩn hóa trước khi tạo câu hỏi.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Tên bản nhạc</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Chỉ tôi cách xuất</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Tải lên và Lưu</value>

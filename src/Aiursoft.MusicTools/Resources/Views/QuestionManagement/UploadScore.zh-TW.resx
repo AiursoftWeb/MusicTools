@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>作曲者／編曲者</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>例如：莫札特第 16 號奏鳴曲</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>請在您的電腦上將 .mscz 或 .mscx 專案匯出為 MusicXML。無須透過伺服器轉換。</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>改用 MuseScore 專案？</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML 檔案</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>MusicXML 或 MXL 檔案</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>原始檔案會保密。匯入作業會在背景執行；建立題目之前，您可以先預覽正規化後的樂譜。</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>樂譜名稱</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>教我如何匯出</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>上傳並儲存</value>

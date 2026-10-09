@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. 楽譜を確認する</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. 楽譜の該当箇所を聴く</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>アウフタクトには、聴いてわかる拍の基準が必要です。妥当と判断できる答えが一つだけであることを確認してください。楽譜どおりに一度だけ再生し、繰り返しはしません。タイで結ばれた音は、つながった全体を含めてください。</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>上級</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>すべての譜表（両手）</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>初級</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>聴取の文脈を選び、1つの小節と1つの聴き取れる違いに焦点を当ててください。</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>下の小節範囲をクリックして、連続する4小節を選択してください。</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>楽譜上で最初と最後の小節を直接クリックするか、番号付きボタンを使ってください。小さい方のラベルは、楽譜に印刷されている小節番号です。</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>リスニング問題を作成</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>問題を生成</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>楽譜から質問を作成</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>固定の正解音や解答の選択肢ではなく、聴き取るポイントを説明してください。承認済みの別のバージョンが毎回再生される場合があります。</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>難易度</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>休符は数えないでください。音高のバリエーションではこの音符だけが変わり、リズムのバリエーションではこの音符と直後の音符が変わります。タイでつながれていない、シンプルな箇所を選んでください。</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>例：オープニングテーマの特定</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>承認済みのバージョンは、どれも解答として出題される可能性があります。元の譜面に最も似ているかどうかではなく、音楽的に不自然でないかを確認してください。</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>抜粋プレビュー</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>開始位置</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>全楽譜プレビュー</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>対象に応じたバージョンを生成</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>楽器／パート</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>中級</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>音声を聞く際の文脈</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>リスニングの重点</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>小節数</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>小節の選択</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>確認済みバージョン数</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>音程：1音のみ、リズムは同じ</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>音声を準備</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>選択した4小節のプレビュー</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>質問タイトル</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>リズム：隣り合う2音、同じ音高</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>小節を選択</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>選択範囲：</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>共通の聴き取りガイダンス</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>原曲</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>譜表1（通常は右手）</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>第2段（通常は左手）</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>開始小節インデックス（0から始まる）</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>生徒が見るのは1小節だけで、6つの楽譜全体ではありません。すべての選択肢は同じ箇所だけが異なります。ごく小さな見た目の違いより、聴いてはっきり分かる違いを優先してください。</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>対象小節位置</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>この小節内で1から数えた対象の音程付き音符</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>学生に何を聴き取ればよいかを具体的に伝える</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>生徒が比較する唯一の小節</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>この範囲は音声で聴く範囲であり、学生が譜面を探す範囲ではありません。位置には弱起も含まれ、開始位置と終了位置の両方を含みます。</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>～までの位置</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>プレビューを更新</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>声部／手</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>良い問題とは？</value>
   </data>
 
 </root>

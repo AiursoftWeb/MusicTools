@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Phê duyệt và xuất bản</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Quay lại Thư viện</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Chọn mẫu nhịp điệu</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Hoàn tất việc chuẩn bị và rà soát âm thanh trước khi xuất bản.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Âm thanh ngữ cảnh được chuẩn bị cho từng phiên bản. Mỗi phiên bản đều có thể được chọn làm đáp án.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Tạo câu hỏi</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Chỉnh sửa cùng vị trí mục tiêu</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Bằng nhau (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Xem trước đoạn trích</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Tôi đã nghe thử từng phiên bản trong ngữ cảnh. Mỗi phiên bản đều hợp lý về mặt âm nhạc, khác biệt rõ ràng khi nghe và phù hợp để được chọn làm đáp án.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Dài–ngắn (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Có thể là đáp án</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Số ô nhịp</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>BÀN ĐÁNH GIÁ CỦA NHẠC SĨ</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Chỉ có ô nhịp mục tiêu thay đổi giữa các phiên bản. Học sinh nhìn thấy ô nhịp đó và nghe phiên bản được chọn trong ngữ cảnh này.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Mở phần luyện tập</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Phát</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Đã xuất bản và sẵn sàng luyện tập</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Thông tin câu hỏi</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Xem trước câu hỏi</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Cập nhật trạng thái</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Thử lại âm thanh</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Lưu phiên bản và chuẩn bị âm thanh</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Ngữ cảnh nghe nhạc chung</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Hướng dẫn nghe chung (thông tin về phiên bản được phát sẽ được tự động thêm vào)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Ngắn–dài (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Nhạc谱 nguồn</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Khổ bắt đầu</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Đề xuất một phiên bản khác tại vị trí này</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Ô nhịp mục tiêu</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Nốt nhạc đích</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Bản nguồn không được ưu tiên. Mỗi lượt thử sẽ chọn ngẫu nhiên một phiên bản đã được duyệt để phát. Hãy loại các biến thể có thể bị loại trừ chỉ dựa vào bản ký âm.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Câu hỏi tìm lỗi kiểu cũ này được lưu lại để tham khảo, nhưng không có trong phần luyện tập tập trung. Hãy tạo lại câu hỏi với một mục tiêu ngắn và ba hoặc bốn phiên bản hợp lý.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Tiêu đề</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Phiên bản</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Rút câu hỏi cũ khỏi danh sách</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Gỡ xuất bản để chỉnh sửa</value>
   </data>
 
 </root>

@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. 악보 살펴보기</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. 내 발췌 부분 듣기</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>못갖춘마디에는 들을 수 있는 박자 기준이 필요합니다. 타당한 답이 하나뿐인지 확인하세요. 악절은 반복 없이 적힌 그대로 한 번만 연주됩니다. 붙임줄로 연결된 음은 모두 포함하세요.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>고급</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>모든 보표(양손 모두)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>초급</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>듣기 맥락을 선택한 다음, 한 마디와 귀로 구별할 수 있는 한 가지 차이에 집중하세요.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>아래 마디 범위를 클릭하여 4개의 연속된 마디를 선택하세요.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>악보에서 첫 번째 마디와 마지막 마디를 직접 클릭하거나 번호가 매겨진 버튼을 사용하세요. 더 작은 글씨로 표시된 숫자가 악보에 인쇄된 마디 번호입니다.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>듣기 문제 만들기</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>질문 생성</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>악보에서 질문 만들기</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>정답 음표나 답안 번호를 고정해서 제시하지 말고, 어떤 소리를 듣고 구별해야 하는지 설명하세요. 승인된 버전은 매번 다르게 재생될 수 있습니다.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>난이도</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>쉼표는 세지 마세요. 음높이 버전은 이 음표만 바꾸고, 리듬 버전은 이 음표와 바로 다음 음표를 바꿉니다. 타이로 연결되지 않은 단순한 위치를 선택하세요.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>예: 오프닝 주제 식별</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>승인된 버전은 어느 것이든 정답으로 출제될 수 있습니다. 원본과 가장 비슷해 보이는 버전이 아니라 음악적으로 타당한지를 검토하세요.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>절대 미리보기</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>시작 위치</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>전체 악보 미리보기</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>집중형 버전 생성</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>악기 / 파트</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>중급</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>듣기 맥락</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>듣기 중점</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>마디 수</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>마디 선택</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>검토된 버전 수</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>음높이: 한 음, 동일한 리듬</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>오디오 준비</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>선택된 4마디 미리보기</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>질문 제목</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>리듬: 서로 붙어 있는 두 음, 같은 음높이</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>마디 선택</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>선택 범위:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>공통 청취 안내</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>원본 악보</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>보표 1 (보통 오른손)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>보표 2(보통 왼손)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>시작 마디 인덱스 (0부터 시작)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>학생들은 전체 악보 여섯 개가 아니라 한 마디만 봅니다. 모든 선택지는 같은 위치에서 달라집니다. 아주 작은 시각적 차이보다는 귀로 분명히 구별되는 차이를 우선하세요.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>대상 마디 위치</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>대상 음높이가 있는 음(이 마디에서 1부터 세기)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>학생들에게 무엇을 들어야 하는지 정확히 알려 주세요</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>학생들이 비교하게 될 유일한 마디</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>이 범위는 오디오 맥락을 나타내며, 학생들이 찾아야 하는 악보의 양을 뜻하지 않습니다. 위치에는 못갖춘마디도 포함되며, 시작점과 끝점 모두 범위에 포함됩니다.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>끝 위치</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>미리보기 업데이트</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>성부 / 손</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>좋은 질문은 무엇일까요?</value>
   </data>
 
 </root>

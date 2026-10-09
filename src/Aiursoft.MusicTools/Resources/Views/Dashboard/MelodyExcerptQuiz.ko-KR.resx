@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>문제 은행에서 문제를 선택하거나 나만의 악보를 업로드하세요.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>도전 과제를 선택하세요</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>정답입니다!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>어려움 (단추)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>짧은 음악적 맥락을 듣고, 표시된 한 마디에 집중해 이에 해당하는 악보를 선택하세요. 그럴듯한 보기 3~4개 중 하나를 고르는 명확한 듣기 과제입니다. 계정이 필요하지 않습니다.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>레벨</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>듣고 · 알아차리고 · 이해하기</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>주의 깊게 듣고 아래에서 올바른 악보를 선택하세요.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>사전 정의된 질문이 없습니다. 업로드 옵션을 사용하십시오.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>악보 확대/축소</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>음 하나 또는 리듬 패턴 하나 — 여기저기 흩어진 실수를 찾을 필요 없이</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>대상 마디만 표시됩니다. 모든 버전은 같은 위치에서 다르며, 원본 버전이 항상 정답인 것은 아닙니다.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>멜로디 재생</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>4마디 이상 포함된 악보를 업로드하세요.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>공개된 문제</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>문제 은행</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>대상 마디 다시 재생</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>필요한 만큼 녹음을 다시 들으세요. 답 하나를 선택해 제출하세요. 처음 제출한 답이 최종 답으로 처리됩니다. 악보와 해설은 이후 학습을 위해 계속 확인할 수 있습니다.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>악보는 최소 4마디 이상이어야 합니다.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>시작 / 새 시도</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>퀴즈 시작</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>답안 제출</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>무대를 준비하고 있습니다</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>아직 공개된 청음 문제가 없습니다. 음악가가 첫 문제 세트를 검토한 후 다시 방문해 주세요.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>마디표</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>악보 업로드</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>어떤 악보가 녹음과 일치하나요?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>아직 정답이 아닙니다. 다시 도전해보세요.</value>

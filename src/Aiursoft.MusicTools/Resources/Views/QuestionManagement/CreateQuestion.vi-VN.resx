@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Khám phá bản nhạc</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Nghe đoạn nhạc của bạn</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Đoạn nhạc lấy đà cần có nhịp phách tham chiếu nghe được. Hãy đảm bảo chỉ có một đáp án hợp lý. Các đoạn nhạc được phát một lần đúng như bản viết, không lặp lại; hãy bao gồm đầy đủ các nốt có dấu nối.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Nâng cao</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Tất cả khuông nhạc (cả hai tay)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Người mới bắt đầu</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Chọn ngữ cảnh nghe, sau đó tập trung vào một ô nhịp và một điểm khác biệt có thể nghe thấy.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Nhấp vào một đoạn ô nhịp bên dưới để chọn 4 ô nhịp liên tiếp.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Nhấp trực tiếp vào ô nhịp đầu tiên và ô nhịp cuối cùng trên bản nhạc, hoặc dùng các nút được đánh số. Nhãn nhỏ hơn là số được in trên bản nhạc.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>TẠO THỬ THÁCH NGHE NHẠC</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Tạo câu hỏi</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Tạo câu hỏi từ bản nhạc</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Hãy mô tả dấu hiệu cần lắng nghe, không phải một nốt đúng hay chữ cái đáp án cố định: mỗi lần có thể phát một phiên bản được duyệt khác nhau.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Độ khó</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Không tính các dấu lặng. Các phiên bản cao độ chỉ thay đổi nốt này; các phiên bản tiết tấu thay đổi nốt này và nốt ngay sau đó. Hãy chọn một vị trí đơn giản, không có nốt nối.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>vd. Nhận diện chủ đề mở đầu</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Mỗi phiên bản đã được duyệt đều có thể được phát làm đáp án. Hãy đánh giá tính hợp lý về mặt âm nhạc, chứ không phải phiên bản nào trông giống bản gốc nhất.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Xem trước trích đoạn</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Từ vị trí</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Xem trước bản nhạc đầy đủ</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Tạo các phiên bản tập trung</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Nhạc cụ / bè</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Trung cấp</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Bối cảnh nghe</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Trọng tâm nghe</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Số ô nhịp</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Chọn ô nhịp</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Số lượng phiên bản được duyệt</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Cao độ: một nốt, cùng nhịp điệu</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Chuẩn bị âm thanh</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Xem trước 4 ô nhịp đã chọn.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Tiêu đề câu hỏi</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Tiết tấu: một cặp nốt liền kề, cùng cao độ</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Chọn ô nhịp</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Phạm vi đã chọn:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Hướng dẫn nghe chung</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Bản nhạc nguồn</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Khuông nhạc 1 (thường là tay phải)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Khuông nhạc 2 (thường dành cho tay trái)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Chỉ số ô nhịp bắt đầu (bắt đầu từ 0)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Học sinh chỉ xem một ô nhịp, chứ không phải sáu đoạn nhạc hoàn chỉnh. Tất cả các lựa chọn đều khác nhau ở cùng một vị trí. Ưu tiên sự khác biệt dễ nghe thay vì một mẹo nhỏ chỉ nhìn thấy được.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Vị trí ô nhịp mục tiêu</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Nốt nhạc mục tiêu (đếm từ 1 trong ô nhịp này)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Hướng dẫn học sinh lắng nghe chính xác điều gì</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Ô nhịp duy nhất mà học sinh sẽ so sánh</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Khoảng này là phần âm thanh làm ngữ cảnh, không phải lượng bản nhạc mà học sinh cần dò tìm. Các vị trí có tính cả ô nhịp lấy đà; bao gồm cả hai điểm đầu và cuối.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Đến vị trí</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Cập nhật bản xem trước</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Giọng bè / tay</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Điều gì tạo nên một câu hỏi hay?</value>
   </data>
 
 </root>

@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>Delete this score from the library? Scores that are referenced cannot be deleted.</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>Managed music scores for generating quiz questions.</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>Score Library</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>Search by title or composer</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>Search scores</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>Upload New Score</value>
