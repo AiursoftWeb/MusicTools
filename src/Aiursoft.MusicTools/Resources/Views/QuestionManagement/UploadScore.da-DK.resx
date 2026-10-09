@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Annuller</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Komponist / arrangør</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>f.eks. Mozart Sonate nr. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Eksportér dit .mscz- eller .mscx-projekt som MusicXML på din computer. Det er ikke nødvendigt med konvertering på en server.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Har du i stedet et MuseScore-projekt?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML-fil</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>MusicXML- eller MXL-fil</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Originalerne opbevares fortroligt. Importen kører i baggrunden; du kan få vist den normaliserede node inden oprettelse af spørgsmål.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Partiturnavn</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Vis mig, hvordan jeg eksporterer</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Upload og gem</value>

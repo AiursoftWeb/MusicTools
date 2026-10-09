@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Correct!" xml:space="preserve">
+    <value>Korrekt!</value>
+  </data>
+  <data name="Could not load this question. Please try again." xml:space="preserve">
+    <value>Kunne ikke indlæse dette spørgsmål. Prøv igen.</value>
+  </data>
+  <data name="Keep listening." xml:space="preserve">
+    <value>Bliv ved med at lytte.</value>
+  </data>
+  <data name="Listen to the target measure, then choose the matching short version. Any approved version may be played." xml:space="preserve">
+    <value>Lyt til den ønskede takt, og vælg derefter den tilsvarende korte version. Alle godkendte versioner kan afspilles.</value>
+  </data>
+  <data name="Loading the short versions…" xml:space="preserve">
+    <value>Indlæser de korte versioner…</value>
+  </data>
+  <data name="Preparing audio…" xml:space="preserve">
+    <value>Forbereder lyd…</value>
+  </data>
+  <data name="Ready. Press play to listen." xml:space="preserve">
+    <value>Klar. Tryk på afspil for at lytte.</value>
+  </data>
+  <data name="Replay and compare the scores, or start a new attempt." xml:space="preserve">
+    <value>Afspil igen, og sammenlign noderne, eller start et nyt forsøg.</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Afspil mål­takten igen</value>
+  </data>
+  <data name="Selection changed. Prepare audio again." xml:space="preserve">
+    <value>Valget er ændret. Forbered lyden igen.</value>
+  </data>
+  <data name="Target measure is playing — listen here." xml:space="preserve">
+    <value>Takten afspilles nu — lyt her.</value>
+  </data>
+  <data name="The recording could not be loaded. Start a new attempt or try again later." xml:space="preserve">
+    <value>Optagelsen kunne ikke indlæses. Start et nyt forsøg, eller prøv igen senere.</value>
+  </data>
+  <data name="The score could not be parsed." xml:space="preserve">
+    <value>Noden kunne ikke fortolkes.</value>
+  </data>
+
+</root>

@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Șterge</value>
   </data>
+  <data name="Legacy — not offered to students" xml:space="preserve">
+    <value>Moștenită — nu este oferită elevilor</value>
+  </data>
   <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
     <value>Nicio întrebare găsită. Mergeți la Biblioteca de partituri pentru a crea una.</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Start Measure" xml:space="preserve">
     <value>Măsură de start</value>
   </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Măsura țintă</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Titlu</value>
+  </data>
+  <data name="versions" xml:space="preserve">
+    <value>versiuni</value>
   </data>
 
 </root>

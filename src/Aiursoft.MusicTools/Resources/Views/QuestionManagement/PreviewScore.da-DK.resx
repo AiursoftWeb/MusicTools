@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Tilbage til bibliotek</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Opret spørgsmål</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Download original</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Forhåndsvisning af hele partituret</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Fuld noteforevisning med afspilning.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Hvis serveren blev genstartet under behandlingen, skal du prøve igen. Ældre noder skal importeres, før du opretter nye lytteopgaver.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Importér / prøv igen</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Importen opretter en webvisbar nodefil, mens din oprindelige fil forbliver uændret. Konverteringen kører i baggrunden.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Afspil</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Opdater status</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Partiturforhåndsvisning</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>DIT NODEBIBLIOTEK</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
   </data>
 
 </root>

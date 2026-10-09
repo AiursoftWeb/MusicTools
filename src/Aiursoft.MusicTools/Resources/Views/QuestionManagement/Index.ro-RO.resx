@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Șterge</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>Ștergeți această partitură din bibliotecă? Partiturile referențiate nu pot fi șterse.</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>Partituri muzicale gestionate pentru generarea întrebărilor de quiz.</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>Bibliotecă de partituri</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Caută</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>Căutați după titlu sau compozitor</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>Caută partituri</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>Încarcă o nouă partitură</value>

@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Besteci / aranjör</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>ör. Mozart Sonat No. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>.mscz veya .mscx projenizi bilgisayarınızda MusicXML olarak dışa aktarın. Sunucu tarafında dönüştürme gerekmez.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Onun yerine bir MuseScore projeniz mi var?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML dosyası</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>MusicXML veya MXL Dosyası</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Orijinal dosyalar gizli tutulur. İçe aktarma arka planda yapılır; soru oluşturmadan önce standartlaştırılmış notayı önizleyebilirsiniz.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Puan Adı</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Nasıl dışa aktaracağımı göster</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Yükle ve Kaydet</value>

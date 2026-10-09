@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Escolha uma pergunta do banco ou faça upload da sua própria partitura.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Escolha seu desafio</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Correto!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Difícil (Saltos)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Ouça um breve contexto musical, concentre-se em um compasso marcado e escolha a notação correspondente. Três ou quatro opções plausíveis, uma tarefa de escuta clara. Não é necessário criar uma conta.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Nível</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>OUÇA · PERCEBA · COMPREENDA</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Ouça atentamente e selecione a notação correspondente abaixo.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Nenhuma pergunta predefinida disponível. Por favor, use a opção de upload.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Zoom da partitura</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Uma nota ou um padrão rítmico — sem procurar erros dispersos</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Apenas o compasso-alvo é exibido. Todas as versões diferem no mesmo ponto; a versão original nem sempre é a resposta.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Tocar Melodia</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Por favor, envie uma partitura com pelo menos 4 compassos.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>perguntas publicadas</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Banco de Perguntas</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Reproduzir o compasso-alvo</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Reproduza a gravação quantas vezes precisar. Selecione uma resposta e envie; somente a primeira resposta enviada será contabilizada. A partitura e a explicação continuarão disponíveis para você aprender depois.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>A partitura deve ter pelo menos 4 compassos.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Iniciar / nova tentativa</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Iniciar Quiz</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Enviar resposta</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>O palco está sendo preparado</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Ainda não há perguntas de percepção auditiva publicadas. Volte depois que um músico revisar o primeiro conjunto.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Compasso</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Enviar Partitura</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Qual partitura corresponde à gravação?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Errado! Tente novamente.</value>

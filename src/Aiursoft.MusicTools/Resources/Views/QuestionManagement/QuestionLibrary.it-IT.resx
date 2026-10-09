@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Elimina</value>
   </data>
+  <data name="Legacy — not offered to students" xml:space="preserve">
+    <value>Versione precedente — non disponibile agli studenti</value>
+  </data>
   <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
     <value>Nessuna domanda trovata. Vai alla Score Library per crearne una.</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Start Measure" xml:space="preserve">
     <value>Misura d&apos;inizio</value>
   </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Battuta di destinazione</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Titolo</value>
+  </data>
+  <data name="versions" xml:space="preserve">
+    <value>versioni</value>
   </data>
 
 </root>

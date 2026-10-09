@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Hapus</value>
   </data>
+  <data name="Legacy — not offered to students" xml:space="preserve">
+    <value>Versi lama — tidak ditawarkan kepada siswa</value>
+  </data>
   <data name="No questions found. Go to Score Library to create one." xml:space="preserve">
     <value>Tidak ada pertanyaan yang ditemukan. Buka Pustaka Skor untuk membuat satu.</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Start Measure" xml:space="preserve">
     <value>Taktik Awal</value>
   </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Ukuran sasaran</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Judul</value>
+  </data>
+  <data name="versions" xml:space="preserve">
+    <value>variasi</value>
   </data>
 
 </root>

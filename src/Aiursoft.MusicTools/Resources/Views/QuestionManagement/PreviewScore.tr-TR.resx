@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Kitaplığa Dön</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Soru Oluştur</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Orijinal dosyayı indir</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Tam Nota Önizlemesi</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Seslendirmeli tam besteci partitürü önizlemesi.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>İşlem sırasında sunucu yeniden başlatıldıysa yeniden deneyin. Eski puanlar, yeni dinleme soruları oluşturulmadan önce içe aktarılmalıdır.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>İçe aktar / yeniden dene</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>İçe aktarma, özgün dosyanızı değiştirmeden web&apos;de görüntülenebilir bir nota oluşturur. Dönüştürme arka planda gerçekleştirilir.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Oynat</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Durumu yenile</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Not Öncesi</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>NOTA KİTAPLIĞINIZ</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Yakınlaştırma</value>
   </data>
 
 </root>

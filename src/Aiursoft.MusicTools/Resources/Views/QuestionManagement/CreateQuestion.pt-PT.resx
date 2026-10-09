@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Explore a partitura</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Ouça o seu excerto</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Uma anacruse precisa de uma referência rítmica audível. Confirme que existe apenas uma resposta defensável. Os excertos são reproduzidos uma vez, tal como estão escritos, sem repetições; inclua as notas ligadas na íntegra.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avançado</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Todas as pautas (ambas as mãos)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Iniciante</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Escolha o contexto de escuta e, em seguida, concentre-se num compasso e numa diferença audível.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Clique numa gama de compassos abaixo para selecionar 4 compassos consecutivos.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Clique diretamente na pauta no primeiro e no último compasso, ou utilize os botões numerados. A indicação mais pequena corresponde ao número impresso na pauta.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Crie um desafio de audição</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Criar Questão</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Criar pergunta a partir da partitura</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Descreva o elemento a identificar auditivamente, não uma nota correta ou uma letra de resposta fixa: pode ser reproduzida uma versão aprovada diferente de cada vez.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Dificuldade</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Não conte as pausas. As versões de altura alteram apenas esta nota; as versões rítmicas alteram esta nota e a nota imediatamente seguinte. Escolha uma posição simples, sem ligaduras.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>ex. Identificação do Tema Inicial</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Qualquer versão aprovada pode ser utilizada como resposta. Avalie a plausibilidade musical, não qual versão se parece mais com a original.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Pré-visualização do Extrato</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>A partir da posição</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Pré-visualização da Partitura Completa</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Gerar versões focadas</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Instrumento / parte</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermédio</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Contexto auditivo</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Foco de escuta</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Número de compassos</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Seleção do compasso</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Número de versões a rever</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Altura: uma nota, o mesmo ritmo</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Preparar áudio</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Pré-visualização das 4 compassos selecionados.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Título da Pergunta</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ritmo: um par de notas adjacentes, com as mesmas alturas</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Selecionar compassos</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Intervalo selecionado:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Orientações partilhadas para a audição</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Partitura de origem</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Pauta 1 (geralmente mão direita)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Pauta 2 (normalmente, mão esquerda)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Índice da Primeira Compás (indexação a partir de 0)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Os alunos veem um compasso, não seis excertos completos. Todas as opções diferem no mesmo ponto. Prefira um contraste audível claro a um pequeno truque visual.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Posição do compasso-alvo</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Nota com altura-alvo (contar a partir de 1 neste compasso)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Indique aos alunos exatamente o que devem ouvir</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>O único compasso que os alunos irão comparar</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Este intervalo corresponde ao contexto áudio, não à quantidade de notação que os alunos têm de procurar. As posições incluem anacruses; ambos os extremos estão incluídos.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Até à posição</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Atualizar pré-visualização</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Voz / mãos</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>O que torna uma pergunta boa?</value>
   </data>
 
 </root>

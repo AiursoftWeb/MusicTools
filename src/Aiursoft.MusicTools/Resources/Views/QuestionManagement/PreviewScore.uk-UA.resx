@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Повернутися до бібліотеки</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Створити запитання</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Завантажити оригінал</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Попередній перегляд повної партитури</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Перегляд повного нотного запису з можливістю відтворення.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Якщо сервер перезапустився під час обробки, скористайтеся повторною спробою. Старі партитури потрібно імпортувати, перш ніж створювати нові запитання на аудіювання.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Імпортувати / повторити спробу</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Імпорт створює версію нотного тексту, доступну для перегляду в браузері, не змінюючи оригінальний файл. Перетворення відбувається у фоновому режимі.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Відтворити</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Оновити статус</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Попередній перегляд нот</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>Ваша фонотека нот</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Масштаб</value>
   </data>
 
 </root>

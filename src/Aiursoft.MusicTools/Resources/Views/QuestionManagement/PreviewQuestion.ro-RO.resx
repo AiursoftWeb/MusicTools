@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Aprobă și publică</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Înapoi la Bibliotecă</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Alegeți un model ritmic</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Finalizați pregătirea și verificarea materialului audio înainte de publicare.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Audio-ul de context este pregătit pentru fiecare variantă. Fiecare poate fi selectată drept răspuns.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Creați întrebarea</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Editează aceeași poziție țintă</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Egal (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Previzualizare extras</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Am ascultat fiecare versiune în context. Fiecare este plauzibilă din punct de vedere muzical, distinctă auditiv și potrivită pentru a fi aleasă drept răspuns.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Lung–scurt (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Poate fi răspunsul</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Măsurile</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>PANOU DE REVIZUIRE MUZICALĂ</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Între versiuni se modifică doar măsura țintă. Elevii văd acea măsură; versiunea selectată este cea pe care o aud în acest context.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Deschide exercițiul</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Redă</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Publicat și gata pentru exersare</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Informații despre întrebare</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Previzualizare întrebare</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Reîmprospătați starea</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Reîncercați redarea audio</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Salvează versiunea și pregătește fișierul audio</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Context comun de ascultare</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Îndrumări comune pentru ascultare (detaliile versiunii redate sunt adăugate automat)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Scurt–lung (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Sursa partiturii</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Măsură inițială</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Sugerați o altă variantă în acest loc</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Măsura țintă</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Nota muzicală vizată</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Sursa nu are prioritate. La fiecare încercare se alege aleatoriu ce versiune aprobată va fi redată. Respingeți variantele care pot fi eliminate doar pe baza notației.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Această întrebare moștenită de identificare a greșelilor este păstrată ca referință, dar nu este disponibilă în modul de exersare concentrată. Recreați-o cu o țintă scurtă și trei sau patru variante plauzibile.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Titlu</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versiunea</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Retrageți întrebarea veche</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Retrage pentru a edita</value>
   </data>
 
 </root>
