@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Haben Sie bereits ein MuseScore-Projekt? Exportieren Sie es auf Ihrem Computer als MusicXML und laden Sie es anschließend hier hoch. Ihr ursprüngliches Projekt bleibt unverändert.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Wählen Sie „Datei“ → „Exportieren“ und dann MusicXML als Format. Wählen Sie die unkomprimierte Option, um eine .musicxml-Datei zu erstellen.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>MusicXML exportieren</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Für Klavier exportieren Sie die vollständige Partitur mit beiden Händen. Beim Erstellen einer Frage können Sie auch nur die rechte Hand auswählen.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Bewahren Sie das Originalprojekt für spätere Bearbeitungen auf.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>MuseScore-Handbuch zum Export</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>MusicXML bewahrt die musikalischen Informationen, aber Abstände und Seitenlayout können von deinem Original abweichen.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Öffnen Sie das .mscz- oder .mscx-Projekt auf Ihrem Computer in MuseScore Studio.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Öffne deine Partitur</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>Durch das Umbenennen von .mscz in .xml wird eine Partitur nicht konvertiert. Verwenden Sie in MuseScore den Befehl „Exportieren“, nicht „Speichern unter“ und auch keinen PDF-Export.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>Zur MusicXML-Upload-Seite zurückkehren</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Speichern Sie die exportierte Datei und kehren Sie zu MusicTools zurück, um sie hochzuladen. Prüfen Sie die Notenvorschau und hören Sie sich Ihre ausgewählte Passage an, bevor Sie eine Frage veröffentlichen.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Hochladen und Vorschau anzeigen</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>Ihre Noten – bereit zum Üben nach Gehör</value>
+  </data>
+
+</root>

@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Xóa</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>Xóa bản nhạc này khỏi thư viện? Không thể xóa các bản nhạc đang được tham chiếu.</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>Quản lý các bản nhạc để tạo câu hỏi trắc nghiệm.</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>Thư viện bản nhạc</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>Tìm kiếm theo tên tác phẩm hoặc nhà soạn nhạc</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>Tìm kiếm bản nhạc</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>Tải Lên Bản Nhạc Mới</value>

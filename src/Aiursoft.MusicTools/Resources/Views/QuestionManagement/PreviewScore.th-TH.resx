@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>กลับไปยังห้องสมุด</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>สร้างคำถาม</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>ดาวน์โหลดไฟล์ต้นฉบับ</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>ตัวอย่างโน้ตเพลงฉบับเต็ม</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>ตัวอย่างฉบับดนตรีพร้อมฟังซ้ำ</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>หากเซิร์ฟเวอร์รีสตาร์ทระหว่างประมวลผล ให้ลองนำเข้าอีกครั้ง ต้องนำเข้าคะแนนแบบเดิมก่อนสร้างคำถามการฟังใหม่</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>นำเข้า / ลองอีกครั้ง</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>การนำเข้าจะสร้างโน้ตเพลงที่อ่านได้บนเว็บโดยไม่เปลี่ยนแปลงไฟล์ต้นฉบับของคุณ การแปลงจะทำงานอยู่เบื้องหลัง</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>เล่น</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>รีเฟรชสถานะ</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>ตัวอย่างเพลงบรรเลง</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>คลังโน้ตเพลงของคุณ</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>ซูม</value>
   </data>
 
 </root>

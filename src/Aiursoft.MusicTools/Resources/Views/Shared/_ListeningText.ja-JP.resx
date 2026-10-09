@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Correct!" xml:space="preserve">
+    <value>正解です！</value>
+  </data>
+  <data name="Could not load this question. Please try again." xml:space="preserve">
+    <value>この問題を読み込めませんでした。もう一度お試しください。</value>
+  </data>
+  <data name="Keep listening." xml:space="preserve">
+    <value>聴き続けてください。</value>
+  </data>
+  <data name="Listen to the target measure, then choose the matching short version. Any approved version may be played." xml:space="preserve">
+    <value>対象の小節を聴いて、一致する短いバージョンを選んでください。承認済みのバージョンであれば、どれを再生してもかまいません。</value>
+  </data>
+  <data name="Loading the short versions…" xml:space="preserve">
+    <value>短いバージョンを読み込んでいます…</value>
+  </data>
+  <data name="Preparing audio…" xml:space="preserve">
+    <value>音声を準備しています…</value>
+  </data>
+  <data name="Ready. Press play to listen." xml:space="preserve">
+    <value>準備完了です。再生ボタンを押して聴いてください。</value>
+  </data>
+  <data name="Replay and compare the scores, or start a new attempt." xml:space="preserve">
+    <value>もう一度再生してスコアを比較するか、新しく挑戦してください。</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>対象の小節を再生</value>
+  </data>
+  <data name="Selection changed. Prepare audio again." xml:space="preserve">
+    <value>選択内容が変更されました。音声をもう一度準備してください。</value>
+  </data>
+  <data name="Target measure is playing — listen here." xml:space="preserve">
+    <value>対象の小節を再生中です — こちらをお聴きください。</value>
+  </data>
+  <data name="The recording could not be loaded. Start a new attempt or try again later." xml:space="preserve">
+    <value>録音を読み込めませんでした。新しく試すか、後でもう一度お試しください。</value>
+  </data>
+  <data name="The score could not be parsed." xml:space="preserve">
+    <value>スコアを解析できませんでした。</value>
+  </data>
+
+</root>

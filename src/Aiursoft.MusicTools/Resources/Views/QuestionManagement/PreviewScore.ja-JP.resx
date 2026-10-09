@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>ライブラリに戻る</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>問題を作成</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>オリジナルをダウンロード</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>楽譜全体のプレビュー</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>再生機能付きのフルスコアプレビュー。</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>処理中にサーバーが再起動した場合は、再試行してください。従来のスコアは、新しいリスニング問題を作成する前にインポートする必要があります。</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>インポート／再試行</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>インポートすると、元のファイルを変更せずに、Webで読み取り可能な楽譜が作成されます。変換はバックグラウンドで実行されます。</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>再生</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>ステータスを更新</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>譜面プレビュー</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>あなたの楽譜ライブラリ</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>ズーム</value>
   </data>
 
 </root>

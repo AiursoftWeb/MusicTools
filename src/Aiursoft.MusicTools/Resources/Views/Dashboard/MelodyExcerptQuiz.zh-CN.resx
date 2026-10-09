@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>从题库中选择一道题目，或上传您自己的乐谱。</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>选择你的挑战</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>正确！</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>困难（跳进）</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>聆听一段简短的音乐片段，专注于一个标记的小节，并选出与之匹配的乐谱。三到四个看似合理的版本，一项明确的听辨任务。无需注册账号。</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>难度等级</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>聆听 · 察觉 · 理解</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>请仔细聆听，并从下方选择对应的乐谱记号。</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>暂无预设题目。请使用上传选项。</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>乐谱缩放</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>一个音符或一个节奏型——无需寻找零散的错误</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>仅显示目标小节。所有版本都在同一位置存在差异；源版本不一定是正确答案。</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>播放旋律</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>请上传至少包含 4 小节的乐谱。</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>已发布题目</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>题库</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>重放目标小节</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>可根据需要重放录音。选择一个答案并提交；首次提交的答案将计入结果。之后仍可查看乐谱和解析，以供学习。</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>乐曲必须至少有4个小节。</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>开始 / 重新尝试</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>开始测验</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>提交答案</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>舞台正在准备中</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>目前还没有已发布的听力题。等音乐家审核完第一组题目后，再回来看看。</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>拍号</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>上传乐谱</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>哪份乐谱与录音相符？</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>错误！请再试一次。</value>

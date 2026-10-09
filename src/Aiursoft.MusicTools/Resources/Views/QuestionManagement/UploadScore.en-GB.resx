@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Composer / arranger</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>e.g. Mozart Sonata No. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Have a MuseScore project instead?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML file</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>MusicXML or MXL file</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Originals are kept private. The import runs in the background; you can preview the normalised score before creating questions.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Score Name</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Show me how to export</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Upload and Save</value>

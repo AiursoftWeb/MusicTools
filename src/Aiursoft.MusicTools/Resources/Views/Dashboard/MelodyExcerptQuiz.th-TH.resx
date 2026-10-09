@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>เลือกคำถามจากคลังคำถาม หรืออัปโหลดโน้ตเพลงของคุณเอง</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>เลือกความท้าทายของคุณ</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>ถูกต้อง!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>ยาก (การกระโดดข้ามตัว)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>ฟังบริบทดนตรีสั้น ๆ ตั้งใจฟังห้องเพลงที่ทำเครื่องหมายไว้ แล้วเลือกโน้ตดนตรีที่ตรงกัน มีตัวเลือกที่เป็นไปได้ 3 หรือ 4 แบบ และโจทย์การฟังที่ชัดเจน ไม่ต้องมีบัญชีผู้ใช้</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>ระดับ</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>ฟัง · สังเกต · เข้าใจ</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>ฟัง attentively แล้วเลือกโน้ตดนตรีที่ตรงกันด้านล่าง</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>ไม่มีคำถามที่กำหนดไว้ล่วงหน้า กรุณาใช้ตัวเลือกอัปโหลด</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>ซูมโน้ตเพลง</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>โน้ตหนึ่งตัวหรือรูปแบบจังหวะหนึ่งแบบ — ไม่ต้องคอยหาจุดผิดที่กระจัดกระจาย</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>แสดงเฉพาะห้องเพลงเป้าหมายเท่านั้น โน้ตเพลงทุกเวอร์ชันแตกต่างกันที่ตำแหน่งเดียวกัน โดยเวอร์ชันต้นฉบับไม่ได้เป็นคำตอบที่ถูกต้องเสมอไป</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>เปิดเสียงเพลง</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>กรุณาอัปโหลดโน้ตเพลงที่มีอย่างน้อย 4 มัด</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>คำถามที่เผยแพร่แล้ว</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>คลังข้อสอบ</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>เล่นซ้ำห้องเพลงเป้าหมาย</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>เล่นเสียงบันทึกซ้ำได้ตามต้องการ เลือกคำตอบหนึ่งข้อแล้วส่งคำตอบ โดยคำตอบที่ส่งครั้งแรกจะถูกนับ คุณยังดูโน้ตเพลงและคำอธิบายเพื่อเรียนรู้เพิ่มเติมได้หลังจากนั้น</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>บทเพลงต้องมีอย่างน้อย 4 ห้อง</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>เริ่ม / เริ่มทำใหม่</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>เริ่มแบบทดสอบ</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>ส่งคำตอบ</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>กำลังเตรียมเวทีอยู่</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>ขณะนี้ยังไม่มีคำถามฝึกฟังที่เผยแพร่ กลับมาอีกครั้งหลังจากนักดนตรีตรวจทานชุดแรกแล้ว</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>ลายลักษณ์จังหวะ</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>อัปโหลดโน้ตเพลง</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>โน้ตเพลงใดตรงกับเสียงที่บันทึกไว้?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>ผิด! ลองอีกครั้ง</value>

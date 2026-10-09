@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. ดูสำรวจโน้ตเพลง</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. ฟังท่อนเพลงของคุณ</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>จังหวะนำต้องมีจังหวะอ้างอิงที่ได้ยินชัดเจน ตรวจสอบให้แน่ใจว่ามีคำตอบที่สมเหตุสมผลได้เพียงข้อเดียว ท่อนเพลงจะเล่นหนึ่งครั้งตามที่เขียนไว้ โดยไม่มีการเล่นซ้ำ และต้องใส่โน้ตที่ผูกเสียงให้ครบถ้วน</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>ระดับสูง</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>ทุกบรรทัดบรรเลง (มือทั้งสองข้าง)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>ระดับเริ่มต้น</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>เลือกบริบทในการฟัง จากนั้นเน้นที่หนึ่งห้องเพลงและความแตกต่างที่ได้ยินได้หนึ่งจุด</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>คลิกช่วงห้องด้านล่างเพื่อเลือก 4 ห้องติดต่อกัน</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>คลิกห้องเพลงแรกและห้องเพลงสุดท้ายบนโน้ตเพลงโดยตรง หรือใช้ปุ่มตัวเลข ป้ายกำกับขนาดเล็กกว่าคือหมายเลขที่พิมพ์ไว้ในโน้ตเพลง</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>สร้างโจทย์ทดสอบการฟัง</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>สร้างคำถาม</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>สร้างคำถามจากโน้ตเพลง</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>อธิบายจุดสังเกตในการฟัง ไม่ใช่โน้ตหรืออักษรคำตอบที่ถูกต้องตายตัว เพราะแต่ละครั้งอาจเล่นเวอร์ชันอื่นที่ผ่านการอนุมัติแล้ว</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>ระดับความยาก</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>ไม่นับตัวหยุดเสียง เวอร์ชันที่เปลี่ยนระดับเสียงจะเปลี่ยนเฉพาะโน้ตตัวนี้ ส่วนเวอร์ชันที่เปลี่ยนจังหวะจะเปลี่ยนโน้ตตัวนี้และโน้ตตัวถัดไปทันที เลือกตำแหน่งที่เรียบง่ายและไม่มีการโยงเสียง</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>เช่น การระบุธีมบทเปิด</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>สามารถใช้เวอร์ชันที่ผ่านการอนุมัติทุกเวอร์ชันเป็นคำตอบได้ โปรดพิจารณาความสมเหตุสมผลทางดนตรี ไม่ใช่ว่าเวอร์ชันใดดูเหมือนต้นฉบับมากที่สุด</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>ตัวอย่างย่อ</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>จากตำแหน่ง</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>ตัวอย่างโน้ตดนตรีฉบับเต็ม</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>สร้างเวอร์ชันที่เน้นจุดที่กำหนด</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>เครื่องดนตรี / พาร์ต</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>ระดับปานกลาง</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>บริบทในการฟัง</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>จุดเน้นในการฟัง</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>จำนวนห้องเพลง</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>การเลือกห้องเพลง</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>จำนวนเวอร์ชันที่ตรวจสอบแล้ว</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>ระดับเสียง: หนึ่งโน้ต จังหวะเหมือนเดิม</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>เตรียมเสียง</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>ตัวอย่างบทเพลงของ 4 ห้องเพลงที่เลือกไว้</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>หัวข้อคำถาม</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>จังหวะ: โน้ตคู่ที่อยู่ติดกันหนึ่งคู่ โดยมีระดับเสียงเหมือนเดิม</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>เลือกท่อนเพลง</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>ช่วงที่เลือก:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>คำแนะนำในการฟังร่วมกัน</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>楽譜元データ</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>บรรทัดที่ 1 (โดยปกติคือมือขวา)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>โน้ตบรรทัดที่ 2 (โดยทั่วไปคือมือซ้าย)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>ดัชนีเสียงเริ่มต้น (นับจาก 0)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>นักเรียนจะเห็นเพียงหนึ่งห้องเพลง ไม่ใช่โน้ตเพลงฉบับเต็มทั้งหกช่วง ตัวเลือกทั้งหมดจะแตกต่างกันที่ตำแหน่งเดียวกัน ควรเลือกความแตกต่างของเสียงที่ได้ยินชัดเจน แทนการใช้ลูกเล่นทางภาพเล็กน้อย</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>ตำแหน่งห้องเพลงเป้าหมาย</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>โน้ตเสียงที่ต้องการ (นับจาก 1 ภายในห้องเพลงนี้)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>บอกนักเรียนให้ชัดเจนว่าควรตั้งใจฟังอะไร</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>มาตราที่นักเรียนจะนำมาเปรียบเทียบเพียงมาตราเดียว</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>ช่วงนี้คือบริบทของเสียง ไม่ใช่ปริมาณโน้ตที่นักเรียนต้องค้นหา ตำแหน่งต่าง ๆ รวมจังหวะยกด้วย และนับรวมตำแหน่งต้นทางกับปลายทาง</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>ถึงตำแหน่ง</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>อัปเดตตัวอย่าง</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>แนวเสียง / มือ</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>คำถามที่ดีควรเป็นอย่างไร?</value>
   </data>
 
 </root>

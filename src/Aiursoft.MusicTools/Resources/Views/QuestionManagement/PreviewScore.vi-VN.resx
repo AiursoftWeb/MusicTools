@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Quay lại Thư viện</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Tạo câu hỏi</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Tải xuống bản gốc</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Xem trước toàn bộ bản nhạc</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Xem trước bản nhạc đầy đủ với khả năng phát lại.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Nếu máy chủ khởi động lại trong khi đang xử lý, hãy thử lại. Các bản nhạc phổ cũ phải được nhập trước khi tạo câu hỏi nghe mới.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Nhập / thử lại</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Quá trình nhập tạo ra bản nhạc có thể đọc trên web mà không làm thay đổi tệp gốc của bạn. Việc chuyển đổi diễn ra ở chế độ nền.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Phát</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Làm mới trạng thái</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Xem trước bản nhạc</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>THƯ VIỆN BẢN NHẠC CỦA BẠN</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Thu phóng</value>
   </data>
 
 </root>

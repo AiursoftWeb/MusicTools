@@ -99,6 +99,9 @@
   <data name="Error" xml:space="preserve">
     <value>エラー</value>
   </data>
+  <data name="Export MusicXML from MuseScore" xml:space="preserve">
+    <value>MuseScoreからMusicXMLをエクスポート</value>
+  </data>
   <data name="Features" xml:space="preserve">
     <value>機能</value>
   </data>

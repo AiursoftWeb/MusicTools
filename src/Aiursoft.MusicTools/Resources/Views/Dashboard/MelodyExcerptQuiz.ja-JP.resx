@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>問題銀行から問題を選ぶか、独自の楽譜をアップロードしてください。</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>挑戦する問題を選択</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>正解！</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>ハード（跳躍）</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>短い音楽の流れを聴き、印の付いた小節に注目して、それに合う楽譜を選びましょう。もっともらしい候補は3つまたは4つ。聴き取りの課題はシンプルです。アカウント登録は不要です。</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>レベル</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>聴く · 気づく · 理解する</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>よく聴いて、下に合った楽譜を選んでください。</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>事前設定された質問はありません。アップロードオプションをご利用ください。</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>譜面の拡大率</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>音を一つ、またはリズムパターンを一つ聴き取る — あちこちの間違い探しではありません</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>対象の小節のみが表示されます。すべての譜例は同じ箇所が異なりますが、元の譜例が常に正解とは限りません。</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>メロディを再生</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>4小節以上のスコアをアップロードしてください。</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>公開済みの問題</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>問題集</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>対象の小節を再生</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>必要に応じて録音を再生してください。回答を1つ選んで送信してください。最初に送信した回答が採点対象になります。譜面と解説は、後から学習に活用できます。</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>スコアは少なくとも4小節が必要です。</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>開始／新しい試行</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>クイズを開始</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>回答を送信</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>ステージを準備しています</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>公開されているリスニング問題はまだありません。音楽家が最初のセットを確認した後に、またお越しください。</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>拍子記号</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>楽譜をアップロード</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>録音に一致する楽譜はどれですか？</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>不正解！もう一度挑戦してください。</value>

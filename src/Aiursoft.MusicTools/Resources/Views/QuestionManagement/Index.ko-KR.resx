@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>삭제</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>이 악보를 라이브러리에서 삭제하시겠습니까? 참조 중인 악보는 삭제할 수 없습니다.</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>퀴즈 문제 생성을 위한 음악 악보 관리</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>악보 라이브러리</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>제목 또는 작곡가로 검색</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>악보 검색</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>새로운 악보 업로드</value>

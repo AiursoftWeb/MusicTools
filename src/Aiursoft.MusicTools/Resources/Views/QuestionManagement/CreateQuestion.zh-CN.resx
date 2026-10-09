@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. 浏览乐谱</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. 聆听你的选段</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>弱起需要有清晰可听的节拍参照。确保只有一个合理且有依据的答案。乐段按谱面原样播放一次，不重复；延音线连接的音符须完整呈现。</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>全部谱表（双手）</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>初级</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>选择聆听背景，然后聚焦于一个小节和一个可听出的差异。</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>点击下方节拍范围以选择连续4个小节。</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>直接在乐谱上点击第一个和最后一个小节，或使用带编号的按钮。较小的标签显示的是乐谱上印刷的小节编号。</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>编写听力挑战</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>创建问题</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>根据乐谱创建题目</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>请描述需要听辨的线索，而不是固定的正确音符或答案选项字母：每次播放的都可能是不同的已审核版本。</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>难度</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>休止符不计数。音高版本仅更改此音符；节奏版本则更改此音符及紧接其后的音符。请选择一个简单且不带连音线的位置。</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>例如：主题识别</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>每个已审核通过的版本都可能作为答案播放。请评估其音乐上的合理性，而不是判断哪个版本看起来最接近原谱。</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>节选预览</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>起始位置</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>完整乐谱预览</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>生成专注版本</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>乐器 / 声部</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>中级</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>聆听上下文</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>听力训练重点</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>小节数量</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>小节选择</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>审核版本数量</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>音高：一个音符，节奏相同</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>准备音频</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>所选 4 小节的预览。</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>问题标题</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>节奏：一对相邻音符，音高相同</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>选择小节</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>选定范围：</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>共同听音指导</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>原始乐谱</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>谱表 1（通常为右手）</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>谱表 2（通常为左手）</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>起始小节索引（从 0 开始）</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>学生看到的是一个小节，而不是六段完整乐谱。所有选项都只在同一处有所不同。应优先采用清晰可听的差异，而不是细微的视觉伎俩。</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>目标小节位置</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>目标音符（在本小节内从 1 开始计数）</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>明确告诉学生需要听什么</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>学生唯一会比较的小节</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>此范围指音频上下文，并非学生需要查找的乐谱数量。位置包含弱起小节；起点和终点均包括在内。</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>至</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>更新预览</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>声部 / 左右手</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>什么样的问题才算好？</value>
   </data>
 
 </root>

@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>审核并发布</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>返回题库</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>选择一种节奏型</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>发布前请完成音频准备和审核。</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>每个版本均已准备好配套的背景音频。每个版本都可以作为答案。</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>创建问题</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>编辑同一目标位置</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>等长（1:1）</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>节选预览</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>我已在完整语境中试听了每个版本。每个版本在音乐上都合理可行，听感上彼此有明显区别，也都适合作为答案。</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>长短（3:1）</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>可能是答案</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>小节数</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>音乐家评审台</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>不同版本之间只有目标小节发生变化。学生看到的是这个小节；他们听到的则是在此上下文中选定的版本。</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>开始练习</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>播放</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>已发布，可以开始练习</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>题目信息</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>问题预览</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>刷新状态</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>重试音频</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>保存版本并准备音频</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>共享聆听背景</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>共享听辨指导（播放版本的详细信息将自动添加）</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>短-长（1:3）</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>乐谱来源</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>起始小节</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>在此位置建议另一个版本</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>目标小节</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>目标音高音符</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>源版本并不享有优先权。每次尝试都会随机选择一个已批准的版本进行播放。仅凭乐谱记谱就能排除的变体应予以拒绝。</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>此遗留的“查找错误”题目仅保留作参考，不会用于针对性练习。请重新创建该题，设置一个简短的目标，并提供三个或四个合理的版本。</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>标题</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>撤下旧版题目</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>撤回并编辑</value>
   </data>
 
 </root>
