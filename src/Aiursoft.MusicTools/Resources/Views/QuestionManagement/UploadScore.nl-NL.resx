@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Annuleren</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Componist / arrangeur</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>bijv. Mozart Sonata No. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Exporteer je .mscz- of .mscx-project op je computer als MusicXML. Conversie op de server is niet nodig.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Heb je in plaats daarvan een MuseScore-project?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML-bestand</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>MusicXML- of MXL-bestand</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>De originele bestanden blijven privé. De import wordt op de achtergrond uitgevoerd; je kunt de genormaliseerde partituur bekijken voordat je vragen aanmaakt.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Naam muziekstuk</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Laat zien hoe ik kan exporteren</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Uploaden en opslaan</value>

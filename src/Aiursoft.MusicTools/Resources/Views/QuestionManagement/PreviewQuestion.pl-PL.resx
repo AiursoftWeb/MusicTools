@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Zatwierdź i opublikuj</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Powrót do biblioteki</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Wybierz wzorzec rytmiczny</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Przed publikacją zakończ przygotowanie i weryfikację nagrań audio.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Dźwięk kontekstu jest przygotowywany dla każdej wersji. Każdą z nich można wybrać jako odpowiedź.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Utwórz pytanie</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Edytuj to samo miejsce docelowe</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Równy (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Podgląd fragmentu</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Przesłuchałem każdą wersję w kontekście. Każda jest muzycznie wiarygodna, wyraźnie odróżnia się od pozostałych i może zostać wybrana jako odpowiedź.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Długo–krótko (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Może być odpowiedzią</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Taktów</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>STANOWISKO RECENZJI MUZYCZNYCH</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Między wersjami zmienia się tylko docelowy takt. Uczniowie widzą ten takt, a słyszą wybraną wersję w tym kontekście.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Otwórz ćwiczenie</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Odtwórz</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Opublikowano i gotowe do ćwiczeń</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Informacje o pytaniu</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Podgląd pytania</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Odśwież status</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Ponów odtwarzanie audio</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Zapisz wersję i przygotuj dźwięk</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Wspólny kontekst słuchowy</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Wspólne wskazówki dotyczące odsłuchu (szczegóły odtwarzanej wersji są dodawane automatycznie)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Krótko–długo (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Nota źródłowa</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Miarowanie startowe</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Zaproponuj inną wersję w tym miejscu</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Docelowy takt</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Docelowa nuta o określonej wysokości</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Materiał źródłowy nie jest uprzywilejowany. Przy każdej próbie losowo wybierana jest jedna z zatwierdzonych wersji do odtworzenia. Odrzuć warianty, które można wyeliminować na podstawie samej notacji.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>To starsze pytanie typu „znajdź błędy” zachowano wyłącznie w celach informacyjnych; nie jest dostępne w trybie ćwiczeń skupionych. Odtwórz je, wybierając krótki fragment docelowy i trzy lub cztery wiarygodne warianty.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Tytuł</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Wycofaj starsze pytanie</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Wycofaj, aby edytować</value>
   </data>
 
 </root>

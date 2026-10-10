@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Partisyonu inceleyin</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Dinleme bölümünüzü dinleyin</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Eksik ölçü, duyulabilir bir vuruş referansı gerektirir. Savunulabilir tek bir yanıt olduğundan emin olun. Bölümler yazıldığı gibi, tekrar edilmeden bir kez çalınır; uzatmalı notaların tamamını dahil edin.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>İleri</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Tüm porte çizgileri (iki el)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Başlangıç</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Dinleme bağlamını seçin, ardından tek bir ölçüye ve duyulabilir tek bir farka odaklanın.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>4 ardışık ölçüyü seçmek için aşağıdaki bir ölçü aralığına tıklayın.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Partitürde ilk ve son ölçüye doğrudan tıklayın veya numaralı düğmeleri kullanın. Küçük etiket, partitürde basılı olan ölçü numarasıdır.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Bir Dinleme Etkinliği Oluştur</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Soru Oluştur</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Partitürden Soru Oluştur</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Sabit bir doğru nota ya da cevap harfi yerine, dinlerken nelere dikkat edilmesi gerektiğini açıklayın: her seferinde onaylanmış farklı bir sürüm çalınabilir.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Zorluk</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Susları saymayın. Perde sürümlerinde yalnızca bu nota; ritim sürümlerinde ise bu nota ve hemen ardından gelen nota değişir. Basit, bağsız bir konum seçin.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>ör. Başlangıç Teması Tanımlama</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Onaylanan her sürüm yanıt olarak çalınabilir. Hangi sürümün aslına en çok benzediğine değil, müzikal açıdan makul olup olmadığına bakın.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Alıntı Önizleme</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Başlangıç konumu</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Tüm Partitur Önizlemesi</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Belirli sürümleri oluştur</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Çalgı / bölüm</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Orta</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Dinleme bağlamı</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Dinleme odağı</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Bölüm Sayısı</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Ölçü seçimi</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>İncelenen sürüm sayısı</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Perde: tek nota, aynı ritim</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Sesi hazırla</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Seçilen 4 ölçünün önizlemesi.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Soru Başlığı</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ritim: yan yana bir nota çifti, aynı perdeler</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Ölçüleri Seçin</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Seçilen aralık:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Dinlemeye yönelik ortak yönlendirme</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Kaynak Nota</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>1. porte (genellikle sağ el)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Parti 2 (genellikle sol el)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Başlangıç Bölüm İndeksi (0&apos;dan başlar)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Öğrenciler altı tam pasaj yerine tek bir ölçü görür. Tüm seçenekler aynı konumda farklılık gösterir. Küçük bir görsel oyundan ziyade, işitilebilir ve belirgin bir farkı tercih edin.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Hedef ölçü konumu</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Bu ölçüdeki hedef sesli nota (1&apos;den başlayarak sayın)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Öğrencilere tam olarak neyi dinlemeleri gerektiğini söyleyin</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Öğrencilerin karşılaştıracağı tek ölçü</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Bu aralık, öğrencilerin notada arama yapması gereken kısmı değil, ses bağlamını belirtir. Konumlara eksik ölçüler de dahildir; başlangıç ve bitiş noktaları da kapsama girer.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Bitiş konumu</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Önizlemeyi güncelle</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Ses / eller</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>İyi bir soruyu ne iyi yapar?</value>
   </data>
 
 </root>

@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>العودة إلى المكتبة</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>إنشاء سؤال</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>تنزيل الأصل</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>معاينة النوتة الموسيقية كاملة</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>معاينة كاملة للنوتة الموسيقية مع إمكانية التشغيل.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>إذا أُعيد تشغيل الخادم أثناء المعالجة، فاستخدم خيار إعادة المحاولة. يجب استيراد الدرجات القديمة قبل إنشاء أسئلة استماع جديدة.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>استيراد / إعادة المحاولة</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>ينشئ الاستيراد نسخة من النوتة الموسيقية قابلة للعرض على الويب، مع إبقاء الملف الأصلي دون تغيير. وتتم عملية التحويل في الخلفية.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>تشغيل</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>تحديث الحالة</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>معاينة النوتة</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>مكتبتك الموسيقية</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>التكبير</value>
   </data>
 
 </root>

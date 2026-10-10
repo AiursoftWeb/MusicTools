@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>إلغاء</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>المؤلف الموسيقي / الموزّع الموسيقي</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>على سبيل المثال: سوناتة موزارت رقم 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>صدّر مشروعك بصيغة ‎.mscz أو ‎.mscx كملف MusicXML على جهازك. لا حاجة إلى إجراء التحويل على الخادم.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>هل لديك مشروع MuseScore بدلًا من ذلك؟</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>ملف MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>ملف MusicXML أو MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>تُحفَظ الملفات الأصلية بسرية. وتتم عملية الاستيراد في الخلفية؛ ويمكنك معاينة النوتة الموسيقية بعد توحيد تنسيقها قبل إنشاء الأسئلة.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>اسم التسجيل</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>أرني كيفية التصدير</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>الرفع والحفظ</value>

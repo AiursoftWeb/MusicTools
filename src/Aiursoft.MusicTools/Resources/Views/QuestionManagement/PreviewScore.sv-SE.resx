@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Tillbaka till biblioteket</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Skapa fråga</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Ladda ner originalet</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Förhandsgranskning av hela notbilden</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Förhandsgranskning av hela partituret med uppspelning.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Om servern startades om under bearbetningen kan du försöka igen. Äldre noter måste importeras innan du skapar nya lyssningsfrågor.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Importera / försök igen</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Importen skapar en poäng som kan läsas på webben utan att ändra originalfilen. Konverteringen körs i bakgrunden.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Spela</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Uppdatera status</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Notationsförhandsvisning</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>DITT NOTBIBLIOTEK</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoom</value>
   </data>
 
 </root>

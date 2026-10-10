@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Explorați partitura</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Ascultați fragmentul</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>O anacruză trebuie să aibă un reper ritmic audibil. Asigurați-vă că există un singur răspuns justificabil. Pasajele se redau o singură dată, exact așa cum sunt scrise, fără repetiții; includeți notele legate complete.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avansat</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Toate portativele (ambele mâini)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Începător</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Alegeți contextul de ascultare, apoi concentrați-vă asupra unei măsuri și a unei singure diferențe audibile.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Faceți clic pe un interval de măsuri de mai jos pentru a selecta 4 măsuri consecutive.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Faceți clic direct pe partitura pe prima și pe ultima măsură sau folosiți butoanele numerotate. Eticheta mai mică indică numărul tipărit pe partitură.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>CREEAZĂ O PROVOCARE DE ASCULTARE</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Creează întrebare</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Creează întrebare din partitură</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Descrie indiciul auditiv, nu o notă corectă sau o literă de răspuns fixă: de fiecare dată poate fi redată o altă variantă aprobată.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Dificultate</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Nu numărați pauzele. Variantele de înălțime modifică doar această notă; variantele ritmice modifică această notă și nota imediat următoare. Alegeți o poziție simplă, fără legături de prelungire.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>ex. Identificarea temei introductive</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Fiecare versiune aprobată poate fi redată ca răspuns. Evaluați plauzibilitatea muzicală, nu care versiune seamănă cel mai mult cu originalul.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Previzualizare extras</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>De la poziție</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Previzualizare partitură completă</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Generează variante axate</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Instrument / parte</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Intermediar</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Contextul auditiv</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Accentul pe ascultare</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Număr de Măsură</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Selectarea măsurii</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Numărul de versiuni evaluate</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Înălțime: o singură notă, același ritm</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Pregătește fișierul audio</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Previzualizare a celor 4 măsuri selectate.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Titlul Întrebării</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ritm: o pereche de note consecutive, cu aceleași înălțimi</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Selectează măsuri</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Interval selectat:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Indicații comune pentru ascultare</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Partitură sursă</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Partitura 1 (de obicei, mâna dreaptă)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Partitura 2 (de obicei, mâna stângă)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indexul măsurii de start (începând de la 0)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Elevii văd un singur portativ, nu șase fragmente complete. Toate variantele diferă în același loc. Preferă un contrast auditiv clar în locul unui mic artificiu vizual.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Poziția măsurii țintă</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Nota vizată cu înălțime determinată (numerotată de la 1 în cadrul acestei măsuri)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Spuneți-le elevilor exact la ce să fie atenți când ascultă</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Singura măsură pe care o vor compara elevii</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Acest interval reprezintă contextul audio, nu cantitatea de notație pe care trebuie să o caute elevii. Pozițiile includ măsurile incomplete de la început; ambele capete ale intervalului sunt incluse.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Până la poziția</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Actualizează previzualizarea</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Voce / mâini</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Ce face ca o întrebare să fie bună?</value>
   </data>
 
 </root>

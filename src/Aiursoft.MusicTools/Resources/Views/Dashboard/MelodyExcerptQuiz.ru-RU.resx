@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Выберите вопрос из банка или загрузите свою партитуру.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Выберите задание</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Правильно!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Сложный (скачки)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Прослушайте короткий музыкальный фрагмент, сосредоточьтесь на одном отмеченном такте и выберите соответствующую ему нотную запись. Три или четыре правдоподобных варианта — одно понятное задание на слух. Регистрация не требуется.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Уровень</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>СЛУШАЙ · ЗАМЕЧАЙ · ПОНИМАЙ</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Внимательно прослушайте и выберите соответствующую нотацию ниже.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Заготовленных вопросов нет. Используйте вариант загрузки.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Масштаб нотной записи</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Одна нота или один ритмический рисунок — без поиска отдельных ошибок</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Показан только целевой такт. Все варианты различаются в одном и том же месте; исходный вариант не всегда является правильным ответом.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Воспроизвести мелодию</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Пожалуйста, загрузите ноты, содержащие не менее 4 тактов.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>опубликованных вопросов</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Банк вопросов</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Повторить целевой такт</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Повторяйте запись при необходимости. Выберите один вариант ответа и отправьте его; засчитывается первый отправленный ответ. Нотная запись и объяснение останутся доступны для изучения после этого.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Нотный текст должен содержать не менее 4 тактов.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Начать / новая попытка</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Начать тест</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Отправить ответ</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Сцена готовится</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Пока нет опубликованных заданий на аудирование. Возвращайтесь, когда музыкант проверит первый набор.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Размер</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Загрузить партитуру</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Какая нотная запись соответствует аудиозаписи?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Неверно! Попробуйте снова.</value>

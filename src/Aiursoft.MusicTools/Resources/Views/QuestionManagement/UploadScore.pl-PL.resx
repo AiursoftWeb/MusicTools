@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Kompozytor / aranżer</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>np. Sonatina nr 16 Mozarta</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Wyeksportuj projekt .mscz lub .mscx do formatu MusicXML na swoim komputerze. Konwersja na serwerze nie jest wymagana.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Masz zamiast tego projekt w MuseScore?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>Plik MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>Plik MusicXML lub MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Oryginały pozostają prywatne. Import odbywa się w tle; przed utworzeniem pytań możesz wyświetlić podgląd znormalizowanego zapisu nutowego.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Nazwa nut</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Pokaż, jak wyeksportować</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Prześlij i zapisz</value>

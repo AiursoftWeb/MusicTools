@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Já tem um projeto do MuseScore? Exporte-o como MusicXML no seu computador e, em seguida, carregue-o aqui. O projeto original permanece inalterado.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Escolha Ficheiro → Exportar e, em seguida, selecione MusicXML como formato. Escolha a opção descomprimida para criar um ficheiro .musicxml.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>Exportar MusicXML</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Para piano, exporte a partitura completa, com ambas as mãos. Ao criar uma pergunta, pode selecionar apenas a mão direita.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Guarde o projeto original para o poder editar mais tarde.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>Manual de exportação do MuseScore</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>O MusicXML preserva a informação musical, mas o espaçamento e a disposição da página podem ser diferentes dos do original.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Abra o projeto .mscz ou .mscx no MuseScore Studio no seu computador.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Abra a sua partitura</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>Mudar o nome de .mscz para .xml não converte uma partitura. Utilize o comando Exportar do MuseScore, não Guardar como nem a opção de exportação para PDF.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>Voltar ao carregamento de MusicXML</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Guarde o ficheiro exportado e volte ao MusicTools para o carregar. Verifique a pré-visualização da partitura e ouça o excerto selecionado antes de publicar uma pergunta.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Carregar e pré-visualizar</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>A sua partitura, pronta para praticar a audição</value>
+  </data>
+
+</root>

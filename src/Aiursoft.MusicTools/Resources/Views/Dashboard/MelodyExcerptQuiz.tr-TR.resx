@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Bankadan bir soru seçin veya kendi partitürünüzü yükleyin.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Görevinizi seçin</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Doğru!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Zor (Aralıklı)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Kısa bir müzik bölümünü dinleyin, işaretli ölçüye odaklanın ve ona karşılık gelen notayı seçin. Üç ya da dört makul seçenek, tek ve anlaşılır bir dinleme görevi. Hesap açmanız gerekmez.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Seviye</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>DİNLE · FARK ET · ANLA</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Dikkatlice dinleyin ve aşağıdaki eşleşen notası seçin.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Önceden tanımlanmış soru bulunmuyor. Lütfen yükleme seçeneğini kullanın.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Nota yakınlaştırma</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Tek bir nota ya da ritim kalıbı — tek tek hataları aramaya gerek yok</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Yalnızca hedef ölçü gösterilir. Tüm sürümler aynı konumda farklılık gösterir; kaynak sürüm her zaman doğru yanıt değildir.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Melodiyi Çal</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Lütfen en az 4 ölçü içeren bir partisür yükleyin.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>Yayımlanmış sorular</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Soru Havuzu</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Hedef ölçüyü yeniden çal</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Kaydı gerektiği kadar yeniden dinleyin. Bir yanıt seçip gönderin; gönderdiğiniz ilk yanıt geçerli sayılır. Nota ve açıklama, daha sonra öğrenme amacıyla erişilebilir olacaktır.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Not en az 4 ölçüye sahip olmalıdır.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Başla / yeni deneme</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Testi Başlat</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Yanıtı gönder</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Sahne hazırlanıyor</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Henüz yayımlanmış dinleme sorusu yok. Bir müzisyen ilk seti inceledikten sonra tekrar gelin.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Ölçü İşareti</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Partitür Yükle</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Hangi nota kaydıyla eşleşiyor?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Yanlış! Tekrar deneyin.</value>

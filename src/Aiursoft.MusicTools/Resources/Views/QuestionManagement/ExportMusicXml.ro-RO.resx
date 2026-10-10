@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Aveți deja un proiect MuseScore? Exportați-l în format MusicXML pe computer, apoi încărcați-l aici. Proiectul original rămâne neschimbat.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Alegeți Fișier → Exportare, apoi selectați MusicXML ca format. Alegeți opțiunea necomprimată pentru a crea un fișier .musicxml.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>Exportați MusicXML</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Pentru pian, exportați partitura completă, cu ambele mâini. Puteți selecta doar mâna dreaptă atunci când creați o întrebare.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Păstrați proiectul original pentru editări ulterioare.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>Ghidul de export MuseScore</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>MusicXML păstrează informațiile muzicale, dar spațierea și aspectul paginii pot diferi față de originalul tău.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Deschideți proiectul .mscz sau .mscx în MuseScore Studio pe computer.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Deschideți partitura</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>Redenumirea fișierului .mscz în .xml nu convertește partitura. Folosiți comanda Export din MuseScore, nu Save As și nici exportul în PDF.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>Înapoi la încărcarea MusicXML</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Salvați fișierul exportat și reveniți la MusicTools pentru a-l încărca. Verificați previzualizarea partiturii și ascultați fragmentul selectat înainte de a publica o întrebare.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Încărcați și previzualizați</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>Partitura ta, gata pentru exersarea audiției</value>
+  </data>
+
+</root>

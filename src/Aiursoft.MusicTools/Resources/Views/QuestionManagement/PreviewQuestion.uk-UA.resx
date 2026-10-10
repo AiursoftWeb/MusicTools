@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Схвалити й опублікувати</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Повернутися до бібліотеки</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Виберіть ритмічний рисунок</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Завершіть підготовку аудіо та перевірку перед публікацією.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Аудіо контексту підготовлено для кожної версії. Кожну з них можна вибрати як відповідь.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Створити запитання</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Редагувати ту саму цільову позицію</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Рівномірно (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Перегляд уривку</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Я прослухав кожен варіант у контексті. Кожен із них музично правдоподібний, чітко відрізняється на слух і може бути обраний як відповідь.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Довга–коротка (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Може бути відповіддю</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Такти</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>СТІЛ РЕЦЕНЗУВАННЯ МУЗИКАНТА</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Між версіями змінюється лише цільовий такт. Учні бачать цей такт, а чують вибрану версію в цьому контексті.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Перейти до практики</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Грати</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Опубліковано й готово до вправ</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Інформація про запитання</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Передперегляд запитання</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Оновити статус</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Повторити аудіо</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Зберегти версію та підготувати аудіо</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Спільний контекст прослуховування</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Спільні рекомендації щодо прослуховування (відомості про відтворювану версію додаються автоматично)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Короткий–довгий (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Склад</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Початковий такт</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Запропонувати інший варіант для цього місця</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Цільовий такт</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Цільова нота</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Початковий варіант не має пріоритету. Під час кожної спроби випадковим чином обирається одна із затверджених версій для відтворення. Відхиляйте варіанти, які можна виключити, спираючись лише на нотацію.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Це застаріле запитання на пошук помилок збережено для довідки, але воно недоступне для цілеспрямованої практики. Створіть його заново, вибравши короткий фрагмент і три або чотири правдоподібні варіанти.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Назва</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версія</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Зняти застаріле запитання з публікації</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Зняти з публікації для редагування</value>
   </data>
 
 </root>

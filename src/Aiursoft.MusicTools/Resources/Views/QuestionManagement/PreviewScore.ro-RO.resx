@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Înapoi la bibliotecă</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Creează o întrebare</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Descărcați originalul</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Previzualizare completă a partiturii</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Previzualizare partitură completă cu redare.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Dacă serverul a repornit în timpul procesării, folosiți opțiunea de reîncercare. Scorurile vechi trebuie importate înainte de a crea noi întrebări de ascultare.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Importă / reîncearcă</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Importul generează o partitură care poate fi citită pe web, păstrând neschimbat fișierul original. Conversia se desfășoară în fundal.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Redare</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Reîmprospătează starea</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Previzualizare Partition</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>BIBLIOTECA TA DE PARTITURI</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Mărire</value>
   </data>
 
 </root>

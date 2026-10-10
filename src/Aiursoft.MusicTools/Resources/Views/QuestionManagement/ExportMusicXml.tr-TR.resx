@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Zaten bir MuseScore projeniz var mı? Bilgisayarınızda MusicXML olarak dışa aktarın, ardından buraya yükleyin. Özgün projeniz değişmeden kalır.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Dosya → Dışa Aktar&apos;ı seçin, ardından biçim olarak MusicXML&apos;i seçin. .musicxml dosyası oluşturmak için sıkıştırılmamış seçeneği tercih edin.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>MusicXML olarak dışa aktar</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Piyano için, her iki eli de içeren notanın tamamını dışa aktarın. Soru oluştururken yalnızca sağ eli seçebilirsiniz.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Orijinal projeyi daha sonra düzenlemek üzere saklayın.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>MuseScore dışa aktarma el kitabı</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>MusicXML müzikal bilgileri korur, ancak aralıklar ve sayfa düzeni orijinalinizden farklı olabilir.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Bilgisayarınızda .mscz veya .mscx projesini MuseScore Studio&apos;da açın.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Nota sayfanızı açın</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>.mscz uzantısını .xml olarak değiştirmek bir nota dosyasını dönüştürmez. Save As veya PDF dışa aktarma yerine MuseScore&apos;daki Export komutunu kullanın.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>MusicXML yükleme sayfasına dön</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Dışa aktarılan dosyayı kaydedin ve yüklemek için MusicTools&apos;a geri dönün. Bir soru yayımlamadan önce nota önizlemesini kontrol edin ve seçtiğiniz bölümü dinleyin.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Yükleyin ve önizleyin</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>Dinleme pratiği için hazır notanız</value>
+  </data>
+
+</root>

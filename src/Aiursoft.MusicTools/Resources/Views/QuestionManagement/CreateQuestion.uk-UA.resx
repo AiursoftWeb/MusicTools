@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Перегляньте нотний текст</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Прослухайте свій фрагмент</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Для затакту потрібен чутний метричний орієнтир. Переконайтеся, що є лише одна беззаперечна відповідь. Уривки звучать один раз, як записано, без повторів; ноти під лігами потрібно включати повністю.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Просунутий</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Усі нотоносці (обидві руки)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Початківець</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Виберіть контекст прослуховування, а потім зосередьтеся на одному такті й одній відмінності, яку можна почути.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Натисніть на діапазон тактів нижче, щоб вибрати 4 послідовні такти.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Натисніть безпосередньо на нотному стані перший і останній такти або скористайтеся кнопками з номерами. Менша позначка — це номер, надрукований у нотах.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Створіть завдання на аудіювання</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Створити питання</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Створити запитання з нот</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Опишіть, на що саме слід звертати увагу під час слухання, а не вказуйте конкретну правильну ноту чи літеру відповіді: щоразу може звучати інший схвалений варіант.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Складність</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Паузи не рахуйте. У варіантах із зміною висоти змінюється лише ця нота; у варіантах зі зміною ритму — ця нота та наступна за нею. Оберіть просте місце без ліг.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>напр. Визначення зачинної теми</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Кожен схвалений варіант може бути правильною відповіддю. Оцінюйте музичну правдоподібність, а не те, наскільки варіант схожий на оригінал.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Попередній перегляд уривка</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>З позиції</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Попередній перегляд повної партитури</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Створити цільові версії</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Інструмент / партія</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Середній</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Контекст для прослуховування</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Фокус на слуховому сприйнятті</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Кількість тактів</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Вибір такту</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Кількість перевірених версій</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Висота звуку: одна нота, той самий ритм</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Підготувати аудіо</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Попередній перегляд 4 обраних тактів.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Назва запитання</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ритм: одна пара сусідніх нот із незмінною висотою</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Вибрати такти</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Обраний діапазон:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Спільні вказівки для прослуховування</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Джерельне нотописання</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Партія 1 (зазвичай права рука)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Нотний стан 2 (зазвичай ліва рука)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Індекс початкового такту (з нуля)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Учні бачать один такт, а не шість повних уривків. Усі варіанти відрізняються в одному й тому самому місці. Віддавайте перевагу чіткій звуковій відмінності, а не ледь помітній візуальній хитрості.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Позиція цільового такту</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Цільова нота певної висоти (рахуйте від 1 у цьому такті)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Точно вкажіть учням, на що звертати увагу під час прослуховування</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Єдиний такт, який порівнюватимуть учні</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Цей діапазон визначає звуковий контекст, а не обсяг нотного тексту, який мають опрацювати учні. До позицій зараховуються затакти; обидві граничні позиції включено.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>До позиції</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Оновити попередній перегляд</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Голос / руки</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Що робить запитання вдалим?</value>
   </data>
 
 </root>

@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Onayla ve yayımla</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Kitaplığa Dön</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Bir ritim kalıbı seçin</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Yayımlamadan önce ses hazırlığını ve incelemesini tamamlayın.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Her sürüm için bağlam sesi hazırlanır. Her biri yanıt olarak seçilebilir.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Soru Oluştur</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Aynı hedef konumu düzenle</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Eşit (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Alıntı Önizleme</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Her versiyonu bağlam içinde dinleyip değerlendirdim. Her biri müzikal açıdan makul, işitilebilir biçimde farklı ve yanıt olarak seçilmeye uygundur.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Uzun–kısa (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Cevap olabilir</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Ölçüler</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>MÜZİSYENİN DEĞERLENDİRME MASASI</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Sürümler arasında yalnızca hedef ölçü değişir. Öğrenciler bu ölçüyü görür; bu bağlamda seçilen sürümü dinler.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Alıştırmayı aç</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Çal</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Yayımlandı ve alıştırmaya hazır</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Soru Bilgisi</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Soru Önizleme</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Durumu yenile</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Sesi yeniden dene</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Sürümü kaydet ve sesi hazırla</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Ortak dinleme bağlamı</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Paylaşılan dinleme yönergesi (çalınan sürümün ayrıntıları otomatik olarak eklenir)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Kısa–uzun (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Kaynak Puanı</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Başlangıç Ölçüsü</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Bu konum için başka bir sürüm öner</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Hedef ölçü</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Hedeflenen sesli nota</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Kaynak öncelikli değildir. Her denemede çalınacak onaylı sürüm rastgele seçilir. Yalnızca notasyona bakarak elenebilecek varyantları reddedin.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Bu eski hata bulma sorusu referans amacıyla saklanmaktadır, ancak odaklı alıştırmalarda sunulmamaktadır. Kısa bir hedef ve makul görünen üç ya da dört sürümle yeniden oluşturun.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Başlık</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Sürüm</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Eski soruyu yayından kaldır</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Düzenlemek için yayından kaldır</value>
   </data>
 
 </root>

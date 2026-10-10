@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Udforsk partituret</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Lyt til dit uddrag</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Et optaktsslag kræver en tydelig taktreference. Sørg for, at der kun er ét forsvarligt svar. Passagerne afspilles én gang, som de er skrevet, uden gentagelser; medtag hele bundne noder.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Avanceret</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Alle nodesystemer (begge hænder)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Begynder</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Vælg lytteeksempel, og fokusér derefter på én takt og én hørbar forskel.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Klik på et systemområde nedenfor for at vælge 4 sammenhængende systemer.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Klik direkte på den første og sidste takt i partituret, eller brug de nummererede knapper. Det mindre mærke er det nummer, der er trykt i partituret.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Sammensæt en lytteudfordring</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Opret spørgsmål</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Opret spørgsmål fra nodeliste</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Beskriv, hvad eleverne skal lytte efter, ikke en bestemt korrekt tone eller et bestemt svarbogstav: Der kan afspilles en anden godkendt version hver gang.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Sværhedsgrad</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Tæl ikke pauser med. Versioner med ændret tonehøjde ændrer kun denne tone; rytmeversioner ændrer denne tone og den umiddelbart følgende tone. Vælg et enkelt sted uden bindebuer.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>f.eks. Idetifikation af åbningsmotiv</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Alle godkendte versioner kan afspilles som svaret. Vurder, om musikken lyder plausibel, ikke hvilken version der ligner originalen mest.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Uddragsforhåndsvisning</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Fra position</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Forhåndsvisning af fuld partitur</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Generér fokuserede versioner</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Instrument/del</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Let øvet</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Lytte-kontekst</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Lyttefokus</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Antal takter</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Valg af takt</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Antal godkendte versioner</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Tonehøjde: én tone, samme rytme</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Klargør lyd</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Forhåndsvisning af de valgte 4 takter.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Spørgestionstittel</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Rytme: ét par af tilstødende toner med samme tonehøjde</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Vælg takter</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Valgt interval:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Fælles vejledning til lytteøvelsen</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Kildepartitur</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Stemme 1 (normalt højre hånd)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Stemme 2 (normalt venstre hånd)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Starttaktnummer (0-indeks)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Eleverne ser én takt, ikke seks hele passager. Alle valgmuligheder adskiller sig samme sted. Foretræk en tydelig hørbar forskel frem for et lille visuelt trick.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Målposition i takten</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Måltone (tæl fra 1 i denne takt)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Fortæl eleverne præcis, hvad de skal lytte efter</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Det eneste takt, eleverne skal sammenligne</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Dette interval angiver lydkonteksten, ikke hvor meget notation eleverne skal søge igennem. Positionerne omfatter optakter; begge endepunkter er inkluderet.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Til og med position</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Opdater forhåndsvisning</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Stemme / hænder</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Hvad kendetegner et godt spørgsmål?</value>
   </data>
 
 </root>

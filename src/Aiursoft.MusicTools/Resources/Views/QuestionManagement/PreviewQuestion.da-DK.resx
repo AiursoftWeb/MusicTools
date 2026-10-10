@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Godkend og offentliggør</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Tilbage til biblioteket</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Vælg et rytmemønster</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Færdiggør lydforberedelsen og gennemgangen, før du offentliggør.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Kontekstlyden er klargjort for hver version. Hver version kan vælges som svar.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Opret spørgsmål</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Rediger den samme målplacering</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Lige (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Uddragsforhåndsvisning</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Jeg har lyttet til hver version i sammenhæng. Hver version er musikalsk plausibel, tydeligt adskillelig i lyd og egnet til at blive valgt som svar.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Lang–kort (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Kan være svaret</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Takter</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>MUSIKERENS ANMELDELSESKONTOR</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Kun måltakten ændres mellem versionerne. Eleverne ser den pågældende takt; de hører den valgte version i denne sammenhæng.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Åbn øvelsen</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Afspil</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Udgivet og klar til øvelse</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Spørgsmålsoplysninger</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Spørgsmålsforhåndsvisning</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Opdater status</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Prøv lyden igen</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Gem versionen, og klargør lyden</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Fælles lyttesammenhæng</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Fælles lyttevejledning (oplysninger om den afspillede version tilføjes automatisk)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Kort–lang (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Original Noter</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Starttaktsmåling</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Foreslå en anden version på denne placering</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Måltakt</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Måltonen</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Kilden har ingen særstatus. Hvert forsøg vælger tilfældigt, hvilken godkendt version der skal afspilles. Afvis varianter, der kan udelukkes alene ud fra notationerne.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Dette ældre spørgsmål om at finde fejl bevares som reference, men indgår ikke i målrettet øvelse. Genskab det med et kort mål og tre eller fire plausible versioner.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Titel</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Træk ældre spørgsmål tilbage</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Træk tilbage for at redigere</value>
   </data>
 
 </root>

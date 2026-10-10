@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Композитор / аранжувальник</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>напр. Соната № 16 Моцарта</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Експортуйте свій проєкт .mscz або .mscx у форматі MusicXML на своєму комп’ютері. Конвертувати на сервері не потрібно.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Натомість маєте проєкт MuseScore?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>Файл MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>Файл MusicXML або MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Оригінали зберігаються конфіденційно. Імпорт виконується у фоновому режимі; перед створенням запитань можна переглянути нормалізовану партитуру.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Назва ноти</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Покажіть, як експортувати</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Завантажити та зберегти</value>

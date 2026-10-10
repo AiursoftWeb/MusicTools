@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Kies een vraag uit de bank of upload uw eigen partituur.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Kies je uitdaging</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Correct!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Moeilijk (Sprongen)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Luister naar een kort muzikaal fragment, richt je op één gemarkeerde maat en kies de bijbehorende notatie. Drie of vier aannemelijke versies, één duidelijke luisteropdracht. Een account is niet nodig.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Niveau</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>LUISTER · MERK OP · BEGRIJP</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Luister aandachtig en selecteer de bijpassende notatie hieronder.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Geen vooraf gedefinieerde vragen beschikbaar. Gebruik het uploadoptie.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Zoomen van de notatie</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Eén noot of één ritmepatroon — geen zoektocht naar losse fouten</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Alleen de doelmaat wordt weergegeven. Alle versies verschillen op dezelfde plek; de bronversie is niet altijd het juiste antwoord.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Afspelen melodietje</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Upload een muziekstuk met minimaal 4 maten.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>gepubliceerde vragen</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Vragenbank</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Herhaal de doelmaat</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Speel de opname zo nodig opnieuw af. Kies één antwoord en verzend het; alleen je eerste ingezonden antwoord telt. De notatie en uitleg blijven daarna beschikbaar om van te leren.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>De partituur moet minimaal 4 maten bevatten.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Start / nieuwe poging</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Start Quiz</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Antwoord indienen</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Het podium wordt klaargemaakt</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Er zijn nog geen luistervragen gepubliceerd. Kom terug zodra een musicus de eerste reeks heeft beoordeeld.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Tiktedaantekening</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Upload notenblad</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Welke bladmuziek past bij de opname?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Fout! Probeer het opnieuw.</value>
