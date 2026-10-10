@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Εξερευνήστε την παρτιτούρα</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Ακούστε το απόσπασμά σας</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Η εισαγωγή χρειάζεται ένα σαφώς ακουστό σημείο αναφοράς για τον ρυθμό. Βεβαιωθείτε ότι υπάρχει μόνο μία απάντηση που μπορεί να τεκμηριωθεί. Τα αποσπάσματα ακούγονται μία φορά όπως είναι γραμμένα, χωρίς επαναλήψεις· συμπεριλάβετε ολόκληρες τις δεμένες νότες.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Προχωρημένο</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Όλα τα πεντάγραμμα (και τα δύο χέρια)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Αρχάριος</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Επιλέξτε το πλαίσιο ακρόασης και, στη συνέχεια, εστιάστε σε ένα μέτρο και σε μία ακουστή διαφορά.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Κάντε κλικ σε ένα εύρος μέτρων παρακάτω για να επιλέξετε 4 διαδοχικά μέτρα.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Κάντε κλικ στο πρώτο και στο τελευταίο μέτρο απευθείας στην παρτιτούρα ή χρησιμοποιήστε τα αριθμημένα κουμπιά. Η μικρότερη ένδειξη είναι ο αριθμός που αναγράφεται στην παρτιτούρα.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Δημιουργήστε μια μουσική πρόκληση ακρόασης</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Δημιουργία Ερώτησης</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Δημιουργία Ερώτησης από Νότα</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Περιγράψτε το ακουστικό στοιχείο που πρέπει να προσέξουν, όχι μια προκαθορισμένη σωστή νότα ή επιλογή απάντησης: κάθε φορά μπορεί να αναπαράγεται μια διαφορετική εγκεκριμένη εκδοχή.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Δυσκολία</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Μη μετράτε τις παύσεις. Οι εκδοχές με αλλαγή τονικού ύψους αλλάζουν μόνο αυτή τη νότα· οι ρυθμικές εκδοχές αλλάζουν αυτή τη νότα και την αμέσως επόμενη. Επιλέξτε μια απλή θέση, χωρίς δεσμό διαρκείας.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>π.χ. Εντοπισμός Αρχικής Θεματικής Εξέλιξης</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Κάθε εγκεκριμένη εκδοχή μπορεί να χρησιμοποιηθεί ως απάντηση. Ελέγξτε αν είναι μουσικά εύλογη, όχι ποια εκδοχή μοιάζει περισσότερο με το πρωτότυπο.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Προεπισκόπηση αποσπάσματος</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Από τη θέση</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Προεπισκόπηση πλήρους στίξης</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Δημιουργία εστιασμένων εκδοχών</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Όργανο / μέρος</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Μεσαίο επίπεδο</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Πλαίσιο ακρόασης</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Ακουστική εστίαση</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Αριθμός Τεταρτίδων</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Επιλογή μέτρου</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Αριθμός των εκδοχών που έχουν αξιολογηθεί</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Ύψος: μία νότα, ίδιος ρυθμός</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Προετοιμασία ήχου</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Προεπισκόπηση των 4 επιλεγμένων μελοσειρών.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Τίτλος Ερώτησης</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ρυθμός: ένα ζεύγος διαδοχικών νοτών, με τα ίδια ύψη</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Επιλογή Τακτών</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Επιλεγμένο εύρος:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Κοινές οδηγίες ακρόασης</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Πηγή Πάργου</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Πεντάγραμμο 1 (συνήθως το δεξί χέρι)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Πεντάγραμμο 2 (συνήθως για το αριστερό χέρι)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Δείκτης αρχικής μέτρησης (0-δεδειγμένος)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Οι μαθητές βλέπουν ένα μέτρο, όχι έξι ολόκληρα αποσπάσματα. Όλες οι επιλογές διαφέρουν στο ίδιο σημείο. Προτιμήστε μια σαφή ακουστική διαφορά αντί για ένα ανεπαίσθητο οπτικό τέχνασμα.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Θέση μέτρου-στόχου</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Στοχευμένη ηχημένη νότα (αριθμήστε από το 1 μέσα σε αυτό το μέτρο)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Πείτε στους μαθητές ακριβώς τι να προσέξουν όταν ακούν</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Το μοναδικό μέτρο που θα συγκρίνουν οι μαθητές</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Αυτό το εύρος ορίζει το ηχητικό απόσπασμα, όχι την έκταση της μουσικής σημειογραφίας που πρέπει να αναζητήσουν οι μαθητές. Οι θέσεις περιλαμβάνουν και τις ελλιπείς αρχικές παρτιτούρες· περιλαμβάνονται και τα δύο άκρα του εύρους.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Έως τη θέση</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Ενημέρωση προεπισκόπησης</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Φωνή / χέρια</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Τι κάνει μια ερώτηση καλή;</value>
   </data>
 
 </root>

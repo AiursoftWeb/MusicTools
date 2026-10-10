@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Onko sinulla jo MuseScore-projekti? Vie se tietokoneellasi MusicXML-muodossa ja lataa se sitten tänne. Alkuperäinen projektisi säilyy ennallaan.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Valitse Tiedosto → Vie ja valitse sitten tiedostomuodoksi MusicXML. Valitse pakkaamaton vaihtoehto, niin tiedosto luodaan .musicxml-muodossa.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>Vie MusicXML</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Pianokappaletta varten vie koko nuottijärjestelmä molempine käsineen. Voit valita kysymystä luodessasi myös pelkän oikean käden.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Säilytä alkuperäinen projekti myöhempää muokkausta varten.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>MuseScore-vientikäsikirja</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>MusicXML säilyttää musiikilliset tiedot, mutta välistykset ja sivun asettelu voivat poiketa alkuperäisestä.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Avaa .mscz- tai .mscx-projekti tietokoneellasi MuseScore Studiossa.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Avaa nuottisi</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>.msсz-tiedoston nimeäminen uudelleen .xml-tiedostoksi ei muunna nuottia. Käytä MuseScoren Vie-komentoa, älä Tallenna nimellä -toimintoa tai PDF-vientiä.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>Palaa MusicXML-tiedoston lataukseen</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Tallenna viety tiedosto ja palaa MusicToolsiin ladataksesi sen. Tarkista nuottikuvan esikatselu ja kuuntele valitsemasi kohta ennen kysymyksen julkaisemista.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Lataa ja esikatsele</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>Nuottisi valmiina kuunteluharjoitteluun</value>
+  </data>
+
+</root>

@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>बैंक से प्रश्न चुनें या अपना स्कोर अपलोड करें।</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>अपनी चुनौती चुनें</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>सही!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>कठिन (कूदें)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>संगीत का एक छोटा-सा संदर्भ सुनें, एक चिह्नित माप पर ध्यान दें और उससे मेल खाने वाला संगीत-लेखन चुनें। तीन या चार संभावित विकल्प, सुनने का एक स्पष्ट कार्य। खाते की आवश्यकता नहीं।</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>स्तर</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>सुनें · ध्यान दें · समझें</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>ध्यान से सुनें और नीचे दिए गए मिलान वाले संकेत का चयन करें।</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>कोई पूर्व-निर्धारित प्रश्न उपलब्ध नहीं हैं। कृपया अपलोड विकल्प का उपयोग करें।</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>स्वरलिपि का ज़ूम</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>एक स्वर या एक लय-पैटर्न — बिखरी हुई गलतियाँ ढूँढ़ने की ज़रूरत नहीं</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>केवल लक्ष्य माप दिखाया गया है। सभी संस्करणों में एक ही स्थान पर अंतर है; स्रोत संस्करण हमेशा सही उत्तर नहीं होता।</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>स्वर बजाएँ</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>कृपया कम से कम 4 मीज़रों वाले स्कोर को अपलोड करें।</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>प्रकाशित प्रश्न</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>प्रश्न बैंक</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>लक्षित मात्रा फिर से चलाएँ</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>आवश्यकतानुसार रिकॉर्डिंग दोबारा सुनें। एक उत्तर चुनकर सबमिट करें; आपका पहली बार सबमिट किया गया उत्तर ही गिना जाएगा। सीखने के लिए नोटेशन और व्याख्या बाद में भी उपलब्ध रहेंगे।</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>स्कोर में कम से कम 4 माप होनी चाहिए।</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>शुरू करें / नया प्रयास</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>क्विज शुरू करें</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>उत्तर जमा करें</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>मंच तैयार किया जा रहा है</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>अभी तक सुनने के लिए कोई प्रश्न प्रकाशित नहीं किया गया है। संगीतकार द्वारा पहले सेट की समीक्षा करने के बाद वापस आएँ।</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>ताल संकेत</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>स्कोर अपलोड करें</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>कौन-सा संगीत-स्वरलेख रिकॉर्डिंग से मेल खाता है?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>गलत! फिर से कोशिश करें।</value>

@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Kembali ke Perpustakaan</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Buat Pertanyaan</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Unduh file asli</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Pratinjau Partitur Lengkap</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Pratinjau skor lengkap dengan pemutaran.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Jika server dimulai ulang saat pemrosesan berlangsung, gunakan opsi coba lagi. Skor lama harus diimpor sebelum membuat soal menyimak baru.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Impor / coba lagi</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Impor membuat partitur yang dapat dibaca melalui web tanpa mengubah file asli Anda. Proses konversi berjalan di latar belakang.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Putar</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Perbarui status</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Pratinjau Partitur</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>PUSTAKA PARTITUR ANDA</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Perbesar</value>
   </data>
 
 </root>

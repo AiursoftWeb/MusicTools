@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. स्कोर का अवलोकन करें</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. अपने अंश को सुनें</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>ग्रैस नोट के लिए ताल की स्पष्ट श्रव्य संदर्भ-ध्वनि आवश्यक है। सुनिश्चित करें कि केवल एक ही उत्तर उचित हो। अंश बिना दोहराए, लिखे अनुसार केवल एक बार बजाए जाते हैं; टाई से जुड़े सभी स्वरों को शामिल करें।</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>उन्नत</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>सभी स्टाफ (दोनों हाथ)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>शुरुआती</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>सुनने का संदर्भ चुनें, फिर एक माप और सुनाई देने वाले एक अंतर पर ध्यान दें।</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>4 लगातार बारों को चुनने के लिए नीचे दिए गए बार श्रेणी पर क्लिक करें।</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>स्कोर में पहले और आख़िरी माप पर सीधे क्लिक करें, या क्रमांकित बटनों का उपयोग करें। छोटा लेबल स्कोर में छपी संख्या है।</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>सुनने की चुनौती तैयार करें</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>प्रश्न बनाएं</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>स्कोर से प्रश्न बनाएं</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>सुनने के संकेत का वर्णन करें, किसी निश्चित सही स्वर या उत्तर-विकल्प का नहीं: हर बार कोई अलग स्वीकृत संस्करण बजाया जा सकता है।</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>कठिनाई</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>विरामों को न गिनें। सुर वाले संस्करण केवल इस नोट को बदलते हैं; लय वाले संस्करण इस नोट और इसके तुरंत बाद आने वाले नोट को बदलते हैं। कोई सरल स्थान चुनें, जहाँ नोट बँधा हुआ न हो।</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>जैसे कि प्रारंभिक विषय की पहचान</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>हर स्वीकृत संस्करण को उत्तर के रूप में बजाया जा सकता है। संगीत की दृष्टि से उसकी उपयुक्तता परखें, न कि इस पर कि कौन-सा संस्करण मूल के सबसे अधिक समान दिखता है।</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>अंश पूर्वावलोकन</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>इस स्थान से</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>पूरे स्कोर का पूर्वावलोकन</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>केंद्रित संस्करण बनाएँ</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>वाद्ययंत्र / भाग</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>मध्यम</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>श्रवण संदर्भ</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>श्रवण का केंद्र</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>माप की संख्या</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>माप का चयन</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>समीक्षित संस्करणों की संख्या</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>स्वर: एक सुर, वही लय</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>ऑडियो तैयार करें</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>चयनित 4 बार (measures) का पूर्वावलोकन।</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>प्रश्न शीर्षक</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>लय: एक साथ-साथ जोड़ी, समान स्वर</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>अवधियाँ चुनें</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>चयनित श्रेणी:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>साझा श्रवण मार्गदर्शन</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>स्रोत स्कोर</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>स्टाफ़ 1 (आमतौर पर दायाँ हाथ)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>स्टाफ़ 2 (आमतौर पर बायाँ हाथ)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>शुरू माप सूचकांक (0-आधारित)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>विद्यार्थियों को छह पूरे अंशों के बजाय केवल एक माप दिखता है। सभी विकल्पों में बदलाव एक ही स्थान पर होता है। छोटे-से दृश्य छल के बजाय स्पष्ट श्रव्य अंतर को प्राथमिकता दें।</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>लक्षित माप की स्थिति</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>लक्षित स्वरयुक्त नोट (इस माप में 1 से गिनें)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>छात्रों को स्पष्ट रूप से बताएं कि उन्हें क्या सुनना है</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>छात्र जिस एकमात्र माप की तुलना करेंगे</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>यह सीमा ऑडियो का संदर्भ है, न कि उस संगीत-लिपि की मात्रा जिसे विद्यार्थियों को खोजना है। इसमें पिकअप भी शामिल हैं; दोनों छोर शामिल हैं।</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>अंतिम स्थिति तक</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>प्रीव्यू अपडेट करें</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>स्वर / हाथ</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>एक अच्छा प्रश्न कैसा होता है?</value>
   </data>
 
 </root>

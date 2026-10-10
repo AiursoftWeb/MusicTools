@@ -18,17 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Library" xml:space="preserve">
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Έγκριση και δημοσίευση</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
     <value>Πίσω στη Βιβλιοθήκη</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Επιλέξτε ένα ρυθμικό μοτίβο</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Ολοκληρώστε την προετοιμασία και την αξιολόγηση του ήχου πριν από τη δημοσίευση.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Ο ήχος συνοδείας είναι έτοιμος για κάθε εκδοχή. Κάθε εκδοχή μπορεί να επιλεγεί ως απάντηση.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Δημιουργία ερώτησης</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Επεξεργασία της ίδιας θέσης-στόχου</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Ίσο (1:1)</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Προεπισκόπηση αποσπάσματος</value>
   </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Άκουσα κάθε εκδοχή μέσα στο μουσικό της πλαίσιο. Καθεμία είναι μουσικά εύλογη, ακούγεται ξεχωριστή και μπορεί να επιλεγεί ως απάντηση.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Μακρύ–σύντομο (3:1)</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Μπορεί να είναι η απάντηση</value>
+  </data>
   <data name="Measures" xml:space="preserve">
     <value>Μέτρα</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>Χώρος αξιολόγησης μουσικών</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Μόνο το μέτρο-στόχος αλλάζει μεταξύ των εκδοχών. Οι μαθητές βλέπουν αυτό το μέτρο· ακούν την επιλεγμένη εκδοχή μέσα σε αυτό το πλαίσιο.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Άνοιγμα εξάσκησης</value>
+  </data>
   <data name="Play" xml:space="preserve">
     <value>Αναπαραγωγή</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Δημοσιεύτηκε και είναι έτοιμο για εξάσκηση</value>
   </data>
   <data name="Question Info" xml:space="preserve">
     <value>Πληροφορίες Ερώτησης</value>
@@ -36,14 +78,56 @@
   <data name="Question Preview" xml:space="preserve">
     <value>Προεπισκόπηση Ερώτησης</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Ανανέωση κατάστασης</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Επανάληψη ήχου</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Αποθήκευση έκδοσης και προετοιμασία ήχου</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Κοινό πλαίσιο ακρόασης</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Κοινές οδηγίες ακρόασης (τα στοιχεία της έκδοσης που αναπαράγεται προστίθενται αυτόματα)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Σύντομο–μακρύ (1:3)</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Βαθμολογία Πηγαίου Αρχείου</value>
   </data>
   <data name="Start Measure" xml:space="preserve">
     <value>Έναρξη Μέτρου</value>
   </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Προτείνετε μια άλλη εκδοχή σε αυτό το σημείο</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Μέτρο-στόχος</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Στοχευμένη μουσική νότα</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Η αρχική εκδοχή δεν έχει προτεραιότητα. Σε κάθε προσπάθεια επιλέγεται τυχαία ποια εγκεκριμένη εκδοχή θα αναπαραχθεί. Απορρίψτε τις παραλλαγές που μπορούν να αποκλειστούν μόνο από τη σημειογραφία.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Αυτή η παλαιού τύπου ερώτηση εντοπισμού λαθών διατηρείται για αναφορά, αλλά δεν προσφέρεται για στοχευμένη εξάσκηση. Δημιουργήστε την ξανά με έναν σύντομο στόχο και τρεις ή τέσσερις εύλογες εκδοχές.</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Τίτλος</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Έκδοση</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Απόσυρση παλιάς ερώτησης</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Ανάκληση για επεξεργασία</value>
   </data>
 
 </root>

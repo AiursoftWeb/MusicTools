@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Συνθέτης / ενορχηστρωτής</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>π.χ. Μότσαρτ, Σονάτα Αρ. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Εξαγάγετε το έργο σας .mscz ή .mscx ως MusicXML στον υπολογιστή σας. Δεν απαιτείται μετατροπή στον διακομιστή.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Έχετε μήπως κάποιο έργο MuseScore;</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>αρχείο MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>Αρχείο MusicXML ή MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>Τα πρωτότυπα παραμένουν ιδιωτικά. Η εισαγωγή εκτελείται στο παρασκήνιο· μπορείτε να κάνετε προεπισκόπηση της κανονικοποιημένης παρτιτούρας πριν δημιουργήσετε ερωτήσεις.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Όνομα Παρτιτούρας</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Δείξτε μου πώς να κάνω εξαγωγή</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Ανέβασμα και Αποθήκευση</value>

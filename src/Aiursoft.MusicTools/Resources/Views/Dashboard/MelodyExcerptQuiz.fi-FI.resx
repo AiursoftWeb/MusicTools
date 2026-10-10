@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Valitse kysymys kysymyspankista tai lataa oma nuottisi.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Valitse haasteesi</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Oikein!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Vaikea (Hyppyjä)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Kuuntele lyhyt musiikillinen katkelma, keskity yhteen merkittyyn tahtiin ja valitse sitä vastaava nuottikuva. Kolme tai neljä uskottavaa vaihtoehtoa, yksi selkeä kuuntelutehtävä. Tiliä ei tarvita.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Taso</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>KUUNTELE · HAVAITSE · YMMÄRRÄ</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Kuuntele tarkasti ja valitse oikea nuotinnos alapuolelta.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Ei ennalta määriteltyjä kysymyksiä saatavilla. Käytä latausvaihtoehtoa.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Nuottikuvan zoomaus</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Yksi sävel tai rytmikuvio – ei yksittäisten virheiden etsimistä</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Näkyvissä on vain kohditus. Kaikki versiot eroavat samassa kohdassa; lähdeversio ei ole aina oikea vastaus.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Soita melodiaa</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Lataa partituuri, jossa on vähintään 4 tahtia.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>julkaistua kysymystä</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Kysymyspankki</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Toista kohdetahdin mitta</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Kuuntele tallenne uudelleen tarvittaessa. Valitse yksi vastaus ja lähetä se; vain ensimmäinen lähettämäsi vastaus lasketaan. Nuotit ja selitys ovat käytettävissä oppimista varten myös tämän jälkeen.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Nuotinnossa on oltava vähintään 4 tahtia.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Aloita / uusi yritys</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Aloita kvizzit</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Lähetä vastaus</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Näyttämöä valmistellaan</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Kuuntelukysymyksiä ei ole vielä julkaistu. Palaa, kun muusikko on tarkistanut ensimmäisen kysymyssarjan.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Takti</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Lataa nuotti</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Mikä nuottikuva vastaa äänitettä?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Väärin! Yritä uudelleen.</value>

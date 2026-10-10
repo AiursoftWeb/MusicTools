@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Tutustu nuottiin</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Kuuntele katkelmaasi</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Tahtinousu tarvitsee kuultavan tahdin viitteen. Varmista, että vain yksi vastaus on perusteltavissa. Katkelmat soitetaan kerran nuottien mukaisesti ilman kertausta; sisällytä kaikki sidotut nuotit.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Edistynyt</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Kaikki viivastot (molemmat kädet)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Aloittelija</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Valitse kuuntelukonteksti ja keskity sitten yhteen tahtiin ja yhteen kuultavaan eroon.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Napsauta alla olevaa tahtialuetta valitaksesi 4 peräkkäistä tahtia.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Napsauta partituurista suoraan ensimmäistä ja viimeistä tahtia tai käytä numeroituja painikkeita. Pienempi merkintä on partituuriin painettu tahtinumero.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>LAADI KUUNTELUHAASTE</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Luo kysymys</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Luo kysymys nuotista</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Kuvaile, mitä kuunnellessa tulee huomata, älä määritä yhtä oikeaa säveltä tai vastauskirjainta: eri hyväksytty versio voidaan soittaa joka kerta.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Vaikeustaso</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Älä laske taukoja mukaan. Sävelkorkeusversioissa muuttuu vain tämä nuotti; rytmiversioissa muuttuvat tämä nuotti ja sitä välittömästi seuraava nuotti. Valitse yksinkertainen kohta, jossa ei ole sidenuottia.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>esim. Aloiteaiheen tunnistaminen</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Mikä tahansa hyväksytty versio voidaan esittää vastauksena. Arvioi musiikillista uskottavuutta, älä sitä, mikä versio näyttää eniten alkuperäiseltä.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Uotteen esikatselu</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Alkupositio</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Kokonaisnootan esikatselu</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Luo kohdennettuja versioita</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Soitin / stemma</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Keskitaso</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Kuuntelun konteksti</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Kuuntelun kohde</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Säkeistön määrä</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Tahdin valinta</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Tarkasteltujen versioiden määrä</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Sävelkorkeus: yksi sävel, sama rytmi</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Valmistele ääni</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Valittujen 4 säkeen esikatselu.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Kysymyksen otsikko</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Rytmi: yksi vierekkäinen nuottipari, samat sävelet</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Valitse tahtia</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Valittu alue:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Yhteinen kuunteluohje</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Lähdemusiikki</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Nuottiviivasto 1 (yleensä oikea käsi)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Nuotti 2 (yleensä vasen käsi)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Alkutahtien indeksi (0-indeksöity)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Oppilaat näkevät yhden tahdin, eivät kuutta kokonaista katkelmaa. Kaikki vaihtoehdot eroavat toisistaan samassa kohdassa. Suosi selkeää, kuultavaa eroa pienen visuaalisen kikan sijaan.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Kohdetahdin sijainti</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Kohdesävel (laske mittatahdin sisällä alkaen numerosta 1)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Kerro oppilaille tarkasti, mitä heidän tulee kuunnella</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Ainoa vertailtava tahti</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Tämä alue määrittää äänikontekstin, ei nuottikuvan määrää, josta opiskelijoiden on etsittävä. Sijainnit sisältävät kohotahdit; molemmat päätepisteet sisältyvät alueeseen.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Päättymiskohta</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Päivitä esikatselu</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Ääni / kädet</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Millainen on hyvä kysymys?</value>
   </data>
 
 </root>
