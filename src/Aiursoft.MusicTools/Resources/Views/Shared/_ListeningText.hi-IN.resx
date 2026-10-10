@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Correct!" xml:space="preserve">
+    <value>सही!</value>
+  </data>
+  <data name="Could not load this question. Please try again." xml:space="preserve">
+    <value>यह प्रश्न लोड नहीं हो सका। कृपया फिर से प्रयास करें।</value>
+  </data>
+  <data name="Keep listening." xml:space="preserve">
+    <value>सुनते रहें।</value>
+  </data>
+  <data name="Listen to the target measure, then choose the matching short version. Any approved version may be played." xml:space="preserve">
+    <value>लक्षित मापखंड को सुनें, फिर उससे मेल खाने वाला छोटा संस्करण चुनें। स्वीकृत संस्करणों में से कोई भी चलाया जा सकता है।</value>
+  </data>
+  <data name="Loading the short versions…" xml:space="preserve">
+    <value>छोटे संस्करण लोड हो रहे हैं…</value>
+  </data>
+  <data name="Preparing audio…" xml:space="preserve">
+    <value>ऑडियो तैयार किया जा रहा है…</value>
+  </data>
+  <data name="Ready. Press play to listen." xml:space="preserve">
+    <value>तैयार। सुनने के लिए प्ले दबाएँ।</value>
+  </data>
+  <data name="Replay and compare the scores, or start a new attempt." xml:space="preserve">
+    <value>फिर से सुनें और अंकों की तुलना करें, या एक नया प्रयास शुरू करें।</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>लक्ष्य मात्रा फिर से सुनें</value>
+  </data>
+  <data name="Selection changed. Prepare audio again." xml:space="preserve">
+    <value>चयन बदल गया है। ऑडियो फिर से तैयार करें।</value>
+  </data>
+  <data name="Target measure is playing — listen here." xml:space="preserve">
+    <value>लक्ष्य माप चल रहा है — यहाँ सुनें।</value>
+  </data>
+  <data name="The recording could not be loaded. Start a new attempt or try again later." xml:space="preserve">
+    <value>रिकॉर्डिंग लोड नहीं हो सकी। नया प्रयास शुरू करें या बाद में फिर से कोशिश करें।</value>
+  </data>
+  <data name="The score could not be parsed." xml:space="preserve">
+    <value>स्कोर को पार्स नहीं किया जा सका।</value>
+  </data>
+
+</root>

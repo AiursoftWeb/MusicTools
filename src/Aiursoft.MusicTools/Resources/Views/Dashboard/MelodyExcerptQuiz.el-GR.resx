@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Επίλεξε μια ερώτηση από την τράπεζα ή ανέβασε τη δική σου παρτιτούρα.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Επιλέξτε την πρόκλησή σας</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Σωστό!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Δυσκολία (Με διαστήματα)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Άκουσε ένα σύντομο μουσικό απόσπασμα, εστίασε σε ένα επισημασμένο μέτρο και επίλεξε τη σημειογραφία που του αντιστοιχεί. Τρεις ή τέσσερις εύλογες εκδοχές, μία σαφής ακουστική δοκιμασία. Δεν χρειάζεται λογαριασμός.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Επίπεδο</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>ΑΚΟΥΣΕ · ΠΡΟΣΕΞΕ · ΚΑΤΑΝΟΗΣΕ</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Ακούστε προσεκτικά και επιλέξτε τη σωστή νوتασία παρακάτω.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Δεν υπάρχουν προκαθορισμένες ερωτήσεις. Παρακαλώ χρησιμοποιήστε την επιλογή ανέλκυσης.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Μεγέθυνση παρτιτούρας</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Μία νότα ή ένα ρυθμικό μοτίβο — χωρίς αναζήτηση για διάσπαρτα λάθη</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Εμφανίζεται μόνο το μέτρο-στόχος. Όλες οι εκδοχές διαφέρουν στο ίδιο σημείο· η αρχική εκδοχή δεν είναι πάντα η σωστή απάντηση.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Αναπαραγωγή μελωδίας</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Παρακαλώ ανεβάστε ένα παρτιτούρα με τουλάχιστον 4 μέτρα.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>δημοσιευμένες ερωτήσεις</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Τράπεζα Ερωτήσεων</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Επανάληψη του μέτρου-στόχου</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Ακούστε ξανά την ηχογράφηση όσες φορές χρειάζεται. Επιλέξτε μία απάντηση και υποβάλετέ την· υπολογίζεται η πρώτη απάντηση που υποβάλατε. Η μουσική σημειογραφία και η επεξήγηση θα παραμείνουν διαθέσιμες για μελέτη στη συνέχεια.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Το παρτιτούρα πρέπει να έχει τουλάχιστον 4 μέτρα.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Έναρξη / νέα προσπάθεια</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Έναρξη Κουίζ</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Υποβολή απάντησης</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Η σκηνή ετοιμάζεται</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Δεν υπάρχουν ακόμη δημοσιευμένες ερωτήσεις ακουστικής κατανόησης. Επιστρέψτε αφού ένας μουσικός εξετάσει το πρώτο σύνολο.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Μετρικός Χρόνος</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Ανέβασμα Πάρτιτι</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Ποια παρτιτούρα ταιριάζει με την ηχογράφηση;</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Λάθος! Δοκιμάστε ξανά.</value>

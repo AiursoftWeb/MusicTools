@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>संगीतकार / संयोजक</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>जैसे कि मोज़ार्ट सोनाटा नंबर 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>अपने कंप्यूटर पर अपने .mscz या .mscx प्रोजेक्ट को MusicXML के रूप में निर्यात करें। सर्वर पर रूपांतरण की आवश्यकता नहीं है।</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>क्या आपके पास इसके बजाय MuseScore प्रोजेक्ट है?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>MusicXML फ़ाइल</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>म्यूज़िकएक्सएमएल या एमएक्सएल फ़ाइल</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>मूल फ़ाइलें निजी रखी जाती हैं। आयात पृष्ठभूमि में होता है; प्रश्न बनाने से पहले आप सामान्यीकृत स्कोर का पूर्वावलोकन कर सकते हैं।</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>स्कोर का नाम</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>मुझे निर्यात करने का तरीका दिखाएँ</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>अपलोड और सेव करें</value>

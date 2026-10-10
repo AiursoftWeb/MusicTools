@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Takaisin kirjastoon</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Luo kysymys</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Lataa alkuperäinen</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Koko nuottikatselu</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Koko nuotistosivun esikatselu toistotoiminnolla.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Jos palvelin käynnistyi uudelleen käsittelyn aikana, yritä uudelleen. Vanhat nuotit on tuotava ennen uusien kuuntelutehtävien luomista.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Tuo uudelleen / yritä uudelleen</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Tuonti luo verkossa luettavan nuotin muuttamatta alkuperäistä tiedostoasi. Muunnos suoritetaan taustalla.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Soita</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Päivitä tila</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Nousekatsauksen esikatselu</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>NUOTTIKIRJASTOSI</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Zoomaus</value>
   </data>
 
 </root>

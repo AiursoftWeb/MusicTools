@@ -27,6 +27,9 @@
   <data name="Choose a question from the bank or upload your own score." xml:space="preserve">
     <value>Pilih pertanyaan dari bank atau unggah skor Anda sendiri.</value>
   </data>
+  <data name="Choose your challenge" xml:space="preserve">
+    <value>Pilih tantangan Anda</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>Benar!</value>
   </data>
@@ -41,6 +44,15 @@
   </data>
   <data name="Hard (Leaps)" xml:space="preserve">
     <value>Sulit (Loncatan)</value>
+  </data>
+  <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
+    <value>Dengarkan cuplikan musik singkat, fokus pada satu birama yang ditandai, lalu pilih notasi yang sesuai. Tersedia tiga atau empat pilihan yang masuk akal, dengan satu tugas menyimak yang jelas. Tidak perlu membuat akun.</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Tingkat</value>
+  </data>
+  <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
+    <value>DENGARKAN · PERHATIKAN · PAHAMI</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Dengarkan dengan cermat dan pilih notasi yang cocok di bawah ini.</value>
@@ -60,6 +72,15 @@
   <data name="No pre-defined questions available. Please use the upload option." xml:space="preserve">
     <value>Tidak ada pertanyaan yang telah didefinisikan sebelumnya. Silakan gunakan opsi unggah.</value>
   </data>
+  <data name="Notation zoom" xml:space="preserve">
+    <value>Perbesar notasi</value>
+  </data>
+  <data name="One note or one rhythm pattern — no search for scattered mistakes" xml:space="preserve">
+    <value>Satu nada atau satu pola ritme — tanpa mencari kesalahan yang tersebar</value>
+  </data>
+  <data name="Only the target measure is shown. All versions differ at the same location; the source version is not always the answer." xml:space="preserve">
+    <value>Hanya birama target yang ditampilkan. Semua versi berbeda di lokasi yang sama; versi sumber tidak selalu menjadi jawabannya.</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>Putar Melodi</value>
   </data>
@@ -69,14 +90,35 @@
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Silakan unggah notasi musik dengan minimal 4 birama.</value>
   </data>
+  <data name="published questions" xml:space="preserve">
+    <value>soal yang telah diterbitkan</value>
+  </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Bank Soal</value>
+  </data>
+  <data name="Replay target measure" xml:space="preserve">
+    <value>Putar ulang birama sasaran</value>
+  </data>
+  <data name="Replay the recording as needed. Select one answer and submit; your first submitted answer counts. Notation and explanation remain available for learning afterward." xml:space="preserve">
+    <value>Putar ulang rekaman sesuai kebutuhan. Pilih satu jawaban lalu kirim; hanya jawaban pertama yang dikirim yang akan dihitung. Notasi dan penjelasan tetap tersedia untuk dipelajari setelahnya.</value>
   </data>
   <data name="Score must have at least 4 measures." xml:space="preserve">
     <value>Partitur harus memiliki minimal 4 birama.</value>
   </data>
+  <data name="Start / new attempt" xml:space="preserve">
+    <value>Mulai / percobaan baru</value>
+  </data>
   <data name="Start Quiz" xml:space="preserve">
     <value>Mulai Kuis</value>
+  </data>
+  <data name="Submit answer" xml:space="preserve">
+    <value>Kirim jawaban</value>
+  </data>
+  <data name="The stage is being prepared" xml:space="preserve">
+    <value>Panggung sedang disiapkan</value>
+  </data>
+  <data name="There are no published listening questions yet. Come back after a musician has reviewed the first set." xml:space="preserve">
+    <value>Belum ada soal menyimak yang dipublikasikan. Silakan kembali setelah seorang musisi meninjau kumpulan soal pertama.</value>
   </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Tanda Waktu</value>
@@ -86,6 +128,9 @@
   </data>
   <data name="Upload Score" xml:space="preserve">
     <value>Unggah Notasi</value>
+  </data>
+  <data name="Which score matches the recording?" xml:space="preserve">
+    <value>Partitur mana yang cocok dengan rekaman?</value>
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Salah! Coba lagi.</value>

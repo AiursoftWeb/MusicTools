@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>Επιστροφή στη Βιβλιοθήκη</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Δημιουργία ερώτησης</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>Λήψη πρωτότυπου</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>Προεπισκόπηση πλήρους παρτιτούρας</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>Προεπισκόπηση πλήρους παρτιτούρας με αναπαραγωγή.</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>Αν ο διακομιστής επανεκκινήθηκε κατά την επεξεργασία, επιλέξτε «Επανάληψη». Οι παλιές παρτιτούρες πρέπει να εισαχθούν πριν από τη δημιουργία νέων ερωτήσεων ακουστικής.</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>Εισαγωγή / επανάληψη</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>Η εισαγωγή δημιουργεί μια παρτιτούρα αναγνώσιμη από το διαδίκτυο, διατηρώντας αναλλοίωτο το αρχικό σας αρχείο. Η μετατροπή εκτελείται στο παρασκήνιο.</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>Αναπαραγωγή</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Ανανέωση κατάστασης</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>Προεπισκόπηση Μουσικού Κειμένου</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>Η βιβλιοθήκη των παρτιτούρων σας</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>Ζουμ</value>
   </data>
 
 </root>

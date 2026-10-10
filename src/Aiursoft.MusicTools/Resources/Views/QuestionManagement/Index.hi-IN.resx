@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>हटाएं</value>
   </data>
+  <data name="Delete this score from the library? Referenced scores cannot be deleted." xml:space="preserve">
+    <value>क्या इस स्कोर को लाइब्रेरी से हटाना है? संदर्भित स्कोर हटाए नहीं जा सकते।</value>
+  </data>
   <data name="Managed music scores for generating quiz questions." xml:space="preserve">
     <value>क्विज प्रश्न तैयार करने के लिए संगीत स्कोरों का प्रबंधन।</value>
   </data>
@@ -47,6 +50,15 @@
   </data>
   <data name="Score Library" xml:space="preserve">
     <value>स्कोर लाइब्रेरी</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>खोजें</value>
+  </data>
+  <data name="Search by title or composer" xml:space="preserve">
+    <value>शीर्षक या संगीतकार के नाम से खोजें</value>
+  </data>
+  <data name="Search scores" xml:space="preserve">
+    <value>स्कोर खोजें</value>
   </data>
   <data name="Upload New Score" xml:space="preserve">
     <value>नया स्कोर अपलोड करें</value>

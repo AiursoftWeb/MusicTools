@@ -21,14 +21,41 @@
       <data name="Back to Library" xml:space="preserve">
     <value>लाइब्रेरी पर वापस जाएं</value>
   </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>प्रश्न बनाएँ</value>
+  </data>
+  <data name="Download original" xml:space="preserve">
+    <value>मूल फ़ाइल डाउनलोड करें</value>
+  </data>
+  <data name="Full Score Preview" xml:space="preserve">
+    <value>पूर्ण स्कोर का पूर्वावलोकन</value>
+  </data>
   <data name="Full score preview with playback." xml:space="preserve">
     <value>प्लेबैक के साथ पूर्ण स्कोर पूर्वावलोकन।</value>
+  </data>
+  <data name="If the server restarted while processing, use retry. Legacy scores must be imported before creating new listening questions." xml:space="preserve">
+    <value>यदि प्रक्रिया के दौरान सर्वर पुनः शुरू हो गया हो, तो पुनः प्रयास करें। नए श्रवण प्रश्न बनाने से पहले पुराने स्कोर आयात करना आवश्यक है।</value>
+  </data>
+  <data name="Import / retry" xml:space="preserve">
+    <value>आयात / पुनः प्रयास</value>
+  </data>
+  <data name="Import creates a web-readable score while keeping your original file unchanged. Conversion runs in the background." xml:space="preserve">
+    <value>आयात करने से वेब पर पढ़ने योग्य स्कोर बनता है और आपकी मूल फ़ाइल अपरिवर्तित रहती है। रूपांतरण बैकग्राउंड में चलता है।</value>
   </data>
   <data name="Play" xml:space="preserve">
     <value>चलाएं</value>
   </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>स्थिति रीफ़्रेश करें</value>
+  </data>
   <data name="Score Preview" xml:space="preserve">
     <value>स्कोर पूर्वावलोकन</value>
+  </data>
+  <data name="YOUR SCORE LIBRARY" xml:space="preserve">
+    <value>आपकी स्कोर लाइब्रेरी</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>ज़ूम</value>
   </data>
 
 </root>

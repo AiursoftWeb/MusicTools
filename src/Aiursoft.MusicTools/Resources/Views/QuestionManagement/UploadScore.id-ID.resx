@@ -21,14 +21,32 @@
       <data name="Cancel" xml:space="preserve">
     <value>Batal</value>
   </data>
+  <data name="Composer / arranger" xml:space="preserve">
+    <value>Komposer / pengaransemen</value>
+  </data>
   <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
     <value>mis. Sonata Mozart No. 16</value>
+  </data>
+  <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
+    <value>Ekspor proyek .mscz atau .mscx Anda sebagai MusicXML di komputer. Tidak perlu konversi di server.</value>
+  </data>
+  <data name="Have a MuseScore project instead?" xml:space="preserve">
+    <value>Punya proyek MuseScore?</value>
+  </data>
+  <data name="MusicXML file" xml:space="preserve">
+    <value>Berkas MusicXML</value>
   </data>
   <data name="MusicXML or MXL File" xml:space="preserve">
     <value>File MusicXML atau MXL</value>
   </data>
+  <data name="Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions." xml:space="preserve">
+    <value>File asli tetap bersifat privat. Proses impor berjalan di latar belakang; Anda dapat melihat pratinjau skor yang telah dinormalisasi sebelum membuat soal.</value>
+  </data>
   <data name="Score Name" xml:space="preserve">
     <value>Nama Partitur</value>
+  </data>
+  <data name="Show me how to export" xml:space="preserve">
+    <value>Tunjukkan cara mengekspor</value>
   </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Unggah dan Simpan</value>

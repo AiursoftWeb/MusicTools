@@ -18,8 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Jelajahi partitur</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Dengarkan cuplikan Anda</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Nada awal (anacrusis) memerlukan acuan ketukan yang dapat didengar. Pastikan hanya ada satu jawaban yang dapat dipertanggungjawabkan. Bagian musik diputar satu kali sesuai notasi, tanpa pengulangan; sertakan seluruh not yang diikat.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Lanjutan</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Semua paranada (kedua tangan)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Pemula</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Pilih konteks audio, lalu fokus pada satu birama dan satu perbedaan yang dapat didengar.</value>
+  </data>
+  <data name="Click a measure range below to select 4 consecutive measures." xml:space="preserve">
     <value>Klik rentang birama di bawah ini untuk memilih 4 birama berurutan.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Klik birama pertama dan terakhir langsung pada partitur, atau gunakan tombol bernomor. Label yang lebih kecil adalah nomor yang tercetak pada partitur.</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>SUSUN TANTANGAN MENYIMAK</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Buat Pertanyaan</value>
@@ -27,17 +54,59 @@
   <data name="Create Question from Score" xml:space="preserve">
     <value>Buat Pertanyaan dari Partitur</value>
   </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Jelaskan petunjuk yang perlu didengarkan, bukan nada atau huruf jawaban benar yang tetap: versi berbeda yang telah disetujui dapat diputar setiap kali.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Tingkat kesulitan</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Jangan hitung tanda istirahat. Versi nada hanya mengubah not ini; versi ritme mengubah not ini dan not berikutnya. Pilih lokasi sederhana tanpa not terikat.</value>
+  </data>
   <data name="e.g. Opening Theme Identification" xml:space="preserve">
     <value>mis. Identifikasi Tema Pembuka</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Setiap versi yang disetujui dapat dimainkan sebagai jawaban. Tinjau kewajaran musikalnya, bukan versi mana yang paling mirip dengan aslinya.</value>
   </data>
   <data name="Excerpt Preview" xml:space="preserve">
     <value>Pratinjau Cuplikan</value>
   </data>
+  <data name="From position" xml:space="preserve">
+    <value>Dari posisi</value>
+  </data>
   <data name="Full Score Preview" xml:space="preserve">
     <value>Pratinjau Partitur Lengkap</value>
   </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Buat versi dengan fokus tertentu</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Instrumen / bagian</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Menengah</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Konteks audio</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Fokus pendengaran</value>
+  </data>
   <data name="Measure Count" xml:space="preserve">
     <value>Jumlah Bar</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Pemilihan birama</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Jumlah versi yang ditinjau</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Tinggi nada: satu nada, ritme yang sama</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Siapkan audio</value>
   </data>
   <data name="Preview of the selected 4 measures." xml:space="preserve">
     <value>Pratinjau 4 tak bir yang dipilih.</value>
@@ -48,17 +117,59 @@
   <data name="Question Title" xml:space="preserve">
     <value>Judul Pertanyaan</value>
   </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ritme: satu pasangan yang berurutan, dengan nada yang sama</value>
+  </data>
   <data name="Select Measures" xml:space="preserve">
     <value>Pilih Taktik</value>
   </data>
   <data name="Selected range:" xml:space="preserve">
     <value>Rentang terpilih:</value>
   </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Panduan mendengarkan bersama</value>
+  </data>
   <data name="Source Score" xml:space="preserve">
     <value>Notul Asli</value>
   </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Partitur 1 (biasanya tangan kanan)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Staf 2 (biasanya tangan kiri)</value>
+  </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indeks Takt Mulai (berbasis 0)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Siswa melihat satu birama, bukan enam bagian lengkap. Semua pilihan berbeda pada bagian yang sama. Utamakan perbedaan bunyi yang jelas daripada perbedaan visual yang sangat kecil.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Posisi birama target</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Not sasaran bernada (hitung mulai dari 1 dalam birama ini)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Beri tahu siswa secara tepat apa yang harus didengarkan</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Satu-satunya birama yang akan dibandingkan siswa</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Rentang ini merupakan konteks audio, bukan jumlah notasi yang harus ditelusuri siswa. Posisi mencakup birama awal tidak penuh; kedua batas rentang termasuk.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Hingga posisi</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Perbarui pratinjau</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Suara / tangan</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Apa yang membuat sebuah pertanyaan yang baik?</value>
   </data>
 
 </root>
