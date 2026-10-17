@@ -49,8 +49,10 @@
                 <span id="btn-icon">🎤</span> <span id="btn-text">@Localizer["Start Tuner"]</span>
             </button>
 
-            <div id="unsupported-warning" class="alert alert-danger mt-4 d-none">
-                @Localizer["Your browser does not support audio recording or frequency analysis."]
+            <div id="unsupported-warning" class="alert alert-danger mt-4 d-none" role="alert">
+                <div class="alert-message">
+                    @Localizer["Your browser does not support audio recording or frequency analysis."]
+                </div>
             </div>
         </div>
     </div>

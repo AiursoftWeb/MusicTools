@@ -29,10 +29,12 @@
                     max-size-in-mb="20">
                 </vc:file-upload>
                 <span asp-validation-for="ScorePath" class="text-danger"></span>
-                <div class="alert alert-info mt-3">
-                    <h4 class="h6">@Localizer["Have a MuseScore project instead?"]</h4>
-                    <p class="mb-2">@Localizer["Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed."]</p>
-                    <a asp-action="ExportMusicXml" class="btn btn-outline-primary btn-sm">@Localizer["Show me how to export"]</a>
+                <div class="alert alert-info mt-3" role="alert">
+                    <div class="alert-message">
+                        <h4 class="h6">@Localizer["Have a MuseScore project instead?"]</h4>
+                        <p class="mb-2">@Localizer["Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed."]</p>
+                        <a asp-action="ExportMusicXml" class="btn btn-outline-primary btn-sm">@Localizer["Show me how to export"]</a>
+                    </div>
                 </div>
                 <p class="small text-muted mt-2">@Localizer["Originals are kept private. Import runs in the background; you can preview the normalized score before creating questions."]</p>
             </div>

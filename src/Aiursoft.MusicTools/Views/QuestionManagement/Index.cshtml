@@ -1,6 +1,6 @@
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScoreLibraryViewModel
 @using Aiursoft.MusicTools.Entities
-@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert">@error</div> }
+@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert"><div class="alert-message">@error</div></div> }
 <form method="get" class="d-flex gap-2 mb-3">
     <input name="search" value="@Context.Request.Query["search"]" class="form-control" placeholder="@Localizer["Search by title or composer"]" aria-label="@Localizer["Search scores"]" />
     <button class="btn btn-outline-primary">@Localizer["Search"]</button>
