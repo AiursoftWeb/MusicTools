@@ -17,11 +17,11 @@
     }
     <a asp-action="QuestionLibrary" class="btn btn-light">@Localizer["Back to Library"]</a>
 </div>
-@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert">@error</div> }
-@if (question.ProcessingError != null) { <div class="alert alert-danger">@question.ProcessingError</div> }
+@if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert"><div class="alert-message">@error</div></div> }
+@if (question.ProcessingError != null) { <div class="alert alert-danger" role="alert"><div class="alert-message">@question.ProcessingError</div></div> }
 @if (!question.IsFocused)
 {
-    <div class="alert alert-info">@Localizer["This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions."] <a asp-action="CreateQuestion" asp-route-scoreId="@question.ScoreId">@Localizer["Create Question"]</a></div>
+    <div class="alert alert-info" role="alert"><div class="alert-message">@Localizer["This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions."] <a asp-action="CreateQuestion" asp-route-scoreId="@question.ScoreId">@Localizer["Create Question"]</a></div></div>
     @if (question.Status == QuestionStatus.Published)
     {
         <form asp-action="Withdraw" asp-route-id="@question.Id" method="post" class="mb-3">
