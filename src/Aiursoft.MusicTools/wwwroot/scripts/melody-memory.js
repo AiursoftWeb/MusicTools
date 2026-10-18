@@ -265,7 +265,7 @@ window.playDebugMelody = async function () {
         console.log(`🎵 Note: ${noteName}, Duration: ${item.duration}`);
 
         // Visual + Audio
-        if (piano) piano.playNote(noteName, 0.4, true);
+        if (piano) await piano.playNote(noteName, 0.5 * item.duration * 0.9, true);
 
         // Wait for rhythm
         // Base Beat 500ms = 120 BPM
@@ -463,7 +463,7 @@ async function playPreview(type, notesToPlay, signal) {
     // Play them
     for (let note of previewSequence) {
         if (signal?.aborted) throw new DOMException("Aborted", "AbortError");
-        if (piano) piano.playNote(note, 0.4, true); // Visual Always On for Preview
+        if (piano) await piano.playNote(note, 0.4, true); // Visual Always On for Preview
         await delay(500, signal);
     }
 }
@@ -537,10 +537,10 @@ async function nextLevel(signal) {
             // In all other modes, no visual hints during exam
             const useVisual = gameDifficulty === "practice";
 
-            if (piano) piano.playNote(note, 0.4, useVisual);
-
             // Base Beat for 120 BPM = 500ms
             const baseBeat = 500;
+            // Follow the written duration, leaving a small articulation gap.
+            if (piano) await piano.playNote(note, baseBeat * duration * 0.9 / 1000, useVisual);
             await delay(baseBeat * duration, signal);
 
             updateDot(i, "inactive");

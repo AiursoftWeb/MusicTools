@@ -17,6 +17,21 @@ Default user name is `admin@default.com` and default password is `Admin@123456!`
 
 Try a running MusicTools [here](https://musictools.aiursoft.com).
 
+## Melody memory generation
+
+Tonal games generate a 16-bar nursery-style melody from a two-bar motif: question,
+answer, contrast and return. Rhythmic cells and melodic contours are developed
+under harmonic guidance, with bounded leaps, limited repeated notes and stepwise
+tonic cadences. The piano follows each note's duration. Random-key games transpose
+the same musical rules; the separate atonal challenge retains chromatic sampling.
+
+The original implementation draws on hierarchical motif development in
+[MeloForm (ISMIR 2022)](https://arxiv.org/abs/2208.14345) and probability/rule-based
+composition in [Computoser](https://arxiv.org/abs/1412.3079). It uses the existing
+Tonal library, without model downloads or an external generation service. Musical
+constraints do not guarantee a memorable tune: review complete melodies by ear,
+including phrase joins and endings, when changing the generator.
+
 ## Focused listening practice
 
 MusicTools separates the listening context from the notation being tested. Students

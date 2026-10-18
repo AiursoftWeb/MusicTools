@@ -1,57 +1,38 @@
 import { Scale, Note } from "tonal";
 
-/**
- * MelodyGenerator.js (Final Perfected Version)
- * * 修复核心：
- * 1. [Rhythm Integrity] 节奏模版严格遵守 4/4 拍数学 (Sum = 4)。
- * 2. [Separation of Concerns] _applyEnding 只修改音高，绝不篡改时值，彻底根治"缺拍/多拍"的怪异感。
- * 3. [Sparkle Sync] 钟声特效基于绝对时间轴，完美卡在反拍。
- */
+// Original implementation inspired by motif development in MeloForm (ISMIR 2022)
+// and probability/rule composition in Computoser. See README for references.
+// These are short rhythmic cells and relative contours, not stored songs.
+const RHYTHMS = [[1, 1], [0.5, 0.5, 1], [1.5, 0.5]];
+const CONTOURS = [
+    [0, 0, 1, 2, 2, 1, 0, 0],
+    [0, 1, 2, 1, 0, 0, 1, 0],
+    [0, 2, 2, 1, 0, 1, 0, -1],
+    [0, 1, 0, -1, 0, 2, 1, 0],
+    [0, 0, 2, 2, 3, 2, 1, 0],
+];
+const HARMONY = {
+    tonic: [0, 2, 4],
+    subdominant: [0, 3, 5],
+    supertonic: [1, 3, 5],
+    dominant: [1, 4, 6],
+};
+
 export class MelodyGenerator {
-    constructor(key = "C", scaleType = "major") {
+    constructor(key = "C", scaleType = "major", random = Math.random) {
         this.noteBuffer = [];
-        this.isAtonal = (scaleType === 'atonal');
-        const actualScaleType = this.isAtonal ? 'chromatic' : scaleType;
-        const rawNotes = Scale.get(`${key} ${actualScaleType}`).notes;
-
-        // Pre-calculate correct octaves for the scale to ensure it ascends
-        // e.g. G Major: G, A, B, C, D, E, F# -> G3, A3, B3, C4, D4, E4, F#4
-        // In MIDI standard, Middle C (C4) is 60. We limit the range to C3-C5.
-        this.scaleObjects = [];
-        let currentOctave = 3;
-        let previousMidi = -1;
-
-        rawNotes.forEach(rawName => {
-            // Normalize to sharps ONLY to match Game's hardcoded sharp-only array
-            // e.g. Gb -> F#, Db -> C#
-            const tempMidi = Note.midi(`${rawName}1`); // Use dummy octave
-            const chroma = tempMidi % 12;
-            const SHARP_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
-            const noteName = SHARP_NAMES[chroma];
-            // Tentatively try current octave
-            let testMidi = Note.midi(`${noteName}${currentOctave}`);
-            
-            // If we wrapped around (e.g. B4 -> C4), bump octave
-            // Logic: if new note is lower than previous, it must be in next octave
-            // Exception: The first note is just reference
-            if (previousMidi !== -1 && testMidi < previousMidi) {
-                currentOctave++;
-                testMidi = Note.midi(`${noteName}${currentOctave}`);
-            }
-            
-            this.scaleObjects.push({
-                name: noteName,
-                baseOctave: currentOctave
-            });
-            previousMidi = testMidi;
-        });
-
-        // 锁定舒适音域 C3 - C5 (extended dynamically based on scale)
-        this.minRange = 0; 
-        this.maxRange = this.isAtonal ? 24 : 14; // Approx 2 octaves
-        
-        // 钟声锚点：High C (7), Sol (4), High Sol (11)
-        this.sparkleAnchors = [7, 4, 11]; 
+        this.random = random;
+        this.isAtonal = scaleType === "atonal";
+        const notes = Scale.get(`${key} ${this.isAtonal ? "chromatic" : scaleType}`).notes;
+        this.scaleMidi = [];
+        let previous = Note.midi(`${key}3`) - 1;
+        for (const note of notes) {
+            let midi = Note.midi(`${note}3`);
+            while (midi <= previous) midi += 12;
+            this.scaleMidi.push(midi);
+            previous = midi;
+        }
+        this.lastPitch = null;
     }
 
     getNextNote() {
@@ -61,244 +42,146 @@ export class MelodyGenerator {
 
     generateSong() {
         if (this.isAtonal) {
-             console.log("🎹 Generating Atonal Random Melody...");
-             // 16 bars * 4 beats = 64 beats (Pure Random, Uniform Rhythm)
-             for (let i = 0; i < 64; i++) {
-                 const randomPitch = Math.floor(Math.random() * (this.maxRange - this.minRange + 1)) + this.minRange;
-                 this.noteBuffer.push({
-                     scaleIndex: randomPitch,
-                     midi: this._toMidi(randomPitch),
-                     name: this._toName(randomPitch),
-                     duration: 1,
-                     isBarStart: (i % 4 === 0)
-                 });
-             }
-             return;
+            // Keep the explicitly selected chromatic challenge independent of
+            // the singable, tonal nursery melody style.
+            this._append(Array.from({ length: 64 }, () => ({
+                pitch: Math.floor(this.random() * 25), duration: 1,
+            })));
+            return;
         }
 
-        console.log("🎹 Generating Structurally Sound Melody...");
+        const cell = this._choose(RHYTHMS);
+        const rhythm = [...cell, ...cell, ...cell, 2];
+        const answerRhythm = [...cell, ...cell, 1, 1, 2];
+        const contour = this._choose(CONTOURS);
+        // Start on a tonic-triad tone, within a fifth of the preceding song.
+        const starts = [0, 2, 4].filter(p => this.lastPitch === null ||
+            Math.abs(this._toMidi(p) - this._toMidi(this.lastPitch)) <= 7);
+        const start = this._choose(starts);
+        const guide = contour.map(p => start + (start === 4 ? -p : p));
+        const home = this._compose(rhythm, guide,
+            [HARMONY.tonic, HARMONY.tonic], this.lastPitch, null, start);
+        const homeEnd = home.at(-1).pitch;
+        // End the question near the returning hook, avoiding a leap at the join.
+        const dominant = start === 4 ? 4 : 1;
+        const open = this._compose(answerRhythm, guide,
+            [HARMONY.subdominant, HARMONY.dominant], homeEnd, dominant);
+        const tonic = start === 4 ? 7 : 0;
+        const close = this._compose(answerRhythm, guide,
+            [HARMONY.dominant, HARMONY.tonic], homeEnd, tonic);
 
-        // ==========================================
-        // 1. 严格的 4拍 节奏模版
-        // ==========================================
-        // 所有数组的和必须严格等于 4.0
-        const R = {
-            // A. 常用模版
-            CLASSIC: [1.5, 0.5, 1, 1],         // 4拍
-            SYNCO:   [1, 0.5, 1, 0.5, 1],      // 4拍
-            GALLOP:  [0.5, 0.5, 1, 0.5, 0.5, 1], // 4拍
-            
-            // B. 跑动模版
-            RUN:     [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1], // 4拍
+        // A contrasting answer uses the same rhythmic identity in a higher
+        // register. It is developed from the motif, not an unrelated random run.
+        const contrastGuide = contour.map(p => Math.min(7, p + start + 2));
+        const contrast = this._compose(rhythm, contrastGuide,
+            [HARMONY.subdominant, HARMONY.subdominant], tonic, null);
+        const returnGuide = [...contrastGuide].reverse();
+        const returnToDominant = this._compose(answerRhythm, returnGuide,
+            [HARMONY.supertonic, HARMONY.dominant], contrast.at(-1).pitch, dominant);
 
-            // C. 结尾模版 (Cadence)
-            // 关键修正：这里定义好节奏，后面只填音
-            // [1, 1, 2] -> 哒 哒 哐—— (正好4拍，适合唱 3-2-1)
-            END_STD: [1, 1, 2], 
-        };
-
-        // ==========================================
-        // 2. 生成乐句 (Phrases)
-        // ==========================================
-
-        // --- Phrase A (起) ---
-        // [变] + [变] + [变] + [稳]
-        const motifHead = this._randomChoose([R.CLASSIC, R.SYNCO, R.GALLOP]);
-        const rhythmA = [...motifHead, ...motifHead, ...motifHead, ...R.END_STD];
-
-        const phraseA = this._generateSmartPath({
-            rhythm: rhythmA,
-            startPitch: 0, 
-            endPitch: Math.random() > 0.5 ? 4 : 1, // 停在 Sol 或 Re
-            contour: "ARCH",
-            useSparkle: false
-        });
-
-        // --- Phrase A' (承) ---
-        // 克隆 A，只改最后 3 个音的音高 (因为 END_STD 有 3 个音)
-        const phraseAPrime = JSON.parse(JSON.stringify(phraseA));
-        // 中间用下行解决 (3-2-1)
-        this._applyEnding(phraseAPrime, 0, "FALLING"); 
-
-        // --- Phrase B (转) ---
-        // [跑] + [跑] + [跑] + [稳]
-        const rhythmB = [...R.RUN, ...R.RUN, ...R.RUN, ...R.END_STD];
-        
-        // 50% 概率开启钟声
-        const triggerSparkle = Math.random() > 0.5;
-
-        const phraseB = this._generateSmartPath({
-            rhythm: rhythmB, 
-            startPitch: 7, // High C
-            endPitch: 4,   // Sol
-            contour: "DOWN",
-            useSparkle: triggerSparkle
-        });
-
-        // --- Phrase A'' (合) ---
-        const phraseAFinal = JSON.parse(JSON.stringify(phraseA));
-        
-        // 50% 概率昂扬结尾 (1-3-5-High1) 或 低沉结尾 (3-2-1)
-        const endingType = Math.random() > 0.5 ? "RISING" : "FALLING";
-        this._applyEnding(phraseAFinal, 0, endingType);
-
-        // ==========================================
-        // 3. 组装
-        // ==========================================
-        this._addToBuffer(phraseA, true);      
-        this._addToBuffer(phraseAPrime, true); 
-        this._addToBuffer(phraseB, true);      
-        this._addToBuffer(phraseAFinal, true); 
+        // Four balanced four-bar phrases: question, answer, contrast, return.
+        // The two-bar hook returns exactly, so there is something to remember.
+        this._append([
+            ...home, ...open,
+            ...home, ...close,
+            ...contrast, ...returnToDominant,
+            ...home, ...close,
+        ]);
+        this.lastPitch = tonic;
     }
 
-    // ==========================================
-    //       ✨ 智能路径生成 (核心逻辑) ✨
-    // ==========================================
-    _generateSmartPath({ rhythm, startPitch, endPitch, contour, useSparkle }) {
-        let notes = [];
-        const totalNotes = rhythm.length;
-        
-        // 时间轴追踪器 (用于精准定位反拍)
-        let currentBeatTime = 0; 
-        const anchorPitch = this._randomChoose(this.sparkleAnchors); 
-
-        for (let i = 0; i < totalNotes; i++) {
-            const dur = rhythm[i];
-            let nextPitch;
-            
-            // 判断反拍 (x.5)
-            const isOffBeat = (currentBeatTime % 1 === 0.5);
-
-            // --- 1. 钟声特效 ---
-            if (useSparkle && isOffBeat && dur === 0.5 && i < totalNotes - 1) {
-                nextPitch = anchorPitch;
-            } 
-            else {
-                // --- 2. 正常旋律 ---
-                if (i === 0) nextPitch = startPitch;
-                else if (i === totalNotes - 1) nextPitch = endPitch;
-                else {
-                    const progress = i / totalNotes;
-                    let base = startPitch + (endPitch - startPitch) * progress;
-                    
-                    if (contour === "ARCH") base += Math.sin(progress * Math.PI) * 3;
-                    if (contour === "DOWN") base += (Math.random() * 2 - 1);
-                    
-                    let drift = Math.floor(Math.random() * 5) - 2; 
-                    nextPitch = Math.round(base + drift);
+    _compose(rhythm, guide, chords, previous, ending, start = null) {
+        let beat = 0;
+        const events = rhythm.map(duration => {
+            const event = { beat, duration };
+            beat += duration;
+            return event;
+        });
+        // Plan a complete two-bar path before emitting any notes.
+        // Keeping every distinct continuation lets cadence constraints influence the
+        // approach; overwriting the last notes afterwards can create bad joins.
+        let paths = [{ notes: [], pitch: previous, jump: 0, repeats: previous === null ? 0 : 1, cost: 0 }];
+        for (let i = 0; i < events.length; i++) {
+            const event = events[i];
+            const chord = chords[Math.floor(event.beat / 4)];
+            const downbeat = event.beat % 4 === 0;
+            const last = i === events.length - 1;
+            const penultimate = i === events.length - 2;
+            const candidates = [];
+            // Shared per-event noise varies the tune without rewarding paths
+            // simply for having more opportunities to draw random numbers.
+            const variation = Array.from({ length: 8 }, () => this.random() * 1.4);
+            for (const path of paths) {
+                for (let pitch = 0; pitch <= 7; pitch++) {
+                    if (i === 0 && start !== null && pitch !== start) continue;
+                    if (i === 0 && start === null && pitch === previous) continue;
+                    if (last && ending !== null && pitch !== ending) continue;
+                    if (penultimate && ending !== null &&
+                        Math.abs(pitch - ending) !== 1) continue;
+                    const chordTone = chord.includes(pitch % 7);
+                    if ((downbeat || last) && !chordTone) continue;
+                    const jump = path.pitch === null ? 0 : pitch - path.pitch;
+                    const semitones = path.pitch === null ? 0 :
+                        Math.abs(this._toMidi(pitch) - this._toMidi(path.pitch));
+                    if (semitones > 7 || semitones === 6) continue;
+                    // Large leaps recover by a step in the opposite direction.
+                    if (Math.abs(path.jump) >= 3 &&
+                        !(Math.abs(jump) === 1 && Math.sign(jump) !== Math.sign(path.jump))) continue;
+                    const repeats = jump === 0 ? path.repeats + 1 : 1;
+                    // The hook is reused after a dominant ending, so leave room
+                    // for that preceding note when limiting repeated pitches.
+                    if (repeats > (start === null ? 3 : 2)) continue;
+                    // Unstable scale tones connect by step, rather than being
+                    // treated as interchangeable with tonic-triad notes.
+                    if (!chordTone && Math.abs(jump) > 1) continue;
+                    if (path.pitch !== null && path.pitch % 7 === 6 && jump !== 1) continue;
+                    const desired = guide[Math.floor(event.beat)];
+                    const motion = [0.4, 0, 0.8, 2.4, 4.5][Math.abs(jump)] ?? 8;
+                    const turn = jump * path.jump < 0 ? 0.5 : 0;
+                    const cost = path.cost + motion + turn + Math.pow(pitch - desired, 2) * 0.5 +
+                        (chordTone ? 0 : 0.8) + (repeats === 3 ? 1.2 : 0) + variation[pitch];
+                    candidates.push({
+                        notes: [...path.notes, { pitch, duration: event.duration }],
+                        pitch, jump, repeats, cost,
+                    });
                 }
             }
-
-            // --- 3. 修正与清洗 ---
-            // 物理限制
-            if (nextPitch < this.minRange) nextPitch = this.minRange + (this.minRange - nextPitch);
-            if (nextPitch > this.maxRange) nextPitch = this.maxRange - (nextPitch - this.maxRange);
-
-            const isSparkleNote = (nextPitch === anchorPitch && isOffBeat);
-            
-            // 防复读 (烫手山芋)
-            if (!isSparkleNote && i > 0 && nextPitch === notes[i-1].scaleIndex && dur < 1) {
-                if (nextPitch < this.maxRange) nextPitch += 1; else nextPitch -= 1;
-            }
-
-            // 防绊脚 (跑动级进)
-            if (!isSparkleNote && i > 0 && dur === 0.5 && notes[i-1].duration === 0.5) {
-                const prevPitch = notes[i-1].scaleIndex;
-                if (Math.abs(nextPitch - prevPitch) > 2) {
-                    nextPitch = prevPitch + (nextPitch > prevPitch ? 1 : -1);
-                }
-            }
-
-            notes.push({
-                scaleIndex: nextPitch,
-                midi: this._toMidi(nextPitch),
-                name: this._toName(nextPitch),
-                duration: dur
+            candidates.sort((a, b) => a.cost - b.cost);
+            // Only the cheapest prefix for each continuation state is needed.
+            // Keep every state: truncating by cost could discard the only path
+            // that can reach the cadence. The pitch/jump/repeat ranges bound it.
+            const seen = new Set();
+            paths = candidates.filter(path => {
+                const state = `${path.pitch},${path.jump},${path.repeats}`;
+                if (seen.has(state)) return false;
+                seen.add(state);
+                return true;
             });
-
-            currentBeatTime += dur;
         }
-        return notes;
+        return paths[0].notes;
     }
 
-    /**
-     * 强制修改乐句最后几个音的"音高"，但不修改"时值"
-     * 依赖于 R.END_STD 是 [1, 1, 2] 这种 3 音结构的模版
-     */
-    _applyEnding(phrase, targetPitchIndex, type = "FALLING") {
-        const len = phrase.length;
-        if (len < 3) return;
-
-        // 注意：这里我们只改 pitch, 不改 duration！
-        // 因为 duration 已经在 R.END_STD 里定义完美了 (1+1+2=4)
-
-        if (type === "RISING") {
-            // 昂扬: Do(1) -> Mi(1) -> Sol(2) ... 哎呀不对，要更有力一点
-            // 改为: Mi(1) -> Sol(1) -> High Do(2)
-            
-            // 倒数第3个
-            phrase[len-3].scaleIndex = 2; // Mi
-            phrase[len-3].midi = this._toMidi(2);
-            phrase[len-3].name = this._toName(2);
-            
-            // 倒数第2个
-            phrase[len-2].scaleIndex = 4; // Sol
-            phrase[len-2].midi = this._toMidi(4);
-            phrase[len-2].name = this._toName(4);
-
-            // 倒数第1个 (目标 High Do)
-            phrase[len-1].scaleIndex = 7; // High C
-            phrase[len-1].midi = this._toMidi(7);
-            phrase[len-1].name = this._toName(7);
-            
-        } else {
-            // 低沉: Mi(1) -> Re(1) -> Do(2)
-            
-            phrase[len-3].scaleIndex = 2; // Mi
-            phrase[len-3].midi = this._toMidi(2);
-            phrase[len-3].name = this._toName(2);
-            
-            phrase[len-2].scaleIndex = 1; // Re
-            phrase[len-2].midi = this._toMidi(1);
-            phrase[len-2].name = this._toName(1);
-
-            phrase[len-1].scaleIndex = targetPitchIndex; // Do
-            phrase[len-1].midi = this._toMidi(targetPitchIndex);
-            phrase[len-1].name = this._toName(targetPitchIndex);
+    _append(notes) {
+        let beat = 0;
+        for (const note of notes) {
+            const midi = this._toMidi(note.pitch);
+            this.noteBuffer.push({
+                scaleIndex: note.pitch,
+                midi,
+                name: Note.fromMidiSharps(midi),
+                duration: note.duration,
+                isBarStart: beat % 4 === 0,
+            });
+            beat += note.duration;
         }
-    }
-
-    _addToBuffer(notes, isBarStart) {
-        notes.forEach((n, i) => {
-            this.noteBuffer.push({ ...n, isBarStart: i === 0 && isBarStart });
-        });
     }
 
     _toMidi(index) {
-        let safeIndex = Math.max(0, index); 
-        const noteInfo = this._scaleIndexToNote(safeIndex);
-        return noteInfo.midi;
+        const length = this.scaleMidi.length;
+        return this.scaleMidi[index % length] + 12 * Math.floor(index / length);
     }
 
-    _toName(index) {
-        let safeIndex = Math.max(0, index);
-        const noteInfo = this._scaleIndexToNote(safeIndex);
-        return noteInfo.name;
-    }
-
-    _scaleIndexToNote(index) {
-        const scaleLen = this.scaleObjects.length;
-        const normalizedIndex = ((index % scaleLen) + scaleLen) % scaleLen;
-        const octaveShift = Math.floor(index / scaleLen);
-        
-        const noteObj = this.scaleObjects[normalizedIndex];
-        const finalOctave = noteObj.baseOctave + octaveShift;
-        const fullNoteName = noteObj.name + finalOctave;
-        
-        return { name: fullNoteName, midi: Note.midi(fullNoteName) };
-    }
-    
-    _randomChoose(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
+    _choose(items) {
+        return items[Math.floor(this.random() * items.length)];
     }
 }
