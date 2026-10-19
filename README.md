@@ -17,6 +17,25 @@ Default user name is `admin@default.com` and default password is `Admin@123456!`
 
 Try a running MusicTools [here](https://musictools.aiursoft.com).
 
+## Melody memory generation
+
+Tonal games and the homepage piano use the pretrained [MusicVAE](https://arxiv.org/abs/1803.05428)
+`mel_16bar_small_q2` model to generate complete 16-bar melodies locally in a lazy
+browser Worker. TensorFlow.js core/CPU runs a small attributed inference port;
+the legacy Magenta package is not an application dependency. The approximately
+24 MB checkpoint ships with the app, so first use downloads it from this site.
+See [model provenance, license and upgrade notes](src/Aiursoft.MusicTools/wwwroot/models/mel_16bar_small_q2/README.md).
+
+A complete pitch-path mapping fits the selected major scale into C3–C5 while
+retaining model onsets, rests and sustains. Progressive bars end exactly on their
+boundary, clipping the final sustain without adding an attack. Only note attacks
+need an answer. The separate atonal challenge remains chromatic. Playback follows
+absolute song time and written note lengths; generated pianos leave 9 dB of output
+headroom. Loading/generation failures offer retry rather than silently
+using a different generator. Switching settings cancels pending generation.
+Model output varies; listen to consecutive complete songs when changing inference
+or adaptation, since range and timing checks cannot establish musical quality.
+
 ## Focused listening practice
 
 MusicTools separates the listening context from the notation being tested. Students

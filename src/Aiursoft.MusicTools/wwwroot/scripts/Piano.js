@@ -61,6 +61,7 @@ class Piano {
             showNoteNames: true,
             showTonicIndicator: true,
             localizedTonicText: "Tonic",
+            volumeDb: 0,
             ...options,
         };
         if (this.#options.isClickable) {
@@ -77,6 +78,7 @@ class Piano {
                 // Use local audio files (copied from node_modules during build)
                 url: "/dist/audio/salamander/",
             });
+            this.#tonePianoInstance.output.gain.value = Tone.dbToGain(this.#options.volumeDb);
             this.#tonePianoInstance.toDestination();
             this.#loadPromise = this.#tonePianoInstance.load();
             this.#loadPromise
@@ -332,11 +334,12 @@ class Piano {
         const gainNode = this.#audioContext.createGain();
         const attackTime = 0.01;
         const decayTime = 0.1;
-        const sustainLevel = 0.1;
+        const volume = Tone.dbToGain(this.#options.volumeDb);
+        const sustainLevel = 0.1 * volume;
         const releaseTime = 0.3;
         const scheduledEndTime = now + duration;
         gainNode.gain.setValueAtTime(0, now);
-        gainNode.gain.linearRampToValueAtTime(0.7, now + attackTime);
+        gainNode.gain.linearRampToValueAtTime(0.7 * volume, now + attackTime);
         gainNode.gain.linearRampToValueAtTime(
             sustainLevel,
             now + attackTime + decayTime
