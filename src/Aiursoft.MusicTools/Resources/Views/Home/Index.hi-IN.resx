@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools एक मुफ्त सॉफ्टवेयर है। हम विश्वास करते हैं कि संगीत शिक्षा के उपकरण हर किसी के लिए उपलब्ध होने चाहिए। आप हमारा स्रोत कोड GitLab पर पा सकते हैं, इसकी समीक्षा कर सकते हैं, और यहां तक कि अपनी अपनी प्रतिलिपि भी स्थापित कर सकते हैं!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>धुन का एक रूपांतर चलाएँ</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>यादृच्छिक धुन प्ले करें</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>आपकी धुन तैयार की जा रही है...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>स्वयं होस्ट करें</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>पांचवें के वृत्त का जादू</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>सुर लोड नहीं किया जा सका। कृपया पुनः प्रयास करें।</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>सिद्धांत सूखा हो सकता है, लेकिन इसे क्रियाशील देखना मजेदार है। इस उपकरण का मुख्य मूल्य &apos;रियल-टाइम सिंक्रोनाइजेशन&apos; है। जब आप कोई नया की चुनते हैं, तो क्रोमेटिक सर्कल, फिफ्थ्स का सर्कल, पियानो की कीज़ और स्टाफ संकेतन तुरंत अपडेट होते हैं। आप तुरंत समझ जाएंगे कि G मेजर में केवल एक शार्प क्यों है!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>स्वर-आधारित लयबद्ध धुनें परिचित रागों के मध्यम स्वरूप हैं, जिनमें ताल और दोहराए गए पद सुरक्षित रहते हैं।</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>टूल इंटरफेस प्रीव्यू</value>

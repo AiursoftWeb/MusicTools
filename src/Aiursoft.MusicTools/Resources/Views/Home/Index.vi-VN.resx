@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools là một phần mềm miễn phí. Chúng tôi tin rằng các công cụ giáo dục âm nhạc nên được mọi người tiếp cận dễ dàng. Bạn có thể tìm thấy mã nguồn của chúng tôi trên GitLab, kiểm tra nó và thậm chí tự lưu trữ một phiên bản riêng của mình!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Phát một biến tấu giai điệu</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Phát giai điệu ngẫu nhiên</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Đang chuẩn bị giai điệu của bạn...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Tự host</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Điều kỳ diệu của Vòng năm thứ năm</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Không thể tải giai điệu. Vui lòng thử lại.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Lý thuyết có thể khô khan, nhưng việc quan sát nó hoạt động thực tế lại rất thú vị. Giá trị cốt lõi của công cụ này là &apos;đồng bộ hóa theo thời gian thực.&apos; Khi bạn chọn một nút mới, Vòng tròn Chromatic, Vòng tròn Quint, các phím đàn piano và ký hiệu trên vạch nhạc sẽ được cập nhật ngay lập tức. Bạn sẽ hiểu ngay tại sao G trưởng chỉ có một dấu thăng!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Các giai điệu có âm điệu là những biến tấu trung bình của các giai điệu quen thuộc, giữ nguyên nhịp điệu và các câu lặp lại.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Xem trước giao diện công cụ</value>

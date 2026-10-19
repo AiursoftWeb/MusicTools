@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>प्रैक्टिस मोड</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>आपकी धुन तैयार की जा रही है...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>पूर्वावलोकन</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>तुरंत शुरू करें</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>धुन लोड नहीं हो सकी। कृपया फिर से कोशिश करें।</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>स्वरप्रधान धुनें परिचित धुनों के मध्यम स्तर के रूपांतर होती हैं, जिनमें उनकी लय और दोहराए जाने वाले वाक्यांश बरकरार रहते हैं।</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>कुल स्कोर</value>

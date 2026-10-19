@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools — это бесплатное программное обеспечение. Мы считаем, что инструменты для обучения музыке должны быть доступны каждому. Вы можете найти наш исходный код на GitLab, проверить его и даже развернуть собственную копию!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Воспроизвести вариант мелодии</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Воспроизвести случайную мелодию</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Подготавливаем вашу мелодию...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Самостоятельная установка</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Волшебство круга пятых</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Мелодию не удалось загрузить. Пожалуйста, попробуйте снова.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Теория может быть сухой, но наблюдение за её проявлением в действии — это весело. Основная ценность этого инструмента — «синхронизация в реальном времени». При выборе новой тональности хроматический круг, круг пятых, клавиши пианино и нотная запись обновляются мгновенно. Вы сразу поймёте, почему у до-мажора только одна диезная нота!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Тональные мелодии — это умеренно изменённые знакомые мотивы, в которых сохранены ритм и повторяющиеся фразы.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Предварительный просмотр интерфейса инструмента</value>

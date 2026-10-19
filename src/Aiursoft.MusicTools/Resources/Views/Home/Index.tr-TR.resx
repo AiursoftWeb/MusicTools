@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools, ücretsiz bir yazılımdır. Müzik eğitim araçlarının herkesin erişimine açık olması gerektiğine inanıyoruz. Kaynak kodumuzu GitLab&apos;da bulabilir, denetleyebilir ve hatta kendi sunucunuzu da barındırabilirsiniz!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Bir melodi varyasyonu çal</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Rastgele Melodi Oynat</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Melodiniz hazırlanıyor...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Kendi Sunucunu Kur</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Beşlerin Dairesinin Büyüsü</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Melodi yüklenemedi. Lütfen tekrar deneyin.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori sıkıcı olabilir, ama bunu hareket halinde görmek eğlencelidir. Bu aracın temel değeri &apos;gerçek zamanlı senkronizasyon&apos;dur. Yeni bir anahtar seçtiğinizde, Kromatik Çember, Beşli Çember, piyano tuşları ve notasyon hemen güncellenir. G Major&apos;un sadece bir tane tiz olduğunu hemen anlayacaksınız!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Tonal melodiler, ritimleri ve tekrarlanan bölümleri korunarak tanıdık ezgilerin orta düzeyde değiştirilmiş hâlleridir.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Araç Arayüzü Ön İzlemesi</value>

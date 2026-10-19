@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools to oprogramowanie open source. Uważamy, że narzędzia do nauki muzyki powinny być dostępne dla wszystkich. Możesz znaleźć nasz kod źródłowy na GitLab, przeprowadzić jego audyt i nawet uruchomić własną instancję!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Odtwórz wariację melodii</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Odtwórz losowy melodię</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Przygotowywanie Twojej melodii...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Samodzielne hostowanie</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Magia Koła Piątek</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Nie udało się załadować melodii. Spróbuj ponownie.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teoria może być sucha, ale obserwowanie jej w działaniu jest przyjemne. Kluczową wartością tego narzędzia jest „synchronizacja w czasie rzeczywistym”. Po wybraniu nowego tonacji Chromatyczny Okrąg, Okrąg Piątek, klawisze pianina i nuty na piątce od razu się aktualizują. Natychmiast zrozumiesz, dlaczego D major ma tylko jedną kreskę!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Melodie tonalne są umiarkowanymi wariantami znanych melodii, zachowującymi ich rytm i powtarzające się frazy.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Podgląd interfejsu narzędzia</value>

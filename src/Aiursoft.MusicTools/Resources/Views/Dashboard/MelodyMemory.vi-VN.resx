@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>Chế độ Luyện tập</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Đang chuẩn bị giai điệu của bạn...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>Xem trước</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>Bắt đầu ngay lập tức</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Không thể tải giai điệu. Vui lòng thử lại.</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Các giai điệu có âm điệu là các biến thể trung bình của các giai điệu quen thuộc, giữ nguyên nhịp điệu và các cụm nhạc được lặp lại.</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>Tổng Điểm</value>

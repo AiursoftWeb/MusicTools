@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>練習模式</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>準備你的旋律...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>預覽</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>立即開始</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>無法載入旋律，請再試一次。</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>調性旋律係熟習曲調嘅中等變化，保留咗節奏同重複樂句。</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>總分</value>

@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>Το MusicTools είναι μια δωρεάν εφαρμογή. Πιστεύουμε ότι τα εργαλεία εκπαίδευσης στη μουσική θα πρέπει να είναι προσβάσιμα για όλους. Μπορείτε να βρείτε τον πηγαίο κώδικά μας στο GitLab, να τον ελέγξετε και ακόμα να εκτελέσετε τη δική σας εκδοχή!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Αναπαραγωγή μιας παραλλαγής μελωδίας</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Αναπαραγωγή Τυχαίας Μελωδίας</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Προετοιμασία της μελωδίας σας...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Αυτοδιαχείριση</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Η μαγεία του Κύκλου των Πέντετων</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Δεν ήταν δυνατή η φόρτωση της μελωδίας. Δοκιμάστε ξανά.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Η θεωρία μπορεί να είναι ξηρή, αλλά η παρατήρησή της σε εφαρμογή είναι διασκεδαστική. Το κύριο πλεονέκτημα αυτού του εργαλείου είναι η &quot;πραγματικός χρόνος συγχρονισμός&quot;. Όταν επιλέξετε μια νέα κλίμακα, ο Χρωματικός Κύκλος, ο Κύκλος των Πέντε, τα κλειδιά του πιάνου και η νοταρική γραμμή ενημερώνονται αμέσως. Θα καταλάβετε αμέσως γιατί η G Μαζόρ έχει μόνο μία ανεβασμένη νότα!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Οι τονικές μελωδίες είναι μεσαίες παραλλαγές γνωστών μελωδιών, διατηρώντας τον ρυθμό και τις επαναλαμβανόμενες φράσεις τους.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Προεπισκόπηση Διεπαφής Εργαλείου</value>

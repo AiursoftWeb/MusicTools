@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools är en fri programvara. Vi tror att musikutbildningsverktyg bör vara tillgängliga för alla. Du kan hitta vår källkod på GitLab, granska den och till och med värd egen instans!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Spela en melodivariation</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Spela slumpmässig melodi</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Förbereder din melodi...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Värd själv</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Förvåningen med femtedelen cirkeln</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Melodin kunde inte läsas in. Försök igen.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori kan vara torr, men att se den i praktiken är roligt. Det viktigaste värdet med detta verktyg är &apos;real-time synkronisering&apos;. När du väljer en ny nyckel uppdateras Chromatic Circle, Circle of Fifths, piano tangenter och notskrift omedelbart. Du förstår genast varför G-dur har endast en skärp!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Tonala melodier är medelstarka variationer av kända melodier, med bevarad rytm och upprepade frasdelar.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Verktygsgränssnittsförhandsgranskning</value>

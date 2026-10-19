@@ -54,11 +54,17 @@
   <data name="Play Random Melody" xml:space="preserve">
     <value>播放随机旋律</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>正在准备您的旋律...</value>
+  </data>
   <data name="Self Host" xml:space="preserve">
     <value>自托管</value>
   </data>
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圈的奥秘</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>无法加载旋律，请重试。</value>
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>理论可能枯燥，但亲眼见证它在实际中的运作却很有趣。这款工具的核心价值在于“实时同步”。当你选择一个新的调式时，半音音阶、五度圈、钢琴键盘和五线谱会立即更新。你将立刻明白为什么G大调只有一个升号！</value>
