@@ -1,6 +1,6 @@
 // Copyright 2018 The Magenta Team. Licensed under Apache-2.0.
-// Derived from Magenta.js 1.23.1 music_vae/model and core/melodies.
-// Modified for single-sample inference with TFJS 4 functional operations.
+// Derived from Magenta.js 1.23.1 music_vae/model.
+// Modified for reference-conditioned inference with TFJS 4 functional operations.
 // This port omits encoders, training, protobuf, controls and other model types.
 // See models/mel_16bar_small_q2/README.md and LICENSE for source and attribution.
 import * as tf from "@tensorflow/tfjs-core";
@@ -37,14 +37,19 @@ export class MusicVaeDecoder {
         this.weights = await tf.io.loadWeights(manifest, baseUrl, names);
     }
 
-    sample() {
+    score(reference) {
         if (!this.weights) throw new Error("Model is not initialized.");
-        const labels = tf.tidy(() => {
-            const z = tf.randomNormal([1, 256]);
+        const events = new Array(256).fill(0);
+        for (const [, , end] of reference.notes) {
+            if (end < 256) events[end] = 1;
+        }
+        for (const [pitch, start] of reference.notes) events[start] = pitch - 19;
+        return tf.tidy(() => {
+            const z = tf.tensor2d([reference.latent], [1, 256]);
             const conductor = cells(this.weights, `${CONDUCTOR}cell_`, z,
                 `${CONDUCTOR}initial_state`);
             const dummy = tf.zeros([1, 1]);
-            const bars = [];
+            const scores = [];
             let input = tf.zeros([1, 90]);
             for (let bar = 0; bar < 16; bar++) {
                 [conductor.c, conductor.h] = tf.multiRNNCell(
@@ -52,37 +57,16 @@ export class MusicVaeDecoder {
                 const embedding = conductor.h[1];
                 const decoder = cells(this.weights, `${DECODER}multi_rnn_cell/cell_`,
                     embedding, `${DECODER}z_to_initial_state`);
-                const samples = [];
                 for (let step = 0; step < 16; step++) {
                     [decoder.c, decoder.h] = tf.multiRNNCell(decoder.cell,
                         tf.concat([input, embedding], 1), decoder.c, decoder.h);
                     const logits = dense(this.weights, `${DECODER}output_projection`, decoder.h[1]);
-                    const label = tf.reshape(tf.multinomial(tf.div(logits, tf.scalar(0.5)), 1), [-1]);
-                    input = tf.cast(tf.oneHot(label, 90), "float32");
-                    samples.push(input);
+                    scores.push(Array.from(logits.dataSync()));
+                    // Teacher forcing preserves the reference rhythm and context.
+                    input = tf.cast(tf.oneHot(tf.tensor1d([events[bar * 16 + step]], "int32"), 90), "float32");
                 }
-                bars.push(tf.stack(samples, 1));
             }
-            return tf.argMax(tf.squeeze(tf.concat(bars, 1), [0]), 1);
+            return scores;
         });
-        try {
-            const events = labels.dataSync();
-            const notes = [];
-            let current = null;
-            for (let step = 0; step < events.length; step++) {
-                const event = events[step];
-                if (event === 0) continue;
-                if (current) {
-                    current.end = step;
-                    notes.push(current);
-                    current = null;
-                }
-                if (event >= 2) current = { pitch: event - 2 + 21, start: step, end: 256 };
-            }
-            if (current) notes.push(current);
-            return notes;
-        } finally {
-            labels.dispose();
-        }
     }
 }
