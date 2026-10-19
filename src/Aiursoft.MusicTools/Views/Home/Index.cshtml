@@ -44,6 +44,7 @@
             <button id="play-melody-btn" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow-sm" style="z-index: 10;" aria-label="@Localizer["Play Random Melody"]" title="@Localizer["Play Random Melody"]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
             </button>
+            <p id="melody-status" class="text-center" role="status" aria-live="polite"></p>
             <div id="homepage-piano-container" class="piano-container table-responsive">
             </div>
         </div>
@@ -108,6 +109,11 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="loc-data" data-melody-model="@Url.Content("~/models/mel_16bar_small_q2")" hidden>
+    <span data-key="loading-melody">@Localizer["Preparing your melody..."]</span>
+    <span data-key="generation-failed">@Localizer["The melody could not be loaded. Please try again."]</span>
 </div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@

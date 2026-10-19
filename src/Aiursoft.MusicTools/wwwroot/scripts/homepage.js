@@ -1,5 +1,6 @@
 import Piano from './Piano.js';
 import { MelodyGenerator } from './MelodyGenerator.js';
+import { getLocalizedText } from './localization.js';
 
 // 主页钢琴初始化
 window.addEventListener('load', () => {
@@ -51,6 +52,25 @@ window.addEventListener('load', () => {
 
     // 绑定随机旋律按钮
     const playBtn = document.getElementById('play-melody-btn');
+    let activeGenerator;
+    let playback;
+    const wait = (ms, signal) => new Promise((resolve, reject) => {
+        if (signal.aborted) return reject(new DOMException('Aborted', 'AbortError'));
+        const abort = () => {
+            clearTimeout(timer);
+            reject(new DOMException('Aborted', 'AbortError'));
+        };
+        const timer = setTimeout(() => {
+            signal.removeEventListener('abort', abort);
+            resolve();
+        }, ms);
+        signal.addEventListener('abort', abort, { once: true });
+    });
+    window.addEventListener('pagehide', () => {
+        playback?.abort();
+        activeGenerator?.dispose();
+        piano.stopAll();
+    });
     if (playBtn) {
         playBtn.addEventListener('click', async () => {
             if (playBtn.disabled) return;
@@ -59,30 +79,41 @@ window.addEventListener('load', () => {
             playBtn.disabled = true;
             playBtn.classList.add('opacity-50');
 
+            const controller = new AbortController();
+            playback = controller;
+            let generator;
+            const status = document.getElementById('melody-status');
+            status.textContent = getLocalizedText('loading-melody', 'Preparing your melody...');
+            status.classList.remove('text-danger');
             try {
                 // Random Key
                 const keys = ["C", "G", "D", "A", "E", "F", "Bb", "Eb"];
                 const randomKey = keys[Math.floor(Math.random() * keys.length)];
                 
-                // Use existing melody generator logic
-                const generator = new MelodyGenerator(randomKey, 'major');
-                generator.generateSong();
-                
-                const buffer = generator.noteBuffer;
-                
-                for (let i = 0; i < buffer.length; i++) {
-                        const item = buffer[i];
-                        // Play visuals + sound
-                        piano.playNote(item.name, 0.4, true);
-                        
-                        // Wait for duration (120 BPM = 500ms per beat)
-                        await new Promise(r => setTimeout(r, 500 * item.duration));
+                generator = new MelodyGenerator(randomKey, 'major');
+                activeGenerator = generator;
+                const [song] = await Promise.all([generator.generateSong(controller.signal), piano.waitForSamples()]);
+                status.textContent = '';
+                let position = 0;
+                for (const item of song.notes) {
+                    await wait((item.start - position) * 500, controller.signal);
+                    await piano.playNote(item.note, (item.end - item.start) * 0.5 * 0.9, true);
+                    await wait((item.end - item.start) * 500, controller.signal);
+                    position = item.end;
                 }
+                await wait((song.duration - position) * 500, controller.signal);
             } catch (e) {
-                console.error("Melody generation failed", e);
+                if (e.name !== 'AbortError') {
+                    console.error("Melody generation failed", e);
+                    status.textContent = getLocalizedText('generation-failed', 'The melody could not be loaded. Please try again.');
+                    status.classList.add('text-danger');
+                }
             } finally {
-                playBtn.disabled = false;
-                playBtn.classList.remove('opacity-50');
+                generator?.dispose();
+                if (playback === controller) {
+                    playBtn.disabled = false;
+                    playBtn.classList.remove('opacity-50');
+                }
             }
         });
     }

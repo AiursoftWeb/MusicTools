@@ -19,18 +19,21 @@ Try a running MusicTools [here](https://musictools.aiursoft.com).
 
 ## Melody memory generation
 
-Tonal games generate a 16-bar nursery-style melody from a two-bar motif: question,
-answer, contrast and return. Rhythmic cells and melodic contours are developed
-under harmonic guidance, with bounded leaps, limited repeated notes and stepwise
-tonic cadences. The piano follows each note's duration. Random-key games transpose
-the same musical rules; the separate atonal challenge retains chromatic sampling.
+Tonal games and the homepage piano use the pretrained [MusicVAE](https://arxiv.org/abs/1803.05428)
+`mel_16bar_small_q2` model to generate complete 16-bar melodies locally in a lazy
+browser Worker. TensorFlow.js core/CPU runs a small attributed inference port;
+the legacy Magenta package is not an application dependency. The approximately
+24 MB checkpoint ships with the app, so first use downloads it from this site.
+See [model provenance, license and upgrade notes](src/Aiursoft.MusicTools/wwwroot/models/mel_16bar_small_q2/README.md).
 
-The original implementation draws on hierarchical motif development in
-[MeloForm (ISMIR 2022)](https://arxiv.org/abs/2208.14345) and probability/rule-based
-composition in [Computoser](https://arxiv.org/abs/1412.3079). It uses the existing
-Tonal library, without model downloads or an external generation service. Musical
-constraints do not guarantee a memorable tune: review complete melodies by ear,
-including phrase joins and endings, when changing the generator.
+A complete pitch-path mapping fits the selected major scale into C3–C5 while
+retaining model onsets, rests and sustains. Progressive bars end exactly on their
+boundary, clipping the final sustain without adding an attack. Only note attacks
+need an answer. The separate atonal challenge remains chromatic. Playback follows
+written note lengths; loading/generation failures offer retry rather than silently
+using a different generator. Switching settings cancels pending generation.
+Model output varies; listen to consecutive complete songs when changing inference
+or adaptation, since range and timing checks cannot establish musical quality.
 
 ## Focused listening practice
 
