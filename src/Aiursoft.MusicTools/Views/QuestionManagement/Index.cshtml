@@ -1,3 +1,4 @@
+@using Aiursoft.WebTools
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.ScoreLibraryViewModel
 @using Aiursoft.MusicTools.Entities
 @if (TempData["ListeningError"] is string error) { <div class="alert alert-danger" role="alert"><div class="alert-message">@error</div></div> }
@@ -36,7 +37,7 @@
             {
                 <tr>
                     <td><strong>@item.Name</strong><div class="small text-muted">@item.Author · @Localizer[item.ImportStatus.ToString()]</div></td>
-                    <td>@item.UploadTime.ToLocalTime().ToString("g")</td>
+                    <td><span data-utc-time="@item.UploadTime.ToHtmlDateTime()"></span></td>
                     <td class="text-end">
                         <a asp-action="PreviewScore" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">
                             <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]

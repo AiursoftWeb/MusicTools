@@ -1,3 +1,4 @@
+@using Aiursoft.WebTools
 @model Aiursoft.MusicTools.Models.QuestionManagementViewModels.QuestionLibraryViewModel
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
@@ -31,7 +32,7 @@
                     </td>
                     <td>@item.Score.Name</td>
                     <td>@(item.StartMeasureIndex + 1)–@(item.StartMeasureIndex + item.MeasureCount)</td>
-                    <td>@item.CreateTime.ToLocalTime().ToString("g")</td>
+                    <td><span data-utc-time="@item.CreateTime.ToHtmlDateTime()"></span></td>
                     <td class="text-end">
                         <a asp-action="PreviewQuestion" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">
                             <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]
