@@ -95,9 +95,14 @@ window.addEventListener('load', () => {
                 activeGenerator = generator;
                 const [song] = await Promise.all([generator.generateSong(controller.signal), piano.waitForSamples()]);
                 status.textContent = '';
-                const playbackStart = performance.now();
+                let playbackStart = performance.now();
                 for (const item of song.notes) {
-                    await wait(Math.max(0, playbackStart + item.start * 500 - performance.now()), controller.signal);
+                    const target = playbackStart + item.start * 500;
+                    await wait(Math.max(0, target - performance.now()), controller.signal);
+                    // Resume the rhythm after a throttled tab or stalled frame,
+                    // rather than rushing through missed note onsets.
+                    const late = performance.now() - target;
+                    if (late > 125) playbackStart += late;
                     await piano.playNote(item.note, (item.end - item.start) * 0.5 * 0.9, true);
                 }
                 await wait(Math.max(0, playbackStart + song.duration * 500 - performance.now()), controller.signal);

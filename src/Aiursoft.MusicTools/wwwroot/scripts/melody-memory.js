@@ -312,10 +312,13 @@ async function nextLevel(signal) {
         setStatus(null);
         renderProgressDots(sequence.length);
         await delay(600, signal);
-        const playbackStart = performance.now();
+        let playbackStart = performance.now();
         for (let i = 0; i < sequence.length; i++) {
             const item = sequence[i];
-            await delay(Math.max(0, playbackStart + item.start * 500 - performance.now()), signal);
+            const target = playbackStart + item.start * 500;
+            await delay(Math.max(0, target - performance.now()), signal);
+            const late = performance.now() - target;
+            if (late > 125) playbackStart += late;
             updateDot(i, "active");
             const duration = item.end - item.start;
             if (piano) await piano.playNote(item.note, duration * 0.5 * 0.9, gameDifficulty === "practice");
