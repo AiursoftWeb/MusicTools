@@ -30,7 +30,8 @@ A complete pitch-path mapping fits the selected major scale into C3–C5 while
 retaining model onsets, rests and sustains. Progressive bars end exactly on their
 boundary, clipping the final sustain without adding an attack. Only note attacks
 need an answer. The separate atonal challenge remains chromatic. Playback follows
-written note lengths; loading/generation failures offer retry rather than silently
+absolute song time and written note lengths; generated pianos leave 9 dB of output
+headroom. Loading/generation failures offer retry rather than silently
 using a different generator. Switching settings cancels pending generation.
 Model output varies; listen to consecutive complete songs when changing inference
 or adaptation, since range and timing checks cannot establish musical quality.

@@ -14,6 +14,7 @@ window.addEventListener('load', () => {
         startOctave: 2,
         isClickable: true,
         showNoteNames: true,
+        volumeDb: -9,
         showTonicIndicator: false
     });
 
@@ -94,14 +95,12 @@ window.addEventListener('load', () => {
                 activeGenerator = generator;
                 const [song] = await Promise.all([generator.generateSong(controller.signal), piano.waitForSamples()]);
                 status.textContent = '';
-                let position = 0;
+                const playbackStart = performance.now();
                 for (const item of song.notes) {
-                    await wait((item.start - position) * 500, controller.signal);
+                    await wait(Math.max(0, playbackStart + item.start * 500 - performance.now()), controller.signal);
                     await piano.playNote(item.note, (item.end - item.start) * 0.5 * 0.9, true);
-                    await wait((item.end - item.start) * 500, controller.signal);
-                    position = item.end;
                 }
-                await wait((song.duration - position) * 500, controller.signal);
+                await wait(Math.max(0, playbackStart + song.duration * 500 - performance.now()), controller.signal);
             } catch (e) {
                 if (e.name !== 'AbortError') {
                     console.error("Melody generation failed", e);

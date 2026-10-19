@@ -83,6 +83,7 @@ window.addEventListener("load", () => {
             startOctave: OCTAVE_START,
             isClickable: true,
             showNoteNames: false,
+            volumeDb: -9,
         });
         piano.onClick((noteName) => handleInput(noteName));
 
@@ -311,18 +312,17 @@ async function nextLevel(signal) {
         setStatus(null);
         renderProgressDots(sequence.length);
         await delay(600, signal);
-        let position = 0;
+        const playbackStart = performance.now();
         for (let i = 0; i < sequence.length; i++) {
             const item = sequence[i];
-            await delay((item.start - position) * 500, signal);
+            await delay(Math.max(0, playbackStart + item.start * 500 - performance.now()), signal);
             updateDot(i, "active");
             const duration = item.end - item.start;
             if (piano) await piano.playNote(item.note, duration * 0.5 * 0.9, gameDifficulty === "practice");
-            await delay(duration * 500, signal);
-            position = item.end;
+            await delay(Math.max(0, playbackStart + item.end * 500 - performance.now()), signal);
             updateDot(i, "inactive");
         }
-        await delay((playbackDuration - position) * 500, signal);
+        await delay(Math.max(0, playbackStart + playbackDuration * 500 - performance.now()), signal);
         if (signal.aborted) return;
         isPlayerTurn = true;
         piContainerClickable(true);
