@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>Λειτουργία Εξάσκησης</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Προετοιμασία της μελωδίας σας...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>Προεπισκόπηση</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>Ξεκινήστε αμέσως</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Η μελωδία δεν μπόρεσε να φορτωθεί. Παρακαλώ δοκιμάστε ξανά.</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Οι τόνικες μελωδίες είναι μεσαίες παραλλαγές γνωστών μελωδιών, διατηρώντας τον ρυθμό και τις επαναλαμβανόμενες φράσεις τους.</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>Συνολική Βαθμολογία</value>

@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools adalah perangkat lunak gratis. Kami percaya bahwa alat pembelajaran musik harus dapat diakses oleh semua orang. Anda dapat menemukan kode sumber kami di GitLab, meninjau kode tersebut, bahkan menjalankan instans sendiri!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Putar Variasi Melodi</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Putar Melodi Acak</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Menyiapkan melodi Anda...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Host Sendiri</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Keajaiban Lingkaran Kelima</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Melodi tidak dapat dimuat. Silakan coba lagi.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teori bisa terasa kering, tetapi melihatnya berlangsung secara langsung justru menyenangkan. Nilai inti dari alat ini adalah &apos;sinkronisasi real-time.&apos; Saat Anda memilih kunci baru, Lingkaran Kromatik, Lingkaran Kelima, tombol piano, dan notasi staff akan diperbarui secara instan. Anda akan segera memahami mengapa G Mayor hanya memiliki satu tanda kres!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Melodi tonal adalah variasi tingkat sedang dari lagu-lagu yang sudah dikenal, dengan ritme dan frasa yang diulang tetap dipertahankan.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Pratinjau Antarmuka Alat</value>

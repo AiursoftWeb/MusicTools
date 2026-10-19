@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools on ilmaista ohjelmistoa. Uskomme, että musiikin opetusvälineet tulisi olla saatavilla kaikille. Voit etsiä lähdekoodimme GitLabista, tarkistaa sen ja jopa käynnistää omansa instanssin!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Soita sävelmävaihtoehto</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Toista satunnainen sävelmä</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Valmistellaan melodiaasi...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Omistuspalvelu</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Ympyrän viidesiänen magia</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Melodiaa ei voitu ladata. Yritä uudelleen.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teoria voi olla kuivaa, mutta sen näkeminen käytännössä on hauskaa. Tämän työkalun ydinarvo on &apos;reaaliaikainen synkronointi&apos;. Kun valitset uuden sävelkorkeuden, Chromatic Circle, viidesympyrä, pianon nuotit ja partituurin merkinnät päivittyvät välittömästi. Ymmärrät heti, miksi G-durissa on vain yksi korotus!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Tonaaliset melodiat ovat tuttuja sävelmiä muuntelevia melodioita, joissa rytmi ja toistuvat fraasit säilyvät.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Työkalun käyttöliittymän esikatselu</value>

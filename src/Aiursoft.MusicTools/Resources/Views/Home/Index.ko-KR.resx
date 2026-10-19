@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools는 무료 소프트웨어입니다. 우리는 음악 교육 도구가 누구나 접근할 수 있어야 한다고 믿습니다. GitLab에서 소스 코드를 찾아 검토하고, 자체 인스턴스를 호스팅하는 것도 가능합니다!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>멜로디 변주 재생</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>임의 멜로디 재생</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>멜로디를 준비하는 중...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>자체 호스팅</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>다섯 음의 원의 마법</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>멜로디를 불러올 수 없습니다. 다시 시도해 주세요.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>이론은 지루할 수 있지만, 실제로 보는 것은 재미있습니다. 이 도구의 핵심 가치는 &apos;실시간 동기화&apos;입니다. 새로운 키를 선택하면 크로마틱 원, 오르골의 5도 원, 피아노 키, 그리고 보표가 즉시 업데이트됩니다. G 장조가 단 하나의 샤프만 갖는 이유를 바로 이해하게 될 것입니다!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>선율은 익숙한 곡의 중간 정도 변주로, 리듬과 반복되는 구절은 그대로 유지됩니다.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>도구 인터페이스 미리보기</value>

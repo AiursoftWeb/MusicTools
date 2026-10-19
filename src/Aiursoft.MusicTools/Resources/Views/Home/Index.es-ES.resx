@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools es un software libre. Creemos que las herramientas de educación musical deben ser accesibles para todos. Puedes encontrar nuestro código fuente en GitLab, auditarlo y hasta alojar tu propia instancia.</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Reproducir una variación melódica</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Reproducir melodía aleatoria</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Preparando tu melodía...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Autohospedar</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>La magia del círculo de quintas</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>No se pudo cargar la melodía. Por favor, inténtalo de nuevo.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>La teoría puede resultar aburrida, pero verla en acción es divertido. El valor fundamental de esta herramienta es la &apos;sincronización en tiempo real&apos;. Cuando seleccionas una nueva tonalidad, el Círculo Cromático, el Círculo de Quintas, las teclas del piano y la notación musical se actualizan instantáneamente. ¡Entenderás al instante por qué la tonalidad de Sol Mayor tiene solo una sostenido!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Las melodías tonales son variaciones moderadas de melodías conocidas, conservando su ritmo y frases repetidas.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Vista previa de la interfaz de herramientas</value>

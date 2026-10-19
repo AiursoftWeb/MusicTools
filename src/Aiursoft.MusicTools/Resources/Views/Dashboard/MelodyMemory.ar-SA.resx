@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>وضع التدريب</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>جارٍ تجهيز لحنك...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>معاينة</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>ابدأ فورًا</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>تعذّر تحميل اللحن. يُرجى المحاولة مرة أخرى.</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>الألحان المقامية هي تنويعات متوسطة على ألحان مألوفة، مع الحفاظ على إيقاعها وعباراتها المتكررة.</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>النتيجة الإجمالية</value>

@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools este un software gratuit. Credem că instrumentele de învățare a muzicii ar trebui să fie accesibile pentru toată lumea. Poți găsi codul sursă la GitLab, îl poți verifica și chiar să îți găsești propria instanță!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Redă o variație de melodie</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Redă melodie aleatorie</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Pregătim melodia ta...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Autogăzduire</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Magia Cercului Cincimilor</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Melodia nu a putut fi încărcată. Încercați din nou.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Teoria poate fi plictisitoare, dar urmărirea ei în acțiune este distractivă. Valoarea principală a acestui instrument este „sincronizarea în timp real”. Când selectați o nouă tonalitate, Cercul cromatic, Cercul cvintelor, tastele de pian și notația pe portativ se actualizează instantaneu. Veți înțelege imediat de ce tonalitatea G major are doar un acord ascuns!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Melodiile tonale sunt variații medii ale melodiilor cunoscute, cu ritmul și frazele repetate păstrate.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Previzualizare interfață instrument</value>

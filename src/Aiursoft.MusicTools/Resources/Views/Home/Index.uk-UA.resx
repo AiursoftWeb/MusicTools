@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools — це безкоштовний програмний продукт. Ми віримо, що інструменти навчання музичній теорії мають бути доступними для всіх. Ви можете знайти наш вихідний код на GitLab, перевірити його, а навіть запустити власну копію!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Відтворити варіацію мелодії</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Відтворити випадкову мелодію</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Готуємо вашу мелодію...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>Самостійна установка</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>Магія кола п&apos;ятниць</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Мелодію не вдалося завантажити. Будь ласка, спробуйте ще раз.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>Теорія може бути сухою, але спостерігання за її реалізацією — це весело. Основна цінність цього інструменту — «синхронізація в реальному часі». Коли ви вибираєте новий ключ, Хроматичне коло, Коло п’ятниць, клавіші фортепіано та нотна записка миттєво оновлюються. Ви одразу зрозумієте, чому в мажорі G є лише одна дієза!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Тональні мелодії — це помірні варіації знайомих мелодій, у яких збережено ритм і повторювані фрази.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>Попередній перегляд інтерфейсу інструменту</value>

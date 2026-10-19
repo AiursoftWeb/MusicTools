@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools هو برنامج مجاني. نحن نؤمن بأن أدوات تعليم الموسيقى يجب أن تكون متاحة للجميع. يمكنك العثور على كودنا المصدري على GitLab، ومراجعته، وحتى تشغيل نسخة خاصة بك!</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>تشغيل تنويعة لحنية</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>تشغيل اللحن العشوائي</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>جارٍ إعداد لحنك...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>استضافة ذاتية</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>سحر دائرة الأوتار الخامسة</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>تعذّر تحميل اللحن. يُرجى المحاولة مرة أخرى.</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>يمكن أن تكون النظرية جافة، لكن مشاهدتها في العمل ممتعة. القيمة الأساسية لهذا الأداة هي &quot;التحديث الفوري&quot;. عند اختيار مفتاح جديد، يتم تحديث دائرة التوسع الصوتي، ودائرة الخمسات، ومفاتيح البيانو، وتدوين الملاحظات على السطر الموسيقي فورًا. ستفهم فورًا لماذا المفتاح الرئيسي لـ G يحتوي على شارب واحد فقط!</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>الألحان النغمية هي تنويعات متوسطة على ألحان مألوفة، مع الحفاظ على إيقاعها وعباراتها المتكررة.</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>معاينة واجهة الأداة</value>

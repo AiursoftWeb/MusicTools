@@ -48,8 +48,14 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools 是一款免費軟體。我們相信音樂教育工具應該對每個人開放使用。您可以在 GitLab 找到我們的原始碼，進行審查，甚至自行架設自己的執行個體！</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>播放旋律變奏</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>播放隨機旋律</value>
+  </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>正在準備您的旋律...</value>
   </data>
   <data name="Self Host" xml:space="preserve">
     <value>自行主機</value>
@@ -57,8 +63,14 @@
   <data name="The Magic of the Circle of Fifths" xml:space="preserve">
     <value>五度圈的魔力</value>
   </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>無法載入旋律，請再試一次。</value>
+  </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>理論可能枯燥乏味，但親眼看到它運作卻非常有趣。這項工具的核心價值在於「即時同步」。當您選取新的調性時，音階圓、五度圈、鋼琴鍵與五線譜會立即更新。您將立刻明白為什麼 G 大調只有一個升號！</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>調性旋律是熟悉曲調的中度變奏，保留其節奏與重複樂句。</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>工具介面預覽</value>

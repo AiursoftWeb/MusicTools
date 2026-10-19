@@ -156,6 +156,9 @@
   <data name="Practice Mode" xml:space="preserve">
     <value>Übungsmodus</value>
   </data>
+  <data name="Preparing your melody..." xml:space="preserve">
+    <value>Ihre Melodie wird vorbereitet...</value>
+  </data>
   <data name="Preview" xml:space="preserve">
     <value>Vorschau</value>
   </data>
@@ -197,6 +200,12 @@
   </data>
   <data name="Start immediately" xml:space="preserve">
     <value>Sofort starten</value>
+  </data>
+  <data name="The melody could not be loaded. Please try again." xml:space="preserve">
+    <value>Die Melodie konnte nicht geladen werden. Bitte versuchen Sie es erneut.</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>Tonale Melodien sind mittlere Variationen bekannter Melodien, bei denen ihr Rhythmus und ihre wiederkehrenden Phrasen beibehalten werden.</value>
   </data>
   <data name="Total Score" xml:space="preserve">
     <value>Gesamtpunktzahl</value>
