@@ -198,6 +198,9 @@
   <data name="Start immediately" xml:space="preserve">
     <value>立即开始</value>
   </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>音调旋律是熟悉曲调的中等变化，保留了其节奏和重复的乐句。</value>
+  </data>
   <data name="Total Score" xml:space="preserve">
     <value>总分</value>
   </data>

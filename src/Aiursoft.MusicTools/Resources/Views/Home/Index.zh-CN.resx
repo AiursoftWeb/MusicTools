@@ -48,6 +48,9 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools 是一款免费软件。我们相信，音乐教育工具应当对每个人开放可用。您可以在 GitLab 上找到我们的源代码，进行审查，甚至自行托管实例！</value>
   </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>演奏旋律变奏</value>
+  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>播放随机旋律</value>
   </data>
@@ -59,6 +62,9 @@
   </data>
   <data name="Theory can be dry, but watching it in action is fun. The core value of this tool is &apos;real-time synchronization.&apos; When you select a new key, the Chromatic Circle, Circle of Fifths, piano keys, and staff notation update instantly. You&apos;ll immediately understand why G Major has only one sharp!" xml:space="preserve">
     <value>理论可能枯燥，但亲眼见证它在实际中的运作却很有趣。这款工具的核心价值在于“实时同步”。当你选择一个新的调式时，半音音阶、五度圈、钢琴键盘和五线谱会立即更新。你将立刻明白为什么G大调只有一个升号！</value>
+  </data>
+  <data name="Tonal melodies are medium variations of familiar tunes, with their rhythm and repeated phrases preserved." xml:space="preserve">
+    <value>调性旋律是对熟悉曲调的中等程度改编，同时保留其节奏和重复乐句。</value>
   </data>
   <data name="Tool Interface Preview" xml:space="preserve">
     <value>工具界面预览</value>
