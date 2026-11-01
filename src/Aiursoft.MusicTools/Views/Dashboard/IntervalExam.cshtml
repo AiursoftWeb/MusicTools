@@ -34,6 +34,10 @@
         <h1>@Localizer["Select Answer"]</h1>
     </div>
 
+    <div class="d-flex align-items-center justify-content-center flex-wrap gap-3 mb-3 exam-feedback">
+        <span id="answer-feedback" role="status" aria-live="polite"></span>
+        <button id="next-question" type="button" class="btn btn-primary" hidden>@Localizer["Next question"]</button>
+    </div>
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4">
             <div id="staff-answer1-container" role="button" tabindex="0" aria-label="@Localizer["Answer 1"]"
@@ -50,10 +54,6 @@
                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
             </div>
         </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-center flex-wrap gap-3 mt-4">
-        <span id="answer-feedback" role="status" aria-live="polite"></span>
-        <button id="next-question" type="button" class="btn btn-primary" hidden>@Localizer["Next question"]</button>
     </div>
 </div>
 
@@ -72,6 +72,14 @@
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"></link>
 
     <style>
+        .exam-feedback {
+            position: sticky;
+            top: .5rem;
+            z-index: 1;
+            min-height: 2.25rem;
+            background: var(--bs-body-bg);
+        }
+
         .exam-answer {
             padding: 1rem;
             border: 1px solid #ddd;
