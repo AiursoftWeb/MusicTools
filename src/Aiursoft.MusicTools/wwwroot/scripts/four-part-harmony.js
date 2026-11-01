@@ -128,7 +128,8 @@ class FourPartHarmony {
             const pair = this.dom.optionCards[idx].querySelector('.staff-pair-container');
             pair.scrollLeft = 0;
             // Glyphs are positioned absolutely; reserve their full extent in normal flow.
-            pair.querySelectorAll('.staff-wrapper').forEach(wrapper => {
+            const wrappers = [...pair.querySelectorAll('.staff-wrapper')];
+            const widths = wrappers.map(wrapper => {
                 const bounds = wrapper.getBoundingClientRect();
                 const glyphs = [...wrapper.querySelectorAll('.clef, .music-staff-note, .music-staff-accidental, .music-staff-ledger-line')]
                     .map(glyph => glyph.getBoundingClientRect());
@@ -136,7 +137,9 @@ class FourPartHarmony {
                 const bottom = Math.max(bounds.bottom, ...glyphs.map(glyph => glyph.bottom));
                 wrapper.style.marginBlockStart = `${bounds.top - top + 16}px`;
                 wrapper.style.marginBlockEnd = `${bottom - bounds.bottom + 16}px`;
+                return Math.max(...glyphs.map(glyph => glyph.right)) - bounds.left + 16;
             });
+            wrappers.forEach(wrapper => wrapper.style.width = `${Math.ceil(Math.max(...widths))}px`);
 
             // Roman numerals
             const romanText = opt.harmony.chords.map(c => c.roman).join(' ');
