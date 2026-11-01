@@ -41,8 +41,8 @@ class FourPartHarmony {
 
         // Initialize 4 pairs of staffs
         for (let i = 0; i < 4; i++) {
-            this.sopranoStaffs.push(new MusicStaff(`soprano-staff-${i}`, { clef: 'treble', baseX: 180 }));
-            this.bassStaffs.push(new MusicStaff(`bass-staff-${i}`, { clef: 'bass', baseX: 180 }));
+            this.sopranoStaffs.push(new MusicStaff(`soprano-staff-${i}`, { clef: 'treble' }));
+            this.bassStaffs.push(new MusicStaff(`bass-staff-${i}`, { clef: 'bass' }));
         }
 
         // Event listeners
