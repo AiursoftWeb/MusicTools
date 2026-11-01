@@ -41,8 +41,8 @@ class FourPartHarmony {
 
         // Initialize 4 pairs of staffs
         for (let i = 0; i < 4; i++) {
-            this.sopranoStaffs.push(new MusicStaff(`soprano-staff-${i}`, { clef: 'treble', baseX: 60 }));
-            this.bassStaffs.push(new MusicStaff(`bass-staff-${i}`, { clef: 'bass', baseX: 60 }));
+            this.sopranoStaffs.push(new MusicStaff(`soprano-staff-${i}`, { clef: 'treble', baseX: 180 }));
+            this.bassStaffs.push(new MusicStaff(`bass-staff-${i}`, { clef: 'bass', baseX: 180 }));
         }
 
         // Event listeners
@@ -63,7 +63,7 @@ class FourPartHarmony {
         this.dom.btnPlayHarmony.disabled = true;
         this.dom.btnPlayHarmony.querySelector('span').textContent = this.loc.loading;
 
-        await this.piano.waitForSamples();
+        await Promise.all([this.piano.waitForSamples(), document.fonts.ready]);
 
         this.dom.btnPlayHarmony.disabled = false;
         this.dom.btnPlayHarmony.innerHTML = originalBtnHtml;
@@ -125,6 +125,18 @@ class FourPartHarmony {
 
             this.sopranoStaffs[idx].showMelody(sopranoMelody);
             this.bassStaffs[idx].showMelody(bassMelody);
+            const pair = this.dom.optionCards[idx].querySelector('.staff-pair-container');
+            pair.scrollLeft = 0;
+            // Glyphs are positioned absolutely; reserve their full extent in normal flow.
+            pair.querySelectorAll('.staff-wrapper').forEach(wrapper => {
+                const bounds = wrapper.getBoundingClientRect();
+                const glyphs = [...wrapper.querySelectorAll('.clef, .music-staff-note, .music-staff-accidental, .music-staff-ledger-line')]
+                    .map(glyph => glyph.getBoundingClientRect());
+                const top = Math.min(bounds.top, ...glyphs.map(glyph => glyph.top));
+                const bottom = Math.max(bounds.bottom, ...glyphs.map(glyph => glyph.bottom));
+                wrapper.style.marginBlockStart = `${bounds.top - top + 16}px`;
+                wrapper.style.marginBlockEnd = `${bottom - bounds.bottom + 16}px`;
+            });
 
             // Roman numerals
             const romanText = opt.harmony.chords.map(c => c.roman).join(' ');

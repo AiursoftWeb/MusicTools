@@ -91,8 +91,8 @@
                                             <span class="badge bg-secondary">@Localizer["Option"] @((char)('A' + i))</span>
                                             <div class="roman-numerals-display fs-5 fw-bold text-primary" id="roman-@i"></div>
                                         </div>
-                                        <div class="staff-pair-container">
-                                            <div id="soprano-staff-@i" class="soprano-staff mb-2"></div>
+                                        <div class="staff-pair-container" tabindex="0" role="region" aria-label="@Localizer["Option"] @((char)('A' + i))">
+                                            <div id="soprano-staff-@i" class="soprano-staff"></div>
                                             <div id="bass-staff-@i" class="bass-staff"></div>
                                         </div>
                                     </div>
@@ -177,13 +177,21 @@
             background: #fff;
             padding: 10px;
             border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .staff-pair-container:focus-visible {
+            outline: 2px solid var(--bs-primary);
+            outline-offset: 2px;
+        }
+
+        .staff-pair-container .staff-wrapper {
+            margin: 0;
         }
 
         .soprano-staff, .bass-staff {
-            width: 100%;
-            height: 120px;
-            overflow-x: auto;
-            overflow-y: hidden;
+            display: flow-root;
+            width: max-content;
         }
 
         .roman-numerals-display {
