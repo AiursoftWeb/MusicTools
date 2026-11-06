@@ -64,6 +64,7 @@ class ExamQuestion {
     #questionLabel;
     #correctAnswerPitch;
     #localizedStrings;
+    #answered = false;
 
     constructor(questionStaff, answerStaffs, answerElements, questionLabel, localizedStrings) {
         this.#questionStaff = questionStaff;
@@ -75,18 +76,35 @@ class ExamQuestion {
 
         this.#answerElements.forEach(element => {
             element.addEventListener('click', this.#handleAnswerClick.bind(this));
+            element.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    element.click();
+                }
+            });
+        });
+        document.getElementById('next-question')?.addEventListener('click', () => {
+            this.nextQuestion();
+            this.#answerElements[0].focus();
         });
     }
 
     #handleAnswerClick(event) {
         const clickedPitch = event.currentTarget.dataset.pitch;
-        if (!clickedPitch) return;
-
-        if (clickedPitch === this.#correctAnswerPitch) {
-            alert(this.#localizedStrings.correct);
-            this.nextQuestion();
-        } else {
-            alert(this.#localizedStrings.wrong);
+        if (!clickedPitch || this.#answered) return;
+        const correct = clickedPitch === this.#correctAnswerPitch;
+        this.#answerElements.forEach(element => element.classList.remove('border-success', 'border-danger'));
+        event.currentTarget.classList.add(correct ? 'border-success' : 'border-danger');
+        const feedback = document.getElementById('answer-feedback');
+        feedback.textContent = correct ? this.#localizedStrings.correct : this.#localizedStrings.wrong;
+        feedback.classList.toggle('text-success', correct);
+        feedback.classList.toggle('text-danger', !correct);
+        if (correct) {
+            this.#answered = true;
+            this.#answerElements.forEach(element => element.setAttribute('aria-disabled', 'true'));
+            const next = document.getElementById('next-question');
+            next.hidden = false;
+            next.focus();
         }
     }
 
@@ -163,6 +181,15 @@ class ExamQuestion {
     }
 
     nextQuestion() {
+        this.#answered = false;
+        const feedback = document.getElementById('answer-feedback');
+        if (feedback) feedback.textContent = '';
+        const next = document.getElementById('next-question');
+        if (next) next.hidden = true;
+        this.#answerElements.forEach(element => {
+            element.classList.remove('border-success', 'border-danger');
+            element.removeAttribute('aria-disabled');
+        });
         try {
             let basePitch, intervalKey, interval, localizedIntervalName;
             let isValid = false;
@@ -303,5 +330,9 @@ window.startIntervalExam = (questionStaffId, answerStaffIds, questionLabelId) =>
     examQuestion.nextQuestion();
     return examQuestion;
 };
+
+if (document.getElementById('question-staff-container')) {
+    window.startIntervalExam('question-staff-container', ['staff-answer1-container', 'staff-answer2-container', 'staff-answer3-container'], 'questionLabel');
+}
 
 export default ExamQuestion;

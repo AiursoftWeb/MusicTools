@@ -34,19 +34,23 @@
         <h1>@Localizer["Select Answer"]</h1>
     </div>
 
+    <div class="d-flex align-items-center justify-content-center flex-wrap gap-3 mb-3 exam-feedback">
+        <span id="answer-feedback" role="status" aria-live="polite"></span>
+        <button id="next-question" type="button" class="btn btn-primary" hidden>@Localizer["Next question"]</button>
+    </div>
     <div class="row g-4 justify-content-center">
         <div class="col-lg-4">
-            <div id="staff-answer1-container"
+            <div id="staff-answer1-container" role="button" tabindex="0" aria-label="@Localizer["Answer 1"]"
                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
             </div>
         </div>
         <div class="col-lg-4">
-            <div id="staff-answer2-container"
+            <div id="staff-answer2-container" role="button" tabindex="0" aria-label="@Localizer["Answer 2"]"
                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
             </div>
         </div>
         <div class="col-lg-4">
-            <div id="staff-answer3-container"
+            <div id="staff-answer3-container" role="button" tabindex="0" aria-label="@Localizer["Answer 3"]"
                  class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 flex-wrap exam-answer">
             </div>
         </div>
@@ -60,11 +64,6 @@
     <script type="module" src="~/dist/scripts/musicStaff.js" asp-append-version="true"></script>
     <script type="module" src="~/dist/scripts/intervalExam.js" asp-append-version="true"></script>
 
-    <script>
-        window.addEventListener('load', () => {
-             window.startIntervalExam('question-staff-container', ['staff-answer1-container', 'staff-answer2-container', 'staff-answer3-container'], 'questionLabel');
-        });
-    </script>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
@@ -73,6 +72,14 @@
     <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true"></link>
 
     <style>
+        .exam-feedback {
+            position: sticky;
+            top: .5rem;
+            z-index: 1;
+            min-height: 2.25rem;
+            background: var(--bs-body-bg);
+        }
+
         .exam-answer {
             padding: 1rem;
             border: 1px solid #ddd;
@@ -81,8 +88,8 @@
             transition: all 0.2s ease-in-out;
         }
 
-        .exam-answer:hover {
-            background-color: #f8f9fa;
+        .exam-answer:hover, .exam-answer:focus-visible {
+            background-color: var(--bs-tertiary-bg);
             border-color: #0d6efd;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
