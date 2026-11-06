@@ -18,7 +18,16 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Fifth" xml:space="preserve">
+      <data name="Answer 1" xml:space="preserve">
+    <value>Answer 1</value>
+  </data>
+  <data name="Answer 2" xml:space="preserve">
+    <value>Answer 2</value>
+  </data>
+  <data name="Answer 3" xml:space="preserve">
+    <value>Answer 3</value>
+  </data>
+  <data name="Augmented Fifth" xml:space="preserve">
     <value>Augmented Fifth</value>
   </data>
   <data name="Augmented Fourth" xml:space="preserve">
@@ -56,6 +65,9 @@
   </data>
   <data name="Minor Third" xml:space="preserve">
     <value>Minor Third</value>
+  </data>
+  <data name="Next question" xml:space="preserve">
+    <value>Next question</value>
   </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Perfect Fifth</value>
