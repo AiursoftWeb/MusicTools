@@ -18,7 +18,16 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Augmented Fifth" xml:space="preserve">
+      <data name="Answer 1" xml:space="preserve">
+    <value>Відповідь 1</value>
+  </data>
+  <data name="Answer 2" xml:space="preserve">
+    <value>Відповідь 2</value>
+  </data>
+  <data name="Answer 3" xml:space="preserve">
+    <value>Відповідь 3</value>
+  </data>
+  <data name="Augmented Fifth" xml:space="preserve">
     <value>Підвищена квінта</value>
   </data>
   <data name="Augmented Fourth" xml:space="preserve">
@@ -56,6 +65,9 @@
   </data>
   <data name="Minor Third" xml:space="preserve">
     <value>Мала терція</value>
+  </data>
+  <data name="Next question" xml:space="preserve">
+    <value>Наступне питання</value>
   </data>
   <data name="Perfect Fifth" xml:space="preserve">
     <value>Чиста квінта</value>
