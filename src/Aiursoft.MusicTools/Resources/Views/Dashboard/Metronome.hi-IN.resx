@@ -48,6 +48,9 @@
   <data name="Subdivision" xml:space="preserve">
     <value>उपविभाजन</value>
   </data>
+  <data name="Tempo" xml:space="preserve">
+    <value>लय</value>
+  </data>
   <data name="Time Signature" xml:space="preserve">
     <value>ताल चिह्न</value>
   </data>

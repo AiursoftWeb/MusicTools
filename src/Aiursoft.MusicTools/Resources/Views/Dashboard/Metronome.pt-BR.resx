@@ -48,6 +48,9 @@
   <data name="Subdivision" xml:space="preserve">
     <value>Subdivisão</value>
   </data>
+  <data name="Tempo" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
   <data name="Time Signature" xml:space="preserve">
     <value>Assinatura de Tempo</value>
   </data>
