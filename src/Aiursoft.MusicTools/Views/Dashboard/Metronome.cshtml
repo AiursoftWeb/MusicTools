@@ -1,9 +1,9 @@
 @inject IViewLocalizer Localizer
 @model Aiursoft.MusicTools.Models.DashboardViewModels.MetronomeViewModel
 
-<div class="container mt-5">
+<div class="container mt-3 mt-md-5">
     <div class="card shadow-sm" style="max-width: 800px; margin: 0 auto;">
-        <div class="card-body text-center p-5">
+        <div class="card-body text-center p-3 p-md-5">
             <h1 class="mb-4">@Localizer[Model.PageTitle ?? string.Empty]</h1>
             
             <div class="mb-4">
@@ -12,7 +12,7 @@
             </div>
 
             <div class="mb-5 px-md-5">
-                <input type="range" class="form-range" id="bpm-slider" min="0" max="100" step="0.1" value="50" style="height: 2rem;">
+                <input type="range" class="form-range" id="bpm-slider" aria-label="@Localizer["Tempo"]" aria-valuetext="90 BPM" min="0" max="100" step="0.1" value="50" style="height: 2rem;">
                 <div class="d-flex justify-content-between text-muted small mt-2">
                     <span>@Localizer["Slow (1)"]</span>
                     <span>@Localizer["Normal (90)"]</span>
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <button id="start-stop-btn" 
+            <button id="start-stop-btn" aria-pressed="false"
                     class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow transition-all">
                 <span id="btn-icon">▶</span> <span id="btn-text">@Localizer["Start"]</span>
             </button>
@@ -62,6 +62,7 @@
 </div>
 
 <div id="loc-data" hidden>
+    <span data-key="bpm">@Localizer["BPM"]</span>
     <span data-key="start">@Localizer["Start"]</span>
     <span data-key="stop">@Localizer["Stop"]</span>
 </div>

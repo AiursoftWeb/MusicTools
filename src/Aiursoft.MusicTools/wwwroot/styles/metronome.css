@@ -44,3 +44,11 @@
 #bpm-slider {
     cursor: pointer;
 }
+
+#bpm-slider::-webkit-slider-runnable-track {
+    background-color: var(--bs-border-color);
+}
+
+#bpm-slider::-moz-range-track {
+    background-color: var(--bs-border-color);
+}
