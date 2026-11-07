@@ -48,6 +48,9 @@
   <data name="Subdivision" xml:space="preserve">
     <value>细分</value>
   </data>
+  <data name="Tempo" xml:space="preserve">
+    <value>速度</value>
+  </data>
   <data name="Time Signature" xml:space="preserve">
     <value>拍号</value>
   </data>

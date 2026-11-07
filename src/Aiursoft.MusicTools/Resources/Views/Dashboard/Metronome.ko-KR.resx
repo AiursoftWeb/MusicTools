@@ -48,6 +48,9 @@
   <data name="Subdivision" xml:space="preserve">
     <value>세분화</value>
   </data>
+  <data name="Tempo" xml:space="preserve">
+    <value>템포</value>
+  </data>
   <data name="Time Signature" xml:space="preserve">
     <value>박자표</value>
   </data>
