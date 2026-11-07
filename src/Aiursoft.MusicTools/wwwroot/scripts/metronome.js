@@ -45,10 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.round(calculatedBpm);
     }
     
+    function updateTempoDisplay() {
+        bpmDisplay.textContent = bpm;
+        bpmSlider.setAttribute('aria-valuetext', `${bpm} ${getLocalizedText('bpm', 'BPM')}`);
+    }
+
     bpmSlider.addEventListener('input', (e) => {
         bpm = calculateBpm(e.target.value);
-        bpmDisplay.textContent = bpm;
+        updateTempoDisplay();
     });
+    updateTempoDisplay();
 
     function updateConfig(e) {
         const source = e ? e.target.id : 'init';
@@ -261,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
             startStopBtn.classList.remove('btn-primary');
             startStopBtn.classList.add('btn-danger');
         }
+        startStopBtn.setAttribute('aria-pressed', String(isPlaying));
     });
 
     // Initialize
