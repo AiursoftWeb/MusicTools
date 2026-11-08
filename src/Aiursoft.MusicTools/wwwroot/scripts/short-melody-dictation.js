@@ -16,6 +16,7 @@ class ShortMelodyDictation {
         
         this.currentMelody = [];
         this.userAttempt = [];
+        this.answered = false;
         this.mode = 'A'; // 'A' for piano, 'B' for staff, 'C' for piano (no visual)
         this.playCount = 0;
         this.isPlaying = false;
@@ -78,6 +79,12 @@ class ShortMelodyDictation {
 
         this.dom.answerElements.forEach((el, index) => {
             el.addEventListener('click', () => this._handleStaffChoice(index));
+            el.addEventListener('keydown', event => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    el.click();
+                }
+            });
         });
     }
 
@@ -88,6 +95,15 @@ class ShortMelodyDictation {
     }
 
     nextQuestion() {
+        this.answered = false;
+        this.dom.feedback.textContent = '';
+        this.dom.feedback.classList.remove('text-success', 'text-danger');
+        this.dom.btnNext.textContent = this.loc.skip;
+        this.dom.btnNext.classList.replace('btn-primary', 'btn-outline-primary');
+        this.dom.answerElements.forEach(element => {
+            element.classList.remove('border-success', 'border-danger');
+            element.removeAttribute('aria-disabled');
+        });
         try {
             if (this.#playAbortController) {
                 this.#playAbortController.abort();
@@ -231,29 +247,43 @@ class ShortMelodyDictation {
         this.piano.playNote("A4", 1.0, true);
     }
 
+    _showFeedback(correct) {
+        this.dom.feedback.textContent = correct ? this.loc.correct : this.loc.wrong;
+        this.dom.feedback.classList.toggle('text-success', correct);
+        this.dom.feedback.classList.toggle('text-danger', !correct);
+        if (correct) {
+            this.answered = true;
+            this.dom.answerElements.forEach(element => element.setAttribute('aria-disabled', 'true'));
+            this.dom.btnNext.textContent = this.loc.nextQuestion;
+            this.dom.btnNext.classList.replace('btn-outline-primary', 'btn-primary');
+            this.dom.btnNext.focus();
+        }
+    }
+
     _handlePianoClick(note) {
+        if (this.answered || this.currentMelody.length === 0) return;
         this.userAttempt.push(note);
         const expectedNote = this.currentMelody[this.userAttempt.length - 1].pitch;
-        
+
         if (note !== expectedNote) {
-            alert(this.loc.wrong);
+            this._showFeedback(false);
             this.userAttempt = [];
             return;
         }
 
+        this.dom.feedback.textContent = '';
+        this.dom.feedback.classList.remove('text-success', 'text-danger');
         if (this.userAttempt.length === this.currentMelody.length) {
-            alert(this.loc.correct);
-            this.nextQuestion();
+            this._showFeedback(true);
         }
     }
 
     _handleStaffChoice(index) {
-        if (this.allChoices[index].correct) {
-            alert(this.loc.correct);
-            this.nextQuestion();
-        } else {
-            alert(this.loc.wrong);
-        }
+        if (this.answered || !this.allChoices[index]) return;
+        const correct = this.allChoices[index].correct;
+        this.dom.answerElements.forEach(element => element.classList.remove('border-success', 'border-danger'));
+        this.dom.answerElements[index].classList.add(correct ? 'border-success' : 'border-danger');
+        this._showFeedback(correct);
     }
 
     _shuffleArray(array) {
@@ -274,6 +304,7 @@ window.startShortMelodyDictation = () => {
         btnPlayMelody: document.getElementById('btn-play-melody'),
         btnPlayStandard: document.getElementById('btn-play-standard'),
         btnNext: document.getElementById('btn-next'),
+        feedback: document.getElementById('answer-feedback'),
         pianoArea: document.getElementById('piano-area'),
         staffArea: document.getElementById('staff-area'),
         pianoContainer: document.getElementById('piano-container'),
@@ -291,7 +322,9 @@ window.startShortMelodyDictation = () => {
 
     const loc = {
         correct: getLocalizedText('correct', 'Correct!'),
-        wrong: getLocalizedText('wrong', 'Wrong. Try again!')
+        wrong: getLocalizedText('wrong', 'Wrong. Try again!'),
+        nextQuestion: getLocalizedText('next-question', 'Next question'),
+        skip: getLocalizedText('skip', 'Skip')
     };
 
     return new ShortMelodyDictation(dom, loc);

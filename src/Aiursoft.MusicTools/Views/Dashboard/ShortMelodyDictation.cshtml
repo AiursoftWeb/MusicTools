@@ -77,14 +77,19 @@
 
                     <!-- Controls Bar -->
                     <div class="w-100 mb-4 px-0" style="max-width: 1000px;">
-                        <div class="d-flex justify-content-center gap-3 mb-4">
+                        <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
                             <button id="btn-play-standard" class="btn btn-outline-secondary">
                                 <i class="bi bi-music-note"></i> @Localizer["Standard A4"]
                             </button>
-                            <button id="btn-play-melody" class="btn btn-primary btn-lg px-5">
+                            <button id="btn-play-melody" class="btn btn-primary btn-lg px-4 px-md-5">
                                 <i class="bi bi-play-fill"></i> @Localizer["Play Melody"]
                             </button>
                         </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center gap-3 w-100 py-3 mb-4 sticky-top bg-body border-bottom" style="max-width: 1000px;">
+                        <span id="answer-feedback" role="status" aria-live="polite" aria-atomic="true"></span>
+                        <button id="btn-next" type="button" class="btn btn-outline-primary flex-shrink-0 px-4">@Localizer["Skip"]</button>
                     </div>
 
                     <!-- Mode A: Piano Area -->
@@ -100,20 +105,17 @@
                     <div id="staff-area" class="w-100 px-0 d-none">
                         <div class="row g-4 justify-content-center">
                             <div class="col-12">
-                                <div id="staff-answer1-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                                <div id="staff-answer1-container" class="staff-answer-container border p-3 rounded text-center" role="button" tabindex="0" aria-label="@Localizer["Answer {0}", 1]"></div>
                             </div>
                             <div class="col-12">
-                                <div id="staff-answer2-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                                <div id="staff-answer2-container" class="staff-answer-container border p-3 rounded text-center" role="button" tabindex="0" aria-label="@Localizer["Answer {0}", 2]"></div>
                             </div>
                             <div class="col-12">
-                                <div id="staff-answer3-container" class="staff-answer-container border p-3 rounded text-center"></div>
+                                <div id="staff-answer3-container" class="staff-answer-container border p-3 rounded text-center" role="button" tabindex="0" aria-label="@Localizer["Answer {0}", 3]"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-5">
-                         <button id="btn-next" class="btn btn-outline-primary px-4">@Localizer["Skip / Next"]</button>
-                    </div>
 
                 </div>
             </div>
@@ -125,6 +127,8 @@
 <div id="loc-data" hidden>
     <span data-key="correct">@Localizer["Correct!"]</span>
     <span data-key="wrong">@Localizer["Wrong. Try again!"]</span>
+    <span data-key="next-question">@Localizer["Next question"]</span>
+    <span data-key="skip">@Localizer["Skip"]</span>
 </div>
 
 @* ReSharper disable once Razor.SectionNotResolved *@
