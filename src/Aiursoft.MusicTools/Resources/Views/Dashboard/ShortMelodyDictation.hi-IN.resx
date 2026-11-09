@@ -30,11 +30,17 @@
   <data name="Listen to a short melody and dictate it." xml:space="preserve">
     <value>एक छोटी धुन सुनें और उसे लिखित रूप में प्रस्तुत करें।</value>
   </data>
+  <data name="Next question" xml:space="preserve">
+    <value>अगला प्रश्न</value>
+  </data>
   <data name="Play Melody" xml:space="preserve">
     <value>मेलोडी बजाएं</value>
   </data>
   <data name="Short Melody Dictation" xml:space="preserve">
     <value>छोटी धुन की लिखित अभ्यास</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>छोड़ें</value>
   </data>
   <data name="Skip / Next" xml:space="preserve">
     <value>छोड़ें / अगला</value>
