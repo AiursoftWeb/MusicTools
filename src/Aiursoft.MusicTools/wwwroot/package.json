@@ -23,7 +23,7 @@
     "@audio-samples/piano-mp3-velocity16": "^1.0.5",
     "@audio-samples/piano-mp3-velocity4": "^1.0.5",
     "@audio-samples/piano-mp3-velocity8": "^1.0.5",
-    "opensheetmusicdisplay": "^1.9.9",
+    "opensheetmusicdisplay": "^2.3.0",
     "vite": "^7.2.7",
     "vite-plugin-static-copy": "^3.1.4"
   },
