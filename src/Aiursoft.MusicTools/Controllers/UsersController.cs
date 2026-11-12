@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Localization;
 using Aiursoft.MusicTools.Authorization;
 using Aiursoft.MusicTools.Entities;
 using Aiursoft.MusicTools.Models.UsersViewModels;
@@ -19,7 +20,8 @@ namespace Aiursoft.MusicTools.Controllers;
 public class UsersController(
     RoleManager<IdentityRole> roleManager,
     UserManager<User> userManager,
-    MusicToolsDbContext context)
+    MusicToolsDbContext context,
+    IStringLocalizer<AppPermissions> permissionLocalizer)
     : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanReadUsers)]
@@ -74,7 +76,8 @@ public class UsersController(
 
         var permissions = AppPermissions.GetAllPermissions()
             .Where(p => allPermissionValues.Contains(p.Key))
-            .OrderBy(p => p.Name)
+            .OrderBy(p => permissionLocalizer[p.Name].Value, StringComparer.CurrentCulture)
+            .ThenBy(p => p.Key, StringComparer.Ordinal)
             .ToList();
 
         return this.StackView(new DetailsViewModel
