@@ -48,11 +48,11 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools — це безкоштовний програмний продукт. Ми віримо, що інструменти навчання музичній теорії мають бути доступними для всіх. Ви можете знайти наш вихідний код на GitLab, перевірити його, а навіть запустити власну копію!</value>
   </data>
-  <data name="Play a Melody Variation" xml:space="preserve">
-    <value>Відтворити варіацію мелодії</value>
-  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>Відтворити випадкову мелодію</value>
+  </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>Відтворити варіацію мелодії</value>
   </data>
   <data name="Preparing your melody..." xml:space="preserve">
     <value>Готуємо вашу мелодію...</value>

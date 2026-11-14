@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>두 음표 사이의 간격이 계산되어 표시됩니다.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>에서</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>음표 이름을 인식할 수 없습니다</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>에서</value>
   </data>
 
 </root>

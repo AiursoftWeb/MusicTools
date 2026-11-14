@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Aloittelija</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>LAADI KUUNTELUHAASTE</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Valitse kuuntelukonteksti ja keskity sitten yhteen tahtiin ja yhteen kuultavaan eroon.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Napsauta partituurista suoraan ensimmäistä ja viimeistä tahtia tai käytä numeroituja painikkeita. Pienempi merkintä on partituuriin painettu tahtinumero.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>LAADI KUUNTELUHAASTE</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Luo kysymys</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Älä laske taukoja mukaan. Sävelkorkeusversioissa muuttuu vain tämä nuotti; rytmiversioissa muuttuvat tämä nuotti ja sitä välittömästi seuraava nuotti. Valitse yksinkertainen kohta, jossa ei ole sidenuottia.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>esim. Aloiteaiheen tunnistaminen</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Mikä tahansa hyväksytty versio voidaan esittää vastauksena. Arvioi musiikillista uskottavuutta, älä sitä, mikä versio näyttää eniten alkuperäiseltä.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Millainen on hyvä kysymys?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>esim. Aloiteaiheen tunnistaminen</value>
   </data>
 
 </root>

@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>Lang–kort (3:1)</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>MUSIKERENS ANMELDELSESKONTOR</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>Kan være svaret</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>Takter</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>MUSIKERENS ANMELDELSESKONTOR</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>Kun måltakten ændres mellem versionerne. Eleverne ser den pågældende takt; de hører den valgte version i denne sammenhæng.</value>

@@ -24,9 +24,6 @@
   <data name="Composer / arranger" xml:space="preserve">
     <value>作曲家／編曲者</value>
   </data>
-  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
-    <value>例如：莫扎特第十六號奏鳴曲</value>
-  </data>
   <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
     <value>請在你的電腦上將 .mscz 或 .mscx 專案匯出為 MusicXML。無需在伺服器上轉換。</value>
   </data>
@@ -48,11 +45,14 @@
   <data name="Show me how to export" xml:space="preserve">
     <value>教我如何匯出</value>
   </data>
+  <data name="Upload New Score" xml:space="preserve">
+    <value>上傳新樂譜</value>
+  </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>上傳並儲存</value>
   </data>
-  <data name="Upload New Score" xml:space="preserve">
-    <value>上傳新樂譜</value>
+  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
+    <value>例如：莫扎特第十六號奏鳴曲</value>
   </data>
 
 </root>

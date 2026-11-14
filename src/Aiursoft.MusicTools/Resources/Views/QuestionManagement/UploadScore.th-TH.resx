@@ -24,9 +24,6 @@
   <data name="Composer / arranger" xml:space="preserve">
     <value>ผู้ประพันธ์เพลง / ผู้เรียบเรียง</value>
   </data>
-  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
-    <value>เช่น โมสาร์ท โซนาตะ หมายเลข 16</value>
-  </data>
   <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
     <value>ส่งออกโปรเจกต์ .mscz หรือ .mscx เป็น MusicXML บนคอมพิวเตอร์ของคุณ ไม่จำเป็นต้องแปลงไฟล์บนเซิร์ฟเวอร์</value>
   </data>
@@ -48,11 +45,14 @@
   <data name="Show me how to export" xml:space="preserve">
     <value>แสดงวิธีส่งออก</value>
   </data>
+  <data name="Upload New Score" xml:space="preserve">
+    <value>อัปโหลดผลงานเพลงใหม่</value>
+  </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>อัปโหลดและบันทึก</value>
   </data>
-  <data name="Upload New Score" xml:space="preserve">
-    <value>อัปโหลดผลงานเพลงใหม่</value>
+  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
+    <value>เช่น โมสาร์ท โซนาตะ หมายเลข 16</value>
   </data>
 
 </root>

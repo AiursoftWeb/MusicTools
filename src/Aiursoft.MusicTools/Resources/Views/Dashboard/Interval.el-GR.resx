@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Το διάστημα μεταξύ των δύο νοτών θα υπολογιστεί και θα εμφανιστεί.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>προς</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>Δεν είναι δυνατή η αναγνώριση του ονόματος της νότας</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>προς</value>
   </data>
 
 </root>

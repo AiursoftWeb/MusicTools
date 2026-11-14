@@ -18,11 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
-    <value>„Vedeți” Limba Muzicii</value>
-  </data>
-  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+      <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
     <value>Suport pentru sarcini de lungă durată (cum ar fi e-mailurile sau AI) de tip &quot;fire-and-forget&quot;, cu o interfață grafică pentru gestionarea cozii, procesare paralelă și anulare.</value>
+  </data>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>„Vedeți” Limba Muzicii</value>
   </data>
   <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
     <value>Un sistem integrat de control al accesului bazat pe roluri (RBAC) pentru gestionarea fină a permisiunilor.</value>
@@ -222,14 +222,14 @@
   <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Mod întunecat inteligent care se adaptează la setările sistemului utilizatorului.</value>
   </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Începe un proiect nou</value>
-  </data>
   <data name="Start Test" xml:space="preserve">
     <value>Start Test</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>Începe antrenamentul</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Începe un proiect nou</value>
   </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Suportă atât variabilele de mediu, cât și setările stocate în baza de date, cu prioritate automată acordată variabilelor de mediu pentru suprascrieri fără probleme.</value>

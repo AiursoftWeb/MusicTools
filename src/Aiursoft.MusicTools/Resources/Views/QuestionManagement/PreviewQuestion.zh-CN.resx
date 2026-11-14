@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>长短（3:1）</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>音乐家评审台</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>可能是答案</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>小节数</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>音乐家评审台</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>不同版本之间只有目标小节发生变化。学生看到的是这个小节；他们听到的则是在此上下文中选定的版本。</value>

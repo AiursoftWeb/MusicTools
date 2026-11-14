@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Intervallet mellan de två tonerna kommer att beräknas och visas.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>till</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>Kunde inte känna igen notnamn</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>till</value>
   </data>
 
 </root>

@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>两个音符之间的音程将被计算并显示。</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>到</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>无法识别音符名称</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>到</value>
   </data>
 
 </root>

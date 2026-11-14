@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Escucha un breve contexto musical, céntrate en un compás marcado y elige la notación que le corresponde. Tres o cuatro opciones plausibles, una tarea de escucha clara. No necesitas una cuenta.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Nivel</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>ESCUCHA · PERCIBE · COMPRENDE</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Nivel</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Escucha atentamente y selecciona la notación correspondiente a continuación.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Por favor, carga una partitura con al menos 4 compases.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>preguntas publicadas</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Banco de preguntas</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>¡Incorrecto! Inténtalo de nuevo.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>preguntas publicadas</value>
   </data>
 
 </root>

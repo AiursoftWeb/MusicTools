@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Débutant</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>CRÉEZ UN DÉFI D’ÉCOUTE</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Choisissez le contexte d’écoute, puis concentrez-vous sur une mesure et une différence audible.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Cliquez directement sur la première et la dernière mesure de la partition, ou utilisez les boutons numérotés. Le petit numéro correspond à celui indiqué sur la partition.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>CRÉEZ UN DÉFI D’ÉCOUTE</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Créer une question</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Ne comptez pas les silences. Les versions mélodiques ne modifient que cette note ; les versions rythmiques modifient cette note et la note immédiatement suivante. Choisissez un emplacement simple, sans liaison.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>p. ex. Identification du thème d&apos;ouverture</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Chaque version approuvée peut être jouée comme réponse. Évaluez la plausibilité musicale, et non la ressemblance de chaque version avec l’original.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Qu’est-ce qui fait une bonne question ?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>p. ex. Identification du thème d&apos;ouverture</value>
   </data>
 
 </root>

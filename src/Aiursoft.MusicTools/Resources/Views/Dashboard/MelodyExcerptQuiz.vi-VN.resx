@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Nghe một đoạn nhạc ngắn làm ngữ cảnh, tập trung vào ô nhịp được đánh dấu và chọn bản ký âm tương ứng. Có ba hoặc bốn phiên bản nghe có vẻ hợp lý, nhưng chỉ một nhiệm vụ nghe rõ ràng. Không cần tài khoản.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Cấp độ</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>LẮNG NGHE · NHẬN BIẾT · THẤU HIỂU</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Cấp độ</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Nghe kỹ và chọn ký hiệu khớp dưới đây.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Vui lòng tải lên bản nhạc có ít nhất 4 ô nhịp.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>câu hỏi đã được đăng</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Ngân hàng câu hỏi</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Sai! Hãy thử lại.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>câu hỏi đã được đăng</value>
   </data>
 
 </root>

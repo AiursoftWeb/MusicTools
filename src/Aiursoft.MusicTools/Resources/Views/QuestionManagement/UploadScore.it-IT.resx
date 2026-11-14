@@ -24,9 +24,6 @@
   <data name="Composer / arranger" xml:space="preserve">
     <value>Compositore / arrangiatore</value>
   </data>
-  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
-    <value>es. Sonata di Mozart n. 16</value>
-  </data>
   <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
     <value>Esporta il tuo progetto .mscz o .mscx in formato MusicXML sul tuo computer. Non è necessaria alcuna conversione sul server.</value>
   </data>
@@ -48,11 +45,14 @@
   <data name="Show me how to export" xml:space="preserve">
     <value>Mostrami come esportare</value>
   </data>
+  <data name="Upload New Score" xml:space="preserve">
+    <value>Carica nuova partitura</value>
+  </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Carica e salva</value>
   </data>
-  <data name="Upload New Score" xml:space="preserve">
-    <value>Carica nuova partitura</value>
+  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
+    <value>es. Sonata di Mozart n. 16</value>
   </data>
 
 </root>

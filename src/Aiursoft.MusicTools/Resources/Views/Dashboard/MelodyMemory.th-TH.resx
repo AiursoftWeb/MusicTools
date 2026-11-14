@@ -27,9 +27,6 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 โน้ต / ระดับ</value>
   </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ ครั้งสุดท้าย ⚠</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 ห้อง</value>
   </data>
@@ -221,6 +218,9 @@
   </data>
   <data name="White keys only (Easiest)" xml:space="preserve">
     <value>เฉพาะปุ่มขาว (ง่ายที่สุด)</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ ครั้งสุดท้าย ⚠</value>
   </data>
 
 </root>

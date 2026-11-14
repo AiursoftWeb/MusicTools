@@ -99,14 +99,14 @@
   <data name="Random Start" xml:space="preserve">
     <value>Tilfældig start</value>
   </data>
+  <data name="Root Position" xml:space="preserve">
+    <value>Root Position</value>
+  </data>
   <data name="Root as C" xml:space="preserve">
     <value>Root as C</value>
   </data>
   <data name="Root note" xml:space="preserve">
     <value>Grundtone</value>
-  </data>
-  <data name="Root Position" xml:space="preserve">
-    <value>Root Position</value>
   </data>
   <data name="Root position (Root is lowest)" xml:space="preserve">
     <value>Rodposition (roden er lavest)</value>

@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>ระดับเริ่มต้น</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>สร้างโจทย์ทดสอบการฟัง</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>เลือกบริบทในการฟัง จากนั้นเน้นที่หนึ่งห้องเพลงและความแตกต่างที่ได้ยินได้หนึ่งจุด</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>คลิกห้องเพลงแรกและห้องเพลงสุดท้ายบนโน้ตเพลงโดยตรง หรือใช้ปุ่มตัวเลข ป้ายกำกับขนาดเล็กกว่าคือหมายเลขที่พิมพ์ไว้ในโน้ตเพลง</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>สร้างโจทย์ทดสอบการฟัง</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>สร้างคำถาม</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>ไม่นับตัวหยุดเสียง เวอร์ชันที่เปลี่ยนระดับเสียงจะเปลี่ยนเฉพาะโน้ตตัวนี้ ส่วนเวอร์ชันที่เปลี่ยนจังหวะจะเปลี่ยนโน้ตตัวนี้และโน้ตตัวถัดไปทันที เลือกตำแหน่งที่เรียบง่ายและไม่มีการโยงเสียง</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>เช่น การระบุธีมบทเปิด</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>สามารถใช้เวอร์ชันที่ผ่านการอนุมัติทุกเวอร์ชันเป็นคำตอบได้ โปรดพิจารณาความสมเหตุสมผลทางดนตรี ไม่ใช่ว่าเวอร์ชันใดดูเหมือนต้นฉบับมากที่สุด</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>คำถามที่ดีควรเป็นอย่างไร?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>เช่น การระบุธีมบทเปิด</value>
   </data>
 
 </root>

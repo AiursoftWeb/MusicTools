@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Începător</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>CREEAZĂ O PROVOCARE DE ASCULTARE</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Alegeți contextul de ascultare, apoi concentrați-vă asupra unei măsuri și a unei singure diferențe audibile.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Faceți clic direct pe partitura pe prima și pe ultima măsură sau folosiți butoanele numerotate. Eticheta mai mică indică numărul tipărit pe partitură.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>CREEAZĂ O PROVOCARE DE ASCULTARE</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Creează întrebare</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Nu numărați pauzele. Variantele de înălțime modifică doar această notă; variantele ritmice modifică această notă și nota imediat următoare. Alegeți o poziție simplă, fără legături de prelungire.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>ex. Identificarea temei introductive</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Fiecare versiune aprobată poate fi redată ca răspuns. Evaluați plauzibilitatea muzicală, nu care versiune seamănă cel mai mult cu originalul.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Ce face ca o întrebare să fie bună?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>ex. Identificarea temei introductive</value>
   </data>
 
 </root>

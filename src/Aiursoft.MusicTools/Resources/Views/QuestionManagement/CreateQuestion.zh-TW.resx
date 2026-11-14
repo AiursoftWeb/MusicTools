@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>初學者</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>設計聆聽挑戰</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>選擇聆聽情境，接著聚焦於一個小節和一項可聽出的差異。</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>直接在樂譜上點選第一小節和最後一小節，或使用編號按鈕。較小的標籤是印在樂譜上的小節編號。</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>設計聆聽挑戰</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>建立問題</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>休止符不列入計數。音高版本只會改變這個音符；節奏版本則會改變這個音符及緊接在後的音符。請選擇簡單且沒有延音線連結的位置。</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>例如：開場曲辨識</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>每個核可的版本都可能作為答案播放。請檢視其音樂上的合理性，而不是哪個版本看起來最像原曲。</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>什麼樣的問題才算是好問題？</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>例如：開場曲辨識</value>
   </data>
 
 </root>

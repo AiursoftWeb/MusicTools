@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>Dài–ngắn (3:1)</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>BÀN ĐÁNH GIÁ CỦA NHẠC SĨ</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>Có thể là đáp án</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>Số ô nhịp</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>BÀN ĐÁNH GIÁ CỦA NHẠC SĨ</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>Chỉ có ô nhịp mục tiêu thay đổi giữa các phiên bản. Học sinh nhìn thấy ô nhịp đó và nghe phiên bản được chọn trong ngữ cảnh này.</value>
