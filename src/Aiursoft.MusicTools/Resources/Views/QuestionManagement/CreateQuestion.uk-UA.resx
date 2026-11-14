@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Початківець</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Створіть завдання на аудіювання</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Виберіть контекст прослуховування, а потім зосередьтеся на одному такті й одній відмінності, яку можна почути.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Натисніть безпосередньо на нотному стані перший і останній такти або скористайтеся кнопками з номерами. Менша позначка — це номер, надрукований у нотах.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>Створіть завдання на аудіювання</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Створити питання</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Паузи не рахуйте. У варіантах із зміною висоти змінюється лише ця нота; у варіантах зі зміною ритму — ця нота та наступна за нею. Оберіть просте місце без ліг.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>напр. Визначення зачинної теми</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Кожен схвалений варіант може бути правильною відповіддю. Оцінюйте музичну правдоподібність, а не те, наскільки варіант схожий на оригінал.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Що робить запитання вдалим?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>напр. Визначення зачинної теми</value>
   </data>
 
 </root>

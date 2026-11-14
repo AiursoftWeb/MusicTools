@@ -48,11 +48,11 @@
   <data name="MusicTools is a piece of free software. We believe that music education tools should be accessible to everyone. You can find our source code on GitLab, audit it, and even host your own instance!" xml:space="preserve">
     <value>MusicTools 是一款免費軟件。我們相信音樂教育工具應讓每個人均可接觸。你可以在 GitLab 找到我們的原始碼，審核它，甚至自行主機運行！</value>
   </data>
-  <data name="Play a Melody Variation" xml:space="preserve">
-    <value>播放旋律變奏</value>
-  </data>
   <data name="Play Random Melody" xml:space="preserve">
     <value>播放隨機旋律</value>
+  </data>
+  <data name="Play a Melody Variation" xml:space="preserve">
+    <value>播放旋律變奏</value>
   </data>
   <data name="Preparing your melody..." xml:space="preserve">
     <value>正在準備你的旋律……</value>

@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Dengarkan cuplikan musik singkat, fokus pada satu birama yang ditandai, lalu pilih notasi yang sesuai. Tersedia tiga atau empat pilihan yang masuk akal, dengan satu tugas menyimak yang jelas. Tidak perlu membuat akun.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Tingkat</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>DENGARKAN · PERHATIKAN · PAHAMI</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Tingkat</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Dengarkan dengan cermat dan pilih notasi yang cocok di bawah ini.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Silakan unggah notasi musik dengan minimal 4 birama.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>soal yang telah diterbitkan</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Bank Soal</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Salah! Coba lagi.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>soal yang telah diterbitkan</value>
   </data>
 
 </root>

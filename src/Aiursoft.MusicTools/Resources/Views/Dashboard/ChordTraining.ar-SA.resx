@@ -99,14 +99,14 @@
   <data name="Random Start" xml:space="preserve">
     <value>بدء عشوائي</value>
   </data>
+  <data name="Root Position" xml:space="preserve">
+    <value>Root Position</value>
+  </data>
   <data name="Root as C" xml:space="preserve">
     <value>Root as C</value>
   </data>
   <data name="Root note" xml:space="preserve">
     <value>نوتة الجذر</value>
-  </data>
-  <data name="Root Position" xml:space="preserve">
-    <value>Root Position</value>
   </data>
   <data name="Root position (Root is lowest)" xml:space="preserve">
     <value>موضع الجذر (الجذر هو الأدنى)</value>

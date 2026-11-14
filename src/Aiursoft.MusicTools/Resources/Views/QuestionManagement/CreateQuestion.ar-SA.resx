@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>مبتدئ</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>أنشئ تحديًا للاستماع</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>اختر سياق الاستماع، ثم ركّز على مازورة واحدة وفارق سمعي واحد.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>انقر على المازورة الأولى والأخيرة مباشرةً في المدونة الموسيقية، أو استخدم الأزرار المرقّمة. الرقم الأصغر هو الرقم المطبوع في المدونة الموسيقية.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>أنشئ تحديًا للاستماع</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>إنشاء سؤال</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>لا تحتسب علامات السكوت. تغيّر نسخ النغمات هذه النغمة فقط؛ أما نسخ الإيقاع فتغيّر هذه النغمة والنغمة التي تليها مباشرةً. اختر موضعًا بسيطًا بلا أربطة.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>مثلًا: تحديد الموضوع الافتتاحي</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>يمكن تشغيل أي نسخة معتمدة بوصفها الإجابة. راجع مدى معقوليتها موسيقيًا، لا أيّ النسخ تبدو أقرب إلى الأصل.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>ما الذي يجعل السؤال جيدًا؟</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>مثلًا: تحديد الموضوع الافتتاحي</value>
   </data>
 
 </root>

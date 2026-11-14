@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>ช่วงห่างระหว่างโน้ตทั้งสองจะถูกคำนวณและแสดงผล</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>ถึง</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>ไม่สามารถจดจำชื่อโน้ตได้</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>ถึง</value>
   </data>
 
 </root>

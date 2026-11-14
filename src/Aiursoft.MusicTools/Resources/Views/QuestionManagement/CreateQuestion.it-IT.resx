@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Principiante</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>CREA UNA SFIDA DI ASCOLTO</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Scegli il contesto di ascolto, poi concentrati su una battuta e su una sola differenza udibile.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Fai clic direttamente sulla partitura sulla prima e sull’ultima battuta, oppure usa i pulsanti numerati. L’etichetta più piccola indica il numero riportato sulla partitura.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>CREA UNA SFIDA DI ASCOLTO</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Crea Domanda</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Non contare le pause. Le versioni melodiche modificano solo questa nota; le versioni ritmiche modificano questa nota e quella immediatamente successiva. Scegli una posizione semplice, senza legature.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>es. Identificazione del tema iniziale</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Ogni versione approvata può essere proposta come risposta. Valuta la plausibilità musicale, non quale versione assomiglia di più all’originale.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Cosa rende efficace una domanda?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>es. Identificazione del tema iniziale</value>
   </data>
 
 </root>

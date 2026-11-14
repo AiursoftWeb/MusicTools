@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Interval antara dua not akan dihitung dan ditampilkan.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>ke</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>Tidak dapat mengenali nama not</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>ke</value>
   </data>
 
 </root>

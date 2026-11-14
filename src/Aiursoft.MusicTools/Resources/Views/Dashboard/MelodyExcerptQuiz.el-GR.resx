@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Άκουσε ένα σύντομο μουσικό απόσπασμα, εστίασε σε ένα επισημασμένο μέτρο και επίλεξε τη σημειογραφία που του αντιστοιχεί. Τρεις ή τέσσερις εύλογες εκδοχές, μία σαφής ακουστική δοκιμασία. Δεν χρειάζεται λογαριασμός.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Επίπεδο</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>ΑΚΟΥΣΕ · ΠΡΟΣΕΞΕ · ΚΑΤΑΝΟΗΣΕ</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Επίπεδο</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Ακούστε προσεκτικά και επιλέξτε τη σωστή νوتασία παρακάτω.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Παρακαλώ ανεβάστε ένα παρτιτούρα με τουλάχιστον 4 μέτρα.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>δημοσιευμένες ερωτήσεις</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Τράπεζα Ερωτήσεων</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Λάθος! Δοκιμάστε ξανά.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>δημοσιευμένες ερωτήσεις</value>
   </data>
 
 </root>

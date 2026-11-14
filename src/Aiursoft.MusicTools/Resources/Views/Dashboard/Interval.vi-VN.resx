@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Khoảng cách giữa hai nốt nhạc sẽ được tính toán và hiển thị.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>đến</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>Không thể nhận dạng tên nốt nhạc</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>đến</value>
   </data>
 
 </root>

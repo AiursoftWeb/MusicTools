@@ -18,10 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="cents" xml:space="preserve">
-    <value>센트</value>
-  </data>
-  <data name="Could not access microphone. Please ensure permissions are granted." xml:space="preserve">
+      <data name="Could not access microphone. Please ensure permissions are granted." xml:space="preserve">
     <value>마이크에 액세스할 수 없습니다. 권한이 부여되었는지 확인하세요.</value>
   </data>
   <data name="Frequency History" xml:space="preserve">
@@ -38,6 +35,9 @@
   </data>
   <data name="Your browser does not support audio recording or frequency analysis." xml:space="preserve">
     <value>브라우저가 오디오 녹음 또는 주파수 분석을 지원하지 않습니다.</value>
+  </data>
+  <data name="cents" xml:space="preserve">
+    <value>센트</value>
   </data>
 
 </root>

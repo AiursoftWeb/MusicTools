@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>긴–짧음 (3:1)</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>음악가 검토 공간</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>정답일 수 있음</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>마디 수</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>음악가 검토 공간</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>버전 간에 바뀌는 것은 대상 마디뿐입니다. 학생들은 그 마디 하나를 보고, 이 맥락에서 선택한 버전을 듣습니다.</value>

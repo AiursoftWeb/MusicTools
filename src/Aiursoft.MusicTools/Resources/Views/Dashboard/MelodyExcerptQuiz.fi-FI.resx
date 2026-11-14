@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Kuuntele lyhyt musiikillinen katkelma, keskity yhteen merkittyyn tahtiin ja valitse sitä vastaava nuottikuva. Kolme tai neljä uskottavaa vaihtoehtoa, yksi selkeä kuuntelutehtävä. Tiliä ei tarvita.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Taso</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>KUUNTELE · HAVAITSE · YMMÄRRÄ</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Taso</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Kuuntele tarkasti ja valitse oikea nuotinnos alapuolelta.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Lataa partituuri, jossa on vähintään 4 tahtia.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>julkaistua kysymystä</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Kysymyspankki</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Väärin! Yritä uudelleen.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>julkaistua kysymystä</value>
   </data>
 
 </root>

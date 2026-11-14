@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>聆聽一段簡短的音樂片段，留意其中一個標示的小節，然後選出相符的樂譜。三至四個似是而非的版本，一項清晰的聆聽任務。無需帳戶。</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>級別</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>聆聽 · 留意 · 理解</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>級別</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>請細心聆聽，然後選擇下方相符的樂譜。</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>請上傳至少有4小節的樂譜。</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>已發布的題目</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>題目庫</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>錯誤！再試一次。</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>已發布的題目</value>
   </data>
 
 </root>

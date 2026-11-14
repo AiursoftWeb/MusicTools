@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>初級</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>リスニング問題を作成</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>聴取の文脈を選び、1つの小節と1つの聴き取れる違いに焦点を当ててください。</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>楽譜上で最初と最後の小節を直接クリックするか、番号付きボタンを使ってください。小さい方のラベルは、楽譜に印刷されている小節番号です。</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>リスニング問題を作成</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>問題を生成</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>休符は数えないでください。音高のバリエーションではこの音符だけが変わり、リズムのバリエーションではこの音符と直後の音符が変わります。タイでつながれていない、シンプルな箇所を選んでください。</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>例：オープニングテーマの特定</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>承認済みのバージョンは、どれも解答として出題される可能性があります。元の譜面に最も似ているかどうかではなく、音楽的に不自然でないかを確認してください。</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>良い問題とは？</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>例：オープニングテーマの特定</value>
   </data>
 
 </root>

@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Beginner</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Stel een luisteruitdaging samen</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Kies de luistercontext en richt je vervolgens op één maat en één hoorbaar verschil.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Klik de eerste en laatste maat rechtstreeks in de partituur aan, of gebruik de genummerde knoppen. Het kleinere label is het maatnummer dat in de partituur staat.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>Stel een luisteruitdaging samen</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Vraag maken</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Tel rusten niet mee. Toonhoogteversies veranderen alleen deze noot; ritmeversies veranderen deze noot en de direct daaropvolgende noot. Kies een eenvoudige plek zonder overbinding.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>bijv. Herkenning openingsmotiv</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Elke goedgekeurde versie kan als antwoord worden afgespeeld. Beoordeel of de muziek geloofwaardig klinkt, niet welke versie het meest op het origineel lijkt.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Wat maakt een goede vraag?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>bijv. Herkenning openingsmotiv</value>
   </data>
 
 </root>

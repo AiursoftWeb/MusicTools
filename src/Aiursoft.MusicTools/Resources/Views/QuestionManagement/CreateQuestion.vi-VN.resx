@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Người mới bắt đầu</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>TẠO THỬ THÁCH NGHE NHẠC</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Chọn ngữ cảnh nghe, sau đó tập trung vào một ô nhịp và một điểm khác biệt có thể nghe thấy.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Nhấp trực tiếp vào ô nhịp đầu tiên và ô nhịp cuối cùng trên bản nhạc, hoặc dùng các nút được đánh số. Nhãn nhỏ hơn là số được in trên bản nhạc.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>TẠO THỬ THÁCH NGHE NHẠC</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Tạo câu hỏi</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Không tính các dấu lặng. Các phiên bản cao độ chỉ thay đổi nốt này; các phiên bản tiết tấu thay đổi nốt này và nốt ngay sau đó. Hãy chọn một vị trí đơn giản, không có nốt nối.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>vd. Nhận diện chủ đề mở đầu</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Mỗi phiên bản đã được duyệt đều có thể được phát làm đáp án. Hãy đánh giá tính hợp lý về mặt âm nhạc, chứ không phải phiên bản nào trông giống bản gốc nhất.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Điều gì tạo nên một câu hỏi hay?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>vd. Nhận diện chủ đề mở đầu</value>
   </data>
 
 </root>

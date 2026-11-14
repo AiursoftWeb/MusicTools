@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>سيتم حساب الفاصل الزمني بين النوتتين وعرضه.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>إلى</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>غير قادر على التعرف على اسم النوتة</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>إلى</value>
   </data>
 
 </root>

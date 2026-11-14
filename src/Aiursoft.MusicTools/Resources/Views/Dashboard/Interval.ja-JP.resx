@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>2つの音の間隔が計算され、表示されます。</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>へ</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>音符名を認識できません</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>へ</value>
   </data>
 
 </root>

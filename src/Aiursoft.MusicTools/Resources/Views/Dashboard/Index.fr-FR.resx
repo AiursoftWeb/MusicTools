@@ -18,11 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
-    <value>« Voir » le Langage de la Musique</value>
-  </data>
-  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+      <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
     <value>Prise en charge « fire-and-forget » des tâches longues (comme les e-mails ou l&apos;IA), avec une interface graphique pour la gestion de file d&apos;attente, le traitement parallèle et l&apos;annulation.</value>
+  </data>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>« Voir » le Langage de la Musique</value>
   </data>
   <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
     <value>Un système intégré de contrôle d&apos;accès basé sur les rôles (RBAC) pour une gestion fine des autorisations.</value>
@@ -222,14 +222,14 @@
   <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Mode sombre intelligent qui s&apos;adapte aux paramètres système de l&apos;utilisateur.</value>
   </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Démarrer un nouveau projet</value>
-  </data>
   <data name="Start Test" xml:space="preserve">
     <value>Démarrer le test</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>Lancer l&apos;entraînement</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Démarrer un nouveau projet</value>
   </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Prend en charge les variables d&apos;environnement et les paramètres stockés dans la base de données, avec une priorité automatique accordée aux variables d&apos;environnement pour des substitutions fluides.</value>

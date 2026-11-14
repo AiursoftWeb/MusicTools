@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Αρχάριος</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Δημιουργήστε μια μουσική πρόκληση ακρόασης</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Επιλέξτε το πλαίσιο ακρόασης και, στη συνέχεια, εστιάστε σε ένα μέτρο και σε μία ακουστή διαφορά.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Κάντε κλικ στο πρώτο και στο τελευταίο μέτρο απευθείας στην παρτιτούρα ή χρησιμοποιήστε τα αριθμημένα κουμπιά. Η μικρότερη ένδειξη είναι ο αριθμός που αναγράφεται στην παρτιτούρα.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>Δημιουργήστε μια μουσική πρόκληση ακρόασης</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Δημιουργία Ερώτησης</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Μη μετράτε τις παύσεις. Οι εκδοχές με αλλαγή τονικού ύψους αλλάζουν μόνο αυτή τη νότα· οι ρυθμικές εκδοχές αλλάζουν αυτή τη νότα και την αμέσως επόμενη. Επιλέξτε μια απλή θέση, χωρίς δεσμό διαρκείας.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>π.χ. Εντοπισμός Αρχικής Θεματικής Εξέλιξης</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Κάθε εγκεκριμένη εκδοχή μπορεί να χρησιμοποιηθεί ως απάντηση. Ελέγξτε αν είναι μουσικά εύλογη, όχι ποια εκδοχή μοιάζει περισσότερο με το πρωτότυπο.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Τι κάνει μια ερώτηση καλή;</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>π.χ. Εντοπισμός Αρχικής Θεματικής Εξέλιξης</value>
   </data>
 
 </root>

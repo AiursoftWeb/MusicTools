@@ -27,9 +27,6 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 noder / niveau</value>
   </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ Sidste chance ⚠</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 Tak</value>
   </data>
@@ -221,6 +218,9 @@
   </data>
   <data name="White keys only (Easiest)" xml:space="preserve">
     <value>Kun hvide tangenter (Mest let)</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ Sidste chance ⚠</value>
   </data>
 
 </root>

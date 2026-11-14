@@ -18,11 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
-    <value>&apos;Melihat&apos; Bahasa Musik</value>
-  </data>
-  <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
+      <data name="&quot;Fire-and-forget&quot; support for long-running tasks (like emails or AI), featuring a GUI for queue management, parallel processing, and cancellation." xml:space="preserve">
     <value>Dukungan &quot;fire-and-forget&quot; untuk tugas berjalan lama (seperti email atau AI), dilengkapi antarmuka GUI untuk manajemen antrian, pemrosesan paralel, dan pembatalan.</value>
+  </data>
+  <data name="&apos;See&apos; the Language of Music" xml:space="preserve">
+    <value>&apos;Melihat&apos; Bahasa Musik</value>
   </data>
   <data name="A built-in Role-Based Access Control (RBAC) system for fine-grained permission management." xml:space="preserve">
     <value>Sistem kontrol akses berbasis peran (RBAC) bawaan untuk manajemen izin yang halus.</value>
@@ -222,14 +222,14 @@
   <data name="Smart dark mode that adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Mode gelap cerdas yang menyesuaikan diri dengan pengaturan sistem pengguna.</value>
   </data>
-  <data name="Start a new project" xml:space="preserve">
-    <value>Mulai proyek baru</value>
-  </data>
   <data name="Start Test" xml:space="preserve">
     <value>Mulai Ujian</value>
   </data>
   <data name="Start Training" xml:space="preserve">
     <value>Mulai Latihan</value>
+  </data>
+  <data name="Start a new project" xml:space="preserve">
+    <value>Mulai proyek baru</value>
   </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Mendukung variabel lingkungan dan pengaturan berbasis basis data, dengan prioritas otomatis diberikan kepada variabel lingkungan untuk penggantian yang mulus.</value>

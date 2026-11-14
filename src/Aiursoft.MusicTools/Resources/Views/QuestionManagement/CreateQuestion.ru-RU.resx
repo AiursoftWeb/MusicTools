@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Начальный</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>СОЗДАЙТЕ ЗАДАНИЕ НА ВОСПРИЯТИЕ МУЗЫКИ НА СЛУХ</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Выберите контекст прослушивания, затем сосредоточьтесь на одном такте и одном различимом на слух различии.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Щёлкните по первому и последнему такту непосредственно на нотном стане или воспользуйтесь кнопками с номерами. Мелкая подпись — это номер, указанный в нотах.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>СОЗДАЙТЕ ЗАДАНИЕ НА ВОСПРИЯТИЕ МУЗЫКИ НА СЛУХ</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Создать вопрос</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Паузы не считайте. В вариантах по высоте звука изменяется только эта нота; в ритмических вариантах — эта нота и следующая за ней. Выберите простой фрагмент без лиг.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>напр., Определение начальной темы</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>В качестве ответа может быть воспроизведён любой одобренный вариант. Оценивайте музыкальную правдоподобность, а не то, насколько вариант похож на оригинал.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Что делает вопрос удачным?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>напр., Определение начальной темы</value>
   </data>
 
 </root>

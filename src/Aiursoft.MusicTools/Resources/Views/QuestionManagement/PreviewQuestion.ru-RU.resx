@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>Длинный–короткий (3:1)</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>РАБОЧЕЕ МЕСТО МУЗЫКАЛЬНОГО РЕДАКТОРА</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>Может быть правильным ответом</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>Такты</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>РАБОЧЕЕ МЕСТО МУЗЫКАЛЬНОГО РЕДАКТОРА</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>Между версиями меняется только целевой такт. Учащиеся видят этот такт, а слышат выбранную версию в данном контексте.</value>

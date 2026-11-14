@@ -27,9 +27,6 @@
   <data name="+8 Notes / Lvl" xml:space="preserve">
     <value>+8 個音符 / 等級</value>
   </data>
-  <data name="⚠ Last Stand ⚠" xml:space="preserve">
-    <value>⚠ 最後一搏 ⚠</value>
-  </data>
   <data name="1 Bar" xml:space="preserve">
     <value>1 小節</value>
   </data>
@@ -221,6 +218,9 @@
   </data>
   <data name="White keys only (Easiest)" xml:space="preserve">
     <value>僅限白鍵（最簡單）</value>
+  </data>
+  <data name="⚠ Last Stand ⚠" xml:space="preserve">
+    <value>⚠ 最後一搏 ⚠</value>
   </data>
 
 </root>

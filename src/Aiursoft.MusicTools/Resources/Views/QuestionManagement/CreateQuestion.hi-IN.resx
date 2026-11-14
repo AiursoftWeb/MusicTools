@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>शुरुआती</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>सुनने की चुनौती तैयार करें</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>सुनने का संदर्भ चुनें, फिर एक माप और सुनाई देने वाले एक अंतर पर ध्यान दें।</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>स्कोर में पहले और आख़िरी माप पर सीधे क्लिक करें, या क्रमांकित बटनों का उपयोग करें। छोटा लेबल स्कोर में छपी संख्या है।</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>सुनने की चुनौती तैयार करें</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>प्रश्न बनाएं</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>विरामों को न गिनें। सुर वाले संस्करण केवल इस नोट को बदलते हैं; लय वाले संस्करण इस नोट और इसके तुरंत बाद आने वाले नोट को बदलते हैं। कोई सरल स्थान चुनें, जहाँ नोट बँधा हुआ न हो।</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>जैसे कि प्रारंभिक विषय की पहचान</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>हर स्वीकृत संस्करण को उत्तर के रूप में बजाया जा सकता है। संगीत की दृष्टि से उसकी उपयुक्तता परखें, न कि इस पर कि कौन-सा संस्करण मूल के सबसे अधिक समान दिखता है।</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>एक अच्छा प्रश्न कैसा होता है?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>जैसे कि प्रारंभिक विषय की पहचान</value>
   </data>
 
 </root>

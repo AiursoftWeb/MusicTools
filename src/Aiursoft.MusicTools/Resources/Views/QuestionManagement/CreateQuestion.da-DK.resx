@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Begynder</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Sammensæt en lytteudfordring</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Vælg lytteeksempel, og fokusér derefter på én takt og én hørbar forskel.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Klik direkte på den første og sidste takt i partituret, eller brug de nummererede knapper. Det mindre mærke er det nummer, der er trykt i partituret.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>Sammensæt en lytteudfordring</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Opret spørgsmål</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Tæl ikke pauser med. Versioner med ændret tonehøjde ændrer kun denne tone; rytmeversioner ændrer denne tone og den umiddelbart følgende tone. Vælg et enkelt sted uden bindebuer.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>f.eks. Idetifikation af åbningsmotiv</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Alle godkendte versioner kan afspilles som svaret. Vurder, om musikken lyder plausibel, ikke hvilken version der ligner originalen mest.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Hvad kendetegner et godt spørgsmål?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>f.eks. Idetifikation af åbningsmotiv</value>
   </data>
 
 </root>

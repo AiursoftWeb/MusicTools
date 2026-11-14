@@ -177,11 +177,11 @@
   <data name="The interval between the two notes will be calculated and displayed." xml:space="preserve">
     <value>Intervallet mellem de to noder vil blive beregnet og vist.</value>
   </data>
-  <data name="to" xml:space="preserve">
-    <value>til</value>
-  </data>
   <data name="Unable to recognize note name" xml:space="preserve">
     <value>Kan ikke genkende nodenavn</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>til</value>
   </data>
 
 </root>

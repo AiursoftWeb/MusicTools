@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Прослушайте короткий музыкальный фрагмент, сосредоточьтесь на одном отмеченном такте и выберите соответствующую ему нотную запись. Три или четыре правдоподобных варианта — одно понятное задание на слух. Регистрация не требуется.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Уровень</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>СЛУШАЙ · ЗАМЕЧАЙ · ПОНИМАЙ</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Уровень</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Внимательно прослушайте и выберите соответствующую нотацию ниже.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Пожалуйста, загрузите ноты, содержащие не менее 4 тактов.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>опубликованных вопросов</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Банк вопросов</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Неверно! Попробуйте снова.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>опубликованных вопросов</value>
   </data>
 
 </root>

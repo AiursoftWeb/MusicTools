@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Nybörjare</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>Skapa en lyssningsutmaning</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Välj ett lyssningssammanhang och fokusera sedan på en takt och en hörbar skillnad.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Klicka direkt på notbilden på den första och sista takten, eller använd de numrerade knapparna. Den mindre etiketten visar numret som står i notbilden.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>Skapa en lyssningsutmaning</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Skapa fråga</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Räkna inte pauser. Versioner med ändrad tonhöjd ändrar bara den här tonen; rytmversioner ändrar den här tonen och den direkt följande tonen. Välj en enkel plats utan bindebågar.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>t.ex. Identifiera öppningstemat</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Varje godkänd version kan spelas upp som svar. Bedöm om den är musikaliskt rimlig, inte vilken version som liknar originalet mest.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Vad kännetecknar en bra fråga?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>t.ex. Identifiera öppningstemat</value>
   </data>
 
 </root>

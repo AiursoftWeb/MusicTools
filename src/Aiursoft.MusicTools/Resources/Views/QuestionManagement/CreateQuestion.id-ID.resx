@@ -36,6 +36,9 @@
   <data name="Beginner" xml:space="preserve">
     <value>Pemula</value>
   </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>SUSUN TANTANGAN MENYIMAK</value>
+  </data>
   <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
     <value>Pilih konteks audio, lalu fokus pada satu birama dan satu perbedaan yang dapat didengar.</value>
   </data>
@@ -44,9 +47,6 @@
   </data>
   <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
     <value>Klik birama pertama dan terakhir langsung pada partitur, atau gunakan tombol bernomor. Label yang lebih kecil adalah nomor yang tercetak pada partitur.</value>
-  </data>
-  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
-    <value>SUSUN TANTANGAN MENYIMAK</value>
   </data>
   <data name="Create Question" xml:space="preserve">
     <value>Buat Pertanyaan</value>
@@ -62,9 +62,6 @@
   </data>
   <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
     <value>Jangan hitung tanda istirahat. Versi nada hanya mengubah not ini; versi ritme mengubah not ini dan not berikutnya. Pilih lokasi sederhana tanpa not terikat.</value>
-  </data>
-  <data name="e.g. Opening Theme Identification" xml:space="preserve">
-    <value>mis. Identifikasi Tema Pembuka</value>
   </data>
   <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
     <value>Setiap versi yang disetujui dapat dimainkan sebagai jawaban. Tinjau kewajaran musikalnya, bukan versi mana yang paling mirip dengan aslinya.</value>
@@ -170,6 +167,9 @@
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Apa yang membuat sebuah pertanyaan yang baik?</value>
+  </data>
+  <data name="e.g. Opening Theme Identification" xml:space="preserve">
+    <value>mis. Identifikasi Tema Pembuka</value>
   </data>
 
 </root>

@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>Lyssna på ett kort musikaliskt sammanhang, fokusera på en markerad takt och välj notbilden som motsvarar den. Tre eller fyra trovärdiga alternativ, en tydlig lyssningsuppgift. Inget konto behövs.</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>Nivå</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>LYSSNA · UPPTÄCK · FÖRSTÅ</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Nivå</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>Lyssna noga och välj motsvarande noter nedan.</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>Ladda upp ett partitur med minst 4 takter.</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>publicerade frågor</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>Frågebank</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>Fel! Försök igen.</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>publicerade frågor</value>
   </data>
 
 </root>

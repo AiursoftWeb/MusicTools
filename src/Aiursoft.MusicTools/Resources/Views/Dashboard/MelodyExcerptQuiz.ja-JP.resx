@@ -48,11 +48,11 @@
   <data name="Hear a short musical context, focus on one marked measure, and choose its matching notation. Three or four plausible versions, one clear listening task. No account needed." xml:space="preserve">
     <value>短い音楽の流れを聴き、印の付いた小節に注目して、それに合う楽譜を選びましょう。もっともらしい候補は3つまたは4つ。聴き取りの課題はシンプルです。アカウント登録は不要です。</value>
   </data>
-  <data name="Level" xml:space="preserve">
-    <value>レベル</value>
-  </data>
   <data name="LISTEN · NOTICE · UNDERSTAND" xml:space="preserve">
     <value>聴く · 気づく · 理解する</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>レベル</value>
   </data>
   <data name="Listen carefully and select the matching notation below." xml:space="preserve">
     <value>よく聴いて、下に合った楽譜を選んでください。</value>
@@ -89,9 +89,6 @@
   </data>
   <data name="Please upload a score with at least 4 measures." xml:space="preserve">
     <value>4小節以上のスコアをアップロードしてください。</value>
-  </data>
-  <data name="published questions" xml:space="preserve">
-    <value>公開済みの問題</value>
   </data>
   <data name="Question Bank" xml:space="preserve">
     <value>問題集</value>
@@ -134,6 +131,9 @@
   </data>
   <data name="Wrong! Try again." xml:space="preserve">
     <value>不正解！もう一度挑戦してください。</value>
+  </data>
+  <data name="published questions" xml:space="preserve">
+    <value>公開済みの問題</value>
   </data>
 
 </root>

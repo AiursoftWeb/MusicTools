@@ -51,14 +51,14 @@
   <data name="Long–short (3:1)" xml:space="preserve">
     <value>ยาว–สั้น (3:1)</value>
   </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>พื้นที่รีวิวสำหรับนักดนตรี</value>
+  </data>
   <data name="May be the answer" xml:space="preserve">
     <value>อาจเป็นคำตอบ</value>
   </data>
   <data name="Measures" xml:space="preserve">
     <value>จำนวนท่อน</value>
-  </data>
-  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
-    <value>พื้นที่รีวิวสำหรับนักดนตรี</value>
   </data>
   <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
     <value>มีเพียงห้องเพลงเป้าหมายเท่านั้นที่เปลี่ยนไปในแต่ละเวอร์ชัน นักเรียนจะเห็นห้องเพลงนั้น และได้ยินเวอร์ชันที่เลือกในบริบทนี้</value>

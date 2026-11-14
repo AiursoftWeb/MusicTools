@@ -24,9 +24,6 @@
   <data name="Composer / arranger" xml:space="preserve">
     <value>Komponist / arrangør</value>
   </data>
-  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
-    <value>f.eks. Mozart Sonate nr. 16</value>
-  </data>
   <data name="Export your .mscz or .mscx project as MusicXML on your computer. No server conversion is needed." xml:space="preserve">
     <value>Eksportér dit .mscz- eller .mscx-projekt som MusicXML på din computer. Det er ikke nødvendigt med konvertering på en server.</value>
   </data>
@@ -48,11 +45,14 @@
   <data name="Show me how to export" xml:space="preserve">
     <value>Vis mig, hvordan jeg eksporterer</value>
   </data>
+  <data name="Upload New Score" xml:space="preserve">
+    <value>Upload ny partitur</value>
+  </data>
   <data name="Upload and Save" xml:space="preserve">
     <value>Upload og gem</value>
   </data>
-  <data name="Upload New Score" xml:space="preserve">
-    <value>Upload ny partitur</value>
+  <data name="e.g. Mozart Sonata No. 16" xml:space="preserve">
+    <value>f.eks. Mozart Sonate nr. 16</value>
   </data>
 
 </root>
