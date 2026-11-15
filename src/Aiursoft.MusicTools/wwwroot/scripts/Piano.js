@@ -546,6 +546,9 @@ class Piano {
         for (const [key, note] of Object.entries(keyMapping)) {
             noteToKeyMap.set(note, key);
         }
+        // Keep punctuation keys stable when Shift changes before keyup.
+        const shiftedKeys = { "<": ",", ">": ".", "?": "/" };
+        const getKey = (event) => (shiftedKeys[event.key] || event.key).toUpperCase();
         document.addEventListener("keydown", (event) => {
             if (
                 event.target.tagName === "INPUT" ||
@@ -553,7 +556,7 @@ class Piano {
             ) {
                 return;
             }
-            const key = event.key.toUpperCase();
+            const key = getKey(event);
             if (this.#activeKeys.has(key) || event.repeat) {
                 return;
             }
@@ -577,7 +580,7 @@ class Piano {
             this.#onClickCallback(noteName);
         });
         document.addEventListener("keyup", (event) => {
-            const key = event.key.toUpperCase();
+            const key = getKey(event);
             if (this.#activeKeys.has(key)) {
                 this.#activeKeys.delete(key);
                 const noteName = keyMapping[key];
