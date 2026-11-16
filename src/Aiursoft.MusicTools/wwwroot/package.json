@@ -11,7 +11,7 @@
     "canvas-confetti": "^1.9.4",
     "dropify": "^0.2.2",
     "events": "^3.3.0",
-    "tonal": "^6.5.1",
+    "tonal": "^6.6.0",
     "tone": "^14.9.17",
     "webmidi": "^3.3.1"
   },
