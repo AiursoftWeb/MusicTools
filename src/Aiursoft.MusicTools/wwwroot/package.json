@@ -5,6 +5,7 @@
   "author": "Anduin Xue",
   "license": "MIT",
   "dependencies": {
+    "@aiursoft/uistack": "^2.0.25",
     "@tensorflow/tfjs-backend-cpu": "^4.22.0",
     "@tensorflow/tfjs-core": "^4.22.0",
     "@tonejs/piano": "^0.2.1",
@@ -28,6 +29,7 @@
     "vite-plugin-static-copy": "^3.4.0"
   },
   "keep": {
+    "@aiursoft/uistack": "dist",
     "dropify": "dist"
   },
   "scripts": {
