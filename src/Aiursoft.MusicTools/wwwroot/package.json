@@ -5,7 +5,7 @@
   "author": "Anduin Xue",
   "license": "MIT",
   "dependencies": {
-    "@aiursoft/uistack": "^2.0.25",
+    "@aiursoft/uistack": "^2.0.26",
     "@tensorflow/tfjs-backend-cpu": "^4.22.0",
     "@tensorflow/tfjs-core": "^4.22.0",
     "@tonejs/piano": "^0.2.1",
