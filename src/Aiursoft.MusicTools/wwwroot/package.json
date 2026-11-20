@@ -5,14 +5,14 @@
   "author": "Anduin Xue",
   "license": "MIT",
   "dependencies": {
-    "@aiursoft/uistack": "^2.0.28",
+    "@aiursoft/uistack": "^2.0.29",
     "@tensorflow/tfjs-backend-cpu": "^4.22.0",
     "@tensorflow/tfjs-core": "^4.22.0",
     "@tonejs/piano": "^0.2.1",
     "canvas-confetti": "^1.9.4",
     "dropify": "^0.2.2",
     "events": "^3.3.0",
-    "tonal": "^6.7.1",
+    "tonal": "^6.8.0",
     "tone": "^14.9.17",
     "webmidi": "^3.3.1"
   },
