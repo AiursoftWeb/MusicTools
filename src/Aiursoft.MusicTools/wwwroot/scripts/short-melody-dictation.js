@@ -2,7 +2,6 @@ import Piano from './Piano.js';
 import AudioPlayer from './AudioPlayer.js';
 import MusicStaff from './MusicStaff.js';
 import { ShortMelodyGenerator } from './ShortMelodyGenerator.js';
-import * as Tone from 'tone';
 import { getLocalizedText } from './localization.js';
 
 class ShortMelodyDictation {
