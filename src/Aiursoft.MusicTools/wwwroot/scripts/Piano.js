@@ -178,6 +178,7 @@ class Piano {
                 // --- A. Touch Device (Mobile/Tablet) Logic ---
 
                 let isScrolling = false;
+                let awaitingActivation = false;
                 let startX = 0,
                     startY = 0;
 
@@ -192,8 +193,9 @@ class Piano {
                         startX = event.touches[0].clientX;
                         startY = event.touches[0].clientY;
 
-                        // 2. Play sound immediately
-                        playSound();
+                        // The first touch can activate audio only when it ends.
+                        awaitingActivation = navigator.userActivation?.hasBeenActive === false;
+                        if (!awaitingActivation) playSound();
                     },
                     { passive: true }
                 );
