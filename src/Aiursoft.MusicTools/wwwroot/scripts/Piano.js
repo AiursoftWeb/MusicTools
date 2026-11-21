@@ -1,5 +1,4 @@
-import * as Tone from "tone";
-import { Piano as TonePiano } from "@tonejs/piano";
+import { getPianoAudioContext, loadPianoLibrary } from "./piano-audio.js";
 
 class Piano {
     // --- 1. 私有字段 ---
@@ -9,6 +8,7 @@ class Piano {
     #keyMap; // (e.g., "C4" -> HTMLElement)
     #onClickCallback;
     #activeKeys;
+    #tone;
     #tonePianoInstance; // Instance of @tonejs/piano
     #loadPromise;
     #activeOscillators = new Set();
@@ -64,39 +64,6 @@ class Piano {
             volumeDb: 0,
             ...options,
         };
-        if (this.#options.isClickable) {
-            this.#audioContext = new (window.AudioContext ||
-                window.webkitAudioContext)();
-
-            // Initialize high-quality Tone.js Piano
-            // Use local audio files for airgap deployment
-            console.log(
-                "[Piano.js] Initializing @tonejs/piano with local audio samples..."
-            );
-            this.#tonePianoInstance = new TonePiano({
-                velocities: 5,
-                // Use local audio files (copied from node_modules during build)
-                url: "/dist/audio/salamander/",
-            });
-            this.#tonePianoInstance.output.gain.value = Tone.dbToGain(this.#options.volumeDb);
-            this.#tonePianoInstance.toDestination();
-            this.#loadPromise = this.#tonePianoInstance.load();
-            this.#loadPromise
-                .then(() => {
-                    console.log(
-                        "[Piano.js] High-quality piano samples loaded from local storage!"
-                    );
-                })
-                .catch((err) => {
-                    console.error(
-                        "[Piano.js] Failed to load piano samples:",
-                        err
-                    );
-                    console.error(
-                        "[Piano.js] Will fallback to oscillator synthesis"
-                    );
-                });
-        }
         this.#keyMap = new Map();
         this.#onClickCallback = () => {};
         this.#activeKeys = new Set();
@@ -104,13 +71,6 @@ class Piano {
         // 4. 构建钢琴 (不变)
         this.#createPianoHTML();
 
-        // 4.1 Show loading state if clickable
-        if (this.#options.isClickable && !this.isLoaded) {
-            this.#showLoadingState();
-            this.waitForSamples().then(() => {
-                this.#hideLoadingState();
-            });
-        }
         if (this.#options.isClickable) {
             this.#addClickListeners();
         }
@@ -198,17 +158,7 @@ class Piano {
         this.#keyMap.forEach((keyEl, noteName) => {
             const midi = parseInt(keyEl.dataset.midi, 10);
 
-            // Shared play sound function
-            const playSound = () => {
-                if (this.#audioContext.state === "suspended") {
-                    this.#audioContext.resume();
-                }
-                // Ensure Tone.js context is started
-                if (Tone.context.state === "suspended") {
-                    Tone.start();
-                }
-                this.#playNote(midi);
-            };
+            const playSound = () => this.#playNote(midi);
 
             // --- C. Keyboard (Enter/Space) on focused key ---
             keyEl.addEventListener("keydown", (event) => {
@@ -309,18 +259,20 @@ class Piano {
      * [私有] 播放单个音符
      */
     async #playNote(midiNote, duration = 0.5) {
-        // --- NEW: Wait for samples if loading ---
-        if (this.#loadPromise) {
-            await this.#loadPromise;
+        await this.waitForSamples();
+        if (!this.#audioContext) return;
+
+        if (this.#audioContext.state === "suspended") {
+            await this.#audioContext.resume();
         }
 
         // 1. Try to use High-Quality Piano
         if (this.#tonePianoInstance && this.#tonePianoInstance.loaded) {
-            const noteName = Tone.Frequency(midiNote, "midi").toNote();
+            const noteName = this.#tone.Frequency(midiNote, "midi").toNote();
             this.#tonePianoInstance.keyDown({ note: noteName });
             this.#tonePianoInstance.keyUp({
                 note: noteName,
-                time: Tone.now() + duration,
+                time: this.#tone.now() + duration,
             });
             return;
         }
@@ -334,7 +286,7 @@ class Piano {
         const gainNode = this.#audioContext.createGain();
         const attackTime = 0.01;
         const decayTime = 0.1;
-        const volume = Tone.dbToGain(this.#options.volumeDb);
+        const volume = 10 ** (this.#options.volumeDb / 20);
         const sustainLevel = 0.1 * volume;
         const releaseTime = 0.3;
         const scheduledEndTime = now + duration;
@@ -370,9 +322,27 @@ class Piano {
      * @returns {Promise<void>}
      */
     async waitForSamples() {
-        if (!this.#options.isClickable) return;
-        if (this.#loadPromise) {
-            await this.#loadPromise;
+        if (!this.#options.isClickable || navigator.userActivation?.hasBeenActive === false) return;
+
+        this.#loadPromise ??= this.#loadSamples();
+        await this.#loadPromise;
+    }
+
+    async #loadSamples() {
+        this.#audioContext = getPianoAudioContext();
+        this.#showLoadingState();
+        try {
+            const { Tone, Piano } = await loadPianoLibrary();
+            const instrument = new Piano({ velocities: 5, url: "/dist/audio/salamander/" });
+            instrument.output.gain.value = Tone.dbToGain(this.#options.volumeDb);
+            instrument.toDestination();
+            await instrument.load();
+            this.#tone = Tone;
+            this.#tonePianoInstance = instrument;
+        } catch (error) {
+            console.error("Failed to load piano samples. Using oscillator synthesis.", error);
+        } finally {
+            this.#hideLoadingState();
         }
     }
 
@@ -424,8 +394,8 @@ class Piano {
     }
 
     stopAll() {
-        const now = (typeof Tone !== "undefined" && Tone.now) ? Tone.now() : 0;
         if (this.#tonePianoInstance && this.#tonePianoInstance.loaded) {
+            const now = this.#tone.now();
             this.#keyMap.forEach((_, noteName) => {
                 try {
                     this.#tonePianoInstance.keyUp({ note: noteName, time: now });
@@ -461,19 +431,6 @@ class Piano {
                 `Piano.js: playNote called with invalid noteName: ${noteName}`
             );
             return;
-        }
-
-        // Play sound
-        if (this.#audioContext && this.#audioContext.state === "suspended") {
-            this.#audioContext.resume();
-        }
-        // Ensure Tone.js context is started
-        if (
-            typeof Tone !== "undefined" &&
-            Tone.context &&
-            Tone.context.state === "suspended"
-        ) {
-            Tone.start();
         }
 
         const midi = parseInt(keyEl.dataset.midi, 10);
@@ -536,7 +493,7 @@ class Piano {
     }
 
     bindToComputerKeyboard(keyMapping) {
-        if (!this.#options.isClickable || !this.#audioContext) {
+        if (!this.#options.isClickable) {
             console.warn(
                 "Piano.js: 必须在 'isClickable: true' 模式下才能绑定键盘。"
             );
@@ -572,9 +529,6 @@ class Piano {
             console.log(`[Keyboard] KeyDown: ${key} -> ${noteName}`);
             this.#activeKeys.add(key);
             keyEl.classList.add("active");
-            if (this.#audioContext.state === "suspended") {
-                this.#audioContext.resume();
-            }
             const midi = parseInt(keyEl.dataset.midi, 10);
             this.#playNote(midi);
             this.#onClickCallback(noteName);

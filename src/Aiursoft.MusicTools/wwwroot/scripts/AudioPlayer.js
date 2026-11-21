@@ -1,5 +1,4 @@
-import * as Tone from 'tone';
-import { Piano as TonePiano } from '@tonejs/piano';
+import { getPianoAudioContext, loadPianoLibrary } from './piano-audio.js';
 
 // 1. 乐曲库 (不变)
 const SONG_LIBRARY = {
@@ -234,28 +233,8 @@ class AudioPlayer {
  * AudioPlayer.js - constructor
  * ===================================================================== */
     constructor(elements) {
-        this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         this.activeOscillators = new Set();
         this.activeMarkers = new Set();
-        this.tonePianoInstance = null;
-        this.loadPromise = null;
-
-        // Initialize high-quality Tone Piano
-        // Use local audio files for airgap deployment
-        console.log("[AudioPlayer] Initializing @tonejs/piano with local audio samples...");
-        this.tonePianoInstance = new TonePiano({
-            velocities: 5,
-            url: "/dist/audio/salamander/",
-        });
-        this.tonePianoInstance.toDestination();
-        this.loadPromise = this.tonePianoInstance.load();
-        this.loadPromise
-            .then(() => {
-                console.log("[AudioPlayer] High-quality piano samples loaded!");
-            })
-            .catch(err => {
-                console.error("[AudioPlayer] Failed to load piano samples:", err);
-            });
 
         // DOM 元素
         this.playStopButton = elements.playStopButton;
@@ -327,9 +306,8 @@ class AudioPlayer {
      */
     setKey(keyIndex) {
         this.currentKey = parseInt(keyIndex, 10);
-        const now = this.audioContext.currentTime;
-
         if (this.activeOscillators.size > 0) {
+            const now = this.audioContext.currentTime;
             const song = SONG_LIBRARY[this.selectedSongKey];
             const transpositionOffset = this.currentKey - song.baseKey;
             const detuneInCents = transpositionOffset * 100;
@@ -348,6 +326,7 @@ class AudioPlayer {
     stop() {
         this.isPlaying = false;
         this._setPlayButtonState(false); // 更新按钮外观
+        if (!this.audioContext) return;
 
         const now = this.audioContext.currentTime;
 
@@ -360,7 +339,7 @@ class AudioPlayer {
         // 2. 停止 TonePiano
         if (this.tonePianoInstance && this.tonePianoInstance.loaded) {
             // Tone.js context time
-            const toneNow = Tone.now();
+            const toneNow = this.tone.now();
             // We can't easily stop all scheduled notes in Tone.Piano without knowing which ones are playing
             // but we can at least call keyUp for a wide range or handle it via Transport if we used it.
             // Since we don't have a list of active notes here, we'll just hope keyUp for all notes works
@@ -369,7 +348,7 @@ class AudioPlayer {
             // But here we can just call keyUp for all MIDI notes 0-127 if we really want to be sure.
             for (let i = 0; i < 127; i++) {
                 try {
-                    const noteName = Tone.Frequency(i, "midi").toNote();
+                    const noteName = this.tone.Frequency(i, "midi").toNote();
                     this.tonePianoInstance.keyUp({ note: noteName, time: toneNow });
                 } catch(e) {}
             }
@@ -385,50 +364,39 @@ class AudioPlayer {
         // =======================================================
     }
 
-    /**
-     * Wait for piano samples to load.
-     * @returns {Promise<void>}
-     */
-    async waitForSamples() {
-        if (this.loadPromise) {
-            await this.loadPromise;
+    async #loadSamples() {
+        this.audioContext = getPianoAudioContext();
+        try {
+            const { Tone, Piano } = await loadPianoLibrary();
+            const instrument = new Piano({ velocities: 5, url: "/dist/audio/salamander/" });
+            instrument.toDestination();
+            await instrument.load();
+            this.tone = Tone;
+            this.tonePianoInstance = instrument;
+        } catch (error) {
+            console.error("Failed to load piano samples. Using oscillator synthesis.", error);
         }
     }
 
-    /**
-     * Check if piano samples are loaded.
-     * @returns {boolean}
-     */
-    get isLoaded() {
-        return !!(this.tonePianoInstance && this.tonePianoInstance.loaded);
-    }
-
-    /**
-     * 【公共 API】
-     * 播放当前选定的歌曲
-     */
+    /** Plays the selected song. */
     async play() {
-        if (this.isPlaying) return; // 防止重复调用
+        if (this.isPlaying || this.playStopButton.disabled) return;
 
-        // --- NEW: Wait for High-Quality Samples ---
-        if (!this.isLoaded) {
-            console.log("[AudioPlayer] Samples not ready, waiting...");
+        if (!this.loadPromise) {
             const originalContent = this.playStopButton.innerHTML;
             this.playStopButton.disabled = true;
             this.playStopButton.innerHTML = `<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span> Loading...`;
-
-            await this.waitForSamples();
-
-            this.playStopButton.disabled = false;
-            this.playStopButton.innerHTML = originalContent;
-            console.log("[AudioPlayer] Samples ready, starting playback.");
+            this.loadPromise = this.#loadSamples();
+            try {
+                await this.loadPromise;
+            } finally {
+                this.playStopButton.disabled = false;
+                this.playStopButton.innerHTML = originalContent;
+            }
         }
 
         if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume();
-        }
-        if (Tone.context.state === 'suspended') {
-            Tone.start();
+            await this.audioContext.resume();
         }
 
         this.isPlaying = true;
@@ -504,8 +472,8 @@ class AudioPlayer {
         // 1. Try high-quality piano first
         if (this.tonePianoInstance && this.tonePianoInstance.loaded) {
             const finalMidi = midiNote + Math.round(detuneInCents / 100);
-            const noteName = Tone.Frequency(finalMidi, "midi").toNote();
-            const delay = startTime - Tone.now();
+            const noteName = this.tone.Frequency(finalMidi, "midi").toNote();
+            const delay = startTime - this.tone.now();
             this.tonePianoInstance.keyDown({ note: noteName, time: `+${delay}` });
             this.tonePianoInstance.keyUp({ note: noteName, time: `+${delay + duration}` });
             return;
