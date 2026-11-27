@@ -24,17 +24,35 @@
   <data name="3 bars, 4/4 time signature." xml:space="preserve">
     <value>3小节，4/4拍。</value>
   </data>
+  <data name="Audio could not play. Press Play Harmony to retry." xml:space="preserve">
+    <value>音频无法播放。请按下“播放和声”重试。</value>
+  </data>
   <data name="Audio plays max 3 times." xml:space="preserve">
     <value>音频最多播放3次。</value>
   </data>
+  <data name="Back to settings" xml:space="preserve">
+    <value>返回设置</value>
+  </data>
+  <data name="Correct answer: {0}" xml:space="preserve">
+    <value>正确答案：{0}</value>
+  </data>
   <data name="Correct!" xml:space="preserve">
     <value>正确！</value>
+  </data>
+  <data name="Could not load the exercise. Please try again." xml:space="preserve">
+    <value>无法加载练习，请重试。</value>
   </data>
   <data name="Four-Part Harmony Dictation" xml:space="preserve">
     <value>四部和声听写</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>信息</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>调性</value>
+  </data>
+  <data name="Listen for the soprano and bass, then choose the matching score." xml:space="preserve">
+    <value>聆听女高音和男低音，然后选择匹配的乐谱。</value>
   </data>
   <data name="Listen to 3 bars of 4-part harmony and identify the correct progression." xml:space="preserve">
     <value>聆听三小节的四部和声，并识别正确的和声进行。</value>
@@ -65,6 +83,9 @@
   </data>
   <data name="Start Exam" xml:space="preserve">
     <value>开始考试</value>
+  </data>
+  <data name="Time remaining" xml:space="preserve">
+    <value>剩余时间</value>
   </data>
   <data name="Time&apos;s up!" xml:space="preserve">
     <value>时间到！</value>
