@@ -13,14 +13,14 @@ public class FourPartHarmonyTests : BrowserTestBase
         await Page.Locator("#harmony-key").SelectOptionAsync("Dm");
         await Page.Locator("#btn-start").ClickAsync();
         var options = Page.Locator(".choose-option");
-        var score = Page.Locator(".harmony-score").First;
+        var score = Page.Locator(".option-card .harmony-score").First;
         await Expect(options.First).ToBeEnabledAsync(new() { Timeout = 30_000 });
         await Expect(score.Locator(".vf-notehead")).ToHaveCountAsync(18);
         Assert.IsTrue(await score.EvaluateAsync<bool>("s => s.scrollWidth <= s.clientWidth + 1"));
 
         await Page.SetViewportSizeAsync(768, 844);
         await Page.SetViewportSizeAsync(1280, 844);
-        await Page.WaitForFunctionAsync("() => document.querySelector('.harmony-score').clientWidth < 500");
+        await Page.WaitForFunctionAsync("() => document.querySelector('.option-card .harmony-score').clientWidth < 500");
         Assert.IsTrue(await score.EvaluateAsync<bool>("s => s.scrollWidth <= s.clientWidth + 1"));
 
         await score.ClickAsync();
@@ -36,5 +36,39 @@ public class FourPartHarmonyTests : BrowserTestBase
         await Expect(solution).ToHaveCountAsync(0);
         await Page.Locator("#btn-settings").ClickAsync();
         await Expect(Page.Locator("#harmony-key")).ToBeVisibleAsync();
+    }
+
+    [TestMethod]
+    public async Task ChordDictationGradesEveryBeatAndRevealsTheScoreAfterSubmission()
+    {
+        await Page.GotoAsync("/Dashboard/FourPartHarmony");
+        await Page.Locator("#harmony-key").SelectOptionAsync("Dm");
+        await Page.Locator("#harmony-mode").SelectOptionAsync("dictation");
+        await Page.Locator("#tonic-cue").UncheckAsync();
+        await Page.Locator("#btn-start").ClickAsync();
+        var slots = Page.Locator(".dictation-chord");
+        var check = Page.Locator("#submit-dictation");
+        await Expect(slots.First).ToBeEnabledAsync(new() { Timeout = 30_000 });
+        await Expect(check).ToBeDisabledAsync();
+        await Expect(Page.Locator("#score-options")).ToBeHiddenAsync();
+        await Expect(Page.Locator("#review-controls")).ToBeHiddenAsync();
+        for (var i = 0; i < 9; i++)
+        {
+            await slots.Nth(i).SelectOptionAsync("i");
+        }
+
+        await check.ClickAsync();
+        await Expect(Page.Locator("#wrong-count")).ToHaveTextAsync("1");
+        await Expect(slots.Last).ToHaveClassAsync(new System.Text.RegularExpressions.Regex("is-valid"));
+        await Expect(Page.Locator(".dictation-chord.is-invalid").First).ToBeVisibleAsync();
+        await Expect(Page.Locator("#dictation-score .vf-notehead")).ToHaveCountAsync(36);
+        await Page.Locator("#review-voice").SelectOptionAsync("tenor");
+        await Page.Locator("#btn-play-harmony").ClickAsync();
+        await Expect(Page.Locator("#play-count-text")).ToHaveTextAsync("1 / 3");
+        await Page.Locator("#btn-next").ClickAsync();
+        await Expect(slots.First).ToBeEnabledAsync();
+        await Expect(slots.First).ToHaveValueAsync("");
+        await Expect(check).ToBeDisabledAsync();
+        await Expect(Page.Locator("#dictation-score")).ToBeHiddenAsync();
     }
 }
