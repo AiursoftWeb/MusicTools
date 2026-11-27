@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Αναπτύξτε αποκλειστικά στο UTC, ενώ το σύστημα μετατρέπει και εμφανίζει αυτόματα τις ημερομηνίες στην τοπική ώρα του χρήστη.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>Ακροαστείτε τετραφωνία εντοπίζοντας την Σοπράνο, την Μπάσο και τους Ρωμαϊκούς Αριθμούς.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>Ακούστε το πιάνο και επιλέξτε την παρτιτούρα που ταιριάζει στις ψηλότερες και χαμηλότερες νότες ή αναγνωρίστε τις συγχορδίες και τις αναστροφές τους.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Διαμορφωμένο με Docker για εύκολη μεταφόρτωση</value>

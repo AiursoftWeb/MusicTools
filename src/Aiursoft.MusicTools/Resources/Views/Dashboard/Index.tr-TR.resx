@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>UTC&apos;de özel olarak geliştirin, sistem tarihleri otomatik olarak kullanıcının yerel saat dilimine dönüştürür ve görüntüler.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>Soprano, Bas ve Roma Rakamlarını belirleyerek dört sesli harmoniyi yazdırın.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>Piyanoyu dinleyip en tiz ve en pes seslere uyan nota yazısını seçin ya da akorları ve çevrimlerini belirleyin.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker ile Kolay Dağıtım İçin Hazır</value>

@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>Усі тональності можуть бути основними</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>За самими лише висотами цих звуків неможливо однозначно визначити основний тон акорду.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>Удосконалений тріад</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Скинути вибір</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Кореневий тон</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>Основний тон акорду</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Поворот ліворуч</value>

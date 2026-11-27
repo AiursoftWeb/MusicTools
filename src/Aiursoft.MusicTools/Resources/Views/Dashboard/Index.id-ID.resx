@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Kembangkan secara eksklusif dalam UTC sementara sistem secara otomatis mengonversi dan menampilkan tanggal dalam zona waktu lokal pengguna.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>Diktakan harmoni empat suara dengan mengidentifikasi Soprano, Bass, dan Angka Romawi.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>Dengarkan piano, lalu pilih partitur yang sesuai dengan nada tertinggi dan terendah, atau kenali akor dan inversinya.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized untuk Deploi yang Mudah</value>

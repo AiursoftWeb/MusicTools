@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Gevorderd</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Alle notenbalken (beide handen)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Alle notenbalken</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Beginner</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Bronpartituur</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Partij 1 (meestal rechterhand)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Notenbalk 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Notenbalk 2 (meestal linkerhand)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Notenbalk 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Startmaat-index (0-geïndexeerd)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Voorbeeld bijwerken</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Stem / handen</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Kies een notenbalk</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Wat maakt een goede vraag?</value>

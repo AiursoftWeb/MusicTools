@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Zaawansowany</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Wszystkie pięciolinie (obie ręce)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Wszystkie pięciolinie</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Początkujący</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Źródłowy utwór muzyczny</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Pięciolinia 1 (zazwyczaj prawa ręka)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Pięciolinia 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Pięciolinia 2 (zazwyczaj lewa ręka)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Pięciolinia 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indeks początkowego taktu (indeksowanie od 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Zaktualizuj podgląd</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Głos / ręce</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Wybierz pięciolinię</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Co sprawia, że pytanie jest dobre?</value>

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>İleri</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Tüm porte çizgileri (iki el)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Tüm porteler</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Başlangıç</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Kaynak Nota</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>1. porte (genellikle sağ el)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Porte 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Parti 2 (genellikle sol el)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Porte 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Başlangıç Bölüm İndeksi (0&apos;dan başlar)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Önizlemeyi güncelle</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Ses / eller</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Porte seçin</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>İyi bir soruyu ne iyi yapar?</value>

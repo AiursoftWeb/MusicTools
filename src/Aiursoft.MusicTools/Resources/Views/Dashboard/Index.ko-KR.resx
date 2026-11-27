@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>UTC에서만 개발하되, 시스템은 사용자의 로컬 시간대에 맞게 날짜를 자동으로 변환하고 표시합니다.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>소프라노, 베이스, 로마 숫자를 식별하여 4성부 화성을 기보하세요.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>피아노를 듣고 가장 높은 음과 가장 낮은 음에 맞는 악보를 고르거나, 화음과 그 전위형을 알아맞히세요.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker를 사용하여 간편 배포 가능</value>

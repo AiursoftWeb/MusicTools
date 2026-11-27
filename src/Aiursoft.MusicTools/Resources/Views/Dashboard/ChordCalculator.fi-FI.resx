@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>Kaikki sävelet voivat olla perussäveliä</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>Pelkkien sävelkorkeuksien perusteella pohjasäveltä ei voi määrittää yksiselitteisesti.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>Augmentoitu kolmisointu</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Tyhjennä valinta</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Pohjasäveli</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>Soinnun pohjasävel</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Käännä vasemmalle</value>

@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Розробляйте виключно в UTC, тоді як система автоматично перетворює та відображає дати у часовому поясі користувача.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>Записуйте чотириголосну гармонію, визначаючи сопрано, бас та римські цифри.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>Послухайте фортепіано й виберіть нотний запис за найвищими й найнижчими звуками або визначте акорди та їх обернення.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Dockerized для легкого розгортання</value>

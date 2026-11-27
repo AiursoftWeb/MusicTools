@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>すべてのキーがルートになります</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>これらの音高だけでは根音を一つに特定できません。</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>増三和音</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>選択をリセット</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>ルート音</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>和音の根音</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>左へ回転</value>

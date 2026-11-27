@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Edistynyt</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Kaikki viivastot (molemmat kädet)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Kaikki nuottiviivastot</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Aloittelija</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Lähdemusiikki</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Nuottiviivasto 1 (yleensä oikea käsi)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Nuottiviivasto 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Nuotti 2 (yleensä vasen käsi)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Nuottiviivasto 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Alkutahtien indeksi (0-indeksöity)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Päivitä esikatselu</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Ääni / kädet</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Valitse nuottiviivasto</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Millainen on hyvä kysymys?</value>

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Avancerad</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Alla notsystem (båda händerna)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Alla notsystem</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Nybörjare</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Källnot</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Stämma 1 (vanligtvis höger hand)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Notsystem 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Stämma 2 (vanligtvis vänster hand)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Notsystem 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Starttaktnummer (0-baserat)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Uppdatera förhandsvisningen</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Stämma / händer</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Välj notsystem</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Vad kännetecknar en bra fråga?</value>

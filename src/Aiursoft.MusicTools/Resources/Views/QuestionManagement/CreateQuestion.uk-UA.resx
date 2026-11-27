@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Просунутий</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Усі нотоносці (обидві руки)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Усі нотні стани</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Початківець</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Джерельне нотописання</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Партія 1 (зазвичай права рука)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Нотний стан 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Нотний стан 2 (зазвичай ліва рука)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Нотний стан 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Індекс початкового такту (з нуля)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Оновити попередній перегляд</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Голос / руки</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Виберіть нотний стан</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Що робить запитання вдалим?</value>

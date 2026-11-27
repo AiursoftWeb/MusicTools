@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Avanceret</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Alle nodesystemer (begge hænder)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Alle nodesystemer</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Begynder</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Kildepartitur</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Stemme 1 (normalt højre hånd)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Nodesystem 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Stemme 2 (normalt venstre hånd)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Nodesystem 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Starttaktnummer (0-indeks)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Opdater forhåndsvisning</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Stemme / hænder</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Vælg et nodesystem</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Hvad kendetegner et godt spørgsmål?</value>

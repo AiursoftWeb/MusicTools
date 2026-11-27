@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>คีย์ทั้งหมดสามารถเป็นรากฐานได้</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>ระดับเสียงเหล่านี้เพียงอย่างเดียวไม่เพียงพอที่จะระบุโน้ตรากของคอร์ดได้แน่ชัด</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>คอร์ดสามเสียงเพิ่ม</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>รีเซ็ตการเลือก</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>โน้ตหลัก</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>โน้ตรากของคอร์ด</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>หมุนซ้าย</value>

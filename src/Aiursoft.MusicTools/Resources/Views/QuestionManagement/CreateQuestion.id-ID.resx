@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Lanjutan</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Semua paranada (kedua tangan)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Semua paranada</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Pemula</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Notul Asli</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Partitur 1 (biasanya tangan kanan)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Paranada 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Staf 2 (biasanya tangan kiri)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Paranada 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indeks Takt Mulai (berbasis 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Perbarui pratinjau</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Suara / tangan</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Pilih paranada</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Apa yang membuat sebuah pertanyaan yang baik?</value>
