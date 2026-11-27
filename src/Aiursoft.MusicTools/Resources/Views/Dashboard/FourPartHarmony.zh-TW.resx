@@ -24,6 +24,9 @@
   <data name="3 bars, 4/4 time signature." xml:space="preserve">
     <value>3小節，4/4拍。</value>
   </data>
+  <data name="All four parts" xml:space="preserve">
+    <value>全部四個聲部</value>
+  </data>
   <data name="Audio plays max 3 times." xml:space="preserve">
     <value>音訊最多播放 3 次。</value>
   </data>
@@ -33,14 +36,29 @@
   <data name="Four-Part Harmony Dictation" xml:space="preserve">
     <value>四部和聲聽寫</value>
   </data>
+  <data name="Highest part" xml:space="preserve">
+    <value>最高聲部</value>
+  </data>
+  <data name="Identify the highest and lowest notes" xml:space="preserve">
+    <value>辨認最高音和最低音</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>資訊</value>
   </data>
   <data name="Listen to 3 bars of 4-part harmony and identify the correct progression." xml:space="preserve">
     <value>聆聽 3 小節的四部和聲，並識別出正確的和聲進行。</value>
   </data>
+  <data name="Listen to the highest and lowest piano notes on each beat, then choose the score that matches how they move." xml:space="preserve">
+    <value>聽鋼琴每一拍的最高音和最低音，選出與它們的走向相符的樂譜。</value>
+  </data>
   <data name="Loading..." xml:space="preserve">
     <value>載入中...</value>
+  </data>
+  <data name="Lower inner part" xml:space="preserve">
+    <value>下方內聲部</value>
+  </data>
+  <data name="Lowest part" xml:space="preserve">
+    <value>最低聲部</value>
   </data>
   <data name="Major Key" xml:space="preserve">
     <value>大調</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="Time&apos;s up!" xml:space="preserve">
     <value>時間到！</value>
+  </data>
+  <data name="Upper inner part" xml:space="preserve">
+    <value>上方內聲部</value>
   </data>
   <data name="Wrong!" xml:space="preserve">
     <value>不正確！</value>
