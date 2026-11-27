@@ -1,116 +1,146 @@
-import { Progression, Chord, Note } from "tonal";
+import { Key, Note } from 'tonal';
 
-/**
- * FourPartHarmonyGenerator.js
- * Generates 3-bar 4-part harmony progressions (4/4 time).
- */
-export class FourPartHarmonyGenerator {
-    constructor() {
-        this.majorProgressions = [
-            ["I", "IV", "V", "I"],
-            ["I", "vi", "IV", "V", "I"],
-            ["I", "ii", "V", "I"],
-            ["I", "IV", "I", "V", "I"],
-            ["I", "V", "vi", "IV", "I"],
-            ["I", "IV", "V", "vi", "ii", "V", "I"]
-        ];
+// Two bars of motion followed by a full bar on the tonic. The figures specify
+// the bass; scale degrees and chord spellings are resolved in the selected key.
+const phrases = [
+    'I V6 I IV vi ii6 I64 V I',
+    'I V6 I IV I6 ii6 V V7 I',
+    'I I6 IV V I IV I64 V I',
+    'I I6 IV ii6 V vi ii6 V7 I',
+    'I vi I6 V65 I IV I6 V I',
+    'I IV I6 vi IV ii6 I64 V I',
+    'I I6 vi iii IV I6 ii6 V7 I',
+    'I I6 vi I6 V65 I ii6 V I',
+];
+const degrees = { I: 0, ii: 1, iii: 2, IV: 3, V: 4, vi: 5 };
+const minorLabels = ['i', 'ii°', 'III', 'iv', 'V', 'VI'];
+const figures = { '': 0, '6': 1, '64': 2, '7': 0, '65': 1 };
+const ranges = [[40, 60], [48, 67], [55, 74], [60, 79]]; // Bass, tenor, alto, soprano.
 
-        this.minorProgressions = [
-            ["i", "iv", "v", "i"],
-            ["i", "VI", "iv", "v", "i"],
-            ["i", "ii°", "V", "i"],
-            ["i", "iv", "i", "V", "i"],
-            ["i", "v", "VI", "iv", "i"]
-        ];
-    }
+function chordShape(symbol, key, isMinor) {
+    const [, numeral, figure] = symbol.match(/^([IViv]+)(\d*)$/);
+    const degree = degrees[numeral];
+    const scale = isMinor ? (numeral === 'V' ? key.harmonic : key.natural).scale : key.scale;
+    const seventh = figure === '7' || figure === '65';
+    const tones = (seventh ? [0, 2, 4, 6] : [0, 2, 4]).map(offset => scale[(degree + offset) % 7]);
+    return {
+        roman: (isMinor ? minorLabels[degree] : numeral) + figure,
+        tones, bass: tones[figures[figure]], dominant: numeral === 'V',
+        cadential: symbol === 'I64', diminished: isMinor && numeral === 'ii', seventh
+    };
+}
 
-    /**
-     * Generates a 3-bar 4-part harmony progression.
-     * Pattern: 2 bars of quarter notes (8 chords) + 1 bar of whole note (1 chord).
-     * Total 9 chords.
-     * @param {string} key - e.g., "C", "G", "F", "Am", "Em"
-     * @returns {Object} { chords: Array, romanNumerals: Array }
-     */
-    generate(key = "C") {
-        const isMinor = key.endsWith("m");
-        const root = isMinor ? key.slice(0, -1) : key;
-        const mode = isMinor ? "minor" : "major";
-        const pool = isMinor ? this.minorProgressions : this.majorProgressions;
-
-        // Select a random progression template and expand it to 9 notes if needed
-        // Or just generate a random logical progression
-        const progressionSteps = this._generateProgressionSteps(isMinor);
-
-        const chords = progressionSteps.map(step => {
-            const chordName = Progression.fromRomanNumerals(root, [step])[0];
-            const chordNotes = Chord.get(chordName).notes;
-
-            // Generate 4-part voicing (Soprano, Alto, Tenor, Bass)
-            // For the quiz, we mainly care about Soprano and Bass.
-            return this._voiceChord(chordNotes, step, root, mode);
-        });
-
-        return {
-            chords: chords, // Array of { soprano, alto, tenor, bass, roman }
-            key: key,
-            isMinor: isMinor
-        };
-    }
-
-    _generateProgressionSteps(isMinor) {
-        // We need 9 steps.
-        // Bar 1: 4 steps. Bar 2: 4 steps. Bar 3: 1 step.
-        const tonic = isMinor ? "i" : "I";
-        const dominant = isMinor ? "V" : "V";
-        const subdominant = isMinor ? "IV" : "IV"; // Simplified
-
-        // Example simple logic for 9 steps
-        // 1 2 3 4 | 5 6 7 8 | 9
-        // I ...           V | I
-        const steps = [tonic];
-
-        // Random walk for first 7 steps
-        const options = isMinor ? ["i", "ii°", "III", "iv", "v", "VI", "VII"] : ["I", "ii", "iii", "IV", "V", "vi", "vii°"];
-
-        for (let i = 1; i < 7; i++) {
-            steps.push(options[Math.floor(Math.random() * options.length)]);
+function voicings(shape, leadingTone) {
+    const choices = ranges.map(([low, high], voice) => {
+        const tones = voice === 0 ? [shape.bass] : shape.tones;
+        return tones.flatMap(tone => [2, 3, 4, 5].map(octave => Note.get(tone + octave)))
+            .filter(note => note.midi >= low && note.midi <= high);
+    });
+    const result = [];
+    for (const bass of choices[0]) {
+        for (const tenor of choices[1]) {
+            if (tenor.midi <= bass.midi || tenor.midi - bass.midi > 19) continue;
+            for (const alto of choices[2]) {
+                if (alto.midi <= tenor.midi || alto.midi - tenor.midi > 12) continue;
+                for (const soprano of choices[3]) {
+                    if (soprano.midi <= alto.midi || soprano.midi - alto.midi > 12) continue;
+                    const notes = [bass, tenor, alto, soprano];
+                    const pcs = notes.map(n => n.pc);
+                    // Root-position V7 may omit its fifth and double the root
+                    // so both tendency tones can resolve to a complete tonic.
+                    const missing = shape.tones.filter(tone => !pcs.includes(tone));
+                    if (missing.length && !(shape.roman === 'V7' && missing.length === 1 &&
+                        missing[0] === shape.tones[2] && pcs.filter(pc => pc === bass.pc).length === 2)) continue;
+                    if (pcs.filter(pc => pc === leadingTone).length > 1) continue;
+                    if ((shape.cadential || shape.diminished) && pcs.filter(pc => pc === bass.pc).length !== 2) continue;
+                    result.push(notes);
+                }
+            }
         }
+    }
+    return result;
+}
 
-        steps.push(dominant); // Step 8 is V
-        steps.push(tonic);    // Step 9 is I
+// Return the total melodic motion, or Infinity for an inadmissible connection.
+function motion(previous, next, from, to, leadingTone) {
+    const steps = next.map((note, i) => note.midi - previous[i].midi);
+    for (let i = 0; i < 4; i++) {
+        const distance = Math.abs(steps[i]);
+        if (distance > (i === 0 ? 7 : 5) || distance === 6) return Infinity;
+        const diatonicSteps = Math.abs((next[i].oct - previous[i].oct) * 7 + next[i].step - previous[i].step);
+        if (diatonicSteps === 1 && distance > 2) return Infinity;
+        if (from.dominant && !to.dominant && previous[i].pc === leadingTone && steps[i] !== 1) return Infinity;
+        if (from.seventh && previous[i].pc === from.tones[3] && ![-1, -2].includes(steps[i])) return Infinity;
+        if (from.cadential) {
+            const tone = previous[i].pc;
+            if (tone === from.bass ? steps[i] !== 0 : ![-1, -2].includes(steps[i])) return Infinity;
+        }
+        if (i && (next[i].midi < previous[i - 1].midi || previous[i].midi < next[i - 1].midi)) return Infinity;
+        for (let j = 0; j < i; j++) {
+            if (steps[i] * steps[j] <= 0) continue;
+            const interval = (next[i].midi - next[j].midi) % 12;
+            if (interval !== 0 && interval !== 7) continue;
+            if ((previous[i].midi - previous[j].midi) % 12 === interval) return Infinity;
+            if (j === 0 && i === 3 && distance > 2) return Infinity;
+        }
+    }
+    return steps.reduce((sum, step) => sum + Math.abs(step), 0);
+}
 
-        return steps;
+function voicePhrase(shapes, candidates, leadingTone) {
+    // A dead end depends only on this voicing and beat, so never retry it with
+    // a different prefix. Try smooth connections first, with variety among ties.
+    const deadEnds = shapes.map(() => new Set());
+    function extend(path) {
+        const beat = path.length;
+        if (beat === shapes.length) return path;
+        const previous = path.at(-1);
+        const choices = candidates[beat].filter(notes => !deadEnds[beat].has(notes)).map(notes => {
+            const cost = previous ? motion(previous, notes, shapes[beat - 1], shapes[beat], leadingTone) : 0;
+            return { notes, cost: cost + Math.random() * 4 };
+        }).filter(choice => Number.isFinite(choice.cost)).sort((a, b) => a.cost - b.cost);
+        for (const { notes } of choices) {
+            const complete = extend([...path, notes]);
+            if (complete) return complete;
+            deadEnds[beat].add(notes);
+        }
+        return null;
+    }
+    return extend([]);
+}
+
+export class FourPartHarmonyGenerator {
+    constructor(tonic = 'C', isMinor = false) {
+        this.tonic = tonic;
+        this.isMinor = isMinor;
+        this.key = isMinor ? Key.minorKey(tonic) : Key.majorKey(tonic);
+        this.leadingTone = (isMinor ? this.key.harmonic.scale : this.key.scale)[6];
+        this.shapes = new Map();
     }
 
-    _voiceChord(notes, roman, root, mode) {
-        // notes: e.g. ["C", "E", "G"]
-        // We want a voicing:
-        // Soprano: Highest, usually 5th or 3rd or Root in octave 4 or 5
-        // Bass: Lowest, usually Root or 5th in octave 2 or 3
-
-        const rootNote = notes[0];
-        const thirdNote = notes[1];
-        const fifthNote = notes[2] || notes[0]; // If it's a power chord or something
-
-        // Simple voicing rules:
-        // Bass takes root in octave 2 or 3
-        const bassPitch = rootNote + (Math.random() > 0.5 ? "2" : "3");
-
-        // Soprano takes one of the chord notes in octave 4 or 5
-        const sopranoOptions = notes.map(n => n + "4").concat(notes.map(n => n + "5"));
-        const sopranoPitch = sopranoOptions[Math.floor(Math.random() * sopranoOptions.length)];
-
-        // Alto and Tenor (just for full sound, but not displayed in quiz options)
-        const altoPitch = notes[Math.floor(Math.random() * notes.length)] + "4";
-        const tenorPitch = notes[Math.floor(Math.random() * notes.length)] + "3";
-
-        return {
-            soprano: sopranoPitch,
-            alto: altoPitch,
-            tenor: tenorPitch,
-            bass: bassPitch,
-            roman: roman,
-            notes: [sopranoPitch, altoPitch, tenorPitch, bassPitch]
-        };
+    generateOptions() {
+        const remaining = [...phrases];
+        const options = [];
+        while (options.length < 4 && remaining.length) {
+            const [phrase] = remaining.splice(Math.floor(Math.random() * remaining.length), 1);
+            const entries = phrase.split(' ').map(symbol => {
+                if (!this.shapes.has(symbol)) {
+                    const shape = chordShape(symbol, this.key, this.isMinor);
+                    this.shapes.set(symbol, { shape, candidates: voicings(shape, this.leadingTone) });
+                }
+                return this.shapes.get(symbol);
+            });
+            const line = voicePhrase(entries.map(e => e.shape), entries.map(e => e.candidates), this.leadingTone);
+            if (!line) continue;
+            const chords = line.map(([bass, tenor, alto, soprano], i) => ({
+                bass, tenor, alto, soprano, roman: entries[i].shape.roman, beats: i === 8 ? 4 : 1
+            }));
+            // Only outer voices are visible before answering.
+            if (options.some(other => other.chords.every((c, i) =>
+                c.bass.name === chords[i].bass.name && c.soprano.name === chords[i].soprano.name))) continue;
+            options.push({ chords, fifths: this.key.alteration, isMinor: this.isMinor });
+        }
+        if (options.length !== 4) throw new Error('Unable to voice four distinct harmony options.');
+        return options;
     }
 }
