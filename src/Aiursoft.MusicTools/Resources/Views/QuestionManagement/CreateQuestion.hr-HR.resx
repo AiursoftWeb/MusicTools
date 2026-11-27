@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Napredno</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Sve linije (obje ruke)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Sva crtovlja</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Početnik</value>
@@ -99,11 +99,11 @@
   <data name="Shared listening guidance" xml:space="preserve">
     <value>Zajedničke smjernice za slušanje</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Sistem 1 (obično desna ruka)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Crtovlje 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Sistem 2 (obično lijeva ruka)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Crtovlje 2</value>
   </data>
   <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
     <value>Učenici vide jedan takt, a ne šest punih odlomaka. Sve varijante razlikuju se na istom mjestu. Bolje je odabrati jasan čujni kontrast nego sitnu vizualnu promjenu.</value>
@@ -129,8 +129,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Ažuriraj pregled</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Glas / ruke</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Odaberite crtovlje</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Što čini dobro pitanje?</value>

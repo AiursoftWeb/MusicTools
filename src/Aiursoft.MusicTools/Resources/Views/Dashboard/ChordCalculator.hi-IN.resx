@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>सभी की रूट हो सकती हैं</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>केवल इन स्वरों से कॉर्ड का मूल स्वर निश्चित नहीं किया जा सकता।</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>वर्धित त्रिक</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>चयन रीसेट करें</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>मूल नोट</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>कॉर्ड का मूल स्वर</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>बाएं घुमाएं</value>

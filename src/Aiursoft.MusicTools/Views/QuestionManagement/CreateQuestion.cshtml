@@ -19,11 +19,11 @@
                 <select asp-for="PartId" class="form-select mb-3">
                     @foreach (var part in Model.Parts) { <option value="@part.Id">@part.Name</option> }
                 </select>
-                <label asp-for="Staff" class="form-label">@Localizer["Voice / hands"]</label>
+                <label asp-for="Staff" class="form-label">@Localizer["Select a musical staff"]</label>
                 <select asp-for="Staff" class="form-select mb-3">
-                    <option value="">@Localizer["All staves (both hands)"]</option>
-                    <option value="1">@Localizer["Staff 1 (usually right hand)"]</option>
-                    <option value="2">@Localizer["Staff 2 (usually left hand)"]</option>
+                    <option value="">@Localizer["All staves"]</option>
+                    <option value="1">@Localizer["Staff 1"]</option>
+                    <option value="2">@Localizer["Staff 2"]</option>
                 </select>
                 <div class="row g-2 mb-3">
                     <div class="col"><label for="range-start" class="form-label">@Localizer["From position"]</label><input id="range-start" class="form-control" type="number" min="1" value="@(Model.StartMeasureIndex + 1)" /></div>

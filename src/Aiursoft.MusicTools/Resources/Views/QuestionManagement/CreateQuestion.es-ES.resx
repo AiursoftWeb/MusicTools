@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Avanzado</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Todos los pentagramas (ambas manos)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Todos los pentagramas</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Principiante</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Partitura de origen</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Pentagrama 1 (normalmente, mano derecha)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Pentagrama 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Pentagrama 2 (normalmente, mano izquierda)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Pentagrama 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Índice de compás inicial (índice desde 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Actualizar vista previa</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Voz / manos</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Seleccionar pentagrama</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>¿Qué hace que una pregunta sea buena?</value>

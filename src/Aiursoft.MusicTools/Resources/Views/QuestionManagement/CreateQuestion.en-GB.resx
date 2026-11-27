@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Advanced</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>All staves (both hands)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>All staves</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Beginner</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Source Score</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Stave 1 (usually right hand)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Stave 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Staff 2 (usually left hand)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Stave 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Start Measure Index (0-indexed)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Update preview</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Voice / hands</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Select a stave</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>What makes a good question?</value>

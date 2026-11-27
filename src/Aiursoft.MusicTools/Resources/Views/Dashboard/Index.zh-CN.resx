@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>在开发时请始终使用 UTC 时间，系统会自动将日期转换并显示为用户的本地时间。</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>通过识别女高音、低音和罗马数字来听写四部和声。</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>听钢琴的最高音和最低音选谱，或听写和弦及转位。</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>支持 Docker，轻松部署</value>

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Avansat</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Toate portativele (ambele mâini)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Toate portativele</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Începător</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Partitură sursă</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Partitura 1 (de obicei, mâna dreaptă)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Portativul 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Partitura 2 (de obicei, mâna stângă)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Portativul 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indexul măsurii de start (începând de la 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Actualizează previzualizarea</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Voce / mâini</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Selectați portativul</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Ce face ca o întrebare să fie bună?</value>

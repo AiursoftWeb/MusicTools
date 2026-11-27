@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Kehitä vain UTC:ssä, kunnes järjestelmä muuntaa ja näyttää päivämäärät käyttäjän paikalliseen aikavyöhön automaattisesti.</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>Kirjoita nelisävelinen harmonia tunnistamalla sopraano-, bassosävelet ja roomalaiset numerot.</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>Kuuntele pianoa ja valitse ylimpiä ja alimpia säveliä vastaava nuottikuva tai tunnista soinnut ja niiden käännökset.</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>Docker-kehyttänyt helppokäyttöiseen käyttöönottoon</value>

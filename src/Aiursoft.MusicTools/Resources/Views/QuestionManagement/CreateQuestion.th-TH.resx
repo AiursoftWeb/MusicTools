@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>ระดับสูง</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>ทุกบรรทัดบรรเลง (มือทั้งสองข้าง)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>ทุกบรรทัดห้าเส้น</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>ระดับเริ่มต้น</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>楽譜元データ</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>บรรทัดที่ 1 (โดยปกติคือมือขวา)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>บรรทัดห้าเส้นที่ 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>โน้ตบรรทัดที่ 2 (โดยทั่วไปคือมือซ้าย)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>บรรทัดห้าเส้นที่ 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>ดัชนีเสียงเริ่มต้น (นับจาก 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>อัปเดตตัวอย่าง</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>แนวเสียง / มือ</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>เลือกบรรทัดห้าเส้น</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>คำถามที่ดีควรเป็นอย่างไร?</value>

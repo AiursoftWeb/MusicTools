@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>Avanzato</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>Tutti i righi (entrambe le mani)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>Tutti i pentagrammi</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>Principiante</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>Spartito sorgente</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>Pentagramma 1 (di solito mano destra)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>Pentagramma 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>Pentagramma 2 (solitamente mano sinistra)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>Pentagramma 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>Indice primo tempo (base 0)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>Aggiorna l’anteprima</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>Voce / mani</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>Seleziona un pentagramma</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>Cosa rende efficace una domanda?</value>

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>上級</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>すべての譜表（両手）</value>
+  <data name="All staves" xml:space="preserve">
+    <value>すべての譜表</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>初級</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>原曲</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>譜表1（通常は右手）</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>譜表 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>第2段（通常は左手）</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>譜表 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>開始小節インデックス（0から始まる）</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>プレビューを更新</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>声部／手</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>譜表を選択</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>良い問題とは？</value>

@@ -356,12 +356,13 @@ class ChordCalculator {
             const rootName = smartNoteNames[0].replace(/\d+$/, '');
             const typeName = this.#chordTypes[foundChord.type].name;
             this.#dom.detectedType.textContent = typeName;
-            this.#dom.chordResultDisplay.textContent = `${rootName} ${typeName}`;
             this.#dom.detectedNotes.textContent = smartNoteNames.join(', ');
             
             if (this.#chordTypes[foundChord.type].isSymmetrical) {
-                this.#dom.detectedRoot.textContent = getLocalizedText('all-keys-root', 'All keys can be root');
+                this.#dom.chordResultDisplay.textContent = typeName;
+                this.#dom.detectedRoot.textContent = getLocalizedText('ambiguous-root', 'These pitches alone do not determine a unique root.');
             } else {
+                this.#dom.chordResultDisplay.textContent = `${rootName} ${typeName}`;
                 this.#dom.detectedRoot.textContent = rootName;
             }
 

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>고급</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>모든 보표(양손 모두)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>모든 보표</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>초급</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>원본 악보</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>보표 1 (보통 오른손)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>보표 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>보표 2(보통 왼손)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>보표 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>시작 마디 인덱스 (0부터 시작)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>미리보기 업데이트</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>성부 / 손</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>보표 선택</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>좋은 질문은 무엇일까요?</value>

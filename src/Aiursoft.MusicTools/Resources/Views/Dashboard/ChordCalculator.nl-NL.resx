@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>Alle toonsoorten kunnen als grondtoon dienen</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>Uit deze toonhoogten alleen is de grondtoon niet eenduidig af te leiden.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>Augmented triad</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Selectie resetten</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Rootnoot</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>Grondtoon van het akkoord</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Linksom draaien</value>

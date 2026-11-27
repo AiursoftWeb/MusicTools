@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>Alla tonarter kan vara grundton</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>Enbart dessa tonhöjder räcker inte för att entydigt bestämma grundtonen.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>Förstorad triad</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Återställ urval</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Rotton</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>Ackordets grundton</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Rotera vänster</value>

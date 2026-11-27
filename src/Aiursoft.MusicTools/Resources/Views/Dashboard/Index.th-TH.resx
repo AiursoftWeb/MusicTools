@@ -99,8 +99,8 @@
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>พัฒนาเฉพาะในเวลา UTC ในขณะที่ระบบจะแปลงและแสดงวันที่โดยอัตโนมัติเป็นเขตเวลาท้องถิ่นของผู้ใช้</value>
   </data>
-  <data name="Dictate four-part harmony by identifying Soprano, Bass, and Roman Numerals." xml:space="preserve">
-    <value>ฟังเพลงและวิเคราะห์ประสานเสียงสี่ระดับเสียง โดยระบุ soprano, bass และเลขโรมัน</value>
+  <data name="Listen to the piano and match the highest and lowest notes to a score, or identify the chords and their inversions." xml:space="preserve">
+    <value>ฟังเสียงเปียโนแล้วเลือกโน้ตเพลงที่ตรงกับเสียงสูงสุดและต่ำสุด หรือระบุคอร์ดและการพลิกกลับของคอร์ด</value>
   </data>
   <data name="Dockerized for Easy Deployment" xml:space="preserve">
     <value>ใช้ Docker สำหรับการติดตั้งที่ง่าย</value>

@@ -30,8 +30,8 @@
   <data name="Advanced" xml:space="preserve">
     <value>متقدم</value>
   </data>
-  <data name="All staves (both hands)" xml:space="preserve">
-    <value>جميع المدرجات الموسيقية (كلتا اليدين)</value>
+  <data name="All staves" xml:space="preserve">
+    <value>جميع المدرجات الموسيقية</value>
   </data>
   <data name="Beginner" xml:space="preserve">
     <value>مبتدئ</value>
@@ -129,11 +129,11 @@
   <data name="Source Score" xml:space="preserve">
     <value>المصدر الموسيقي</value>
   </data>
-  <data name="Staff 1 (usually right hand)" xml:space="preserve">
-    <value>المدرج الأول (عادةً لليد اليمنى)</value>
+  <data name="Staff 1" xml:space="preserve">
+    <value>المدرج 1</value>
   </data>
-  <data name="Staff 2 (usually left hand)" xml:space="preserve">
-    <value>المدرج 2 (عادةً لليد اليسرى)</value>
+  <data name="Staff 2" xml:space="preserve">
+    <value>المدرج 2</value>
   </data>
   <data name="Start Measure Index (0-indexed)" xml:space="preserve">
     <value>مؤشر بدء المقياس (صفر المعتمد)</value>
@@ -162,8 +162,8 @@
   <data name="Update preview" xml:space="preserve">
     <value>تحديث المعاينة</value>
   </data>
-  <data name="Voice / hands" xml:space="preserve">
-    <value>الصوت / اليدان</value>
+  <data name="Select a musical staff" xml:space="preserve">
+    <value>اختر المدرج الموسيقي</value>
   </data>
   <data name="What makes a good question?" xml:space="preserve">
     <value>ما الذي يجعل السؤال جيدًا؟</value>

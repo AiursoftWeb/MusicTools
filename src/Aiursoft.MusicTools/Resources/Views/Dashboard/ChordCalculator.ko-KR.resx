@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>모든 키를 루트로 사용할 수 있습니다</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>이 음들만으로는 근음을 하나로 정할 수 없습니다.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>증가 삼화음</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>선택 초기화</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>루트 음</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>화음의 근음</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>왼쪽으로 회전</value>

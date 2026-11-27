@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All keys can be root" xml:space="preserve">
-    <value>Όλες οι κλίμακες μπορούν να είναι τονική</value>
+      <data name="These pitches alone do not determine a unique root." xml:space="preserve">
+    <value>Οι φθόγγοι αυτοί από μόνοι τους δεν καθορίζουν μονοσήμαντα τη θεμέλιο της συγχορδίας.</value>
   </data>
   <data name="Augmented Triad" xml:space="preserve">
     <value>Αυξημένη Τρίδα</value>
@@ -93,8 +93,8 @@
   <data name="Reset Selection" xml:space="preserve">
     <value>Επαναφορά επιλογής</value>
   </data>
-  <data name="Root Note" xml:space="preserve">
-    <value>Θεμελιώδης Σημείο</value>
+  <data name="Chord root" xml:space="preserve">
+    <value>Θεμέλιος της συγχορδίας</value>
   </data>
   <data name="Rotate Left" xml:space="preserve">
     <value>Περιστροφή Αριστερά</value>
