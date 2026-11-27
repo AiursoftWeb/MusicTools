@@ -22,7 +22,7 @@
             </select>
             <label class="form-label" for="harmony-mode">@Localizer["Exercise"]</label>
             <select class="form-select w-auto mb-3" id="harmony-mode">
-                <option value="outer">@Localizer["Identify the soprano and bass"]</option>
+                <option value="outer">@Localizer["Identify the highest and lowest notes"]</option>
                 <option value="dictation">@Localizer["Enter the chords and inversions"]</option>
             </select>
             <div class="form-check mb-3">
@@ -55,11 +55,11 @@
                 <div>
                     <label for="review-voice" class="form-label">@Localizer["Listen to"]</label>
                     <select id="review-voice" class="form-select">
-                        <option value="all">@Localizer["All four voices"]</option>
-                        <option value="soprano">@Localizer["Soprano"]</option>
-                        <option value="alto">@Localizer["Alto"]</option>
-                        <option value="tenor">@Localizer["Tenor"]</option>
-                        <option value="bass">@Localizer["Bass"]</option>
+                        <option value="all">@Localizer["All four parts"]</option>
+                        <option value="soprano">@Localizer["Highest part"]</option>
+                        <option value="alto">@Localizer["Upper inner part"]</option>
+                        <option value="tenor">@Localizer["Lower inner part"]</option>
+                        <option value="bass">@Localizer["Lowest part"]</option>
                     </select>
                 </div>
             </div>
@@ -117,7 +117,7 @@
     <span data-key="loading">@Localizer["Loading..."]</span>
     <span data-key="error">@Localizer["Could not load the exercise. Please try again."]</span>
     <span data-key="audio-error">@Localizer["Audio could not play. Press Play Harmony to retry."]</span>
-    <span data-key="prompt">@Localizer["Listen for the soprano and bass, then choose the matching score."]</span>
+    <span data-key="prompt">@Localizer["Listen to the highest and lowest piano notes on each beat, then choose the score that matches how they move."]</span>
     <span data-key="dictation-prompt">@Localizer["Choose the chord and inversion at each beat."]</span>
     <span data-key="dictation-result">@Localizer["{0} of 9 chords correct."].Value</span>
     <span data-key="location">@Localizer["Measure {0}, beat {1}"].Value</span>

@@ -102,7 +102,7 @@ async function play(q) {
             q.plays++;
             status.textContent = q.dictation
                 ? text('dictation-prompt', 'Choose the chord and inversion at each beat.')
-                : text('prompt', 'Listen for the soprano and bass, then choose the matching score.');
+                : text('prompt', 'Listen to the highest and lowest piano notes on each beat, then choose the score that matches how they move.');
         }
         updateControls(q);
     } catch {
