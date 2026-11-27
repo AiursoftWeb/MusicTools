@@ -169,6 +169,37 @@ public class ListeningQuestionServiceTests : TestBase
             service.CreateAsync(score.Id, "Outside context", "P1", 0, 2, null, ListeningSkill.Pitch, 1, "", focusMeasureIndex: 2));
     }
 
+    [TestMethod]
+    public async Task SupersededAudioJobCannotMakeAnEditedQuestionReadyToPublish()
+    {
+        using var scope = Server!.Services.CreateScope();
+        var context = scope.ServiceProvider.GetRequiredService<MusicToolsDbContext>();
+        var service = CreateService(context);
+        var score = await AddScoreAsync(context);
+        await service.ImportAsync(score.Id);
+        var question = await service.CreateAsync(score.Id, "Identify the melody", "P1", 0, 1, null,
+            ListeningSkill.Pitch, 1, "");
+        var originalRevision = question.Revision;
+        await service.RenderAudioAsync(question.Id, originalRevision);
+        var removed = question.Options.First(o => !o.IsCorrect);
+        await service.ReplaceOptionAsync(question.Id, removed.Id, originalRevision);
+        var currentRevision = question.Revision;
+        var replacement = question.Options.Single(o => o.AudioPath == null);
+
+        await service.RenderAudioAsync(question.Id, originalRevision);
+        var edited = await context.Questions.AsNoTracking().Include(q => q.Options).SingleAsync(q => q.Id == question.Id);
+        Assert.AreEqual(QuestionStatus.Processing, edited.Status);
+        Assert.AreEqual(currentRevision, edited.Revision);
+        Assert.IsNull(edited.Options.Single(o => o.Id == replacement.Id).AudioPath);
+        await Assert.ThrowsExactlyAsync<InvalidDataException>(() => service.PublishAsync(question.Id, currentRevision, "Listen to the pitch."));
+
+        await service.RenderAudioAsync(question.Id, currentRevision);
+        await service.PublishAsync(question.Id, currentRevision, "Listen to the pitch.");
+        var published = await context.Questions.AsNoTracking().Include(q => q.Options).SingleAsync(q => q.Id == question.Id);
+        Assert.AreEqual(QuestionStatus.Published, published.Status);
+        Assert.IsNotNull(published.Options.Single(o => o.Id == replacement.Id).AudioPath);
+    }
+
     private sealed class TestConverter(bool failAudio) : IScoreConverter
     {
         public async Task<MusicXmlScore> ImportAsync(string path, CancellationToken cancellationToken = default) =>
