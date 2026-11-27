@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="1. Explore the score" xml:space="preserve">
+    <value>1. Istražite notni zapis</value>
+  </data>
+  <data name="2. Listen to your passage" xml:space="preserve">
+    <value>2. Poslušajte svoj odlomak</value>
+  </data>
+  <data name="A pickup needs an audible beat reference. Confirm there is only one defensible answer. Passages play once as written, without repeats; include complete tied notes." xml:space="preserve">
+    <value>Ananas zahtijeva čujivi ritmički referent. Provjerite da postoji samo jedan opravdani odgovor. Odlošci se sviraju jednom, kako su napisani, bez ponavljanja; uključite kompletne vezane note.</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Napredno</value>
+  </data>
+  <data name="All staves (both hands)" xml:space="preserve">
+    <value>Sve linije (obje ruke)</value>
+  </data>
+  <data name="Beginner" xml:space="preserve">
+    <value>Početnik</value>
+  </data>
+  <data name="COMPOSE A LISTENING CHALLENGE" xml:space="preserve">
+    <value>SASTAVITE ZADAC ZA SLUHANJE</value>
+  </data>
+  <data name="Choose listening context, then focus on one measure and one audible difference." xml:space="preserve">
+    <value>Odaberite kontekst slušanja, zatim se usredotočite na jednu mjericu i jednu čujnu razliku.</value>
+  </data>
+  <data name="Click the first and last measure directly on the score, or use the numbered buttons. The smaller label is the number printed in the score." xml:space="preserve">
+    <value>Kliknite na prvu i zadnju mjeru izravno na notnom zapisu ili koristite gumbe s brojevima. Manja oznaka je broj ispisani u notnom zapisu.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Izradi pitanje</value>
+  </data>
+  <data name="Describe the listening cue, not a fixed correct note or answer letter: a different approved version can be played each time." xml:space="preserve">
+    <value>Opišite slušni pokazatelj, a ne fiksnu točnu notu ili slovo odgovora: svaki put se može reproducirati druga odobrena verzija.</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Težina</value>
+  </data>
+  <data name="Do not count rests. Pitch versions change this note only; rhythm versions change this note and the immediately following note. Choose a simple, untied location." xml:space="preserve">
+    <value>Ne računajte pauze. Verzije s visinom mijenjaju samo ovu notu; verzije s ritmom mijenjaju ovu notu i odmah slijedeću notu. Odaberite jednostavno, nevezano mjesto.</value>
+  </data>
+  <data name="Every approved version may be played as the answer. Review musical plausibility, not which version looks most like the original." xml:space="preserve">
+    <value>Svaka odobrena verzija može se reproducirati kao odgovor. Procijenite glazbenu vjerojatnost, a ne koja verzija najviše podsjeća na original.</value>
+  </data>
+  <data name="From position" xml:space="preserve">
+    <value>Od pozicije</value>
+  </data>
+  <data name="Generate focused versions" xml:space="preserve">
+    <value>Generiraj fokusirane verzije</value>
+  </data>
+  <data name="Instrument / part" xml:space="preserve">
+    <value>Instrument / dio</value>
+  </data>
+  <data name="Intermediate" xml:space="preserve">
+    <value>Srednji</value>
+  </data>
+  <data name="Listening context" xml:space="preserve">
+    <value>Kontekst slušanja</value>
+  </data>
+  <data name="Listening focus" xml:space="preserve">
+    <value>Fokus slušanja</value>
+  </data>
+  <data name="Measure selection" xml:space="preserve">
+    <value>Odabir takta</value>
+  </data>
+  <data name="Number of reviewed versions" xml:space="preserve">
+    <value>Broj pregledanih verzija</value>
+  </data>
+  <data name="Pitch: one note, same rhythm" xml:space="preserve">
+    <value>Visina tona: jedan ton, isti ritam</value>
+  </data>
+  <data name="Prepare audio" xml:space="preserve">
+    <value>Pripremi audio</value>
+  </data>
+  <data name="Question Title" xml:space="preserve">
+    <value>Naslov pitanja</value>
+  </data>
+  <data name="Rhythm: one adjacent pair, same pitches" xml:space="preserve">
+    <value>Ritam: jedan susjedni par, iste visine</value>
+  </data>
+  <data name="Shared listening guidance" xml:space="preserve">
+    <value>Zajedničke smjernice za slušanje</value>
+  </data>
+  <data name="Staff 1 (usually right hand)" xml:space="preserve">
+    <value>Sistem 1 (obično desna ruka)</value>
+  </data>
+  <data name="Staff 2 (usually left hand)" xml:space="preserve">
+    <value>Sistem 2 (obično lijeva ruka)</value>
+  </data>
+  <data name="Students see one measure, not six full passages. All choices differ at the same location. Prefer a clear audible contrast over a tiny visual trick." xml:space="preserve">
+    <value>Učenici vide jedan takt, a ne šest punih odlomaka. Sve varijante razlikuju se na istom mjestu. Bolje je odabrati jasan čujni kontrast nego sitnu vizualnu promjenu.</value>
+  </data>
+  <data name="Target measure position" xml:space="preserve">
+    <value>Pozicija ciljnog takta</value>
+  </data>
+  <data name="Target pitched note (count from 1 within this measure)" xml:space="preserve">
+    <value>Ciljana nota s visinom (broji se od 1 unutar ovog takta)</value>
+  </data>
+  <data name="Tell students exactly what to listen for" xml:space="preserve">
+    <value>Navedite studentima točno što trebaju slušati</value>
+  </data>
+  <data name="The only measure students will compare" xml:space="preserve">
+    <value>Jedini takto koji će studenti uspoređivati</value>
+  </data>
+  <data name="This range is the audio context, not the amount of notation students must search. Positions include pickups; both endpoints are included." xml:space="preserve">
+    <value>Ovaj raspon predstavlja zvučni kontekst, a ne količinu notacije koju učenici moraju pretraživati. Pozicije uključuju uvodne note (pickupove); uključena su oba kraja raspona.</value>
+  </data>
+  <data name="Through position" xml:space="preserve">
+    <value>Do mjesta</value>
+  </data>
+  <data name="Update preview" xml:space="preserve">
+    <value>Ažuriraj pregled</value>
+  </data>
+  <data name="Voice / hands" xml:space="preserve">
+    <value>Glas / ruke</value>
+  </data>
+  <data name="What makes a good question?" xml:space="preserve">
+    <value>Što čini dobro pitanje?</value>
+  </data>
+
+</root>
