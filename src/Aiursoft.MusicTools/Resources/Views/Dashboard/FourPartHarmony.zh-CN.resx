@@ -18,11 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="1 minute time limit per question." xml:space="preserve">
+      <data name="{0} of 9 chords correct." xml:space="preserve">
+    <value>{0}/9 个和弦正确。</value>
+  </data>
+  <data name="1 minute time limit per question." xml:space="preserve">
     <value>每题限时1分钟。</value>
   </data>
   <data name="3 bars, 4/4 time signature." xml:space="preserve">
     <value>3小节，4/4拍。</value>
+  </data>
+  <data name="All four voices" xml:space="preserve">
+    <value>全部四个声部</value>
+  </data>
+  <data name="Alto" xml:space="preserve">
+    <value>女中音</value>
   </data>
   <data name="Audio could not play. Press Play Harmony to retry." xml:space="preserve">
     <value>音频无法播放。请按下“播放和声”重试。</value>
@@ -33,6 +42,24 @@
   <data name="Back to settings" xml:space="preserve">
     <value>返回设置</value>
   </data>
+  <data name="Bass" xml:space="preserve">
+    <value>男低音</value>
+  </data>
+  <data name="Beat {0}" xml:space="preserve">
+    <value>第 {0} 拍</value>
+  </data>
+  <data name="Check my chords" xml:space="preserve">
+    <value>检查我的和弦</value>
+  </data>
+  <data name="Choose the chord and inversion at each beat." xml:space="preserve">
+    <value>选择每个节拍的和弦及其转位。</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>对比</value>
+  </data>
+  <data name="Correct answer" xml:space="preserve">
+    <value>正确答案</value>
+  </data>
   <data name="Correct answer: {0}" xml:space="preserve">
     <value>正确答案：{0}</value>
   </data>
@@ -42,8 +69,17 @@
   <data name="Could not load the exercise. Please try again." xml:space="preserve">
     <value>无法加载练习，请重试。</value>
   </data>
+  <data name="Enter the chords and inversions" xml:space="preserve">
+    <value>输入和弦与转位</value>
+  </data>
+  <data name="Exercise" xml:space="preserve">
+    <value>练习</value>
+  </data>
   <data name="Four-Part Harmony Dictation" xml:space="preserve">
     <value>四部和声听写</value>
+  </data>
+  <data name="Identify the soprano and bass" xml:space="preserve">
+    <value>识别高音声部与低音声部</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>信息</value>
@@ -51,8 +87,14 @@
   <data name="Key" xml:space="preserve">
     <value>调性</value>
   </data>
+  <data name="Listen for the difference at: {0}" xml:space="preserve">
+    <value>聆听 {0} 处的不同。</value>
+  </data>
   <data name="Listen for the soprano and bass, then choose the matching score." xml:space="preserve">
     <value>聆听女高音和男低音，然后选择匹配的乐谱。</value>
+  </data>
+  <data name="Listen to" xml:space="preserve">
+    <value>聆听</value>
   </data>
   <data name="Listen to 3 bars of 4-part harmony and identify the correct progression." xml:space="preserve">
     <value>聆听三小节的四部和声，并识别正确的和声进行。</value>
@@ -62,6 +104,12 @@
   </data>
   <data name="Major Key" xml:space="preserve">
     <value>大调</value>
+  </data>
+  <data name="Measure {0}" xml:space="preserve">
+    <value>第 {0} 小节</value>
+  </data>
+  <data name="Measure {0}, beat {1}" xml:space="preserve">
+    <value>第 {0} 小节，第 {1} 拍</value>
   </data>
   <data name="Minor Key" xml:space="preserve">
     <value>小调</value>
@@ -81,8 +129,20 @@
   <data name="Play Harmony" xml:space="preserve">
     <value>播放和声</value>
   </data>
+  <data name="Soprano" xml:space="preserve">
+    <value>女高音</value>
+  </data>
+  <data name="Sound the tonic chord before the phrase" xml:space="preserve">
+    <value>在乐句前播放主和弦</value>
+  </data>
   <data name="Start Exam" xml:space="preserve">
     <value>开始考试</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Tenor" xml:space="preserve">
+    <value>男高音</value>
   </data>
   <data name="Time remaining" xml:space="preserve">
     <value>剩余时间</value>
@@ -92,6 +152,9 @@
   </data>
   <data name="Wrong!" xml:space="preserve">
     <value>错误！</value>
+  </data>
+  <data name="Your choice" xml:space="preserve">
+    <value>你的选择</value>
   </data>
 
 </root>

@@ -1,11 +1,20 @@
 // Both notation and playback use the same spelled pitches and beat lengths.
 const voices = ['soprano', 'alto', 'tenor', 'bass'];
 
-export function harmonyPlayback(harmony) {
+export function harmonyPlayback(harmony, voice = 'all', withTonic = false) {
+    const parts = voice === 'all' ? voices : [voice];
     const notes = [];
     let time = 0;
+    if (withTonic) {
+        // A fixed tonic voicing establishes the key independently of the phrase.
+        const root = 48 + harmony.chords[0].bass.chroma;
+        for (const interval of [0, 7, 12, harmony.isMinor ? 15 : 16]) {
+            notes.push({ midi: root + interval, time: 0, duration: 1 });
+        }
+        time = 1.5;
+    }
     for (const chord of harmony.chords) {
-        for (const voice of voices) notes.push({ midi: chord[voice].midi, time, duration: chord.beats });
+        for (const part of parts) notes.push({ midi: chord[part].midi, time, duration: chord.beats });
         time += chord.beats; // One beat per second.
     }
     return { notes, duration: time };

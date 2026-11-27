@@ -20,6 +20,15 @@
                     }
                 </optgroup>
             </select>
+            <label class="form-label" for="harmony-mode">@Localizer["Exercise"]</label>
+            <select class="form-select w-auto mb-3" id="harmony-mode">
+                <option value="outer">@Localizer["Identify the soprano and bass"]</option>
+                <option value="dictation">@Localizer["Enter the chords and inversions"]</option>
+            </select>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="tonic-cue" checked />
+                <label class="form-check-label" for="tonic-cue">@Localizer["Sound the tonic chord before the phrase"]</label>
+            </div>
             <p class="text-secondary">@Localizer["Audio plays max 3 times."] @Localizer["1 minute time limit per question."]</p>
             <button id="btn-start" type="button" class="btn btn-primary">@Localizer["Start Exam"]</button>
         </div>
@@ -34,12 +43,57 @@
             <span class="text-danger">✗ <span id="wrong-count">0</span></span>
             <button type="button" id="btn-settings" class="btn btn-outline-secondary ms-auto">@Localizer["Back to settings"]</button>
         </div>
+        <div id="review-controls" hidden>
+            <div class="d-flex flex-wrap align-items-end gap-3 mb-2">
+                <div id="review-comparison" hidden>
+                    <label for="review-source" class="form-label">@Localizer["Compare"]</label>
+                    <select id="review-source" class="form-select">
+                        <option value="answer">@Localizer["Correct answer"]</option>
+                        <option value="choice">@Localizer["Your choice"]</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="review-voice" class="form-label">@Localizer["Listen to"]</label>
+                    <select id="review-voice" class="form-select">
+                        <option value="all">@Localizer["All four voices"]</option>
+                        <option value="soprano">@Localizer["Soprano"]</option>
+                        <option value="alto">@Localizer["Alto"]</option>
+                        <option value="tenor">@Localizer["Tenor"]</option>
+                        <option value="bass">@Localizer["Bass"]</option>
+                    </select>
+                </div>
+            </div>
+            <p id="review-difference" class="mb-2" hidden></p>
+        </div>
         <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
             <button id="btn-play-harmony" type="button" class="btn btn-primary">@Localizer["Play Harmony"]</button>
             <button id="btn-next" type="button" class="btn btn-outline-primary" hidden>@Localizer["Next Question"]</button>
             <span id="harmony-status" role="status"></span>
         </div>
-        <div class="row g-3">
+        <div id="dictation-panel" hidden>
+            <div class="row g-3 mb-3">
+                @for (var measure = 0; measure < 3; measure++)
+                {
+                    <fieldset class="col-12 col-lg-4">
+                        <legend class="h5">@string.Format(@Localizer["Measure {0}"].Value, measure + 1)</legend>
+                        <div class="row g-2">
+                            @for (var beat = 0; beat < (measure == 2 ? 1 : 4); beat++)
+                            {
+                                var slot = measure * 4 + beat;
+                                <div class="col-6">
+                                    <label for="chord-@slot" class="form-label">@string.Format(@Localizer["Beat {0}"].Value, beat + 1)</label>
+                                    <select id="chord-@slot" class="form-select dictation-chord" aria-describedby="mark-@slot"></select>
+                                    <small id="mark-@slot" class="dictation-mark"></small>
+                                </div>
+                            }
+                        </div>
+                    </fieldset>
+                }
+            </div>
+            <button type="button" class="btn btn-primary" id="submit-dictation">@Localizer["Check my chords"]</button>
+            <div id="dictation-score" class="harmony-score bg-white rounded" aria-label="@Localizer["Correct answer"]" hidden></div>
+        </div>
+        <div id="score-options" class="row g-3">
             @for (var i = 0; i < 4; i++)
             {
                 <div class="col-12 col-xl-6">
@@ -64,6 +118,11 @@
     <span data-key="error">@Localizer["Could not load the exercise. Please try again."]</span>
     <span data-key="audio-error">@Localizer["Audio could not play. Press Play Harmony to retry."]</span>
     <span data-key="prompt">@Localizer["Listen for the soprano and bass, then choose the matching score."]</span>
+    <span data-key="dictation-prompt">@Localizer["Choose the chord and inversion at each beat."]</span>
+    <span data-key="dictation-result">@Localizer["{0} of 9 chords correct."].Value</span>
+    <span data-key="location">@Localizer["Measure {0}, beat {1}"].Value</span>
+    <span data-key="compare-beats">@Localizer["Listen for the difference at: {0}"].Value</span>
+    <span data-key="stop">@Localizer["Stop"]</span>
     <span data-key="answer">@Localizer["Correct answer: {0}"].Value</span>
 </div>
 

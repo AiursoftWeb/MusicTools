@@ -12,6 +12,18 @@ const phrases = [
     'I I6 vi iii IV I6 ii6 V7 I',
     'I I6 vi I6 V65 I ii6 V I',
 ];
+const vocabulary = ['I', 'I6', 'I64', 'ii6', 'iii', 'IV', 'V', 'V6', 'V7', 'V65', 'vi'];
+const substitutions = [['I', 'I6'], ['IV', 'ii6'], ['V', 'V6', 'V65', 'V7']];
+
+function shuffled(items) {
+    const copy = [...items];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+}
+
 const degrees = { I: 0, ii: 1, iii: 2, IV: 3, V: 4, vi: 5 };
 const minorLabels = ['i', 'ii°', 'III', 'iv', 'V', 'VI'];
 const figures = { '': 0, '6': 1, '64': 2, '7': 0, '65': 1 };
@@ -109,6 +121,19 @@ function voicePhrase(shapes, candidates, leadingTone) {
     return extend([]);
 }
 
+function distinctOuterPairs(left, right, connects) {
+    const pairs = new Map();
+    for (const first of left) {
+        for (const second of right) {
+            if (!connects(first, second)) continue;
+            const pair = [first, second];
+            const outer = pair.flatMap(chord => [chord.notes[0].midi, chord.notes[3].midi]).join(',');
+            if (!pairs.has(outer)) pairs.set(outer, pair);
+        }
+    }
+    return pairs;
+}
+
 export class FourPartHarmonyGenerator {
     constructor(tonic = 'C', isMinor = false) {
         this.tonic = tonic;
@@ -118,29 +143,82 @@ export class FourPartHarmonyGenerator {
         this.shapes = new Map();
     }
 
-    generateOptions() {
-        const remaining = [...phrases];
-        const options = [];
-        while (options.length < 4 && remaining.length) {
-            const [phrase] = remaining.splice(Math.floor(Math.random() * remaining.length), 1);
-            const entries = phrase.split(' ').map(symbol => {
-                if (!this.shapes.has(symbol)) {
-                    const shape = chordShape(symbol, this.key, this.isMinor);
-                    this.shapes.set(symbol, { shape, candidates: voicings(shape, this.leadingTone) });
-                }
-                return this.shapes.get(symbol);
-            });
-            const line = voicePhrase(entries.map(e => e.shape), entries.map(e => e.candidates), this.leadingTone);
-            if (!line) continue;
-            const chords = line.map(([bass, tenor, alto, soprano], i) => ({
-                bass, tenor, alto, soprano, roman: entries[i].shape.roman, beats: i === 8 ? 4 : 1
-            }));
-            // Only outer voices are visible before answering.
-            if (options.some(other => other.chords.every((c, i) =>
-                c.bass.name === chords[i].bass.name && c.soprano.name === chords[i].soprano.name))) continue;
-            options.push({ chords, fifths: this.key.alteration, isMinor: this.isMinor });
+    entry(symbol) {
+        if (!this.shapes.has(symbol)) {
+            const shape = chordShape(symbol, this.key, this.isMinor);
+            this.shapes.set(symbol, { shape, candidates: voicings(shape, this.leadingTone) });
         }
-        if (options.length !== 4) throw new Error('Unable to voice four distinct harmony options.');
-        return options;
+        return this.shapes.get(symbol);
+    }
+
+    get numerals() {
+        return vocabulary.map(symbol => this.entry(symbol).shape.roman);
+    }
+
+    passage(line) {
+        const chords = line.map(({ notes: [bass, tenor, alto, soprano], shape }, i) => ({
+            bass, tenor, alto, soprano, roman: shape.roman, beats: i === 8 ? 4 : 1
+        }));
+        return { chords, fifths: this.key.alteration, isMinor: this.isMinor };
+    }
+
+    voiceLine(entries) {
+        const notes = voicePhrase(entries.map(e => e.shape), entries.map(e => e.candidates), this.leadingTone);
+        return notes?.map((pitches, i) => ({ notes: pitches, shape: entries[i].shape }));
+    }
+
+    generateDictation() {
+        for (const phrase of shuffled(phrases)) {
+            const line = this.voiceLine(phrase.split(' ').map(symbol => this.entry(symbol)));
+            if (line) return this.passage(line);
+        }
+        throw new Error('Unable to voice this dictation.');
+    }
+
+    variants(symbol) {
+        const family = substitutions.find(group => group.includes(symbol)) ?? [symbol];
+        return shuffled(family.flatMap(candidate => {
+            const { shape, candidates } = this.entry(candidate);
+            return candidates.map(notes => ({ shape, notes }));
+        }));
+    }
+
+    // One legal prefix or suffix per boundary voicing is enough: only its
+    // boundary chord can constrain the two beats that will be replaced.
+    boundaryLines(entries, edge) {
+        return shuffled(entries[edge].candidates).map(notes => {
+            const constrained = [...entries];
+            constrained[edge] = { shape: entries[edge].shape, candidates: [notes] };
+            return this.voiceLine(constrained);
+        }).filter(Boolean);
+    }
+
+    generateOptions() {
+        const connects = (a, b) => Number.isFinite(motion(a.notes, b.notes, a.shape, b.shape, this.leadingTone));
+        for (const phrase of shuffled(phrases)) {
+            const symbols = phrase.split(' ');
+            const entries = symbols.map(symbol => this.entry(symbol));
+            // The two edited beats must join the same prefix and suffix. Try
+            // all possible boundary voicings so a random dead end cannot
+            // prevent an otherwise valid question from being generated.
+            for (const i of shuffled([1, 2, 3, 4, 5, 6])) {
+                const firstBeat = this.variants(symbols[i]);
+                const secondBeat = this.variants(symbols[i + 1]);
+                const prefixes = this.boundaryLines(entries.slice(0, i), i - 1);
+                const suffixes = this.boundaryLines(entries.slice(i + 2), 0).map(line => ({
+                    line, neighbours: secondBeat.filter(chord => connects(chord, line[0]))
+                }));
+                for (const prefix of prefixes) {
+                    const left = firstBeat.filter(chord => connects(prefix.at(-1), chord));
+                    if (!left.length) continue;
+                    for (const suffix of suffixes) {
+                        const pairs = distinctOuterPairs(left, suffix.neighbours, connects);
+                        if (pairs.size >= 4) return shuffled(pairs.values()).slice(0, 4).map(pair =>
+                            this.passage([...prefix, ...pair, ...suffix.line]));
+                    }
+                }
+            }
+        }
+        throw new Error('Unable to voice four distinct harmony options.');
     }
 }
