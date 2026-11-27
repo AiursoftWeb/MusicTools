@@ -18,6 +18,11 @@ public class FourPartHarmonyTests : BrowserTestBase
         await Expect(score.Locator(".vf-notehead")).ToHaveCountAsync(18);
         Assert.IsTrue(await score.EvaluateAsync<bool>("s => s.scrollWidth <= s.clientWidth + 1"));
 
+        await Page.SetViewportSizeAsync(768, 844);
+        await Page.SetViewportSizeAsync(1280, 844);
+        await Page.WaitForFunctionAsync("() => document.querySelector('.harmony-score').clientWidth < 500");
+        Assert.IsTrue(await score.EvaluateAsync<bool>("s => s.scrollWidth <= s.clientWidth + 1"));
+
         await score.ClickAsync();
         await Expect(options.First).ToBeEnabledAsync();
         await options.First.ClickAsync();

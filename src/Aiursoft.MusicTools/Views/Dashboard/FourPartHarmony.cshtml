@@ -71,3 +71,11 @@
 @section scripts {
     <script type="module" src="~/dist/scripts/fourPartHarmony.js" asp-append-version="true"></script>
 }
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <style>
+        /* The sidebar can finish resizing after OSMD has laid out the measures. */
+        .harmony-score svg { max-width: 100%; height: auto; }
+    </style>
+}
