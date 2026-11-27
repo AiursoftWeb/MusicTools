@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Approve and publish" xml:space="preserve">
+    <value>Odobri i objavi</value>
+  </data>
+  <data name="Back to Library" xml:space="preserve">
+    <value>Natrag u knjižnicu</value>
+  </data>
+  <data name="Choose a rhythm pattern" xml:space="preserve">
+    <value>Odaberite ritmički obrazac</value>
+  </data>
+  <data name="Complete audio preparation and review before publishing." xml:space="preserve">
+    <value>Završite pripremu i pregled zvuka prije objavljivanja.</value>
+  </data>
+  <data name="Context audio is prepared for every version. Each may be selected as the answer." xml:space="preserve">
+    <value>Kontekstni audio je pripremljen za svaku verziju. Svaka se može odabrati kao odgovor.</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Kreiraj pitanje</value>
+  </data>
+  <data name="Edit the same target location" xml:space="preserve">
+    <value>Uredi istu ciljanu lokaciju</value>
+  </data>
+  <data name="Equal (1:1)" xml:space="preserve">
+    <value>Jednako (1:1)</value>
+  </data>
+  <data name="I auditioned every version in context. Each is musically plausible, audibly distinct, and suitable to be selected as the answer." xml:space="preserve">
+    <value>Poslušao/la sam svaku verziju u kontekstu. Svaka je glazbeno vjerodostojna, zvučno različita i prikladna za odabir kao odgovor.</value>
+  </data>
+  <data name="Long–short (3:1)" xml:space="preserve">
+    <value>Dugo–kratko (3:1)</value>
+  </data>
+  <data name="MUSICIAN&apos;S REVIEW DESK" xml:space="preserve">
+    <value>RADNI STOL ZA PREGLED GLAZBENIKA</value>
+  </data>
+  <data name="May be the answer" xml:space="preserve">
+    <value>Može biti odgovor</value>
+  </data>
+  <data name="Only the target measure changes between versions. Students see that one measure; they hear the selected version within this context." xml:space="preserve">
+    <value>Izmjenjuje se samo ciljni takt između verzija. Učenici vide taj jedan takt; čuju odabranu verziju unutar tog konteksta.</value>
+  </data>
+  <data name="Open practice" xml:space="preserve">
+    <value>Otvori vježbu</value>
+  </data>
+  <data name="Published and ready to practice" xml:space="preserve">
+    <value>Objavljeno i spremno za vježbanje</value>
+  </data>
+  <data name="Refresh status" xml:space="preserve">
+    <value>Osvježi status</value>
+  </data>
+  <data name="Retry audio" xml:space="preserve">
+    <value>Ponovi zvuk</value>
+  </data>
+  <data name="Save version and prepare audio" xml:space="preserve">
+    <value>Spremi verziju i pripremi audio</value>
+  </data>
+  <data name="Shared listening context" xml:space="preserve">
+    <value>Podijeljeni kontekst slušanja</value>
+  </data>
+  <data name="Shared listening guidance (the played version&apos;s details are added automatically)" xml:space="preserve">
+    <value>Zajednička uputa za slušanje (podaci o izvedenoj verziji dodaju se automatski)</value>
+  </data>
+  <data name="Short–long (1:3)" xml:space="preserve">
+    <value>Kratko–dugo (1:3)</value>
+  </data>
+  <data name="Suggest another version at this location" xml:space="preserve">
+    <value>Predložite drugu verziju na ovoj lokaciji</value>
+  </data>
+  <data name="Target measure" xml:space="preserve">
+    <value>Ciljna mjera</value>
+  </data>
+  <data name="Target pitched note" xml:space="preserve">
+    <value>Ciljana tonala nota</value>
+  </data>
+  <data name="The source is not privileged. Each attempt randomly chooses which approved version to play. Reject variants that can be ruled out from the notation alone." xml:space="preserve">
+    <value>Izvor nije privilegiran. Svaki pokušaj nasumično bira koju odobrenu verziju će se reproducirati. Odbacite varijante koje se mogu isključiti isključivo na temelju notacije.</value>
+  </data>
+  <data name="This legacy search-for-mistakes question is retained for reference, but is not offered in focused practice. Recreate it with a short target and three or four plausible versions." xml:space="preserve">
+    <value>Ovo nasljeđeno pitanje za pronalaženje grešaka zadržano je radi referencije, ali se ne nudi u fokusiranoj vježbi. Ponovno ga kreirajte s kratkim ciljem i tri ili četiri vjerojatne verzije.</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Verzija</value>
+  </data>
+  <data name="Withdraw legacy question" xml:space="preserve">
+    <value>Povuci staro pitanje</value>
+  </data>
+  <data name="Withdraw to edit" xml:space="preserve">
+    <value>Povuci za uređivanje</value>
+  </data>
+
+</root>

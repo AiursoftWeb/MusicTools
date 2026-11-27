@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Already have a MuseScore project? Export it as MusicXML on your computer, then upload it here. Your original project stays unchanged." xml:space="preserve">
+    <value>Već imate MuseScore projekt? Izvezite ga kao MusicXML na svom računalu, a zatim ga učitajte ovdje. Vaš izvorni projekt ostaje nepromijenjen.</value>
+  </data>
+  <data name="Choose File → Export, then select MusicXML as the format. Choose the uncompressed option to create a .musicxml file." xml:space="preserve">
+    <value>Odaberite Datoteka → Izvoz, zatim odaberite MusicXML kao format. Odaberite opciju bez kompresije kako biste stvorili .musicxml datoteku.</value>
+  </data>
+  <data name="Export MusicXML" xml:space="preserve">
+    <value>Izvezi MusicXML</value>
+  </data>
+  <data name="For piano, export the complete score with both hands. You can select just the right hand when creating a question." xml:space="preserve">
+    <value>Za klavir, izvezite kompletnu partituru s obje ruke. Desnu ruku možete odabrati tek pri izradi pitanja.</value>
+  </data>
+  <data name="Keep the original project for future editing." xml:space="preserve">
+    <value>Zadržite izvorni projekt za buduće uređivanje.</value>
+  </data>
+  <data name="MuseScore export handbook" xml:space="preserve">
+    <value>Priručnik za izvoz MuseScorea</value>
+  </data>
+  <data name="MusicXML preserves musical information, but spacing and page layout can differ from your original." xml:space="preserve">
+    <value>MusicXML čuva glazbeni sadržaj, ali razmak i raspored stranica mogu se razlikovati od izvornika.</value>
+  </data>
+  <data name="Open the .mscz or .mscx project in MuseScore Studio on your computer." xml:space="preserve">
+    <value>Otvorite .mscz ili .mscx projekt u MuseScore Studiju na svom računalu.</value>
+  </data>
+  <data name="Open your score" xml:space="preserve">
+    <value>Otvorite svoju notu</value>
+  </data>
+  <data name="Renaming .mscz to .xml does not convert a score. Use MuseScore&apos;s Export command, not Save As or a PDF export." xml:space="preserve">
+    <value>Promjena imena .mscz u .xml ne pretvara notni zapis. Koristite MuseScoreovu naredbu Izvoz, a ne Spremi kao ili PDF izvoz.</value>
+  </data>
+  <data name="Return to MusicXML upload" xml:space="preserve">
+    <value>Povratak na učitavanje MusicXML-a</value>
+  </data>
+  <data name="Save the exported file and return to MusicTools to upload it. Check the score preview and audition your selected passage before publishing a question." xml:space="preserve">
+    <value>Spremite izvezenu datoteku i vratite se u MusicTools da biste je učitali. Provjerite pregled partiture i poslušajte odabrani odlomak prije objavljivanja pitanja.</value>
+  </data>
+  <data name="Upload and preview" xml:space="preserve">
+    <value>Prenesi i pregledaj</value>
+  </data>
+  <data name="Your score, ready for listening practice" xml:space="preserve">
+    <value>Vaša nota, spremna za vježbanje slušanja</value>
+  </data>
+
+</root>
